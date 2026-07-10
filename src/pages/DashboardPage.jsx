@@ -1,9 +1,11 @@
 import { ArrowRight, BarChart3, BookOpenCheck, Clock3, Target } from "lucide-react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PageHeader from "../components/ui/PageHeader.jsx";
 import StatCard from "../components/ui/StatCard.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
 import { subjects } from "../data/subjects.js";
+import { loadQuizFile, loadTopicIndex } from "../services/quizService.js";
 import { getLocalResults } from "../services/resultsService.js";
 import { formatDuration, formatShortDate } from "../utils/time.js";
 
@@ -12,12 +14,60 @@ function averageScore(results) {
   return Math.round(results.reduce((sum, result) => sum + result.score, 0) / results.length);
 }
 
+async function getQuestionCount(file) {
+  try {
+    const quiz = await loadQuizFile(file);
+    return quiz.questions?.length || 0;
+  } catch {
+    return 0;
+  }
+}
+
+async function getSubjectCounts(subject) {
+  const stageCounts = await Promise.all(
+    subject.stages.map(async (stage) => ({
+      label: stage.label,
+      count: await getQuestionCount(stage.file)
+    }))
+  );
+
+  let topicCount = 0;
+  try {
+    const topicIndex = await loadTopicIndex(subject.topicIndexFile);
+    const topicCounts = await Promise.all(
+      (topicIndex.sets || []).map((set) => getQuestionCount(`/data/${subject.slug}/topics/${set.slug}.json`))
+    );
+    topicCount = topicCounts.reduce((sum, count) => sum + count, 0);
+  } catch {
+    topicCount = 0;
+  }
+
+  return [
+    stageCounts[0],
+    { label: "Topic Wise MCQ", count: topicCount },
+    ...stageCounts.slice(1)
+  ];
+}
+
 export default function DashboardPage() {
   const { user } = useAuth();
+  const [subjectCounts, setSubjectCounts] = useState({});
   const results = getLocalResults(user.email);
   const recentResults = results.slice(0, 5);
   const bestScore = results.reduce((best, result) => Math.max(best, result.score), 0);
   const totalTime = results.reduce((sum, result) => sum + result.elapsedSeconds, 0);
+
+  useEffect(() => {
+    let ignore = false;
+
+    Promise.all(subjects.map(async (subject) => [subject.slug, await getSubjectCounts(subject)])).then((entries) => {
+      if (!ignore) setSubjectCounts(Object.fromEntries(entries));
+    });
+
+    return () => {
+      ignore = true;
+    };
+  }, []);
 
   return (
     <>
@@ -60,6 +110,24 @@ export default function DashboardPage() {
                       <h3 className="font-bold text-slate-950 dark:text-white">{subject.name}</h3>
                       <p className="mt-1 text-sm leading-5 text-slate-500 dark:text-slate-400">{subject.description}</p>
                     </div>
+                  </div>
+
+                  <div className="mt-4 grid grid-cols-2 gap-2">
+                    {(subjectCounts[subject.slug] || [
+                      { label: "Warm Up MCQ", count: "..." },
+                      { label: "Topic Wise MCQ", count: "..." },
+                      { label: "Quarter Final", count: "..." },
+                      { label: "Semi Final", count: "..." },
+                      { label: "Final Boss", count: "..." }
+                    ]).map((item) => (
+                      <div
+                        key={item.label}
+                        className="rounded-lg border border-slate-200 bg-slate-50/80 px-3 py-2 dark:border-white/10 dark:bg-white/[0.04]"
+                      >
+                        <p className="truncate text-xs font-semibold text-slate-500 dark:text-slate-400">{item.label}</p>
+                        <p className="mt-1 text-lg font-black text-slate-950 dark:text-white">{item.count}</p>
+                      </div>
+                    ))}
                   </div>
 
                   <div className="mt-4 flex flex-wrap gap-2">

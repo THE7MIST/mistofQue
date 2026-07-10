@@ -1,0 +1,100 @@
+{
+  "version": "1",
+  "title": "PKI Set 5",
+  "subject": "PKI",
+  "stage": "Topic Wise MCQ",
+  "topic": "CDAC PKI & Biometric Q31-Q40",
+  "durationMinutes": 10,
+  "questions": [
+    {
+      "id": 31,
+      "question": "A digital signature implementation requires a ________ system.",
+      "options": ["Symmetric-key", "Asymmetric-key", "Either symmetric or asymmetric", "Both symmetric and asymmetric"],
+      "correct": 1,
+      "description": "Digital signatures rely on public-key cryptography: signing with a private key and verifying with a public key.",
+      "difficulty": "Easy",
+      "tags": ["Digital Signatures", "Asymmetric Cryptography"]
+    },
+    {
+      "id": 32,
+      "question": "Raghav wants to send a message to Neelima, and Neelima must be sure it was sent by Raghav. What should Raghav do?",
+      "options": ["Encrypt with Neelima's private key.", "Encrypt with Neelima's public key.", "Encrypt with his own public key.", "Encrypt with his own private key."],
+      "correct": 3,
+      "description": "To prove authenticity, Raghav signs with his private key and Neelima verifies using Raghav's public key.",
+      "difficulty": "Easy",
+      "tags": ["Digital Signatures", "Authentication"]
+    },
+    {
+      "id": 33,
+      "question": "When you receive a public key signed by many individuals, that key is part of:",
+      "options": ["Web of Trust", "Certificate Authority", "Digital Fingerprint", "Illegal Scam"],
+      "correct": 0,
+      "description": "The Web of Trust is used by PGP/GPG, where users sign each other's public keys.",
+      "difficulty": "Easy",
+      "tags": ["Web of Trust", "PGP"]
+    },
+    {
+      "id": 34,
+      "question": "Which organization sends out information about known security vulnerabilities?",
+      "options": ["RSA", "PKI", "CERT", "PGP"],
+      "correct": 2,
+      "description": "CERT publishes security advisories, vulnerability alerts, and incident response guidance.",
+      "difficulty": "Easy",
+      "tags": ["CERT", "Vulnerabilities"]
+    },
+    {
+      "id": 35,
+      "question": "A firewall is:",
+      "options": ["A network performance reference point", "Software or hardware used to isolate a private network from a public network", "A virus that infects macros", "A predefined encryption key"],
+      "correct": 1,
+      "description": "A firewall monitors and filters network traffic according to predefined security rules.",
+      "difficulty": "Easy",
+      "tags": ["Firewall"]
+    },
+    {
+      "id": 36,
+      "question": "Firewalls operate by:",
+      "options": ["The pre-purchase phase", "Isolating intranet from extranet", "Screening packets entering and leaving the network and filtering traffic", "None of the above"],
+      "correct": 2,
+      "description": "Firewalls inspect packets using criteria such as IP address, protocol, port number, and connection state.",
+      "difficulty": "Easy",
+      "tags": ["Firewall", "Packet Filtering"]
+    },
+    {
+      "id": 37,
+      "question": "Which mechanism protects private networks from outside attacks?",
+      "options": ["Firewall", "Antivirus", "Digital Signature", "Formatting"],
+      "correct": 0,
+      "description": "A firewall controls incoming and outgoing network traffic based on security policies.",
+      "difficulty": "Easy",
+      "tags": ["Firewall"]
+    },
+    {
+      "id": 38,
+      "question": "Which protocol, developed by Netscape, transparently encrypts web browser communications?",
+      "options": ["Netscape Navigator", "Secure Sockets Layer (SSL)", "IPSec", "VeriSign"],
+      "correct": 1,
+      "description": "SSL was developed by Netscape to secure web communications and was later replaced by TLS.",
+      "difficulty": "Easy",
+      "tags": ["SSL"]
+    },
+    {
+      "id": 39,
+      "question": "What is the default port number used by SSL/TLS for HTTPS?",
+      "options": ["433", "469", "443", "25"],
+      "correct": 2,
+      "description": "HTTPS over SSL/TLS commonly uses port 443.",
+      "difficulty": "Easy",
+      "tags": ["SSL", "HTTPS"]
+    },
+    {
+      "id": 40,
+      "question": "PKCS stands for:",
+      "options": ["Private-Key Cryptography Standard", "Public-Key Cryptography Standard", "Public-Key Cryptography Scheme", "Both A and B"],
+      "correct": 1,
+      "description": "PKCS means Public-Key Cryptography Standards, a family of standards developed by RSA Laboratories.",
+      "difficulty": "Easy",
+      "tags": ["PKCS", "Standards"]
+    }
+  ]
+}

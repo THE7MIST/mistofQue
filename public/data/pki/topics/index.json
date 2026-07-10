@@ -1,7 +1,9 @@
 {
   "sets": [
     { "setNumber": "Set 01", "topic": "PKI Set 1", "slug": "set01-pki" },
-    { "setNumber": "Set 01", "topic": "Certificates", "slug": "set01-certificates" },
-    { "setNumber": "Set 02", "topic": "Revocation", "slug": "set02-revocation" }
+    { "setNumber": "Set 02", "topic": "Revocation", "slug": "set02-revocation" },
+    { "setNumber": "Set 03", "topic": "CDAC PKI & Biometric Q11-Q20", "slug": "set03-cdac-pki-biometric" },
+    { "setNumber": "Set 04", "topic": "CDAC PKI & Biometric Q21-Q30", "slug": "set04-cdac-pki-biometric" },
+    { "setNumber": "Set 05", "topic": "CDAC PKI & Biometric Q31-Q40", "slug": "set05-cdac-pki-biometric" }
   ]
 }

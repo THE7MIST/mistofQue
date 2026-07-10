@@ -1,1353 +1,3994 @@
-﻿{
-    "version":  "2",
-    "title":  "PKI Set 1",
-    "subject":  "PKI",
-    "stage":  "Topic Wise MCQ",
-    "durationMinutes":  80,
-    "questions":  [
-                      {
-                          "id":  1,
-                          "question":  "Which of the following represents the CIA Triad?",
-                          "options":  [
-                                          "Confidentiality, Integrity, Availability",
-                                          "Control, Identity, Access",
-                                          "Cipher, Integrity, Authentication",
-                                          "Confidentiality, Identification, Authorization"
-                                      ],
-                          "correct":  0,
-                          "description":  "The CIA Triad is Confidentiality, Integrity, and Availability.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "CIA Triad"
-                                   ]
-                      },
-                      {
-                          "id":  2,
-                          "question":  "Which attack attempts to intercept communication between two parties?",
-                          "options":  [
-                                          "Phishing",
-                                          "MITM Attack",
-                                          "Brute Force",
-                                          "Replay Attack"
-                                      ],
-                          "correct":  1,
-                          "description":  "A man-in-the-middle attack intercepts communication between two parties.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "MITM",
-                                       "Network Security"
-                                   ]
-                      },
-                      {
-                          "id":  3,
-                          "question":  "AES is an example of:",
-                          "options":  [
-                                          "Asymmetric encryption",
-                                          "Hashing algorithm",
-                                          "Symmetric encryption",
-                                          "Digital signature"
-                                      ],
-                          "correct":  2,
-                          "description":  "AES is a symmetric encryption algorithm.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "AES",
-                                       "Symmetric Encryption"
-                                   ]
-                      },
-                      {
-                          "id":  4,
-                          "question":  "RSA primarily uses:",
-                          "options":  [
-                                          "One shared key",
-                                          "Public and private keys",
-                                          "Hash values",
-                                          "Session tokens"
-                                      ],
-                          "correct":  1,
-                          "description":  "RSA is an asymmetric algorithm that uses public and private keys.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "RSA",
-                                       "Asymmetric Encryption"
-                                   ]
-                      },
-                      {
-                          "id":  5,
-                          "question":  "Which algorithm is commonly used for key exchange?",
-                          "options":  [
-                                          "SHA-256",
-                                          "DES",
-                                          "Diffie-Hellman",
-                                          "HMAC"
-                                      ],
-                          "correct":  2,
-                          "description":  "Diffie-Hellman is commonly used to establish shared keys.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Key Exchange",
-                                       "Diffie-Hellman"
-                                   ]
-                      },
-                      {
-                          "id":  6,
-                          "question":  "ECC stands for:",
-                          "options":  [
-                                          "Encrypted Certificate Chain",
-                                          "Elliptic Curve Cryptography",
-                                          "Electronic Cipher Control",
-                                          "Encoded Cryptographic Cipher"
-                                      ],
-                          "correct":  1,
-                          "description":  "ECC means Elliptic Curve Cryptography.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "ECC",
-                                       "Asymmetric Encryption"
-                                   ]
-                      },
-                      {
-                          "id":  7,
-                          "question":  "Which of the following is a hashing algorithm?",
-                          "options":  [
-                                          "AES",
-                                          "RSA",
-                                          "SHA-256",
-                                          "Diffie-Hellman"
-                                      ],
-                          "correct":  2,
-                          "description":  "SHA-256 is a secure hash algorithm.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Hashing",
-                                       "SHA-256"
-                                   ]
-                      },
-                      {
-                          "id":  8,
-                          "question":  "HMAC provides:",
-                          "options":  [
-                                          "Encryption only",
-                                          "Compression",
-                                          "Message Integrity and Authentication",
-                                          "Key Exchange"
-                                      ],
-                          "correct":  2,
-                          "description":  "HMAC uses a secret key with a hash function to provide integrity and authentication.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "HMAC",
-                                       "Integrity"
-                                   ]
-                      },
-                      {
-                          "id":  9,
-                          "question":  "Digital signatures provide:",
-                          "options":  [
-                                          "Confidentiality only",
-                                          "Authentication and Integrity",
-                                          "Data Compression",
-                                          "Availability"
-                                      ],
-                          "correct":  1,
-                          "description":  "Digital signatures verify authenticity and integrity.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Digital Signatures"
-                                   ]
-                      },
-                      {
-                          "id":  10,
-                          "question":  "Which component issues digital certificates?",
-                          "options":  [
-                                          "Firewall",
-                                          "IDS",
-                                          "Certificate Authority",
-                                          "Proxy Server"
-                                      ],
-                          "correct":  2,
-                          "description":  "A Certificate Authority issues and signs digital certificates.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Certificate Authority",
-                                       "Certificates"
-                                   ]
-                      },
-                      {
-                          "id":  11,
-                          "question":  "CRL stands for:",
-                          "options":  [
-                                          "Certificate Revocation List",
-                                          "Certificate Registration Layer",
-                                          "Cryptographic Revocation Level",
-                                          "Certificate Record Locator"
-                                      ],
-                          "correct":  0,
-                          "description":  "CRL means Certificate Revocation List.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "CRL",
-                                       "Revocation"
-                                   ]
-                      },
-                      {
-                          "id":  12,
-                          "question":  "OCSP is mainly used for:",
-                          "options":  [
-                                          "Encrypting emails",
-                                          "Checking certificate revocation status",
-                                          "Password storage",
-                                          "DNS resolution"
-                                      ],
-                          "correct":  1,
-                          "description":  "OCSP checks whether a certificate has been revoked.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OCSP",
-                                       "Revocation"
-                                   ]
-                      },
-                      {
-                          "id":  13,
-                          "question":  "PKI stands for:",
-                          "options":  [
-                                          "Public Key Infrastructure",
-                                          "Private Key Integration",
-                                          "Protected Key Infrastructure",
-                                          "Public Key Internet"
-                                      ],
-                          "correct":  0,
-                          "description":  "PKI means Public Key Infrastructure.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "PKI"
-                                   ]
-                      },
-                      {
-                          "id":  14,
-                          "question":  "In asymmetric encryption, the public key is used for:",
-                          "options":  [
-                                          "Decryption only",
-                                          "Encryption or signature verification",
-                                          "Password hashing",
-                                          "Certificate revocation"
-                                      ],
-                          "correct":  1,
-                          "description":  "Public keys can encrypt data for the private key holder or verify signatures.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Asymmetric Encryption",
-                                       "Public Key"
-                                   ]
-                      },
-                      {
-                          "id":  15,
-                          "question":  "DES uses a key size of:",
-                          "options":  [
-                                          "56-bit",
-                                          "128-bit",
-                                          "256-bit",
-                                          "512-bit"
-                                      ],
-                          "correct":  0,
-                          "description":  "DES uses a 56-bit effective key.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "DES",
-                                       "Symmetric Encryption"
-                                   ]
-                      },
-                      {
-                          "id":  16,
-                          "question":  "Which protocol secures web communication?",
-                          "options":  [
-                                          "FTP",
-                                          "HTTP",
-                                          "HTTPS",
-                                          "SMTP"
-                                      ],
-                          "correct":  2,
-                          "description":  "HTTPS secures web communication using TLS.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "HTTPS",
-                                       "TLS"
-                                   ]
-                      },
-                      {
-                          "id":  17,
-                          "question":  "SSL stands for:",
-                          "options":  [
-                                          "Secure Socket Layer",
-                                          "Safe Security Layer",
-                                          "Secure System Login",
-                                          "System Socket Layer"
-                                      ],
-                          "correct":  0,
-                          "description":  "SSL stands for Secure Socket Layer.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "SSL"
-                                   ]
-                      },
-                      {
-                          "id":  18,
-                          "question":  "TLS is the successor of:",
-                          "options":  [
-                                          "SSH",
-                                          "SSL",
-                                          "RSA",
-                                          "AES"
-                                      ],
-                          "correct":  1,
-                          "description":  "TLS succeeded SSL for secure communication.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "TLS",
-                                       "SSL"
-                                   ]
-                      },
-                      {
-                          "id":  19,
-                          "question":  "PGP is mainly used for:",
-                          "options":  [
-                                          "Database encryption",
-                                          "Email security",
-                                          "File compression",
-                                          "Routing"
-                                      ],
-                          "correct":  1,
-                          "description":  "PGP is commonly used for email security and file encryption.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "PGP",
-                                       "Email Security"
-                                   ]
-                      },
-                      {
-                          "id":  20,
-                          "question":  "S/MIME is related to:",
-                          "options":  [
-                                          "Secure email communication",
-                                          "VPN tunneling",
-                                          "DNS security",
-                                          "Firewall rules"
-                                      ],
-                          "correct":  0,
-                          "description":  "S/MIME supports secure email signing and encryption.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "S/MIME",
-                                       "Email Security"
-                                   ]
-                      },
-                      {
-                          "id":  21,
-                          "question":  "Which authentication method uses multiple verification methods?",
-                          "options":  [
-                                          "Single Sign-On",
-                                          "MFA",
-                                          "Graphical Password",
-                                          "OpenID"
-                                      ],
-                          "correct":  1,
-                          "description":  "MFA uses multiple factors to verify a user.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "MFA",
-                                       "Authentication"
-                                   ]
-                      },
-                      {
-                          "id":  22,
-                          "question":  "OAuth is mainly used for:",
-                          "options":  [
-                                          "Encryption",
-                                          "Authorization delegation",
-                                          "Certificate issuance",
-                                          "Hash generation"
-                                      ],
-                          "correct":  1,
-                          "description":  "OAuth is mainly used to delegate authorization.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OAuth",
-                                       "Authorization"
-                                   ]
-                      },
-                      {
-                          "id":  23,
-                          "question":  "OpenID is mainly associated with:",
-                          "options":  [
-                                          "Authentication",
-                                          "Encryption",
-                                          "File transfer",
-                                          "Key exchange"
-                                      ],
-                          "correct":  0,
-                          "description":  "OpenID is associated with authentication.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OpenID",
-                                       "Authentication"
-                                   ]
-                      },
-                      {
-                          "id":  24,
-                          "question":  "FIDO authentication commonly supports:",
-                          "options":  [
-                                          "Password-only login",
-                                          "Passwordless authentication",
-                                          "Email encryption",
-                                          "File compression"
-                                      ],
-                          "correct":  1,
-                          "description":  "FIDO supports phishing-resistant and passwordless authentication.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "FIDO",
-                                       "Authentication"
-                                   ]
-                      },
-                      {
-                          "id":  25,
-                          "question":  "Which architecture assumes no device or user should be trusted automatically?",
-                          "options":  [
-                                          "PKI",
-                                          "VPN",
-                                          "Zero Trust",
-                                          "SSL"
-                                      ],
-                          "correct":  2,
-                          "description":  "Zero Trust requires verification instead of automatic trust.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Zero Trust"
-                                   ]
-                      },
-                      {
-                          "id":  26,
-                          "question":  "Which command-line tool is widely used for certificate creation?",
-                          "options":  [
-                                          "Wireshark",
-                                          "Nmap",
-                                          "OpenSSL",
-                                          "Tcpdump"
-                                      ],
-                          "correct":  2,
-                          "description":  "OpenSSL is widely used to create keys, CSRs, and certificates.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OpenSSL",
-                                       "Certificates"
-                                   ]
-                      },
-                      {
-                          "id":  27,
-                          "question":  "XCA tool is mainly used for:",
-                          "options":  [
-                                          "Packet capturing",
-                                          "Certificate management",
-                                          "Firewall configuration",
-                                          "Port scanning"
-                                      ],
-                          "correct":  1,
-                          "description":  "XCA is a tool for certificate and key management.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "XCA",
-                                       "Certificate Management"
-                                   ]
-                      },
-                      {
-                          "id":  28,
-                          "question":  "A self-signed certificate is signed by:",
-                          "options":  [
-                                          "Root CA",
-                                          "Browser",
-                                          "Itself",
-                                          "Sub CA"
-                                      ],
-                          "correct":  2,
-                          "description":  "A self-signed certificate is signed by its own private key.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Self-Signed Certificates"
-                                   ]
-                      },
-                      {
-                          "id":  29,
-                          "question":  "Which protocol is used to securely transfer emails?",
-                          "options":  [
-                                          "PGP/S-MIME",
-                                          "ARP",
-                                          "DHCP",
-                                          "SNMP"
-                                      ],
-                          "correct":  0,
-                          "description":  "PGP and S/MIME are used for secure email communication.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "PGP",
-                                       "S/MIME",
-                                       "Email Security"
-                                   ]
-                      },
-                      {
-                          "id":  30,
-                          "question":  "Which attack becomes easier without salting passwords?",
-                          "options":  [
-                                          "MITM Attack",
-                                          "Rainbow Table Attack",
-                                          "SQL Injection",
-                                          "DDoS Attack"
-                                      ],
-                          "correct":  1,
-                          "description":  "Without salts, precomputed rainbow tables are more effective.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Password Security",
-                                       "Salting"
-                                   ]
-                      },
-                      {
-                          "id":  31,
-                          "question":  "Aadhaar e-Sign is mainly used for:",
-                          "options":  [
-                                          "Network routing",
-                                          "Digital signatures",
-                                          "File compression",
-                                          "DNS lookup"
-                                      ],
-                          "correct":  1,
-                          "description":  "Aadhaar e-Sign is used for digital signing.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Digital Signatures",
-                                       "e-Sign"
-                                   ]
-                      },
-                      {
-                          "id":  32,
-                          "question":  "Timestamping services help prove:",
-                          "options":  [
-                                          "File size",
-                                          "Exact signing time",
-                                          "Password complexity",
-                                          "DNS authenticity"
-                                      ],
-                          "correct":  1,
-                          "description":  "Timestamping provides evidence of when a signing action occurred.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Timestamping",
-                                       "Digital Signatures"
-                                   ]
-                      },
-                      {
-                          "id":  33,
-                          "question":  "Which standard defines cryptographic module security requirements?",
-                          "options":  [
-                                          "PKCS",
-                                          "FIPS 140-2",
-                                          "TLS",
-                                          "OCSP"
-                                      ],
-                          "correct":  1,
-                          "description":  "FIPS 140-2 defines security requirements for cryptographic modules.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "FIPS",
-                                       "Compliance"
-                                   ]
-                      },
-                      {
-                          "id":  34,
-                          "question":  "LDAP is commonly used for:",
-                          "options":  [
-                                          "Email encryption",
-                                          "Directory services",
-                                          "VPN setup",
-                                          "Packet routing"
-                                      ],
-                          "correct":  1,
-                          "description":  "LDAP is used to access and manage directory services.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "LDAP",
-                                       "Directory Services"
-                                   ]
-                      },
-                      {
-                          "id":  35,
-                          "question":  "Active Directory is developed by:",
-                          "options":  [
-                                          "Google",
-                                          "Red Hat",
-                                          "Microsoft",
-                                          "Oracle"
-                                      ],
-                          "correct":  2,
-                          "description":  "Active Directory is developed by Microsoft.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Active Directory"
-                                   ]
-                      },
-                      {
-                          "id":  36,
-                          "question":  "Blockchain primarily provides:",
-                          "options":  [
-                                          "Centralized storage",
-                                          "Distributed ledger functionality",
-                                          "Password hashing only",
-                                          "Firewall filtering"
-                                      ],
-                          "correct":  1,
-                          "description":  "Blockchain provides distributed ledger functionality.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Blockchain"
-                                   ]
-                      },
-                      {
-                          "id":  37,
-                          "question":  "Which protocol checks certificate validity in real time?",
-                          "options":  [
-                                          "CRL",
-                                          "OCSP",
-                                          "SMTP",
-                                          "FTP"
-                                      ],
-                          "correct":  1,
-                          "description":  "OCSP checks certificate revocation status in real time.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OCSP",
-                                       "Certificate Validation"
-                                   ]
-                      },
-                      {
-                          "id":  38,
-                          "question":  "Which encryption type is generally faster?",
-                          "options":  [
-                                          "Asymmetric encryption",
-                                          "Symmetric encryption",
-                                          "Hashing",
-                                          "Digital Signature"
-                                      ],
-                          "correct":  1,
-                          "description":  "Symmetric encryption is generally faster than asymmetric encryption.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Symmetric Encryption"
-                                   ]
-                      },
-                      {
-                          "id":  39,
-                          "question":  "Which certificate authority sits below the Root CA?",
-                          "options":  [
-                                          "Browser CA",
-                                          "Subordinate CA",
-                                          "OCSP CA",
-                                          "TLS CA"
-                                      ],
-                          "correct":  1,
-                          "description":  "A Subordinate CA sits below the Root CA in a trust hierarchy.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Subordinate CA",
-                                       "Trust Chain"
-                                   ]
-                      },
-                      {
-                          "id":  40,
-                          "question":  "Which of the following provides non-repudiation?",
-                          "options":  [
-                                          "Hashing",
-                                          "Firewall",
-                                          "Digital Signature",
-                                          "VPN"
-                                      ],
-                          "correct":  2,
-                          "description":  "Digital signatures can provide non-repudiation.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Non-Repudiation",
-                                       "Digital Signatures"
-                                   ]
-                      },
-                      {
-                          "id":  41,
-                          "question":  "Which security goal ensures data is not altered without authorization?",
-                          "options":  [
-                                          "Availability",
-                                          "Confidentiality",
-                                          "Integrity",
-                                          "Accountability"
-                                      ],
-                          "correct":  2,
-                          "description":  "Integrity ensures data is not changed without authorization.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "CIA Triad",
-                                       "Integrity"
-                                   ]
-                      },
-                      {
-                          "id":  42,
-                          "question":  "RC5 belongs to which category?",
-                          "options":  [
-                                          "Hashing algorithm",
-                                          "Symmetric cipher",
-                                          "Asymmetric cipher",
-                                          "Authentication protocol"
-                                      ],
-                          "correct":  1,
-                          "description":  "RC5 is a symmetric block cipher.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "RC5",
-                                       "Symmetric Encryption"
-                                   ]
-                      },
-                      {
-                          "id":  43,
-                          "question":  "In RSA, the private key is mainly used for:",
-                          "options":  [
-                                          "Encryption by anyone",
-                                          "Signature creation and decryption",
-                                          "Certificate publishing",
-                                          "Hash generation"
-                                      ],
-                          "correct":  1,
-                          "description":  "In RSA, a private key can decrypt data and create digital signatures.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "RSA",
-                                       "Private Key"
-                                   ]
-                      },
-                      {
-                          "id":  44,
-                          "question":  "Which cryptographic method uses the same key for encryption and decryption?",
-                          "options":  [
-                                          "RSA",
-                                          "ECC",
-                                          "Symmetric encryption",
-                                          "PKI"
-                                      ],
-                          "correct":  2,
-                          "description":  "Symmetric encryption uses the same secret key for encryption and decryption.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Symmetric Encryption"
-                                   ]
-                      },
-                      {
-                          "id":  45,
-                          "question":  "The primary purpose of hashing is:",
-                          "options":  [
-                                          "Data compression",
-                                          "Ensuring integrity",
-                                          "Key exchange",
-                                          "Authentication only"
-                                      ],
-                          "correct":  1,
-                          "description":  "Hashing is commonly used to verify data integrity.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Hashing",
-                                       "Integrity"
-                                   ]
-                      },
-                      {
-                          "id":  46,
-                          "question":  "Which of the following is NOT a property of a strong hash function?",
-                          "options":  [
-                                          "Collision resistance",
-                                          "Deterministic output",
-                                          "Reversible computation",
-                                          "Pre-image resistance"
-                                      ],
-                          "correct":  2,
-                          "description":  "Strong hash functions are designed to be one-way, not reversible.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Hashing"
-                                   ]
-                      },
-                      {
-                          "id":  47,
-                          "question":  "What is the output size of SHA-256?",
-                          "options":  [
-                                          "128 bits",
-                                          "160 bits",
-                                          "256 bits",
-                                          "512 bits"
-                                      ],
-                          "correct":  2,
-                          "description":  "SHA-256 produces a 256-bit digest.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "SHA-256",
-                                       "Hashing"
-                                   ]
-                      },
-                      {
-                          "id":  48,
-                          "question":  "Which attack involves trying every possible key combination?",
-                          "options":  [
-                                          "Replay attack",
-                                          "Brute-force attack",
-                                          "MITM attack",
-                                          "Phishing attack"
-                                      ],
-                          "correct":  1,
-                          "description":  "A brute-force attack tries possible keys or passwords until one works.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Brute Force"
-                                   ]
-                      },
-                      {
-                          "id":  49,
-                          "question":  "In PKI, trust begins from:",
-                          "options":  [
-                                          "Web server",
-                                          "Root CA",
-                                          "Browser plugin",
-                                          "Client certificate"
-                                      ],
-                          "correct":  1,
-                          "description":  "PKI trust begins at the trusted Root CA.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Root CA",
-                                       "Trust Chain"
-                                   ]
-                      },
-                      {
-                          "id":  50,
-                          "question":  "Which certificate contains the public key of an entity?",
-                          "options":  [
-                                          "OCSP response",
-                                          "Digital certificate",
-                                          "HMAC record",
-                                          "CRL entry"
-                                      ],
-                          "correct":  1,
-                          "description":  "A digital certificate binds an entity identity to a public key.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Digital Certificates",
-                                       "Public Key"
-                                   ]
-                      },
-                      {
-                          "id":  51,
-                          "question":  "Which protocol secures remote shell access?",
-                          "options":  [
-                                          "Telnet",
-                                          "SSH",
-                                          "FTP",
-                                          "SNMP"
-                                      ],
-                          "correct":  1,
-                          "description":  "SSH provides secure remote shell access.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "SSH",
-                                       "Secure Protocols"
-                                   ]
-                      },
-                      {
-                          "id":  52,
-                          "question":  "What is the main role of a Sub CA?",
-                          "options":  [
-                                          "Root DNS management",
-                                          "Issuing certificates under Root CA trust",
-                                          "Packet filtering",
-                                          "Key hashing"
-                                      ],
-                          "correct":  1,
-                          "description":  "A Sub CA issues certificates under the trust of a Root CA.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Subordinate CA",
-                                       "Certificate Authority"
-                                   ]
-                      },
-                      {
-                          "id":  53,
-                          "question":  "Which protocol is vulnerable because it sends data in plaintext?",
-                          "options":  [
-                                          "HTTPS",
-                                          "TLS",
-                                          "HTTP",
-                                          "S/MIME"
-                                      ],
-                          "correct":  2,
-                          "description":  "HTTP sends data in plaintext unless protected by TLS.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "HTTP",
-                                       "Secure Protocols"
-                                   ]
-                      },
-                      {
-                          "id":  54,
-                          "question":  "In HTTPS, encryption usually starts after:",
-                          "options":  [
-                                          "DNS lookup",
-                                          "TCP three-way handshake",
-                                          "TLS/SSL handshake",
-                                          "OCSP validation"
-                                      ],
-                          "correct":  2,
-                          "description":  "HTTPS encryption begins after the TLS/SSL handshake establishes secure parameters.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "HTTPS",
-                                       "TLS Handshake"
-                                   ]
-                      },
-                      {
-                          "id":  55,
-                          "question":  "Which of the following is a block cipher?",
-                          "options":  [
-                                          "AES",
-                                          "SHA-1",
-                                          "HMAC",
-                                          "Diffie-Hellman"
-                                      ],
-                          "correct":  0,
-                          "description":  "AES is a block cipher.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "AES",
-                                       "Block Cipher"
-                                   ]
-                      },
-                      {
-                          "id":  56,
-                          "question":  "Caesar cipher is an example of:",
-                          "options":  [
-                                          "Modern block cipher",
-                                          "Classical substitution cipher",
-                                          "Asymmetric encryption",
-                                          "Hashing technique"
-                                      ],
-                          "correct":  1,
-                          "description":  "The Caesar cipher is a classical substitution cipher.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Classical Cryptography"
-                                   ]
-                      },
-                      {
-                          "id":  57,
-                          "question":  "Vernam cipher is closely related to:",
-                          "options":  [
-                                          "One-time pad",
-                                          "RSA",
-                                          "ECC",
-                                          "HMAC"
-                                      ],
-                          "correct":  0,
-                          "description":  "The Vernam cipher is closely associated with the one-time pad.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Vernam Cipher",
-                                       "One-Time Pad"
-                                   ]
-                      },
-                      {
-                          "id":  58,
-                          "question":  "Triple DES was introduced mainly to:",
-                          "options":  [
-                                          "Reduce key size",
-                                          "Replace hashing",
-                                          "Improve DES security",
-                                          "Support certificates"
-                                      ],
-                          "correct":  2,
-                          "description":  "Triple DES applies DES multiple times to improve security over single DES.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Triple DES",
-                                       "DES"
-                                   ]
-                      },
-                      {
-                          "id":  59,
-                          "question":  "Which concept allows users to access multiple systems with one login?",
-                          "options":  [
-                                          "MFA",
-                                          "SSO",
-                                          "PKI",
-                                          "FIDO"
-                                      ],
-                          "correct":  1,
-                          "description":  "Single Sign-On allows access to multiple systems with one login session.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "SSO",
-                                       "Authentication"
-                                   ]
-                      },
-                      {
-                          "id":  60,
-                          "question":  "Graphical passwords mainly rely on:",
-                          "options":  [
-                                          "Visual memory",
-                                          "Certificate chains",
-                                          "Public key pairs",
-                                          "Time synchronization"
-                                      ],
-                          "correct":  0,
-                          "description":  "Graphical passwords rely on visual memory.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Authentication",
-                                       "Graphical Passwords"
-                                   ]
-                      },
-                      {
-                          "id":  61,
-                          "question":  "Which factor below is considered \"something you are\"?",
-                          "options":  [
-                                          "Password",
-                                          "OTP token",
-                                          "Fingerprint",
-                                          "Smart card"
-                                      ],
-                          "correct":  2,
-                          "description":  "Biometrics such as fingerprints are considered something you are.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Authentication Factors",
-                                       "Biometrics"
-                                   ]
-                      },
-                      {
-                          "id":  62,
-                          "question":  "Which factor below is considered \"something you know\"?",
-                          "options":  [
-                                          "Biometric scan",
-                                          "Password",
-                                          "Smart card",
-                                          "Hardware token"
-                                      ],
-                          "correct":  1,
-                          "description":  "A password is an example of something you know.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Authentication Factors",
-                                       "Passwords"
-                                   ]
-                      },
-                      {
-                          "id":  63,
-                          "question":  "Which technology is designed to resist phishing using hardware authenticators?",
-                          "options":  [
-                                          "FIDO",
-                                          "FTP",
-                                          "LDAP",
-                                          "CRL"
-                                      ],
-                          "correct":  0,
-                          "description":  "FIDO uses phishing-resistant authentication methods such as hardware authenticators.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "FIDO",
-                                       "Phishing Resistance"
-                                   ]
-                      },
-                      {
-                          "id":  64,
-                          "question":  "In OAuth, the user generally grants:",
-                          "options":  [
-                                          "Encryption keys",
-                                          "Authorization permissions",
-                                          "Certificate revocation rights",
-                                          "Firewall rules"
-                                      ],
-                          "correct":  1,
-                          "description":  "OAuth lets a user grant authorization permissions to an application.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OAuth",
-                                       "Authorization"
-                                   ]
-                      },
-                      {
-                          "id":  65,
-                          "question":  "Which attack reuses captured authentication data?",
-                          "options":  [
-                                          "Replay attack",
-                                          "Dictionary attack",
-                                          "SQL injection",
-                                          "Trojan attack"
-                                      ],
-                          "correct":  0,
-                          "description":  "A replay attack reuses captured data such as authentication tokens.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Replay Attack"
-                                   ]
-                      },
-                      {
-                          "id":  66,
-                          "question":  "A digital certificate warning in browsers usually indicates:",
-                          "options":  [
-                                          "Fast encryption",
-                                          "Invalid or untrusted certificate",
-                                          "DNS overload",
-                                          "Disabled JavaScript"
-                                      ],
-                          "correct":  1,
-                          "description":  "Browser certificate warnings often indicate an invalid, expired, mismatched, or untrusted certificate.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Certificates",
-                                       "Browser Security"
-                                   ]
-                      },
-                      {
-                          "id":  67,
-                          "question":  "What is the primary purpose of OCSP stapling?",
-                          "options":  [
-                                          "Increase hashing speed",
-                                          "Reduce certificate validation overhead",
-                                          "Replace TLS",
-                                          "Encrypt DNS traffic"
-                                      ],
-                          "correct":  1,
-                          "description":  "OCSP stapling lets the server provide a recent revocation response, reducing client validation overhead.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OCSP Stapling",
-                                       "Certificate Validation"
-                                   ]
-                      },
-                      {
-                          "id":  68,
-                          "question":  "Which organization commonly publishes PKCS standards?",
-                          "options":  [
-                                          "Microsoft",
-                                          "RSA Laboratories",
-                                          "IEEE",
-                                          "NIST only"
-                                      ],
-                          "correct":  1,
-                          "description":  "PKCS standards were published by RSA Laboratories.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "PKCS",
-                                       "Standards"
-                                   ]
-                      },
-                      {
-                          "id":  69,
-                          "question":  "FIPS standards are mainly associated with:",
-                          "options":  [
-                                          "Government cryptographic compliance",
-                                          "DNS routing",
-                                          "Wireless networking",
-                                          "Email formatting"
-                                      ],
-                          "correct":  0,
-                          "description":  "FIPS standards are associated with government cryptographic compliance requirements.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "FIPS",
-                                       "Compliance"
-                                   ]
-                      },
-                      {
-                          "id":  70,
-                          "question":  "What does non-repudiation prevent?",
-                          "options":  [
-                                          "Data encryption",
-                                          "Denial of performing an action",
-                                          "Password reuse",
-                                          "Malware execution"
-                                      ],
-                          "correct":  1,
-                          "description":  "Non-repudiation prevents a party from credibly denying an action they performed.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Non-Repudiation"
-                                   ]
-                      },
-                      {
-                          "id":  71,
-                          "question":  "Which email client mentioned in syllabus supports certificate-based email security?",
-                          "options":  [
-                                          "VLC",
-                                          "Thunderbird",
-                                          "Wireshark",
-                                          "Docker"
-                                      ],
-                          "correct":  1,
-                          "description":  "Thunderbird supports certificate-based email signing and encryption.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Thunderbird",
-                                       "Email Security"
-                                   ]
-                      },
-                      {
-                          "id":  72,
-                          "question":  "Which protocol is commonly used by directory services?",
-                          "options":  [
-                                          "LDAP",
-                                          "ICMP",
-                                          "FTP",
-                                          "ARP"
-                                      ],
-                          "correct":  0,
-                          "description":  "LDAP is commonly used by directory services.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "LDAP",
-                                       "Directory Services"
-                                   ]
-                      },
-                      {
-                          "id":  73,
-                          "question":  "Active Directory mainly manages:",
-                          "options":  [
-                                          "Cryptographic hashes only",
-                                          "Centralized users and resources",
-                                          "Packet switching",
-                                          "File compression"
-                                      ],
-                          "correct":  1,
-                          "description":  "Active Directory centrally manages users, computers, groups, and resources.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Active Directory"
-                                   ]
-                      },
-                      {
-                          "id":  74,
-                          "question":  "In blockchain, each block is linked using:",
-                          "options":  [
-                                          "DNS records",
-                                          "Hash values",
-                                          "MAC addresses",
-                                          "Session cookies"
-                                      ],
-                          "correct":  1,
-                          "description":  "Blockchain links blocks using hash values.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Blockchain",
-                                       "Hashing"
-                                   ]
-                      },
-                      {
-                          "id":  75,
-                          "question":  "Which issue can improper TLS configuration cause?",
-                          "options":  [
-                                          "MITM attacks",
-                                          "Faster encryption",
-                                          "Reduced certificate usage",
-                                          "Hardware failure"
-                                      ],
-                          "correct":  0,
-                          "description":  "Improper TLS configuration can make man-in-the-middle attacks easier.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "TLS",
-                                       "MITM"
-                                   ]
-                      },
-                      {
-                          "id":  76,
-                          "question":  "Which protocol is primarily used for secure email signing and encryption?",
-                          "options":  [
-                                          "S/MIME",
-                                          "DHCP",
-                                          "SNMP",
-                                          "ICMP"
-                                      ],
-                          "correct":  0,
-                          "description":  "S/MIME is used for secure email signing and encryption.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "S/MIME",
-                                       "Email Security"
-                                   ]
-                      },
-                      {
-                          "id":  77,
-                          "question":  "Which OpenSSL feature is commonly used in PKI labs?",
-                          "options":  [
-                                          "Packet sniffing",
-                                          "Certificate generation",
-                                          "Port scanning",
-                                          "Routing updates"
-                                      ],
-                          "correct":  1,
-                          "description":  "OpenSSL is commonly used in PKI labs for certificate generation.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "OpenSSL",
-                                       "Certificates"
-                                   ]
-                      },
-                      {
-                          "id":  78,
-                          "question":  "Which statement about digital signatures is TRUE?",
-                          "options":  [
-                                          "They hide plaintext data",
-                                          "They verify sender authenticity",
-                                          "They replace hashing completely",
-                                          "They require only symmetric keys"
-                                      ],
-                          "correct":  1,
-                          "description":  "Digital signatures verify sender authenticity and data integrity.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Digital Signatures"
-                                   ]
-                      },
-                      {
-                          "id":  79,
-                          "question":  "Which of the following best describes Zero Trust?",
-                          "options":  [
-                                          "Trust internal users automatically",
-                                          "Verify continuously before granting access",
-                                          "Disable authentication checks",
-                                          "Avoid encryption overhead"
-                                      ],
-                          "correct":  1,
-                          "description":  "Zero Trust requires continuous verification before access is granted.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Zero Trust"
-                                   ]
-                      },
-                      {
-                          "id":  80,
-                          "question":  "Which cryptographic issue occurs when weak random numbers are used?",
-                          "options":  [
-                                          "Stronger certificates",
-                                          "Predictable keys",
-                                          "Better integrity",
-                                          "Faster OCSP responses"
-                                      ],
-                          "correct":  1,
-                          "description":  "Weak randomness can produce predictable cryptographic keys.",
-                          "difficulty":  "Easy",
-                          "tags":  [
-                                       "Randomness",
-                                       "Key Management"
-                                   ]
-                      }
-                  ],
-    "topic":  "PKI Set 1"
+{
+  "version": "3",
+  "title": "PKI Set 1",
+  "subject": "PKI",
+  "stage": "Topic Wise MCQ",
+  "topic": "Set 1",
+  "durationMinutes": 249,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does PKI stand for?",
+      "options": [
+        "Personal Knowledge Identification",
+        "Public Key Infrastructure",
+        "Private Key Integration",
+        "Protected Key Interface"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Public Key Infrastructure.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which key is used for encryption in a PKI system?",
+      "options": [
+        "Public Key",
+        "Private Key",
+        "Session Key",
+        "Symmetric Key"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Public Key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is the purpose of a digital certificate in PKI?",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Encryption",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which standard is commonly used for the digital signature in PKI?",
+      "options": [
+        "SHA-1",
+        "MD5",
+        "RSA",
+        "AES"
+      ],
+      "correct": 2,
+      "description": "Correct answer: RSA.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is the role of a Certificate Authority (CA) in PKI?",
+      "options": [
+        "Generates encryption keys",
+        "Issues and verifies digital certificates",
+        "Manages network firewalls",
+        "Monitors system performance"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Issues and verifies digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is a Certificate Revocation List (CRL) used for in PKI?",
+      "options": [
+        "Encrypting data",
+        "Verifying digital signatures",
+        "Revoking compromised certificates",
+        "Generating public keys"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Revoking compromised certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which protocol is commonly used for secure key exchange in PKI?",
+      "options": [
+        "FTP",
+        "SSH",
+        "SSL/TLS",
+        "HTTP"
+      ],
+      "correct": 2,
+      "description": "Correct answer: SSL/TLS.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of a key escrow in PKI?",
+      "options": [
+        "Recovering lost passwords",
+        "Storing private keys securely",
+        "Providing backup copies of encryption keys",
+        "Authenticating users"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Providing backup copies of encryption keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the main advantage of using a hardware security module (HSM) in PKI?",
+      "options": [
+        "Faster encryption speed",
+        "Enhanced key security",
+        "Improved network connectivity",
+        "Lower cost"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Enhanced key security.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is NOT a component of PKI?",
+      "options": [
+        "Registration Authority (RA)",
+        "Certificate Revocation List (CRL)",
+        "Simple Mail Transfer Protocol (SMTP)",
+        "Public Key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Simple Mail Transfer Protocol (SMTP).",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What is the primary goal of information security?",
+      "options": [
+        "Confidentiality",
+        "Availability",
+        "Integrity",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is an example of a physical security control?",
+      "options": [
+        "Firewall",
+        "Antivirus software",
+        "Biometric access control",
+        "Intrusion Detection System (IDS)"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Biometric access control.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What is the role of a firewall in information security?",
+      "options": [
+        "Encrypts data",
+        "Monitors network traffic",
+        "Detects and removes viruses",
+        "Manages user authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Monitors network traffic.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Which authentication factor is something you know?",
+      "options": [
+        "Biometric data",
+        "Smart card",
+        "Password",
+        "Token"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Password.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of penetration testing in information security?",
+      "options": [
+        "Monitoring network traffic",
+        "Identifying vulnerabilities",
+        "Encrypting communication",
+        "Managing access control"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Identifying vulnerabilities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Which encryption algorithm is commonly used for securing wireless networks?",
+      "options": [
+        "RSA",
+        "DES",
+        "WEP",
+        "AES"
+      ],
+      "correct": 3,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "What does the acronym CIA stand for in information security?",
+      "options": [
+        "Central Intelligence Agency",
+        "Computer Incident Analysis",
+        "Confidentiality, Integrity, Availability",
+        "Cryptographic Information Assurance"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Confidentiality, Integrity, Availability.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is a common social engineering attack?",
+      "options": [
+        "DoS Attack",
+        "Man-in-the-Middle Attack",
+        "Phishing",
+        "SQL Injection"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Phishing.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of a Virtual Private Network (VPN) in information security?",
+      "options": [
+        "Preventing physical attacks",
+        "Securing wireless networks",
+        "Providing secure communication over the internet",
+        "Detecting malware"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Providing secure communication over the internet.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "What is the principle of least privilege in information security?",
+      "options": [
+        "Granting users the maximum level of access",
+        "Restricting users to the minimum level of access needed",
+        "Encrypting all communication",
+        "Regularly changing passwords"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Restricting users to the minimum level of access needed.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Which type of attack involves flooding a network with excessive traffic to make it unavailable?",
+      "options": [
+        "Phishing",
+        "DoS (Denial of Service) Attack",
+        "Man-in-the-Middle Attack",
+        "SQL Injection"
+      ],
+      "correct": 1,
+      "description": "Correct answer: DoS (Denial of Service) Attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "What is the primary goal of a social engineering attack?",
+      "options": [
+        "Gaining unauthorized access to systems",
+        "Encrypting data",
+        "Spreading malware",
+        "Manipulating individuals to divulge sensitive information"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Manipulating individuals to divulge sensitive information.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Which type of malware disguises itself as legitimate software?",
+      "options": [
+        "Trojan Horse",
+        "Worm",
+        "Virus",
+        "Spyware"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Trojan Horse.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "What does a firewall primarily protect against?",
+      "options": [
+        "Phishing attacks",
+        "Unauthorized access",
+        "Malware infection",
+        "Data encryption"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Unauthorized access.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Which security threat exploits software vulnerabilities to gain unauthorized access or control over a system?",
+      "options": [
+        "Malware",
+        "Zero-Day Exploit",
+        "DoS Attack",
+        "Phishing"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Zero-Day Exploit.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of an Intrusion Detection System (IDS)?",
+      "options": [
+        "Preventing malware infections",
+        "Identifying and responding to suspicious activities",
+        "Encrypting communication",
+        "Managing access control"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Identifying and responding to suspicious activities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which attack involves intercepting and altering communication between two parties without their knowledge?",
+      "options": [
+        "Man-in-the-Middle Attack",
+        "DoS Attack",
+        "Cross-Site Scripting (XSS)",
+        "Brute Force Attack"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Man-in-the-Middle Attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "What is a common method for protecting against SQL injection attacks?",
+      "options": [
+        "Using firewalls",
+        "Regularly changing passwords",
+        "Input validation and parameterized queries",
+        "Implementing biometric authentication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Input validation and parameterized queries.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "What does the term \"Pharming\" refer to in the context of security threats?",
+      "options": [
+        "Spoofing website addresses to redirect users",
+        "Harvesting and manipulating data packets",
+        "Spreading malware through infected email attachments",
+        "Manipulating individuals to reveal sensitive information"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Spoofing website addresses to redirect users.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which security measure involves the use of unique identifiers to control access to systems or data?",
+      "options": [
+        "Encryption",
+        "Authentication",
+        "Authorization",
+        "Biometric Access Control"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Biometric Access Control.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "What is encryption?",
+      "options": [
+        "The process of converting data into a code",
+        "Making data visible to unauthorized parties",
+        "Storing data in plaintext form",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: The process of converting data into a code.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "What is a cryptographic key used for in encryption?",
+      "options": [
+        "To make data publicly accessible",
+        "To speed up the encryption process",
+        "To encrypt and decrypt data",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To encrypt and decrypt data.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Which type of encryption uses the same key for both encryption and decryption?",
+      "options": [
+        "Asymmetric encryption",
+        "Public-key encryption",
+        "Symmetric encryption",
+        "Two-factor authentication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Symmetric encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of a digital signature in encryption?",
+      "options": [
+        "Encrypting messages",
+        "Ensuring the authenticity and integrity of a message",
+        "Generating random keys",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Ensuring the authenticity and integrity of a message.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Which cryptographic protocol is commonly used for securing web communication?",
+      "options": [
+        "IPsec",
+        "HTTPS",
+        "SSH",
+        "FTPS"
+      ],
+      "correct": 1,
+      "description": "Correct answer: HTTPS.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "What is the role of a hash function in encryption?",
+      "options": [
+        "Encrypting data",
+        "Generating random keys",
+        "Transforming data into a fixed-size string",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Transforming data into a fixed-size string.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "In public-key cryptography, which key is used for encryption?",
+      "options": [
+        "Private key",
+        "Secret key",
+        "Public key",
+        "Symmetric key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Public key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "What does SSL stand for in the context of encryption?",
+      "options": [
+        "Secure Socket Layer",
+        "Symmetric Signature Language",
+        "Secret Sharing Link",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Secure Socket Layer.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "What is the main advantage of using end-to-end encryption?",
+      "options": [
+        "Faster communication",
+        "Increased network bandwidth",
+        "Enhanced security and privacy",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Enhanced security and privacy.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Which encryption method involves a pair of keys – public and private?",
+      "options": [
+        "Symmetric encryption",
+        "Asymmetric encryption",
+        "Hashing",
+        "SSL/TLS"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Asymmetric encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "What is file encryption?",
+      "options": [
+        "Encrypting the entire computer",
+        "Encrypting individual files or folders",
+        "Deleting files permanently",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Encrypting individual files or folders.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Which benefit does file encryption provide?",
+      "options": [
+        "Increased file size",
+        "Protection against unauthorized access",
+        "Faster file access",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Protection against unauthorized access.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of encrypting sensitive files?",
+      "options": [
+        "To reduce file size",
+        "To make files more visually appealing",
+        "To protect confidential information from unauthorized access",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To protect confidential information from unauthorized access.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "How does file encryption affect performance?",
+      "options": [
+        "Speeds up file access",
+        "Slows down file access",
+        "No impact on file access speed",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Slows down file access.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "Which is a popular algorithm used in file encryption?",
+      "options": [
+        "RSA",
+        "AES",
+        "MD5",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "What is the key difference between file encryption and disk encryption?",
+      "options": [
+        "File encryption only encrypts filenames",
+        "Disk encryption encrypts the entire hard drive",
+        "File encryption is faster than disk encryption",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Disk encryption encrypts the entire hard drive.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "In file encryption, what is a passphrase used for?",
+      "options": [
+        "Generating cryptographic keys",
+        "Encrypting files",
+        "Authenticating users",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Generating cryptographic keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Can encrypted files be decrypted without the correct key or passphrase?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only in certain circumstances",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: No, never.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "What is the primary goal of file encryption?",
+      "options": [
+        "Increasing file transfer speed",
+        "Protecting file integrity",
+        "Hiding file extensions",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Protecting file integrity.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "Which is a potential drawback of file encryption?",
+      "options": [
+        "Enhanced file security",
+        "Increased risk of data loss if the key is lost",
+        "Improved file access speed",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Increased risk of data loss if the key is lost.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "What is folder encryption?",
+      "options": [
+        "Encrypting individual files",
+        "Encrypting an entire computer",
+        "Encrypting a group of files within a folder",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Encrypting a group of files within a folder.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "How does graphical folder encryption differ from using ciphers?",
+      "options": [
+        "Graphical encryption uses visual patterns, while cipher-based encryption uses algorithms",
+        "Cipher-based encryption relies on images, while graphical encryption uses text",
+        "Both methods are identical",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Graphical encryption uses visual patterns, while cipher-based encryption uses algorithms.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "What is the advantage of using ciphers in folder encryption?",
+      "options": [
+        "Faster encryption process",
+        "More secure encryption",
+        "Improved visual appeal",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: More secure encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "In graphical folder encryption, what is often used as the basis for creating visual patterns?",
+      "options": [
+        "Random colors",
+        "File names",
+        "Icons",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: File names.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "How can someone access an encrypted folder using a cipher-based method?",
+      "options": [
+        "Decrypting the folder with the correct cipher key",
+        "Guessing the visual pattern",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Both A and B.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "What precaution should be taken when using graphical folder encryption?",
+      "options": [
+        "Avoiding complex visual patterns",
+        "Keeping a backup of the cipher key",
+        "Using easily recognizable icons",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Keeping a backup of the cipher key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Can graphical folder encryption be applied to external drives and cloud storage?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Depends on the encryption method",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Depends on the encryption method.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "How does graphical folder encryption contribute to user-friendly encryption methods?",
+      "options": [
+        "It requires advanced technical skills",
+        "It provides a visually intuitive approach to encryption",
+        "It slows down the encryption process",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It provides a visually intuitive approach to encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "What is a potential limitation of graphical folder encryption?",
+      "options": [
+        "Difficulty in creating visual patterns",
+        "Limited security compared to cipher-based methods",
+        "Incompatibility with certain file types",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Limited security compared to cipher-based methods.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "How does graphical folder encryption enhance user experience?",
+      "options": [
+        "It simplifies the encryption process",
+        "It introduces complexity and confusion",
+        "It slows down file access",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: It simplifies the encryption process.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "What is the primary goal of cryptography?",
+      "options": [
+        "Data integrity",
+        "Data confidentiality",
+        "Data availability",
+        "Data authenticity"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Data confidentiality.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "Which cryptographic concept ensures that a message has not been altered during transmission?",
+      "options": [
+        "Encryption",
+        "Hashing",
+        "Decryption",
+        "Salting"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Hashing.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "What is the purpose of a digital signature in cryptography?",
+      "options": [
+        "Data encryption",
+        "Data integrity verification",
+        "Key exchange",
+        "Random number generation"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Data integrity verification.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "Which cryptographic attack involves capturing and analyzing data to reveal sensitive information?",
+      "options": [
+        "Brute force attack",
+        "Man-in-the-middle attack",
+        "Cryptanalysis",
+        "Side-channel attack"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Cryptanalysis.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "What does the term \"plaintext\" refer to in cryptography?",
+      "options": [
+        "Encrypted data",
+        "Original, unencrypted data",
+        "Public key",
+        "Private key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Original, unencrypted data.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "In symmetric key cryptography, how many keys are used for the encryption and decryption processes?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correct": 0,
+      "description": "Correct answer: One.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "What role does the Initialization Vector (IV) play in cryptographic algorithms?",
+      "options": [
+        "Authenticating messages",
+        "Ensuring data integrity",
+        "Providing randomness in encryption",
+        "Verifying digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Providing randomness in encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "Which cryptographic protocol is commonly used for secure communication over the internet?",
+      "options": [
+        "SSL/TLS",
+        "UDP",
+        "HTTP",
+        "SMTP"
+      ],
+      "correct": 0,
+      "description": "Correct answer: SSL/TLS.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "What is the purpose of a nonce in cryptographic systems?",
+      "options": [
+        "Ensuring key confidentiality",
+        "Preventing replay attacks",
+        "Verifying digital signatures",
+        "Generating random numbers"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Preventing replay attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "Which type of cryptographic algorithm is commonly used for securely storing passwords?",
+      "options": [
+        "Symmetric encryption",
+        "Asymmetric encryption",
+        "Hashing",
+        "Digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Hashing.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 71,
+      "question": "What type of key is used in symmetric key encryption?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Shared key",
+        "Asymmetric key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Shared key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 72,
+      "question": "Which symmetric encryption algorithm is widely used for securing data transmission over the internet?",
+      "options": [
+        "DES (Data Encryption Standard)",
+        "AES (Advanced Encryption Standard)",
+        "RSA (Rivest–Shamir–Adleman)",
+        "ECC (Elliptic Curve Cryptography)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: AES (Advanced Encryption Standard).",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 73,
+      "question": "What is a characteristic of a block cipher?",
+      "options": [
+        "Encrypts one bit at a time",
+        "Encrypts a fixed-size block of data",
+        "Uses a different key for each block",
+        "Only supports encryption, not decryption"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Encrypts a fixed-size block of data.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "Which of the following is an example of a stream cipher?",
+      "options": [
+        "AES",
+        "DES",
+        "RC4",
+        "RSA"
+      ],
+      "correct": 2,
+      "description": "Correct answer: RC4.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "In asymmetric key encryption, how many keys are used for the encryption and decryption processes?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Two.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "Which asymmetric encryption algorithm is commonly used for secure key exchange in internet protocols like TLS?",
+      "options": [
+        "RSA",
+        "ECC",
+        "Diffie-Hellman",
+        "ElGamal"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Diffie-Hellman.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "What is a key characteristic of the Diffie-Hellman key exchange algorithm?",
+      "options": [
+        "Symmetric key generation",
+        "Public key distribution",
+        "Secure digital signatures",
+        "One-way encryption"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Public key distribution.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 78,
+      "question": "Which cipher operates on blocks of data and rearranges the bits within the block?",
+      "options": [
+        "Substitution cipher",
+        "Transposition cipher",
+        "Feistel cipher",
+        "Vigenère cipher"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Feistel cipher.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "What is the primary advantage of using elliptic curve cryptography (ECC) over traditional asymmetric algorithms?",
+      "options": [
+        "Faster computation",
+        "Longer key lengths",
+        "Simplicity of implementation",
+        "Resistance to quantum attacks"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Faster computation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 80,
+      "question": "In public-key cryptography, which key is kept secret and known only to the owner?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Shared key",
+        "Session key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 81,
+      "question": "What is the purpose of a key generator in cryptographic systems?",
+      "options": [
+        "To encrypt data",
+        "To decrypt data",
+        "To generate secure keys",
+        "To create digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To generate secure keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 82,
+      "question": "What is a key length in cryptography?",
+      "options": [
+        "The physical size of the key",
+        "The number of characters in the key",
+        "The number of bits in the key",
+        "The encryption strength of the key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: The number of bits in the key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 83,
+      "question": "Which key generation method involves randomly selecting a key from the entire key space?",
+      "options": [
+        "Deterministic key generation",
+        "Pseudo-random key generation",
+        "True random key generation",
+        "Symmetric key generation"
+      ],
+      "correct": 2,
+      "description": "Correct answer: True random key generation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 84,
+      "question": "What is the primary challenge in key distribution for symmetric key cryptography?",
+      "options": [
+        "Ensuring key confidentiality",
+        "Preventing key loss",
+        "Securely sharing keys between parties",
+        "Generating random keys"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Securely sharing keys between parties.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 85,
+      "question": "Which key exchange protocol is commonly used to establish a secure communication channel over an insecure network?",
+      "options": [
+        "Diffie-Hellman",
+        "RSA",
+        "ECC",
+        "SHA-256"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Diffie-Hellman.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 86,
+      "question": "In public-key cryptography, how is the public key shared with others?",
+      "options": [
+        "Through secure key exchange",
+        "By publishing it openly",
+        "Through a digital signature",
+        "Using a Diffie-Hellman exchange"
+      ],
+      "correct": 1,
+      "description": "Correct answer: By publishing it openly.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 87,
+      "question": "What is a digital certificate used for in the context of key management?",
+      "options": [
+        "To encrypt messages",
+        "To prove identity",
+        "To generate random keys",
+        "To perform hash functions"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To prove identity.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 88,
+      "question": "What does the term \"key escrow\" refer to in key management?",
+      "options": [
+        "Storing keys in a secure location",
+        "Distributing keys to multiple parties",
+        "Backup of keys with a trusted third party",
+        "Random key generation"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Backup of keys with a trusted third party.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 89,
+      "question": "What is the purpose of a nonce in key generation?",
+      "options": [
+        "Ensuring key confidentiality",
+        "Providing randomness in key generation",
+        "Verifying digital signatures",
+        "Preventing replay attacks"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Providing randomness in key generation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 90,
+      "question": "What is the primary function of a cipher in the context of cryptography?",
+      "options": [
+        "To generate keys",
+        "To secure communication channels",
+        "To encrypt and decrypt messages",
+        "To create digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To encrypt and decrypt messages.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 91,
+      "question": "What is the primary purpose of the Diffie-Hellman key exchange?",
+      "options": [
+        "Data encryption",
+        "Key generation",
+        "Digital signatures",
+        "Authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Key generation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 92,
+      "question": "Which security aspect does Diffie-Hellman key exchange address?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Key exchange"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Key exchange.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 93,
+      "question": "In the Diffie-Hellman key exchange, what is exchanged between the parties?",
+      "options": [
+        "Private keys",
+        "Public keys",
+        "Symmetric keys",
+        "Digital signatures"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Public keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 94,
+      "question": "What is the vulnerability of Diffie-Hellman key exchange to man-in-the-middle attacks?",
+      "options": [
+        "Lack of authentication",
+        "Weak encryption",
+        "Slow key generation",
+        "Limited key length"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Lack of authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 95,
+      "question": "Which mathematical problem forms the basis of the security of Diffie-Hellman?",
+      "options": [
+        "Prime factorization",
+        "Quadratic residues",
+        "Discrete logarithm",
+        "Elliptic curve cryptography"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Discrete logarithm.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 96,
+      "question": "What is the key advantage of using Diffie-Hellman key exchange over traditional key exchange methods?",
+      "options": [
+        "Faster key generation",
+        "Simplicity",
+        "Perfect forward secrecy",
+        "Larger key length"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Perfect forward secrecy.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 97,
+      "question": "In a Diffie-Hellman exchange, what is kept secret by each party?",
+      "options": [
+        "Public key",
+        "Symmetric key",
+        "Private key",
+        "Shared key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 98,
+      "question": "Which Diffie-Hellman variant provides resistance against quantum attacks?",
+      "options": [
+        "DHKE-512",
+        "Ephemeral DH",
+        "DH with elliptic curves",
+        "DH with large prime numbers"
+      ],
+      "correct": 2,
+      "description": "Correct answer: DH with elliptic curves.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 99,
+      "question": "What is the main limitation of Diffie-Hellman key exchange?",
+      "options": [
+        "Susceptibility to brute-force attacks",
+        "Lack of key exchange",
+        "Vulnerability to quantum attacks",
+        "Dependency on prime numbers"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Vulnerability to quantum attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 100,
+      "question": "In Diffie-Hellman, what role does the generator play?",
+      "options": [
+        "Encrypts data",
+        "Generates public keys",
+        "Facilitates key exchange",
+        "Authenticates parties"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Facilitates key exchange.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 101,
+      "question": "What is the primary purpose of the SHA algorithm?",
+      "options": [
+        "Data encryption",
+        "Key generation",
+        "Hashing",
+        "Digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Hashing.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 102,
+      "question": "Which version of SHA is commonly used for cryptographic applications?",
+      "options": [
+        "SHA-1",
+        "SHA-256",
+        "SHA-512",
+        "SHA-3"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SHA-256.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 103,
+      "question": "What is the key characteristic of a secure hash function?",
+      "options": [
+        "Reversibility",
+        "Collision resistance",
+        "Symmetry",
+        "Variable output length"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Collision resistance.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 104,
+      "question": "Which of the following is a weakness of SHA-1?",
+      "options": [
+        "Fast computation",
+        "Resistance to collision attacks",
+        "Vulnerability to birthday attacks",
+        "Support for variable output length"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Vulnerability to birthday attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 105,
+      "question": "What is the purpose of the HMAC (Hash-based Message Authentication Code) function?",
+      "options": [
+        "Data encryption",
+        "Key exchange",
+        "Message authentication",
+        "Digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Message authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 106,
+      "question": "In HMAC, what role does the secret key play?",
+      "options": [
+        "Generates hash values",
+        "Verifies digital signatures",
+        "Authenticates the message",
+        "Encrypts the data"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authenticates the message.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 107,
+      "question": "Which SHA variant is often used in digital signatures?",
+      "options": [
+        "SHA-1",
+        "SHA-256",
+        "SHA-512",
+        "SHA-3"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SHA-256.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 108,
+      "question": "What is a rainbow table attack in the context of hash functions?",
+      "options": [
+        "Brute-force attack",
+        "Collision attack",
+        "Precomputed table attack",
+        "Man-in-the-middle attack"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Precomputed table attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 109,
+      "question": "Which property of SHA makes it suitable for checksum verification?",
+      "options": [
+        "Reversibility",
+        "Collision resistance",
+        "Speed",
+        "Deterministic output"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Deterministic output.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 110,
+      "question": "In SHA, what is the purpose of the initialization vector (IV)?",
+      "options": [
+        "Adds entropy to the hash",
+        "Prevents birthday attacks",
+        "Strengthens collision resistance",
+        "Enhances output randomness"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Adds entropy to the hash.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 111,
+      "question": "What is the primary purpose of HMAC?",
+      "options": [
+        "Data encryption",
+        "Key generation",
+        "Hashing",
+        "Message authentication"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Message authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 112,
+      "question": "What distinguishes HMAC from traditional hash functions?",
+      "options": [
+        "Variable output length",
+        "Use of a secret key",
+        "Collision resistance",
+        "Reversibility"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Use of a secret key.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 113,
+      "question": "In HMAC, what role does the hash function play?",
+      "options": [
+        "Generates the secret key",
+        "Verifies the message",
+        "Computes the hash",
+        "Encrypts the data"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Computes the hash.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 114,
+      "question": "Why is the use of a secret key important in HMAC?",
+      "options": [
+        "Ensures variable output length",
+        "Enhances collision resistance",
+        "Provides authentication",
+        "Supports reversible hashing"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Provides authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 115,
+      "question": "What vulnerability does HMAC address in comparison to traditional hash functions?",
+      "options": [
+        "Birthday attacks",
+        "Man-in-the-middle attacks",
+        "Length extension attacks",
+        "Collision attacks"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Length extension attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 116,
+      "question": "In HMAC, how is the secret key shared between the communicating parties?",
+      "options": [
+        "It is transmitted in the clear",
+        "It is generated by the hash function",
+        "It is negotiated and agreed upon",
+        "It is embedded in the public key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: It is negotiated and agreed upon.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 117,
+      "question": "What is the purpose of the inner and outer padding in HMAC?",
+      "options": [
+        "Adds randomness to the hash",
+        "Mitigates birthday attacks",
+        "Achieves variable output length",
+        "Ensures a consistent block size"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Ensures a consistent block size.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 118,
+      "question": "Which property of HMAC ensures that changing a single bit in the input will produce a substantially different output?",
+      "options": [
+        "Collision resistance",
+        "Avalanche effect",
+        "Deterministic output",
+        "Variable output length"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Avalanche effect.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 119,
+      "question": "In HMAC, what is the consequence of using a weak hash function?",
+      "options": [
+        "Loss of confidentiality",
+        "Reduced collision resistance",
+        "Weakened authentication",
+        "Ineffective key generation"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Weakened authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 120,
+      "question": "How does HMAC provide security against brute-force attacks?",
+      "options": [
+        "It uses a long initialization vector",
+        "It requires a strong secret key",
+        "It employs variable output length",
+        "It uses a reversible hashing algorithm"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It requires a strong secret key.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 121,
+      "question": "What is a brute-force attack against encryption?",
+      "options": [
+        "Exploiting implementation flaws",
+        "Attempting all possible keys",
+        "Intercepting communication",
+        "Modifying ciphertext"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Attempting all possible keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 122,
+      "question": "In a man-in-the-middle attack, what does the attacker intercept?",
+      "options": [
+        "Plaintext",
+        "Ciphertext",
+        "Encryption key",
+        "Initialization vector"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Ciphertext.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 123,
+      "question": "What is the primary objective of a chosen plaintext attack?",
+      "options": [
+        "Interception of ciphertext",
+        "Recovery of the encryption key",
+        "Modification of ciphertext",
+        "Interception of plaintext"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Recovery of the encryption key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 124,
+      "question": "What is the difference between a passive and an active attack?",
+      "options": [
+        "Active attacks modify data, while passive attacks only observe",
+        "Passive attacks use brute force, while active attacks use social engineering",
+        "Active attacks are faster than passive attacks",
+        "Passive attacks are more dangerous than active attacks"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Active attacks modify data, while passive attacks only observe.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 125,
+      "question": "What vulnerability does a chosen ciphertext attack exploit?",
+      "options": [
+        "Weakness in the encryption algorithm",
+        "Lack of authentication",
+        "Manipulation of the key exchange process",
+        "Inability to handle large amounts of data"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Lack of authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 126,
+      "question": "What is the primary purpose of a birthday attack against encryption?",
+      "options": [
+        "Recovering the encryption key",
+        "Finding collisions in hash functions",
+        "Intercepting plaintext",
+        "Modifying ciphertext"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Finding collisions in hash functions.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 127,
+      "question": "Which type of attack targets the random number generation in cryptographic protocols?",
+      "options": [
+        "Birthday attack",
+        "Replay attack",
+        "Side-channel attack",
+        "Padding oracle attack"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Side-channel attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 128,
+      "question": "What is the objective of a chosen-plaintext attack?",
+      "options": [
+        "Intercepting ciphertext",
+        "Recovery of the encryption key",
+        "Modification of ciphertext",
+        "Interception of plaintext"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Interception of plaintext.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 129,
+      "question": "How does a rainbow table attack work against encrypted passwords?",
+      "options": [
+        "Exploits weak key exchange",
+        "Targets the encryption algorithm",
+        "Precomputes hash values for possible passwords",
+        "Modifies the ciphertext directly"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Precomputes hash values for possible passwords.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 130,
+      "question": "What is the primary defense against a brute-force attack on encryption?",
+      "options": [
+        "Use of strong encryption algorithms",
+        "Implementation of firewall rules",
+        "Implementation of intrusion detection systems",
+        "Use of long and complex passwords"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Use of strong encryption algorithms.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 131,
+      "question": "What is a digital signature?",
+      "options": [
+        "A scanned image of a handwritten signature",
+        "A unique identifier for a digital document",
+        "A cryptographic technique to verify the authenticity of a digital message",
+        "A file attachment in an email"
+      ],
+      "correct": 2,
+      "description": "Correct answer: A cryptographic technique to verify the authenticity of a digital message.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 132,
+      "question": "Which key is used to create a digital signature?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Symmetric key",
+        "Session key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 133,
+      "question": "What does a digital signature provide?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 134,
+      "question": "In a digital signature, what is being signed?",
+      "options": [
+        "The entire document",
+        "A hash of the document",
+        "The sender's public key",
+        "The recipient's public key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A hash of the document.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 135,
+      "question": "What role does hashing play in digital signatures?",
+      "options": [
+        "Ensures confidentiality",
+        "Generates the public key",
+        "Verifies the integrity of the message",
+        "Encrypts the message"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Verifies the integrity of the message.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 136,
+      "question": "Which algorithm is commonly used for digital signatures?",
+      "options": [
+        "MD5",
+        "SHA-256",
+        "AES",
+        "DES"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SHA-256.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 137,
+      "question": "How does a digital signature differ from a handwritten signature?",
+      "options": [
+        "Digital signatures are more secure",
+        "Digital signatures can be easily copied",
+        "Handwritten signatures use encryption",
+        "Handwritten signatures require a pen and paper"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Digital signatures are more secure.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 138,
+      "question": "What is the purpose of timestamping in digital signatures?",
+      "options": [
+        "To indicate the time the document was created",
+        "To prevent unauthorized access",
+        "To verify the expiration date of the signature",
+        "To provide additional encryption"
+      ],
+      "correct": 0,
+      "description": "Correct answer: To indicate the time the document was created.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 139,
+      "question": "Can a digital signature be revoked?",
+      "options": [
+        "Yes, through a key exchange",
+        "No, once created, it cannot be revoked",
+        "Yes, through a Certificate Revocation List (CRL)",
+        "No, digital signatures are permanent"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Yes, through a Certificate Revocation List (CRL).",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 140,
+      "question": "What is a digital certificate?",
+      "options": [
+        "A file format for storing digital images",
+        "A cryptographic key for encryption",
+        "A digital identity that includes a public key and information about the key owner",
+        "A type of electronic signature"
+      ],
+      "correct": 2,
+      "description": "Correct answer: A digital identity that includes a public key and information about the key owner.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 141,
+      "question": "What is the purpose of a digital certificate?",
+      "options": [
+        "To encrypt data",
+        "To verify the authenticity of a message or user",
+        "To compress files",
+        "To create digital signatures"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To verify the authenticity of a message or user.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 142,
+      "question": "Which organization issues digital certificates?",
+      "options": [
+        "Internet Service Providers (ISPs)",
+        "Certification Authority (CA)",
+        "Internet Corporation for Assigned Names and Numbers (ICANN)",
+        "National Security Agency (NSA)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Certification Authority (CA).",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 143,
+      "question": "What information does a digital certificate typically contain?",
+      "options": [
+        "Only the public key",
+        "Only the private key",
+        "Public key, owner's name, expiration date, and the digital signature of the CA",
+        "Only the owner's name"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Public key, owner's name, expiration date, and the digital signature of the CA.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 144,
+      "question": "How is a digital certificate linked to a public key?",
+      "options": [
+        "By encrypting the public key",
+        "By hashing the public key",
+        "By digitally signing the public key with the CA's private key",
+        "By embedding the public key in the certificate"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By digitally signing the public key with the CA's private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 145,
+      "question": "What is the role of the Registration Authority (RA) in the issuance of digital certificates?",
+      "options": [
+        "Approving digital certificates",
+        "Verifying the identity of the certificate owner",
+        "Issuing digital certificates",
+        "Managing Certificate Revocation Lists (CRLs)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Verifying the identity of the certificate owner.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 146,
+      "question": "Can a digital certificate expire?",
+      "options": [
+        "No, it is valid indefinitely",
+        "Yes, but only if manually revoked",
+        "Yes, they have a validity period",
+        "No, it expires only when the private key is compromised"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Yes, they have a validity period.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 147,
+      "question": "How is the integrity of a digital certificate maintained?",
+      "options": [
+        "By encrypting the entire certificate",
+        "By hashing the certificate and signing it with the CA's private key",
+        "By including a timestamp in the certificate",
+        "By using a digital watermark"
+      ],
+      "correct": 1,
+      "description": "Correct answer: By hashing the certificate and signing it with the CA's private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 148,
+      "question": "What is the Public Key Infrastructure (PKI)?",
+      "options": [
+        "A system for managing public keys and digital certificates",
+        "A type of encryption algorithm",
+        "A digital signature standard",
+        "A secure communication protocol"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A system for managing public keys and digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 149,
+      "question": "How can a user verify the authenticity of a digital certificate?",
+      "options": [
+        "By checking the owner's email address",
+        "By verifying the certificate's expiration date",
+        "By validating the digital signature with the CA's public key",
+        "By contacting the Internet Service Provider (ISP)"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By validating the digital signature with the CA's public key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 150,
+      "question": "What is a Trust Model?",
+      "options": [
+        "A model of trust in interpersonal relationships",
+        "A framework for establishing and managing trust in a digital environment",
+        "A mathematical algorithm for encryption",
+        "A type of digital certificate"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A framework for establishing and managing trust in a digital environment.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 151,
+      "question": "In a Trust Model, what is the role of a Trust Anchor?",
+      "options": [
+        "A secure encryption key",
+        "The root of trust in the model",
+        "A type of digital signature",
+        "The person who manages the trust relationships"
+      ],
+      "correct": 1,
+      "description": "Correct answer: The root of trust in the model.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 152,
+      "question": "What are the common components of a Trust Model?",
+      "options": [
+        "Only Trust Anchors",
+        "Trust Anchors, Certificate Authorities (CAs), and Registration Authorities (RAs)",
+        "Only Certificate Authorities (CAs)",
+        "Trust Anchors and digital signatures"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Trust Anchors, Certificate Authorities (CAs), and Registration Authorities (RAs).",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 153,
+      "question": "How does a Trust Model establish trust in a digital environment?",
+      "options": [
+        "By using biometric authentication",
+        "By relying on physical tokens",
+        "By creating a hierarchical structure of trust relationships",
+        "By encrypting all communication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By creating a hierarchical structure of trust relationships.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 154,
+      "question": "What is the significance of the Chain of Trust in a Trust Model?",
+      "options": [
+        "It represents a physical chain worn by trusted individuals",
+        "It is a sequence of trust relationships from a Trust Anchor to an end entity",
+        "It is a type of digital certificate",
+        "It ensures secure communication between devices"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It is a sequence of trust relationships from a Trust Anchor to an end entity.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 155,
+      "question": "In a Web of Trust model, who establishes trust relationships?",
+      "options": [
+        "Certificate Authorities (CAs)",
+        "Registration Authorities (RAs)",
+        "End users themselves",
+        "Trust Anchors"
+      ],
+      "correct": 2,
+      "description": "Correct answer: End users themselves.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 156,
+      "question": "How is trust propagated in a Hierarchical Trust Model?",
+      "options": [
+        "Through peer-to-peer validation",
+        "Through a centralized authority establishing trust at different levels",
+        "Through anonymous validation",
+        "Through automatic trust assignment"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Through a centralized authority establishing trust at different levels.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 157,
+      "question": "What is the advantage of a Distributed Trust Model?",
+      "options": [
+        "It requires fewer Trust Anchors",
+        "It is more resilient to single points of failure",
+        "It eliminates the need for digital certificates",
+        "It speeds up the trust establishment process"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It is more resilient to single points of failure.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 158,
+      "question": "In a Circle of Trust model, what is the key principle?",
+      "options": [
+        "Trust is established in a linear fashion",
+        "Trust is established in a circular manner between entities",
+        "Trust is established through biometric authentication",
+        "Trust is established through physical tokens"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Trust is established in a circular manner between entities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 159,
+      "question": "How does a Federated Trust Model work?",
+      "options": [
+        "By centralizing trust relationships",
+        "By delegating trust responsibilities to multiple independent organizations",
+        "By using only self-signed certificates",
+        "By relying on a single Certificate Authority (CA)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: By delegating trust responsibilities to multiple independent organizations.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 160,
+      "question": "What is the role of a Certification Authority (CA)?",
+      "options": [
+        "To issue digital certificates and verify the identity of the certificate owner",
+        "To encrypt communication between devices",
+        "To manage public key infrastructure",
+        "To authenticate users based on biometric data"
+      ],
+      "correct": 0,
+      "description": "Correct answer: To issue digital certificates and verify the identity of the certificate owner.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 161,
+      "question": "How does a CA verify the identity of a certificate applicant?",
+      "options": [
+        "By using a symmetric key",
+        "By consulting a Registration Authority (RA)",
+        "By checking government-issued identification",
+        "By encrypting the applicant's information"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By checking government-issued identification.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 162,
+      "question": "Can there be multiple CAs in a public key infrastructure?",
+      "options": [
+        "No, there is only one CA in any infrastructure",
+        "Yes, but they must share a single private key",
+        "Yes, multiple CAs can exist independently",
+        "No, CAs are specific to individual users"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Yes, multiple CAs can exist independently.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 163,
+      "question": "What is the purpose of a Certificate Signing Request (CSR)?",
+      "options": [
+        "To request a new digital certificate from the CA",
+        "To revoke an existing digital certificate",
+        "To request a private key from the CA",
+        "To update the digital certificate information"
+      ],
+      "correct": 0,
+      "description": "Correct answer: To request a new digital certificate from the CA.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 164,
+      "question": "How is the CA's public key distributed?",
+      "options": [
+        "By including it in every digital certificate",
+        "By broadcasting it on a public server",
+        "By sharing it with other CAs",
+        "By encrypting it with the CA's private key"
+      ],
+      "correct": 0,
+      "description": "Correct answer: By including it in every digital certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 165,
+      "question": "What is a Root Certificate?",
+      "options": [
+        "The certificate issued by the end entity",
+        "The top-level certificate in a CA hierarchy",
+        "The public key of a CA",
+        "A self-signed certificate"
+      ],
+      "correct": 3,
+      "description": "Correct answer: A self-signed certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 166,
+      "question": "How often does a CA issue a Certificate Revocation List (CRL)?",
+      "options": [
+        "Only when a digital certificate expires",
+        "Daily",
+        "Whenever there is a change in the CA's public key",
+        "Only when a certificate is revoked before expiration"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Only when a certificate is revoked before expiration.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 167,
+      "question": "What is the significance of a Cross-Certificate in a CA hierarchy?",
+      "options": [
+        "It links two different CAs in a trust relationship",
+        "It is used for encryption purposes",
+        "It is the top-level certificate in a hierarchy",
+        "It is a self-signed certificate"
+      ],
+      "correct": 0,
+      "description": "Correct answer: It links two different CAs in a trust relationship.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 168,
+      "question": "Can a CA's private key be disclosed to the public?",
+      "options": [
+        "Yes, to enhance transparency",
+        "No, it should be kept confidential",
+        "Only during the certificate renewal process",
+        "Only if the CA is audited regularly"
+      ],
+      "correct": 1,
+      "description": "Correct answer: No, it should be kept confidential.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 169,
+      "question": "In a Hierarchical CA Model, what is the role of an Intermediate CA?",
+      "options": [
+        "To issue digital certificates directly to end entities",
+        "To bridge the gap between the Root CA and end entities",
+        "To manage the public key infrastructure",
+        "To perform biometric authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To bridge the gap between the Root CA and end entities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 170,
+      "question": "What is the purpose of a Certificate Revocation List (CRL)?",
+      "options": [
+        "To list all valid certificates",
+        "To list revoked certificates",
+        "To authenticate users",
+        "To encrypt communication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To list revoked certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 171,
+      "question": "What does OCSP stand for in the context of certificates?",
+      "options": [
+        "Online Cryptographic Security Protocol",
+        "Open Certificate Security Protocol",
+        "Online Certificate Status Protocol",
+        "Open Cryptographic Status Protocol"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Online Certificate Status Protocol.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 172,
+      "question": "Which of the following is a real-time method for checking the status of a digital certificate?",
+      "options": [
+        "CRL",
+        "OCSP",
+        "FIPS 140-2",
+        "RSA"
+      ],
+      "correct": 1,
+      "description": "Correct answer: OCSP.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 173,
+      "question": "How does OCSP differ from CRL in terms of certificate status checking?",
+      "options": [
+        "OCSP is offline, while CRL is real-time",
+        "CRL is offline, while OCSP is real-time",
+        "Both are real-time",
+        "Both are offline"
+      ],
+      "correct": 1,
+      "description": "Correct answer: CRL is offline, while OCSP is real-time.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 174,
+      "question": "What is the primary purpose of certificate revocation?",
+      "options": [
+        "To improve certificate performance",
+        "To maintain the secrecy of certificates",
+        "To invalidate compromised or untrusted certificates",
+        "To issue new certificates"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To invalidate compromised or untrusted certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 175,
+      "question": "Which protocol provides a more scalable and efficient solution for checking certificate revocation status?",
+      "options": [
+        "CRL",
+        "OCSP",
+        "HTTPS",
+        "LDAP"
+      ],
+      "correct": 1,
+      "description": "Correct answer: OCSP.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 176,
+      "question": "In a PKI infrastructure, who typically issues Certificate Revocation Lists?",
+      "options": [
+        "Certificate authority (CA)",
+        "End-user",
+        "Registration authority (RA)",
+        "Subordinate CA"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Certificate authority (CA).",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 177,
+      "question": "What is the consequence of relying solely on CRL for certificate revocation checking?",
+      "options": [
+        "Real-time revocation checking",
+        "Increased security",
+        "Potential delays in identifying revoked certificates",
+        "Improved network performance"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Potential delays in identifying revoked certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 178,
+      "question": "Which extension is commonly found in X.509 certificates and contains information about CRL distribution points?",
+      "options": [
+        "Basic Constraints",
+        "Key Usage",
+        "Authority Information Access",
+        "Subject Alternative Name"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authority Information Access.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 179,
+      "question": "What role does OCSP Stapling play in certificate revocation checking?",
+      "options": [
+        "It allows multiple CAs to issue certificates",
+        "It reduces the load on the OCSP responder",
+        "It encrypts the CRL during transmission",
+        "It signs the CRL for authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It reduces the load on the OCSP responder.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 180,
+      "question": "Which type of certificate is used to secure communication between a user's browser and a website?",
+      "options": [
+        "Code Signing Certificate",
+        "Client Certificate",
+        "Server Certificate",
+        "Email Certificate"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Server Certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 181,
+      "question": "What is the primary purpose of a Code Signing Certificate?",
+      "options": [
+        "Securing website communication",
+        "Encrypting emails",
+        "Authenticating software code",
+        "Authenticating users"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authenticating software code.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 182,
+      "question": "Which class of certificate requires more rigorous validation of the certificate holder's identity?",
+      "options": [
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Class 3.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 183,
+      "question": "What is the primary use of a Client Certificate?",
+      "options": [
+        "Authenticating users to a website",
+        "Authenticating software code",
+        "Securing server communication",
+        "Encrypting emails"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authenticating users to a website.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 184,
+      "question": "Which type of certificate is commonly used for securing email communication?",
+      "options": [
+        "Server Certificate",
+        "Code Signing Certificate",
+        "Email Certificate",
+        "Root Certificate"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Email Certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 185,
+      "question": "What is the difference between a Wildcard Certificate and a SAN Certificate?",
+      "options": [
+        "Wildcard Certificates are for code signing, while SAN Certificates are for email encryption",
+        "SAN Certificates support multiple domain names, while Wildcard Certificates cover only one domain and its subdomains",
+        "Wildcard Certificates require more rigorous validation",
+        "SAN Certificates are only used for server authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SAN Certificates support multiple domain names, while Wildcard Certificates cover only one domain and its subdomains.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 186,
+      "question": "Which type of certificate is commonly used for securing software applications and updates?",
+      "options": [
+        "Server Certificate",
+        "Code Signing Certificate",
+        "Email Certificate",
+        "Root Certificate"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Code Signing Certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 187,
+      "question": "In a public key infrastructure (PKI), what is the role of a Root Certificate?",
+      "options": [
+        "Issuing end-user certificates",
+        "Encrypting communication",
+        "Authenticating software code",
+        "Establishing trust by signing other certificates"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Establishing trust by signing other certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 188,
+      "question": "Which class of certificate may be issued without verifying the identity of the certificate holder?",
+      "options": [
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Class 1.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 189,
+      "question": "What is the primary purpose of an Intermediate Certificate?",
+      "options": [
+        "Establishing trust with end-users",
+        "Issuing end-user certificates",
+        "Authenticating software code",
+        "Verifying the identity of the Root CA"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Issuing end-user certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 190,
+      "question": "What does FIPS stand for in FIPS 140-2?",
+      "options": [
+        "Federal Information Processing Standard",
+        "Fast Internet Protocol Standard",
+        "Flexible Information Processing System",
+        "Focused Information Protection Standard"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Federal Information Processing Standard.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 191,
+      "question": "What is the purpose of FIPS 140-2 certification in the context of cryptographic modules?",
+      "options": [
+        "Ensuring fast data processing",
+        "Establishing trust with end-users",
+        "Verifying the security of cryptographic algorithms and modules",
+        "Allowing flexible encryption standards"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Verifying the security of cryptographic algorithms and modules.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 192,
+      "question": "Which organization is responsible for issuing FIPS 140-2 certifications?",
+      "options": [
+        "International Organization for Standardization (ISO)",
+        "National Institute of Standards and Technology (NIST)",
+        "Internet Engineering Task Force (IETF)",
+        "Institute of Electrical and Electronics Engineers (IEEE)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: National Institute of Standards and Technology (NIST).",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 193,
+      "question": "What is the highest level of security assurance provided by FIPS 140-2?",
+      "options": [
+        "Level 1",
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Level 4.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 194,
+      "question": "Which of the following is a requirement for FIPS 140-2 Level 2 certification?",
+      "options": [
+        "Physical security mechanisms",
+        "Tamper-evident coatings",
+        "Role-based authentication",
+        "Continuous monitoring"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Tamper-evident coatings.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 195,
+      "question": "In FIPS 140-2, what does the term \"module\" refer to?",
+      "options": [
+        "A unit of software",
+        "A unit of hardware",
+        "A cryptographic algorithm",
+        "A network protocol"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A unit of hardware.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 196,
+      "question": "Which of the following is NOT a requirement for FIPS 140-2 Level 1 certification?",
+      "options": [
+        "Physical security",
+        "Cryptographic key management",
+        "Role-based authentication",
+        "Continuous monitoring"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Physical security.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 197,
+      "question": "What role does the Cryptographic Module Validation Program (CMVP) play in FIPS 140-2 certification?",
+      "options": [
+        "Issuing FIPS 140-2 certificates",
+        "Conducting vulnerability assessments",
+        "Developing cryptographic algorithms",
+        "Establishing physical security measures"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Issuing FIPS 140-2 certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 198,
+      "question": "Which cryptographic algorithm is commonly used in FIPS 140-2 compliant modules for data encryption?",
+      "options": [
+        "MD5",
+        "SHA-1",
+        "AES",
+        "DES"
+      ],
+      "correct": 2,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 199,
+      "question": "Why is FIPS 140-2 certification important for organizations using cryptographic modules?",
+      "options": [
+        "It ensures fast data processing",
+        "It establishes trust with end-users",
+        "It verifies the security of cryptographic algorithms and modules",
+        "It allows flexible encryption standards"
+      ],
+      "correct": 2,
+      "description": "Correct answer: It verifies the security of cryptographic algorithms and modules.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 200,
+      "question": "What is the primary purpose of OpenID?",
+      "options": [
+        "Encrypting communication",
+        "Authenticating users across websites",
+        "Authorizing API access",
+        "Certifying software code"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Authenticating users across websites.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 201,
+      "question": "Which of the following is a common use case for OAuth?",
+      "options": [
+        "Authenticating users with a single sign-on (SSO)",
+        "Encrypting emails",
+        "Securing server communication",
+        "Authenticating software code"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authenticating users with a single sign-on (SSO).",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 202,
+      "question": "What role does the Authorization Server play in the OAuth 2.0 framework?",
+      "options": [
+        "Authenticating users",
+        "Issuing access tokens",
+        "Storing user credentials",
+        "Verifying software code"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Issuing access tokens.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 203,
+      "question": "In OAuth, what is the purpose of an access token?",
+      "options": [
+        "Encrypting communication",
+        "Authenticating users",
+        "Authorizing API access",
+        "Verifying the identity of the client application"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authorizing API access.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 204,
+      "question": "Which OAuth 2.0 grant type is suitable for client applications running on a web server?",
+      "options": [
+        "Authorization Code Grant",
+        "Implicit Grant",
+        "Client Credentials Grant",
+        "Resource Owner Password Credentials Grant"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authorization Code Grant.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 205,
+      "question": "What does OAuth 2.0's Implicit Grant flow primarily focus on?",
+      "options": [
+        "Authorization",
+        "Authentication",
+        "Encryption",
+        "Decryption"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authorization.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 206,
+      "question": "Which role does the Resource Owner play in OAuth 2.0?",
+      "options": [
+        "The user seeking access to a protected resource",
+        "The server issuing access tokens",
+        "The client application requesting authorization",
+        "The authorization server issuing refresh tokens"
+      ],
+      "correct": 0,
+      "description": "Correct answer: The user seeking access to a protected resource.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 207,
+      "question": "In the context of OpenID Connect, what does ID Token represent?",
+      "options": [
+        "An access token",
+        "An identity token",
+        "An authorization code",
+        "A refresh token"
+      ],
+      "correct": 1,
+      "description": "Correct answer: An identity token.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 208,
+      "question": "Which OAuth 2.0 grant type is designed for non-interactive clients?",
+      "options": [
+        "Authorization Code Grant",
+        "Implicit Grant",
+        "Client Credentials Grant",
+        "Resource Owner Password Credentials Grant"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Client Credentials Grant.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 209,
+      "question": "What is the main advantage of using OAuth for API access control?",
+      "options": [
+        "It provides end-to-end encryption for data transmission",
+        "It simplifies user authentication across multiple applications",
+        "It allows secure storage of user credentials",
+        "It enables third-party applications to access resources without exposing user credentials"
+      ],
+      "correct": 3,
+      "description": "Correct answer: It enables third-party applications to access resources without exposing user credentials.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 210,
+      "question": "What is the purpose of an authentication protocol?",
+      "options": [
+        "Encrypt data",
+        "Verify identity",
+        "Establish a secure connection",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Verify identity.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 211,
+      "question": "Which authentication factor involves something you know?",
+      "options": [
+        "Password",
+        "Fingerprint",
+        "Smart card",
+        "Retina scan"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Password.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 212,
+      "question": "Which authentication factor involves something you have?",
+      "options": [
+        "Password",
+        "Fingerprint",
+        "Smart card",
+        "Retina scan"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Smart card.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 213,
+      "question": "What is two-factor authentication (2FA)?",
+      "options": [
+        "Using two different passwords",
+        "Combining two authentication factors",
+        "Encrypting data twice",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Combining two authentication factors.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 214,
+      "question": "Which of the following is a common challenge in biometric authentication?",
+      "options": [
+        "Low accuracy",
+        "High cost",
+        "Limited scalability",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 215,
+      "question": "What is the purpose of a CAPTCHA in authentication?",
+      "options": [
+        "Verify credit card information",
+        "Prevent automated bots",
+        "Encrypt communication",
+        "Authenticate users"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Prevent automated bots.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 216,
+      "question": "Which authentication method is susceptible to phishing attacks?",
+      "options": [
+        "Biometric authentication",
+        "Two-factor authentication",
+        "Single sign-on",
+        "Token-based authentication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Single sign-on.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 217,
+      "question": "What is the role of a nonce in authentication?",
+      "options": [
+        "Encrypt data",
+        "Prevent replay attacks",
+        "Verify identity",
+        "Generate public key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Prevent replay attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 218,
+      "question": "Which authentication protocol is commonly used for secure email communication?",
+      "options": [
+        "OAuth",
+        "SAML",
+        "PGP",
+        "Kerberos"
+      ],
+      "correct": 2,
+      "description": "Correct answer: PGP.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 219,
+      "question": "What is the purpose of a time-based one-time password (TOTP) in authentication?",
+      "options": [
+        "Enhance encryption",
+        "Prevent password reuse",
+        "Add a time-sensitive element",
+        "Authenticate using a smart card"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Add a time-sensitive element.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 220,
+      "question": "What does FIDO stand for in FIDO authentication?",
+      "options": [
+        "Fast Identity Online",
+        "Fully Integrated Digital Operations",
+        "Federal Identity and Documentation Organization",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Fast Identity Online.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 221,
+      "question": "Which key elements are used in FIDO authentication?",
+      "options": [
+        "Public key cryptography",
+        "Passwords only",
+        "Biometric authentication",
+        "A and C"
+      ],
+      "correct": 3,
+      "description": "Correct answer: A and C.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 222,
+      "question": "What is the purpose of FIDO U2F (Universal 2nd Factor)?",
+      "options": [
+        "Authenticate users using a single factor",
+        "Provide a second factor for authentication",
+        "Encrypt data during transmission",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Provide a second factor for authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 223,
+      "question": "Which of the following is a benefit of FIDO authentication?",
+      "options": [
+        "Phishing resistance",
+        "No need for passwords",
+        "Strong user privacy",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 224,
+      "question": "Which protocol is commonly associated with FIDO authentication?",
+      "options": [
+        "OAuth",
+        "SAML",
+        "WebAuthn",
+        "PGP"
+      ],
+      "correct": 2,
+      "description": "Correct answer: WebAuthn.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 225,
+      "question": "How does FIDO authentication enhance security compared to traditional passwords?",
+      "options": [
+        "Uses biometric factors",
+        "Eliminates the need for passwords",
+        "Relies on hardware-based security keys",
+        "A and C"
+      ],
+      "correct": 3,
+      "description": "Correct answer: A and C.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 226,
+      "question": "What is a FIDO Authenticator?",
+      "options": [
+        "Software-based authentication",
+        "Hardware device for authentication",
+        "A type of password",
+        "A and C"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Hardware device for authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 227,
+      "question": "Which industry is FIDO authentication commonly used in?",
+      "options": [
+        "Healthcare",
+        "Finance",
+        "Education",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 228,
+      "question": "What is the role of a relying party in FIDO authentication?",
+      "options": [
+        "Authenticate users",
+        "Verify user identity",
+        "Provide services to the user",
+        "Generate public keys"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Provide services to the user.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 229,
+      "question": "Which of the following is NOT a FIDO authentication protocol?",
+      "options": [
+        "UAF (Universal Authentication Framework)",
+        "U2F (Universal 2nd Factor)",
+        "TOTP (Time-based One-Time Password)",
+        "WebAuthn"
+      ],
+      "correct": 2,
+      "description": "Correct answer: TOTP (Time-based One-Time Password).",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 230,
+      "question": "What does SSL stand for in the context of secure communication?",
+      "options": [
+        "Secure Socket Layer",
+        "Super Speedy Link",
+        "Safe and Secure Line",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Secure Socket Layer.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 231,
+      "question": "Which layer of the OSI model does SSL/TLS operate at?",
+      "options": [
+        "Application",
+        "Transport",
+        "Network",
+        "Data Link"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Transport.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 232,
+      "question": "What is the primary purpose of SSL/TLS?",
+      "options": [
+        "Encrypt data in transit",
+        "Authenticate servers and clients",
+        "Establish a secure connection",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 233,
+      "question": "Which protocol is the successor to SSL?",
+      "options": [
+        "TLS (Transport Layer Security)",
+        "SSH (Secure Shell)",
+        "HTTPS (Hypertext Transfer Protocol Secure)",
+        "PPTP (Point-to-Point Tunneling Protocol)"
+      ],
+      "correct": 0,
+      "description": "Correct answer: TLS (Transport Layer Security).",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 234,
+      "question": "What is a certificate authority (CA) in the context of SSL/TLS?",
+      "options": [
+        "A server's private key",
+        "An entity that issues digital certificates",
+        "A type of encryption algorithm",
+        "A and C"
+      ],
+      "correct": 1,
+      "description": "Correct answer: An entity that issues digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 235,
+      "question": "Which port is commonly used for secure HTTPS communication?",
+      "options": [
+        "80",
+        "443",
+        "22",
+        "25"
+      ],
+      "correct": 1,
+      "description": "Correct answer: 443.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 236,
+      "question": "What is a self-signed certificate in SSL/TLS?",
+      "options": [
+        "A certificate without a private key",
+        "A certificate signed by the server itself",
+        "A certificate with weak encryption",
+        "A certificate used for client authentication only"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A certificate signed by the server itself.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 237,
+      "question": "Which key exchange method is commonly used in SSL/TLS protocols?",
+      "options": [
+        "RSA",
+        "AES",
+        "HMAC",
+        "SHA"
+      ],
+      "correct": 0,
+      "description": "Correct answer: RSA.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 238,
+      "question": "What is the purpose of the TLS handshake process?",
+      "options": [
+        "Establish a secure connection",
+        "Exchange encryption keys",
+        "Authenticate the server and client",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 239,
+      "question": "Which version of SSL/TLS is considered insecure and should be avoided?",
+      "options": [
+        "SSL 2.0",
+        "SSL 3.0",
+        "TLS 1.0",
+        "TLS 1.2"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SSL 3.0.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 240,
+      "question": "What is the main purpose of PGP (Pretty Good Privacy)?",
+      "options": [
+        "Secure email communication",
+        "Web browsing security",
+        "File system encryption",
+        "Database protection"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Secure email communication.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 241,
+      "question": "Who developed PGP?",
+      "options": [
+        "Microsoft",
+        "Apple",
+        "Phil Zimmermann",
+        "IBM"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Phil Zimmermann.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 242,
+      "question": "What type of encryption does PGP primarily use?",
+      "options": [
+        "Symmetric-key encryption",
+        "Asymmetric-key encryption",
+        "Hash-based encryption",
+        "Both A and B"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Both A and B.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 243,
+      "question": "What is a public keyring in PGP used for?",
+      "options": [
+        "Encrypting messages",
+        "Decrypting messages",
+        "Authenticating users",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Encrypting messages.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 244,
+      "question": "Which part of the PGP key pair is kept secret?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Passphrase",
+        "User ID"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 245,
+      "question": "What is the purpose of a PGP key fingerprint?",
+      "options": [
+        "Authenticate the user",
+        "Verify the integrity of a key",
+        "Encrypt data",
+        "Generate a new key pair"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Verify the integrity of a key.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 246,
+      "question": "Which standard is commonly used for securing email communication with digital signatures and encryption?",
+      "options": [
+        "PGP",
+        "S/MIME (Secure/Multipurpose Internet Mail Extensions)",
+        "TLS",
+        "SSH"
+      ],
+      "correct": 1,
+      "description": "Correct answer: S/MIME (Secure/Multipurpose Internet Mail Extensions).",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 247,
+      "question": "What is the role of a certificate authority in S/MIME?",
+      "options": [
+        "Authenticate users",
+        "Verify public keys",
+        "Issue digital certificates",
+        "All of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Issue digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 248,
+      "question": "Which encryption algorithm is commonly used in S/MIME for securing email content?",
+      "options": [
+        "AES",
+        "RSA",
+        "SHA",
+        "HMAC"
+      ],
+      "correct": 0,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 249,
+      "question": "What is the purpose of an S/MIME certificate in email communication?",
+      "options": [
+        "Encrypt email content",
+        "Authenticate the sender",
+        "Provide a digital signature",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    }
+  ]
 }
