@@ -77,10 +77,54 @@ export const subjects = [
     stages: buildStages("cryptography"),
     topicsPath: "/subjects/cryptography/topics",
     topicIndexFile: "/data/cryptography/topics/index.json"
+  },
+  {
+    slug: "ndc",
+    name: "NDC",
+    shortName: "NDC",
+    icon: Network,
+    accent: "indigo",
+    description: "NDC practice sets and exam stages.",
+    stages: buildStages("ndc"),
+    topicsPath: "/subjects/ndc/topics",
+    topicIndexFile: "/data/ndc/topics/index.json"
+  },
+  {
+    slug: "sc",
+    name: "SC",
+    shortName: "SC",
+    icon: ShieldCheck,
+    accent: "teal",
+    description: "SC practice sets and exam stages.",
+    stages: buildStages("sc"),
+    topicsPath: "/subjects/sc/topics",
+    topicIndexFile: "/data/sc/topics/index.json"
+  },
+  {
+    slug: "ca",
+    name: "CA",
+    shortName: "CA",
+    icon: KeyRound,
+    accent: "amber",
+    description: "CA practice sets and exam stages.",
+    stages: buildStages("ca"),
+    topicsPath: "/subjects/ca/topics",
+    topicIndexFile: "/data/ca/topics/index.json"
+  },
+  {
+    slug: "df",
+    name: "DF",
+    shortName: "DF",
+    icon: Binary,
+    accent: "rose",
+    description: "DF practice sets and exam stages.",
+    stages: buildStages("df"),
+    topicsPath: "/subjects/df/topics",
+    topicIndexFile: "/data/df/topics/index.json"
   }
 ];
 
-export const sidebarSubjects = subjects.slice(0, 4);
+export const sidebarSubjects = subjects;
 
 export function getSubject(subjectSlug) {
   return subjects.find((subject) => subject.slug === subjectSlug);

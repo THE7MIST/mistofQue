@@ -1,5 +1,6 @@
 {
   "sets": [
+    { "setNumber": "Set 01", "topic": "PKI Set 1", "slug": "set01-pki" },
     { "setNumber": "Set 01", "topic": "Certificates", "slug": "set01-certificates" },
     { "setNumber": "Set 02", "topic": "Revocation", "slug": "set02-revocation" }
   ]
