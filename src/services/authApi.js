@@ -28,7 +28,7 @@ export async function loginWithToken({ email, passwordToken }) {
 
   if (!hasConfiguredApi()) {
     await new Promise((resolve) => setTimeout(resolve, 350));
-    const isDemoLogin = normalizedEmail === "demo@mcqarena.dev" && normalizedToken === "demo 123";
+    const isDemoLogin = normalizedEmail === "demo@mcqarena.dev" && normalizedToken === "demo123";
     return {
       ok: isDemoLogin,
       message: isDemoLogin ? "Login successful." : "Use the configured Google Apps Script endpoint.",
