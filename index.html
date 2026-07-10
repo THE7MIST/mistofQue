@@ -9,6 +9,20 @@
     />
     <meta name="theme-color" content="#0f172a" />
     <title>MCQ Arena</title>
+    <script>
+      (function restoreGitHubPagesRoute(location) {
+        if (location.search[1] === "/") {
+          var decodedRoute = location.search
+            .slice(1)
+            .split("&")
+            .map(function restoreAmpersands(part) {
+              return part.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, null, location.pathname.slice(0, -1) + decodedRoute + location.hash);
+        }
+      })(window.location);
+    </script>
   </head>
   <body>
     <div id="root"></div>
