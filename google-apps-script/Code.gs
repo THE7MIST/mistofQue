@@ -206,3 +206,4 @@ function setupSheets() {
   results.autoResizeColumns(1, results.getLastColumn());
   users.autoResizeColumns(1, users.getLastColumn());
 }
+

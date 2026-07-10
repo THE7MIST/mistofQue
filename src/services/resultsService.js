@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_APPS_SCRIPT_URL;
+const API_URL = "https://script.google.com/macros/s/AKfycbxBfWSX994-1Z20AAJpUWfoIJoLz7pjFku7ygNWQnkrMiiN8l1_v9DT5iLq7hQKgy_LaA/exec";
 const RESULTS_KEY = "mcq_arena_results";
 const LAST_RESULT_KEY = "mcq_arena_last_result";
 
@@ -18,8 +18,28 @@ function writeResults(results) {
   localStorage.setItem(RESULTS_KEY, JSON.stringify(results));
 }
 
+// async function postToAppsScript(payload) {
+//   if (!hasConfiguredApi()) return null;
+
+//   const response = await fetch(API_URL, {
+//     method: "POST",
+//     redirect: "follow",
+//     headers: {
+//       "Content-Type": "text/plain;charset=utf-8"
+//     },
+//     body: JSON.stringify(payload)
+//   });
+
+//   if (!response.ok) {
+//     throw new Error(`Apps Script request failed with ${response.status}`);
+//   }
+
+//   return response.json();
+// }
 async function postToAppsScript(payload) {
   if (!hasConfiguredApi()) return null;
+
+  console.log("Sending payload:", payload);
 
   const response = await fetch(API_URL, {
     method: "POST",
@@ -30,11 +50,12 @@ async function postToAppsScript(payload) {
     body: JSON.stringify(payload)
   });
 
-  if (!response.ok) {
-    throw new Error(`Apps Script request failed with ${response.status}`);
-  }
+  console.log("HTTP Status:", response.status);
 
-  return response.json();
+  const text = await response.text();
+  console.log("Response:", text);
+
+  return JSON.parse(text);
 }
 
 export function persistLastResult(result) {
