@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "IoT Final Boss",
+  "subject": "IoT",
+  "stage": "Final Boss",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which architecture best supports rotating credentials for millions of constrained IoT devices?",
+      "options": ["Automated device identity lifecycle", "Manual spreadsheet secrets", "One shared global token", "No certificate renewal"],
+      "correct": 0,
+      "description": "Large fleets need automated provisioning, rotation, revocation, and monitoring of device identities.",
+      "difficulty": "Expert",
+      "tags": ["Device Identity", "Fleet Security"]
+    },
+    {
+      "id": 2,
+      "question": "Which signal can indicate a compromised IoT device in a fleet?",
+      "options": ["Unexpected outbound traffic pattern", "Normal heartbeat", "Signed update success", "Expected telemetry interval"],
+      "correct": 0,
+      "description": "Traffic to unusual destinations or at unusual rates can reveal compromise.",
+      "difficulty": "Expert",
+      "tags": ["Threat Detection", "IoT Security"]
+    },
+    {
+      "id": 3,
+      "question": "Which design limits the blast radius of a stolen device certificate?",
+      "options": ["Per-device certificates with revocation", "One certificate for all devices", "Long-lived shared passwords", "Disabled inventory"],
+      "correct": 0,
+      "description": "Per-device identities allow targeted revocation without disrupting the entire fleet.",
+      "difficulty": "Expert",
+      "tags": ["Device Identity", "PKI"]
+    }
+  ]
+}

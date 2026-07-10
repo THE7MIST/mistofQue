@@ -1,0 +1,37 @@
+{
+  "version": "1",
+  "title": "Set 01 - Certificates",
+  "subject": "PKI",
+  "stage": "Topic Wise MCQ",
+  "topic": "Certificates",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which certificate field contains the certificate validity period?",
+      "options": ["Not Before and Not After", "TTL and MTU", "Source and Destination", "Scope and Audience only"],
+      "correct": 0,
+      "description": "Certificates include Not Before and Not After timestamps to define their validity window.",
+      "difficulty": "Medium",
+      "tags": ["Certificates"]
+    },
+    {
+      "id": 2,
+      "question": "Which data proves a certificate was signed by a CA?",
+      "options": ["Digital signature", "MAC address", "Subnet mask", "HTTP method"],
+      "correct": 0,
+      "description": "Clients verify the CA signature using the issuer public key.",
+      "difficulty": "Medium",
+      "tags": ["Certificates", "Signatures"]
+    },
+    {
+      "id": 3,
+      "question": "Which certificate type is commonly used for HTTPS servers?",
+      "options": ["TLS server certificate", "Printer firmware certificate only", "Email recovery code", "DHCP option"],
+      "correct": 0,
+      "description": "TLS server certificates authenticate HTTPS endpoints.",
+      "difficulty": "Easy",
+      "tags": ["Certificates", "TLS"]
+    }
+  ]
+}

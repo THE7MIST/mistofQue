@@ -1,0 +1,8 @@
+{
+  "sets": [
+    { "setNumber": "Set 01", "topic": "XDR", "slug": "set01-xdr" },
+    { "setNumber": "Set 02", "topic": "TLS", "slug": "set02-tls" },
+    { "setNumber": "Set 03", "topic": "SSL", "slug": "set03-ssl" },
+    { "setNumber": "Set 04", "topic": "PKI", "slug": "set04-pki" }
+  ]
+}

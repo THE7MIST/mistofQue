@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "PKI Semi Final",
+  "subject": "PKI",
+  "stage": "Semi Final",
+  "durationMinutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why are intermediate CAs commonly used?",
+      "options": ["To protect root CA keys by keeping them offline", "To remove the need for certificates", "To make private keys public", "To disable revocation"],
+      "correct": 0,
+      "description": "Intermediates sign operational certificates while root keys can remain highly protected.",
+      "difficulty": "Hard",
+      "tags": ["Trust Chain", "CA Operations"]
+    },
+    {
+      "id": 2,
+      "question": "Which certificate extension constrains valid DNS names?",
+      "options": ["Subject Alternative Name", "TTL", "Subnet mask", "Packet length"],
+      "correct": 0,
+      "description": "SAN entries define the DNS names or IP addresses a certificate is valid for.",
+      "difficulty": "Hard",
+      "tags": ["Certificates", "SAN"]
+    },
+    {
+      "id": 3,
+      "question": "Which failure should a client report when the certificate chain cannot reach a trusted root?",
+      "options": ["Untrusted issuer", "Disk full", "Port closed", "CPU throttled"],
+      "correct": 0,
+      "description": "A chain must terminate at a trusted root CA to be accepted.",
+      "difficulty": "Hard",
+      "tags": ["Trust Chain"]
+    }
+  ]
+}

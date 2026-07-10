@@ -1,0 +1,6 @@
+{
+  "sets": [
+    { "setNumber": "Set 01", "topic": "Symmetric Crypto", "slug": "set01-symmetric-crypto" },
+    { "setNumber": "Set 02", "topic": "Hashing", "slug": "set02-hashing" }
+  ]
+}

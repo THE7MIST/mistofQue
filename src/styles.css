@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  :root.dark {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+    background:
+      linear-gradient(rgba(20, 184, 166, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(20, 184, 166, 0.05) 1px, transparent 1px),
+      #f8fafc;
+    background-size: 32px 32px;
+    color: #0f172a;
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .dark body {
+    background:
+      linear-gradient(rgba(45, 212, 191, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(251, 191, 36, 0.04) 1px, transparent 1px),
+      #050816;
+    color: #e2e8f0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/60 bg-white/75 shadow-glow backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/70;
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-slate-950;
+  }
+
+  .route-transition {
+    @apply animate-slide-up;
+  }
+}

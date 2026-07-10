@@ -1,0 +1,37 @@
+{
+  "version": "1",
+  "title": "Set 01 - IoT Security",
+  "subject": "IoT",
+  "stage": "Topic Wise MCQ",
+  "topic": "IoT Security",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which control should be applied before shipping an IoT device?",
+      "options": ["Remove default credentials", "Enable public telnet", "Disable updates", "Share private keys"],
+      "correct": 0,
+      "description": "Unique credentials or secure onboarding reduce compromise from default passwords.",
+      "difficulty": "Easy",
+      "tags": ["IoT Security"]
+    },
+    {
+      "id": 2,
+      "question": "Which data should be encrypted when sent from a sensor to the cloud?",
+      "options": ["Sensitive telemetry", "Only button labels", "Only empty packets", "Nothing ever"],
+      "correct": 0,
+      "description": "Sensitive telemetry should be encrypted in transit to protect privacy and integrity.",
+      "difficulty": "Medium",
+      "tags": ["Telemetry", "Encryption"]
+    },
+    {
+      "id": 3,
+      "question": "Which inventory field is most useful for IoT patch management?",
+      "options": ["Firmware version", "Wall color", "Desk height", "Mouse speed"],
+      "correct": 0,
+      "description": "Firmware versions help identify vulnerable devices that need updates.",
+      "difficulty": "Medium",
+      "tags": ["Asset Inventory", "Firmware"]
+    }
+  ]
+}

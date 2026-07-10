@@ -1,0 +1,54 @@
+{
+  "version": "1",
+  "title": "Cyber Security Quarter Final",
+  "subject": "Cyber Security",
+  "stage": "Quarter Final",
+  "durationMinutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which control best limits lateral movement after endpoint compromise?",
+      "options": ["Network segmentation", "Single shared admin account", "Public storage bucket", "Disabled logging"],
+      "correct": 0,
+      "description": "Segmentation reduces how far an attacker can move from the initially compromised system.",
+      "difficulty": "Medium",
+      "tags": ["Network Security", "Incident Response"]
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of a security baseline?",
+      "options": ["A minimum secure configuration", "A malware signature", "A password reset page", "A backup copy"],
+      "correct": 0,
+      "description": "A baseline defines expected secure settings for systems, services, and applications.",
+      "difficulty": "Medium",
+      "tags": ["Hardening"]
+    },
+    {
+      "id": 3,
+      "question": "Which log source is most useful for investigating suspicious user sign-ins?",
+      "options": ["Authentication logs", "Printer queue logs", "Battery logs", "Display adapter logs"],
+      "correct": 0,
+      "description": "Authentication logs reveal successful and failed sign-ins, source IPs, device context, and timestamps.",
+      "difficulty": "Medium",
+      "tags": ["Logging", "Identity"]
+    },
+    {
+      "id": 4,
+      "question": "Which vulnerability is commonly caused by unsanitized database input?",
+      "options": ["SQL injection", "ARP cache aging", "Disk fragmentation", "DNS round robin"],
+      "correct": 0,
+      "description": "SQL injection occurs when input is interpreted as database commands instead of data.",
+      "difficulty": "Medium",
+      "tags": ["Web Security", "Injection"]
+    },
+    {
+      "id": 5,
+      "question": "What does an EDR platform primarily monitor?",
+      "options": ["Endpoint activity", "Weather data", "Printer toner", "Domain registration prices"],
+      "correct": 0,
+      "description": "EDR monitors endpoint events such as processes, files, registry changes, and network connections.",
+      "difficulty": "Medium",
+      "tags": ["EDR", "Endpoint Security"]
+    }
+  ]
+}

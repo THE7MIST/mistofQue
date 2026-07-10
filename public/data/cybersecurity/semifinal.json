@@ -1,0 +1,54 @@
+{
+  "version": "1",
+  "title": "Cyber Security Semi Final",
+  "subject": "Cyber Security",
+  "stage": "Semi Final",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which approach best detects suspicious behavior across identity, endpoint, and network telemetry?",
+      "options": ["XDR correlation", "Manual spreadsheet tracking", "Static web hosting", "Packet fragmentation"],
+      "correct": 0,
+      "description": "XDR correlates signals across multiple security layers to surface higher-confidence detections.",
+      "difficulty": "Hard",
+      "tags": ["XDR", "Detection Engineering"]
+    },
+    {
+      "id": 2,
+      "question": "Why are salts used with password hashes?",
+      "options": ["To prevent reuse of precomputed hash tables", "To compress passwords", "To disable MFA", "To make hashes reversible"],
+      "correct": 0,
+      "description": "A unique salt makes identical passwords produce different hashes and reduces rainbow-table effectiveness.",
+      "difficulty": "Hard",
+      "tags": ["Hashing", "Password Security"]
+    },
+    {
+      "id": 3,
+      "question": "Which metric describes the average time needed to detect an incident?",
+      "options": ["MTTD", "RTO", "TTL", "MTU"],
+      "correct": 0,
+      "description": "Mean Time To Detect measures detection speed after suspicious or malicious activity begins.",
+      "difficulty": "Hard",
+      "tags": ["Incident Response", "Metrics"]
+    },
+    {
+      "id": 4,
+      "question": "Which control helps prevent OAuth consent phishing?",
+      "options": ["Admin consent workflow", "Open redirect chaining", "Anonymous app registration", "Shared refresh tokens"],
+      "correct": 0,
+      "description": "Admin consent workflows and publisher verification reduce unauthorized OAuth application grants.",
+      "difficulty": "Hard",
+      "tags": ["OAuth", "Cloud Security"]
+    },
+    {
+      "id": 5,
+      "question": "Which evidence most strongly indicates command-and-control beaconing?",
+      "options": ["Regular outbound callbacks to a rare domain", "A successful local print job", "A user opening calculator", "A patched kernel"],
+      "correct": 0,
+      "description": "Periodic outbound communication to uncommon infrastructure is a common C2 indicator.",
+      "difficulty": "Hard",
+      "tags": ["Threat Hunting", "C2"]
+    }
+  ]
+}

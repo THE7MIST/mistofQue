@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Cryptography Final Boss",
+  "subject": "Cryptography",
+  "stage": "Final Boss",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which failure can occur if an AES-GCM nonce is reused with the same key?",
+      "options": ["Confidentiality and integrity can be compromised", "DNS becomes slower", "Certificates expire faster", "CPU cache is cleared"],
+      "correct": 0,
+      "description": "GCM nonce reuse is dangerous and can expose plaintext relationships and authentication weaknesses.",
+      "difficulty": "Expert",
+      "tags": ["AEAD", "Nonce Management"]
+    },
+    {
+      "id": 2,
+      "question": "Which password hashing property slows offline cracking?",
+      "options": ["Configurable work factor", "Short digest only", "No salt", "Reversible output"],
+      "correct": 0,
+      "description": "Algorithms such as Argon2, bcrypt, and scrypt use tunable cost to slow attackers.",
+      "difficulty": "Expert",
+      "tags": ["Password Security", "Hashing"]
+    },
+    {
+      "id": 3,
+      "question": "Which attack targets weak randomness during key generation?",
+      "options": ["Predictable key attack", "DNS poisoning", "Route flap", "Clickjacking only"],
+      "correct": 0,
+      "description": "Poor entropy can make generated keys guessable or reproducible.",
+      "difficulty": "Expert",
+      "tags": ["Randomness", "Key Management"]
+    }
+  ]
+}

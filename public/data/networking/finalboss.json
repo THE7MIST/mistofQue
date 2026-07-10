@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Networking Final Boss",
+  "subject": "Networking",
+  "stage": "Final Boss",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which symptom most strongly suggests an asymmetric routing issue with stateful firewalls?",
+      "options": ["Return traffic bypasses the firewall state table", "A monitor changes resolution", "DNS names become shorter", "Certificates renew early"],
+      "correct": 0,
+      "description": "Stateful devices may drop return packets when they did not observe the original session setup.",
+      "difficulty": "Expert",
+      "tags": ["Routing", "Firewall"]
+    },
+    {
+      "id": 2,
+      "question": "Which BGP attribute is typically preferred first in vendor route selection?",
+      "options": ["Local preference", "Community string length", "Interface color", "DNS TTL"],
+      "correct": 0,
+      "description": "Local preference is commonly evaluated early to choose outbound paths within an AS.",
+      "difficulty": "Expert",
+      "tags": ["BGP"]
+    },
+    {
+      "id": 3,
+      "question": "Which design reduces broadcast domain size?",
+      "options": ["VLAN segmentation", "Larger collision domains", "Single flat subnet", "Public admin shares"],
+      "correct": 0,
+      "description": "VLANs divide Layer 2 networks and reduce broadcast scope.",
+      "difficulty": "Expert",
+      "tags": ["VLAN", "Segmentation"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Networking Quarter Final",
+  "subject": "Networking",
+  "stage": "Quarter Final",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which protocol is commonly used to dynamically assign IP addresses?",
+      "options": ["DHCP", "SSH", "HTTP", "ICMP"],
+      "correct": 0,
+      "description": "DHCP assigns IP configuration such as address, gateway, and DNS server.",
+      "difficulty": "Medium",
+      "tags": ["DHCP"]
+    },
+    {
+      "id": 2,
+      "question": "Which port is used by HTTPS by default?",
+      "options": ["443", "25", "53", "110"],
+      "correct": 0,
+      "description": "HTTPS commonly uses TCP port 443.",
+      "difficulty": "Medium",
+      "tags": ["Ports", "TLS"]
+    },
+    {
+      "id": 3,
+      "question": "What is the purpose of NAT?",
+      "options": ["Translate network addresses", "Encrypt passwords", "Store certificates", "Compile code"],
+      "correct": 0,
+      "description": "NAT translates private and public addresses, commonly at network boundaries.",
+      "difficulty": "Medium",
+      "tags": ["NAT"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Networking Warm Up",
+  "subject": "Networking",
+  "stage": "Warm Up MCQ",
+  "durationMinutes": 7,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which OSI layer is responsible for IP addressing?",
+      "options": ["Network layer", "Application layer", "Presentation layer", "Physical layer"],
+      "correct": 0,
+      "description": "The network layer handles logical addressing and routing with protocols such as IP.",
+      "difficulty": "Easy",
+      "tags": ["OSI", "IP"]
+    },
+    {
+      "id": 2,
+      "question": "Which protocol resolves an IPv4 address to a MAC address?",
+      "options": ["ARP", "DNS", "NTP", "SMTP"],
+      "correct": 0,
+      "description": "ARP maps IPv4 addresses to MAC addresses on a local network.",
+      "difficulty": "Easy",
+      "tags": ["ARP"]
+    },
+    {
+      "id": 3,
+      "question": "Which device forwards packets between networks?",
+      "options": ["Router", "Keyboard", "Monitor", "Speaker"],
+      "correct": 0,
+      "description": "Routers forward packets between different networks using routing tables.",
+      "difficulty": "Easy",
+      "tags": ["Routing"]
+    }
+  ]
+}

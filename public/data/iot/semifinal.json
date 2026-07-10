@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "IoT Semi Final",
+  "subject": "IoT",
+  "stage": "Semi Final",
+  "durationMinutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which update process best protects IoT devices?",
+      "options": ["Signed over-the-air updates", "Unsigned firmware by email", "Manual edits over telnet", "No updates after release"],
+      "correct": 0,
+      "description": "Signed OTA updates help confirm firmware authenticity and integrity.",
+      "difficulty": "Hard",
+      "tags": ["Firmware", "OTA"]
+    },
+    {
+      "id": 2,
+      "question": "Which hardware feature can protect device secrets?",
+      "options": ["Trusted platform module", "Open debug header", "Unprotected flash dump", "Default root shell"],
+      "correct": 0,
+      "description": "TPMs or secure elements can protect keys and support measured boot.",
+      "difficulty": "Hard",
+      "tags": ["Hardware Security", "Key Management"]
+    },
+    {
+      "id": 3,
+      "question": "Which issue is created by leaving JTAG exposed on production devices?",
+      "options": ["Physical debug access", "Better DNS caching", "Stronger TLS", "More battery capacity"],
+      "correct": 0,
+      "description": "Exposed debug interfaces can allow firmware extraction or device manipulation.",
+      "difficulty": "Hard",
+      "tags": ["Hardware Security", "Debug Interfaces"]
+    }
+  ]
+}

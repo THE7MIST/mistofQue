@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Cryptography Quarter Final",
+  "subject": "Cryptography",
+  "stage": "Quarter Final",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does a digital signature provide?",
+      "options": ["Integrity, authenticity, and non-repudiation", "Compression only", "A faster DNS lookup", "Guaranteed anonymity"],
+      "correct": 0,
+      "description": "Digital signatures prove data was signed by the private key holder and has not changed.",
+      "difficulty": "Medium",
+      "tags": ["Digital Signatures"]
+    },
+    {
+      "id": 2,
+      "question": "Which cipher mode should generally not be used for encrypting repeated data blocks?",
+      "options": ["ECB", "GCM", "CBC with random IV", "CTR with nonce discipline"],
+      "correct": 0,
+      "description": "ECB leaks patterns because identical plaintext blocks produce identical ciphertext blocks.",
+      "difficulty": "Medium",
+      "tags": ["Cipher Modes"]
+    },
+    {
+      "id": 3,
+      "question": "Which algorithm is a hash function?",
+      "options": ["SHA-256", "AES", "RSA", "Diffie-Hellman"],
+      "correct": 0,
+      "description": "SHA-256 produces a fixed-length digest.",
+      "difficulty": "Medium",
+      "tags": ["Hashing"]
+    }
+  ]
+}

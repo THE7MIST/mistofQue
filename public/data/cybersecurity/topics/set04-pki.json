@@ -1,0 +1,46 @@
+{
+  "version": "1",
+  "title": "Set 04 - PKI",
+  "subject": "Cyber Security",
+  "stage": "Topic Wise MCQ",
+  "topic": "PKI",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the role of a certificate authority?",
+      "options": ["Issue and sign digital certificates", "Route packets", "Compress files", "Assign CPU cores"],
+      "correct": 0,
+      "description": "A CA validates identity and signs certificates that relying parties can verify.",
+      "difficulty": "Easy",
+      "tags": ["PKI", "Certificates"]
+    },
+    {
+      "id": 2,
+      "question": "Which certificate field identifies the entity the certificate is issued to?",
+      "options": ["Subject", "TTL", "Opcode", "Window size"],
+      "correct": 0,
+      "description": "The subject field contains identity information for the certificate holder.",
+      "difficulty": "Medium",
+      "tags": ["PKI", "Certificates"]
+    },
+    {
+      "id": 3,
+      "question": "Which mechanism can show that a certificate has been revoked?",
+      "options": ["OCSP", "ARP", "NTP", "ICMP echo"],
+      "correct": 0,
+      "description": "OCSP lets clients check certificate revocation status.",
+      "difficulty": "Medium",
+      "tags": ["PKI", "Revocation"]
+    },
+    {
+      "id": 4,
+      "question": "What must be protected most carefully by a certificate holder?",
+      "options": ["Private key", "Public certificate", "DNS resolver address", "HTTP status code"],
+      "correct": 0,
+      "description": "A compromised private key allows attackers to impersonate or decrypt depending on the use case.",
+      "difficulty": "Hard",
+      "tags": ["PKI", "Key Management"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "PKI Final Boss",
+  "subject": "PKI",
+  "stage": "Final Boss",
+  "durationMinutes": 12,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which control best reduces damage from a compromised intermediate CA key?",
+      "options": ["Name constraints and fast revocation", "Longer certificate validity", "Disabling audit logs", "Sharing HSM admin accounts"],
+      "correct": 0,
+      "description": "Name constraints, monitoring, and rapid revocation reduce the scope and duration of compromise.",
+      "difficulty": "Expert",
+      "tags": ["CA Operations", "Revocation"]
+    },
+    {
+      "id": 2,
+      "question": "Why should private CA keys be generated and stored in an HSM?",
+      "options": ["To prevent key extraction and enforce key operations", "To make keys easier to email", "To remove certificate expiry", "To bypass client validation"],
+      "correct": 0,
+      "description": "HSMs protect private keys and provide controlled cryptographic operations.",
+      "difficulty": "Expert",
+      "tags": ["HSM", "Key Management"]
+    },
+    {
+      "id": 3,
+      "question": "Which validation problem is caused by a missing intermediate certificate on the server?",
+      "options": ["Incomplete chain", "Wrong password length", "Duplicate DNS zone", "Expired DHCP lease"],
+      "correct": 0,
+      "description": "Servers should send the required intermediate certificates so clients can build the chain.",
+      "difficulty": "Expert",
+      "tags": ["Trust Chain", "TLS"]
+    }
+  ]
+}

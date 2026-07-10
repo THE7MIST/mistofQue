@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Networking Semi Final",
+  "subject": "Networking",
+  "stage": "Semi Final",
+  "durationMinutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which routing protocol uses path vector logic?",
+      "options": ["BGP", "OSPF", "RIP", "STP"],
+      "correct": 0,
+      "description": "BGP is a path vector protocol used for routing between autonomous systems.",
+      "difficulty": "Hard",
+      "tags": ["BGP", "Routing"]
+    },
+    {
+      "id": 2,
+      "question": "Which protocol prevents switching loops in Ethernet networks?",
+      "options": ["STP", "SNMP", "SIP", "POP3"],
+      "correct": 0,
+      "description": "Spanning Tree Protocol blocks redundant paths to prevent loops.",
+      "difficulty": "Hard",
+      "tags": ["Switching", "STP"]
+    },
+    {
+      "id": 3,
+      "question": "Which DNS record maps a hostname to an IPv6 address?",
+      "options": ["AAAA", "A", "MX", "TXT only"],
+      "correct": 0,
+      "description": "AAAA records map names to IPv6 addresses.",
+      "difficulty": "Hard",
+      "tags": ["DNS", "IPv6"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "IoT Warm Up",
+  "subject": "IoT",
+  "stage": "Warm Up MCQ",
+  "durationMinutes": 7,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does IoT stand for?",
+      "options": ["Internet of Things", "Input output table", "Internal optical transport", "Integrated online terminal"],
+      "correct": 0,
+      "description": "IoT refers to connected physical devices that collect, send, or act on data.",
+      "difficulty": "Easy",
+      "tags": ["IoT Basics"]
+    },
+    {
+      "id": 2,
+      "question": "Which protocol is commonly used for lightweight IoT messaging?",
+      "options": ["MQTT", "SMTP", "FTP", "RDP"],
+      "correct": 0,
+      "description": "MQTT is a lightweight publish-subscribe protocol often used by IoT devices.",
+      "difficulty": "Easy",
+      "tags": ["MQTT"]
+    },
+    {
+      "id": 3,
+      "question": "Which security issue is common in unmanaged IoT devices?",
+      "options": ["Default credentials", "Perfect patching", "No network access", "Unlimited battery life"],
+      "correct": 0,
+      "description": "Default credentials are a frequent cause of IoT compromise.",
+      "difficulty": "Easy",
+      "tags": ["IoT Security"]
+    }
+  ]
+}

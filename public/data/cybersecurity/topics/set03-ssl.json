@@ -1,0 +1,46 @@
+{
+  "version": "1",
+  "title": "Set 03 - SSL",
+  "subject": "Cyber Security",
+  "stage": "Topic Wise MCQ",
+  "topic": "SSL",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which protocol replaced SSL for secure web communication?",
+      "options": ["TLS", "FTP", "SNMP", "Telnet"],
+      "correct": 0,
+      "description": "TLS replaced SSL due to security weaknesses in older SSL versions.",
+      "difficulty": "Easy",
+      "tags": ["SSL", "TLS"]
+    },
+    {
+      "id": 2,
+      "question": "Why is SSL 3.0 considered unsafe?",
+      "options": ["It is vulnerable to attacks such as POODLE", "It uses too much disk space", "It blocks DNS", "It requires IPv6 only"],
+      "correct": 0,
+      "description": "SSL 3.0 has known design weaknesses and should be disabled.",
+      "difficulty": "Medium",
+      "tags": ["SSL", "Protocol Versions"]
+    },
+    {
+      "id": 3,
+      "question": "Which term is often used casually but imprecisely for TLS certificates?",
+      "options": ["SSL certificate", "Routing certificate", "DHCP certificate", "BIOS certificate"],
+      "correct": 0,
+      "description": "Many people say SSL certificate even when the modern protocol is TLS.",
+      "difficulty": "Easy",
+      "tags": ["SSL", "Certificates"]
+    },
+    {
+      "id": 4,
+      "question": "What should be done with SSLv2 and SSLv3 on production servers?",
+      "options": ["Disable them", "Prefer them", "Use them only for admin users", "Expose them publicly"],
+      "correct": 0,
+      "description": "Legacy SSL versions should be disabled because they are insecure.",
+      "difficulty": "Medium",
+      "tags": ["SSL", "Hardening"]
+    }
+  ]
+}

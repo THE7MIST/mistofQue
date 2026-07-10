@@ -1,0 +1,37 @@
+{
+  "version": "1",
+  "title": "Set 02 - Hashing",
+  "subject": "Cryptography",
+  "stage": "Topic Wise MCQ",
+  "topic": "Hashing",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is a hash digest?",
+      "options": ["Fixed-length output from a hash function", "Encrypted private key", "Network route", "Browser session only"],
+      "correct": 0,
+      "description": "A digest is the hash output for a given input.",
+      "difficulty": "Easy",
+      "tags": ["Hashing"]
+    },
+    {
+      "id": 2,
+      "question": "Which hash should be avoided for collision-resistant uses?",
+      "options": ["MD5", "SHA-256", "SHA-384", "SHA-512"],
+      "correct": 0,
+      "description": "MD5 has practical collision attacks and should not be used for security-sensitive integrity.",
+      "difficulty": "Medium",
+      "tags": ["Hashing", "Legacy Algorithms"]
+    },
+    {
+      "id": 3,
+      "question": "Which algorithm is designed for password hashing?",
+      "options": ["Argon2", "Base64", "AES-GCM", "ECDSA"],
+      "correct": 0,
+      "description": "Argon2 is a modern password hashing algorithm with memory-hard settings.",
+      "difficulty": "Hard",
+      "tags": ["Password Security", "Hashing"]
+    }
+  ]
+}

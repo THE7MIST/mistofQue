@@ -1,0 +1,54 @@
+{
+  "version": "1",
+  "title": "Cyber Security Final Boss",
+  "subject": "Cyber Security",
+  "stage": "Final Boss",
+  "durationMinutes": 15,
+  "questions": [
+    {
+      "id": 1,
+      "question": "An attacker obtains a valid SAML assertion and replays it within the validity window. Which weakness is most likely involved?",
+      "options": ["Insufficient assertion audience or replay protection", "Strong key rotation", "Disabled single sign-on", "Certificate pinning"],
+      "correct": 0,
+      "description": "SAML assertions should be audience-bound, time-limited, signed, and protected from replay with appropriate validation.",
+      "difficulty": "Expert",
+      "tags": ["SAML", "Identity"]
+    },
+    {
+      "id": 2,
+      "question": "Which detection is most precise for credential dumping from LSASS on Windows?",
+      "options": ["Unexpected process access to LSASS memory", "High monitor brightness", "DNS cache flush", "DHCP lease renewal"],
+      "correct": 0,
+      "description": "Credential dumping commonly requires suspicious handle access or memory reads against the LSASS process.",
+      "difficulty": "Expert",
+      "tags": ["Windows Security", "Credential Theft"]
+    },
+    {
+      "id": 3,
+      "question": "Which zero trust principle is most directly violated by broad network access after VPN login?",
+      "options": ["Explicit verification and least privilege", "Symmetric encryption", "Static website caching", "Data deduplication"],
+      "correct": 0,
+      "description": "Zero trust requires continuous verification and narrowly scoped access rather than network-wide trust.",
+      "difficulty": "Expert",
+      "tags": ["Zero Trust", "Access Control"]
+    },
+    {
+      "id": 4,
+      "question": "What is the strongest reason to separate detection logic from alert routing rules?",
+      "options": ["Reusable detections can feed multiple response paths", "Alerts become impossible to triage", "Logs stop ingesting", "Encryption keys become public"],
+      "correct": 0,
+      "description": "Decoupling detection logic from routing keeps detections reusable while routing adapts to teams, severity, and workflows.",
+      "difficulty": "Expert",
+      "tags": ["Detection Engineering", "SOC"]
+    },
+    {
+      "id": 5,
+      "question": "Which action most improves incident containment speed for compromised cloud keys?",
+      "options": ["Automated key revocation playbooks", "Manual PDF reporting only", "Increasing key lifetime", "Disabling audit logs"],
+      "correct": 0,
+      "description": "Automated revocation and scoped credentials reduce attacker dwell time after key exposure.",
+      "difficulty": "Expert",
+      "tags": ["Cloud Security", "Incident Response"]
+    }
+  ]
+}

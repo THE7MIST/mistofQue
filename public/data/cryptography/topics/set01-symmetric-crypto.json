@@ -1,0 +1,37 @@
+{
+  "version": "1",
+  "title": "Set 01 - Symmetric Crypto",
+  "subject": "Cryptography",
+  "stage": "Topic Wise MCQ",
+  "topic": "Symmetric Crypto",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which algorithm is a symmetric block cipher?",
+      "options": ["AES", "RSA", "ECDSA", "SHA-256"],
+      "correct": 0,
+      "description": "AES is a symmetric block cipher widely used for encryption.",
+      "difficulty": "Easy",
+      "tags": ["AES", "Symmetric Crypto"]
+    },
+    {
+      "id": 2,
+      "question": "What must be unique for AES-GCM encryption under the same key?",
+      "options": ["Nonce", "File name", "Username", "Screen size"],
+      "correct": 0,
+      "description": "AES-GCM requires nonce uniqueness with a given key.",
+      "difficulty": "Hard",
+      "tags": ["AEAD", "Nonce Management"]
+    },
+    {
+      "id": 3,
+      "question": "Which cipher is commonly used for high-speed stream encryption?",
+      "options": ["ChaCha20", "RSA", "SHA-1", "Diffie-Hellman"],
+      "correct": 0,
+      "description": "ChaCha20 is a fast stream cipher often paired with Poly1305 for authentication.",
+      "difficulty": "Medium",
+      "tags": ["Stream Ciphers"]
+    }
+  ]
+}

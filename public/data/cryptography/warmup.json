@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Cryptography Warm Up",
+  "subject": "Cryptography",
+  "stage": "Warm Up MCQ",
+  "durationMinutes": 7,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which cryptography type uses the same key for encryption and decryption?",
+      "options": ["Symmetric", "Asymmetric", "Hashing", "Encoding"],
+      "correct": 0,
+      "description": "Symmetric encryption uses one shared secret key for encryption and decryption.",
+      "difficulty": "Easy",
+      "tags": ["Symmetric Crypto"]
+    },
+    {
+      "id": 2,
+      "question": "Which function is designed to be one-way?",
+      "options": ["Hash function", "Stream cipher", "Block cipher", "Key exchange"],
+      "correct": 0,
+      "description": "Hash functions produce fixed-length digests and should be difficult to reverse.",
+      "difficulty": "Easy",
+      "tags": ["Hashing"]
+    },
+    {
+      "id": 3,
+      "question": "Which algorithm is an asymmetric cryptography algorithm?",
+      "options": ["RSA", "AES", "ChaCha20", "SHA-256"],
+      "correct": 0,
+      "description": "RSA uses a public/private key pair.",
+      "difficulty": "Easy",
+      "tags": ["Asymmetric Crypto"]
+    }
+  ]
+}

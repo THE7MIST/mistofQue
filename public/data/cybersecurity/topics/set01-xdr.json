@@ -1,0 +1,46 @@
+{
+  "version": "1",
+  "title": "Set 01 - XDR",
+  "subject": "Cyber Security",
+  "stage": "Topic Wise MCQ",
+  "topic": "XDR",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does XDR stand for in cyber security?",
+      "options": ["Extended Detection and Response", "External Data Router", "Encrypted Device Registry", "Executable Debug Runtime"],
+      "correct": 0,
+      "description": "XDR expands detection and response across multiple telemetry sources.",
+      "difficulty": "Easy",
+      "tags": ["XDR"]
+    },
+    {
+      "id": 2,
+      "question": "Which data source is commonly correlated by XDR?",
+      "options": ["Endpoint telemetry", "Screen resolution", "Keyboard layout", "Battery warranty"],
+      "correct": 0,
+      "description": "XDR often correlates endpoint, identity, email, cloud, and network telemetry.",
+      "difficulty": "Medium",
+      "tags": ["XDR", "Telemetry"]
+    },
+    {
+      "id": 3,
+      "question": "What is a key benefit of XDR over isolated security tools?",
+      "options": ["Cross-domain context", "Lower password entropy", "No need for logs", "Unencrypted traffic"],
+      "correct": 0,
+      "description": "Cross-domain context reduces alert noise and improves investigation quality.",
+      "difficulty": "Medium",
+      "tags": ["XDR", "SOC"]
+    },
+    {
+      "id": 4,
+      "question": "Which team most commonly uses XDR for investigation workflows?",
+      "options": ["Security operations center", "Cafeteria management", "Facilities cleaning", "Payroll printing"],
+      "correct": 0,
+      "description": "SOC analysts use XDR to triage, investigate, and respond to threats.",
+      "difficulty": "Easy",
+      "tags": ["XDR", "SOC"]
+    }
+  ]
+}

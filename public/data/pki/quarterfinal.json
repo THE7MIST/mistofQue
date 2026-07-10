@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "PKI Quarter Final",
+  "subject": "PKI",
+  "stage": "Quarter Final",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which file often contains a certificate signing request?",
+      "options": ["CSR", "CSV", "CSS", "CRON"],
+      "correct": 0,
+      "description": "A CSR includes public key and identity information to be signed by a CA.",
+      "difficulty": "Medium",
+      "tags": ["CSR"]
+    },
+    {
+      "id": 2,
+      "question": "What is the main purpose of a CRL?",
+      "options": ["List revoked certificates", "Compress log files", "Route TLS traffic", "Store private keys"],
+      "correct": 0,
+      "description": "A certificate revocation list identifies certificates that should no longer be trusted.",
+      "difficulty": "Medium",
+      "tags": ["Revocation"]
+    },
+    {
+      "id": 3,
+      "question": "Which certificate is normally trusted directly by operating systems or browsers?",
+      "options": ["Root CA certificate", "Expired leaf certificate", "Self-signed test leaf", "Revoked code-signing certificate"],
+      "correct": 0,
+      "description": "Root CA certificates are distributed through trust stores and anchor validation chains.",
+      "difficulty": "Medium",
+      "tags": ["Trust Chain"]
+    }
+  ]
+}

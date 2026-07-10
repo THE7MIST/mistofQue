@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "IoT Quarter Final",
+  "subject": "IoT",
+  "stage": "Quarter Final",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which pattern lets IoT devices send telemetry through a nearby aggregator?",
+      "options": ["Gateway architecture", "Single-user desktop mode", "Manual spreadsheet sync", "Printer sharing"],
+      "correct": 0,
+      "description": "Gateways collect device telemetry and can provide protocol translation, filtering, and security controls.",
+      "difficulty": "Medium",
+      "tags": ["Gateways"]
+    },
+    {
+      "id": 2,
+      "question": "Which control helps ensure IoT firmware has not been tampered with?",
+      "options": ["Secure boot", "Open telnet", "Plaintext updates", "Shared admin password"],
+      "correct": 0,
+      "description": "Secure boot verifies firmware integrity and authenticity before execution.",
+      "difficulty": "Medium",
+      "tags": ["Firmware", "Secure Boot"]
+    },
+    {
+      "id": 3,
+      "question": "Which network design limits risk from compromised IoT devices?",
+      "options": ["Segmentation", "Flat network", "Disabled logging", "Shared credentials"],
+      "correct": 0,
+      "description": "Segmentation isolates IoT devices from sensitive systems.",
+      "difficulty": "Medium",
+      "tags": ["Segmentation", "IoT Security"]
+    }
+  ]
+}

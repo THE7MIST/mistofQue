@@ -1,0 +1,63 @@
+{
+  "version": "1",
+  "title": "Cyber Security Warm Up",
+  "subject": "Cyber Security",
+  "stage": "Warm Up MCQ",
+  "durationMinutes": 8,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which security goal ensures information is not disclosed to unauthorized users?",
+      "options": ["Integrity", "Availability", "Confidentiality", "Non-repudiation"],
+      "correct": 2,
+      "description": "Confidentiality keeps sensitive information visible only to authorized users or systems.",
+      "difficulty": "Easy",
+      "tags": ["CIA Triad"]
+    },
+    {
+      "id": 2,
+      "question": "What is the main purpose of multi-factor authentication?",
+      "options": ["Increase bandwidth", "Reduce password length", "Require multiple proof types", "Disable account lockouts"],
+      "correct": 2,
+      "description": "MFA combines proof types such as something you know, have, or are.",
+      "difficulty": "Easy",
+      "tags": ["Identity", "Authentication"]
+    },
+    {
+      "id": 3,
+      "question": "Which attack attempts to trick users into revealing credentials?",
+      "options": ["Phishing", "Port scanning", "Hashing", "Load balancing"],
+      "correct": 0,
+      "description": "Phishing relies on deception through email, websites, calls, or messages.",
+      "difficulty": "Easy",
+      "tags": ["Social Engineering"]
+    },
+    {
+      "id": 4,
+      "question": "What does a firewall primarily control?",
+      "options": ["Network traffic", "CPU temperature", "File compression", "Screen brightness"],
+      "correct": 0,
+      "description": "Firewalls permit or deny traffic using rules based on addresses, ports, protocols, or application signals.",
+      "difficulty": "Easy",
+      "tags": ["Network Security"]
+    },
+    {
+      "id": 5,
+      "question": "Which practice reduces impact when one account is compromised?",
+      "options": ["Least privilege", "Open sharing", "Password reuse", "Plaintext storage"],
+      "correct": 0,
+      "description": "Least privilege gives users and services only the access needed to perform their tasks.",
+      "difficulty": "Medium",
+      "tags": ["Access Control"]
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of hashing a password before storage?",
+      "options": ["Make login faster", "Avoid storing the original secret", "Enable password sharing", "Remove account expiry"],
+      "correct": 1,
+      "description": "A password hash lets the system verify a password without keeping the original password in the database.",
+      "difficulty": "Medium",
+      "tags": ["Password Security", "Hashing"]
+    }
+  ]
+}

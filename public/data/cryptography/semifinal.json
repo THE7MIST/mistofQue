@@ -1,0 +1,36 @@
+{
+  "version": "1",
+  "title": "Cryptography Semi Final",
+  "subject": "Cryptography",
+  "stage": "Semi Final",
+  "durationMinutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the main purpose of Diffie-Hellman?",
+      "options": ["Key agreement over an insecure channel", "Password hashing only", "Data compression", "IP address allocation"],
+      "correct": 0,
+      "description": "Diffie-Hellman lets parties derive a shared secret without sending it directly.",
+      "difficulty": "Hard",
+      "tags": ["Key Exchange"]
+    },
+    {
+      "id": 2,
+      "question": "Which property means it is hard to find two inputs with the same hash?",
+      "options": ["Collision resistance", "Availability", "Compression ratio", "Routing stability"],
+      "correct": 0,
+      "description": "Collision resistance means finding two different inputs with the same hash should be computationally infeasible.",
+      "difficulty": "Hard",
+      "tags": ["Hashing"]
+    },
+    {
+      "id": 3,
+      "question": "Which AEAD mode provides encryption and integrity together?",
+      "options": ["AES-GCM", "AES-ECB", "Base64", "ROT13"],
+      "correct": 0,
+      "description": "AES-GCM is an authenticated encryption mode.",
+      "difficulty": "Hard",
+      "tags": ["AEAD", "Cipher Modes"]
+    }
+  ]
+}
