@@ -24,6 +24,48 @@ function ListBlock({ title, items }) {
   );
 }
 
+function RevisionItem({ item }) {
+  return (
+    <article className="rounded-lg border border-slate-200 bg-white/70 p-4 dark:border-white/10 dark:bg-white/[0.04]">
+      <h3 className="text-base font-black text-slate-950 dark:text-white">{item.title}</h3>
+      {item.definition ? <p className="mt-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">{item.definition}</p> : null}
+      <div className="mt-4 grid gap-4">
+        <ListBlock title="Exam Points" items={item.examPoints} />
+        <ListBlock title="Comparisons" items={item.comparisons} />
+        <ListBlock title="Commands" items={item.commands} />
+        <ListBlock title="Workflows" items={item.workflows} />
+        <ListBlock title="One-Liners" items={item.oneLiners} />
+      </div>
+    </article>
+  );
+}
+
+function SectionBlock({ section }) {
+  return (
+    <section className="rounded-lg border border-slate-200 bg-white/70 p-4 dark:border-white/10 dark:bg-white/[0.04]">
+      <div className="border-b border-slate-200 pb-3 dark:border-white/10">
+        <p className="text-xs font-black uppercase tracking-[0.18em] text-teal-600 dark:text-teal-300">{section.terms?.length || 0} terms</p>
+        <h3 className="mt-1 text-lg font-black text-slate-950 dark:text-white">{section.title}</h3>
+        {section.description ? <p className="mt-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">{section.description}</p> : null}
+      </div>
+      <div className="divide-y divide-slate-200 dark:divide-white/10">
+        {(section.terms || []).map((term) => (
+          <div key={term.id} className="py-4 first:pt-4 last:pb-0">
+            <h4 className="text-base font-black text-slate-950 dark:text-white">{term.title}</h4>
+            {term.definition ? <p className="mt-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">{term.definition}</p> : null}
+            <ListBlock title="Exam Meaning" items={term.examPoints} />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function getItemCount(phase) {
+  if (phase?.sections?.length) return phase.sections.reduce((total, section) => total + (section.terms?.length || 0), 0);
+  return phase?.topics?.length || 0;
+}
+
 export default function RevisionPage() {
   const { subjectSlug } = useParams();
   const { user } = useAuth();
@@ -144,25 +186,22 @@ export default function RevisionPage() {
                     <FileText size={20} />
                   </span>
                   <div>
-                    <h2 className="text-lg font-bold text-slate-950 dark:text-white">Topics</h2>
-                    <p className="text-sm text-slate-500 dark:text-slate-400">{phase.topics?.length || 0} revision items</p>
+                    <h2 className="text-lg font-bold text-slate-950 dark:text-white">{phase.sections?.length ? "Terminology Packs" : "Topics"}</h2>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                      {phase.sections?.length ? `${phase.sections.length} packs • ${getItemCount(phase)} terms` : `${getItemCount(phase)} revision items`}
+                    </p>
                   </div>
                 </div>
+                {phase.description ? (
+                  <p className="mb-5 rounded-lg border border-teal-300/40 bg-teal-500/10 px-3 py-2 text-sm font-semibold leading-6 text-teal-900 dark:text-teal-100">
+                    {phase.description}
+                  </p>
+                ) : null}
 
                 <div className="space-y-4">
-                  {(phase.topics || []).map((topic) => (
-                    <article key={topic.id} className="rounded-lg border border-slate-200 bg-white/70 p-4 dark:border-white/10 dark:bg-white/[0.04]">
-                      <h3 className="text-base font-black text-slate-950 dark:text-white">{topic.title}</h3>
-                      {topic.definition ? <p className="mt-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">{topic.definition}</p> : null}
-                      <div className="mt-4 grid gap-4">
-                        <ListBlock title="Exam Points" items={topic.examPoints} />
-                        <ListBlock title="Comparisons" items={topic.comparisons} />
-                        <ListBlock title="Commands" items={topic.commands} />
-                        <ListBlock title="Workflows" items={topic.workflows} />
-                        <ListBlock title="One-Liners" items={topic.oneLiners} />
-                      </div>
-                    </article>
-                  ))}
+                  {phase.sections?.length
+                    ? phase.sections.map((section) => <SectionBlock key={section.id} section={section} />)
+                    : (phase.topics || []).map((topic) => <RevisionItem key={topic.id} item={topic} />)}
                 </div>
               </div>
             </>

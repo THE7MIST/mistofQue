@@ -51,6 +51,13 @@
       "file": "/data/pki/revision/phase07-revocation.json",
       "audio": "/audio/pki/phase07-revocation.mp3",
       "topicCount": 56
+    },
+    {
+      "id": "terminologies",
+      "title": "Terminologies",
+      "file": "/data/pki/revision/terminologies.json",
+      "audio": "/audio/pki/terminologies.mp3",
+      "topicCount": 135
     }
   ]
 }

@@ -10,6 +10,7 @@ if (!subjectSlug) {
   console.error("Usage: node scripts/generate-revision-audio.mjs <subject-slug>");
   process.exit(1);
 }
+const requestedPhaseIds = process.argv.slice(3);
 
 const CACHE_DIR = path.join(ROOT, ".tts-cache", "piper");
 const TMP_DIR = path.join(ROOT, "tmp-audio", subjectSlug);
@@ -129,13 +130,7 @@ function uniqueList(items, seen) {
   return output;
 }
 
-function buildNarration(phase) {
-  const lines = [
-    cleanForSpeech(phase.title),
-    `This revision segment contains ${phase.topics.length} exam topics.`
-  ];
-
-  phase.topics.forEach((topic, index) => {
+function appendTopicNarration(lines, topic, index) {
     const seen = new Set();
     const title = cleanForSpeech(topic.title);
     const definition = cleanForSpeech(topic.definition);
@@ -160,7 +155,29 @@ function buildNarration(phase) {
 
     const oneLiners = uniqueList(topic.oneLiners, seen);
     if (oneLiners.length) lines.push(`Memory points. ${oneLiners.join(". ")}.`);
-  });
+}
+
+function buildNarration(phase) {
+  const sectionTermCount = (phase.sections || []).reduce((total, section) => total + (section.terms?.length || 0), 0);
+  const topicCount = phase.topics?.length || 0;
+  const itemCount = sectionTermCount || topicCount;
+  const lines = [
+    cleanForSpeech(phase.title),
+    `This revision segment contains ${itemCount} exam topics.`
+  ];
+
+  if (phase.description) lines.push(cleanForSpeech(phase.description));
+
+  if (phase.sections?.length) {
+    phase.sections.forEach((section, sectionIndex) => {
+      lines.push("");
+      lines.push(`Pack ${sectionIndex + 1}. ${cleanForSpeech(section.title)}.`);
+      if (section.description) lines.push(cleanForSpeech(section.description));
+      (section.terms || []).forEach((term, termIndex) => appendTopicNarration(lines, term, termIndex));
+    });
+  } else {
+    (phase.topics || []).forEach((topic, index) => appendTopicNarration(lines, topic, index));
+  }
 
   lines.push("");
   lines.push(`End of ${cleanForSpeech(phase.title)}.`);
@@ -195,7 +212,11 @@ async function main() {
   const piperExe = await ensurePiper();
   const index = JSON.parse(await fs.readFile(INDEX_FILE, "utf8"));
 
-  for (const phase of index.phases || []) {
+  const phases = requestedPhaseIds.length
+    ? (index.phases || []).filter((phase) => requestedPhaseIds.includes(phase.id))
+    : index.phases || [];
+
+  for (const phase of phases) {
     await synthesizePhase(piperExe, phase);
   }
 

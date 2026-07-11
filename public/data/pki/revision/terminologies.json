@@ -1,0 +1,1678 @@
+{
+  "id": "terminologies",
+  "subject": "PKI",
+  "title": "Terminologies",
+  "audio": "/audio/pki/terminologies.mp3",
+  "description": "A fast, exam-focused terminology vault: seven compact packs that turn PKI, crypto, certificates, standards, tools, and legal concepts into listenable revision.",
+  "sections": [
+    {
+      "id": "part-01-security-and-crypto-foundations",
+      "title": "Security & Crypto Foundations",
+      "description": "Core exam terms for CIA, AAA, PKI, common attacks, and classical-to-modern cryptographic algorithms.",
+      "terms": [
+        {
+          "id": "cia-confidentiality-integrity-availability",
+          "title": "CIA (Confidentiality, Integrity, Availability)",
+          "definition": "The CIA Triad is the fundamental security model that defines the three primary objectives of information security: Confidentiality, Integrity, and Availability. Every security control is designed to protect one or more of these objectives.",
+          "examPoints": [
+            "Confidentiality ensures that only authorized users can access information, typically through encryption and access control. Integrity guarantees that data remains accurate, complete, and unaltered, which is achieved using hashing and digital signatures. Availability ensures that systems and data remain accessible to authorized users whenever needed through redundancy, backups, and disaster recovery. The CIA Triad serves as the foundation of cybersecurity policies, system design, and risk management."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "aaa-authentication-authorization-accounting",
+          "title": "AAA (Authentication, Authorization, Accounting)",
+          "definition": "AAA is a security framework that controls user access by verifying identity, assigning permissions, and recording user activities. It is widely used in enterprise networks, VPNs, and authentication servers.",
+          "examPoints": [
+            "Authentication verifies the identity of a user using passwords, certificates, biometrics, or MFA. Authorization determines what resources and operations an authenticated user is allowed to access. Accounting records user activities for auditing, monitoring, and compliance purposes. AAA is commonly implemented using protocols such as RADIUS and TACACS+ to centrally manage user access."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pki-public-key-infrastructure",
+          "title": "PKI (Public Key Infrastructure)",
+          "definition": "Public Key Infrastructure (PKI) is a framework of hardware, software, policies, procedures, and trusted entities that manages digital certificates and public-key cryptography. It establishes trust between communicating parties.",
+          "examPoints": [
+            "PKI issues, manages, renews, validates, and revokes digital certificates throughout their lifecycle. It uses asymmetric cryptography to bind a public key with an entity's identity through an X.509 certificate. Core PKI components include the Certificate Authority (CA), Registration Authority (RA), Validation Authority (VA), repositories, subscribers, and relying parties. PKI is widely used in HTTPS, VPNs, secure email, code signing, and enterprise authentication."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "mitm-man-in-the-middle",
+          "title": "MITM (Man-in-the-Middle)",
+          "definition": "A Man-in-the-Middle (MITM) attack occurs when an attacker secretly intercepts communication between two parties, allowing them to eavesdrop, modify, or inject data without either party being aware.",
+          "examPoints": [
+            "The attacker places themselves logically between the sender and receiver by techniques such as ARP spoofing, DNS spoofing, rogue Wi-Fi access points, or SSL stripping. Since both parties believe they are communicating directly, sensitive information such as passwords or session cookies may be stolen. Proper certificate validation, HTTPS, VPNs, and mutual TLS significantly reduce the risk of MITM attacks."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "dos-denial-of-service",
+          "title": "DoS (Denial of Service)",
+          "definition": "A Denial of Service (DoS) attack attempts to make a system, server, or network unavailable by exhausting its computational resources or bandwidth using traffic from a single attacking system.",
+          "examPoints": [
+            "A DoS attack floods the target with excessive requests until legitimate users can no longer access the service. Common forms include SYN Flood, Ping Flood, and HTTP Flood attacks. The objective is not data theft but service disruption. Firewalls, rate limiting, intrusion prevention systems, and traffic filtering help mitigate DoS attacks."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ddos-distributed-denial-of-service",
+          "title": "DDoS (Distributed Denial of Service)",
+          "definition": "A Distributed Denial of Service (DDoS) attack is a large-scale DoS attack launched simultaneously from multiple compromised devices, typically organized as a botnet.",
+          "examPoints": [
+            "Instead of a single attacker, thousands of infected systems generate massive traffic toward the victim simultaneously. Because the traffic originates from many different IP addresses, mitigation is significantly more difficult than traditional DoS attacks. Organizations use Content Delivery Networks (CDNs), Anycast routing, cloud-based DDoS protection, and traffic scrubbing services to defend against these attacks."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cve-common-vulnerabilities-and-exposures",
+          "title": "CVE (Common Vulnerabilities and Exposures)",
+          "definition": "Common Vulnerabilities and Exposures (CVE) is a publicly maintained catalog that assigns unique identifiers to known cybersecurity vulnerabilities, allowing vendors and researchers to reference the same vulnerability consistently.",
+          "examPoints": [
+            "Each vulnerability receives a unique identifier such as CVE-2021-44228. CVEs standardize vulnerability identification but do not assign severity scores. Security vendors, scanners, and patch-management systems use CVE identifiers to communicate about vulnerabilities. The CVE program simplifies vulnerability tracking and coordinated security responses worldwide."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cvss-common-vulnerability-scoring-system",
+          "title": "CVSS (Common Vulnerability Scoring System)",
+          "definition": "Common Vulnerability Scoring System (CVSS) is an industry-standard framework used to measure the severity of software vulnerabilities by assigning a numerical score between 0.0 and 10.0.",
+          "examPoints": [
+            "CVSS evaluates factors such as attack vector, attack complexity, privileges required, user interaction, confidentiality impact, integrity impact, and availability impact. Based on these metrics, vulnerabilities are classified as Low, Medium, High, or Critical. Organizations use CVSS scores to prioritize vulnerability remediation and patch deployment. CVE identifies a vulnerability, while CVSS measures its severity."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "des-data-encryption-standard",
+          "title": "DES (Data Encryption Standard)",
+          "definition": "DES (Data Encryption Standard) is a symmetric-key block cipher that encrypts 64-bit blocks of data using a 56-bit effective key. It was adopted as a U.S. federal encryption standard in 1977.",
+          "examPoints": [
+            "DES performs 16 rounds of substitution and permutation using a Feistel network. Although it was considered secure when introduced, advances in computing made brute-force attacks practical due to its short key length. DES has largely been replaced by AES. Triple DES (3DES) was introduced as a temporary improvement by applying DES three times."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "aes-advanced-encryption-standard",
+          "title": "AES (Advanced Encryption Standard)",
+          "definition": "AES (Advanced Encryption Standard) is the modern symmetric block cipher standardized by NIST to replace DES. It encrypts 128-bit blocks using 128, 192, or 256-bit keys.",
+          "examPoints": [
+            "AES performs multiple rounds of substitution, permutation, and key mixing to securely transform plaintext into ciphertext. Depending on the key length, it executes 10, 12, or 14 rounds. AES is highly secure, computationally efficient, and resistant to known practical attacks. It is widely used in TLS, VPNs, WPA2/WPA3 Wi-Fi, disk encryption, cloud storage, and government communications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "rc4-rivest-cipher-4",
+          "title": "RC4 (Rivest Cipher 4)",
+          "definition": "RC4 is a symmetric stream cipher designed by Ron Rivest that encrypts data one byte at a time using a pseudorandom keystream generated from a variable-length secret key.",
+          "examPoints": [
+            "RC4 became popular because of its simplicity and speed, especially in SSL/TLS and WEP wireless encryption. However, weaknesses in its keystream generation allow attackers to recover encrypted information under certain conditions. Due to these vulnerabilities, RC4 has been deprecated in modern cryptographic standards and should no longer be used for secure communications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "rc5-rivest-cipher-5",
+          "title": "RC5 (Rivest Cipher 5)",
+          "definition": "RC5 is a symmetric block cipher developed by Ron Rivest that supports variable block sizes, variable key lengths, and a configurable number of encryption rounds.",
+          "examPoints": [
+            "Unlike DES and AES, RC5 is highly flexible and allows different security-performance trade-offs by adjusting its parameters. It uses simple operations such as XOR, addition, and data-dependent rotations, making it efficient on many processors. Although technically sound, RC5 never achieved widespread adoption because AES became the global encryption standard."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "rsa-rivest-shamir-adleman",
+          "title": "RSA (Rivest–Shamir–Adleman)",
+          "definition": "RSA is an asymmetric cryptographic algorithm used for public-key encryption, digital signatures, and secure key exchange. It is based on the computational difficulty of factoring large prime numbers.",
+          "examPoints": [
+            "RSA generates mathematically related public and private keys. Data encrypted with the public key can only be decrypted using the corresponding private key, while digital signatures created with the private key are verified using the public key. Modern implementations use OAEP for encryption and PSS for signatures. RSA is widely used in TLS certificates, digital signatures, and enterprise PKI."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ecc-elliptic-curve-cryptography",
+          "title": "ECC (Elliptic Curve Cryptography)",
+          "definition": "Elliptic Curve Cryptography (ECC) is an asymmetric cryptographic technique based on the mathematics of elliptic curves over finite fields. It provides equivalent security using much smaller key sizes than RSA.",
+          "examPoints": [
+            "ECC offers faster computations, lower memory usage, and reduced bandwidth requirements compared to RSA. A 256-bit ECC key provides security roughly comparable to a 3072-bit RSA key. Because of its efficiency, ECC is widely used in mobile devices, IoT, cryptocurrencies, TLS, and modern secure communication systems."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ecdh-elliptic-curve-diffie-hellman",
+          "title": "ECDH (Elliptic Curve Diffie-Hellman)",
+          "definition": "ECDH is the elliptic curve version of the Diffie-Hellman key exchange algorithm that allows two parties to establish a shared secret over an insecure communication channel.",
+          "examPoints": [
+            "Each participant generates an ECC key pair and exchanges only their public keys. Using elliptic curve mathematics, both sides independently compute the same shared secret without transmitting it across the network. ECDH is widely used in TLS, SSH, VPNs, and messaging applications because it provides strong security with smaller keys and faster computations."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ecdsa-elliptic-curve-digital-signature-algorithm",
+          "title": "ECDSA (Elliptic Curve Digital Signature Algorithm)",
+          "definition": "ECDSA is a digital signature algorithm based on elliptic curve cryptography that provides authentication, integrity, and non-repudiation for digital data.",
+          "examPoints": [
+            "ECDSA generates signatures using a private ECC key and verifies them using the corresponding public key. It produces significantly smaller signatures and requires less computational power than RSA while maintaining equivalent security. ECDSA is widely used in TLS certificates, cryptocurrencies such as Bitcoin, secure boot mechanisms, and code-signing applications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "dh-diffie-hellman",
+          "title": "DH (Diffie-Hellman)",
+          "definition": "Diffie-Hellman (DH) is a public-key key-exchange algorithm that enables two parties to establish a shared secret over an untrusted communication channel without previously sharing a secret key.",
+          "examPoints": [
+            "Each participant creates a private key and derives a corresponding public value. After exchanging public values, both independently compute the same shared secret using modular exponentiation. DH itself does not provide authentication and is therefore vulnerable to MITM attacks unless combined with certificates or digital signatures. It forms the basis of secure key exchange in many communication protocols."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "xor-exclusive-or",
+          "title": "XOR (Exclusive OR)",
+          "definition": "Exclusive OR (XOR) is a logical operation that outputs 1 when its two input bits are different and 0 when they are the same. It is one of the fundamental operations used in cryptography.",
+          "examPoints": [
+            "XOR is widely used because applying the same key twice restores the original data (A ⊕ K ⊕ K = A). Stream ciphers generate a keystream that is XORed with plaintext to produce ciphertext. XOR is computationally efficient and forms the basis of many encryption algorithms, hash functions, checksums, and error-detection mechanisms. Its simplicity makes it one of the most important mathematical operations in modern cryptography."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        }
+      ]
+    },
+    {
+      "id": "part-02-hashing-and-pki-trust-roles",
+      "title": "Hashing & PKI Trust Roles",
+      "description": "Hash functions, HMAC, CA, RA, VA, repositories, subscribers, relying parties, and PKI trust roles.",
+      "terms": [
+        {
+          "id": "md5-message-digest-5",
+          "title": "MD5 (Message Digest 5)",
+          "definition": "MD5 (Message Digest 5) is a cryptographic hash function that produces a fixed 128-bit (16-byte) hash value from input data of any size. It was developed by Ronald Rivest in 1991 for integrity verification.",
+          "examPoints": [
+            "MD5 converts plaintext into a unique fixed-length digest, making it useful for detecting accidental data modification. However, researchers have discovered practical collision attacks, allowing two different inputs to generate the same hash. Because of these weaknesses, MD5 is no longer considered secure for digital signatures or certificates. It is still occasionally used for checksums and file integrity verification where strong security is not required."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "sha-1-secure-hash-algorithm-1",
+          "title": "SHA-1 (Secure Hash Algorithm 1)",
+          "definition": "SHA-1 is a cryptographic hash algorithm developed by the NSA that generates a fixed 160-bit hash value from input data of arbitrary length.",
+          "examPoints": [
+            "SHA-1 was widely used in SSL/TLS certificates, digital signatures, and software verification for many years. Advances in cryptanalysis led to practical collision attacks, making SHA-1 unsuitable for modern security applications. Most browsers, operating systems, and Certificate Authorities no longer trust SHA-1 certificates. It has been replaced by stronger members of the SHA-2 and SHA-3 families."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "sha-2",
+          "title": "SHA-2",
+          "definition": "SHA-2 is a family of secure cryptographic hash functions standardized by NIST that includes SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, and SHA-512/256.",
+          "examPoints": [
+            "Unlike SHA-1, SHA-2 provides significantly stronger resistance against collision and preimage attacks. SHA-256 is the most commonly used member and is widely deployed in TLS, digital signatures, blockchain, VPNs, secure boot, and certificate authorities. The algorithm produces fixed-length hash values regardless of input size. Currently, no practical collision attacks against SHA-2 are known."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "sha-3",
+          "title": "SHA-3",
+          "definition": "SHA-3 is the latest NIST-standardized cryptographic hash family based on the Keccak algorithm rather than the Merkle-Damgård construction used by SHA-1 and SHA-2.",
+          "examPoints": [
+            "SHA-3 was selected through an international cryptographic competition to provide an alternative secure hash standard. It offers strong resistance against known cryptographic attacks and uses a sponge construction for absorbing and squeezing data. SHA-3 supports multiple digest lengths, including SHA3-224, SHA3-256, SHA3-384, and SHA3-512. It complements SHA-2 rather than replacing it and is increasingly used in high-security applications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "hmac-hash-based-message-authentication-code",
+          "title": "HMAC (Hash-based Message Authentication Code)",
+          "definition": "HMAC is a cryptographic algorithm that combines a secret key with a cryptographic hash function to provide both message integrity and authentication.",
+          "examPoints": [
+            "Unlike ordinary hashing, HMAC requires a shared secret key known only to the communicating parties. During computation, the message and secret key are processed together using algorithms such as SHA-256 or SHA-512. Because an attacker cannot generate a valid HMAC without the secret key, it protects against message tampering and forgery. HMAC is widely used in TLS, VPNs, cloud APIs, JWT tokens, AWS request signing, and secure communication protocols."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pki-public-key-infrastructure",
+          "title": "PKI (Public Key Infrastructure)",
+          "definition": "Public Key Infrastructure (PKI) is a comprehensive framework that manages public-key cryptography, digital certificates, and trust relationships between entities through defined policies, procedures, hardware, and software.",
+          "examPoints": [
+            "PKI enables secure authentication, encryption, digital signatures, and non-repudiation by binding identities to public keys through digital certificates. It manages the complete certificate lifecycle, including issuance, renewal, validation, revocation, and expiration. A PKI environment consists of trusted Certificate Authorities, Registration Authorities, Validation Authorities, repositories, subscribers, and relying parties. PKI is the foundation of HTTPS, secure email, VPNs, code signing, and enterprise identity management."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ca-certificate-authority",
+          "title": "CA (Certificate Authority)",
+          "definition": "A Certificate Authority (CA) is a trusted organization or system responsible for issuing, digitally signing, renewing, and revoking digital certificates within a Public Key Infrastructure.",
+          "examPoints": [
+            "The CA verifies an applicant's identity before issuing an X.509 certificate that binds the applicant's identity to a public key. It digitally signs certificates using its private key, allowing others to verify their authenticity. Certificate Authorities also maintain certificate revocation information using CRLs and OCSP. Root CAs establish trust, while Intermediate CAs perform most certificate issuance."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ra-registration-authority",
+          "title": "RA (Registration Authority)",
+          "definition": "A Registration Authority (RA) is a trusted entity within a PKI that verifies the identity of certificate applicants before forwarding approved requests to the Certificate Authority.",
+          "examPoints": [
+            "The RA acts as the identity verification component of PKI but does not issue certificates itself. It validates documents, domain ownership, organizational identity, or user credentials according to certificate policies. Once verification is complete, it authorizes the CA to issue the certificate. Separating the RA from the CA improves security and scalability in large PKI deployments."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "va-validation-authority",
+          "title": "VA (Validation Authority)",
+          "definition": "A Validation Authority (VA) is a PKI component responsible for validating the current status of digital certificates, ensuring that certificates are trusted and have not been revoked.",
+          "examPoints": [
+            "The VA checks certificate validity using mechanisms such as OCSP and Certificate Revocation Lists (CRLs). It determines whether a certificate is valid, revoked, or expired before secure communication proceeds. Offloading validation to a dedicated authority improves performance and centralizes certificate status checking. Validation Authorities are commonly deployed in enterprise PKI environments."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "repository",
+          "title": "Repository",
+          "definition": "A Repository is a secure directory or database within a PKI that stores publicly accessible certificates, certificate chains, Certificate Revocation Lists (CRLs), and related trust information.",
+          "examPoints": [
+            "Repositories allow users, applications, and relying parties to retrieve certificates needed for encryption and signature verification. Many repositories use LDAP or HTTP for certificate publication. Since certificates are public information, repositories focus on availability and integrity rather than confidentiality. A reliable repository ensures that certificate validation can occur efficiently across the organization."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "subscriber",
+          "title": "Subscriber",
+          "definition": "A Subscriber is the individual, device, application, or organization that owns a digital certificate issued by a Certificate Authority and is responsible for protecting the associated private key.",
+          "examPoints": [
+            "Subscribers request certificates through the Registration Authority and receive them from the Certificate Authority after successful identity verification. They must securely store their private keys, renew certificates before expiration, and report compromised keys immediately. Subscribers are responsible for complying with the Certificate Policy and Certification Practice Statement governing certificate usage."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "relying-party",
+          "title": "Relying Party",
+          "definition": "A Relying Party is any user, system, or application that trusts and verifies a digital certificate before relying on the information or digital signature it contains.",
+          "examPoints": [
+            "A relying party validates the certificate chain, verifies the CA's digital signature, checks the certificate's validity period, confirms revocation status, and ensures the certificate matches the intended identity. Only after successful validation does it trust the certificate for authentication or encryption. Web browsers validating HTTPS certificates are common examples of relying parties."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "bridge-ca",
+          "title": "Bridge CA",
+          "definition": "A Bridge Certificate Authority (Bridge CA) is a specialized Certificate Authority that establishes trust relationships between multiple independent PKIs without requiring a single common Root CA.",
+          "examPoints": [
+            "Instead of issuing end-user certificates, a Bridge CA cross-certifies participating Certificate Authorities to enable interoperability between organizations. It simplifies trust management in environments where multiple independent PKIs must communicate securely. Government agencies, multinational enterprises, and federated identity systems commonly use Bridge CAs to establish cross-organizational trust."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cps-certification-practice-statement",
+          "title": "CPS (Certification Practice Statement)",
+          "definition": "A Certification Practice Statement (CPS) is a formal document that describes the operational procedures, security controls, and practices followed by a Certificate Authority while managing digital certificates.",
+          "examPoints": [
+            "The CPS explains how identities are verified, how certificates are issued and revoked, how private keys are protected, and how the PKI is operated securely. It provides transparency to subscribers and relying parties regarding the CA's operational standards. Every trusted CA maintains a CPS to demonstrate compliance with applicable policies and regulations."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cp-certificate-policy",
+          "title": "CP (Certificate Policy)",
+          "definition": "A Certificate Policy (CP) is a formal document that defines the rules, requirements, intended usage, and trust level associated with a particular class of digital certificates.",
+          "examPoints": [
+            "The Certificate Policy specifies who may obtain certificates, the required identity verification procedures, acceptable certificate usage, cryptographic requirements, and lifecycle management rules. It establishes the security expectations for subscribers and relying parties. Certificate Authorities often publish multiple Certificate Policies for different certificate types such as DV, OV, EV, or code-signing certificates."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "oid-object-identifier",
+          "title": "OID (Object Identifier)",
+          "definition": "An Object Identifier (OID) is a globally unique numerical identifier used to uniquely identify cryptographic algorithms, certificate extensions, policies, attributes, and standards within X.509 certificates and ASN.1 structures.",
+          "examPoints": [
+            "OIDs follow a hierarchical numeric format such as 1.2.840.113549.1.1.11. They eliminate ambiguity by providing a universal identifier for specific cryptographic objects across different systems and vendors. OIDs are commonly used to identify signature algorithms, certificate policies, key usages, and certificate extensions. Every important field in an X.509 certificate is associated with one or more standardized OIDs."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        }
+      ]
+    },
+    {
+      "id": "part-03-x-509-certificate-anatomy",
+      "title": "X.509 Certificate Anatomy",
+      "description": "Certificate structure, fields, distinguished names, extensions, constraints, and validation terms.",
+      "terms": [
+        {
+          "id": "x-509",
+          "title": "X.509",
+          "definition": "X.509 is the international standard that defines the format of public key certificates used in Public Key Infrastructure (PKI). It specifies how identities are securely bound to public keys through digitally signed certificates.",
+          "examPoints": [
+            "An X.509 certificate contains information such as the subject, issuer, public key, validity period, serial number, and certificate extensions. The certificate is digitally signed by a trusted Certificate Authority (CA), allowing others to verify its authenticity. X.509 certificates are widely used in HTTPS, VPNs, secure email (S/MIME), code signing, and client authentication. They form the foundation of trust on the Internet."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "asn-1-abstract-syntax-notation-one",
+          "title": "ASN.1 (Abstract Syntax Notation One)",
+          "definition": "ASN.1 (Abstract Syntax Notation One) is an international standard used to define the structure and representation of complex data independently of programming languages or computer architectures.",
+          "examPoints": [
+            "ASN.1 provides a common syntax for representing cryptographic objects such as certificates, keys, and protocol messages. X.509 certificates, PKCS standards, LDAP, SNMP, and many security protocols use ASN.1 structures. However, ASN.1 only defines the data format—it does not specify how the data is stored or transmitted. Encoding rules such as DER and BER are used to convert ASN.1 structures into binary form."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "der-distinguished-encoding-rules",
+          "title": "DER (Distinguished Encoding Rules)",
+          "definition": "DER (Distinguished Encoding Rules) is a binary encoding format for ASN.1 data structures. It provides a unique and deterministic encoding for every ASN.1 object.",
+          "examPoints": [
+            "DER ensures that a certificate or cryptographic object has exactly one binary representation, which is essential for digital signature verification. Most X.509 certificates, cryptographic keys, and certificate requests can be stored in DER format. DER files are binary and cannot be read directly using a text editor. Common file extensions include .der, .cer, and .crt."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pem-privacy-enhanced-mail",
+          "title": "PEM (Privacy-Enhanced Mail)",
+          "definition": "PEM (Privacy-Enhanced Mail) is a Base64-encoded text format used to store and exchange certificates, certificate chains, private keys, and Certificate Signing Requests (CSRs).",
+          "examPoints": [
+            "Although originally developed for secure email, PEM has become the most common format for OpenSSL and Linux-based systems. A PEM file begins with headers such as -----BEGIN CERTIFICATE----- and ends with corresponding footer lines. Since PEM is text-based, it can be viewed and edited using a standard text editor. Multiple certificates can be stored together in a single PEM file."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "tbs-to-be-signed-certificate-tbscertificate",
+          "title": "TBS (To Be Signed Certificate / TBSCertificate)",
+          "definition": "TBSCertificate is the main section of an X.509 certificate that contains all the certificate information digitally signed by the Certificate Authority.",
+          "examPoints": [
+            "The TBSCertificate includes the version, serial number, issuer, subject, validity period, subject public key, and certificate extensions. Before issuing a certificate, the CA computes a hash of the TBSCertificate and signs that hash using its private key. Any modification to the TBSCertificate after signing causes signature verification to fail. Therefore, it is the most critical part of an X.509 certificate."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "dn-distinguished-name",
+          "title": "DN (Distinguished Name)",
+          "definition": "A Distinguished Name (DN) is a unique identifier used in X.509 certificates to identify certificate owners and Certificate Authorities.",
+          "examPoints": [
+            "A DN consists of multiple attributes that uniquely describe an entity, including Common Name (CN), Organization (O), Organizational Unit (OU), Country (C), State (ST), and Locality (L). Together, these attributes uniquely distinguish one entity from another within a directory or PKI. Both the Subject and Issuer fields in an X.509 certificate are represented using Distinguished Names."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cn-common-name",
+          "title": "CN (Common Name)",
+          "definition": "Common Name (CN) is an attribute within a Distinguished Name that identifies the primary name of the certificate owner.",
+          "examPoints": [
+            "For website certificates, the Common Name usually represents the Fully Qualified Domain Name (FQDN), such as [www.example.com](http://www.example.com). For personal certificates, it commonly contains the individual's full name. Modern browsers primarily rely on the Subject Alternative Name (SAN) extension for hostname validation, although the CN remains part of the certificate structure. Historically, CN was the main field used for domain verification."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "o-organization",
+          "title": "O (Organization)",
+          "definition": "Organization (O) is a Distinguished Name attribute that specifies the legal organization or company to which a certificate belongs.",
+          "examPoints": [
+            "The Organization field identifies the business, institution, or government agency that owns the certificate. It is commonly verified during Organization Validation (OV) and Extended Validation (EV) certificate issuance. Including the Organization field helps users identify the entity behind a digital certificate. Personal certificates may omit this field when appropriate."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ou-organizational-unit",
+          "title": "OU (Organizational Unit)",
+          "definition": "Organizational Unit (OU) is a Distinguished Name attribute used to identify a department, division, or organizational subdivision within an organization.",
+          "examPoints": [
+            "Examples include IT Department, Finance, Research, or Security Operations. The OU field provides additional organizational context but is not mandatory in X.509 certificates. Modern Certificate Authorities may ignore or limit the use of the OU field because it is not essential for certificate validation. It remains useful in internal enterprise PKI deployments."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "c-country",
+          "title": "C (Country)",
+          "definition": "Country (C) is a Distinguished Name attribute that specifies the country where the certificate owner or issuing organization is located using a two-letter ISO 3166 country code.",
+          "examPoints": [
+            "Examples include IN for India, US for the United States, and GB for the United Kingdom. The Country field provides geographical information about the certificate owner. It is commonly included in organizational certificates and is verified for certain certificate types such as OV and EV certificates. Only standardized two-letter country codes are permitted."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "st-state-province",
+          "title": "ST (State/Province)",
+          "definition": "State (ST) is a Distinguished Name attribute that identifies the state, province, or administrative region where the certificate owner is located.",
+          "examPoints": [
+            "Examples include Maharashtra, California, or Ontario. The ST field provides additional geographical identification beyond the country. Although not required for every certificate, it is commonly included in organizational certificates. Together with other DN attributes, it helps uniquely identify the certificate subject."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "l-locality",
+          "title": "L (Locality)",
+          "definition": "Locality (L) is a Distinguished Name attribute that specifies the city, town, or locality associated with the certificate owner.",
+          "examPoints": [
+            "Examples include Pune, Mumbai, New York, or London. The Locality field provides more detailed geographical information within a Distinguished Name. While optional, it is commonly included in organization-issued certificates. Combined with Country and State, it forms a complete geographical identity for the certificate subject."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ku-key-usage",
+          "title": "KU (Key Usage)",
+          "definition": "Key Usage (KU) is an X.509 certificate extension that defines the cryptographic operations for which a public key may be used.",
+          "examPoints": [
+            "Key Usage restricts certificate usage to specific purposes such as Digital Signature, Key Encipherment, Data Encipherment, Key Agreement, Certificate Signing, and CRL Signing. Applications check this extension before using the certificate to ensure the intended cryptographic operation is permitted. Proper Key Usage prevents certificates from being misused outside their intended purpose."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "eku-extended-key-usage",
+          "title": "EKU (Extended Key Usage)",
+          "definition": "Extended Key Usage (EKU) is an X.509 certificate extension that specifies the particular applications or services for which a certificate is authorized.",
+          "examPoints": [
+            "Common EKU values include Server Authentication, Client Authentication, Code Signing, Email Protection, Time Stamping, and OCSP Signing. Unlike Key Usage, which defines cryptographic operations, EKU defines application-specific purposes. Browsers, operating systems, and applications verify EKU before accepting a certificate for a particular service. Certificates may contain multiple EKU values."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "san-subject-alternative-name",
+          "title": "SAN (Subject Alternative Name)",
+          "definition": "Subject Alternative Name (SAN) is an X.509 extension that lists additional identities associated with a certificate beyond the Common Name.",
+          "examPoints": [
+            "SAN can contain multiple DNS names, IP addresses, email addresses, or URIs within a single certificate. Modern web browsers validate hostnames primarily using the SAN extension rather than the Common Name. This allows one certificate to secure multiple domains or subdomains. SAN is mandatory for modern TLS certificates issued by public Certificate Authorities."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "bc-basic-constraints",
+          "title": "BC (Basic Constraints)",
+          "definition": "Basic Constraints (BC) is an X.509 extension that indicates whether a certificate belongs to a Certificate Authority or an end entity and defines certificate chain limitations.",
+          "examPoints": [
+            "The extension contains the CA flag, which specifies whether the certificate can issue other certificates. It may also include a path length constraint that limits the number of subordinate Certificate Authorities allowed beneath it. Browsers and certificate validation software rely on Basic Constraints to construct and verify certificate chains. Without proper Basic Constraints, certificate validation fails."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ski-subject-key-identifier",
+          "title": "SKI (Subject Key Identifier)",
+          "definition": "Subject Key Identifier (SKI) is an X.509 extension that uniquely identifies the public key contained within a certificate.",
+          "examPoints": [
+            "The SKI is usually generated by hashing the subject's public key. It allows certificate validation software to uniquely identify certificates that contain similar or identical Distinguished Names. SKI simplifies certificate chain construction and management by providing an efficient reference to the subject's public key. It is commonly included in CA and end-entity certificates."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "aki-authority-key-identifier",
+          "title": "AKI (Authority Key Identifier)",
+          "definition": "Authority Key Identifier (AKI) is an X.509 extension that identifies the public key of the Certificate Authority that signed the certificate.",
+          "examPoints": [
+            "The AKI typically contains the Subject Key Identifier of the issuing CA, allowing software to locate the correct issuer certificate. During certificate chain validation, applications compare the AKI of the issued certificate with the SKI of the issuer. This relationship helps construct certificate chains accurately and efficiently. AKI is especially important in complex PKI environments with multiple Certificate Authorities."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "crl-dp-certificate-revocation-list-distribution-point",
+          "title": "CRL DP (Certificate Revocation List Distribution Point)",
+          "definition": "Certificate Revocation List Distribution Point (CRL DP) is an X.509 extension that specifies where a Certificate Revocation List can be obtained.",
+          "examPoints": [
+            "The extension typically contains an HTTP or LDAP URL pointing to the CRL published by the issuing Certificate Authority. Before trusting a certificate, applications may download the CRL from this location to verify that the certificate has not been revoked. CRL Distribution Points play an essential role in certificate status checking when OCSP is unavailable. Most publicly trusted certificates include this extension."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "aia-authority-information-access",
+          "title": "AIA (Authority Information Access)",
+          "definition": "Authority Information Access (AIA) is an X.509 extension that provides information about the issuing Certificate Authority and services related to certificate validation.",
+          "examPoints": [
+            "The AIA extension commonly contains URLs for downloading the issuer's certificate and accessing the Online Certificate Status Protocol (OCSP) responder. During certificate validation, browsers and operating systems use AIA to retrieve missing intermediate certificates automatically and perform online revocation checking. This extension improves certificate chain construction and simplifies PKI management. It is present in nearly all publicly trusted TLS certificates."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        }
+      ]
+    },
+    {
+      "id": "part-04-files-lifecycle-and-revocation",
+      "title": "Files, Lifecycle & Revocation",
+      "description": "Certificate file formats, key stores, lifecycle operations, CRL, OCSP, renewal, rekey, and revocation status.",
+      "terms": [
+        {
+          "id": "csr-certificate-signing-request",
+          "title": "CSR (Certificate Signing Request)",
+          "definition": "A Certificate Signing Request (CSR) is a digitally signed request generated by an applicant and submitted to a Certificate Authority (CA) to obtain an X.509 certificate.",
+          "examPoints": [
+            "A CSR contains the applicant's public key, Distinguished Name (DN), and optional extensions such as Subject Alternative Names (SANs). The private key never leaves the applicant's system and is not included in the CSR. The CA verifies the applicant's identity before signing the CSR and issuing the certificate. CSRs are commonly generated using OpenSSL, XCA, or enterprise PKI tools."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "crt-certificate",
+          "title": "CRT (Certificate)",
+          "definition": "A CRT file is a digital certificate that contains an entity's public key, identity information, issuer details, validity period, and the Certificate Authority's digital signature.",
+          "examPoints": [
+            "CRT files usually store X.509 certificates in either PEM or DER format. They contain only public information and never include private keys. CRT files are widely used by web servers, VPN servers, email servers, and client authentication systems. Common file extensions include .crt and .pem."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cer-certificate",
+          "title": "CER (Certificate)",
+          "definition": "A CER file is another file extension used to store an X.509 digital certificate. Functionally, it is equivalent to a CRT file.",
+          "examPoints": [
+            "CER files may use either DER (binary) or PEM (Base64 text) encoding depending on the operating system or software. Windows environments commonly use the .cer extension, while Linux systems often prefer .crt. Both contain only public certificate information without any private keys. The file extension does not determine the certificate's encoding."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "key-private-key",
+          "title": "KEY (Private Key)",
+          "definition": "A KEY file stores a cryptographic private key used for decryption, digital signing, or authentication in public-key cryptography.",
+          "examPoints": [
+            "The private key is the most sensitive component of a PKI because anyone possessing it can impersonate the certificate owner. KEY files may contain RSA, ECC, or other private keys and should always be protected using strong encryption and restricted permissions. They are commonly stored in PEM or DER format. Private keys should never be publicly distributed."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pem-privacy-enhanced-mail",
+          "title": "PEM (Privacy-Enhanced Mail)",
+          "definition": "PEM is a Base64-encoded text format used to store certificates, private keys, public keys, certificate chains, and Certificate Signing Requests.",
+          "examPoints": [
+            "PEM files begin with readable headers such as -----BEGIN CERTIFICATE----- or -----BEGIN PRIVATE KEY-----. Since they are text files, they can be viewed and edited with a text editor. PEM is the default format used by OpenSSL and most Linux-based applications. Multiple certificates or keys can be stored within a single PEM file."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "der-distinguished-encoding-rules",
+          "title": "DER (Distinguished Encoding Rules)",
+          "definition": "DER is the binary encoding format used to represent ASN.1 data structures such as certificates, private keys, and Certificate Signing Requests.",
+          "examPoints": [
+            "Unlike PEM, DER is not human-readable because it stores data in binary form. DER guarantees a unique encoding for every ASN.1 object, making it ideal for digital signature verification. Many Windows applications, Java applications, and smart cards use DER-encoded certificates. Common extensions include .der, .cer, and .crt."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pfx-personal-information-exchange",
+          "title": "PFX (Personal Information Exchange)",
+          "definition": "PFX is a Microsoft-developed file format based on PKCS#12 that stores private keys, certificates, and certificate chains within a single password-protected container.",
+          "examPoints": [
+            "PFX files are commonly used in Windows environments for importing and exporting digital identities. Since they include private keys, they must always be protected with strong passwords. Administrators frequently use PFX files to migrate certificates between servers or install HTTPS certificates in IIS. The .pfx extension is functionally equivalent to .p12."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "p12-p12",
+          "title": "P12 (.p12)",
+          "definition": "A P12 file is the standard PKCS#12 container that securely stores private keys, certificates, and complete certificate chains in a single encrypted file.",
+          "examPoints": [
+            "P12 files are portable and supported by Windows, Linux, macOS, Java, browsers, and many enterprise applications. Because they contain private keys, they are password protected to prevent unauthorized access. P12 files simplify certificate migration, backup, and deployment across different operating systems. They are widely used for client certificates and HTTPS server certificates."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "jks-java-keystore",
+          "title": "JKS (Java KeyStore)",
+          "definition": "Java KeyStore (JKS) is Java's proprietary keystore format used to securely store cryptographic keys, certificates, and trusted Certificate Authorities.",
+          "examPoints": [
+            "JKS files are managed using the keytool utility included with the Java Development Kit (JDK). Java applications use JKS files for TLS authentication, code signing, and secure communication. Although Java now supports PKCS#12 as the default format, JKS remains common in many enterprise environments. Both private keys and trusted certificates can be stored within a JKS file."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "keystore",
+          "title": "KeyStore",
+          "definition": "A KeyStore is a secure repository used to store private keys, public keys, certificates, and cryptographic identities required by applications.",
+          "examPoints": [
+            "Applications retrieve certificates and private keys from a keystore during authentication or secure communication. Different operating systems support different keystore formats such as JKS, PKCS#12, or Windows Certificate Store. Since private keys are stored inside a keystore, it must be protected using passwords and access controls. A keystore primarily contains the owner's own identity."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "truststore",
+          "title": "TrustStore",
+          "definition": "A TrustStore is a secure repository that stores trusted Certificate Authority certificates used to verify the authenticity of remote certificates.",
+          "examPoints": [
+            "Unlike a keystore, a truststore does not normally contain private keys. Instead, it stores Root CA and Intermediate CA certificates that applications trust during certificate validation. Browsers, Java applications, operating systems, and TLS clients use truststores to verify certificate chains. If a certificate chain ends at a trusted CA contained in the truststore, the certificate is accepted."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "rng-random-number-generator",
+          "title": "RNG (Random Number Generator)",
+          "definition": "A Random Number Generator (RNG) is a hardware or software mechanism used to generate unpredictable random values required for cryptographic operations.",
+          "examPoints": [
+            "Random numbers are essential for generating cryptographic keys, initialization vectors, nonces, salts, and digital signatures. Weak or predictable randomness can compromise the entire security of a cryptographic system. Modern operating systems use Cryptographically Secure Random Number Generators (CSPRNGs) for key generation. High-quality randomness is fundamental to secure PKI implementations."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "dv-domain-validation",
+          "title": "DV (Domain Validation)",
+          "definition": "Domain Validation (DV) is the simplest certificate validation process in which the Certificate Authority verifies only that the applicant controls the requested domain name.",
+          "examPoints": [
+            "The CA confirms domain ownership using methods such as DNS records, HTTP file validation, or email verification. DV certificates provide encryption but do not verify the identity of the organization behind the website. They are commonly used for personal websites, blogs, APIs, and internal services. Modern HTTPS websites frequently use DV certificates issued by Let's Encrypt."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ov-organization-validation",
+          "title": "OV (Organization Validation)",
+          "definition": "Organization Validation (OV) is a certificate validation process in which the Certificate Authority verifies both domain ownership and the legal identity of the requesting organization.",
+          "examPoints": [
+            "The CA checks business registration records, organizational information, and domain ownership before issuing the certificate. OV certificates provide stronger identity assurance than DV certificates because users can verify the organization owning the website. They are commonly used by businesses, educational institutions, and government organizations. OV certificates include verified organizational information within the certificate."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ev-extended-validation",
+          "title": "EV (Extended Validation)",
+          "definition": "Extended Validation (EV) is the highest level of public certificate validation, requiring extensive verification of an organization's legal, operational, and physical identity before certificate issuance.",
+          "examPoints": [
+            "Certificate Authorities follow strict industry guidelines established by the CA/Browser Forum when issuing EV certificates. The verification process includes legal existence, operational status, domain ownership, and organizational authority. Although modern browsers no longer display prominent green address bars, EV certificates still provide the highest identity assurance. They are commonly used by banks, financial institutions, and government organizations."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "crl-certificate-revocation-list",
+          "title": "CRL (Certificate Revocation List)",
+          "definition": "A Certificate Revocation List (CRL) is a digitally signed list published by a Certificate Authority containing certificates that have been revoked before their expiration date.",
+          "examPoints": [
+            "Certificates may be revoked due to private key compromise, organizational changes, or security incidents. Before trusting a certificate, applications can download the CRL and verify that the certificate's serial number is not listed. CRLs are periodically updated and distributed through URLs specified in the CRL Distribution Point (CRL DP) extension. CRLs provide offline certificate status verification."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "delta-crl",
+          "title": "Delta CRL",
+          "definition": "A Delta CRL is a smaller Certificate Revocation List that contains only certificates revoked since the last complete CRL was published.",
+          "examPoints": [
+            "Instead of downloading the entire CRL repeatedly, applications retrieve the latest Delta CRL along with the base CRL to obtain updated revocation information. This reduces bandwidth usage and improves performance in large PKI deployments. Delta CRLs are especially useful in enterprise environments with thousands of certificates. Together, the full CRL and Delta CRL provide complete revocation status."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ocsp-online-certificate-status-protocol",
+          "title": "OCSP (Online Certificate Status Protocol)",
+          "definition": "OCSP is an online protocol used to determine the real-time revocation status of an individual digital certificate without downloading an entire Certificate Revocation List.",
+          "examPoints": [
+            "A client sends the certificate's serial number to an OCSP Responder, which replies with one of three statuses: Good, Revoked, or Unknown. OCSP provides faster and more efficient revocation checking than CRLs, particularly for large PKI deployments. Most modern web browsers and TLS clients support OCSP. It is commonly referenced through the Authority Information Access (AIA) extension."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ocsp-stapling",
+          "title": "OCSP Stapling",
+          "definition": "OCSP Stapling is a TLS optimization in which the web server periodically obtains a signed OCSP response from the Certificate Authority and includes it directly during the TLS handshake.",
+          "examPoints": [
+            "Instead of each client contacting the OCSP responder individually, the server \"staples\" the latest OCSP response to its certificate. This improves privacy because clients no longer reveal which websites they visit to the Certificate Authority. OCSP Stapling also reduces latency and increases TLS performance by eliminating additional network requests. It is considered a best practice for modern HTTPS deployments."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        }
+      ]
+    },
+    {
+      "id": "part-05-pkcs-standards-ssl-tls-and-https",
+      "title": "PKCS, Standards, SSL/TLS & HTTPS",
+      "description": "PKCS standards, FIPS, TLS/SSL, HTTPS, cipher suites, handshakes, and secure protocol terminology.",
+      "terms": [
+        {
+          "id": "pkcs-1-rsa-cryptography-standard",
+          "title": "PKCS#1 (RSA Cryptography Standard)",
+          "definition": "PKCS#1 is the standard that defines how the RSA cryptographic algorithm should be securely used for encryption, digital signatures, key generation, and padding schemes.",
+          "examPoints": [
+            "PKCS#1 specifies secure RSA encryption using RSAES-OAEP and secure digital signatures using RSASSA-PSS. It also defines legacy methods such as PKCS#1 v1.5 for compatibility. Proper padding prevents mathematical attacks against raw RSA. PKCS#1 is widely used in TLS, digital certificates, code signing, and enterprise PKI implementations."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pkcs-5-password-based-cryptography",
+          "title": "PKCS#5 (Password-Based Cryptography)",
+          "definition": "PKCS#5 defines methods for deriving strong cryptographic keys from human passwords using password-based key derivation functions.",
+          "examPoints": [
+            "The most important algorithm defined by PKCS#5 is PBKDF2, which combines a password, random salt, iteration count, and hash function to derive a secure encryption key. Increasing the iteration count slows brute-force attacks. PKCS#5 is commonly used for encrypting private keys, password-protected files, and PKCS#12 containers. Modern systems may also use Argon2 or scrypt, but PBKDF2 remains widely supported."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pkcs-7-cryptographic-message-syntax",
+          "title": "PKCS#7 (Cryptographic Message Syntax)",
+          "definition": "PKCS#7, now known as Cryptographic Message Syntax (CMS), defines a standard format for securely packaging signed data, encrypted data, certificates, and certificate chains.",
+          "examPoints": [
+            "PKCS#7 supports digital signatures, encryption, certificate distribution, and secure message exchange. It commonly uses file extensions such as .p7b, .p7c, and .p7s. Unlike PKCS#12, PKCS#7 does not store private keys. It is widely used in S/MIME email security, Windows certificate bundles, and code-signing systems."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pkcs-8-private-key-information-syntax",
+          "title": "PKCS#8 (Private Key Information Syntax)",
+          "definition": "PKCS#8 defines the standard format for securely storing and transferring private cryptographic keys.",
+          "examPoints": [
+            "A PKCS#8 file can store encrypted or unencrypted private keys for RSA, ECC, and other public-key algorithms. It separates the private key from the certificate and supports password-based encryption for additional protection. Most OpenSSL-generated private keys follow the PKCS#8 format. It is widely used across operating systems and cryptographic applications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pkcs-10-certificate-signing-request",
+          "title": "PKCS#10 (Certificate Signing Request)",
+          "definition": "PKCS#10 defines the standard format for a Certificate Signing Request (CSR) submitted to a Certificate Authority to request an X.509 certificate.",
+          "examPoints": [
+            "A PKCS#10 CSR contains the applicant's public key, Distinguished Name (DN), optional extensions, and a digital signature proving possession of the corresponding private key. It never contains the private key itself. Certificate Authorities verify the CSR before issuing a certificate. OpenSSL commonly generates PKCS#10 CSRs using the openssl req command."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pkcs-11-cryptoki",
+          "title": "PKCS#11 (Cryptoki)",
+          "definition": "PKCS#11, also called Cryptoki, defines a platform-independent programming interface (API) for accessing cryptographic hardware such as HSMs, smart cards, and USB security tokens.",
+          "examPoints": [
+            "Applications use PKCS#11 to perform cryptographic operations without directly accessing private keys stored inside secure hardware. It supports encryption, decryption, digital signatures, authentication, and key management. Since the private key never leaves the device, hardware-based security is significantly improved. PKCS#11 is widely used in enterprise PKI and government security systems."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pkcs-12-personal-information-exchange",
+          "title": "PKCS#12 (Personal Information Exchange)",
+          "definition": "PKCS#12 defines a portable, password-protected container for securely storing private keys, certificates, and certificate chains together.",
+          "examPoints": [
+            "PKCS#12 files typically use the .p12 or .pfx extension. They simplify certificate backup, migration, and installation across different operating systems. Because they contain private keys, they should always be protected with strong passwords. PKCS#12 is supported by Windows, Linux, macOS, Java, browsers, and enterprise applications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pkcs-15-cryptographic-token-information-format",
+          "title": "PKCS#15 (Cryptographic Token Information Format)",
+          "definition": "PKCS#15 defines the standard organization and storage format for cryptographic objects stored on smart cards and cryptographic tokens.",
+          "examPoints": [
+            "It specifies how certificates, private keys, public keys, PINs, and authentication information should be organized within secure hardware devices. Standardization allows applications from different vendors to access smart cards consistently. PKCS#15 improves interoperability between operating systems and hardware security devices. It is commonly used in smart cards, HSMs, and USB cryptographic tokens."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "fips-140-2-federal-information-processing-standard-140-2",
+          "title": "FIPS 140-2 (Federal Information Processing Standard 140-2)",
+          "definition": "FIPS 140-2 is a U.S. government security standard that specifies the security requirements for cryptographic modules used to protect sensitive information.",
+          "examPoints": [
+            "The standard defines four security levels ranging from Level 1 (basic protection) to Level 4 (maximum physical and logical security). It covers key management, cryptographic algorithms, physical protection, self-testing, and operational security. Many government and enterprise products require FIPS validation. Although largely replaced by FIPS 140-3, many existing products remain certified under FIPS 140-2."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "fips-140-3-federal-information-processing-standard-140-3",
+          "title": "FIPS 140-3 (Federal Information Processing Standard 140-3)",
+          "definition": "FIPS 140-3 is the latest U.S. government standard for validating cryptographic modules, replacing FIPS 140-2.",
+          "examPoints": [
+            "FIPS 140-3 aligns with the international standard ISO/IEC 19790 and introduces updated security requirements for modern cryptographic hardware and software. It improves testing procedures, physical security requirements, and lifecycle assurance. Vendors seeking government certification now validate products under FIPS 140-3. It is increasingly adopted worldwide."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "nist-national-institute-of-standards-and-technology",
+          "title": "NIST (National Institute of Standards and Technology)",
+          "definition": "NIST is a U.S. government agency responsible for developing cybersecurity standards, cryptographic algorithms, and security guidelines.",
+          "examPoints": [
+            "NIST publishes standards such as AES, SHA-2, SHA-3, and FIPS publications. It also maintains the NIST Cybersecurity Framework (CSF) and Special Publications (SP 800 series). Governments, enterprises, and researchers worldwide rely on NIST recommendations for secure system design. NIST standards are considered highly authoritative in cybersecurity."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "rfc-request-for-comments",
+          "title": "RFC (Request for Comments)",
+          "definition": "An RFC (Request for Comments) is an official technical document published by the Internet Engineering Task Force (IETF) that defines Internet protocols, standards, and best practices.",
+          "examPoints": [
+            "RFCs describe the specifications for protocols such as TCP, IP, HTTP, TLS, DNS, SMTP, and OCSP. Each RFC has a unique number, for example RFC 5280 for X.509 Public Key Infrastructure certificates. RFCs provide precise implementation guidelines to ensure interoperability between vendors. Many Internet standards originate as RFCs."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ca-b-forum-certification-authority-browser-forum",
+          "title": "CA/B Forum (Certification Authority/Browser Forum)",
+          "definition": "The CA/Browser Forum (CA/B Forum) is an industry consortium consisting of Certificate Authorities and browser vendors that establishes rules for issuing and managing publicly trusted digital certificates.",
+          "examPoints": [
+            "The forum publishes the Baseline Requirements followed by public Certificate Authorities worldwide. It defines certificate validation procedures, cryptographic requirements, certificate lifetimes, and security practices. Compliance with CA/B Forum rules is mandatory for publicly trusted TLS certificates. Major members include Google, Microsoft, Apple, Mozilla, DigiCert, and Sectigo."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ssl-secure-sockets-layer",
+          "title": "SSL (Secure Sockets Layer)",
+          "definition": "SSL (Secure Sockets Layer) is the original cryptographic protocol developed to secure communication between clients and servers over the Internet.",
+          "examPoints": [
+            "SSL provided encryption, authentication, and message integrity for web traffic. However, vulnerabilities in SSL 2.0 and SSL 3.0 made the protocol insecure. SSL has been completely replaced by TLS, although the term \"SSL certificate\" is still commonly used. Modern systems should never use SSL for secure communications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "tls-transport-layer-security",
+          "title": "TLS (Transport Layer Security)",
+          "definition": "TLS (Transport Layer Security) is the modern cryptographic protocol used to secure communication between clients and servers over untrusted networks.",
+          "examPoints": [
+            "TLS provides confidentiality through encryption, integrity through message authentication, and authentication using digital certificates. During the TLS handshake, the client verifies the server's certificate and establishes shared session keys. Current recommended versions are TLS 1.2 and TLS 1.3. TLS is used in HTTPS, email, VPNs, APIs, and many Internet protocols."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "mtls-mutual-tls",
+          "title": "mTLS (Mutual TLS)",
+          "definition": "Mutual TLS (mTLS) is a TLS authentication mechanism in which both the client and the server authenticate each other using digital certificates.",
+          "examPoints": [
+            "Unlike standard TLS, where only the server presents a certificate, mTLS requires both parties to present valid certificates during the handshake. This provides strong two-way authentication and prevents unauthorized clients from connecting. mTLS is widely used in enterprise APIs, microservices, banking systems, and Zero Trust architectures. It significantly strengthens identity verification."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pfs-perfect-forward-secrecy",
+          "title": "PFS (Perfect Forward Secrecy)",
+          "definition": "Perfect Forward Secrecy (PFS) is a security property that ensures previously encrypted communication remains secure even if the server's long-term private key is compromised in the future.",
+          "examPoints": [
+            "PFS is achieved using ephemeral key exchange algorithms such as ECDHE or DHE, which generate a new session key for every TLS connection. Since session keys are temporary, compromising the server's certificate does not reveal previously recorded traffic. Modern TLS deployments strongly recommend Perfect Forward Secrecy. It is a standard security feature in TLS 1.3."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "http-hypertext-transfer-protocol",
+          "title": "HTTP (Hypertext Transfer Protocol)",
+          "definition": "HTTP is the application-layer protocol used for transferring web pages and other resources between web browsers and web servers.",
+          "examPoints": [
+            "HTTP sends data in plaintext without encryption, making it vulnerable to eavesdropping, tampering, and session hijacking. It typically operates on TCP port 80. HTTP itself provides no confidentiality, integrity, or authentication. Secure communication requires upgrading HTTP to HTTPS."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "https-hypertext-transfer-protocol-secure",
+          "title": "HTTPS (Hypertext Transfer Protocol Secure)",
+          "definition": "HTTPS is the secure version of HTTP that combines HTTP with TLS to provide encrypted communication between clients and web servers.",
+          "examPoints": [
+            "HTTPS protects transmitted data from interception and modification while authenticating the server using X.509 certificates. It normally operates on TCP port 443. Modern browsers display a padlock icon when HTTPS connections are successfully established. HTTPS is essential for secure websites, online banking, e-commerce, APIs, and web applications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "dns-domain-name-system",
+          "title": "DNS (Domain Name System)",
+          "definition": "DNS (Domain Name System) is the distributed naming system that translates human-readable domain names into IP addresses used by computers.",
+          "examPoints": [
+            "Instead of remembering numerical IP addresses, users access websites using domain names such as [www.example.com](http://www.example.com). DNS servers resolve these names into the appropriate IP addresses before network communication begins. DNS plays a critical role in HTTPS because certificates are issued for domain names. Secure variants such as DNSSEC, DoH, and DoT improve DNS security."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "hsts-http-strict-transport-security",
+          "title": "HSTS (HTTP Strict Transport Security)",
+          "definition": "HTTP Strict Transport Security (HSTS) is a web security mechanism that instructs browsers to access a website only through HTTPS and never through insecure HTTP.",
+          "examPoints": [
+            "A web server sends an HSTS response header specifying the duration for which HTTPS must be enforced. Once received, the browser automatically upgrades future HTTP requests to HTTPS, preventing SSL stripping and protocol downgrade attacks. HSTS significantly strengthens website security by ensuring encrypted communication. It is recommended for all production HTTPS websites."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        }
+      ]
+    },
+    {
+      "id": "part-06-openssl-identity-and-secure-email",
+      "title": "OpenSSL, Identity & Secure Email",
+      "description": "OpenSSL labs, certificate commands, identity protocols, authentication standards, S/MIME, PGP, and GPG.",
+      "terms": [
+        {
+          "id": "openssl",
+          "title": "OpenSSL",
+          "definition": "OpenSSL is an open-source cryptographic toolkit that implements SSL/TLS protocols and provides a comprehensive command-line utility for cryptographic operations and Public Key Infrastructure (PKI) management.",
+          "examPoints": [
+            "OpenSSL allows users to generate RSA and ECC key pairs, create Certificate Signing Requests (CSRs), issue self-signed certificates, inspect certificates, encrypt and decrypt files, generate hashes, and create digital signatures. It supports numerous cryptographic algorithms and PKCS standards. OpenSSL is the most widely used PKI tool on Linux and Unix systems. It is commonly used by administrators for TLS certificate deployment and troubleshooting."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "xca-x-certificate-and-key-management",
+          "title": "XCA (X Certificate and Key Management)",
+          "definition": "XCA is a graphical Public Key Infrastructure (PKI) management application used to create, manage, and organize certificates, Certificate Authorities, private keys, and Certificate Revocation Lists.",
+          "examPoints": [
+            "Unlike OpenSSL's command-line interface, XCA provides a user-friendly graphical interface for PKI operations. It allows administrators to create Root CAs, Intermediate CAs, server certificates, client certificates, CRLs, and PKCS#12 files without manually writing OpenSSL configuration files. XCA is widely used in educational labs, enterprise PKI testing, and certificate management. It stores PKI objects in a secure database for easy administration."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "apache",
+          "title": "Apache",
+          "definition": "Apache HTTP Server (Apache) is one of the world's most widely used open-source web servers capable of hosting HTTP and HTTPS websites.",
+          "examPoints": [
+            "Apache supports SSL/TLS through the mod_ssl module, allowing secure HTTPS communication using X.509 certificates. Administrators configure virtual hosts, certificate files, private keys, and certificate chains to enable encrypted web services. Apache supports features such as HSTS, OCSP Stapling, client certificate authentication, and modern TLS versions. It is commonly used in enterprise web hosting and PKI demonstrations."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "nginx",
+          "title": "Nginx",
+          "definition": "Nginx is a high-performance web server, reverse proxy, load balancer, and HTTP cache that efficiently serves web applications and HTTPS services.",
+          "examPoints": [
+            "Nginx supports SSL/TLS using X.509 certificates and private keys for secure communication. It is known for handling large numbers of concurrent connections with low memory usage. Nginx is widely deployed as a reverse proxy, API gateway, and load balancer in modern cloud infrastructures. Features such as HTTP/2, OCSP Stapling, HSTS, and TLS optimization are commonly configured within Nginx."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "mfa-multi-factor-authentication",
+          "title": "MFA (Multi-Factor Authentication)",
+          "definition": "Multi-Factor Authentication (MFA) is an authentication mechanism that requires users to present two or more independent authentication factors before access is granted.",
+          "examPoints": [
+            "Authentication factors generally belong to three categories: something you know (password), something you have (security token or smartphone), and something you are (biometric characteristics). Requiring multiple factors significantly reduces the risk of unauthorized access caused by compromised passwords. MFA is widely used in banking, cloud services, enterprise VPNs, and privileged administrative accounts. It is considered a fundamental Zero Trust security control."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "fido-fast-identity-online",
+          "title": "FIDO (Fast Identity Online)",
+          "definition": "FIDO (Fast Identity Online) is a set of open authentication standards developed by the FIDO Alliance to provide secure, passwordless authentication.",
+          "examPoints": [
+            "FIDO replaces traditional passwords with cryptographic key pairs stored securely on authentication devices. During registration, a public key is stored by the service while the private key remains securely on the user's device. Authentication requires local user verification such as biometrics or a PIN before cryptographic proof is generated. FIDO significantly reduces phishing, credential theft, and password reuse attacks."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "webauthn-web-authentication",
+          "title": "WebAuthn (Web Authentication)",
+          "definition": "WebAuthn (Web Authentication) is a W3C web standard that enables browsers and websites to perform secure passwordless authentication using FIDO authenticators.",
+          "examPoints": [
+            "WebAuthn works together with the CTAP (Client-to-Authenticator Protocol) to communicate with security keys, smartphones, or built-in authenticators. During login, the browser requests a cryptographic signature generated by the user's authenticator rather than transmitting passwords. WebAuthn supports biometrics, hardware security keys, and platform authenticators. It is widely supported by modern browsers and operating systems."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "oauth-open-authorization",
+          "title": "OAuth (Open Authorization)",
+          "definition": "OAuth is an authorization framework that allows third-party applications to access a user's resources without requiring the user's password.",
+          "examPoints": [
+            "Instead of sharing credentials, the user grants permission through an authorization server, which issues an access token to the client application. OAuth controls authorization, not user authentication. It is commonly used for \"Login with Google,\" API access, cloud services, and mobile applications. Modern implementations generally use OAuth 2.0, although OAuth itself does not define user identity."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "oidc-openid-connect",
+          "title": "OIDC (OpenID Connect)",
+          "definition": "OpenID Connect (OIDC) is an authentication protocol built on top of OAuth 2.0 that provides secure user identity verification.",
+          "examPoints": [
+            "OIDC extends OAuth by introducing an ID Token, typically encoded as a JSON Web Token (JWT), containing authenticated user identity information. While OAuth answers \"What can you access?\", OIDC answers \"Who are you?\". OIDC is widely used for Single Sign-On (SSO), cloud identity providers, and modern web applications. Major providers such as Google, Microsoft, and Okta support OpenID Connect."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "saml-security-assertion-markup-language",
+          "title": "SAML (Security Assertion Markup Language)",
+          "definition": "SAML (Security Assertion Markup Language) is an XML-based standard used to exchange authentication and authorization information between identity providers and service providers.",
+          "examPoints": [
+            "SAML enables Single Sign-On (SSO) by allowing users to authenticate once with an Identity Provider (IdP) and then access multiple applications without logging in again. Authentication information is exchanged using digitally signed SAML assertions. SAML is widely used in enterprise environments, universities, and government organizations. Although newer applications increasingly use OIDC, SAML remains common for enterprise SSO."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "smtp-simple-mail-transfer-protocol",
+          "title": "SMTP (Simple Mail Transfer Protocol)",
+          "definition": "SMTP (Simple Mail Transfer Protocol) is the standard Internet protocol used for sending email messages between clients and mail servers or between mail servers.",
+          "examPoints": [
+            "SMTP is responsible only for sending email, while protocols such as POP3 and IMAP retrieve email. Modern SMTP supports encryption using STARTTLS or SMTPS to protect communication. SMTP authentication prevents unauthorized users from sending mail through mail servers. It is the foundation of enterprise email systems and Internet mail delivery."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "mime-multipurpose-internet-mail-extensions",
+          "title": "MIME (Multipurpose Internet Mail Extensions)",
+          "definition": "MIME (Multipurpose Internet Mail Extensions) is an Internet standard that extends email by allowing the transmission of multimedia content and file attachments.",
+          "examPoints": [
+            "Originally, email supported only plain ASCII text. MIME introduced support for images, audio, video, PDFs, office documents, and multiple content types within a single email. It also defines multipart messages and Base64 encoding for binary attachments. Nearly all modern email systems rely on MIME for formatting and attachment handling."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "s-mime-secure-multipurpose-internet-mail-extensions",
+          "title": "S/MIME (Secure/Multipurpose Internet Mail Extensions)",
+          "definition": "S/MIME is an email security standard that uses X.509 certificates and Public Key Infrastructure (PKI) to provide digital signatures and encryption for email messages.",
+          "examPoints": [
+            "Digital signatures provide authentication, integrity, and non-repudiation, while encryption ensures confidentiality. Each user possesses an X.509 certificate and private key issued by a trusted Certificate Authority. S/MIME is widely supported by Microsoft Outlook, Apple Mail, and enterprise email systems. It is commonly used in government, healthcare, and financial organizations."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "pgp-pretty-good-privacy",
+          "title": "PGP (Pretty Good Privacy)",
+          "definition": "PGP (Pretty Good Privacy) is an encryption system that provides secure email encryption, digital signatures, authentication, and file encryption using public-key cryptography.",
+          "examPoints": [
+            "Unlike S/MIME, which depends on Certificate Authorities, PGP uses a decentralized Web of Trust model where users validate one another's public keys. PGP combines symmetric encryption for data confidentiality with asymmetric encryption for secure key exchange. It is widely used by privacy-conscious individuals, journalists, and security professionals. PGP also supports secure file encryption and digital signatures."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "gpg-gnu-privacy-guard",
+          "title": "GPG (GNU Privacy Guard)",
+          "definition": "GPG (GNU Privacy Guard) is the open-source implementation of the OpenPGP standard used for encryption, decryption, digital signatures, and cryptographic key management.",
+          "examPoints": [
+            "GPG provides functionality similar to PGP but is freely available under open-source licensing. It allows users to generate key pairs, encrypt files, decrypt data, sign documents, and verify digital signatures using command-line tools. GPG is widely available on Linux, Windows, and macOS. It is extensively used for software package verification, secure communication, and email encryption."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        }
+      ]
+    },
+    {
+      "id": "part-07-trust-stores-india-pki-law-and-tools",
+      "title": "Trust Stores, India PKI, Law & Tools",
+      "description": "Trust stores, Indian PKI, digital signature law, compliance, blockchain integrity, browser trust, and lab tools.",
+      "terms": [
+        {
+          "id": "nss-network-security-services",
+          "title": "NSS (Network Security Services)",
+          "definition": "NSS (Network Security Services) is an open-source cryptographic library developed by Mozilla that provides SSL/TLS, PKI, certificate management, and cryptographic services for applications.",
+          "examPoints": [
+            "NSS implements cryptographic algorithms, certificate validation, digital signatures, and TLS protocols. Firefox uses its own NSS certificate database instead of relying entirely on the operating system's trust store. Administrators manage NSS databases using the certutil command-line tool. NSS is widely used by Firefox, Thunderbird, Red Hat systems, and other security applications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "ca-bundle",
+          "title": "CA Bundle",
+          "definition": "A CA Bundle is a collection of trusted Root Certificate Authority certificates used by operating systems and applications to verify digital certificate chains.",
+          "examPoints": [
+            "When a client receives a server certificate, it attempts to build a certificate chain that ends at one of the trusted Root CAs stored in the CA Bundle. Linux distributions typically maintain a central CA bundle file that applications use for certificate verification. Administrators can add internal Root CAs to support enterprise PKI deployments. Without a trusted CA Bundle, HTTPS certificate validation fails."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "certmgr-msc",
+          "title": "certmgr.msc",
+          "definition": "certmgr.msc is the Microsoft Management Console (MMC) snap-in used to view, import, export, manage, and delete certificates in the Windows Certificate Store.",
+          "examPoints": [
+            "It allows administrators to manage personal certificates, trusted Root CAs, intermediate CAs, client certificates, and revoked certificates. Certificates can be imported, exported, renewed, or deleted through its graphical interface. It is commonly used for HTTPS certificate management, client authentication, and enterprise PKI administration. It provides easy access to the Windows certificate infrastructure."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "powershell",
+          "title": "PowerShell",
+          "definition": "PowerShell is Microsoft's scripting and automation framework that includes built-in cmdlets for managing certificates, Certificate Stores, and Public Key Infrastructure.",
+          "examPoints": [
+            "Administrators can create, import, export, remove, and inspect certificates using PowerShell commands without using graphical tools. PowerShell supports automation of enterprise PKI tasks through scripting. It is widely used in Active Directory, Windows Server, and cloud administration. Certificate management can also be integrated into deployment scripts and DevOps pipelines."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "keytool",
+          "title": "keytool",
+          "definition": "keytool is the Java command-line utility used to create, manage, import, export, and inspect Java KeyStores (JKS) and PKCS#12 keystores.",
+          "examPoints": [
+            "It generates key pairs, creates self-signed certificates, imports trusted certificates, and manages private keys used by Java applications. Java developers frequently use keytool to configure HTTPS servers such as Tomcat and Spring Boot applications. It supports both JKS and PKCS#12 formats. keytool is included with every Java Development Kit (JDK)."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cacerts",
+          "title": "cacerts",
+          "definition": "cacerts is Java's default TrustStore containing trusted Root Certificate Authority certificates used by Java applications during TLS certificate validation.",
+          "examPoints": [
+            "Whenever a Java application establishes a secure TLS connection, it verifies the server certificate against the trusted Root CAs stored in cacerts. Administrators can import additional enterprise Root CAs using the keytool utility. Each Java installation maintains its own cacerts file. Proper management of cacerts is essential for enterprise Java applications."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "mdm-mobile-device-management",
+          "title": "MDM (Mobile Device Management)",
+          "definition": "Mobile Device Management (MDM) is an enterprise solution used to centrally manage mobile devices, security policies, applications, and digital certificates.",
+          "examPoints": [
+            "MDM platforms distribute certificates, configure Wi-Fi, VPNs, email accounts, and security policies across large numbers of mobile devices. Administrators can remotely install enterprise Root CAs and client certificates. MDM also supports device encryption, remote wipe, and compliance monitoring. Popular MDM platforms include Microsoft Intune, VMware Workspace ONE, and MobileIron."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cca-controller-of-certifying-authorities",
+          "title": "CCA (Controller of Certifying Authorities)",
+          "definition": "The Controller of Certifying Authorities (CCA) is the statutory authority established under the Information Technology Act, 2000 to regulate Public Key Infrastructure in India.",
+          "examPoints": [
+            "The CCA licenses and supervises Certifying Authorities (CAs), establishes PKI standards, audits licensed CAs, and ensures compliance with Indian digital signature regulations. It operates the Root Certifying Authority of India (RCAI), which forms the root of India's PKI trust hierarchy. The CCA plays a central role in electronic governance and legally recognized digital signatures."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "dsc-digital-signature-certificate",
+          "title": "DSC (Digital Signature Certificate)",
+          "definition": "A Digital Signature Certificate (DSC) is an X.509 digital certificate issued by a licensed Certifying Authority that binds an individual's or organization's identity to a public key.",
+          "examPoints": [
+            "DSCs enable secure digital signing, authentication, and encryption of electronic documents. They are widely used for income tax filing, MCA filings, GST registration, e-tendering, and government portals in India. The private key associated with a DSC is usually stored securely on a USB cryptographic token. Digital signatures created using DSCs have legal recognition under the IT Act, 2000."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "tsa-time-stamping-authority",
+          "title": "TSA (Time Stamping Authority)",
+          "definition": "A Time Stamping Authority (TSA) is a trusted entity that issues cryptographically signed timestamps proving that specific digital data existed at a particular time.",
+          "examPoints": [
+            "The TSA receives a hash of the document, records the current trusted time, digitally signs the timestamp, and returns it to the requester. The document itself is never transmitted to the TSA, preserving confidentiality. Trusted timestamps are widely used for legal documents, software code signing, electronic records, and long-term digital signature validation. TSA services commonly follow RFC 3161."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "rfc-3161-time-stamp-protocol",
+          "title": "RFC 3161 (Time-Stamp Protocol)",
+          "definition": "RFC 3161 is the Internet standard that defines the protocol used for requesting and issuing trusted digital timestamps from a Time Stamping Authority.",
+          "examPoints": [
+            "The requester sends the hash of a document to the TSA, which responds with a digitally signed timestamp token. This token proves that the document existed before a specific point in time. RFC 3161 timestamps are widely used for legal evidence, code signing, document archiving, and digital signature validation. The protocol ensures timestamp integrity and authenticity."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "it-act-2000",
+          "title": "IT Act 2000",
+          "definition": "The Information Technology Act, 2000 is India's primary legislation governing electronic records, digital signatures, cybersecurity, and electronic commerce.",
+          "examPoints": [
+            "The Act grants legal recognition to electronic records and digital signatures while establishing the legal framework for electronic transactions. It defines cybercrimes, penalties, responsibilities of Certifying Authorities, and the powers of the Controller of Certifying Authorities (CCA). The IT Act forms the legal basis for India's Public Key Infrastructure. It is regularly updated to address emerging cybersecurity challenges."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "electronic-records",
+          "title": "Electronic Records",
+          "definition": "Electronic Records are documents, files, emails, databases, or other information created, stored, transmitted, or received in digital form.",
+          "examPoints": [
+            "Under the Information Technology Act, electronic records possess legal validity equivalent to paper documents when created and maintained according to legal requirements. Digital signatures ensure their authenticity and integrity. Electronic records are widely used in banking, healthcare, government services, legal documentation, and enterprise systems. Proper preservation is essential for compliance and legal evidence."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "digital-signature-rules",
+          "title": "Digital Signature Rules",
+          "definition": "Digital Signature Rules are regulations issued under the Information Technology Act that define how digital signatures, certificates, and Certifying Authorities must operate within India's PKI.",
+          "examPoints": [
+            "These rules specify certificate issuance procedures, identity verification requirements, security standards, audit requirements, and cryptographic controls. Licensed Certifying Authorities must comply with these regulations to issue legally valid Digital Signature Certificates. The rules ensure trust, interoperability, and legal enforceability of digital signatures across India."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "audit",
+          "title": "Audit",
+          "definition": "A Security Audit is a systematic examination of an organization's security controls, policies, systems, and procedures to verify compliance with security standards and identify weaknesses.",
+          "examPoints": [
+            "Audits assess whether security controls are properly designed, implemented, and operating effectively. They may include technical testing, policy reviews, vulnerability assessments, and compliance verification. PKI audits verify Certificate Authority operations, certificate lifecycle management, and cryptographic controls. Audits help organizations improve security posture and regulatory compliance."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "compliance",
+          "title": "Compliance",
+          "definition": "Compliance refers to the process of ensuring that an organization follows applicable laws, regulations, industry standards, and internal security policies.",
+          "examPoints": [
+            "Compliance frameworks define mandatory security controls, documentation, auditing, and operational practices. Examples include ISO/IEC 27001, PCI DSS, HIPAA, GDPR, and India's IT Act. Maintaining compliance reduces legal risk, improves customer trust, and strengthens organizational security. Regular audits are performed to verify ongoing compliance."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "merkle-tree",
+          "title": "Merkle Tree",
+          "definition": "A Merkle Tree is a hierarchical cryptographic data structure in which every non-leaf node contains the hash of its child nodes, allowing efficient integrity verification of large datasets.",
+          "examPoints": [
+            "Individual data blocks are first hashed, and those hashes are repeatedly combined and hashed until a single Merkle Root is produced. Changing any data block changes the Merkle Root, making tampering immediately detectable. Merkle Trees are fundamental to Bitcoin, Ethereum, Git, distributed storage systems, and blockchain technology. They enable efficient verification without processing the entire dataset."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "hash-chain",
+          "title": "Hash Chain",
+          "definition": "A Hash Chain is a sequence of hashes where each hash depends on the previous one, creating a cryptographically linked chain of data.",
+          "examPoints": [
+            "Each block or record contains the hash of the previous block, making any modification immediately detectable because it changes all subsequent hashes. Hash Chains provide integrity, immutability, and tamper evidence. They are widely used in blockchain systems, secure logging, timestamping, and audit trails. Breaking a Hash Chain requires recomputing every subsequent hash."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "consensus",
+          "title": "Consensus",
+          "definition": "Consensus is the process by which distributed blockchain participants agree on the validity and order of transactions without relying on a central authority.",
+          "examPoints": [
+            "Consensus algorithms ensure that every node maintains the same version of the blockchain ledger. Common mechanisms include Proof of Work (PoW), Proof of Stake (PoS), Practical Byzantine Fault Tolerance (PBFT), and Delegated Proof of Stake (DPoS). Consensus prevents double spending and malicious manipulation of blockchain data. It is fundamental to decentralized systems."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "wallet-keys",
+          "title": "Wallet Keys",
+          "definition": "Wallet Keys are cryptographic public-private key pairs that enable users to securely own, transfer, and digitally sign cryptocurrency transactions.",
+          "examPoints": [
+            "The private key authorizes spending and must remain secret, while the public key is used to derive wallet addresses and verify digital signatures. Losing the private key usually means permanent loss of access to cryptocurrency assets. Wallet software securely stores these keys using encryption or hardware security devices. Blockchain ownership depends entirely on possession of the private key."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "digital-signatures",
+          "title": "Digital Signatures",
+          "definition": "A Digital Signature is a cryptographic mechanism that uses a private key to sign digital data and a corresponding public key to verify the authenticity and integrity of that data.",
+          "examPoints": [
+            "Digital signatures provide authentication, integrity, and non-repudiation. The sender hashes the message and encrypts the hash using their private key. The receiver decrypts the signature using the sender's public key and compares the resulting hash with a newly computed hash of the received message. Digital signatures are widely used in PKI, HTTPS, code signing, email security, and blockchain transactions."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "cryptool",
+          "title": "CrypTool",
+          "definition": "CrypTool is an educational cryptography software suite used to demonstrate and experiment with cryptographic algorithms, protocols, and security concepts.",
+          "examPoints": [
+            "It provides graphical implementations of classical ciphers, modern encryption algorithms, hashing, digital signatures, PKI, RSA, AES, ECC, and cryptanalysis techniques. CrypTool helps students visualize how cryptographic algorithms work internally. It is widely used in cybersecurity education, research, and laboratory exercises. Multiple versions, including CrypTool 2, support advanced security analysis."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "browser-trust",
+          "title": "Browser Trust",
+          "definition": "Browser Trust is the mechanism by which web browsers determine whether a website's digital certificate should be trusted during an HTTPS connection.",
+          "examPoints": [
+            "Browsers verify the certificate chain, issuer signature, validity period, hostname (SAN), revocation status, and whether the Root CA exists in the browser or operating system's trust store. If validation succeeds, the browser establishes a secure TLS session and displays the HTTPS padlock. Invalid or untrusted certificates trigger security warnings. Browser trust is the foundation of secure web communication."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "dns-configuration",
+          "title": "DNS Configuration",
+          "definition": "DNS Configuration is the process of configuring Domain Name System records so that domain names correctly resolve to the intended IP addresses and network services.",
+          "examPoints": [
+            "Common DNS records include A, AAAA, CNAME, MX, TXT, and NS records. Proper DNS configuration is essential for HTTPS certificate validation, email delivery, web hosting, and many Internet services. Certificate Authorities often verify domain ownership using DNS records during certificate issuance. Incorrect DNS configuration can prevent websites and security services from functioning correctly."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "email-signing",
+          "title": "Email Signing",
+          "definition": "Email Signing is the process of digitally signing email messages using a private key to verify the sender's identity and protect message integrity.",
+          "examPoints": [
+            "The sender creates a digital signature using their private key, and recipients verify it using the sender's public certificate. Email signing confirms that the message has not been modified during transmission and proves the sender's identity. Technologies such as S/MIME and PGP implement digital email signatures. Email signing provides authentication, integrity, and non-repudiation."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        },
+        {
+          "id": "email-encryption",
+          "title": "Email Encryption",
+          "definition": "Email Encryption is the process of encrypting email messages so that only the intended recipient can read their contents.",
+          "examPoints": [
+            "The sender encrypts the message using the recipient's public key, and the recipient decrypts it using their private key. This ensures confidentiality even if the email is intercepted during transmission. S/MIME and PGP are the most widely used email encryption standards. Encrypted email protects sensitive business, financial, healthcare, and government communications from unauthorized access."
+          ],
+          "comparisons": [],
+          "commands": [],
+          "workflows": [],
+          "oneLiners": []
+        }
+      ]
+    }
+  ]
+}
