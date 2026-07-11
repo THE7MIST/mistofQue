@@ -1,1 +1,1369 @@
-{"version":"1","title":"SC Warm Up MCQ","subject":"SC","stage":"Warm Up MCQ","durationMinutes":10,"questions":[{"id":1,"question":"Placeholder question for SC Warm Up MCQ.","options":["Option A","Option B","Option C","Option D"],"correct":0,"description":"Placeholder item. Replace this question with real MCQ content.","difficulty":"Easy","tags":["SC","Placeholder"]}]}
+{
+  "version": "1",
+  "title": "Security Concepts Warm Up MCQ",
+  "subject": "Security Concepts",
+  "stage": "Warm Up MCQ",
+  "durationMinutes": 80,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A penetration tester enters the following input into a login form: ' OR '1'='1' -- The application grants access without valid credentials. Which vulnerability has been exploited?",
+      "options": [
+        "Cross-Site Scripting (XSS)",
+        "SQL Injection",
+        "Command Injection",
+        "Broken Access Control"
+      ],
+      "correct": 1,
+      "description": "The payload modifies the SQL query's logic so the authentication condition always evaluates to TRUE, bypassing login. Example: SELECT * FROM users WHERE username='' OR '1'='1' This is a classic authentication bypass SQL Injection. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "A security tester discovers that a web application reflects user input directly into the page without proper encoding. JavaScript executes immediately after clicking a crafted URL. Which vulnerability is present?",
+      "options": [
+        "Stored XSS",
+        "DOM XSS",
+        "Reflected XSS",
+        "SQL Injection"
+      ],
+      "correct": 2,
+      "description": "The malicious payload is reflected immediately in the HTTP response and executes only when the victim opens the crafted request. Stored XSS would save the payload inside the application. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which activity is performed before exploitation during a standard web application penetration test?",
+      "options": [
+        "Privilege Escalation",
+        "Threat Risk Modelling",
+        "Data Exfiltration",
+        "Log Manipulation"
+      ],
+      "correct": 1,
+      "description": "Threat modeling identifies Assets Threats Attack surfaces Trust boundaries Possible attack paths before attempting exploitation. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "A developer validates user input only using JavaScript running inside the browser. Why is this considered insecure?",
+      "options": [
+        "JavaScript executes too slowly.",
+        "Client-side validation can easily be bypassed.",
+        "JavaScript cannot validate numbers.",
+        "Browsers automatically encrypt JavaScript."
+      ],
+      "correct": 1,
+      "description": "Attackers can Disable JavaScript Modify requests Use Burp Suite Send custom HTTP requests Server-side validation is mandatory. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which Burp Suite component is primarily used to manually modify and resend HTTP requests multiple times?",
+      "options": [
+        "Spider",
+        "Scanner",
+        "Repeater",
+        "Sequencer"
+      ],
+      "correct": 2,
+      "description": "Repeater allows testers to Modify requests Replay requests Observe responses Test payloads manually Scanner performs automated vulnerability detection. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "A company wants to detect security vulnerabilities without executing the application. Which testing approach should they choose?",
+      "options": [
+        "DAST",
+        "Fuzz Testing",
+        "SAST",
+        "Penetration Testing"
+      ],
+      "correct": 2,
+      "description": "SAST analyzes Source code Bytecode Binaries without executing the application. DAST requires a running application. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "During testing, a user account can access another user's invoice simply by changing: invoice?id=105 to invoice?id=106 What is the primary vulnerability?",
+      "options": [
+        "Buffer Overflow",
+        "Injection",
+        "Broken Access Control",
+        "Cross-Site Scripting"
+      ],
+      "correct": 2,
+      "description": "The application fails to verify whether the authenticated user is authorized to access the requested resource. Changing identifiers should never grant unauthorized access. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which HTTP method is generally intended to retrieve data without modifying server state?",
+      "options": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "correct": 2,
+      "description": "GET requests should be Safe Idempotent Read-only POST modifies data. PUT replaces resources. DELETE removes resources. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "A tester intercepts an HTTP request using Burp Suite Proxy and changes the value: role=user to role=admin The server accepts the request and grants administrative privileges. Which security principle has failed?",
+      "options": [
+        "Input Validation",
+        "Confidentiality",
+        "Access Control",
+        "Availability"
+      ],
+      "correct": 2,
+      "description": "The server trusted user-supplied data instead of verifying privileges on the server side. Proper authorization must always occur server-side. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "A tester wants to identify SQL Injection vulnerabilities automatically in a running web application. Which tool is best suited according to the syllabus?",
+      "options": [
+        "Checkmarx",
+        "Fortify Static Analyzer",
+        "OWASP ZAP",
+        "GCC Compiler"
+      ],
+      "correct": 2,
+      "description": "OWASP ZAP is a DAST (Dynamic Application Security Testing) tool that scans running web applications for vulnerabilities such as SQL Injection and XSS. Checkmarx and Fortify are primarily SAST tools that analyze source code. GCC is a compiler and not a security testing tool. Security Concepts MCQ Set 2 (Q11-Q20) ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "A tester injects the following payload into a search field: ' UNION SELECT username,password FROM users-- The application displays usernames and password hashes in the search results.",
+      "options": [
+        "Blind SQL Injection",
+        "Error-Based SQL Injection",
+        "Union-Based SQL Injection",
+        "Stored Procedure Injection"
+      ],
+      "correct": 2,
+      "description": "UNION combines the original query's result with another query, allowing attackers to retrieve data from other tables. This attack requires the number and types of columns to match. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "A login page always displays \"Invalid username or password\", regardless of whether the username exists. A tester sends payloads that delay the server response by five seconds when true. Which SQL Injection technique is being used?",
+      "options": [
+        "Error-Based SQL Injection",
+        "Union-Based SQL Injection",
+        "Time-Based Blind SQL Injection",
+        "Stored XSS"
+      ],
+      "correct": 2,
+      "description": "When no error messages or output are available, attackers infer results from response delays using functions like `SLEEP()` or `WAITFOR DELAY`. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Which statement best distinguishes SAST from DAST?",
+      "options": [
+        "SAST tests running applications, while DAST analyzes source code.",
+        "SAST analyzes source code without execution, while DAST tests a running application.",
+        "Both require application source code.",
+        "Both require the application to be running."
+      ],
+      "correct": 1,
+      "description": "SAST examines source code, bytecode, or binaries before deployment. DAST interacts with a live application from the outside, simulating an attacker. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "A tester captures traffic between a browser and a web server to examine cookies, HTTP headers, and request parameters. Which tool from the syllabus is most appropriate?",
+      "options": [
+        "Burp Scanner",
+        "Wireshark",
+        "Checkmarx",
+        "John the Ripper"
+      ],
+      "correct": 1,
+      "description": "Wireshark captures and analyzes network packets. It is ideal for inspecting HTTP requests, responses, headers, cookies, and TCP communication. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Which HTTP response header helps reduce the risk of Cross-Site Scripting by restricting where scripts can be loaded from?",
+      "options": [
+        "Server",
+        "Content-Security-Policy",
+        "Host",
+        "Accept-Encoding"
+      ],
+      "correct": 1,
+      "description": "The Content-Security-Policy (CSP) header limits the sources from which scripts, styles, and other resources may be loaded, significantly reducing the impact of many XSS attacks. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "A developer concatenates user input directly into a SQL query without parameterized statements. Which security principle has primarily been violated?",
+      "options": [
+        "Least Privilege",
+        "Input Validation",
+        "Availability",
+        "Session Management"
+      ],
+      "correct": 1,
+      "description": "Failing to validate or parameterize user input allows malicious SQL code to become part of the query, leading to SQL Injection. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "A penetration tester needs to manually modify a request multiple times to test different SQL Injection payloads without repeatedly browsing through the application. Which Burp Suite module should be used?",
+      "options": [
+        "Proxy",
+        "Repeater",
+        "Decoder",
+        "Comparer"
+      ],
+      "correct": 1,
+      "description": "Repeater allows a tester to edit, resend, and compare requests manually. It is the preferred tool for experimenting with different payloads. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "A web application stores the following comment in its database: <script>alert('Hacked')</script> Every visitor who views the page sees the alert. Which vulnerability is demonstrated?",
+      "options": [
+        "Reflected XSS",
+        "DOM XSS",
+        "Stored XSS",
+        "HTTP Response Splitting"
+      ],
+      "correct": 2,
+      "description": "Stored XSS occurs when malicious input is permanently saved on the server and executed whenever other users access the affected page. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "A security engineer uses OWASP ZAP to scan a deployed web application and Checkmarx to analyze its source code. Which pairing is correct?",
+      "options": [
+        "ZAP → SAST, Checkmarx → DAST",
+        "ZAP → DAST, Checkmarx → SAST",
+        "Both are DAST tools",
+        "Both are SAST tools"
+      ],
+      "correct": 1,
+      "description": "OWASP ZAP dynamically scans running web applications (DAST). Checkmarx analyzes source code without execution (SAST). ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "A web application accepts the following URL: https://example.com/page?file=home.php The application directly includes the file specified by the `file` parameter without proper validation. Which class of vulnerability is most likely?",
+      "options": [
+        "SQL Injection",
+        "File Inclusion",
+        "Cross-Site Request Forgery",
+        "Buffer Overflow"
+      ],
+      "correct": 1,
+      "description": "If user input determines which file is included without proper validation, attackers may exploit Local File Inclusion (LFI) or Remote File Inclusion (RFI) vulnerabilities to read sensitive files or execute malicious code. Security Concepts MCQ Set 3 (Q21-Q30) ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "During a penetration test, the tester enters the following into a login form: admin'-- The application logs the tester in as the administrator. Which statement best explains why this attack worked?",
+      "options": [
+        "The SQL comment operator (`--`) causes the remainder of the SQL query to be ignored.",
+        "The payload creates a new administrator account.",
+        "The database automatically converts comments into valid credentials.",
+        "The payload performs a Union-Based SQL Injection."
+      ],
+      "correct": 0,
+      "description": "The `--` operator comments out the remaining SQL statement, often bypassing password verification. Example: SELECT * FROM users WHERE username='admin'--' AND password='xyz'; Everything after `--` is ignored. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is NOT primarily intended to identify vulnerabilities in a web application?",
+      "options": [
+        "Burp Suite Scanner",
+        "OWASP ZAP",
+        "Wireshark",
+        "Checkmarx"
+      ],
+      "correct": 2,
+      "description": "Wireshark captures and analyzes network traffic. It does not automatically discover web application vulnerabilities like Burp Scanner, ZAP, or Checkmarx. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "A tester repeatedly modifies request parameters using Burp Repeater but notices every request is rejected due to an anti-CSRF token changing with each submission. Which Burp feature is generally more appropriate for automating such attacks?",
+      "options": [
+        "Proxy",
+        "Decoder",
+        "Intruder",
+        "Comparer"
+      ],
+      "correct": 2,
+      "description": "Burp Intruder is designed for automated attacks and can work with payload positions and token handling more effectively than Repeater. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "A developer validates that an uploaded filename ends with `.jpg` but never checks its actual content. An attacker uploads `shell.php.jpg`. Which secure programming principle has been violated?",
+      "options": [
+        "Availability",
+        "Input Validation",
+        "Authentication",
+        "Logging"
+      ],
+      "correct": 1,
+      "description": "Validation should verify: File extension MIME type File signature (magic bytes) Content Checking only the filename is insufficient. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Which pair correctly matches the testing methodology with its target?",
+      "options": [
+        "SAST → Running application DAST → Source code",
+        "SAST → Source code DAST → Running application",
+        "SAST → Network traffic DAST → Databases",
+        "SAST → HTTP Headers DAST → Buffer Overflow only"
+      ],
+      "correct": 1,
+      "description": "SAST performs white-box analysis of code. DAST performs black-box testing against a live application. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "A security analyst is reviewing the following attack sequence: 1. Intercept request with Burp Proxy. 2. Modify the `userID` parameter. 3. Forward the request. 4. Access another user's profile successfully. Which vulnerability is most likely present?",
+      "options": [
+        "Stored XSS",
+        "Broken Access Control",
+        "SQL Injection",
+        "Buffer Overflow"
+      ],
+      "correct": 1,
+      "description": "Changing object identifiers should never allow unauthorized access. This is a classic authorization failure, often referred to as IDOR (Insecure Direct Object Reference). ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which HTTP method should generally not be used to modify server-side data because it is intended to be safe and cacheable?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH"
+      ],
+      "correct": 0,
+      "description": "GET requests are intended for retrieving resources only. Using GET for state-changing operations can lead to security issues, caching problems, and accidental execution. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "A tester discovers that entering the following payload causes the application to return a database error revealing table names: ' Which SQL Injection technique is demonstrated?",
+      "options": [
+        "Blind SQL Injection",
+        "Union-Based SQL Injection",
+        "Error-Based SQL Injection",
+        "Boolean-Based SQL Injection"
+      ],
+      "correct": 2,
+      "description": "The attacker intentionally triggers database errors to extract information from detailed error messages, such as table names, column names, or SQL syntax. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "A development team wants to reduce vulnerabilities before deployment by integrating automated source-code analysis into their CI/CD pipeline. Which solution best satisfies this requirement?",
+      "options": [
+        "OWASP ZAP",
+        "Burp Suite Repeater",
+        "Checkmarx",
+        "Wireshark"
+      ],
+      "correct": 2,
+      "description": "Checkmarx is a Static Application Security Testing (SAST) tool that analyzes source code during development, making it well-suited for CI/CD integration. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "A penetration tester is performing an assessment on a DVWA instance. Which sequence represents the most logical workflow based on the syllabus?",
+      "options": [
+        "Perform DAST → Exploit SQL Injection → Analyze packets with Wireshark → Validate findings using Burp Suite",
+        "Analyze source code → Capture packets → Deploy firewall → Perform phishing",
+        "Run antivirus → Perform malware analysis → Configure DNS → Execute SQL Injection",
+        "Perform brute-force attack → Install IDS → Review CVE database → Reverse engineer APK"
+      ],
+      "correct": 0,
+      "description": "This follows a realistic web application testing workflow: 1. Scan the application (DAST) 2. Verify and exploit identified vulnerabilities (SQL Injection) 3. Observe network traffic (Wireshark) 4. Intercept, modify, and validate requests using Burp Suite Security Concepts MCQ Set 4 (Q31-Q40) ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "An organization allows every employee to access the payroll database, even though only HR staff require it. Which information security principle has been violated?",
+      "options": [
+        "Confidentiality",
+        "Least Privilege",
+        "Availability",
+        "Non-Repudiation"
+      ],
+      "correct": 1,
+      "description": "The Principle of Least Privilege states that users should have only the minimum permissions required to perform their job. Granting payroll access to all employees unnecessarily increases the attack surface. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Which option correctly classifies a fire that destroys a server room?",
+      "options": [
+        "Human Threat",
+        "Environmental Threat",
+        "Logical Threat",
+        "Intentional Threat"
+      ],
+      "correct": 1,
+      "description": "Threats are broadly classified as: Natural/Environmental (fire, flood, earthquake) Human (intentional or accidental) Technical/Logical A fire is an environmental threat. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "A security analyst notices that an attacker exploited an unpatched web server vulnerability. Which statement best describes the relationship?",
+      "options": [
+        "Threat exploited a Vulnerability resulting in Risk.",
+        "Vulnerability exploited the Threat.",
+        "Risk created the Vulnerability.",
+        "Asset exploited the Threat."
+      ],
+      "correct": 0,
+      "description": "Relationship: Threat = Potential cause of harm Vulnerability = Weakness Risk = Probability × Impact A threat exploits a vulnerability, creating risk. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Which activity is NOT normally considered part of the Ethical Hacking lifecycle?",
+      "options": [
+        "Reconnaissance",
+        "Scanning",
+        "Maintaining Access",
+        "Destroying Evidence"
+      ],
+      "correct": 3,
+      "description": "Ethical hackers follow authorized testing procedures and document findings. Destroying evidence is a malicious action and not part of ethical hacking. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Which team primarily performs offensive security assessments by simulating real attackers?",
+      "options": [
+        "Blue Team",
+        "Purple Team",
+        "Red Team",
+        "White Team"
+      ],
+      "correct": 2,
+      "description": "Red Team: Offensive operations Blue Team: Defensive monitoring and response Purple Team: Collaboration between Red and Blue ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "A penetration tester wants to determine the operating system running on a remote host without logging into it. Which technique should be used?",
+      "options": [
+        "SQL Injection",
+        "OS Fingerprinting",
+        "Password Cracking",
+        "ARP Poisoning"
+      ],
+      "correct": 1,
+      "description": "OS Fingerprinting analyzes characteristics such as: TCP/IP stack behavior TTL values Window sizes Responses to crafted packets to infer the target operating system. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Which scan type is specifically designed to avoid completing the TCP three-way handshake, making it less likely to be logged by older systems?",
+      "options": [
+        "Connect Scan",
+        "SYN Scan",
+        "UDP Scan",
+        "ACK Scan"
+      ],
+      "correct": 1,
+      "description": "A SYN Scan sends only a SYN packet. If the target replies with SYN-ACK, the scanner immediately sends RST instead of completing the handshake, making it a \"half-open\" scan. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Which Nmap scan sends packets with FIN, PSH, and URG flags simultaneously?",
+      "options": [
+        "NULL Scan",
+        "FIN Scan",
+        "XMAS Scan",
+        "IDLE Scan"
+      ],
+      "correct": 2,
+      "description": "The packet appears \"lit up\" with multiple TCP flags: FIN PSH URG Hence the name XMAS Scan. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "A tester needs to identify the registered owner, registrar, and registration details of a public domain before beginning a penetration test. Which tool or service is most appropriate?",
+      "options": [
+        "Traceroute",
+        "WHOIS",
+        "Wireshark",
+        "Nessus"
+      ],
+      "correct": 1,
+      "description": "WHOIS provides domain registration information, including: Registrar Registration dates Domain owner (if not privacy-protected) Name servers It is a fundamental OSINT reconnaissance tool. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "A security consultant uses Google with the following query: site:example.com filetype:pdf confidential What reconnaissance technique is being used?",
+      "options": [
+        "Banner Grabbing",
+        "Google Dorking",
+        "DNS Enumeration",
+        "Passive Fingerprinting"
+      ],
+      "correct": 1,
+      "description": "Google Dorking uses advanced Google search operators to locate publicly exposed information, such as documents, login pages, backups, or configuration files that may reveal sensitive information. Security Concepts MCQ Set 5 (Q41-Q50) ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "A penetration tester sends TCP SYN packets to multiple ports on a target host but never completes the TCP three-way handshake. What is the primary purpose of this technique?",
+      "options": [
+        "To establish encrypted communication",
+        "To identify open ports while reducing the likelihood of detection",
+        "To perform DNS enumeration",
+        "To exploit buffer overflow vulnerabilities"
+      ],
+      "correct": 1,
+      "description": "A SYN (Half-Open) Scan sends a SYN packet and observes the response. If the port is open, the target replies with SYN-ACK, and the scanner immediately sends RST instead of completing the handshake. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Which TCP flag combination is typically observed when a closed port receives a NULL, FIN, or XMAS scan?",
+      "options": [
+        "SYN-ACK",
+        "FIN",
+        "RST",
+        "ACK"
+      ],
+      "correct": 2,
+      "description": "According to RFC 793, closed ports generally respond with RST to FIN, NULL, and XMAS scans. Open ports usually ignore these packets. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "A penetration tester wants to identify services running on TCP port 80 without exploiting the target. Which technique is most appropriate?",
+      "options": [
+        "Banner Grabbing",
+        "ARP Poisoning",
+        "SQL Injection",
+        "DNS Spoofing"
+      ],
+      "correct": 0,
+      "description": "Banner grabbing retrieves information such as: Web server software Version Operating System hints Supported protocols without exploiting the service. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "An attacker creates fake ARP replies so that victims associate the attacker's MAC address with the default gateway. Which attack is being performed?",
+      "options": [
+        "DNS Cache Poisoning",
+        "ARP Poisoning",
+        "IP Fragmentation",
+        "Port Mirroring"
+      ],
+      "correct": 1,
+      "description": "ARP Poisoning redirects traffic through the attacker's system, enabling Man-in-the-Middle (MITM) attacks, packet capture, or session hijacking. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "A tester observes that encrypted HTTPS traffic cannot be read directly in Wireshark. What is the primary reason?",
+      "options": [
+        "Wireshark cannot capture TCP packets.",
+        "HTTPS encrypts application-layer data.",
+        "DNS hides HTTP traffic.",
+        "Ethernet encrypts all packets."
+      ],
+      "correct": 1,
+      "description": "Wireshark captures packets successfully, but HTTPS encrypts the application payload using TLS, preventing direct inspection without decryption keys. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "Which password attack requires the attacker to possess the password hash before attempting recovery?",
+      "options": [
+        "Online Dictionary Attack",
+        "Brute Force Login Attack",
+        "Offline Password Cracking",
+        "Password Spraying"
+      ],
+      "correct": 2,
+      "description": "Offline attacks are performed against stolen password hashes using tools such as: John the Ripper Hashcat They do not interact with the authentication server. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "A Trojan differs from a Worm primarily because a Trojan:",
+      "options": [
+        "Automatically replicates across networks.",
+        "Requires user interaction or deception to execute.",
+        "Exploits only wireless networks.",
+        "Cannot contain malicious payloads."
+      ],
+      "correct": 1,
+      "description": "Trojan: Disguised as legitimate software and relies on user execution. Worm: Self-replicates automatically without user intervention. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Which statement about Reverse-Connecting Trojans is most accurate?",
+      "options": [
+        "The victim always connects using FTP.",
+        "The infected machine initiates a connection back to the attacker.",
+        "The attacker must always connect directly to the victim.",
+        "Reverse Trojans work only on Linux systems."
+      ],
+      "correct": 1,
+      "description": "Reverse connections often bypass NAT and firewalls because outbound connections are generally permitted more readily than inbound connections. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "Which of the following best describes an Overt Channel?",
+      "options": [
+        "A hidden communication path that bypasses security policies.",
+        "A legitimate communication channel used for its intended purpose.",
+        "A malware communication channel using steganography.",
+        "A covert DNS tunnel."
+      ],
+      "correct": 1,
+      "description": "Overt Channel: Intended and authorized communication path. Covert Channel: Hidden or unauthorized communication path used to bypass security controls. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "During a penetration test, a consultant discovers an SMB server that accepts NTLM authentication. The attacker intercepts the authentication attempt and forwards it to another server without knowing the user's password. Which attack is demonstrated?",
+      "options": [
+        "Pass-the-Hash",
+        "SMB Relay Attack",
+        "ARP Cache Poisoning",
+        "DNS Zone Transfer"
+      ],
+      "correct": 1,
+      "description": "In an SMB Relay Attack, the attacker relays NTLM authentication messages between the victim and another server, potentially gaining unauthorized access without cracking the password. --- Security Concepts MCQ Set 6 (Q51-Q60) ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "A network administrator notices thousands of compromised IoT devices simultaneously sending traffic to a company's web server, making the service unavailable. Which attack is being performed?",
+      "options": [
+        "Smurf Attack",
+        "SYN Scan",
+        "Distributed Denial of Service (DDoS)",
+        "ARP Poisoning"
+      ],
+      "correct": 2,
+      "description": "A DDoS attack uses multiple compromised systems (botnets) to overwhelm a target. Unlike a DoS attack, the traffic originates from many systems rather than a single source. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "Which statement correctly differentiates a DoS attack from a DDoS attack?",
+      "options": [
+        "DoS attacks target databases, whereas DDoS attacks target web servers.",
+        "DoS originates from one source, whereas DDoS originates from multiple compromised systems.",
+        "DoS always uses malware, whereas DDoS never uses malware.",
+        "There is no practical difference between them."
+      ],
+      "correct": 1,
+      "description": "The primary difference is the number of attack sources: DoS: Single attacking system. DDoS: Many compromised systems (botnet). ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "An attacker sends ICMP Echo Requests to a network's broadcast address using the victim's IP address as the spoofed source. Which attack is being described?",
+      "options": [
+        "SYN Flood",
+        "Smurf Attack",
+        "Ping Sweep",
+        "DNS Amplification"
+      ],
+      "correct": 1,
+      "description": "A Smurf Attack uses ICMP broadcast amplification. Multiple hosts reply to the spoofed victim, overwhelming it with traffic. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "Which attack specifically attempts to exhaust a server's resources by sending many TCP SYN packets without completing the three-way handshake?",
+      "options": [
+        "ARP Spoofing",
+        "SYN Flood",
+        "FIN Scan",
+        "SQL Injection"
+      ],
+      "correct": 1,
+      "description": "A SYN Flood fills the server's half-open connection queue by sending SYN packets and never completing the handshake. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "Which wireless security protocol is considered the most secure among the following?",
+      "options": [
+        "WEP",
+        "WPA",
+        "WPA2",
+        "WPA3"
+      ],
+      "correct": 3,
+      "description": "Security evolution: WEP ❌ (Broken) WPA ⚠️ (Improved but outdated) WPA2 ✅ (Widely deployed) WPA3 ✅✅ (Current strongest standard) ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "A penetration tester discovers an access point broadcasting the SSID \"FreeAirportWiFi\". Users unknowingly connect, allowing the attacker to intercept their traffic. This is an example of:",
+      "options": [
+        "Evil Twin Attack",
+        "Buffer Overflow",
+        "SYN Flood",
+        "Banner Grabbing"
+      ],
+      "correct": 0,
+      "description": "An Evil Twin is a rogue wireless access point impersonating a legitimate network to perform Man-in-the-Middle attacks. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "An organization deploys a server that intentionally appears vulnerable to attract attackers and record their behavior without exposing production systems. What is this system called?",
+      "options": [
+        "IDS",
+        "Honeypot",
+        "Firewall",
+        "Proxy Server"
+      ],
+      "correct": 1,
+      "description": "A Honeypot is a decoy system used to: Detect attackers Study attack techniques Collect threat intelligence ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "Which statement best describes the primary difference between an IDS and an IPS?",
+      "options": [
+        "IDS blocks attacks automatically, IPS only monitors.",
+        "IDS detects suspicious activity, whereas IPS can detect and actively block malicious traffic.",
+        "IDS only works on Linux.",
+        "IPS replaces antivirus software."
+      ],
+      "correct": 1,
+      "description": "IDS (Intrusion Detection System): Detects and alerts. IPS (Intrusion Prevention System): Detects, alerts, and can block malicious traffic automatically. ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "During malware analysis, an analyst executes suspicious software inside an isolated virtual machine to observe its runtime behavior. Which analysis technique is being performed?",
+      "options": [
+        "Static Analysis",
+        "Dynamic Analysis",
+        "Signature Matching",
+        "Vulnerability Scanning"
+      ],
+      "correct": 1,
+      "description": "Dynamic analysis involves executing malware in a controlled environment (sandbox or VM) to observe: File creation Registry changes Network connections Process behavior ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "A penetration tester is hired to assess an organization's security. Which sequence best represents a standard penetration testing methodology?",
+      "options": [
+        "Exploitation → Reporting → Reconnaissance → Scanning",
+        "Reconnaissance → Scanning → Exploitation → Reporting",
+        "Malware Analysis → Wireless Hacking → Reporting → Enumeration",
+        "Password Cracking → Firewall Configuration → Reconnaissance → Reporting"
+      ],
+      "correct": 1,
+      "description": "A typical penetration testing workflow is: 1. Reconnaissance - Gather information. 2. Scanning & Enumeration - Identify services and vulnerabilities. 3. Exploitation - Validate and exploit vulnerabilities (where authorized). 4. Post-Exploitation (if in scope) - Assess impact. 5. Reporting - Document findings, risks, and recommendations. Security Concepts MCQ Set 7 (Q61-Q70) - Mobile Security ---",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "An Android application is installed on a device. Which Android component is primarily responsible for enforcing application sandboxing and permission isolation?",
+      "options": [
+        "Dalvik Virtual Machine",
+        "Linux Kernel",
+        "Android Runtime (ART)",
+        "APKTool"
+      ],
+      "correct": 1,
+      "description": "Android security is built on the Linux Kernel, which provides: Process isolation User IDs (UIDs) File permissions Memory protection Sandboxing ART executes applications, but the Linux kernel enforces isolation. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "A penetration tester wants to access an Android device's shell from a connected computer. Which Android tool should be used?",
+      "options": [
+        "MobSF",
+        "APKTool",
+        "Android Debug Bridge (ADB)",
+        "JADX"
+      ],
+      "correct": 2,
+      "description": "ADB allows: Shell access File transfer Application installation Log collection Debugging It is the primary communication interface between a PC and an Android device. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "Which directory normally stores installed Android application packages and private application data?",
+      "options": [
+        "`/system/bin`",
+        "`/data/app`",
+        "`/proc`",
+        "`/vendor/lib`"
+      ],
+      "correct": 1,
+      "description": "Android commonly stores installed application packages under /data/app, while application-specific private data resides under /data/data. Access to these locations typically requires appropriate privileges. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "A developer roots an Android device to remove manufacturer restrictions. What is the greatest security concern after rooting?",
+      "options": [
+        "Reduced battery life",
+        "Applications may obtain elevated privileges and bypass Android's security model.",
+        "Wi-Fi automatically becomes insecure.",
+        "APK files can no longer be installed."
+      ],
+      "correct": 1,
+      "description": "Rooting can: Disable sandbox protections Allow applications to obtain root access Increase malware impact Bypass security restrictions ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "A security analyst wants to examine an APK without executing it and recover Java source code for review. Which tool is most appropriate?",
+      "options": [
+        "Frida",
+        "JADX",
+        "Wireshark",
+        "Burp Suite"
+      ],
+      "correct": 1,
+      "description": "JADX decompiles Android DEX bytecode into readable Java source code, making it valuable for reverse engineering. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "Which tool is primarily used to decode and rebuild APK resources, such as AndroidManifest.xml and resource files?",
+      "options": [
+        "MobSF",
+        "Frida",
+        "APKTool",
+        "Nmap"
+      ],
+      "correct": 2,
+      "description": "APKTool allows analysts to: Decode APK resources View AndroidManifest.xml Modify resources Rebuild APKs Unlike JADX, it focuses on APK structure rather than Java source reconstruction. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "A penetration tester needs to inspect the behavior of an Android application while it is executing, without permanently modifying the APK. Which tool best fits this requirement?",
+      "options": [
+        "APKTool",
+        "JADX",
+        "Frida",
+        "MobSF Static Analyzer"
+      ],
+      "correct": 2,
+      "description": "Frida performs dynamic instrumentation, allowing analysts to: Hook functions Modify runtime behavior Bypass SSL pinning Inspect memory without changing the APK itself. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "Which OWASP Mobile Top 10 issue is demonstrated when an application stores passwords in plaintext within SharedPreferences?",
+      "options": [
+        "Insecure Data Storage",
+        "Improper Platform Usage",
+        "Insufficient Cryptography",
+        "Security Misconfiguration"
+      ],
+      "correct": 0,
+      "description": "Sensitive information such as passwords should never be stored in plaintext. Proper encryption or secure storage mechanisms should be used. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "A user receives an SMS claiming to be from a bank with a link requesting immediate account verification. This attack is best classified as:",
+      "options": [
+        "Phishing",
+        "Smishing",
+        "Vishing",
+        "Tailgating"
+      ],
+      "correct": 1,
+      "description": "Smishing → SMS-based phishing Phishing → Email-based Vishing → Voice calls Tailgating → Physical access attack ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "A penetration tester configures an Android emulator instead of testing directly on a personal phone. What is the primary advantage?",
+      "options": [
+        "The emulator cannot be infected with malware.",
+        "The emulator provides an isolated environment for safe testing and easy restoration.",
+        "Emulators automatically bypass Android permissions.",
+        "Reverse engineering is only possible on emulators."
+      ],
+      "correct": 1,
+      "description": "Android emulators provide: Safe testing Snapshots and rollback Isolation from personal devices Controlled debugging environments They can still be infected within the virtual environment, but the impact is contained. Security Concepts MCQ Set 8 (Q71-Q80) - Mobile Security ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 71,
+      "question": "A penetration tester wants to evaluate an Android application without access to its source code by uploading only the APK file. Which tool from the syllabus is best suited?",
+      "options": [
+        "Android Studio",
+        "MobSF",
+        "GCC",
+        "Wireshark"
+      ],
+      "correct": 1,
+      "description": "MobSF (Mobile Security Framework) performs both Static Analysis and Dynamic Analysis of Android applications using only the APK file. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 72,
+      "question": "Which statement correctly distinguishes Static Analysis from Dynamic Analysis?",
+      "options": [
+        "Static Analysis executes the application, while Dynamic Analysis only examines source code.",
+        "Static Analysis analyzes the application without execution, while Dynamic Analysis observes runtime behavior.",
+        "Static Analysis requires a rooted device, while Dynamic Analysis does not.",
+        "Both require the application to be executed."
+      ],
+      "correct": 1,
+      "description": "Static Analysis: APK, source code, manifest, certificates, permissions. Dynamic Analysis: Runtime behavior, API calls, file access, network traffic. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 73,
+      "question": "A mobile application requests the following permissions: Camera Contacts SMS Microphone Location However, the application is only a flashlight. Which OWASP Mobile Top 10 issue is most relevant?",
+      "options": [
+        "Insecure Data Storage",
+        "Improper Platform Usage",
+        "Excessive Permissions",
+        "Reverse Engineering"
+      ],
+      "correct": 2,
+      "description": "Requesting unnecessary permissions violates the principle of least privilege and significantly increases security and privacy risks. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "During a mobile penetration test, the analyst wants to intercept HTTPS traffic between an Android application and a web server. Which attack technique is primarily used?",
+      "options": [
+        "SQL Injection",
+        "Man-in-the-Middle (MITM)",
+        "Buffer Overflow",
+        "Smishing"
+      ],
+      "correct": 1,
+      "description": "MITM attacks intercept communication between two parties. In mobile testing, tools like Burp Suite or mitmproxy are commonly used (often with certificate installation or SSL pinning bypass). ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "A penetration tester observes that an Android application sends usernames and passwords over HTTP instead of HTTPS. Which security objective is most directly compromised?",
+      "options": [
+        "Availability",
+        "Integrity",
+        "Confidentiality",
+        "Authentication"
+      ],
+      "correct": 2,
+      "description": "Without encryption, credentials can be captured by attackers on the network, compromising confidentiality. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "A reverse engineer modifies an APK, repackages it, and signs it with a different certificate before installation. Which Android security mechanism originally helped verify the authenticity of the application?",
+      "options": [
+        "Android Manifest",
+        "APK Digital Signature",
+        "SharedPreferences",
+        "Dalvik Cache"
+      ],
+      "correct": 1,
+      "description": "Android applications are digitally signed. The signature verifies: Publisher identity Integrity of the APK Update authenticity ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "An analyst discovers an application hardcodes API keys and database passwords directly inside the APK. Which analysis technique would most likely reveal this information first?",
+      "options": [
+        "Dynamic Analysis",
+        "Static Analysis",
+        "ARP Poisoning",
+        "Packet Sniffing"
+      ],
+      "correct": 1,
+      "description": "Hardcoded secrets are usually discovered by inspecting: Decompiled code Resources Configuration files AndroidManifest.xml before executing the application. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 78,
+      "question": "A user installs an application from an unknown website instead of the official Google Play Store. What is the greatest security risk?",
+      "options": [
+        "Reduced battery performance",
+        "Increased likelihood of installing a malicious or tampered APK",
+        "Slower internet speed",
+        "Automatic device rooting"
+      ],
+      "correct": 1,
+      "description": "Unofficial APKs may contain: Malware Backdoors Spyware Modified code Trusted app stores perform additional security checks. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "During Android malware analysis, the analyst executes the application inside an emulator while monitoring network connections, file creation, and API calls. Which type of analysis is being performed?",
+      "options": [
+        "Reverse Engineering",
+        "Static Analysis",
+        "Dynamic Analysis",
+        "Signature Verification"
+      ],
+      "correct": 2,
+      "description": "Dynamic analysis observes the application's behavior during execution, helping identify malicious runtime activities. ---",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    },
+    {
+      "id": 80,
+      "question": "A penetration tester is asked to perform a complete security assessment of an Android application. Which sequence best represents the logical testing workflow?",
+      "options": [
+        "Reverse Engineering → Static Analysis → Install Emulator → Reporting",
+        "Install Emulator → Static Analysis → Dynamic Analysis → Manual Verification → Reporting",
+        "Dynamic Analysis → APK Signing → Root Device → Reporting",
+        "Packet Sniffing → SQL Injection → Malware Analysis → Reporting"
+      ],
+      "correct": 1,
+      "description": "A structured Android application assessment typically follows: 1. Prepare a safe testing environment (emulator or test device). 2. Perform Static Analysis (APKTool, JADX, MobSF). 3. Perform Dynamic Analysis (MobSF, Frida, ADB). 4. Manually verify findings (runtime testing, MITM, permission testing). 5. Prepare the final security report with findings and remediation.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Mobile Security"
+      ]
+    }
+  ]
+}

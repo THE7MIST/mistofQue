@@ -57,11 +57,11 @@ export const subjects = [
   },
   {
     slug: "sc",
-    name: "SC",
+    name: "Security Concepts",
     shortName: "SC",
     icon: ShieldCheck,
     accent: "teal",
-    description: "SC practice sets and exam stages.",
+    description: "Security concepts, web testing, malware, wireless, and mobile security.",
     stages: buildStages("sc"),
     topicsPath: "/subjects/sc/topics",
     topicIndexFile: "/data/sc/topics/index.json"

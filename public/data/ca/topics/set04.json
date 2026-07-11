@@ -1,0 +1,690 @@
+{
+  "version": "1",
+  "title": "IT/IS Auditing - Set 2",
+  "subject": "Compliance Audits",
+  "stage": "Topic Wise MCQ",
+  "topic": "IT/IS Auditing - Set 2",
+  "durationMinutes": 40,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is the major factor that affects the decision about performing an audit in an organization?",
+      "options": [
+        "Purpose",
+        "Duration",
+        "Budget",
+        "Tools used"
+      ],
+      "correct": 0,
+      "description": "The purpose or objective of the audit determines whether an audit is required and what type of audit should be performed.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is the major factor affecting results of internal audits?",
+      "options": [
+        "Performed by the internal employees",
+        "Lack of resources and finance",
+        "Internal employee relationships",
+        "Lack of professional capabilities"
+      ],
+      "correct": 2,
+      "description": "Internal auditors may face bias or conflicts of interest due to relationships with employees, affecting objectivity.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which control classification attempts to repair the impact of a threat?",
+      "options": [
+        "Preventive",
+        "Detective",
+        "Deterrent",
+        "Corrective"
+      ],
+      "correct": 3,
+      "description": "Corrective controls restore systems or minimize damage after an incident has occurred.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Define Internal Controls?",
+      "options": [
+        "Control Tools used to detect risks",
+        "Ensures proper functioning of processes within the company",
+        "Defines the efficient Audit procedures",
+        "Process in the Audit Planning"
+      ],
+      "correct": 1,
+      "description": "Internal controls are policies and procedures designed to safeguard assets, ensure accuracy, and improve operational efficiency.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Which is not an information security threat?",
+      "options": [
+        "Computer assisted Fraud",
+        "Viruses",
+        "Poverty",
+        "Hacking"
+      ],
+      "correct": 2,
+      "description": "Poverty is a social/economic issue, not an information security threat.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What are the types of Internal Controls?",
+      "options": [
+        "Assess, Remove and Protect",
+        "Analyze, Design Process, Implement",
+        "Qualitative and Quantitative",
+        "Preventive, Detective, Reactive"
+      ],
+      "correct": 3,
+      "description": "Internal controls are commonly classified as Preventive, Detective, and Corrective/Reactive.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is the best way for an auditor to determine the effectiveness of a security awareness and training program?",
+      "options": [
+        "Interview a sample of employees",
+        "Review the security training program",
+        "Interview the training program developers",
+        "Review the security reminders to employees"
+      ],
+      "correct": 0,
+      "description": "Interviewing employees verifies whether the training has actually improved awareness.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Reactive Internal Control is also called as",
+      "options": [
+        "Preventive Control",
+        "Proactive Control",
+        "Corrective Control",
+        "Detection Control"
+      ],
+      "correct": 2,
+      "description": "Reactive controls respond after an incident and are also known as corrective controls.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Logging all activities for later analysis is a",
+      "options": [
+        "Corrective Control",
+        "Preventive Control",
+        "Detective Control",
+        "Proactive Control"
+      ],
+      "correct": 2,
+      "description": "Logs help detect suspicious events after they occur, making logging a detective control.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "As an auditor you visit an organization for auditing and observe following things. Which of the following can be a threat for the organization?",
+      "options": [
+        "No important documents on employee desks",
+        "Campus under CCTV surveillance",
+        "Old paper records dumped into UPS room with heat and dust",
+        "Visitor book collects only visitor name and mobile number without ID verification"
+      ],
+      "correct": 3,
+      "description": "Lack of visitor identity verification poses a significant physical security threat.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is the ideal Audit team reporting structure?",
+      "options": [
+        "CFO/CEO, IT Audit Team",
+        "CFO/CEO, IT Audit Committee, Director of Audits, Audit Manager, Audit Team",
+        "IT Audit Committee, Director of Audits, Audit Manager",
+        "Employees, Internal Audit team"
+      ],
+      "correct": 1,
+      "description": "This structure provides independence, accountability, and proper reporting.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Which are the following are roles of System Administrator?",
+      "options": [
+        "Create & Implement Access Control Policies",
+        "Employing security persons to guard resources",
+        "Enable and Archive logs",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Maintaining system logs is a routine responsibility of a system administrator.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "______ Internal Control does not prevent errors from occurring, but provides systematic way to detect and correct the situation.",
+      "options": [
+        "Proactive Control",
+        "Detective Control",
+        "Preventive Control",
+        "Corrective Control"
+      ],
+      "correct": 1,
+      "description": "Detective controls identify errors so corrective actions can be taken.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Which are the activities done during Audit Planning?",
+      "options": [
+        "Field Work, Evaluation and Testing",
+        "Confirmation of planned actions, Audit Response verification",
+        "Internal Control questionnaire, Audit scopes, Objectives",
+        "Communication, Audit findings, Assessment results"
+      ],
+      "correct": 2,
+      "description": "Planning defines audit scope, objectives, and prepares questionnaires/checklists.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Which of the following is not a Best Practice in securing a web server?",
+      "options": [
+        "Up-to-date Web server",
+        "Run all possible services",
+        "Up-to-date OS",
+        "Enable Logging"
+      ],
+      "correct": 1,
+      "description": "Only necessary services should run to reduce the attack surface.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "A method of evaluating the security of a computer system or network by simulating an attack by a hacker is called as?",
+      "options": [
+        "Incident Test",
+        "Security Test",
+        "Network Test",
+        "Penetration Test"
+      ],
+      "correct": 3,
+      "description": "Penetration testing simulates real attacks to identify vulnerabilities.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "As an auditor you require to check if the antivirus is installed on all the computers and is properly updated. There are almost 2000 computers. Which method will you choose?",
+      "options": [
+        "Scan all 2000 computers",
+        "Scan only critical computers",
+        "Scan only less critical computers",
+        "Select some critical systems and some rarely used systems"
+      ],
+      "correct": 3,
+      "description": "Audit sampling provides reasonable assurance without checking every system.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Which data gathering technique is most important in auditing?",
+      "options": [
+        "Review earlier audit reports",
+        "Interview employees",
+        "Use various auditing tools",
+        "Review documents like policies and previous audit reports"
+      ],
+      "correct": 3,
+      "description": "Documentation provides objective audit evidence.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Software Change controls, access controls, backup and recovery are examples of",
+      "options": [
+        "Risk Management",
+        "Risks",
+        "Internal Controls",
+        "Assets of organization"
+      ],
+      "correct": 2,
+      "description": "These are mechanisms implemented to reduce risks.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Identify the activities of Audit Assessment Phase.",
+      "options": [
+        "Identify, Remove and Restore",
+        "Accept, Mitigate, Transfer",
+        "Fieldwork, Evaluation, Testing",
+        "Analyze, Resolve and Restore"
+      ],
+      "correct": 2,
+      "description": "Assessment includes collecting evidence, evaluating controls, and testing them.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Identify the outcome of Audit Planning Phase.",
+      "options": [
+        "Meeting, Scope, Objectives, Questionnaire, Plan and Checklist",
+        "Testing, Listing findings, Reporting",
+        "Testing, Evaluation and Eliminating risks",
+        "Meeting, Scope and Testing"
+      ],
+      "correct": 0,
+      "description": "Planning produces all documents needed before fieldwork begins.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is not a port scanner?",
+      "options": [
+        "NMAP",
+        "SuperScan",
+        "Nessus",
+        "dig"
+      ],
+      "correct": 3,
+      "description": "`dig` is a DNS lookup utility, not a port scanner.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Select the best option which describes Risk Management.",
+      "options": [
+        "Identifying Risks",
+        "Treating Risks",
+        "Analyzing",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Risk management includes identifying, analyzing, and treating risks.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Windows Logs include:",
+      "options": [
+        "Application events",
+        "Security events",
+        "System events",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Windows Event Viewer stores Application, Security, and System logs.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Audit Issue: Developers have direct access to update production code. Recommendation?",
+      "options": [
+        "Encrypt customer data",
+        "Review access rights",
+        "Allow DB management only to local admin",
+        "Proper software change controls"
+      ],
+      "correct": 3,
+      "description": "Developers should not directly modify production systems without formal change management.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "If an Auditor wants to express an opinion, then he should have",
+      "options": [
+        "Necessary qualification",
+        "Audit Evidence",
+        "Audit Recommendation",
+        "Audit questionnaire"
+      ],
+      "correct": 1,
+      "description": "Audit opinions must be supported by sufficient and appropriate evidence.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which best defines Audit Sampling?",
+      "options": [
+        "Take samples for work",
+        "Select only few projects",
+        "Applying audit procedures to less than 100% of items in a population",
+        "Choose all possible samples"
+      ],
+      "correct": 2,
+      "description": "Audit sampling evaluates a representative subset instead of every item.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Audit Issue: Default umask is 000. Recommendation?",
+      "options": [
+        "Set umask 000",
+        "Remove umask",
+        "Raise security issue",
+        "Set umask 027"
+      ],
+      "correct": 3,
+      "description": "`umask 027` provides secure default permissions.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Buying insurance for a company is a",
+      "options": [
+        "Risk Acceptance",
+        "Risk Transfer",
+        "Finding a scapegoat",
+        "Risk Mitigation"
+      ],
+      "correct": 1,
+      "description": "Insurance transfers financial risk to another party.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which service helps to setup firewall in Linux?",
+      "options": [
+        "iptables",
+        "ypserv",
+        "ypbind",
+        "xinetd"
+      ],
+      "correct": 0,
+      "description": "`iptables` is the traditional Linux firewall framework.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Which is the basic Risk Management Process?",
+      "options": [
+        "Risk Analysis, Develop Plan, Take Action, Measure Results",
+        "Risk Analysis, Mitigate and Report",
+        "Risk Identification, Resolving and Documenting",
+        "Risk Analysis, Develop Plan and Mitigate it"
+      ],
+      "correct": 0,
+      "description": "This reflects the continuous risk management lifecycle.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "What is Event ID in Windows?",
+      "options": [
+        "Tool to identify events",
+        "Uniquely identifiable events that Windows can encounter",
+        "Security events have EventID",
+        "Critical events have EventID"
+      ],
+      "correct": 1,
+      "description": "Every Windows event has a unique Event ID.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "When is the Audit Exit Meeting conducted?",
+      "options": [
+        "During Assessment phase",
+        "During Reporting phase",
+        "No exit meetings",
+        "During Planning phase"
+      ],
+      "correct": 1,
+      "description": "The exit meeting communicates audit findings before issuing the final report.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Which is true about Qualitative Risk Analysis?",
+      "options": [
+        "Uses High, Medium, Low ratings",
+        "Uses Single Loss Expectancy",
+        "Uses cost of assets",
+        "Uses mathematical formulas"
+      ],
+      "correct": 0,
+      "description": "Qualitative analysis categorizes risks without numerical calculations.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Which is not true about Quantitative Risk Analysis?",
+      "options": [
+        "Uses asset cost",
+        "Uses High, Medium, Low ratings",
+        "Uses mathematical formulas",
+        "Uses Single Loss Expectancy"
+      ],
+      "correct": 1,
+      "description": "High/Medium/Low ratings belong to qualitative risk analysis.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "ISO 27001:2005 is a",
+      "options": [
+        "Process",
+        "Procedure",
+        "Standard",
+        "Best Practice"
+      ],
+      "correct": 2,
+      "description": "ISO/IEC 27001 is the international standard for Information Security Management Systems.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "According to ISO 27001, the most important factor for effective implementation of ISMS is",
+      "options": [
+        "Risk analysis team",
+        "Active support from top management",
+        "Internal audit team",
+        "Proper documentation"
+      ],
+      "correct": 1,
+      "description": "Leadership commitment is essential for successful ISMS implementation.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Which phase cycle approach is described by ISO 27001?",
+      "options": [
+        "Plan-Do-Check-Act",
+        "Plan-Act-Check-Do",
+        "Act-Do-Check-Plan",
+        "Plan-Check-Do-Act"
+      ],
+      "correct": 0,
+      "description": "ISO 27001 follows the PDCA continual improvement model.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "If replacement cost is $10,000 and probability of loss is 0.10, calculate Risk.",
+      "options": [
+        "$10,000 / 0.10",
+        "$10,000 x 0.10",
+        "$10,000 + 0.10",
+        "$10,000 x 0.10 + $10,000"
+      ],
+      "correct": 1,
+      "description": "Expected Risk = Asset Value x Probability = $1,000.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Which tool allows parsing and querying logs using SQL statements?",
+      "options": [
+        "Log Scanner on Windows",
+        "Log Parser on Windows",
+        "cat /var/log/messages",
+        "Log server"
+      ],
+      "correct": 1,
+      "description": "Microsoft Log Parser allows querying log files using SQL-like syntax.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "IT/IS Auditing"
+      ]
+    }
+  ]
+}
