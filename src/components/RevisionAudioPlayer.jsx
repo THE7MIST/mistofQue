@@ -94,9 +94,10 @@ export default function RevisionAudioPlayer({ phase, progress, onProgress, onPre
       ) : null}
 
       {!hasAudio ? (
-        <p className="mb-3 rounded-lg border border-amber-300/70 bg-amber-100/80 px-3 py-2 text-sm font-semibold text-amber-950 dark:border-amber-400/30 dark:bg-amber-400/10 dark:text-amber-100">
-          Audio file not found yet. Revision text is available below.
-        </p>
+        <div className="mb-3 rounded-lg border border-amber-300/70 bg-amber-100/80 px-3 py-2 text-sm font-semibold text-amber-950 dark:border-amber-400/30 dark:bg-amber-400/10 dark:text-amber-100">
+          <p>Text-only revision mode. Add the MP3 file to enable audio for this phase.</p>
+          {phase?.audio ? <p className="mt-1 text-xs font-bold opacity-80">Expected file: {phase.audio}</p> : null}
+        </div>
       ) : null}
 
       <div className="flex flex-wrap items-center gap-2">
@@ -104,44 +105,47 @@ export default function RevisionAudioPlayer({ phase, progress, onProgress, onPre
           <ChevronLeft size={17} />
           Previous
         </Button>
-        <Button onClick={togglePlayback} disabled={!hasAudio}>
-          {isPlaying ? <Pause size={17} /> : <Play size={17} />}
-          {isPlaying ? "Pause" : "Play"}
-        </Button>
+        {hasAudio ? (
+          <Button onClick={togglePlayback}>
+            {isPlaying ? <Pause size={17} /> : <Play size={17} />}
+            {isPlaying ? "Pause" : "Play"}
+          </Button>
+        ) : null}
         <Button variant="secondary" onClick={onNext} disabled={!hasNext}>
           Next
           <ChevronRight size={17} />
         </Button>
       </div>
 
-      <div className="mt-4 grid gap-3">
-        <input
-          type="range"
-          min="0"
-          max={Math.max(duration, currentTime, 1)}
-          value={Math.min(currentTime, Math.max(duration, currentTime, 1))}
-          onChange={(event) => seek(event.target.value)}
-          disabled={!hasAudio}
-          className="w-full accent-teal-500"
-        />
-        <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-bold text-slate-600 dark:text-slate-300">
-          <span>{formatDuration(currentTime)}</span>
-          <div className="flex gap-2">
-            <Button variant="secondary" onClick={() => skip(-10)} disabled={!hasAudio}>
-              <RotateCcw size={16} />
-              10s
-            </Button>
-            <Button variant="secondary" onClick={changeSpeed} disabled={!hasAudio}>
-              {speed}x
-            </Button>
-            <Button variant="secondary" onClick={() => skip(10)} disabled={!hasAudio}>
-              10s
-              <RotateCw size={16} />
-            </Button>
+      {hasAudio ? (
+        <div className="mt-4 grid gap-3">
+          <input
+            type="range"
+            min="0"
+            max={Math.max(duration, currentTime, 1)}
+            value={Math.min(currentTime, Math.max(duration, currentTime, 1))}
+            onChange={(event) => seek(event.target.value)}
+            className="w-full accent-teal-500"
+          />
+          <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-bold text-slate-600 dark:text-slate-300">
+            <span>{formatDuration(currentTime)}</span>
+            <div className="flex gap-2">
+              <Button variant="secondary" onClick={() => skip(-10)}>
+                <RotateCcw size={16} />
+                10s
+              </Button>
+              <Button variant="secondary" onClick={changeSpeed}>
+                {speed}x
+              </Button>
+              <Button variant="secondary" onClick={() => skip(10)}>
+                10s
+                <RotateCw size={16} />
+              </Button>
+            </div>
+            <span>{formatDuration(duration)}</span>
           </div>
-          <span>{formatDuration(duration)}</span>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 }

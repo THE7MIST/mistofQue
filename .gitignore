@@ -9,3 +9,5 @@ yarn-error.log*
 pnpm-debug.log*
 vite.log
 vite.err.log
+.tts-cache
+tmp-audio
