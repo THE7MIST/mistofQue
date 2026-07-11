@@ -1,0 +1,605 @@
+{
+  "id": "phase01-foundations",
+  "subject": "PKI",
+  "title": "Phase 1 - Foundations Of Information Security",
+  "audio": "/audio/pki/phase01-foundations.mp3",
+  "topics": [
+    {
+      "id": "information-security",
+      "title": "Information Security",
+      "definition": "Information Security (InfoSec) is the practice of protecting information and information systems from unauthorized access, disclosure, modification, destruction, or disruption. It protects both digital and physical information throughout its lifecycle.",
+      "examPoints": [
+        "Information Security (InfoSec) is the practice of protecting information and information systems from unauthorized access, disclosure, modification, destruction, or disruption. It protects both digital and physical information throughout its lifecycle.",
+        "Goal: CIA Triad (Confidentiality, Integrity, Availability)",
+        "Protects Data, Systems, Networks, Applications, People, Processes"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Information Security\n\nInformation Security (InfoSec) is the practice of protecting information and information systems from unauthorized access, disclosure, modification, destruction, or disruption. It protects both digital and physical information throughout its lifecycle.\n\nImportant exam points. Information Security (InfoSec) is the practice of protecting information and information systems from unauthorized access, disclosure, modification, destruction, or disruption. It protects both digital and physical information throughout its lifecycle.. Goal: CIA Triad (Confidentiality, Integrity, Availability). Protects Data, Systems, Networks, Applications, People, Processes"
+    },
+    {
+      "id": "cia-triad",
+      "title": "CIA Triad",
+      "definition": "The CIA Triad is the fundamental security model consisting of Confidentiality, Integrity, and Availability. Every security control supports one or more of these principles.",
+      "examPoints": [
+        "The CIA Triad is the fundamental security model consisting of Confidentiality, Integrity, and Availability. Every security control supports one or more of these principles.",
+        "Confidentiality → Encryption, Access Control",
+        "Integrity → Hashing, Digital Signatures",
+        "Availability → Backup, Redundancy, Load Balancing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CIA Triad\n\nThe CIA Triad is the fundamental security model consisting of Confidentiality, Integrity, and Availability. Every security control supports one or more of these principles.\n\nImportant exam points. The CIA Triad is the fundamental security model consisting of Confidentiality, Integrity, and Availability. Every security control supports one or more of these principles.. Confidentiality → Encryption, Access Control. Integrity → Hashing, Digital Signatures. Availability → Backup, Redundancy, Load Balancing"
+    },
+    {
+      "id": "confidentiality",
+      "title": "Confidentiality",
+      "definition": "Confidentiality ensures that information is accessible only to authorized users and prevents unauthorized disclosure.",
+      "examPoints": [
+        "Confidentiality ensures that information is accessible only to authorized users and prevents unauthorized disclosure.",
+        "Achieved using Encryption, VPN, Access Control",
+        "Example: Bank account details visible only to the account owner"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Confidentiality\n\nConfidentiality ensures that information is accessible only to authorized users and prevents unauthorized disclosure.\n\nImportant exam points. Confidentiality ensures that information is accessible only to authorized users and prevents unauthorized disclosure.. Achieved using Encryption, VPN, Access Control. Example: Bank account details visible only to the account owner"
+    },
+    {
+      "id": "integrity",
+      "title": "Integrity",
+      "definition": "Integrity ensures that information remains accurate, complete, and unaltered except by authorized users.",
+      "examPoints": [
+        "Integrity ensures that information remains accurate, complete, and unaltered except by authorized users.",
+        "Achieved using Hashing, Checksums, Digital Signatures",
+        "Example: Downloaded software has not been modified"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Integrity\n\nIntegrity ensures that information remains accurate, complete, and unaltered except by authorized users.\n\nImportant exam points. Integrity ensures that information remains accurate, complete, and unaltered except by authorized users.. Achieved using Hashing, Checksums, Digital Signatures. Example: Downloaded software has not been modified"
+    },
+    {
+      "id": "availability",
+      "title": "Availability",
+      "definition": "Availability ensures that systems and information remain accessible whenever authorized users require them.",
+      "examPoints": [
+        "Availability ensures that systems and information remain accessible whenever authorized users require them.",
+        "Achieved using Backups, RAID, Clustering, UPS, Failover",
+        "DoS attacks mainly affect Availability"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Availability\n\nAvailability ensures that systems and information remain accessible whenever authorized users require them.\n\nImportant exam points. Availability ensures that systems and information remain accessible whenever authorized users require them.. Achieved using Backups, RAID, Clustering, UPS, Failover. DoS attacks mainly affect Availability"
+    },
+    {
+      "id": "aaa",
+      "title": "AAA",
+      "definition": "AAA stands for Authentication, Authorization, and Accounting (Accountability). It controls user identity, permissions, and activity logging.",
+      "examPoints": [
+        "AAA stands for Authentication, Authorization, and Accounting (Accountability). It controls user identity, permissions, and activity logging.",
+        "Authentication → Who are you?",
+        "Authorization → What can you access?",
+        "Accounting → What did you do?"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "AAA\n\nAAA stands for Authentication, Authorization, and Accounting (Accountability). It controls user identity, permissions, and activity logging.\n\nImportant exam points. AAA stands for Authentication, Authorization, and Accounting (Accountability). It controls user identity, permissions, and activity logging.. Authentication → Who are you?. Authorization → What can you access?. Accounting → What did you do?"
+    },
+    {
+      "id": "authentication",
+      "title": "Authentication",
+      "definition": "Authentication is the process of verifying the identity of a user, device, or application before granting access.",
+      "examPoints": [
+        "Authentication is the process of verifying the identity of a user, device, or application before granting access.",
+        "Authentication Factors:",
+        "Something you know → Password",
+        "Something you have → Smart Card, OTP",
+        "Something you are → Fingerprint, Face ID"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Authentication\n\nAuthentication is the process of verifying the identity of a user, device, or application before granting access.\n\nImportant exam points. Authentication is the process of verifying the identity of a user, device, or application before granting access.. Authentication Factors:. Something you know → Password. Something you have → Smart Card, OTP. Something you are → Fingerprint, Face ID"
+    },
+    {
+      "id": "authorization",
+      "title": "Authorization",
+      "definition": "Authorization determines what authenticated users are permitted to access or perform.",
+      "examPoints": [
+        "Authorization determines what authenticated users are permitted to access or perform.",
+        "Happens after Authentication",
+        "Example: Admin can delete users, normal user cannot"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Authorization\n\nAuthorization determines what authenticated users are permitted to access or perform.\n\nImportant exam points. Authorization determines what authenticated users are permitted to access or perform.. Happens after Authentication. Example: Admin can delete users, normal user cannot"
+    },
+    {
+      "id": "accountability-accounting",
+      "title": "Accountability (Accounting)",
+      "definition": "Accountability ensures every action performed by a user can be traced back to that user using logs and audit trails.",
+      "examPoints": [
+        "Accountability ensures every action performed by a user can be traced back to that user using logs and audit trails.",
+        "Achieved through Audit Logs",
+        "Important for Compliance and Forensics"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Accountability (Accounting)\n\nAccountability ensures every action performed by a user can be traced back to that user using logs and audit trails.\n\nImportant exam points. Accountability ensures every action performed by a user can be traced back to that user using logs and audit trails.. Achieved through Audit Logs. Important for Compliance and Forensics"
+    },
+    {
+      "id": "non-repudiation",
+      "title": "Non-Repudiation",
+      "definition": "Non-repudiation ensures that the sender cannot deny sending a message and the receiver cannot deny receiving it.",
+      "examPoints": [
+        "Non-repudiation ensures that the sender cannot deny sending a message and the receiver cannot deny receiving it.",
+        "Achieved using Digital Signatures",
+        "Hash alone does not provide Non-Repudiation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Non-Repudiation\n\nNon-repudiation ensures that the sender cannot deny sending a message and the receiver cannot deny receiving it.\n\nImportant exam points. Non-repudiation ensures that the sender cannot deny sending a message and the receiver cannot deny receiving it.. Achieved using Digital Signatures. Hash alone does not provide Non-Repudiation"
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy",
+      "definition": "Privacy ensures that personal or sensitive information is collected, processed, and shared only according to legal and organizational policies.",
+      "examPoints": [
+        "Privacy ensures that personal or sensitive information is collected, processed, and shared only according to legal and organizational policies.",
+        "Privacy protects personal data.",
+        "Confidentiality protects all sensitive information."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Privacy\n\nPrivacy ensures that personal or sensitive information is collected, processed, and shared only according to legal and organizational policies.\n\nImportant exam points. Privacy ensures that personal or sensitive information is collected, processed, and shared only according to legal and organizational policies.. Privacy protects personal data.. Confidentiality protects all sensitive information."
+    },
+    {
+      "id": "threat",
+      "title": "Threat",
+      "definition": "A threat is anything that has the potential to exploit a vulnerability and cause damage.",
+      "examPoints": [
+        "A threat is anything that has the potential to exploit a vulnerability and cause damage.",
+        "Examples:",
+        "Hacker",
+        "Malware",
+        "Fire",
+        "Flood",
+        "Insider"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Threat\n\nA threat is anything that has the potential to exploit a vulnerability and cause damage.\n\nImportant exam points. A threat is anything that has the potential to exploit a vulnerability and cause damage.. Examples:. Hacker. Malware. Fire. Flood. Insider"
+    },
+    {
+      "id": "vulnerability",
+      "title": "Vulnerability",
+      "definition": "A vulnerability is a weakness in software, hardware, people, or processes that can be exploited.",
+      "examPoints": [
+        "A vulnerability is a weakness in software, hardware, people, or processes that can be exploited.",
+        "Examples:",
+        "Weak Password",
+        "Unpatched Software",
+        "Open Port"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Vulnerability\n\nA vulnerability is a weakness in software, hardware, people, or processes that can be exploited.\n\nImportant exam points. A vulnerability is a weakness in software, hardware, people, or processes that can be exploited.. Examples:. Weak Password. Unpatched Software. Open Port"
+    },
+    {
+      "id": "attack",
+      "title": "Attack",
+      "definition": "An attack is the actual attempt to exploit a vulnerability using a threat.",
+      "examPoints": [
+        "An attack is the actual attempt to exploit a vulnerability using a threat.",
+        "Examples:",
+        "SQL Injection",
+        "DDoS",
+        "MITM",
+        "Brute Force"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Attack\n\nAn attack is the actual attempt to exploit a vulnerability using a threat.\n\nImportant exam points. An attack is the actual attempt to exploit a vulnerability using a threat.. Examples:. SQL Injection. DDoS. MITM. Brute Force"
+    },
+    {
+      "id": "risk",
+      "title": "Risk",
+      "definition": "Risk is the possibility that a threat will successfully exploit a vulnerability and cause damage.",
+      "examPoints": [
+        "Risk is the possibility that a threat will successfully exploit a vulnerability and cause damage.",
+        "Risk = Threat × Vulnerability × Impact",
+        "Higher Impact = Higher Risk"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Risk\n\nRisk is the possibility that a threat will successfully exploit a vulnerability and cause damage.\n\nImportant exam points. Risk is the possibility that a threat will successfully exploit a vulnerability and cause damage.. Risk = Threat × Vulnerability × Impact. Higher Impact = Higher Risk"
+    },
+    {
+      "id": "threat-vs-vulnerability-vs-attack-vs-risk",
+      "title": "Threat vs Vulnerability vs Attack vs Risk",
+      "definition": "",
+      "examPoints": [
+        "Vulnerability → Can be attacked",
+        "Attack → Is attacking",
+        "Risk → Expected damage"
+      ],
+      "comparisons": [
+        "Term: Threat; Meaning: Potential danger",
+        "Term: Vulnerability; Meaning: Weakness",
+        "Term: Attack; Meaning: Actual exploitation",
+        "Term: Risk; Meaning: Probability of loss"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Threat vs Vulnerability vs Attack vs Risk\n\nImportant exam points. Vulnerability → Can be attacked. Attack → Is attacking. Risk → Expected damage\n\nComparison. Term: Threat; Meaning: Potential danger. Term: Vulnerability; Meaning: Weakness. Term: Attack; Meaning: Actual exploitation. Term: Risk; Meaning: Probability of loss"
+    },
+    {
+      "id": "security-goals",
+      "title": "Security Goals",
+      "definition": "Security goals define the objectives that information security aims to achieve.",
+      "examPoints": [
+        "Security goals define the objectives that information security aims to achieve.",
+        "Remember:",
+        "CIA",
+        "Authentication",
+        "Authorization",
+        "Accountability",
+        "Non-Repudiation",
+        "Privacy"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Security Goals\n\nSecurity goals define the objectives that information security aims to achieve.\n\nImportant exam points. Security goals define the objectives that information security aims to achieve.. Remember:. CIA. Authentication. Authorization. Accountability. Non-Repudiation. Privacy"
+    },
+    {
+      "id": "security-services",
+      "title": "Security Services",
+      "definition": "Security services are mechanisms that implement security goals within a system.",
+      "examPoints": [
+        "Security services are mechanisms that implement security goals within a system.",
+        "Examples:",
+        "Authentication",
+        "Confidentiality",
+        "Integrity",
+        "Access Control",
+        "Non-Repudiation",
+        "Availability"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Security Services\n\nSecurity services are mechanisms that implement security goals within a system.\n\nImportant exam points. Security services are mechanisms that implement security goals within a system.. Examples:. Authentication. Confidentiality. Integrity. Access Control. Non-Repudiation. Availability"
+    },
+    {
+      "id": "passive-attack",
+      "title": "Passive Attack",
+      "definition": "A passive attack monitors or intercepts communication without modifying data.",
+      "examPoints": [
+        "A passive attack monitors or intercepts communication without modifying data.",
+        "Examples:",
+        "Packet Sniffing",
+        "Traffic Analysis",
+        "Hard to detect"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Passive Attack\n\nA passive attack monitors or intercepts communication without modifying data.\n\nImportant exam points. A passive attack monitors or intercepts communication without modifying data.. Examples:. Packet Sniffing. Traffic Analysis. Hard to detect"
+    },
+    {
+      "id": "active-attack",
+      "title": "Active Attack",
+      "definition": "An active attack modifies, injects, deletes, or disrupts data or services.",
+      "examPoints": [
+        "An active attack modifies, injects, deletes, or disrupts data or services.",
+        "Examples:",
+        "MITM",
+        "Replay",
+        "DoS",
+        "Data Modification",
+        "Easy to detect, harder to prevent"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Active Attack\n\nAn active attack modifies, injects, deletes, or disrupts data or services.\n\nImportant exam points. An active attack modifies, injects, deletes, or disrupts data or services.. Examples:. MITM. Replay. DoS. Data Modification. Easy to detect, harder to prevent"
+    },
+    {
+      "id": "passive-vs-active-attack",
+      "title": "Passive vs Active Attack",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Passive: Reads Data; Active: Modifies Data",
+        "Passive: No Modification; Active: Modification",
+        "Passive: Hard to Detect; Active: Easier to Detect",
+        "Passive: Confidentiality; Active: Integrity & Availability"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Passive vs Active Attack\n\nComparison. Passive: Reads Data; Active: Modifies Data. Passive: No Modification; Active: Modification. Passive: Hard to Detect; Active: Easier to Detect. Passive: Confidentiality; Active: Integrity & Availability"
+    },
+    {
+      "id": "malware",
+      "title": "Malware",
+      "definition": "Malware is malicious software designed to damage systems, steal information, or gain unauthorized access.",
+      "examPoints": [
+        "Malware is malicious software designed to damage systems, steal information, or gain unauthorized access.",
+        "Types:",
+        "Virus",
+        "Worm",
+        "Trojan",
+        "Spyware",
+        "Ransomware",
+        "Rootkit"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Malware\n\nMalware is malicious software designed to damage systems, steal information, or gain unauthorized access.\n\nImportant exam points. Malware is malicious software designed to damage systems, steal information, or gain unauthorized access.. Types:. Virus. Worm. Trojan. Spyware. Ransomware. Rootkit"
+    },
+    {
+      "id": "social-engineering",
+      "title": "Social Engineering",
+      "definition": "Social engineering manipulates people into revealing confidential information or performing insecure actions.",
+      "examPoints": [
+        "Social engineering manipulates people into revealing confidential information or performing insecure actions.",
+        "Examples:",
+        "Phishing",
+        "Vishing",
+        "Smishing",
+        "Tailgating",
+        "Shoulder Surfing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Social Engineering\n\nSocial engineering manipulates people into revealing confidential information or performing insecure actions.\n\nImportant exam points. Social engineering manipulates people into revealing confidential information or performing insecure actions.. Examples:. Phishing. Vishing. Smishing. Tailgating. Shoulder Surfing"
+    },
+    {
+      "id": "insider-threat",
+      "title": "Insider Threat",
+      "definition": "An insider threat originates from authorized users such as employees, contractors, or administrators.",
+      "examPoints": [
+        "An insider threat originates from authorized users such as employees, contractors, or administrators.",
+        "Types:",
+        "Malicious Insider",
+        "Negligent Insider"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Insider Threat\n\nAn insider threat originates from authorized users such as employees, contractors, or administrators.\n\nImportant exam points. An insider threat originates from authorized users such as employees, contractors, or administrators.. Types:. Malicious Insider. Negligent Insider"
+    },
+    {
+      "id": "cryptography",
+      "title": "Cryptography",
+      "definition": "Cryptography is the science of securing information by converting plaintext into ciphertext using mathematical algorithms and cryptographic keys.",
+      "examPoints": [
+        "Cryptography is the science of securing information by converting plaintext into ciphertext using mathematical algorithms and cryptographic keys.",
+        "Goals:",
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Non-Repudiation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Cryptography\n\nCryptography is the science of securing information by converting plaintext into ciphertext using mathematical algorithms and cryptographic keys.\n\nImportant exam points. Cryptography is the science of securing information by converting plaintext into ciphertext using mathematical algorithms and cryptographic keys.. Goals:. Confidentiality. Integrity. Authentication. Non-Repudiation"
+    },
+    {
+      "id": "plaintext",
+      "title": "Plaintext",
+      "definition": "Original readable information before encryption.",
+      "examPoints": [
+        "Original readable information before encryption.",
+        "Input to Encryption"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Plaintext\n\nOriginal readable information before encryption.\n\nImportant exam points. Original readable information before encryption.. Input to Encryption"
+    },
+    {
+      "id": "ciphertext",
+      "title": "Ciphertext",
+      "definition": "Encrypted unreadable data produced after encryption.",
+      "examPoints": [
+        "Encrypted unreadable data produced after encryption.",
+        "Output of Encryption"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Ciphertext\n\nEncrypted unreadable data produced after encryption.\n\nImportant exam points. Encrypted unreadable data produced after encryption.. Output of Encryption"
+    },
+    {
+      "id": "encryption",
+      "title": "Encryption",
+      "definition": "Encryption converts plaintext into ciphertext using an algorithm and key.",
+      "examPoints": [
+        "Encryption converts plaintext into ciphertext using an algorithm and key.",
+        "Confidentiality"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Encryption\n\nEncryption converts plaintext into ciphertext using an algorithm and key.\n\nImportant exam points. Encryption converts plaintext into ciphertext using an algorithm and key.. Confidentiality"
+    },
+    {
+      "id": "decryption",
+      "title": "Decryption",
+      "definition": "Decryption converts ciphertext back into plaintext using the correct key.",
+      "examPoints": [
+        "Decryption converts ciphertext back into plaintext using the correct key.",
+        "Reverse process of Encryption"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Decryption\n\nDecryption converts ciphertext back into plaintext using the correct key.\n\nImportant exam points. Decryption converts ciphertext back into plaintext using the correct key.. Reverse process of Encryption"
+    },
+    {
+      "id": "symmetric-cryptography",
+      "title": "Symmetric Cryptography",
+      "definition": "Uses the same key for both encryption and decryption.",
+      "examPoints": [
+        "Uses the same key for both encryption and decryption.",
+        "Examples:",
+        "AES",
+        "DES",
+        "RC4",
+        "Fast"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Symmetric Cryptography\n\nUses the same key for both encryption and decryption.\n\nImportant exam points. Uses the same key for both encryption and decryption.. Examples:. AES. DES. RC4. Fast"
+    },
+    {
+      "id": "asymmetric-cryptography",
+      "title": "Asymmetric Cryptography",
+      "definition": "Uses a Public Key for encryption/verification and a Private Key for decryption/signing.",
+      "examPoints": [
+        "Uses a Public Key for encryption/verification and a Private Key for decryption/signing.",
+        "Examples:",
+        "RSA",
+        "ECC",
+        "Slow but secure for key exchange"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Asymmetric Cryptography\n\nUses a Public Key for encryption/verification and a Private Key for decryption/signing.\n\nImportant exam points. Uses a Public Key for encryption/verification and a Private Key for decryption/signing.. Examples:. RSA. ECC. Slow but secure for key exchange"
+    },
+    {
+      "id": "hashing",
+      "title": "Hashing",
+      "definition": "Hashing converts data into a fixed-length hash value and is a one-way function.",
+      "examPoints": [
+        "Hashing converts data into a fixed-length hash value and is a one-way function.",
+        "No Decryption",
+        "Used for Integrity",
+        "SHA-256",
+        "SHA-512"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Hashing\n\nHashing converts data into a fixed-length hash value and is a one-way function.\n\nImportant exam points. Hashing converts data into a fixed-length hash value and is a one-way function.. No Decryption. Used for Integrity. SHA-256. SHA-512"
+    },
+    {
+      "id": "digital-signature",
+      "title": "Digital Signature",
+      "definition": "A digital signature uses the sender's private key to sign data and the public key to verify it.",
+      "examPoints": [
+        "A digital signature uses the sender's private key to sign data and the public key to verify it.",
+        "Authentication",
+        "Integrity",
+        "Non-Repudiation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Digital Signature\n\nA digital signature uses the sender's private key to sign data and the public key to verify it.\n\nImportant exam points. A digital signature uses the sender's private key to sign data and the public key to verify it.. Authentication. Integrity. Non-Repudiation"
+    },
+    {
+      "id": "real-world-applications",
+      "title": "Real-world Applications",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Technology: HTTPS; Security Used: TLS + PKI",
+        "Technology: VPN; Security Used: Encryption",
+        "Technology: Banking; Security Used: PKI",
+        "Technology: WhatsApp; Security Used: End-to-End Encryption",
+        "Technology: Email; Security Used: Digital Signature",
+        "Technology: Software Updates; Security Used: Code Signing"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Real-world Applications\n\nComparison. Technology: HTTPS; Security Used: TLS + PKI. Technology: VPN; Security Used: Encryption. Technology: Banking; Security Used: PKI. Technology: WhatsApp; Security Used: End-to-End Encryption. Technology: Email; Security Used: Digital Signature. Technology: Software Updates; Security Used: Code Signing"
+    },
+    {
+      "id": "top-20-one-liners-for-exam",
+      "title": "Top 20 One-Liners for Exam",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "CIA = Confidentiality, Integrity, Availability.",
+        "Encryption provides Confidentiality.",
+        "Hashing provides Integrity.",
+        "Digital Signature provides Authentication + Integrity + Non-Repudiation.",
+        "Authentication comes before Authorization.",
+        "Authorization decides permissions.",
+        "Accountability uses audit logs.",
+        "Threat exploits Vulnerability.",
+        "Attack is the actual exploitation.",
+        "Risk = Threat × Vulnerability × Impact.",
+        "Passive attack reads; Active attack modifies.",
+        "DoS attacks Availability.",
+        "Sniffing is a Passive attack.",
+        "MITM is an Active attack.",
+        "Symmetric uses one key.",
+        "Asymmetric uses two keys.",
+        "Plaintext → Encryption → Ciphertext.",
+        "Ciphertext → Decryption → Plaintext.",
+        "Hashing is one-way.",
+        "PKI is built on the principles introduced in this phase: CIA, authentication, cryptography, and trust."
+      ],
+      "narration": "Top 20 One-Liners for Exam\n\nMemory points. CIA = Confidentiality, Integrity, Availability.. Encryption provides Confidentiality.. Hashing provides Integrity.. Digital Signature provides Authentication + Integrity + Non-Repudiation.. Authentication comes before Authorization.. Authorization decides permissions.. Accountability uses audit logs.. Threat exploits Vulnerability.. Attack is the actual exploitation.. Risk = Threat × Vulnerability × Impact.. Passive attack reads; Active attack modifies.. DoS attacks Availability.. Sniffing is a Passive attack.. MITM is an Active attack.. Symmetric uses one key.. Asymmetric uses two keys.. Plaintext → Encryption → Ciphertext.. Ciphertext → Decryption → Plaintext.. Hashing is one-way.. PKI is built on the principles introduced in this phase: CIA, authentication, cryptography, and trust."
+    }
+  ]
+}

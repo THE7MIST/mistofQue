@@ -1,0 +1,56 @@
+{
+  "subject": "PKI",
+  "subjectSlug": "pki",
+  "title": "PKI Revision",
+  "phases": [
+    {
+      "id": "phase01-foundations",
+      "title": "Phase 1 - Foundations Of Information Security",
+      "file": "/data/pki/revision/phase01-foundations.json",
+      "audio": "/audio/pki/phase01-foundations.mp3",
+      "topicCount": 35
+    },
+    {
+      "id": "phase02-cryptography",
+      "title": "Phase 2 - Cryptography",
+      "file": "/data/pki/revision/phase02-cryptography.json",
+      "audio": "/audio/pki/phase02-cryptography.mp3",
+      "topicCount": 52
+    },
+    {
+      "id": "phase03-pki",
+      "title": "Phase 3 - Public Key Infrastructure (PKI)",
+      "file": "/data/pki/revision/phase03-pki.json",
+      "audio": "/audio/pki/phase03-pki.mp3",
+      "topicCount": 35
+    },
+    {
+      "id": "phase04-x509",
+      "title": "Phase 4 - X.509 Certificates",
+      "file": "/data/pki/revision/phase04-x509.json",
+      "audio": "/audio/pki/phase04-x509.mp3",
+      "topicCount": 48
+    },
+    {
+      "id": "phase05-files",
+      "title": "Phase 5 - Keys & Certificate Files",
+      "file": "/data/pki/revision/phase05-files.json",
+      "audio": "/audio/pki/phase05-files.mp3",
+      "topicCount": 49
+    },
+    {
+      "id": "phase06-lifecycle",
+      "title": "Phase 6 - Certificate Lifecycle",
+      "file": "/data/pki/revision/phase06-lifecycle.json",
+      "audio": "/audio/pki/phase06-lifecycle.mp3",
+      "topicCount": 44
+    },
+    {
+      "id": "phase07-revocation",
+      "title": "Phase 7 - Certificate Revocation",
+      "file": "/data/pki/revision/phase07-revocation.json",
+      "audio": "/audio/pki/phase07-revocation.mp3",
+      "topicCount": 56
+    }
+  ]
+}

@@ -114,6 +114,11 @@ export default function Sidebar({ isOpen, onClose }) {
                             <NavLink to={subject.topicsPath} className={navClass} onClick={onClose}>
                               Topic Wise MCQ
                             </NavLink>
+                            {subject.revisionPath ? (
+                              <NavLink to={subject.revisionPath} className={navClass} onClick={onClose}>
+                                Revision
+                              </NavLink>
+                            ) : null}
                             {subject.stages.slice(1).map((stage) => (
                               <NavLink key={stage.slug} to={stage.path} className={navClass} onClick={onClose}>
                                 {stage.label}

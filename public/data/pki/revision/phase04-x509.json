@@ -1,0 +1,799 @@
+{
+  "id": "phase04-x509",
+  "subject": "PKI",
+  "title": "Phase 4 - X.509 Certificates",
+  "audio": "/audio/pki/phase04-x509.mp3",
+  "topics": [
+    {
+      "id": "x509-certificate",
+      "title": "X.509 Certificate",
+      "definition": "An X.509 certificate is a digitally signed electronic document that binds a subject's identity to a public key. It is issued and signed by a Certificate Authority (CA).",
+      "examPoints": [
+        "An X.509 certificate is a digitally signed electronic document that binds a subject's identity to a public key. It is issued and signed by a Certificate Authority (CA).",
+        "Contains Public Key, never Private Key.",
+        "Used in HTTPS, VPN, Email, Code Signing, Wi-Fi."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "X.509 Certificate\n\nAn X.509 certificate is a digitally signed electronic document that binds a subject's identity to a public key. It is issued and signed by a Certificate Authority (CA).\n\nImportant exam points. An X.509 certificate is a digitally signed electronic document that binds a subject's identity to a public key. It is issued and signed by a Certificate Authority (CA).. Contains Public Key, never Private Key.. Used in HTTPS, VPN, Email, Code Signing, Wi-Fi."
+    },
+    {
+      "id": "certificate-structure",
+      "title": "Certificate Structure",
+      "definition": "An X.509 certificate consists of three main parts: 1. TBSCertificate 2. Signature Algorithm 3. Digital Signature (Signature Value)",
+      "examPoints": [
+        "An X.509 certificate consists of three main parts:"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Certificate │ ├── TBSCertificate ├── Signature Algorithm └── Signature Value"
+      ],
+      "oneLiners": [],
+      "narration": "Certificate Structure\n\nAn X.509 certificate consists of three main parts: 1. TBSCertificate 2. Signature Algorithm 3. Digital Signature (Signature Value)\n\nImportant exam points. An X.509 certificate consists of three main parts:\n\nWorkflow. Certificate │ ├── TBSCertificate ├── Signature Algorithm └── Signature Value"
+    },
+    {
+      "id": "tbscertificate",
+      "title": "TBSCertificate",
+      "definition": "TBSCertificate (To Be Signed Certificate) contains all certificate information that the CA signs.",
+      "examPoints": [
+        "TBSCertificate (To Be Signed Certificate) contains all certificate information that the CA signs.",
+        "Contains:",
+        "Subject",
+        "Issuer",
+        "Public Key",
+        "Serial Number",
+        "Validity",
+        "Extensions",
+        "If TBSCertificate changes → Signature becomes invalid."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "TBSCertificate\n\nTBSCertificate (To Be Signed Certificate) contains all certificate information that the CA signs.\n\nImportant exam points. TBSCertificate (To Be Signed Certificate) contains all certificate information that the CA signs.. Contains:. Subject. Issuer. Public Key. Serial Number. Validity. Extensions. If TBSCertificate changes → Signature becomes invalid."
+    },
+    {
+      "id": "signature-algorithm",
+      "title": "Signature Algorithm",
+      "definition": "Specifies the algorithm used by the CA to create the digital signature.",
+      "examPoints": [
+        "Specifies the algorithm used by the CA to create the digital signature.",
+        "Examples:",
+        "SHA256WithRSA",
+        "SHA384WithRSA",
+        "ECDSA with SHA256"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Signature Algorithm\n\nSpecifies the algorithm used by the CA to create the digital signature.\n\nImportant exam points. Specifies the algorithm used by the CA to create the digital signature.. Examples:. SHA256WithRSA. SHA384WithRSA. ECDSA with SHA256"
+    },
+    {
+      "id": "signature-value",
+      "title": "Signature Value",
+      "definition": "The Signature Value is the CA's digital signature over the TBSCertificate.",
+      "examPoints": [
+        "The Signature Value is the CA's digital signature over the TBSCertificate.",
+        "Created using",
+        "CA Private Key",
+        "Verified using",
+        "CA Public Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Signature Value\n\nThe Signature Value is the CA's digital signature over the TBSCertificate.\n\nImportant exam points. The Signature Value is the CA's digital signature over the TBSCertificate.. Created using. CA Private Key. Verified using. CA Public Key"
+    },
+    {
+      "id": "asn-1",
+      "title": "ASN.1",
+      "definition": "ASN.1 (Abstract Syntax Notation One) defines how certificate data is structured before encoding.",
+      "examPoints": [
+        "ASN.1 (Abstract Syntax Notation One) defines how certificate data is structured before encoding.",
+        "Encoding Standards",
+        "DER",
+        "BER"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "ASN.1\n\nASN.1 (Abstract Syntax Notation One) defines how certificate data is structured before encoding.\n\nImportant exam points. ASN.1 (Abstract Syntax Notation One) defines how certificate data is structured before encoding.. Encoding Standards. DER. BER"
+    },
+    {
+      "id": "der",
+      "title": "DER",
+      "definition": "DER (Distinguished Encoding Rules) is the binary encoding format of an X.509 certificate.",
+      "examPoints": [
+        "DER (Distinguished Encoding Rules) is the binary encoding format of an X.509 certificate.",
+        "Binary",
+        "Smaller",
+        "Machine-readable"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "DER\n\nDER (Distinguished Encoding Rules) is the binary encoding format of an X.509 certificate.\n\nImportant exam points. DER (Distinguished Encoding Rules) is the binary encoding format of an X.509 certificate.. Binary. Smaller. Machine-readable"
+    },
+    {
+      "id": "pem",
+      "title": "PEM",
+      "definition": "PEM (Privacy Enhanced Mail) is the Base64 encoded text representation of DER data.",
+      "examPoints": [
+        "PEM (Privacy Enhanced Mail) is the Base64 encoded text representation of DER data.",
+        "Starts with",
+        "Ends with"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "-----BEGIN CERTIFICATE-----",
+        "-----END CERTIFICATE-----"
+      ],
+      "oneLiners": [],
+      "narration": "PEM\n\nPEM (Privacy Enhanced Mail) is the Base64 encoded text representation of DER data.\n\nImportant exam points. PEM (Privacy Enhanced Mail) is the Base64 encoded text representation of DER data.. Starts with. Ends with\n\nWorkflow. -----BEGIN CERTIFICATE-----. -----END CERTIFICATE-----"
+    },
+    {
+      "id": "der-vs-pem",
+      "title": "DER vs PEM",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "DER: Binary; PEM: Base64 Text",
+        "DER: Smaller; PEM: Human Readable",
+        "DER: .der .cer; PEM: .pem .crt"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "DER vs PEM\n\nComparison. DER: Binary; PEM: Base64 Text. DER: Smaller; PEM: Human Readable. DER: .der .cer; PEM: .pem .crt"
+    },
+    {
+      "id": "certificate-generation",
+      "title": "Certificate Generation",
+      "definition": "A certificate is created when a CA signs a CSR using its private key.",
+      "examPoints": [
+        "A certificate is created when a CA signs a CSR using its private key.",
+        "Workflow"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Private Key ↓ CSR ↓ CA Signs ↓ Certificate"
+      ],
+      "oneLiners": [],
+      "narration": "Certificate Generation\n\nA certificate is created when a CA signs a CSR using its private key.\n\nImportant exam points. A certificate is created when a CA signs a CSR using its private key.. Workflow\n\nWorkflow. Private Key ↓ CSR ↓ CA Signs ↓ Certificate"
+    },
+    {
+      "id": "certificate-parsing",
+      "title": "Certificate Parsing",
+      "definition": "Certificate parsing means reading and displaying certificate fields.",
+      "examPoints": [
+        "Certificate parsing means reading and displaying certificate fields."
+      ],
+      "comparisons": [],
+      "commands": [
+        "OpenSSL: openssl x509 -text -noout -in server.crt"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Parsing\n\nCertificate parsing means reading and displaying certificate fields.\n\nImportant exam points. Certificate parsing means reading and displaying certificate fields.\n\nCommands. OpenSSL: openssl x509 -text -noout -in server.crt"
+    },
+    {
+      "id": "version",
+      "title": "Version",
+      "definition": "Indicates the X.509 certificate version.",
+      "examPoints": [
+        "Indicates the X.509 certificate version.",
+        "Current Version",
+        "Version 3 (v3)"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Version\n\nIndicates the X.509 certificate version.\n\nImportant exam points. Indicates the X.509 certificate version.. Current Version. Version 3 (v3)"
+    },
+    {
+      "id": "serial-number",
+      "title": "Serial Number",
+      "definition": "A unique number assigned by the CA to every certificate.",
+      "examPoints": [
+        "A unique number assigned by the CA to every certificate.",
+        "Used in",
+        "Revocation",
+        "CRL",
+        "OCSP"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Serial Number\n\nA unique number assigned by the CA to every certificate.\n\nImportant exam points. A unique number assigned by the CA to every certificate.. Used in. Revocation. CRL. OCSP"
+    },
+    {
+      "id": "signature-algorithm-field",
+      "title": "Signature Algorithm Field",
+      "definition": "Specifies which algorithm was used to sign the certificate.",
+      "examPoints": [
+        "Specifies which algorithm was used to sign the certificate.",
+        "SHA256WithRSAEncryption"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Signature Algorithm Field\n\nSpecifies which algorithm was used to sign the certificate.\n\nImportant exam points. Specifies which algorithm was used to sign the certificate.. SHA256WithRSAEncryption"
+    },
+    {
+      "id": "issuer",
+      "title": "Issuer",
+      "definition": "The Issuer is the Certificate Authority that signed the certificate.",
+      "examPoints": [
+        "The Issuer is the Certificate Authority that signed the certificate.",
+        "Root CA",
+        "Intermediate CA"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Issuer\n\nThe Issuer is the Certificate Authority that signed the certificate.\n\nImportant exam points. The Issuer is the Certificate Authority that signed the certificate.. Root CA. Intermediate CA"
+    },
+    {
+      "id": "subject",
+      "title": "Subject",
+      "definition": "The Subject identifies the certificate owner.",
+      "examPoints": [
+        "The Subject identifies the certificate owner.",
+        "User",
+        "Server",
+        "Organization"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subject\n\nThe Subject identifies the certificate owner.\n\nImportant exam points. The Subject identifies the certificate owner.. User. Server. Organization"
+    },
+    {
+      "id": "validity",
+      "title": "Validity",
+      "definition": "Defines the certificate lifetime.",
+      "examPoints": [
+        "Defines the certificate lifetime.",
+        "Contains",
+        "Not Before",
+        "Not After"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Validity\n\nDefines the certificate lifetime.\n\nImportant exam points. Defines the certificate lifetime.. Contains. Not Before. Not After"
+    },
+    {
+      "id": "public-key",
+      "title": "Public Key",
+      "definition": "Contains the subject's public key.",
+      "examPoints": [
+        "Contains the subject's public key.",
+        "Used for",
+        "Encryption",
+        "Signature Verification"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Public Key\n\nContains the subject's public key.\n\nImportant exam points. Contains the subject's public key.. Used for. Encryption. Signature Verification"
+    },
+    {
+      "id": "distinguished-name-dn",
+      "title": "Distinguished Name (DN)",
+      "definition": "A Distinguished Name uniquely identifies the certificate subject or issuer.",
+      "examPoints": [
+        "A Distinguished Name uniquely identifies the certificate subject or issuer.",
+        "Contains",
+        "CN",
+        "O",
+        "OU",
+        "C",
+        "ST",
+        "L"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Distinguished Name (DN)\n\nA Distinguished Name uniquely identifies the certificate subject or issuer.\n\nImportant exam points. A Distinguished Name uniquely identifies the certificate subject or issuer.. Contains. CN. O. OU. C. ST. L"
+    },
+    {
+      "id": "common-name-cn",
+      "title": "Common Name (CN)",
+      "definition": "The Common Name identifies the primary subject name.",
+      "examPoints": [
+        "The Common Name identifies the primary subject name.",
+        "Old",
+        "CN = Hostname",
+        "Modern",
+        "Use SAN"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Common Name (CN)\n\nThe Common Name identifies the primary subject name.\n\nImportant exam points. The Common Name identifies the primary subject name.. Old. CN = Hostname. Modern. Use SAN"
+    },
+    {
+      "id": "organization-o",
+      "title": "Organization (O)",
+      "definition": "Legal organization owning the certificate.",
+      "examPoints": [
+        "Legal organization owning the certificate.",
+        "Google LLC"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Organization (O)\n\nLegal organization owning the certificate.\n\nImportant exam points. Legal organization owning the certificate.. Google LLC"
+    },
+    {
+      "id": "organizational-unit-ou",
+      "title": "Organizational Unit (OU)",
+      "definition": "Department inside the organization.",
+      "examPoints": [
+        "Department inside the organization.",
+        "IT Department"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Organizational Unit (OU)\n\nDepartment inside the organization.\n\nImportant exam points. Department inside the organization.. IT Department"
+    },
+    {
+      "id": "country-c",
+      "title": "Country (C)",
+      "definition": "Two-letter ISO country code.",
+      "examPoints": [
+        "Two-letter ISO country code.",
+        "IN",
+        "US",
+        "GB"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Country (C)\n\nTwo-letter ISO country code.\n\nImportant exam points. Two-letter ISO country code.. IN. US. GB"
+    },
+    {
+      "id": "state-st",
+      "title": "State (ST)",
+      "definition": "",
+      "examPoints": [
+        "Maharashtra"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "State (ST)\n\nImportant exam points. Maharashtra"
+    },
+    {
+      "id": "locality-l",
+      "title": "Locality (L)",
+      "definition": "",
+      "examPoints": [
+        "Pune"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Locality (L)\n\nImportant exam points. Pune"
+    },
+    {
+      "id": "subject-vs-issuer",
+      "title": "Subject vs Issuer",
+      "definition": "",
+      "examPoints": [
+        "Issuer = CA"
+      ],
+      "comparisons": [
+        "Subject: Certificate Owner; Issuer: Certificate Signer"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subject vs Issuer\n\nImportant exam points. Issuer = CA\n\nComparison. Subject: Certificate Owner; Issuer: Certificate Signer"
+    },
+    {
+      "id": "subject-identification",
+      "title": "Subject Identification",
+      "definition": "The Subject field identifies who owns the certificate.",
+      "examPoints": [
+        "The Subject field identifies who owns the certificate.",
+        "Can represent",
+        "Person",
+        "Server",
+        "Device"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subject Identification\n\nThe Subject field identifies who owns the certificate.\n\nImportant exam points. The Subject field identifies who owns the certificate.. Can represent. Person. Server. Device"
+    },
+    {
+      "id": "self-signed-certificate",
+      "title": "Self-Signed Certificate",
+      "definition": "A certificate whose Subject and Issuer are the same.",
+      "examPoints": [
+        "A certificate whose Subject and Issuer are the same.",
+        "Root CA",
+        "is Self-Signed."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Self-Signed Certificate\n\nA certificate whose Subject and Issuer are the same.\n\nImportant exam points. A certificate whose Subject and Issuer are the same.. Root CA. is Self-Signed."
+    },
+    {
+      "id": "x509-extensions",
+      "title": "X.509 Extensions",
+      "definition": "Extensions provide additional information and restrictions for certificate usage.",
+      "examPoints": [
+        "Extensions provide additional information and restrictions for certificate usage.",
+        "KU",
+        "EKU",
+        "SAN",
+        "Basic Constraints",
+        "SKI",
+        "AKI"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "X.509 Extensions\n\nExtensions provide additional information and restrictions for certificate usage.\n\nImportant exam points. Extensions provide additional information and restrictions for certificate usage.. KU. EKU. SAN. Basic Constraints. SKI. AKI"
+    },
+    {
+      "id": "critical-vs-non-critical",
+      "title": "Critical vs Non-Critical",
+      "definition": "Critical extensions must be understood by the client.",
+      "examPoints": [
+        "Critical extensions must be understood by the client.",
+        "Unknown Critical Extension",
+        "↓",
+        "Certificate Rejected"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Critical vs Non-Critical\n\nCritical extensions must be understood by the client.\n\nImportant exam points. Critical extensions must be understood by the client.. Unknown Critical Extension. ↓. Certificate Rejected"
+    },
+    {
+      "id": "key-usage-ku",
+      "title": "Key Usage (KU)",
+      "definition": "Specifies permitted cryptographic operations.",
+      "examPoints": [
+        "Specifies permitted cryptographic operations.",
+        "Digital Signature",
+        "Key Encipherment",
+        "Key Agreement",
+        "Certificate Signing",
+        "CRL Signing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Key Usage (KU)\n\nSpecifies permitted cryptographic operations.\n\nImportant exam points. Specifies permitted cryptographic operations.. Digital Signature. Key Encipherment. Key Agreement. Certificate Signing. CRL Signing"
+    },
+    {
+      "id": "extended-key-usage-eku",
+      "title": "Extended Key Usage (EKU)",
+      "definition": "Defines the intended application of the certificate.",
+      "examPoints": [
+        "Defines the intended application of the certificate.",
+        "Server Authentication",
+        "Client Authentication",
+        "Code Signing",
+        "Email Protection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Extended Key Usage (EKU)\n\nDefines the intended application of the certificate.\n\nImportant exam points. Defines the intended application of the certificate.. Server Authentication. Client Authentication. Code Signing. Email Protection"
+    },
+    {
+      "id": "subject-alternative-name-san",
+      "title": "Subject Alternative Name (SAN)",
+      "definition": "Lists additional identities covered by the certificate.",
+      "examPoints": [
+        "Lists additional identities covered by the certificate.",
+        "DNS",
+        "IP Address",
+        "Email",
+        "Modern browsers validate",
+        "SAN",
+        "NOT CN"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subject Alternative Name (SAN)\n\nLists additional identities covered by the certificate.\n\nImportant exam points. Lists additional identities covered by the certificate.. DNS. IP Address. Email. Modern browsers validate. SAN. NOT CN"
+    },
+    {
+      "id": "basic-constraints",
+      "title": "Basic Constraints",
+      "definition": "Determines whether a certificate can act as a CA.",
+      "examPoints": [
+        "Determines whether a certificate can act as a CA.",
+        "CA Certificate",
+        "Server Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "CA:TRUE",
+        "CA:FALSE"
+      ],
+      "oneLiners": [],
+      "narration": "Basic Constraints\n\nDetermines whether a certificate can act as a CA.\n\nImportant exam points. Determines whether a certificate can act as a CA.. CA Certificate. Server Certificate\n\nWorkflow. CA:TRUE. CA:FALSE"
+    },
+    {
+      "id": "subject-key-identifier-ski",
+      "title": "Subject Key Identifier (SKI)",
+      "definition": "Unique identifier for the subject's public key.",
+      "examPoints": [
+        "Unique identifier for the subject's public key.",
+        "Identifies",
+        "Current Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subject Key Identifier (SKI)\n\nUnique identifier for the subject's public key.\n\nImportant exam points. Unique identifier for the subject's public key.. Identifies. Current Certificate"
+    },
+    {
+      "id": "authority-key-identifier-aki",
+      "title": "Authority Key Identifier (AKI)",
+      "definition": "Identifies the public key of the issuing CA.",
+      "examPoints": [
+        "Identifies the public key of the issuing CA.",
+        "Links",
+        "Child Certificate",
+        "↓",
+        "Parent Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Authority Key Identifier (AKI)\n\nIdentifies the public key of the issuing CA.\n\nImportant exam points. Identifies the public key of the issuing CA.. Links. Child Certificate. ↓. Parent Certificate"
+    },
+    {
+      "id": "aki-vs-ski",
+      "title": "AKI vs SKI",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "AKI: Parent Key; SKI: Current Key",
+        "AKI: Issuer; SKI: Subject"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "AKI vs SKI\n\nComparison. AKI: Parent Key; SKI: Current Key. AKI: Issuer; SKI: Subject"
+    },
+    {
+      "id": "certificate-chain",
+      "title": "Certificate Chain",
+      "definition": "A certificate chain is the ordered sequence of certificates from the server certificate to the trusted Root CA.",
+      "examPoints": [
+        "A certificate chain is the ordered sequence of certificates from the server certificate to the trusted Root CA."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Root CA ↓ Intermediate CA ↓ Server Certificate"
+      ],
+      "oneLiners": [],
+      "narration": "Certificate Chain\n\nA certificate chain is the ordered sequence of certificates from the server certificate to the trusted Root CA.\n\nImportant exam points. A certificate chain is the ordered sequence of certificates from the server certificate to the trusted Root CA.\n\nWorkflow. Root CA ↓ Intermediate CA ↓ Server Certificate"
+    },
+    {
+      "id": "certificate-validation",
+      "title": "Certificate Validation",
+      "definition": "Certificate validation determines whether a certificate should be trusted.",
+      "examPoints": [
+        "Certificate validation determines whether a certificate should be trusted.",
+        "Checks",
+        "Signature",
+        "Chain",
+        "Expiry",
+        "Revocation",
+        "SAN",
+        "Key Usage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Validation\n\nCertificate validation determines whether a certificate should be trusted.\n\nImportant exam points. Certificate validation determines whether a certificate should be trusted.. Checks. Signature. Chain. Expiry. Revocation. SAN. Key Usage"
+    },
+    {
+      "id": "validation-steps",
+      "title": "Validation Steps",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Receive Certificate ↓ Check Signature ↓ Check Issuer ↓ Build Chain ↓ Check Root Trust ↓ Check Validity ↓ Check Revocation ↓ Check Hostname (SAN) ↓ Accept"
+      ],
+      "oneLiners": [],
+      "narration": "Validation Steps\n\nWorkflow. Receive Certificate ↓ Check Signature ↓ Check Issuer ↓ Build Chain ↓ Check Root Trust ↓ Check Validity ↓ Check Revocation ↓ Check Hostname (SAN) ↓ Accept"
+    },
+    {
+      "id": "certificate-extensions-most-important",
+      "title": "Certificate Extensions (Most Important)",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Extension: KU; Purpose: Cryptographic Operations",
+        "Extension: EKU; Purpose: Intended Purpose",
+        "Extension: SAN; Purpose: Additional Identities",
+        "Extension: Basic Constraints; Purpose: CA or Not",
+        "Extension: AKI; Purpose: Parent Key",
+        "Extension: SKI; Purpose: Current Key"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Extensions (Most Important)\n\nComparison. Extension: KU; Purpose: Cryptographic Operations. Extension: EKU; Purpose: Intended Purpose. Extension: SAN; Purpose: Additional Identities. Extension: Basic Constraints; Purpose: CA or Not. Extension: AKI; Purpose: Parent Key. Extension: SKI; Purpose: Current Key"
+    },
+    {
+      "id": "common-certificate-errors",
+      "title": "Common Certificate Errors",
+      "definition": "",
+      "examPoints": [
+        "Wrong Hostname",
+        "Missing SAN",
+        "Unknown CA",
+        "Missing Intermediate",
+        "Revoked Certificate",
+        "Wrong KU/EKU",
+        "Invalid Signature"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Common Certificate Errors\n\nImportant exam points. Wrong Hostname. Missing SAN. Unknown CA. Missing Intermediate. Revoked Certificate. Wrong KU/EKU. Invalid Signature"
+    },
+    {
+      "id": "pem-vs-der",
+      "title": "PEM vs DER",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "PEM: Base64; DER: Binary",
+        "PEM: Human Readable; DER: Machine Format"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PEM vs DER\n\nComparison. PEM: Base64; DER: Binary. PEM: Human Readable; DER: Machine Format"
+    },
+    {
+      "id": "subject-vs-issuer",
+      "title": "Subject vs Issuer",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Subject: Owner; Issuer: CA"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subject vs Issuer\n\nComparison. Subject: Owner; Issuer: CA"
+    },
+    {
+      "id": "ku-vs-eku",
+      "title": "KU vs EKU",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "KU: Cryptographic Operations; EKU: Intended Usage"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "KU vs EKU\n\nComparison. KU: Cryptographic Operations; EKU: Intended Usage"
+    },
+    {
+      "id": "aki-vs-ski",
+      "title": "AKI vs SKI",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "AKI: Parent Key; SKI: Current Key"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "AKI vs SKI\n\nComparison. AKI: Parent Key; SKI: Current Key"
+    },
+    {
+      "id": "cn-vs-san",
+      "title": "CN vs SAN",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "CN: Legacy; SAN: Modern Standard",
+        "CN: One Name; SAN: Multiple Names"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CN vs SAN\n\nComparison. CN: Legacy; SAN: Modern Standard. CN: One Name; SAN: Multiple Names"
+    },
+    {
+      "id": "top-30-one-liners-for-exam",
+      "title": "Top 30 One-Liners for Exam",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "X.509 is the standard certificate format.",
+        "Certificates contain public keys, never private keys.",
+        "A certificate has TBSCertificate + Signature Algorithm + Signature Value.",
+        "TBSCertificate is the portion signed by the CA.",
+        "Changing any TBSCertificate field invalidates the signature.",
+        "DER is binary; PEM is Base64 text.",
+        "PEM begins with -----BEGIN CERTIFICATE-----.",
+        "Every certificate has a unique serial number.",
+        "Issuer is the CA; Subject is the owner.",
+        "Not Before and Not After define certificate validity.",
+        "DN = Distinguished Name.",
+        "DN includes CN, O, OU, C, ST, L.",
+        "Root CA certificates are self-signed.",
+        "SAN is used by modern browsers for hostname validation.",
+        "Browsers ignore CN if SAN is present.",
+        "CA:TRUE means the certificate can issue certificates.",
+        "CA:FALSE means an end-entity certificate.",
+        "KU defines allowed cryptographic operations.",
+        "EKU defines intended application.",
+        "AKI identifies the issuer's key.",
+        "SKI identifies the subject's key.",
+        "Certificate chain = Server → Intermediate → Root.",
+        "The Root CA is the trust anchor.",
+        "Validation checks signature, chain, expiry, revocation, SAN, and KU/EKU.",
+        "Missing Intermediate CA often causes \"certificate chain incomplete\" errors.",
+        "Wrong SAN causes hostname mismatch errors.",
+        "Unknown Root CA causes untrusted certificate errors.",
+        "CRL and OCSP are used for revocation checking.",
+        "OpenSSL command to inspect a certificate: openssl x509 -text -noout -in server.crt.",
+        "The most commonly tested X.509 extensions are KU, EKU, SAN, Basic Constraints, AKI, and SKI."
+      ],
+      "narration": "Top 30 One-Liners for Exam\n\nMemory points. X.509 is the standard certificate format.. Certificates contain public keys, never private keys.. A certificate has TBSCertificate + Signature Algorithm + Signature Value.. TBSCertificate is the portion signed by the CA.. Changing any TBSCertificate field invalidates the signature.. DER is binary; PEM is Base64 text.. PEM begins with -----BEGIN CERTIFICATE-----.. Every certificate has a unique serial number.. Issuer is the CA; Subject is the owner.. Not Before and Not After define certificate validity.. DN = Distinguished Name.. DN includes CN, O, OU, C, ST, L.. Root CA certificates are self-signed.. SAN is used by modern browsers for hostname validation.. Browsers ignore CN if SAN is present.. CA:TRUE means the certificate can issue certificates.. CA:FALSE means an end-entity certificate.. KU defines allowed cryptographic operations.. EKU defines intended application.. AKI identifies the issuer's key.. SKI identifies the subject's key.. Certificate chain = Server → Intermediate → Root.. The Root CA is the trust anchor.. Validation checks signature, chain, expiry, revocation, SAN, and KU/EKU.. Missing Intermediate CA often causes \"certificate chain incomplete\" errors.. Wrong SAN causes hostname mismatch errors.. Unknown Root CA causes untrusted certificate errors.. CRL and OCSP are used for revocation checking.. OpenSSL command to inspect a certificate: openssl x509 -text -noout -in server.crt.. The most commonly tested X.509 extensions are KU, EKU, SAN, Basic Constraints, AKI, and SKI."
+    }
+  ]
+}

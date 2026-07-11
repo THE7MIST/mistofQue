@@ -1,3 +1,5 @@
+const DATA_VERSION = __DATA_VERSION__;
+
 function resolvePublicPath(file) {
   if (/^https?:\/\//i.test(file)) return file;
 
@@ -7,9 +9,15 @@ function resolvePublicPath(file) {
   return `${normalizedBase}${normalizedFile}`;
 }
 
-export async function loadQuizFile(file) {
+function versionedUrl(file) {
   const url = resolvePublicPath(file);
-  const response = await fetch(url, { cache: "no-cache" });
+  const separator = url.includes("?") ? "&" : "?";
+  return `${url}${separator}v=${encodeURIComponent(DATA_VERSION)}`;
+}
+
+export async function loadQuizFile(file) {
+  const url = versionedUrl(file);
+  const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Could not load quiz data from ${url}`);
   }
@@ -17,8 +25,8 @@ export async function loadQuizFile(file) {
 }
 
 export async function loadTopicIndex(file) {
-  const url = resolvePublicPath(file);
-  const response = await fetch(url, { cache: "no-cache" });
+  const url = versionedUrl(file);
+  const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) {
     throw new Error(`Could not load topic index from ${url}`);
   }

@@ -1,0 +1,843 @@
+{
+  "id": "phase02-cryptography",
+  "subject": "PKI",
+  "title": "Phase 2 - Cryptography",
+  "audio": "/audio/pki/phase02-cryptography.mp3",
+  "topics": [
+    {
+      "id": "cryptography",
+      "title": "Cryptography",
+      "definition": "Cryptography is the science of protecting information by converting readable data into an unreadable format using mathematical algorithms and cryptographic keys. It ensures secure communication over insecure networks.",
+      "examPoints": [
+        "Cryptography is the science of protecting information by converting readable data into an unreadable format using mathematical algorithms and cryptographic keys. It ensures secure communication over insecure networks.",
+        "Goals: Confidentiality, Integrity, Authentication, Non-Repudiation",
+        "Types: Symmetric, Asymmetric, Hashing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Cryptography\n\nCryptography is the science of protecting information by converting readable data into an unreadable format using mathematical algorithms and cryptographic keys. It ensures secure communication over insecure networks.\n\nImportant exam points. Cryptography is the science of protecting information by converting readable data into an unreadable format using mathematical algorithms and cryptographic keys. It ensures secure communication over insecure networks.. Goals: Confidentiality, Integrity, Authentication, Non-Repudiation. Types: Symmetric, Asymmetric, Hashing"
+    },
+    {
+      "id": "encryption",
+      "title": "Encryption",
+      "definition": "Encryption converts plaintext into ciphertext using an algorithm and a key, making the data unreadable to unauthorized users.",
+      "examPoints": [
+        "Encryption converts plaintext into ciphertext using an algorithm and a key, making the data unreadable to unauthorized users.",
+        "Provides Confidentiality",
+        "Reverse process is Decryption"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Encryption\n\nEncryption converts plaintext into ciphertext using an algorithm and a key, making the data unreadable to unauthorized users.\n\nImportant exam points. Encryption converts plaintext into ciphertext using an algorithm and a key, making the data unreadable to unauthorized users.. Provides Confidentiality. Reverse process is Decryption"
+    },
+    {
+      "id": "encryption-workflow",
+      "title": "Encryption Workflow",
+      "definition": "Encryption starts with plaintext, applies an encryption algorithm using a key to produce ciphertext. The receiver uses the correct key to decrypt the ciphertext back into plaintext.",
+      "examPoints": [
+        "Encryption starts with plaintext, applies an encryption algorithm using a key to produce ciphertext. The receiver uses the correct key to decrypt the ciphertext back into plaintext."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Encryption Workflow\n\nEncryption starts with plaintext, applies an encryption algorithm using a key to produce ciphertext. The receiver uses the correct key to decrypt the ciphertext back into plaintext.\n\nImportant exam points. Encryption starts with plaintext, applies an encryption algorithm using a key to produce ciphertext. The receiver uses the correct key to decrypt the ciphertext back into plaintext."
+    },
+    {
+      "id": "components-of-encryption",
+      "title": "Components of Encryption",
+      "definition": "Every encryption system consists of plaintext, encryption algorithm, encryption key, ciphertext, decryption algorithm, and decryption key.",
+      "examPoints": [
+        "Every encryption system consists of plaintext, encryption algorithm, encryption key, ciphertext, decryption algorithm, and decryption key.",
+        "Remember:",
+        "Plaintext",
+        "Ciphertext",
+        "Algorithm",
+        "Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Components of Encryption\n\nEvery encryption system consists of plaintext, encryption algorithm, encryption key, ciphertext, decryption algorithm, and decryption key.\n\nImportant exam points. Every encryption system consists of plaintext, encryption algorithm, encryption key, ciphertext, decryption algorithm, and decryption key.. Remember:. Plaintext. Ciphertext. Algorithm. Key"
+    },
+    {
+      "id": "encryption-vs-encoding-vs-hashing",
+      "title": "Encryption vs Encoding vs Hashing",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Encryption: Reversible; Encoding: Reversible; Hashing: Not Reversible",
+        "Encryption: Uses Key; Encoding: No Key; Hashing: No Decryption Key",
+        "Encryption: Security; Encoding: Representation; Hashing: Integrity"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Encryption vs Encoding vs Hashing\n\nComparison. Encryption: Reversible; Encoding: Reversible; Hashing: Not Reversible. Encryption: Uses Key; Encoding: No Key; Hashing: No Decryption Key. Encryption: Security; Encoding: Representation; Hashing: Integrity"
+    },
+    {
+      "id": "classical-cryptography",
+      "title": "Classical Cryptography",
+      "definition": "Classical cryptography consists of traditional manual encryption techniques developed before modern computers.",
+      "examPoints": [
+        "Classical cryptography consists of traditional manual encryption techniques developed before modern computers.",
+        "Examples:",
+        "Caesar",
+        "Vigenère",
+        "Playfair",
+        "Hill",
+        "Rail Fence",
+        "Vernam"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Classical Cryptography\n\nClassical cryptography consists of traditional manual encryption techniques developed before modern computers.\n\nImportant exam points. Classical cryptography consists of traditional manual encryption techniques developed before modern computers.. Examples:. Caesar. Vigenère. Playfair. Hill. Rail Fence. Vernam"
+    },
+    {
+      "id": "caesar-cipher",
+      "title": "Caesar Cipher",
+      "definition": "A substitution cipher where every letter is shifted by a fixed number of positions.",
+      "examPoints": [
+        "A substitution cipher where every letter is shifted by a fixed number of positions.",
+        "Shift Cipher",
+        "Easy to break using frequency analysis"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Caesar Cipher\n\nA substitution cipher where every letter is shifted by a fixed number of positions.\n\nImportant exam points. A substitution cipher where every letter is shifted by a fixed number of positions.. Shift Cipher. Easy to break using frequency analysis"
+    },
+    {
+      "id": "vigen-re-cipher",
+      "title": "Vigenère Cipher",
+      "definition": "A polyalphabetic substitution cipher that uses a keyword to encrypt plaintext.",
+      "examPoints": [
+        "A polyalphabetic substitution cipher that uses a keyword to encrypt plaintext.",
+        "More secure than Caesar",
+        "Uses repeating keyword"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Vigenère Cipher\n\nA polyalphabetic substitution cipher that uses a keyword to encrypt plaintext.\n\nImportant exam points. A polyalphabetic substitution cipher that uses a keyword to encrypt plaintext.. More secure than Caesar. Uses repeating keyword"
+    },
+    {
+      "id": "vernam-cipher",
+      "title": "Vernam Cipher",
+      "definition": "Encrypts data using XOR between plaintext and key.",
+      "examPoints": [
+        "Encrypts data using XOR between plaintext and key.",
+        "If key is random, same length, used once → One-Time Pad",
+        "Perfect secrecy (theoretical)"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Vernam Cipher\n\nEncrypts data using XOR between plaintext and key.\n\nImportant exam points. Encrypts data using XOR between plaintext and key.. If key is random, same length, used once → One-Time Pad. Perfect secrecy (theoretical)"
+    },
+    {
+      "id": "hill-cipher",
+      "title": "Hill Cipher",
+      "definition": "Uses matrix multiplication to encrypt blocks of letters.",
+      "examPoints": [
+        "Uses matrix multiplication to encrypt blocks of letters.",
+        "Uses Linear Algebra",
+        "Block Cipher"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Hill Cipher\n\nUses matrix multiplication to encrypt blocks of letters.\n\nImportant exam points. Uses matrix multiplication to encrypt blocks of letters.. Uses Linear Algebra. Block Cipher"
+    },
+    {
+      "id": "playfair-cipher",
+      "title": "Playfair Cipher",
+      "definition": "Encrypts pairs of letters using a 5×5 matrix.",
+      "examPoints": [
+        "Encrypts pairs of letters using a 5×5 matrix.",
+        "Encrypts digraphs",
+        "Removes J or combines I/J"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Playfair Cipher\n\nEncrypts pairs of letters using a 5×5 matrix.\n\nImportant exam points. Encrypts pairs of letters using a 5×5 matrix.. Encrypts digraphs. Removes J or combines I/J"
+    },
+    {
+      "id": "rail-fence-cipher",
+      "title": "Rail Fence Cipher",
+      "definition": "A transposition cipher where characters are written diagonally and read row-wise.",
+      "examPoints": [
+        "A transposition cipher where characters are written diagonally and read row-wise.",
+        "Rearranges letters",
+        "Does not substitute letters"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Rail Fence Cipher\n\nA transposition cipher where characters are written diagonally and read row-wise.\n\nImportant exam points. A transposition cipher where characters are written diagonally and read row-wise.. Rearranges letters. Does not substitute letters"
+    },
+    {
+      "id": "xor-cipher",
+      "title": "XOR Cipher",
+      "definition": "Uses XOR operation between plaintext and key.",
+      "examPoints": [
+        "Uses XOR operation between plaintext and key.",
+        "XOR twice with same key → Original data",
+        "Widely used internally in cryptography"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "XOR Cipher\n\nUses XOR operation between plaintext and key.\n\nImportant exam points. Uses XOR operation between plaintext and key.. XOR twice with same key → Original data. Widely used internally in cryptography"
+    },
+    {
+      "id": "weakness-of-classical-ciphers",
+      "title": "Weakness of Classical Ciphers",
+      "definition": "",
+      "examPoints": [
+        "Frequency Analysis",
+        "Brute Force",
+        "Not Secure Today"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Weakness of Classical Ciphers\n\nImportant exam points. Frequency Analysis. Brute Force. Not Secure Today"
+    },
+    {
+      "id": "symmetric-cryptography",
+      "title": "Symmetric Cryptography",
+      "definition": "Uses the same secret key for encryption and decryption.",
+      "examPoints": [
+        "Uses the same secret key for encryption and decryption.",
+        "Fast",
+        "Suitable for large data",
+        "Key Distribution Problem"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Symmetric Cryptography\n\nUses the same secret key for encryption and decryption.\n\nImportant exam points. Uses the same secret key for encryption and decryption.. Fast. Suitable for large data. Key Distribution Problem"
+    },
+    {
+      "id": "asymmetric-cryptography",
+      "title": "Asymmetric Cryptography",
+      "definition": "Uses a Public Key and a Private Key for encryption and decryption.",
+      "examPoints": [
+        "Uses a Public Key and a Private Key for encryption and decryption.",
+        "Solves Key Distribution",
+        "Slow"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Asymmetric Cryptography\n\nUses a Public Key and a Private Key for encryption and decryption.\n\nImportant exam points. Uses a Public Key and a Private Key for encryption and decryption.. Solves Key Distribution. Slow"
+    },
+    {
+      "id": "symmetric-vs-asymmetric",
+      "title": "Symmetric vs Asymmetric",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Symmetric: One Key; Asymmetric: Two Keys",
+        "Symmetric: Fast; Asymmetric: Slow",
+        "Symmetric: Bulk Data; Asymmetric: Key Exchange",
+        "Symmetric: AES; Asymmetric: RSA"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Symmetric vs Asymmetric\n\nComparison. Symmetric: One Key; Asymmetric: Two Keys. Symmetric: Fast; Asymmetric: Slow. Symmetric: Bulk Data; Asymmetric: Key Exchange. Symmetric: AES; Asymmetric: RSA"
+    },
+    {
+      "id": "des",
+      "title": "DES",
+      "definition": "Data Encryption Standard is a symmetric block cipher using a 56-bit key.",
+      "examPoints": [
+        "Data Encryption Standard is a symmetric block cipher using a 56-bit key.",
+        "Block Size = 64 bits",
+        "Key = 56 bits",
+        "16 Rounds",
+        "Broken today"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "DES\n\nData Encryption Standard is a symmetric block cipher using a 56-bit key.\n\nImportant exam points. Data Encryption Standard is a symmetric block cipher using a 56-bit key.. Block Size = 64 bits. Key = 56 bits. 16 Rounds. Broken today"
+    },
+    {
+      "id": "aes",
+      "title": "AES",
+      "definition": "Advanced Encryption Standard is the modern symmetric encryption standard.",
+      "examPoints": [
+        "Advanced Encryption Standard is the modern symmetric encryption standard.",
+        "Block Size",
+        "128 bits",
+        "Key Sizes",
+        "128",
+        "192",
+        "256",
+        "Rounds",
+        "10",
+        "12",
+        "14"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "AES\n\nAdvanced Encryption Standard is the modern symmetric encryption standard.\n\nImportant exam points. Advanced Encryption Standard is the modern symmetric encryption standard.. Block Size. 128 bits. Key Sizes. 128. 192. 256. Rounds. 10. 12. 14"
+    },
+    {
+      "id": "rc4",
+      "title": "RC4",
+      "definition": "RC4 is a stream cipher generating a pseudorandom keystream.",
+      "examPoints": [
+        "RC4 is a stream cipher generating a pseudorandom keystream.",
+        "Stream Cipher",
+        "Deprecated",
+        "Weak biases"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "RC4\n\nRC4 is a stream cipher generating a pseudorandom keystream.\n\nImportant exam points. RC4 is a stream cipher generating a pseudorandom keystream.. Stream Cipher. Deprecated. Weak biases"
+    },
+    {
+      "id": "rc5",
+      "title": "RC5",
+      "definition": "RC5 is a symmetric block cipher with variable block size, key size, and rounds.",
+      "examPoints": [
+        "RC5 is a symmetric block cipher with variable block size, key size, and rounds.",
+        "Parameterized Algorithm",
+        "More flexible than DES"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "RC5\n\nRC5 is a symmetric block cipher with variable block size, key size, and rounds.\n\nImportant exam points. RC5 is a symmetric block cipher with variable block size, key size, and rounds.. Parameterized Algorithm. More flexible than DES"
+    },
+    {
+      "id": "block-cipher",
+      "title": "Block Cipher",
+      "definition": "Encrypts fixed-size blocks of data.",
+      "examPoints": [
+        "Encrypts fixed-size blocks of data.",
+        "AES",
+        "DES",
+        "RC5"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Block Cipher\n\nEncrypts fixed-size blocks of data.\n\nImportant exam points. Encrypts fixed-size blocks of data.. AES. DES. RC5"
+    },
+    {
+      "id": "stream-cipher",
+      "title": "Stream Cipher",
+      "definition": "Encrypts one bit or byte at a time.",
+      "examPoints": [
+        "Encrypts one bit or byte at a time.",
+        "RC4"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Stream Cipher\n\nEncrypts one bit or byte at a time.\n\nImportant exam points. Encrypts one bit or byte at a time.. RC4"
+    },
+    {
+      "id": "cipher-modes",
+      "title": "Cipher Modes",
+      "definition": "",
+      "examPoints": [
+        "ECB",
+        "CBC",
+        "CFB",
+        "OFB",
+        "CTR",
+        "GCM"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Cipher Modes\n\nImportant exam points. ECB. CBC. CFB. OFB. CTR. GCM"
+    },
+    {
+      "id": "ecb",
+      "title": "ECB",
+      "definition": "Encrypts each block independently.",
+      "examPoints": [
+        "Encrypts each block independently.",
+        "Identical plaintext → Identical ciphertext",
+        "Least Secure"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "ECB\n\nEncrypts each block independently.\n\nImportant exam points. Encrypts each block independently.. Identical plaintext → Identical ciphertext. Least Secure"
+    },
+    {
+      "id": "cbc",
+      "title": "CBC",
+      "definition": "Each plaintext block is XORed with previous ciphertext before encryption.",
+      "examPoints": [
+        "Each plaintext block is XORed with previous ciphertext before encryption.",
+        "Needs",
+        "IV",
+        "More secure than ECB"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CBC\n\nEach plaintext block is XORed with previous ciphertext before encryption.\n\nImportant exam points. Each plaintext block is XORed with previous ciphertext before encryption.. Needs. IV. More secure than ECB"
+    },
+    {
+      "id": "cfb",
+      "title": "CFB",
+      "definition": "Converts a block cipher into a stream cipher using previous ciphertext.",
+      "examPoints": [
+        "Converts a block cipher into a stream cipher using previous ciphertext.",
+        "No Padding"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CFB\n\nConverts a block cipher into a stream cipher using previous ciphertext.\n\nImportant exam points. Converts a block cipher into a stream cipher using previous ciphertext.. No Padding"
+    },
+    {
+      "id": "ofb",
+      "title": "OFB",
+      "definition": "Uses previous encryption output instead of ciphertext.",
+      "examPoints": [
+        "Uses previous encryption output instead of ciphertext.",
+        "Transmission errors don't propagate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OFB\n\nUses previous encryption output instead of ciphertext.\n\nImportant exam points. Uses previous encryption output instead of ciphertext.. Transmission errors don't propagate"
+    },
+    {
+      "id": "ctr",
+      "title": "CTR",
+      "definition": "Uses a counter value encrypted with the key.",
+      "examPoints": [
+        "Uses a counter value encrypted with the key.",
+        "Parallel Processing",
+        "Very Fast"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CTR\n\nUses a counter value encrypted with the key.\n\nImportant exam points. Uses a counter value encrypted with the key.. Parallel Processing. Very Fast"
+    },
+    {
+      "id": "gcm",
+      "title": "GCM",
+      "definition": "AES-GCM provides authenticated encryption.",
+      "examPoints": [
+        "AES-GCM provides authenticated encryption.",
+        "Confidentiality",
+        "Integrity",
+        "Most common TLS mode"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "GCM\n\nAES-GCM provides authenticated encryption.\n\nImportant exam points. AES-GCM provides authenticated encryption.. Confidentiality. Integrity. Most common TLS mode"
+    },
+    {
+      "id": "rsa",
+      "title": "RSA",
+      "definition": "RSA is an asymmetric algorithm used for encryption, digital signatures, and key exchange.",
+      "examPoints": [
+        "RSA is an asymmetric algorithm used for encryption, digital signatures, and key exchange.",
+        "Based on",
+        "Integer Factorization",
+        "Common Keys",
+        "2048",
+        "3072",
+        "4096"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "RSA\n\nRSA is an asymmetric algorithm used for encryption, digital signatures, and key exchange.\n\nImportant exam points. RSA is an asymmetric algorithm used for encryption, digital signatures, and key exchange.. Based on. Integer Factorization. Common Keys. 2048. 3072. 4096"
+    },
+    {
+      "id": "ecc",
+      "title": "ECC",
+      "definition": "Elliptic Curve Cryptography provides equivalent security with much smaller keys.",
+      "examPoints": [
+        "Elliptic Curve Cryptography provides equivalent security with much smaller keys.",
+        "RSA 3072 ≈ ECC P-256",
+        "Faster",
+        "Smaller Keys"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "ECC\n\nElliptic Curve Cryptography provides equivalent security with much smaller keys.\n\nImportant exam points. Elliptic Curve Cryptography provides equivalent security with much smaller keys.. RSA 3072 ≈ ECC P-256. Faster. Smaller Keys"
+    },
+    {
+      "id": "rsa-vs-ecc",
+      "title": "RSA vs ECC",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "RSA: Large Keys; ECC: Small Keys",
+        "RSA: Slower; ECC: Faster",
+        "RSA: Factorization; ECC: Elliptic Curves"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "RSA vs ECC\n\nComparison. RSA: Large Keys; ECC: Small Keys. RSA: Slower; ECC: Faster. RSA: Factorization; ECC: Elliptic Curves"
+    },
+    {
+      "id": "diffie-hellman",
+      "title": "Diffie-Hellman",
+      "definition": "A key exchange algorithm allowing two parties to establish a shared secret over an insecure channel.",
+      "examPoints": [
+        "A key exchange algorithm allowing two parties to establish a shared secret over an insecure channel.",
+        "Does NOT encrypt data",
+        "Does NOT authenticate users"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Diffie-Hellman\n\nA key exchange algorithm allowing two parties to establish a shared secret over an insecure channel.\n\nImportant exam points. A key exchange algorithm allowing two parties to establish a shared secret over an insecure channel.. Does NOT encrypt data. Does NOT authenticate users"
+    },
+    {
+      "id": "ecdh",
+      "title": "ECDH",
+      "definition": "Elliptic Curve version of Diffie-Hellman.",
+      "examPoints": [
+        "Elliptic Curve version of Diffie-Hellman.",
+        "Smaller Keys",
+        "Faster"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "ECDH\n\nElliptic Curve version of Diffie-Hellman.\n\nImportant exam points. Elliptic Curve version of Diffie-Hellman.. Smaller Keys. Faster"
+    },
+    {
+      "id": "hash-function",
+      "title": "Hash Function",
+      "definition": "A one-way mathematical function converting data into a fixed-length digest.",
+      "examPoints": [
+        "A one-way mathematical function converting data into a fixed-length digest.",
+        "Integrity",
+        "Not Encryption"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Hash Function\n\nA one-way mathematical function converting data into a fixed-length digest.\n\nImportant exam points. A one-way mathematical function converting data into a fixed-length digest.. Integrity. Not Encryption"
+    },
+    {
+      "id": "properties-of-secure-hash",
+      "title": "Properties of Secure Hash",
+      "definition": "",
+      "examPoints": [
+        "Fixed Length",
+        "One-Way",
+        "Collision Resistant",
+        "Avalanche Effect"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Properties of Secure Hash\n\nImportant exam points. Fixed Length. One-Way. Collision Resistant. Avalanche Effect"
+    },
+    {
+      "id": "collision-resistance",
+      "title": "Collision Resistance",
+      "definition": "It should be computationally infeasible to find two different inputs producing the same hash.",
+      "examPoints": [
+        "It should be computationally infeasible to find two different inputs producing the same hash.",
+        "Important for Digital Signatures"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Collision Resistance\n\nIt should be computationally infeasible to find two different inputs producing the same hash.\n\nImportant exam points. It should be computationally infeasible to find two different inputs producing the same hash.. Important for Digital Signatures"
+    },
+    {
+      "id": "avalanche-effect",
+      "title": "Avalanche Effect",
+      "definition": "A small change in input produces a completely different hash output.",
+      "examPoints": [
+        "A small change in input produces a completely different hash output.",
+        "Desired Property"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Avalanche Effect\n\nA small change in input produces a completely different hash output.\n\nImportant exam points. A small change in input produces a completely different hash output.. Desired Property"
+    },
+    {
+      "id": "sha-family",
+      "title": "SHA Family",
+      "definition": "",
+      "examPoints": [
+        "MD5",
+        "SHA-1"
+      ],
+      "comparisons": [
+        "Algorithm: MD5; Status: Broken",
+        "Algorithm: SHA-1; Status: Broken",
+        "Algorithm: SHA-224; Status: Secure",
+        "Algorithm: SHA-256; Status: Secure",
+        "Algorithm: SHA-384; Status: Secure",
+        "Algorithm: SHA-512; Status: Secure",
+        "Algorithm: SHA-3; Status: Latest Standard"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "SHA Family\n\nImportant exam points. MD5. SHA-1\n\nComparison. Algorithm: MD5; Status: Broken. Algorithm: SHA-1; Status: Broken. Algorithm: SHA-224; Status: Secure. Algorithm: SHA-256; Status: Secure. Algorithm: SHA-384; Status: Secure. Algorithm: SHA-512; Status: Secure. Algorithm: SHA-3; Status: Latest Standard"
+    },
+    {
+      "id": "hmac",
+      "title": "HMAC",
+      "definition": "Hash-based Message Authentication Code combines a secret key with a hash function.",
+      "examPoints": [
+        "Hash-based Message Authentication Code combines a secret key with a hash function.",
+        "Integrity",
+        "Authentication",
+        "Formula"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "HMAC\n\nHash-based Message Authentication Code combines a secret key with a hash function.\n\nImportant exam points. Hash-based Message Authentication Code combines a secret key with a hash function.. Integrity. Authentication. Formula"
+    },
+    {
+      "id": "digital-signature",
+      "title": "Digital Signature",
+      "definition": "A Digital Signature uses the sender's private key to sign a hash of the message. The receiver verifies it using the sender's public key.",
+      "examPoints": [
+        "A Digital Signature uses the sender's private key to sign a hash of the message. The receiver verifies it using the sender's public key.",
+        "Authentication",
+        "Integrity",
+        "Non-Repudiation",
+        "Does NOT provide Confidentiality"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Digital Signature\n\nA Digital Signature uses the sender's private key to sign a hash of the message. The receiver verifies it using the sender's public key.\n\nImportant exam points. A Digital Signature uses the sender's private key to sign a hash of the message. The receiver verifies it using the sender's public key.. Authentication. Integrity. Non-Repudiation. Does NOT provide Confidentiality"
+    },
+    {
+      "id": "digital-signature-vs-encryption",
+      "title": "Digital Signature vs Encryption",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Digital Signature: Private Key; Encryption: Public Key",
+        "Digital Signature: Public Key verifies; Encryption: Private Key decrypts",
+        "Digital Signature: Authentication; Encryption: Confidentiality"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Digital Signature vs Encryption\n\nComparison. Digital Signature: Private Key; Encryption: Public Key. Digital Signature: Public Key verifies; Encryption: Private Key decrypts. Digital Signature: Authentication; Encryption: Confidentiality"
+    },
+    {
+      "id": "cryptanalysis",
+      "title": "Cryptanalysis",
+      "definition": "Cryptanalysis is the study of breaking cryptographic systems without knowing the secret key.",
+      "examPoints": [
+        "Cryptanalysis is the study of breaking cryptographic systems without knowing the secret key.",
+        "Recover",
+        "Plaintext",
+        "Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Cryptanalysis\n\nCryptanalysis is the study of breaking cryptographic systems without knowing the secret key.\n\nImportant exam points. Cryptanalysis is the study of breaking cryptographic systems without knowing the secret key.. Recover. Plaintext. Key"
+    },
+    {
+      "id": "brute-force-attack",
+      "title": "Brute Force Attack",
+      "definition": "Attempts every possible key until the correct one is found.",
+      "examPoints": [
+        "Attempts every possible key until the correct one is found.",
+        "Defense",
+        "Large Key Size"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Brute Force Attack\n\nAttempts every possible key until the correct one is found.\n\nImportant exam points. Attempts every possible key until the correct one is found.. Defense. Large Key Size"
+    },
+    {
+      "id": "dictionary-attack",
+      "title": "Dictionary Attack",
+      "definition": "Uses common passwords or words instead of every possible combination.",
+      "examPoints": [
+        "Uses common passwords or words instead of every possible combination.",
+        "Common against Passwords"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Dictionary Attack\n\nUses common passwords or words instead of every possible combination.\n\nImportant exam points. Uses common passwords or words instead of every possible combination.. Common against Passwords"
+    },
+    {
+      "id": "birthday-attack",
+      "title": "Birthday Attack",
+      "definition": "Exploits collisions in hash functions.",
+      "examPoints": [
+        "Exploits collisions in hash functions.",
+        "Targets",
+        "Hash Algorithms"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Birthday Attack\n\nExploits collisions in hash functions.\n\nImportant exam points. Exploits collisions in hash functions.. Targets. Hash Algorithms"
+    },
+    {
+      "id": "known-plaintext-attack",
+      "title": "Known Plaintext Attack",
+      "definition": "Attacker knows both plaintext and ciphertext.",
+      "examPoints": [
+        "Attacker knows both plaintext and ciphertext.",
+        "Attempts to recover the key."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Known Plaintext Attack\n\nAttacker knows both plaintext and ciphertext.\n\nImportant exam points. Attacker knows both plaintext and ciphertext.. Attempts to recover the key."
+    },
+    {
+      "id": "chosen-plaintext-attack",
+      "title": "Chosen Plaintext Attack",
+      "definition": "Attacker encrypts chosen plaintext and studies the ciphertext.",
+      "examPoints": [
+        "Attacker encrypts chosen plaintext and studies the ciphertext.",
+        "Common in cryptographic analysis."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Chosen Plaintext Attack\n\nAttacker encrypts chosen plaintext and studies the ciphertext.\n\nImportant exam points. Attacker encrypts chosen plaintext and studies the ciphertext.. Common in cryptographic analysis."
+    },
+    {
+      "id": "side-channel-attack",
+      "title": "Side Channel Attack",
+      "definition": "Uses physical information such as timing, power consumption, or electromagnetic leakage.",
+      "examPoints": [
+        "Uses physical information such as timing, power consumption, or electromagnetic leakage.",
+        "Timing Attack",
+        "Power Analysis",
+        "Cache Attack"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Side Channel Attack\n\nUses physical information such as timing, power consumption, or electromagnetic leakage.\n\nImportant exam points. Uses physical information such as timing, power consumption, or electromagnetic leakage.. Timing Attack. Power Analysis. Cache Attack"
+    },
+    {
+      "id": "phase-2-cryptography",
+      "title": "Phase 2 - Cryptography",
+      "definition": "",
+      "examPoints": [
+        "(No need to memorize the math deeply-just know it establishes the same shared secret.)"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 2 - Cryptography\n\nImportant exam points. (No need to memorize the math deeply-just know it establishes the same shared secret.)"
+    },
+    {
+      "id": "top-25-one-liners-for-exam",
+      "title": "Top 25 One-Liners for Exam",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Encryption provides Confidentiality.",
+        "Hashing provides Integrity.",
+        "HMAC provides Integrity + Authentication.",
+        "Digital Signature provides Authentication + Integrity + Non-Repudiation.",
+        "RSA is asymmetric.",
+        "AES is symmetric.",
+        "DES key = 56 bits.",
+        "AES block size = 128 bits.",
+        "AES keys = 128/192/256 bits.",
+        "RC4 is a Stream Cipher.",
+        "AES is a Block Cipher.",
+        "ECB is the least secure mode.",
+        "CBC requires an IV.",
+        "CTR supports parallel encryption.",
+        "GCM provides authenticated encryption.",
+        "RSA security is based on integer factorization.",
+        "ECC security is based on the Elliptic Curve Discrete Logarithm Problem (ECDLP).",
+        "Diffie-Hellman performs key exchange, not encryption.",
+        "ECDH is the elliptic-curve version of Diffie-Hellman.",
+        "MD5 and SHA-1 are broken.",
+        "SHA-256 is the most commonly used secure hash.",
+        "Avalanche Effect means a tiny input change causes a drastically different hash.",
+        "Collision Resistance means it is impractical to find two inputs with the same hash.",
+        "Brute-force attacks target keys; dictionary attacks target passwords.",
+        "TLS commonly uses RSA/ECDHE for key exchange and AES-GCM for secure data encryption."
+      ],
+      "narration": "Top 25 One-Liners for Exam\n\nMemory points. Encryption provides Confidentiality.. Hashing provides Integrity.. HMAC provides Integrity + Authentication.. Digital Signature provides Authentication + Integrity + Non-Repudiation.. RSA is asymmetric.. AES is symmetric.. DES key = 56 bits.. AES block size = 128 bits.. AES keys = 128/192/256 bits.. RC4 is a Stream Cipher.. AES is a Block Cipher.. ECB is the least secure mode.. CBC requires an IV.. CTR supports parallel encryption.. GCM provides authenticated encryption.. RSA security is based on integer factorization.. ECC security is based on the Elliptic Curve Discrete Logarithm Problem (ECDLP).. Diffie-Hellman performs key exchange, not encryption.. ECDH is the elliptic-curve version of Diffie-Hellman.. MD5 and SHA-1 are broken.. SHA-256 is the most commonly used secure hash.. Avalanche Effect means a tiny input change causes a drastically different hash.. Collision Resistance means it is impractical to find two inputs with the same hash.. Brute-force attacks target keys; dictionary attacks target passwords.. TLS commonly uses RSA/ECDHE for key exchange and AES-GCM for secure data encryption."
+    }
+  ]
+}

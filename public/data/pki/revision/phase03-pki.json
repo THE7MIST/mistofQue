@@ -1,0 +1,577 @@
+{
+  "id": "phase03-pki",
+  "subject": "PKI",
+  "title": "Phase 3 - Public Key Infrastructure (PKI)",
+  "audio": "/audio/pki/phase03-pki.mp3",
+  "topics": [
+    {
+      "id": "public-key-infrastructure-pki",
+      "title": "Public Key Infrastructure (PKI)",
+      "definition": "PKI (Public Key Infrastructure) is a framework of people, policies, hardware, software, and procedures that manages digital certificates and public-key cryptography. It establishes trust between communicating parties.",
+      "examPoints": [
+        "PKI (Public Key Infrastructure) is a framework of people, policies, hardware, software, and procedures that manages digital certificates and public-key cryptography. It establishes trust between communicating parties.",
+        "PKI = Trust Management System",
+        "Provides: Authentication, Encryption, Digital Signatures, Certificate Management"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Public Key Infrastructure (PKI)\n\nPKI (Public Key Infrastructure) is a framework of people, policies, hardware, software, and procedures that manages digital certificates and public-key cryptography. It establishes trust between communicating parties.\n\nImportant exam points. PKI (Public Key Infrastructure) is a framework of people, policies, hardware, software, and procedures that manages digital certificates and public-key cryptography. It establishes trust between communicating parties.. PKI = Trust Management System. Provides: Authentication, Encryption, Digital Signatures, Certificate Management"
+    },
+    {
+      "id": "why-pki-is-required",
+      "title": "Why PKI is Required",
+      "definition": "PKI solves the problem of securely verifying identities over untrusted networks. It binds a public key to a verified identity using a digital certificate.",
+      "examPoints": [
+        "PKI solves the problem of securely verifying identities over untrusted networks. It binds a public key to a verified identity using a digital certificate.",
+        "Without PKI:",
+        "Anyone can claim any public key.",
+        "No trusted identity verification."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Why PKI is Required\n\nPKI solves the problem of securely verifying identities over untrusted networks. It binds a public key to a verified identity using a digital certificate.\n\nImportant exam points. PKI solves the problem of securely verifying identities over untrusted networks. It binds a public key to a verified identity using a digital certificate.. Without PKI:. Anyone can claim any public key.. No trusted identity verification."
+    },
+    {
+      "id": "problems-solved-by-pki",
+      "title": "Problems Solved by PKI",
+      "definition": "",
+      "examPoints": [
+        "Secure Key Distribution",
+        "Digital Signatures",
+        "Certificate Management",
+        "Secure TLS/HTTPS",
+        "Identity Verification"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Problems Solved by PKI\n\nImportant exam points. Secure Key Distribution. Digital Signatures. Certificate Management. Secure TLS/HTTPS. Identity Verification"
+    },
+    {
+      "id": "goals-of-pki",
+      "title": "Goals of PKI",
+      "definition": "The primary goal of PKI is to establish trusted communication between entities using digital certificates.",
+      "examPoints": [
+        "The primary goal of PKI is to establish trusted communication between entities using digital certificates.",
+        "Provides:",
+        "Authentication",
+        "Confidentiality",
+        "Integrity",
+        "Non-Repudiation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Goals of PKI\n\nThe primary goal of PKI is to establish trusted communication between entities using digital certificates.\n\nImportant exam points. The primary goal of PKI is to establish trusted communication between entities using digital certificates.. Provides:. Authentication. Confidentiality. Integrity. Non-Repudiation"
+    },
+    {
+      "id": "pki-architecture",
+      "title": "PKI Architecture",
+      "definition": "PKI architecture consists of trusted components that issue, manage, validate, distribute, and revoke digital certificates.",
+      "examPoints": [
+        "PKI architecture consists of trusted components that issue, manage, validate, distribute, and revoke digital certificates.",
+        "Main Components:",
+        "CA",
+        "RA",
+        "Repository",
+        "VA",
+        "Subscriber",
+        "Relying Party"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PKI Architecture\n\nPKI architecture consists of trusted components that issue, manage, validate, distribute, and revoke digital certificates.\n\nImportant exam points. PKI architecture consists of trusted components that issue, manage, validate, distribute, and revoke digital certificates.. Main Components:. CA. RA. Repository. VA. Subscriber. Relying Party"
+    },
+    {
+      "id": "pki-components",
+      "title": "PKI Components",
+      "definition": "PKI components work together to issue, validate, distribute, and manage digital certificates.",
+      "examPoints": [
+        "PKI components work together to issue, validate, distribute, and manage digital certificates.",
+        "Remember:"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "CA RA Repository VA Subscriber Relying Party"
+      ],
+      "oneLiners": [],
+      "narration": "PKI Components\n\nPKI components work together to issue, validate, distribute, and manage digital certificates.\n\nImportant exam points. PKI components work together to issue, validate, distribute, and manage digital certificates.. Remember:\n\nWorkflow. CA RA Repository VA Subscriber Relying Party"
+    },
+    {
+      "id": "certificate-authority-ca",
+      "title": "Certificate Authority (CA)",
+      "definition": "A Certificate Authority (CA) is the trusted organization responsible for issuing, digitally signing, renewing, and revoking digital certificates.",
+      "examPoints": [
+        "A Certificate Authority (CA) is the trusted organization responsible for issuing, digitally signing, renewing, and revoking digital certificates.",
+        "Responsibilities:",
+        "Issue Certificates",
+        "Sign Certificates",
+        "Publish CRLs",
+        "Manage PKI Trust"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Authority (CA)\n\nA Certificate Authority (CA) is the trusted organization responsible for issuing, digitally signing, renewing, and revoking digital certificates.\n\nImportant exam points. A Certificate Authority (CA) is the trusted organization responsible for issuing, digitally signing, renewing, and revoking digital certificates.. Responsibilities:. Issue Certificates. Sign Certificates. Publish CRLs. Manage PKI Trust"
+    },
+    {
+      "id": "why-ca-is-trusted",
+      "title": "Why CA is Trusted",
+      "definition": "The CA is trusted because its Root Certificate is installed in trusted root stores maintained by operating systems and browsers.",
+      "examPoints": [
+        "The CA is trusted because its Root Certificate is installed in trusted root stores maintained by operating systems and browsers.",
+        "Trust comes from:",
+        "Trusted Root Store",
+        "Digital Signature"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Why CA is Trusted\n\nThe CA is trusted because its Root Certificate is installed in trusted root stores maintained by operating systems and browsers.\n\nImportant exam points. The CA is trusted because its Root Certificate is installed in trusted root stores maintained by operating systems and browsers.. Trust comes from:. Trusted Root Store. Digital Signature"
+    },
+    {
+      "id": "types-of-certificate-authorities",
+      "title": "Types of Certificate Authorities",
+      "definition": "",
+      "examPoints": [
+        "Intermediate CA (Sub CA)",
+        "Issuing CA"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Types of Certificate Authorities\n\nImportant exam points. Intermediate CA (Sub CA). Issuing CA"
+    },
+    {
+      "id": "root-ca",
+      "title": "Root CA",
+      "definition": "The Root CA is the highest authority in the PKI hierarchy. It is self-signed and signs Intermediate CA certificates.",
+      "examPoints": [
+        "The Root CA is the highest authority in the PKI hierarchy. It is self-signed and signs Intermediate CA certificates.",
+        "Self-Signed",
+        "Usually kept Offline",
+        "Highest Trust"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Root CA\n\nThe Root CA is the highest authority in the PKI hierarchy. It is self-signed and signs Intermediate CA certificates.\n\nImportant exam points. The Root CA is the highest authority in the PKI hierarchy. It is self-signed and signs Intermediate CA certificates.. Self-Signed. Usually kept Offline. Highest Trust"
+    },
+    {
+      "id": "intermediate-ca",
+      "title": "Intermediate CA",
+      "definition": "An Intermediate CA receives trust from the Root CA and issues certificates to servers, users, and devices.",
+      "examPoints": [
+        "An Intermediate CA receives trust from the Root CA and issues certificates to servers, users, and devices.",
+        "Root CA",
+        "↓",
+        "↓",
+        "End Entity Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Intermediate CA\n\nAn Intermediate CA receives trust from the Root CA and issues certificates to servers, users, and devices.\n\nImportant exam points. An Intermediate CA receives trust from the Root CA and issues certificates to servers, users, and devices.. Root CA. ↓. ↓. End Entity Certificate"
+    },
+    {
+      "id": "why-intermediate-ca",
+      "title": "Why Intermediate CA?",
+      "definition": "",
+      "examPoints": [
+        "If Intermediate is compromised,",
+        "Root remains safe."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Why Intermediate CA?\n\nImportant exam points. If Intermediate is compromised,. Root remains safe."
+    },
+    {
+      "id": "registration-authority-ra",
+      "title": "Registration Authority (RA)",
+      "definition": "The Registration Authority verifies the identity of certificate applicants before the CA issues certificates.",
+      "examPoints": [
+        "The Registration Authority verifies the identity of certificate applicants before the CA issues certificates.",
+        "RA",
+        "Verifies Identity",
+        "CA",
+        "Issues Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Registration Authority (RA)\n\nThe Registration Authority verifies the identity of certificate applicants before the CA issues certificates.\n\nImportant exam points. The Registration Authority verifies the identity of certificate applicants before the CA issues certificates.. RA. Verifies Identity. CA. Issues Certificate"
+    },
+    {
+      "id": "ra-vs-ca",
+      "title": "RA vs CA",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "RA: Identity Verification; CA: Certificate Issuance",
+        "RA: Doesn't Sign; CA: Signs Certificates"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "RA vs CA\n\nComparison. RA: Identity Verification; CA: Certificate Issuance. RA: Doesn't Sign; CA: Signs Certificates"
+    },
+    {
+      "id": "repository",
+      "title": "Repository",
+      "definition": "A PKI Repository stores certificates, CRLs, CA certificates, and related PKI information.",
+      "examPoints": [
+        "A PKI Repository stores certificates, CRLs, CA certificates, and related PKI information.",
+        "Stores",
+        "Certificates",
+        "CRLs",
+        "CA Certificates",
+        "LDAP",
+        "HTTP"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Repository\n\nA PKI Repository stores certificates, CRLs, CA certificates, and related PKI information.\n\nImportant exam points. A PKI Repository stores certificates, CRLs, CA certificates, and related PKI information.. Stores. Certificates. CRLs. CA Certificates. LDAP. HTTP"
+    },
+    {
+      "id": "validation-authority-va",
+      "title": "Validation Authority (VA)",
+      "definition": "A Validation Authority checks whether certificates are valid or revoked.",
+      "examPoints": [
+        "A Validation Authority checks whether certificates are valid or revoked.",
+        "Uses",
+        "CRL",
+        "OCSP"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Validation Authority (VA)\n\nA Validation Authority checks whether certificates are valid or revoked.\n\nImportant exam points. A Validation Authority checks whether certificates are valid or revoked.. Uses. CRL. OCSP"
+    },
+    {
+      "id": "subscriber",
+      "title": "Subscriber",
+      "definition": "The Subscriber is the entity that owns the certificate and private key.",
+      "examPoints": [
+        "The Subscriber is the entity that owns the certificate and private key.",
+        "User",
+        "Server",
+        "Device"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subscriber\n\nThe Subscriber is the entity that owns the certificate and private key.\n\nImportant exam points. The Subscriber is the entity that owns the certificate and private key.. User. Server. Device"
+    },
+    {
+      "id": "relying-party",
+      "title": "Relying Party",
+      "definition": "A Relying Party is the entity that verifies and trusts certificates issued by the PKI.",
+      "examPoints": [
+        "A Relying Party is the entity that verifies and trusts certificates issued by the PKI.",
+        "Browser validating HTTPS Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Relying Party\n\nA Relying Party is the entity that verifies and trusts certificates issued by the PKI.\n\nImportant exam points. A Relying Party is the entity that verifies and trusts certificates issued by the PKI.. Browser validating HTTPS Certificate"
+    },
+    {
+      "id": "trust-model",
+      "title": "Trust Model",
+      "definition": "A Trust Model defines how trust relationships are established between Certificate Authorities.",
+      "examPoints": [
+        "A Trust Model defines how trust relationships are established between Certificate Authorities.",
+        "Types",
+        "Hierarchical",
+        "Mesh",
+        "Bridge",
+        "Web of Trust"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Trust Model\n\nA Trust Model defines how trust relationships are established between Certificate Authorities.\n\nImportant exam points. A Trust Model defines how trust relationships are established between Certificate Authorities.. Types. Hierarchical. Mesh. Bridge. Web of Trust"
+    },
+    {
+      "id": "hierarchical-trust-model",
+      "title": "Hierarchical Trust Model",
+      "definition": "One Root CA signs one or more Intermediate CAs, which issue certificates.",
+      "examPoints": [
+        "One Root CA signs one or more Intermediate CAs, which issue certificates.",
+        "Most Common",
+        "Internet uses this"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Hierarchical Trust Model\n\nOne Root CA signs one or more Intermediate CAs, which issue certificates.\n\nImportant exam points. One Root CA signs one or more Intermediate CAs, which issue certificates.. Most Common. Internet uses this"
+    },
+    {
+      "id": "mesh-trust-model",
+      "title": "Mesh Trust Model",
+      "definition": "Every CA directly trusts every other CA.",
+      "examPoints": [
+        "Every CA directly trusts every other CA.",
+        "Complex",
+        "Not scalable"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Mesh Trust Model\n\nEvery CA directly trusts every other CA.\n\nImportant exam points. Every CA directly trusts every other CA.. Complex. Not scalable"
+    },
+    {
+      "id": "bridge-ca",
+      "title": "Bridge CA",
+      "definition": "A Bridge CA connects multiple independent PKIs without replacing existing Root CAs.",
+      "examPoints": [
+        "A Bridge CA connects multiple independent PKIs without replacing existing Root CAs.",
+        "Used in Large Enterprises"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Bridge CA\n\nA Bridge CA connects multiple independent PKIs without replacing existing Root CAs.\n\nImportant exam points. A Bridge CA connects multiple independent PKIs without replacing existing Root CAs.. Used in Large Enterprises"
+    },
+    {
+      "id": "web-of-trust",
+      "title": "Web of Trust",
+      "definition": "Users trust each other by signing each other's public keys.",
+      "examPoints": [
+        "Users trust each other by signing each other's public keys.",
+        "Used by",
+        "PGP",
+        "GPG"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Web of Trust\n\nUsers trust each other by signing each other's public keys.\n\nImportant exam points. Users trust each other by signing each other's public keys.. Used by. PGP. GPG"
+    },
+    {
+      "id": "cross-certification",
+      "title": "Cross Certification",
+      "definition": "Two independent CAs mutually trust each other by exchanging certificates.",
+      "examPoints": [
+        "Two independent CAs mutually trust each other by exchanging certificates.",
+        "CA A",
+        "↔",
+        "CA B"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Cross Certification\n\nTwo independent CAs mutually trust each other by exchanging certificates.\n\nImportant exam points. Two independent CAs mutually trust each other by exchanging certificates.. CA A. ↔. CA B"
+    },
+    {
+      "id": "certificate-policy-cp",
+      "title": "Certificate Policy (CP)",
+      "definition": "A Certificate Policy defines the rules governing certificate issuance, management, and usage.",
+      "examPoints": [
+        "A Certificate Policy defines the rules governing certificate issuance, management, and usage.",
+        "Defines",
+        "Identity Requirements",
+        "Algorithms",
+        "Key Sizes",
+        "Validity"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Policy (CP)\n\nA Certificate Policy defines the rules governing certificate issuance, management, and usage.\n\nImportant exam points. A Certificate Policy defines the rules governing certificate issuance, management, and usage.. Defines. Identity Requirements. Algorithms. Key Sizes. Validity"
+    },
+    {
+      "id": "certificate-practice-statement-cps",
+      "title": "Certificate Practice Statement (CPS)",
+      "definition": "A CPS explains how a CA actually implements the Certificate Policy.",
+      "examPoints": [
+        "A CPS explains how a CA actually implements the Certificate Policy.",
+        "CP = Rules",
+        "CPS = Implementation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Practice Statement (CPS)\n\nA CPS explains how a CA actually implements the Certificate Policy.\n\nImportant exam points. A CPS explains how a CA actually implements the Certificate Policy.. CP = Rules. CPS = Implementation"
+    },
+    {
+      "id": "oid-object-identifier",
+      "title": "OID (Object Identifier)",
+      "definition": "An OID uniquely identifies certificate policies, extensions, algorithms, and PKI objects.",
+      "examPoints": [
+        "An OID uniquely identifies certificate policies, extensions, algorithms, and PKI objects.",
+        "Every Certificate Policy has an OID."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OID (Object Identifier)\n\nAn OID uniquely identifies certificate policies, extensions, algorithms, and PKI objects.\n\nImportant exam points. An OID uniquely identifies certificate policies, extensions, algorithms, and PKI objects.. Every Certificate Policy has an OID."
+    },
+    {
+      "id": "enterprise-pki",
+      "title": "Enterprise PKI",
+      "definition": "Enterprise PKI manages certificates for employees, servers, applications, devices, VPNs, Wi-Fi, and internal services.",
+      "examPoints": [
+        "Enterprise PKI manages certificates for employees, servers, applications, devices, VPNs, Wi-Fi, and internal services.",
+        "Active Directory Certificate Services",
+        "Microsoft PKI",
+        "EJBCA"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Enterprise PKI\n\nEnterprise PKI manages certificates for employees, servers, applications, devices, VPNs, Wi-Fi, and internal services.\n\nImportant exam points. Enterprise PKI manages certificates for employees, servers, applications, devices, VPNs, Wi-Fi, and internal services.. Active Directory Certificate Services. Microsoft PKI. EJBCA"
+    },
+    {
+      "id": "complete-pki-workflow",
+      "title": "Complete PKI Workflow",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Key Pair Generated ↓ CSR Created ↓ RA Verifies Identity ↓ CA Signs Certificate ↓ Certificate Issued ↓ Certificate Installed ↓ Client Connects ↓ Certificate Verified ↓ Secure Communication"
+      ],
+      "oneLiners": [],
+      "narration": "Complete PKI Workflow\n\nWorkflow. Key Pair Generated ↓ CSR Created ↓ RA Verifies Identity ↓ CA Signs Certificate ↓ Certificate Issued ↓ Certificate Installed ↓ Client Connects ↓ Certificate Verified ↓ Secure Communication"
+    },
+    {
+      "id": "certificate-lifecycle-pki-view",
+      "title": "Certificate Lifecycle (PKI View)",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Generate Keys ↓ CSR ↓ Verification ↓ Issuance ↓ Distribution ↓ Installation ↓ Renewal ↓ Rekey ↓ Revocation ↓ Expiration ↓ Destruction"
+      ],
+      "oneLiners": [],
+      "narration": "Certificate Lifecycle (PKI View)\n\nWorkflow. Generate Keys ↓ CSR ↓ Verification ↓ Issuance ↓ Distribution ↓ Installation ↓ Renewal ↓ Rekey ↓ Revocation ↓ Expiration ↓ Destruction"
+    },
+    {
+      "id": "ca-vs-ra",
+      "title": "CA vs RA",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "CA: Signs Certificates; RA: Verifies Identity",
+        "CA: Trusted Authority; RA: Registration Authority"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CA vs RA\n\nComparison. CA: Signs Certificates; RA: Verifies Identity. CA: Trusted Authority; RA: Registration Authority"
+    },
+    {
+      "id": "root-ca-vs-intermediate-ca",
+      "title": "Root CA vs Intermediate CA",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Root: Self-Signed; Intermediate: Signed by Root",
+        "Root: Offline; Intermediate: Online",
+        "Root: Highest Trust; Intermediate: Issues Certificates"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Root CA vs Intermediate CA\n\nComparison. Root: Self-Signed; Intermediate: Signed by Root. Root: Offline; Intermediate: Online. Root: Highest Trust; Intermediate: Issues Certificates"
+    },
+    {
+      "id": "subscriber-vs-relying-party",
+      "title": "Subscriber vs Relying Party",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Subscriber: Owns Certificate; Relying Party: Verifies Certificate"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Subscriber vs Relying Party\n\nComparison. Subscriber: Owns Certificate; Relying Party: Verifies Certificate"
+    },
+    {
+      "id": "repository-vs-validation-authority",
+      "title": "Repository vs Validation Authority",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Repository: Stores Certificates; Validation Authority: Validates Certificates",
+        "Repository: LDAP/HTTP; Validation Authority: CRL/OCSP"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Repository vs Validation Authority\n\nComparison. Repository: Stores Certificates; Validation Authority: Validates Certificates. Repository: LDAP/HTTP; Validation Authority: CRL/OCSP"
+    },
+    {
+      "id": "top-25-one-liners-for-exam",
+      "title": "Top 25 One-Liners for Exam",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "PKI manages digital certificates and trust.",
+        "PKI uses asymmetric cryptography.",
+        "CA issues and signs certificates.",
+        "RA verifies identity.",
+        "Repository stores certificates and CRLs.",
+        "VA validates certificate status.",
+        "Subscriber owns the certificate.",
+        "Relying Party verifies the certificate.",
+        "Root CA is self-signed.",
+        "Root CA is usually kept offline.",
+        "Intermediate CA issues end-user certificates.",
+        "Internet mainly uses a Hierarchical Trust Model.",
+        "PGP uses a Web of Trust.",
+        "Bridge CA connects separate PKIs.",
+        "Cross Certification allows two CAs to trust each other.",
+        "Certificate Policy defines what must be followed.",
+        "CPS defines how the policy is implemented.",
+        "Every Certificate Policy has an OID.",
+        "Browsers trust certificates because the Root CA certificate exists in the trust store.",
+        "CA trust is inherited through the certificate chain.",
+        "End-entity certificates should not be signed directly by the Root CA.",
+        "PKI solves the public key authentication problem.",
+        "Digital certificates bind an identity to a public key.",
+        "Without PKI, anyone could claim any public key belongs to them.",
+        "The most important PKI workflow to remember is: Key Pair → CSR → RA Verification → CA Signing → Certificate → Validation → Secure Communication."
+      ],
+      "narration": "Top 25 One-Liners for Exam\n\nMemory points. PKI manages digital certificates and trust.. PKI uses asymmetric cryptography.. CA issues and signs certificates.. RA verifies identity.. Repository stores certificates and CRLs.. VA validates certificate status.. Subscriber owns the certificate.. Relying Party verifies the certificate.. Root CA is self-signed.. Root CA is usually kept offline.. Intermediate CA issues end-user certificates.. Internet mainly uses a Hierarchical Trust Model.. PGP uses a Web of Trust.. Bridge CA connects separate PKIs.. Cross Certification allows two CAs to trust each other.. Certificate Policy defines what must be followed.. CPS defines how the policy is implemented.. Every Certificate Policy has an OID.. Browsers trust certificates because the Root CA certificate exists in the trust store.. CA trust is inherited through the certificate chain.. End-entity certificates should not be signed directly by the Root CA.. PKI solves the public key authentication problem.. Digital certificates bind an identity to a public key.. Without PKI, anyone could claim any public key belongs to them.. The most important PKI workflow to remember is: Key Pair → CSR → RA Verification → CA Signing → Certificate → Validation → Secure Communication."
+    }
+  ]
+}

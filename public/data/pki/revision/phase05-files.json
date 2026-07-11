@@ -1,0 +1,777 @@
+{
+  "id": "phase05-files",
+  "subject": "PKI",
+  "title": "Phase 5 - Keys & Certificate Files",
+  "audio": "/audio/pki/phase05-files.mp3",
+  "topics": [
+    {
+      "id": "public-key",
+      "title": "Public Key",
+      "definition": "A Public Key is one half of an asymmetric key pair. It is freely distributed and used to encrypt data, verify digital signatures, or establish secure communication.",
+      "examPoints": [
+        "A Public Key is one half of an asymmetric key pair. It is freely distributed and used to encrypt data, verify digital signatures, or establish secure communication.",
+        "Can be shared publicly.",
+        "Stored inside the X.509 Certificate."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Public Key\n\nA Public Key is one half of an asymmetric key pair. It is freely distributed and used to encrypt data, verify digital signatures, or establish secure communication.\n\nImportant exam points. A Public Key is one half of an asymmetric key pair. It is freely distributed and used to encrypt data, verify digital signatures, or establish secure communication.. Can be shared publicly.. Stored inside the X.509 Certificate."
+    },
+    {
+      "id": "private-key",
+      "title": "Private Key",
+      "definition": "A Private Key is the secret half of an asymmetric key pair. It is used to decrypt data, create digital signatures, and prove ownership of a certificate.",
+      "examPoints": [
+        "A Private Key is the secret half of an asymmetric key pair. It is used to decrypt data, create digital signatures, and prove ownership of a certificate.",
+        "Never shared.",
+        "If compromised → Revoke certificate + Generate new key pair."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Private Key\n\nA Private Key is the secret half of an asymmetric key pair. It is used to decrypt data, create digital signatures, and prove ownership of a certificate.\n\nImportant exam points. A Private Key is the secret half of an asymmetric key pair. It is used to decrypt data, create digital signatures, and prove ownership of a certificate.. Never shared.. If compromised → Revoke certificate + Generate new key pair."
+    },
+    {
+      "id": "public-key-vs-private-key",
+      "title": "Public Key vs Private Key",
+      "definition": "",
+      "examPoints": [
+        "Private = Protect"
+      ],
+      "comparisons": [
+        "Public Key: Shared; Private Key: Secret",
+        "Public Key: Encrypt / Verify; Private Key: Decrypt / Sign",
+        "Public Key: Stored in Certificate; Private Key: Stored Securely"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Public Key vs Private Key\n\nImportant exam points. Private = Protect\n\nComparison. Public Key: Shared; Private Key: Secret. Public Key: Encrypt / Verify; Private Key: Decrypt / Sign. Public Key: Stored in Certificate; Private Key: Stored Securely"
+    },
+    {
+      "id": "key-pair",
+      "title": "Key Pair",
+      "definition": "A key pair consists of a mathematically related Public Key and Private Key generated together.",
+      "examPoints": [
+        "A key pair consists of a mathematically related Public Key and Private Key generated together.",
+        "Public key is derived from the private key.",
+        "One cannot feasibly derive the private key from the public key."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Key Pair\n\nA key pair consists of a mathematically related Public Key and Private Key generated together.\n\nImportant exam points. A key pair consists of a mathematically related Public Key and Private Key generated together.. Public key is derived from the private key.. One cannot feasibly derive the private key from the public key."
+    },
+    {
+      "id": "csr-certificate-signing-request",
+      "title": "CSR (Certificate Signing Request)",
+      "definition": "A CSR is a request sent to a Certificate Authority containing the applicant's public key and identity information for certificate issuance.",
+      "examPoints": [
+        "A CSR is a request sent to a Certificate Authority containing the applicant's public key and identity information for certificate issuance.",
+        "Contains:",
+        "Public Key",
+        "Subject",
+        "SAN",
+        "Applicant Signature",
+        "Never contains:",
+        "Private Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CSR (Certificate Signing Request)\n\nA CSR is a request sent to a Certificate Authority containing the applicant's public key and identity information for certificate issuance.\n\nImportant exam points. A CSR is a request sent to a Certificate Authority containing the applicant's public key and identity information for certificate issuance.. Contains:. Public Key. Subject. SAN. Applicant Signature. Never contains:. Private Key"
+    },
+    {
+      "id": "csr-vs-certificate",
+      "title": "CSR vs Certificate",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "CSR: Request; Certificate: Final Identity",
+        "CSR: Signed by Applicant; Certificate: Signed by CA",
+        "CSR: No Issuer; Certificate: Has Issuer",
+        "CSR: No Validity; Certificate: Has Validity"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CSR vs Certificate\n\nComparison. CSR: Request; Certificate: Final Identity. CSR: Signed by Applicant; Certificate: Signed by CA. CSR: No Issuer; Certificate: Has Issuer. CSR: No Validity; Certificate: Has Validity"
+    },
+    {
+      "id": "pem",
+      "title": "PEM",
+      "definition": "PEM (Privacy Enhanced Mail) is a Base64-encoded text format used to store certificates, keys, and CSRs.",
+      "examPoints": [
+        "PEM (Privacy Enhanced Mail) is a Base64-encoded text format used to store certificates, keys, and CSRs.",
+        "Begins with",
+        "Commonly used in:",
+        "Apache",
+        "Nginx",
+        "OpenSSL",
+        "Linux"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "-----BEGIN CERTIFICATE-----"
+      ],
+      "oneLiners": [],
+      "narration": "PEM\n\nPEM (Privacy Enhanced Mail) is a Base64-encoded text format used to store certificates, keys, and CSRs.\n\nImportant exam points. PEM (Privacy Enhanced Mail) is a Base64-encoded text format used to store certificates, keys, and CSRs.. Begins with. Commonly used in:. Apache. Nginx. OpenSSL. Linux\n\nWorkflow. -----BEGIN CERTIFICATE-----"
+    },
+    {
+      "id": "der",
+      "title": "DER",
+      "definition": "DER (Distinguished Encoding Rules) is the binary encoding format of X.509 certificates and cryptographic objects.",
+      "examPoints": [
+        "DER (Distinguished Encoding Rules) is the binary encoding format of X.509 certificates and cryptographic objects.",
+        "Binary",
+        "Smaller than PEM",
+        "Machine-readable"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "DER\n\nDER (Distinguished Encoding Rules) is the binary encoding format of X.509 certificates and cryptographic objects.\n\nImportant exam points. DER (Distinguished Encoding Rules) is the binary encoding format of X.509 certificates and cryptographic objects.. Binary. Smaller than PEM. Machine-readable"
+    },
+    {
+      "id": "pem-vs-der",
+      "title": "PEM vs DER",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "PEM: Base64 Text; DER: Binary",
+        "PEM: Human Readable; DER: Machine Format",
+        "PEM: Linux/OpenSSL; DER: Windows/Java"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PEM vs DER\n\nComparison. PEM: Base64 Text; DER: Binary. PEM: Human Readable; DER: Machine Format. PEM: Linux/OpenSSL; DER: Windows/Java"
+    },
+    {
+      "id": "crt",
+      "title": "CRT",
+      "definition": "CRT is a certificate file extension commonly used for X.509 certificates.",
+      "examPoints": [
+        "CRT is a certificate file extension commonly used for X.509 certificates.",
+        "Usually contains",
+        "Certificate only",
+        "Can be",
+        "PEM",
+        "DER"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRT\n\nCRT is a certificate file extension commonly used for X.509 certificates.\n\nImportant exam points. CRT is a certificate file extension commonly used for X.509 certificates.. Usually contains. Certificate only. Can be. PEM. DER"
+    },
+    {
+      "id": "cer",
+      "title": "CER",
+      "definition": "CER is another certificate file extension used mainly on Windows systems.",
+      "examPoints": [
+        "CER is another certificate file extension used mainly on Windows systems.",
+        "Contains",
+        "Certificate",
+        "Can be",
+        "PEM",
+        "DER"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CER\n\nCER is another certificate file extension used mainly on Windows systems.\n\nImportant exam points. CER is another certificate file extension used mainly on Windows systems.. Contains. Certificate. Can be. PEM. DER"
+    },
+    {
+      "id": "crt-vs-cer",
+      "title": "CRT vs CER",
+      "definition": "",
+      "examPoints": [
+        "Difference is usually only",
+        "File Extension"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRT vs CER\n\nImportant exam points. Difference is usually only. File Extension"
+    },
+    {
+      "id": "key",
+      "title": "KEY",
+      "definition": "A KEY file usually stores the private key associated with a certificate.",
+      "examPoints": [
+        "A KEY file usually stores the private key associated with a certificate.",
+        "Must be protected"
+      ],
+      "comparisons": [],
+      "commands": [
+        "Linux permission: chmod 600 server.key"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "KEY\n\nA KEY file usually stores the private key associated with a certificate.\n\nImportant exam points. A KEY file usually stores the private key associated with a certificate.. Must be protected\n\nCommands. Linux permission: chmod 600 server.key"
+    },
+    {
+      "id": "pfx",
+      "title": "PFX",
+      "definition": "PFX (Personal Information Exchange) stores certificates, private keys, and certificate chains in one password-protected file.",
+      "examPoints": [
+        "PFX (Personal Information Exchange) stores certificates, private keys, and certificate chains in one password-protected file.",
+        "Contains",
+        "Private Key",
+        "Certificate",
+        "Intermediate Certificates",
+        "Used by",
+        "Windows",
+        "IIS"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PFX\n\nPFX (Personal Information Exchange) stores certificates, private keys, and certificate chains in one password-protected file.\n\nImportant exam points. PFX (Personal Information Exchange) stores certificates, private keys, and certificate chains in one password-protected file.. Contains. Private Key. Certificate. Intermediate Certificates. Used by. Windows. IIS"
+    },
+    {
+      "id": "pkcs-12",
+      "title": "PKCS#12",
+      "definition": "PKCS#12 is the standard format for securely storing certificates and private keys.",
+      "examPoints": [
+        "PKCS#12 is the standard format for securely storing certificates and private keys.",
+        "Extensions",
+        "Password Protected"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PKCS#12\n\nPKCS#12 is the standard format for securely storing certificates and private keys.\n\nImportant exam points. PKCS#12 is the standard format for securely storing certificates and private keys.. Extensions. Password Protected"
+    },
+    {
+      "id": "pfx-vs-pkcs-12",
+      "title": "PFX vs PKCS#12",
+      "definition": "",
+      "examPoints": [
+        "Different file extensions"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PFX vs PKCS#12\n\nImportant exam points. Different file extensions"
+    },
+    {
+      "id": "jks",
+      "title": "JKS",
+      "definition": "Java KeyStore (JKS) stores private keys and certificates for Java applications.",
+      "examPoints": [
+        "Java KeyStore (JKS) stores private keys and certificates for Java applications.",
+        "Default Java keystore"
+      ],
+      "comparisons": [],
+      "commands": [
+        "Managed using: keytool"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "JKS\n\nJava KeyStore (JKS) stores private keys and certificates for Java applications.\n\nImportant exam points. Java KeyStore (JKS) stores private keys and certificates for Java applications.. Default Java keystore\n\nCommands. Managed using: keytool"
+    },
+    {
+      "id": "trust-store",
+      "title": "Trust Store",
+      "definition": "A Trust Store contains trusted Root CA and Intermediate CA certificates used to verify other certificates.",
+      "examPoints": [
+        "A Trust Store contains trusted Root CA and Intermediate CA certificates used to verify other certificates.",
+        "Contains",
+        "Certificates only",
+        "Never Private Keys"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Trust Store\n\nA Trust Store contains trusted Root CA and Intermediate CA certificates used to verify other certificates.\n\nImportant exam points. A Trust Store contains trusted Root CA and Intermediate CA certificates used to verify other certificates.. Contains. Certificates only. Never Private Keys"
+    },
+    {
+      "id": "key-store",
+      "title": "Key Store",
+      "definition": "A Key Store stores the owner's private key along with the associated certificate and certificate chain.",
+      "examPoints": [
+        "A Key Store stores the owner's private key along with the associated certificate and certificate chain.",
+        "Represents",
+        "\"My Identity\""
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Key Store\n\nA Key Store stores the owner's private key along with the associated certificate and certificate chain.\n\nImportant exam points. A Key Store stores the owner's private key along with the associated certificate and certificate chain.. Represents. \"My Identity\""
+    },
+    {
+      "id": "trust-store-vs-key-store",
+      "title": "Trust Store vs Key Store",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Trust Store: Trusted CA Certificates; Key Store: Own Certificate",
+        "Trust Store: No Private Key; Key Store: Contains Private Key",
+        "Trust Store: Verify Others; Key Store: Authenticate Yourself"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Trust Store vs Key Store\n\nComparison. Trust Store: Trusted CA Certificates; Key Store: Own Certificate. Trust Store: No Private Key; Key Store: Contains Private Key. Trust Store: Verify Others; Key Store: Authenticate Yourself"
+    },
+    {
+      "id": "certificate-chain-file",
+      "title": "Certificate Chain File",
+      "definition": "A certificate chain file contains the server certificate followed by Intermediate CA certificates.",
+      "examPoints": [
+        "A certificate chain file contains the server certificate followed by Intermediate CA certificates."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Server ↓ Intermediate ↓ Root (Usually not included)"
+      ],
+      "oneLiners": [],
+      "narration": "Certificate Chain File\n\nA certificate chain file contains the server certificate followed by Intermediate CA certificates.\n\nImportant exam points. A certificate chain file contains the server certificate followed by Intermediate CA certificates.\n\nWorkflow. Server ↓ Intermediate ↓ Root (Usually not included)"
+    },
+    {
+      "id": "full-chain",
+      "title": "Full Chain",
+      "definition": "A Full Chain contains the server certificate and all Intermediate CA certificates needed for validation.",
+      "examPoints": [
+        "A Full Chain contains the server certificate and all Intermediate CA certificates needed for validation.",
+        "Usually does not include Root CA because clients already trust it."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Full Chain\n\nA Full Chain contains the server certificate and all Intermediate CA certificates needed for validation.\n\nImportant exam points. A Full Chain contains the server certificate and all Intermediate CA certificates needed for validation.. Usually does not include Root CA because clients already trust it."
+    },
+    {
+      "id": "root-certificate",
+      "title": "Root Certificate",
+      "definition": "The self-signed certificate belonging to the Root Certificate Authority.",
+      "examPoints": [
+        "The self-signed certificate belonging to the Root Certificate Authority.",
+        "Installed in",
+        "Browser Trust Store",
+        "Windows Trust Store",
+        "Linux Trust Store"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Root Certificate\n\nThe self-signed certificate belonging to the Root Certificate Authority.\n\nImportant exam points. The self-signed certificate belonging to the Root Certificate Authority.. Installed in. Browser Trust Store. Windows Trust Store. Linux Trust Store"
+    },
+    {
+      "id": "intermediate-certificate",
+      "title": "Intermediate Certificate",
+      "definition": "A certificate issued by the Root CA used to issue end-entity certificates.",
+      "examPoints": [
+        "A certificate issued by the Root CA used to issue end-entity certificates.",
+        "Protects Root CA",
+        "Most certificates are signed by Intermediate CA"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Intermediate Certificate\n\nA certificate issued by the Root CA used to issue end-entity certificates.\n\nImportant exam points. A certificate issued by the Root CA used to issue end-entity certificates.. Protects Root CA. Most certificates are signed by Intermediate CA"
+    },
+    {
+      "id": "server-certificate",
+      "title": "Server Certificate",
+      "definition": "An end-entity certificate used by servers to authenticate themselves during TLS.",
+      "examPoints": [
+        "An end-entity certificate used by servers to authenticate themselves during TLS.",
+        "Contains",
+        "Server Public Key",
+        "SAN",
+        "KU",
+        "EKU"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Server Certificate\n\nAn end-entity certificate used by servers to authenticate themselves during TLS.\n\nImportant exam points. An end-entity certificate used by servers to authenticate themselves during TLS.. Contains. Server Public Key. SAN. KU. EKU"
+    },
+    {
+      "id": "client-certificate",
+      "title": "Client Certificate",
+      "definition": "A certificate issued to users or devices for client authentication.",
+      "examPoints": [
+        "A certificate issued to users or devices for client authentication.",
+        "Commonly used in",
+        "VPN",
+        "Smart Cards",
+        "Enterprise Wi-Fi"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Client Certificate\n\nA certificate issued to users or devices for client authentication.\n\nImportant exam points. A certificate issued to users or devices for client authentication.. Commonly used in. VPN. Smart Cards. Enterprise Wi-Fi"
+    },
+    {
+      "id": "exporting-certificates",
+      "title": "Exporting Certificates",
+      "definition": "Certificates and keys can be exported into portable formats like PFX or PKCS#12.",
+      "examPoints": [
+        "Certificates and keys can be exported into portable formats like PFX or PKCS#12.",
+        "Use when migrating",
+        "IIS",
+        "Servers",
+        "User Certificates"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Exporting Certificates\n\nCertificates and keys can be exported into portable formats like PFX or PKCS#12.\n\nImportant exam points. Certificates and keys can be exported into portable formats like PFX or PKCS#12.. Use when migrating. IIS. Servers. User Certificates"
+    },
+    {
+      "id": "certificate-conversion",
+      "title": "Certificate Conversion",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "PEM → DER: openssl x509 -in cert.pem -outform der -out cert.der",
+        "DER → PEM: openssl x509 -inform der -in cert.der -out cert.pem"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Conversion\n\nCommands. PEM → DER: openssl x509 -in cert.pem -outform der -out cert.der. DER → PEM: openssl x509 -inform der -in cert.der -out cert.pem"
+    },
+    {
+      "id": "create-pkcs-12",
+      "title": "Create PKCS#12",
+      "definition": "",
+      "examPoints": [
+        "PFX / P12"
+      ],
+      "comparisons": [],
+      "commands": [
+        "Exam Points: openssl pkcs12 \\ -export \\ -out server.pfx \\ -inkey server.key \\ -in server.crt"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Create PKCS#12\n\nImportant exam points. PFX / P12\n\nCommands. Exam Points: openssl pkcs12 \\ -export \\ -out server.pfx \\ -inkey server.key \\ -in server.crt"
+    },
+    {
+      "id": "extract-certificate-from-pfx",
+      "title": "Extract Certificate from PFX",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Exam Points: openssl pkcs12 \\ -in server.pfx \\ -clcerts \\ -nokeys \\ -out cert.pem"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Extract Certificate from PFX\n\nCommands. Exam Points: openssl pkcs12 \\ -in server.pfx \\ -clcerts \\ -nokeys \\ -out cert.pem"
+    },
+    {
+      "id": "extract-private-key-from-pfx",
+      "title": "Extract Private Key from PFX",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Exam Points: openssl pkcs12 \\ -in server.pfx \\ -nocerts \\ -out key.pem"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Extract Private Key from PFX\n\nCommands. Exam Points: openssl pkcs12 \\ -in server.pfx \\ -nocerts \\ -out key.pem"
+    },
+    {
+      "id": "inspect-certificate",
+      "title": "Inspect Certificate",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Exam Points: openssl x509 \\ -text \\ -noout \\ -in server.crt"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Inspect Certificate\n\nCommands. Exam Points: openssl x509 \\ -text \\ -noout \\ -in server.crt"
+    },
+    {
+      "id": "inspect-csr",
+      "title": "Inspect CSR",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Exam Points: openssl req \\ -text \\ -noout \\ -in server.csr"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Inspect CSR\n\nCommands. Exam Points: openssl req \\ -text \\ -noout \\ -in server.csr"
+    },
+    {
+      "id": "inspect-private-key",
+      "title": "Inspect Private Key",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Exam Points: openssl pkey \\ -text \\ -noout \\ -in server.key"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Inspect Private Key\n\nCommands. Exam Points: openssl pkey \\ -text \\ -noout \\ -in server.key"
+    },
+    {
+      "id": "extract-public-key",
+      "title": "Extract Public Key",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Exam Points: openssl pkey \\ -in server.key \\ -pubout \\ -out public.pem"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Extract Public Key\n\nCommands. Exam Points: openssl pkey \\ -in server.key \\ -pubout \\ -out public.pem"
+    },
+    {
+      "id": "verify-certificate-matches-private-key",
+      "title": "Verify Certificate Matches Private Key",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Compare public key hashes: openssl x509 -pubkey -noout -in server.crt",
+        "and: openssl pkey -pubout -in server.key"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Verify Certificate Matches Private Key\n\nCommands. Compare public key hashes: openssl x509 -pubkey -noout -in server.crt. and: openssl pkey -pubout -in server.key"
+    },
+    {
+      "id": "important-file-extensions",
+      "title": "Important File Extensions",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Extension: .pem; Contains: Certificate / CSR / Key; Private Key: May Contain",
+        "Extension: .der; Contains: Binary Certificate; Private Key: May Contain",
+        "Extension: .crt; Contains: Certificate; Private Key: No",
+        "Extension: .cer; Contains: Certificate; Private Key: No",
+        "Extension: .key; Contains: Private Key; Private Key: Yes",
+        "Extension: .csr; Contains: Certificate Request; Private Key: No",
+        "Extension: .pfx; Contains: Certificate + Key + Chain; Private Key: Yes",
+        "Extension: .p12; Contains: Certificate + Key + Chain; Private Key: Yes",
+        "Extension: .jks; Contains: Java KeyStore; Private Key: Yes"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Important File Extensions\n\nComparison. Extension: .pem; Contains: Certificate / CSR / Key; Private Key: May Contain. Extension: .der; Contains: Binary Certificate; Private Key: May Contain. Extension: .crt; Contains: Certificate; Private Key: No. Extension: .cer; Contains: Certificate; Private Key: No. Extension: .key; Contains: Private Key; Private Key: Yes. Extension: .csr; Contains: Certificate Request; Private Key: No. Extension: .pfx; Contains: Certificate + Key + Chain; Private Key: Yes. Extension: .p12; Contains: Certificate + Key + Chain; Private Key: Yes. Extension: .jks; Contains: Java KeyStore; Private Key: Yes"
+    },
+    {
+      "id": "csr-vs-certificate",
+      "title": "CSR vs Certificate",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "CSR: Request; Certificate: Identity",
+        "CSR: Applicant Signed; Certificate: CA Signed"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CSR vs Certificate\n\nComparison. CSR: Request; Certificate: Identity. CSR: Applicant Signed; Certificate: CA Signed"
+    },
+    {
+      "id": "pem-vs-der",
+      "title": "PEM vs DER",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "PEM: Base64; DER: Binary"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PEM vs DER\n\nComparison. PEM: Base64; DER: Binary"
+    },
+    {
+      "id": "crt-vs-cer",
+      "title": "CRT vs CER",
+      "definition": "",
+      "examPoints": [
+        "Only extension differs."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRT vs CER\n\nImportant exam points. Only extension differs."
+    },
+    {
+      "id": "pfx-vs-jks",
+      "title": "PFX vs JKS",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "PFX: Windows; JKS: Java",
+        "PFX: PKCS#12; JKS: Java Keystore"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "PFX vs JKS\n\nComparison. PFX: Windows; JKS: Java. PFX: PKCS#12; JKS: Java Keystore"
+    },
+    {
+      "id": "trust-store-vs-key-store",
+      "title": "Trust Store vs Key Store",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Trust Store: Trusted CAs; Key Store: Own Identity",
+        "Trust Store: Verify Others; Key Store: Authenticate Yourself"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Trust Store vs Key Store\n\nComparison. Trust Store: Trusted CAs; Key Store: Own Identity. Trust Store: Verify Others; Key Store: Authenticate Yourself"
+    },
+    {
+      "id": "openssl-commands-to-remember",
+      "title": "OpenSSL Commands to Remember",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "# OpenSSL Commands to Remember: openssl genpkey"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OpenSSL Commands to Remember\n\nCommands. # OpenSSL Commands to Remember: openssl genpkey"
+    },
+    {
+      "id": "phase-5-keys-certificate-files",
+      "title": "Phase 5 - Keys & Certificate Files",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "openssl req -new"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 5 - Keys & Certificate Files\n\nCommands. openssl req -new"
+    },
+    {
+      "id": "phase-5-keys-certificate-files",
+      "title": "Phase 5 - Keys & Certificate Files",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "openssl x509"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 5 - Keys & Certificate Files\n\nCommands. openssl x509"
+    },
+    {
+      "id": "phase-5-keys-certificate-files",
+      "title": "Phase 5 - Keys & Certificate Files",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "openssl verify"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 5 - Keys & Certificate Files\n\nCommands. openssl verify"
+    },
+    {
+      "id": "phase-5-keys-certificate-files",
+      "title": "Phase 5 - Keys & Certificate Files",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "openssl pkcs12"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 5 - Keys & Certificate Files\n\nCommands. openssl pkcs12"
+    },
+    {
+      "id": "phase-5-keys-certificate-files",
+      "title": "Phase 5 - Keys & Certificate Files",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "openssl pkey"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 5 - Keys & Certificate Files\n\nCommands. openssl pkey"
+    },
+    {
+      "id": "top-30-one-liners-for-exam",
+      "title": "Top 30 One-Liners for Exam",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Public Key is shared; Private Key is secret.",
+        "Certificates contain public keys, not private keys.",
+        "CSR contains public key, never private key.",
+        "CSR is signed by the applicant.",
+        "Certificate is signed by the CA.",
+        "PEM is Base64 text.",
+        "DER is binary.",
+        "CRT and CER are certificate file extensions.",
+        "KEY files usually contain private keys.",
+        "PFX and P12 are PKCS#12 containers.",
+        "PFX contains certificate + private key + chain.",
+        "JKS is Java's keystore format.",
+        "Trust Store contains trusted CA certificates only.",
+        "Trust Store never contains private keys.",
+        "Key Store contains your private key and certificate.",
+        "Root CA certificates are installed in trust stores.",
+        "Intermediate CAs issue end-entity certificates.",
+        "Full Chain = Server + Intermediate certificates.",
+        "The Root CA is usually not sent by the server during TLS.",
+        "File extensions do not determine the encoding; the content does.",
+        "PEM can store certificates, keys, CSRs, and chains.",
+        "DER is the binary representation of the same data.",
+        "openssl req creates a CSR.",
+        "openssl x509 displays certificate details.",
+        "openssl pkey displays private/public key details.",
+        "openssl pkcs12 manages PFX/P12 files.",
+        "Protect .key files with restrictive permissions.",
+        "Never email or publicly share a private key.",
+        "Backup private keys securely (preferably in an HSM or encrypted storage).",
+        "The most frequently tested formats are: PEM, DER, CRT, CER, KEY, PFX/PKCS#12, JKS, Trust Store, and Key Store."
+      ],
+      "narration": "Top 30 One-Liners for Exam\n\nMemory points. Public Key is shared; Private Key is secret.. Certificates contain public keys, not private keys.. CSR contains public key, never private key.. CSR is signed by the applicant.. Certificate is signed by the CA.. PEM is Base64 text.. DER is binary.. CRT and CER are certificate file extensions.. KEY files usually contain private keys.. PFX and P12 are PKCS#12 containers.. PFX contains certificate + private key + chain.. JKS is Java's keystore format.. Trust Store contains trusted CA certificates only.. Trust Store never contains private keys.. Key Store contains your private key and certificate.. Root CA certificates are installed in trust stores.. Intermediate CAs issue end-entity certificates.. Full Chain = Server + Intermediate certificates.. The Root CA is usually not sent by the server during TLS.. File extensions do not determine the encoding; the content does.. PEM can store certificates, keys, CSRs, and chains.. DER is the binary representation of the same data.. openssl req creates a CSR.. openssl x509 displays certificate details.. openssl pkey displays private/public key details.. openssl pkcs12 manages PFX/P12 files.. Protect .key files with restrictive permissions.. Never email or publicly share a private key.. Backup private keys securely (preferably in an HSM or encrypted storage).. The most frequently tested formats are: PEM, DER, CRT, CER, KEY, PFX/PKCS#12, JKS, Trust Store, and Key Store."
+    }
+  ]
+}

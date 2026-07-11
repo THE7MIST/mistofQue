@@ -1,0 +1,706 @@
+{
+  "id": "phase06-lifecycle",
+  "subject": "PKI",
+  "title": "Phase 6 - Certificate Lifecycle",
+  "audio": "/audio/pki/phase06-lifecycle.mp3",
+  "topics": [
+    {
+      "id": "certificate-lifecycle",
+      "title": "Certificate Lifecycle",
+      "definition": "The Certificate Lifecycle is the complete process a digital certificate follows from key generation until its secure destruction. Proper lifecycle management ensures certificates remain trusted, valid, and secure.",
+      "examPoints": [
+        "The Certificate Lifecycle is the complete process a digital certificate follows from key generation until its secure destruction. Proper lifecycle management ensures certificates remain trusted, valid, and secure.",
+        "Every certificate follows the same lifecycle.",
+        "Poor lifecycle management leads to expired or compromised certificates."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Lifecycle\n\nThe Certificate Lifecycle is the complete process a digital certificate follows from key generation until its secure destruction. Proper lifecycle management ensures certificates remain trusted, valid, and secure.\n\nImportant exam points. The Certificate Lifecycle is the complete process a digital certificate follows from key generation until its secure destruction. Proper lifecycle management ensures certificates remain trusted, valid, and secure.. Every certificate follows the same lifecycle.. Poor lifecycle management leads to expired or compromised certificates."
+    },
+    {
+      "id": "complete-certificate-lifecycle",
+      "title": "Complete Certificate Lifecycle",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Key Generation ↓ CSR Creation ↓ Identity Verification ↓ Certificate Issuance ↓ Distribution ↓ Installation ↓ Operational Use ↓ Renewal / Rekey ↓ Revocation / Expiration ↓ Destruction"
+      ],
+      "oneLiners": [],
+      "narration": "Complete Certificate Lifecycle\n\nWorkflow. Key Generation ↓ CSR Creation ↓ Identity Verification ↓ Certificate Issuance ↓ Distribution ↓ Installation ↓ Operational Use ↓ Renewal / Rekey ↓ Revocation / Expiration ↓ Destruction"
+    },
+    {
+      "id": "key-generation",
+      "title": "Key Generation",
+      "definition": "Key Generation is the process of creating a cryptographic Public-Private Key Pair using a secure algorithm.",
+      "examPoints": [
+        "Key Generation is the process of creating a cryptographic Public-Private Key Pair using a secure algorithm.",
+        "Private Key generated first.",
+        "Public Key derived mathematically."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Key Generation\n\nKey Generation is the process of creating a cryptographic Public-Private Key Pair using a secure algorithm.\n\nImportant exam points. Key Generation is the process of creating a cryptographic Public-Private Key Pair using a secure algorithm.. Private Key generated first.. Public Key derived mathematically."
+    },
+    {
+      "id": "random-number-generator-rng",
+      "title": "Random Number Generator (RNG)",
+      "definition": "RNG provides random values required to generate unpredictable cryptographic keys.",
+      "examPoints": [
+        "RNG provides random values required to generate unpredictable cryptographic keys.",
+        "CSPRNG is preferred.",
+        "Weak randomness = Weak keys."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Random Number Generator (RNG)\n\nRNG provides random values required to generate unpredictable cryptographic keys.\n\nImportant exam points. RNG provides random values required to generate unpredictable cryptographic keys.. CSPRNG is preferred.. Weak randomness = Weak keys."
+    },
+    {
+      "id": "rsa-vs-ecc-key-generation",
+      "title": "RSA vs ECC Key Generation",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "RSA: Large Keys; ECC: Small Keys",
+        "RSA: Slower; ECC: Faster",
+        "RSA: Widely Supported; ECC: Better Performance"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "RSA vs ECC Key Generation\n\nComparison. RSA: Large Keys; ECC: Small Keys. RSA: Slower; ECC: Faster. RSA: Widely Supported; ECC: Better Performance"
+    },
+    {
+      "id": "recommended-key-sizes",
+      "title": "Recommended Key Sizes",
+      "definition": "",
+      "examPoints": [
+        "2048",
+        "3072",
+        "4096",
+        "ECC",
+        "P-256",
+        "P-384",
+        "P-521"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Recommended Key Sizes\n\nImportant exam points. 2048. 3072. 4096. ECC. P-256. P-384. P-521"
+    },
+    {
+      "id": "csr-certificate-signing-request",
+      "title": "CSR (Certificate Signing Request)",
+      "definition": "A CSR is a request generated by the applicant containing the Public Key and identity information, sent to the CA for certificate issuance.",
+      "examPoints": [
+        "A CSR is a request generated by the applicant containing the Public Key and identity information, sent to the CA for certificate issuance.",
+        "Contains",
+        "Public Key",
+        "Subject",
+        "SAN",
+        "Never contains",
+        "Private Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CSR (Certificate Signing Request)\n\nA CSR is a request generated by the applicant containing the Public Key and identity information, sent to the CA for certificate issuance.\n\nImportant exam points. A CSR is a request generated by the applicant containing the Public Key and identity information, sent to the CA for certificate issuance.. Contains. Public Key. Subject. SAN. Never contains. Private Key"
+    },
+    {
+      "id": "csr-verification",
+      "title": "CSR Verification",
+      "definition": "The CA verifies the CSR's signature and identity before issuing the certificate.",
+      "examPoints": [
+        "The CA verifies the CSR's signature and identity before issuing the certificate.",
+        "Verifies",
+        "Applicant owns Private Key",
+        "Identity information"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CSR Verification\n\nThe CA verifies the CSR's signature and identity before issuing the certificate.\n\nImportant exam points. The CA verifies the CSR's signature and identity before issuing the certificate.. Verifies. Applicant owns Private Key. Identity information"
+    },
+    {
+      "id": "csr-vs-certificate",
+      "title": "CSR vs Certificate",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "CSR: Request; Certificate: Identity",
+        "CSR: Applicant Signed; Certificate: CA Signed"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CSR vs Certificate\n\nComparison. CSR: Request; Certificate: Identity. CSR: Applicant Signed; Certificate: CA Signed"
+    },
+    {
+      "id": "identity-verification",
+      "title": "Identity Verification",
+      "definition": "Identity Verification confirms that the applicant requesting a certificate is genuine.",
+      "examPoints": [
+        "Identity Verification confirms that the applicant requesting a certificate is genuine.",
+        "Performed by",
+        "RA",
+        "CA"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Identity Verification\n\nIdentity Verification confirms that the applicant requesting a certificate is genuine.\n\nImportant exam points. Identity Verification confirms that the applicant requesting a certificate is genuine.. Performed by. RA. CA"
+    },
+    {
+      "id": "domain-validation-dv",
+      "title": "Domain Validation (DV)",
+      "definition": "The CA verifies only domain ownership.",
+      "examPoints": [
+        "The CA verifies only domain ownership.",
+        "Lowest validation level.",
+        "No organization verification."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Domain Validation (DV)\n\nThe CA verifies only domain ownership.\n\nImportant exam points. The CA verifies only domain ownership.. Lowest validation level.. No organization verification."
+    },
+    {
+      "id": "organization-validation-ov",
+      "title": "Organization Validation (OV)",
+      "definition": "The CA verifies both domain ownership and organization identity.",
+      "examPoints": [
+        "The CA verifies both domain ownership and organization identity.",
+        "More trusted than DV."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Organization Validation (OV)\n\nThe CA verifies both domain ownership and organization identity.\n\nImportant exam points. The CA verifies both domain ownership and organization identity.. More trusted than DV."
+    },
+    {
+      "id": "extended-validation-ev",
+      "title": "Extended Validation (EV)",
+      "definition": "The highest level of certificate validation requiring extensive legal and organizational verification.",
+      "examPoints": [
+        "The highest level of certificate validation requiring extensive legal and organizational verification.",
+        "Highest Assurance",
+        "Most expensive"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Extended Validation (EV)\n\nThe highest level of certificate validation requiring extensive legal and organizational verification.\n\nImportant exam points. The highest level of certificate validation requiring extensive legal and organizational verification.. Highest Assurance. Most expensive"
+    },
+    {
+      "id": "dv-vs-ov-vs-ev",
+      "title": "DV vs OV vs EV",
+      "definition": "",
+      "examPoints": [
+        "OV → Organization",
+        "EV → Everything"
+      ],
+      "comparisons": [
+        "DV: Domain; OV: Domain + Organization; EV: Extensive Legal Verification",
+        "DV: Fast; OV: Moderate; EV: Strict"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "DV vs OV vs EV\n\nImportant exam points. OV → Organization. EV → Everything\n\nComparison. DV: Domain; OV: Domain + Organization; EV: Extensive Legal Verification. DV: Fast; OV: Moderate; EV: Strict"
+    },
+    {
+      "id": "certificate-issuance",
+      "title": "Certificate Issuance",
+      "definition": "Certificate Issuance is the process where the CA signs the CSR using its private key to create a digital certificate.",
+      "examPoints": [
+        "Certificate Issuance is the process where the CA signs the CSR using its private key to create a digital certificate.",
+        "CA adds",
+        "Serial Number",
+        "Validity",
+        "Issuer",
+        "Extensions"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Issuance\n\nCertificate Issuance is the process where the CA signs the CSR using its private key to create a digital certificate.\n\nImportant exam points. Certificate Issuance is the process where the CA signs the CSR using its private key to create a digital certificate.. CA adds. Serial Number. Validity. Issuer. Extensions"
+    },
+    {
+      "id": "certificate-signing",
+      "title": "Certificate Signing",
+      "definition": "The CA signs the TBSCertificate using its private key.",
+      "examPoints": [
+        "The CA signs the TBSCertificate using its private key.",
+        "Verification uses",
+        "CA Public Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Signing\n\nThe CA signs the TBSCertificate using its private key.\n\nImportant exam points. The CA signs the TBSCertificate using its private key.. Verification uses. CA Public Key"
+    },
+    {
+      "id": "root-vs-intermediate-issuance",
+      "title": "Root vs Intermediate Issuance",
+      "definition": "",
+      "examPoints": [
+        "Root should NOT directly issue server certificates."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Root CA ↓ Intermediate CA ↓ Server Certificate"
+      ],
+      "oneLiners": [],
+      "narration": "Root vs Intermediate Issuance\n\nImportant exam points. Root should NOT directly issue server certificates.\n\nWorkflow. Root CA ↓ Intermediate CA ↓ Server Certificate"
+    },
+    {
+      "id": "distribution",
+      "title": "Distribution",
+      "definition": "Distribution is the process of delivering certificates to servers, users, browsers, or applications.",
+      "examPoints": [
+        "Distribution is the process of delivering certificates to servers, users, browsers, or applications.",
+        "LDAP",
+        "HTTP",
+        "Group Policy",
+        "MDM",
+        "ACME"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Distribution\n\nDistribution is the process of delivering certificates to servers, users, browsers, or applications.\n\nImportant exam points. Distribution is the process of delivering certificates to servers, users, browsers, or applications.. LDAP. HTTP. Group Policy. MDM. ACME"
+    },
+    {
+      "id": "certificate-repository",
+      "title": "Certificate Repository",
+      "definition": "Stores certificates, CRLs, and CA certificates for retrieval.",
+      "examPoints": [
+        "Stores certificates, CRLs, and CA certificates for retrieval.",
+        "LDAP",
+        "HTTP"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Repository\n\nStores certificates, CRLs, and CA certificates for retrieval.\n\nImportant exam points. Stores certificates, CRLs, and CA certificates for retrieval.. LDAP. HTTP"
+    },
+    {
+      "id": "installation",
+      "title": "Installation",
+      "definition": "Installation places the certificate and private key into the application or server.",
+      "examPoints": [
+        "Installation places the certificate and private key into the application or server.",
+        "Server Requires",
+        "Certificate",
+        "Private Key",
+        "Intermediate Chain"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Installation\n\nInstallation places the certificate and private key into the application or server.\n\nImportant exam points. Installation places the certificate and private key into the application or server.. Server Requires. Certificate. Private Key. Intermediate Chain"
+    },
+    {
+      "id": "browser-installation",
+      "title": "Browser Installation",
+      "definition": "Root CA certificates are installed into browser or operating system trust stores.",
+      "examPoints": [
+        "Root CA certificates are installed into browser or operating system trust stores.",
+        "Makes browser trust certificates issued by that CA."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Browser Installation\n\nRoot CA certificates are installed into browser or operating system trust stores.\n\nImportant exam points. Root CA certificates are installed into browser or operating system trust stores.. Makes browser trust certificates issued by that CA."
+    },
+    {
+      "id": "apache-installation",
+      "title": "Apache Installation",
+      "definition": "",
+      "examPoints": [
+        "Private Key",
+        "Full Chain"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Apache Installation\n\nImportant exam points. Private Key. Full Chain"
+    },
+    {
+      "id": "nginx-installation",
+      "title": "Nginx Installation",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Uses: ssl_certificate ssl_certificate_key"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Nginx Installation\n\nCommands. Uses: ssl_certificate ssl_certificate_key"
+    },
+    {
+      "id": "operational-use",
+      "title": "Operational Use",
+      "definition": "The certificate is actively used for TLS, authentication, encryption, or digital signatures.",
+      "examPoints": [
+        "The certificate is actively used for TLS, authentication, encryption, or digital signatures.",
+        "HTTPS",
+        "VPN",
+        "Email",
+        "Code Signing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Operational Use\n\nThe certificate is actively used for TLS, authentication, encryption, or digital signatures.\n\nImportant exam points. The certificate is actively used for TLS, authentication, encryption, or digital signatures.. HTTPS. VPN. Email. Code Signing"
+    },
+    {
+      "id": "renewal",
+      "title": "Renewal",
+      "definition": "Renewal replaces an expiring certificate while optionally reusing the existing key pair.",
+      "examPoints": [
+        "Renewal replaces an expiring certificate while optionally reusing the existing key pair.",
+        "New Certificate",
+        "Same Key (Optional)"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Renewal\n\nRenewal replaces an expiring certificate while optionally reusing the existing key pair.\n\nImportant exam points. Renewal replaces an expiring certificate while optionally reusing the existing key pair.. New Certificate. Same Key (Optional)"
+    },
+    {
+      "id": "automatic-renewal",
+      "title": "Automatic Renewal",
+      "definition": "Renewal performed automatically using tools like ACME or enterprise certificate managers.",
+      "examPoints": [
+        "Renewal performed automatically using tools like ACME or enterprise certificate managers.",
+        "Let's Encrypt"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Automatic Renewal\n\nRenewal performed automatically using tools like ACME or enterprise certificate managers.\n\nImportant exam points. Renewal performed automatically using tools like ACME or enterprise certificate managers.. Let's Encrypt"
+    },
+    {
+      "id": "rekey",
+      "title": "Rekey",
+      "definition": "Rekey generates a completely new key pair and issues a new certificate.",
+      "examPoints": [
+        "Rekey generates a completely new key pair and issues a new certificate.",
+        "Always",
+        "New Key",
+        "New Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Rekey\n\nRekey generates a completely new key pair and issues a new certificate.\n\nImportant exam points. Rekey generates a completely new key pair and issues a new certificate.. Always. New Key. New Certificate"
+    },
+    {
+      "id": "renewal-vs-rekey",
+      "title": "Renewal vs Rekey",
+      "definition": "",
+      "examPoints": [
+        "Rekey = Replace Keys"
+      ],
+      "comparisons": [
+        "Renewal: Same Key Possible; Rekey: New Key Mandatory",
+        "Renewal: New Certificate; Rekey: New Certificate"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Renewal vs Rekey\n\nImportant exam points. Rekey = Replace Keys\n\nComparison. Renewal: Same Key Possible; Rekey: New Key Mandatory. Renewal: New Certificate; Rekey: New Certificate"
+    },
+    {
+      "id": "revocation",
+      "title": "Revocation",
+      "definition": "Revocation invalidates a certificate before its expiration date.",
+      "examPoints": [
+        "Revocation invalidates a certificate before its expiration date.",
+        "Reasons",
+        "Key Compromise",
+        "Employee Left",
+        "Wrong Certificate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Revocation\n\nRevocation invalidates a certificate before its expiration date.\n\nImportant exam points. Revocation invalidates a certificate before its expiration date.. Reasons. Key Compromise. Employee Left. Wrong Certificate"
+    },
+    {
+      "id": "revocation-methods",
+      "title": "Revocation Methods",
+      "definition": "",
+      "examPoints": [
+        "OCSP"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Revocation Methods\n\nImportant exam points. OCSP"
+    },
+    {
+      "id": "expiration",
+      "title": "Expiration",
+      "definition": "Expiration occurs automatically when the certificate reaches its Not After date.",
+      "examPoints": [
+        "Expiration occurs automatically when the certificate reaches its Not After date.",
+        "Automatic",
+        "Time Based"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Expiration\n\nExpiration occurs automatically when the certificate reaches its Not After date.\n\nImportant exam points. Expiration occurs automatically when the certificate reaches its Not After date.. Automatic. Time Based"
+    },
+    {
+      "id": "expired-vs-revoked",
+      "title": "Expired vs Revoked",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Expired: Automatic; Revoked: Manual",
+        "Expired: Planned; Revoked: Emergency"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Expired vs Revoked\n\nComparison. Expired: Automatic; Revoked: Manual. Expired: Planned; Revoked: Emergency"
+    },
+    {
+      "id": "destruction",
+      "title": "Destruction",
+      "definition": "Securely deleting or destroying certificates and especially private keys after they are no longer needed.",
+      "examPoints": [
+        "Securely deleting or destroying certificates and especially private keys after they are no longer needed.",
+        "Destroy",
+        "Private Keys",
+        "Backup Copies"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Destruction\n\nSecurely deleting or destroying certificates and especially private keys after they are no longer needed.\n\nImportant exam points. Securely deleting or destroying certificates and especially private keys after they are no longer needed.. Destroy. Private Keys. Backup Copies"
+    },
+    {
+      "id": "hsm-hardware-security-module",
+      "title": "HSM (Hardware Security Module)",
+      "definition": "A specialized hardware device that securely generates, stores, and protects cryptographic keys.",
+      "examPoints": [
+        "A specialized hardware device that securely generates, stores, and protects cryptographic keys.",
+        "Best protection for CA Private Keys."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "HSM (Hardware Security Module)\n\nA specialized hardware device that securely generates, stores, and protects cryptographic keys.\n\nImportant exam points. A specialized hardware device that securely generates, stores, and protects cryptographic keys.. Best protection for CA Private Keys."
+    },
+    {
+      "id": "backup-removal",
+      "title": "Backup Removal",
+      "definition": "Private keys must also be removed from backups after retirement.",
+      "examPoints": [
+        "Private keys must also be removed from backups after retirement.",
+        "Deleting only the server copy is insufficient."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Backup Removal\n\nPrivate keys must also be removed from backups after retirement.\n\nImportant exam points. Private keys must also be removed from backups after retirement.. Deleting only the server copy is insufficient."
+    },
+    {
+      "id": "compliance",
+      "title": "Compliance",
+      "definition": "",
+      "examPoints": [
+        "ISO 27001",
+        "PCI DSS",
+        "HIPAA",
+        "GDPR"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Compliance\n\nImportant exam points. ISO 27001. PCI DSS. HIPAA. GDPR"
+    },
+    {
+      "id": "openssl-commands",
+      "title": "OpenSSL Commands",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Generate Key: openssl genpkey",
+        "Create CSR: openssl req -new",
+        "Issue Certificate: openssl x509 -req",
+        "Check Dates: openssl x509 -dates",
+        "Verify Certificate: openssl verify"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OpenSSL Commands\n\nCommands. Generate Key: openssl genpkey. Create CSR: openssl req -new. Issue Certificate: openssl x509 -req. Check Dates: openssl x509 -dates. Verify Certificate: openssl verify"
+    },
+    {
+      "id": "enterprise-certificate-management",
+      "title": "Enterprise Certificate Management",
+      "definition": "",
+      "examPoints": [
+        "Certificate Discovery",
+        "Renewal",
+        "Monitoring",
+        "Revocation",
+        "Automation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Enterprise Certificate Management\n\nImportant exam points. Certificate Discovery. Renewal. Monitoring. Revocation. Automation"
+    },
+    {
+      "id": "renewal-vs-rekey",
+      "title": "Renewal vs Rekey",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Renewal: Same Key Allowed; Rekey: New Key Pair",
+        "Renewal: Replace Certificate; Rekey: Replace Keys + Certificate"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Renewal vs Rekey\n\nComparison. Renewal: Same Key Allowed; Rekey: New Key Pair. Renewal: Replace Certificate; Rekey: Replace Keys + Certificate"
+    },
+    {
+      "id": "dv-vs-ov-vs-ev",
+      "title": "DV vs OV vs EV",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "DV: Domain; OV: Organization; EV: Highest Validation"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "DV vs OV vs EV\n\nComparison. DV: Domain; OV: Organization; EV: Highest Validation"
+    },
+    {
+      "id": "root-vs-intermediate",
+      "title": "Root vs Intermediate",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Root: Offline; Intermediate: Online",
+        "Root: Signs Intermediate; Intermediate: Signs End Certificates"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Root vs Intermediate\n\nComparison. Root: Offline; Intermediate: Online. Root: Signs Intermediate; Intermediate: Signs End Certificates"
+    },
+    {
+      "id": "revocation-vs-expiration",
+      "title": "Revocation vs Expiration",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Revocation: Manual; Expiration: Automatic",
+        "Revocation: Security Event; Expiration: Time Limit"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Revocation vs Expiration\n\nComparison. Revocation: Manual; Expiration: Automatic. Revocation: Security Event; Expiration: Time Limit"
+    },
+    {
+      "id": "complete-lifecycle-workflow-very-important",
+      "title": "Complete Lifecycle Workflow (Very Important)",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Generate Key Pair ↓ Create CSR ↓ RA Verifies Identity ↓ CA Issues Certificate ↓ Distribute Certificate ↓ Install Certificate ↓ Use Certificate ↓ Renew OR Rekey ↓ Revoke if Needed ↓ Expire ↓ Destroy Keys"
+      ],
+      "oneLiners": [],
+      "narration": "Complete Lifecycle Workflow (Very Important)\n\nWorkflow. Generate Key Pair ↓ Create CSR ↓ RA Verifies Identity ↓ CA Issues Certificate ↓ Distribute Certificate ↓ Install Certificate ↓ Use Certificate ↓ Renew OR Rekey ↓ Revoke if Needed ↓ Expire ↓ Destroy Keys"
+    },
+    {
+      "id": "top-30-one-liners-for-exam",
+      "title": "Top 30 One-Liners for Exam",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Certificate Lifecycle begins with Key Generation.",
+        "Private Key is generated before the Public Key.",
+        "Public Key is derived from the Private Key.",
+        "CSR contains the Public Key, not the Private Key.",
+        "CSR is signed by the applicant.",
+        "Identity verification is performed by the RA or CA.",
+        "DV verifies domain ownership only.",
+        "OV verifies organization and domain.",
+        "EV provides the highest level of validation.",
+        "CA signs the certificate using its Private Key.",
+        "Clients verify the certificate using the CA Public Key.",
+        "Root CA signs Intermediate CA certificates.",
+        "Intermediate CA signs server certificates.",
+        "Certificates are distributed through LDAP, HTTP, GPO, MDM, or ACME.",
+        "A server needs the certificate, private key, and intermediate chain.",
+        "Root CA certificates belong in the trust store.",
+        "Renewal replaces a certificate.",
+        "Rekey replaces both the certificate and key pair.",
+        "Rekey is recommended after key compromise.",
+        "Revocation happens before expiration.",
+        "Expiration occurs at the Not After date.",
+        "CRL and OCSP communicate revocation status.",
+        "Destroy the private key, not just the certificate.",
+        "Remove retired private keys from backups as well.",
+        "HSMs provide the highest protection for CA keys.",
+        "Automation reduces certificate-expiry outages.",
+        "Monitor all certificates before they expire.",
+        "Never allow an expired certificate to remain in production.",
+        "Lifecycle management is essential for PKI security and compliance.",
+        "The full lifecycle to memorize is: Key Generation → CSR → Verification → Issuance → Distribution → Installation → Use → Renewal/Rekey → Revocation/Expiration → Destruction."
+      ],
+      "narration": "Top 30 One-Liners for Exam\n\nMemory points. Certificate Lifecycle begins with Key Generation.. Private Key is generated before the Public Key.. Public Key is derived from the Private Key.. CSR contains the Public Key, not the Private Key.. CSR is signed by the applicant.. Identity verification is performed by the RA or CA.. DV verifies domain ownership only.. OV verifies organization and domain.. EV provides the highest level of validation.. CA signs the certificate using its Private Key.. Clients verify the certificate using the CA Public Key.. Root CA signs Intermediate CA certificates.. Intermediate CA signs server certificates.. Certificates are distributed through LDAP, HTTP, GPO, MDM, or ACME.. A server needs the certificate, private key, and intermediate chain.. Root CA certificates belong in the trust store.. Renewal replaces a certificate.. Rekey replaces both the certificate and key pair.. Rekey is recommended after key compromise.. Revocation happens before expiration.. Expiration occurs at the Not After date.. CRL and OCSP communicate revocation status.. Destroy the private key, not just the certificate.. Remove retired private keys from backups as well.. HSMs provide the highest protection for CA keys.. Automation reduces certificate-expiry outages.. Monitor all certificates before they expire.. Never allow an expired certificate to remain in production.. Lifecycle management is essential for PKI security and compliance.. The full lifecycle to memorize is: Key Generation → CSR → Verification → Issuance → Distribution → Installation → Use → Renewal/Rekey → Revocation/Expiration → Destruction."
+    }
+  ]
+}

@@ -1,0 +1,869 @@
+{
+  "id": "phase07-revocation",
+  "subject": "PKI",
+  "title": "Phase 7 - Certificate Revocation",
+  "audio": "/audio/pki/phase07-revocation.mp3",
+  "topics": [
+    {
+      "id": "certificate-revocation",
+      "title": "Certificate Revocation",
+      "definition": "Certificate Revocation is the process of declaring a certificate invalid before its expiration date. The CA publishes the revocation so that clients stop trusting the certificate.",
+      "examPoints": [
+        "Certificate Revocation is the process of declaring a certificate invalid before its expiration date. The CA publishes the revocation so that clients stop trusting the certificate.",
+        "Revoked certificate = Untrusted",
+        "Revocation occurs before expiration"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Revocation\n\nCertificate Revocation is the process of declaring a certificate invalid before its expiration date. The CA publishes the revocation so that clients stop trusting the certificate.\n\nImportant exam points. Certificate Revocation is the process of declaring a certificate invalid before its expiration date. The CA publishes the revocation so that clients stop trusting the certificate.. Revoked certificate = Untrusted. Revocation occurs before expiration"
+    },
+    {
+      "id": "why-revoke-a-certificate",
+      "title": "Why Revoke a Certificate?",
+      "definition": "Certificates are revoked when they can no longer be trusted due to security, operational, or policy reasons.",
+      "examPoints": [
+        "Certificates are revoked when they can no longer be trusted due to security, operational, or policy reasons.",
+        "Common Reasons:",
+        "Private Key Compromise",
+        "Wrong Certificate Issued",
+        "Employee Left",
+        "Device Lost",
+        "CA Compromise"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Why Revoke a Certificate?\n\nCertificates are revoked when they can no longer be trusted due to security, operational, or policy reasons.\n\nImportant exam points. Certificates are revoked when they can no longer be trusted due to security, operational, or policy reasons.. Common Reasons:. Private Key Compromise. Wrong Certificate Issued. Employee Left. Device Lost. CA Compromise"
+    },
+    {
+      "id": "security-impact-of-revocation",
+      "title": "Security Impact of Revocation",
+      "definition": "Revocation prevents attackers from continuing to misuse compromised or invalid certificates.",
+      "examPoints": [
+        "Revocation prevents attackers from continuing to misuse compromised or invalid certificates.",
+        "Without revocation:",
+        "Stolen certificates remain trusted.",
+        "Attackers can impersonate legitimate users or servers."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Security Impact of Revocation\n\nRevocation prevents attackers from continuing to misuse compromised or invalid certificates.\n\nImportant exam points. Revocation prevents attackers from continuing to misuse compromised or invalid certificates.. Without revocation:. Stolen certificates remain trusted.. Attackers can impersonate legitimate users or servers."
+    },
+    {
+      "id": "enterprise-revocation-policy",
+      "title": "Enterprise Revocation Policy",
+      "definition": "Organizations define policies specifying who can request revocation, when it should occur, and how revocation information is published.",
+      "examPoints": [
+        "Organizations define policies specifying who can request revocation, when it should occur, and how revocation information is published.",
+        "Policy includes:",
+        "Approval Process",
+        "Response Time",
+        "Revocation Method"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Enterprise Revocation Policy\n\nOrganizations define policies specifying who can request revocation, when it should occur, and how revocation information is published.\n\nImportant exam points. Organizations define policies specifying who can request revocation, when it should occur, and how revocation information is published.. Policy includes:. Approval Process. Response Time. Revocation Method"
+    },
+    {
+      "id": "certificate-revocation-workflow",
+      "title": "Certificate Revocation Workflow",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Compromise Detected ↓ Request Revocation ↓ CA Verifies Request ↓ Certificate Marked Revoked ↓ CRL Updated / OCSP Updated ↓ Clients Reject Certificate"
+      ],
+      "oneLiners": [],
+      "narration": "Certificate Revocation Workflow\n\nWorkflow. Compromise Detected ↓ Request Revocation ↓ CA Verifies Request ↓ Certificate Marked Revoked ↓ CRL Updated / OCSP Updated ↓ Clients Reject Certificate"
+    },
+    {
+      "id": "certificate-revocation-list-crl",
+      "title": "Certificate Revocation List (CRL)",
+      "definition": "A CRL (Certificate Revocation List) is a digitally signed list of revoked certificate serial numbers published by the CA.",
+      "examPoints": [
+        "A CRL (Certificate Revocation List) is a digitally signed list of revoked certificate serial numbers published by the CA.",
+        "Contains:",
+        "Revoked Serial Numbers",
+        "Revocation Date",
+        "Revocation Reason"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Revocation List (CRL)\n\nA CRL (Certificate Revocation List) is a digitally signed list of revoked certificate serial numbers published by the CA.\n\nImportant exam points. A CRL (Certificate Revocation List) is a digitally signed list of revoked certificate serial numbers published by the CA.. Contains:. Revoked Serial Numbers. Revocation Date. Revocation Reason"
+    },
+    {
+      "id": "crl-generation",
+      "title": "CRL Generation",
+      "definition": "The CA generates a CRL from its certificate database after revoking certificates.",
+      "examPoints": [
+        "The CA generates a CRL from its certificate database after revoking certificates.",
+        "Signed using",
+        "CA Private Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRL Generation\n\nThe CA generates a CRL from its certificate database after revoking certificates.\n\nImportant exam points. The CA generates a CRL from its certificate database after revoking certificates.. Signed using. CA Private Key"
+    },
+    {
+      "id": "crl-structure",
+      "title": "CRL Structure",
+      "definition": "A CRL contains information required for clients to verify revocation status.",
+      "examPoints": [
+        "A CRL contains information required for clients to verify revocation status.",
+        "Issuer",
+        "This Update",
+        "Next Update",
+        "Revoked Certificates",
+        "Signature"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRL Structure\n\nA CRL contains information required for clients to verify revocation status.\n\nImportant exam points. A CRL contains information required for clients to verify revocation status.. Issuer. This Update. Next Update. Revoked Certificates. Signature"
+    },
+    {
+      "id": "crl-distribution-point-cdp",
+      "title": "CRL Distribution Point (CDP)",
+      "definition": "The CRL Distribution Point specifies where clients can download the CRL.",
+      "examPoints": [
+        "The CRL Distribution Point specifies where clients can download the CRL.",
+        "Common Locations",
+        "HTTP",
+        "LDAP"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRL Distribution Point (CDP)\n\nThe CRL Distribution Point specifies where clients can download the CRL.\n\nImportant exam points. The CRL Distribution Point specifies where clients can download the CRL.. Common Locations. HTTP. LDAP"
+    },
+    {
+      "id": "crl-validation",
+      "title": "CRL Validation",
+      "definition": "Clients download the CRL, verify its signature, and search for the certificate's serial number.",
+      "examPoints": [
+        "Clients download the CRL, verify its signature, and search for the certificate's serial number.",
+        "If serial number exists",
+        "↓",
+        "Certificate is Revoked"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRL Validation\n\nClients download the CRL, verify its signature, and search for the certificate's serial number.\n\nImportant exam points. Clients download the CRL, verify its signature, and search for the certificate's serial number.. If serial number exists. ↓. Certificate is Revoked"
+    },
+    {
+      "id": "crl-advantages",
+      "title": "CRL Advantages",
+      "definition": "",
+      "examPoints": [
+        "Widely Supported",
+        "Easy Implementation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRL Advantages\n\nImportant exam points. Widely Supported. Easy Implementation"
+    },
+    {
+      "id": "crl-limitations",
+      "title": "CRL Limitations",
+      "definition": "",
+      "examPoints": [
+        "Periodic Updates",
+        "Can Become Outdated"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRL Limitations\n\nImportant exam points. Periodic Updates. Can Become Outdated"
+    },
+    {
+      "id": "delta-crl",
+      "title": "Delta CRL",
+      "definition": "A Delta CRL contains only the changes since the last Full CRL.",
+      "examPoints": [
+        "A Delta CRL contains only the changes since the last Full CRL.",
+        "Smaller",
+        "Faster"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Delta CRL\n\nA Delta CRL contains only the changes since the last Full CRL.\n\nImportant exam points. A Delta CRL contains only the changes since the last Full CRL.. Smaller. Faster"
+    },
+    {
+      "id": "why-delta-crl",
+      "title": "Why Delta CRL?",
+      "definition": "Reduces bandwidth and download time for large PKIs.",
+      "examPoints": [
+        "Reduces bandwidth and download time for large PKIs.",
+        "Only recent revocations",
+        "Not complete list"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Why Delta CRL?\n\nReduces bandwidth and download time for large PKIs.\n\nImportant exam points. Reduces bandwidth and download time for large PKIs.. Only recent revocations. Not complete list"
+    },
+    {
+      "id": "full-crl-vs-delta-crl",
+      "title": "Full CRL vs Delta CRL",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Full CRL: Complete List; Delta CRL: Only Changes",
+        "Full CRL: Larger; Delta CRL: Smaller",
+        "Full CRL: Less Frequent; Delta CRL: More Frequent"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Full CRL vs Delta CRL\n\nComparison. Full CRL: Complete List; Delta CRL: Only Changes. Full CRL: Larger; Delta CRL: Smaller. Full CRL: Less Frequent; Delta CRL: More Frequent"
+    },
+    {
+      "id": "delta-crl-synchronization",
+      "title": "Delta CRL Synchronization",
+      "definition": "Clients combine the Base CRL with the Delta CRL to obtain the latest revocation information.",
+      "examPoints": [
+        "Clients combine the Base CRL with the Delta CRL to obtain the latest revocation information.",
+        "Base CRL"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Delta CRL Synchronization\n\nClients combine the Base CRL with the Delta CRL to obtain the latest revocation information.\n\nImportant exam points. Clients combine the Base CRL with the Delta CRL to obtain the latest revocation information.. Base CRL"
+    },
+    {
+      "id": "online-certificate-status-protocol-ocsp",
+      "title": "Online Certificate Status Protocol (OCSP)",
+      "definition": "OCSP provides real-time certificate status without downloading the entire CRL.",
+      "examPoints": [
+        "OCSP provides real-time certificate status without downloading the entire CRL.",
+        "Good",
+        "Revoked",
+        "Unknown"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Online Certificate Status Protocol (OCSP)\n\nOCSP provides real-time certificate status without downloading the entire CRL.\n\nImportant exam points. OCSP provides real-time certificate status without downloading the entire CRL.. Good. Revoked. Unknown"
+    },
+    {
+      "id": "ocsp-workflow",
+      "title": "OCSP Workflow",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Client ↓ OCSP Request ↓ OCSP Responder ↓ Signed Response ↓ Certificate Status"
+      ],
+      "oneLiners": [],
+      "narration": "OCSP Workflow\n\nWorkflow. Client ↓ OCSP Request ↓ OCSP Responder ↓ Signed Response ↓ Certificate Status"
+    },
+    {
+      "id": "ocsp-responder",
+      "title": "OCSP Responder",
+      "definition": "A server that answers certificate status requests.",
+      "examPoints": [
+        "A server that answers certificate status requests.",
+        "Usually operated by",
+        "CA"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OCSP Responder\n\nA server that answers certificate status requests.\n\nImportant exam points. A server that answers certificate status requests.. Usually operated by. CA"
+    },
+    {
+      "id": "ocsp-vs-crl",
+      "title": "OCSP vs CRL",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "CRL: Download Entire List; OCSP: Query One Certificate",
+        "CRL: Larger; OCSP: Smaller",
+        "CRL: Periodic; OCSP: Real-Time"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OCSP vs CRL\n\nComparison. CRL: Download Entire List; OCSP: Query One Certificate. CRL: Larger; OCSP: Smaller. CRL: Periodic; OCSP: Real-Time"
+    },
+    {
+      "id": "ocsp-advantages",
+      "title": "OCSP Advantages",
+      "definition": "",
+      "examPoints": [
+        "Small Response",
+        "Near Real-Time"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OCSP Advantages\n\nImportant exam points. Small Response. Near Real-Time"
+    },
+    {
+      "id": "ocsp-limitations",
+      "title": "OCSP Limitations",
+      "definition": "",
+      "examPoints": [
+        "Depends on OCSP Server Availability"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OCSP Limitations\n\nImportant exam points. Depends on OCSP Server Availability"
+    },
+    {
+      "id": "ocsp-stapling",
+      "title": "OCSP Stapling",
+      "definition": "The web server retrieves the OCSP response and sends it to the client during the TLS handshake.",
+      "examPoints": [
+        "The web server retrieves the OCSP response and sends it to the client during the TLS handshake.",
+        "Server performs",
+        "OCSP Lookup"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OCSP Stapling\n\nThe web server retrieves the OCSP response and sends it to the client during the TLS handshake.\n\nImportant exam points. The web server retrieves the OCSP response and sends it to the client during the TLS handshake.. Server performs. OCSP Lookup"
+    },
+    {
+      "id": "why-ocsp-stapling",
+      "title": "Why OCSP Stapling?",
+      "definition": "",
+      "examPoints": [
+        "Speed",
+        "Privacy",
+        "Performance"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Why OCSP Stapling?\n\nImportant exam points. Speed. Privacy. Performance"
+    },
+    {
+      "id": "ocsp-stapling-workflow",
+      "title": "OCSP Stapling Workflow",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Server ↓ Gets OCSP Response ↓ Caches Response ↓ Sends During TLS Handshake ↓ Client Verifies"
+      ],
+      "oneLiners": [],
+      "narration": "OCSP Stapling Workflow\n\nWorkflow. Server ↓ Gets OCSP Response ↓ Caches Response ↓ Sends During TLS Handshake ↓ Client Verifies"
+    },
+    {
+      "id": "browser-support",
+      "title": "Browser Support",
+      "definition": "",
+      "examPoints": [
+        "OCSP Stapling"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Browser Support\n\nImportant exam points. OCSP Stapling"
+    },
+    {
+      "id": "revocation-reasons",
+      "title": "Revocation Reasons",
+      "definition": "The CA records the reason why a certificate was revoked.",
+      "examPoints": [
+        "The CA records the reason why a certificate was revoked.",
+        "Key Compromise",
+        "CA Compromise",
+        "Affiliation Changed",
+        "Superseded",
+        "Privilege Withdrawn"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Revocation Reasons\n\nThe CA records the reason why a certificate was revoked.\n\nImportant exam points. The CA records the reason why a certificate was revoked.. Key Compromise. CA Compromise. Affiliation Changed. Superseded. Privilege Withdrawn"
+    },
+    {
+      "id": "key-compromise",
+      "title": "Key Compromise",
+      "definition": "The certificate's private key has been exposed or stolen.",
+      "examPoints": [
+        "The certificate's private key has been exposed or stolen.",
+        "Most Serious",
+        "Generate New Key Pair"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Key Compromise\n\nThe certificate's private key has been exposed or stolen.\n\nImportant exam points. The certificate's private key has been exposed or stolen.. Most Serious. Generate New Key Pair"
+    },
+    {
+      "id": "ca-compromise",
+      "title": "CA Compromise",
+      "definition": "The CA's private key is compromised.",
+      "examPoints": [
+        "The CA's private key is compromised.",
+        "Extremely Critical",
+        "May require rebuilding PKI."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CA Compromise\n\nThe CA's private key is compromised.\n\nImportant exam points. The CA's private key is compromised.. Extremely Critical. May require rebuilding PKI."
+    },
+    {
+      "id": "affiliation-changed",
+      "title": "Affiliation Changed",
+      "definition": "The certificate owner's organizational relationship has changed.",
+      "examPoints": [
+        "The certificate owner's organizational relationship has changed.",
+        "Employee Leaves Company"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Affiliation Changed\n\nThe certificate owner's organizational relationship has changed.\n\nImportant exam points. The certificate owner's organizational relationship has changed.. Employee Leaves Company"
+    },
+    {
+      "id": "superseded",
+      "title": "Superseded",
+      "definition": "The certificate has been replaced with a newer certificate.",
+      "examPoints": [
+        "The certificate has been replaced with a newer certificate.",
+        "Usually after",
+        "Renewal",
+        "Rekey"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Superseded\n\nThe certificate has been replaced with a newer certificate.\n\nImportant exam points. The certificate has been replaced with a newer certificate.. Usually after. Renewal. Rekey"
+    },
+    {
+      "id": "cessation-of-operation",
+      "title": "Cessation of Operation",
+      "definition": "The service or organization no longer operates.",
+      "examPoints": [
+        "The service or organization no longer operates.",
+        "Website Shutdown"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Cessation of Operation\n\nThe service or organization no longer operates.\n\nImportant exam points. The service or organization no longer operates.. Website Shutdown"
+    },
+    {
+      "id": "privilege-withdrawn",
+      "title": "Privilege Withdrawn",
+      "definition": "The certificate owner no longer has permission to perform the associated activity.",
+      "examPoints": [
+        "The certificate owner no longer has permission to perform the associated activity.",
+        "Admin Rights Removed"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Privilege Withdrawn\n\nThe certificate owner no longer has permission to perform the associated activity.\n\nImportant exam points. The certificate owner no longer has permission to perform the associated activity.. Admin Rights Removed"
+    },
+    {
+      "id": "certificate-hold",
+      "title": "Certificate Hold",
+      "definition": "Temporary suspension of a certificate.",
+      "examPoints": [
+        "Temporary suspension of a certificate.",
+        "Can later be restored."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Hold\n\nTemporary suspension of a certificate.\n\nImportant exam points. Temporary suspension of a certificate.. Can later be restored."
+    },
+    {
+      "id": "remove-from-crl",
+      "title": "Remove From CRL",
+      "definition": "Removes a certificate from the temporary Hold state.",
+      "examPoints": [
+        "Removes a certificate from the temporary Hold state.",
+        "Applies only to",
+        "Certificate Hold"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Remove From CRL\n\nRemoves a certificate from the temporary Hold state.\n\nImportant exam points. Removes a certificate from the temporary Hold state.. Applies only to. Certificate Hold"
+    },
+    {
+      "id": "expired-certificate",
+      "title": "Expired Certificate",
+      "definition": "A certificate automatically becomes invalid after the Not After date.",
+      "examPoints": [
+        "A certificate automatically becomes invalid after the Not After date.",
+        "Automatic",
+        "Time Based"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Expired Certificate\n\nA certificate automatically becomes invalid after the Not After date.\n\nImportant exam points. A certificate automatically becomes invalid after the Not After date.. Automatic. Time Based"
+    },
+    {
+      "id": "expired-vs-revoked",
+      "title": "Expired vs Revoked",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Expired: Automatic; Revoked: Manual",
+        "Expired: Time-Based; Revoked: Security-Based",
+        "Expired: Planned; Revoked: Emergency"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Expired vs Revoked\n\nComparison. Expired: Automatic; Revoked: Manual. Expired: Time-Based; Revoked: Security-Based. Expired: Planned; Revoked: Emergency"
+    },
+    {
+      "id": "browser-behavior",
+      "title": "Browser Behavior",
+      "definition": "",
+      "examPoints": [
+        "Expired → Warning",
+        "Revoked → Block Connection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Browser Behavior\n\nImportant exam points. Expired → Warning. Revoked → Block Connection"
+    },
+    {
+      "id": "tls-impact",
+      "title": "TLS Impact",
+      "definition": "",
+      "examPoints": [
+        "↓",
+        "TLS Handshake Fails"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "TLS Impact\n\nImportant exam points. ↓. TLS Handshake Fails"
+    },
+    {
+      "id": "certificate-compromise",
+      "title": "Certificate Compromise",
+      "definition": "Occurs when a certificate or its private key can no longer be trusted.",
+      "examPoints": [
+        "Occurs when a certificate or its private key can no longer be trusted.",
+        "Stolen Private Key",
+        "Leaked PFX",
+        "Hacked Server"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Certificate Compromise\n\nOccurs when a certificate or its private key can no longer be trusted.\n\nImportant exam points. Occurs when a certificate or its private key can no longer be trusted.. Stolen Private Key. Leaked PFX. Hacked Server"
+    },
+    {
+      "id": "detecting-compromise",
+      "title": "Detecting Compromise",
+      "definition": "",
+      "examPoints": [
+        "Logs",
+        "CT Logs",
+        "Security Alerts"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Detecting Compromise\n\nImportant exam points. Logs. CT Logs. Security Alerts"
+    },
+    {
+      "id": "incident-response",
+      "title": "Incident Response",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Detect ↓ Contain ↓ Revoke ↓ Generate New Key ↓ Create CSR ↓ Issue Certificate ↓ Install ↓ Monitor"
+      ],
+      "oneLiners": [],
+      "narration": "Incident Response\n\nWorkflow. Detect ↓ Contain ↓ Revoke ↓ Generate New Key ↓ Create CSR ↓ Issue Certificate ↓ Install ↓ Monitor"
+    },
+    {
+      "id": "rekey-after-compromise",
+      "title": "Rekey after Compromise",
+      "definition": "After compromise, a completely new key pair must be generated.",
+      "examPoints": [
+        "After compromise, a completely new key pair must be generated.",
+        "Never reuse",
+        "Compromised Key"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Rekey after Compromise\n\nAfter compromise, a completely new key pair must be generated.\n\nImportant exam points. After compromise, a completely new key pair must be generated.. Never reuse. Compromised Key"
+    },
+    {
+      "id": "recovery-process",
+      "title": "Recovery Process",
+      "definition": "",
+      "examPoints": [
+        "Generate Keys",
+        "New CSR",
+        "New Certificate",
+        "Deploy",
+        "Remove Old Keys"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Recovery Process\n\nImportant exam points. Generate Keys. New CSR. New Certificate. Deploy. Remove Old Keys"
+    },
+    {
+      "id": "enterprise-best-practices",
+      "title": "Enterprise Best Practices",
+      "definition": "",
+      "examPoints": [
+        "Use HSM",
+        "Enable Monitoring",
+        "Automate Renewal",
+        "Check Revocation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Enterprise Best Practices\n\nImportant exam points. Use HSM. Enable Monitoring. Automate Renewal. Check Revocation"
+    },
+    {
+      "id": "crl-vs-ocsp",
+      "title": "CRL vs OCSP",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "CRL: Full List; OCSP: Single Query",
+        "CRL: Offline; OCSP: Online",
+        "CRL: Periodic; OCSP: Real-Time",
+        "CRL: Large Download; OCSP: Small Response"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "CRL vs OCSP\n\nComparison. CRL: Full List; OCSP: Single Query. CRL: Offline; OCSP: Online. CRL: Periodic; OCSP: Real-Time. CRL: Large Download; OCSP: Small Response"
+    },
+    {
+      "id": "full-crl-vs-delta-crl",
+      "title": "Full CRL vs Delta CRL",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Full: Complete List; Delta: Only Updates",
+        "Full: Larger; Delta: Smaller"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Full CRL vs Delta CRL\n\nComparison. Full: Complete List; Delta: Only Updates. Full: Larger; Delta: Smaller"
+    },
+    {
+      "id": "ocsp-vs-ocsp-stapling",
+      "title": "OCSP vs OCSP Stapling",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "OCSP: Client contacts OCSP Server; Stapling: Server contacts OCSP Server",
+        "OCSP: Slower; Stapling: Faster",
+        "OCSP: Less Privacy; Stapling: Better Privacy"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OCSP vs OCSP Stapling\n\nComparison. OCSP: Client contacts OCSP Server; Stapling: Server contacts OCSP Server. OCSP: Slower; Stapling: Faster. OCSP: Less Privacy; Stapling: Better Privacy"
+    },
+    {
+      "id": "expired-vs-revoked",
+      "title": "Expired vs Revoked",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Expired: Time Limit; Revoked: Security Decision",
+        "Expired: Automatic; Revoked: Manual"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Expired vs Revoked\n\nComparison. Expired: Time Limit; Revoked: Security Decision. Expired: Automatic; Revoked: Manual"
+    },
+    {
+      "id": "key-compromise-vs-ca-compromise",
+      "title": "Key Compromise vs CA Compromise",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Key Compromise: One Certificate; CA Compromise: Entire PKI May Be Affected",
+        "Key Compromise: Generate New Key; CA Compromise: Rebuild Trust Chain"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Key Compromise vs CA Compromise\n\nComparison. Key Compromise: One Certificate; CA Compromise: Entire PKI May Be Affected. Key Compromise: Generate New Key; CA Compromise: Rebuild Trust Chain"
+    },
+    {
+      "id": "openssl-commands",
+      "title": "OpenSSL Commands",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Generate CRL: openssl ca -gencrl -out ca.crl"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "OpenSSL Commands\n\nCommands. Generate CRL: openssl ca -gencrl -out ca.crl"
+    },
+    {
+      "id": "phase-7-certificate-revocation",
+      "title": "Phase 7 - Certificate Revocation",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "View CRL: openssl crl -in ca.crl -text -noout"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 7 - Certificate Revocation\n\nCommands. View CRL: openssl crl -in ca.crl -text -noout"
+    },
+    {
+      "id": "phase-7-certificate-revocation",
+      "title": "Phase 7 - Certificate Revocation",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Revoke Certificate: openssl ca -revoke server.crt"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 7 - Certificate Revocation\n\nCommands. Revoke Certificate: openssl ca -revoke server.crt"
+    },
+    {
+      "id": "phase-7-certificate-revocation",
+      "title": "Phase 7 - Certificate Revocation",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Verify Certificate with CRL: openssl verify \\ -CAfile root.crt \\ -CRLfile ca.crl \\ -crl_check server.crt"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 7 - Certificate Revocation\n\nCommands. Verify Certificate with CRL: openssl verify \\ -CAfile root.crt \\ -CRLfile ca.crl \\ -crl_check server.crt"
+    },
+    {
+      "id": "phase-7-certificate-revocation",
+      "title": "Phase 7 - Certificate Revocation",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Check OCSP: openssl ocsp \\ -issuer subCA.crt \\ -cert server.crt \\ -url http://ocsp.example.com"
+      ],
+      "workflows": [],
+      "oneLiners": [],
+      "narration": "Phase 7 - Certificate Revocation\n\nCommands. Check OCSP: openssl ocsp \\ -issuer subCA.crt \\ -cert server.crt \\ -url http://ocsp.example.com"
+    },
+    {
+      "id": "top-35-one-liners-for-exam",
+      "title": "Top 35 One-Liners for Exam",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Revocation invalidates a certificate before expiration.",
+        "Expiration happens automatically at Not After.",
+        "CRL = Certificate Revocation List.",
+        "CRL contains revoked serial numbers.",
+        "CRLs are digitally signed by the CA.",
+        "Clients verify CRL signatures before trusting them.",
+        "CRL Distribution Point tells clients where to download the CRL.",
+        "Delta CRL contains only recent changes.",
+        "Delta CRL requires a Base CRL.",
+        "OCSP provides real-time certificate status.",
+        "OCSP status values: Good, Revoked, Unknown.",
+        "OCSP queries one certificate at a time.",
+        "OCSP responses are signed.",
+        "OCSP Stapling lets the server send the cached OCSP response.",
+        "OCSP Stapling improves performance and privacy.",
+        "Browsers prefer OCSP Stapling when available.",
+        "The most common revocation reason is Key Compromise.",
+        "CA Compromise is the most severe PKI incident.",
+        "Affiliation Changed means the owner's relationship changed.",
+        "Superseded means a newer certificate replaced the old one.",
+        "Certificate Hold is a temporary suspension.",
+        "Remove from CRL releases a certificate from Hold status.",
+        "Expired certificates are no longer valid even if never revoked.",
+        "Revoked certificates must not be trusted even if still within their validity period.",
+        "A TLS handshake should fail for revoked certificates.",
+        "Private-key compromise requires rekeying.",
+        "Never reuse a compromised private key.",
+        "Incident response begins with detection.",
+        "Recovery includes revocation, rekeying, and reissuance.",
+        "HSMs help protect CA private keys.",
+        "Monitor certificate expiration proactively.",
+        "Automate renewal where possible.",
+        "Use both CRL and OCSP where appropriate.",
+        "Certificate Transparency logs can help detect unauthorized certificate issuance.",
+        "The most important workflow to memorize is: Detect → Revoke → CRL/OCSP Update → New Key → New CSR → New Certificate → Deploy → Destroy Old Key."
+      ],
+      "narration": "Top 35 One-Liners for Exam\n\nMemory points. Revocation invalidates a certificate before expiration.. Expiration happens automatically at Not After.. CRL = Certificate Revocation List.. CRL contains revoked serial numbers.. CRLs are digitally signed by the CA.. Clients verify CRL signatures before trusting them.. CRL Distribution Point tells clients where to download the CRL.. Delta CRL contains only recent changes.. Delta CRL requires a Base CRL.. OCSP provides real-time certificate status.. OCSP status values: Good, Revoked, Unknown.. OCSP queries one certificate at a time.. OCSP responses are signed.. OCSP Stapling lets the server send the cached OCSP response.. OCSP Stapling improves performance and privacy.. Browsers prefer OCSP Stapling when available.. The most common revocation reason is Key Compromise.. CA Compromise is the most severe PKI incident.. Affiliation Changed means the owner's relationship changed.. Superseded means a newer certificate replaced the old one.. Certificate Hold is a temporary suspension.. Remove from CRL releases a certificate from Hold status.. Expired certificates are no longer valid even if never revoked.. Revoked certificates must not be trusted even if still within their validity period.. A TLS handshake should fail for revoked certificates.. Private-key compromise requires rekeying.. Never reuse a compromised private key.. Incident response begins with detection.. Recovery includes revocation, rekeying, and reissuance.. HSMs help protect CA private keys.. Monitor certificate expiration proactively.. Automate renewal where possible.. Use both CRL and OCSP where appropriate.. Certificate Transparency logs can help detect unauthorized certificate issuance.. The most important workflow to memorize is: Detect → Revoke → CRL/OCSP Update → New Key → New CSR → New Certificate → Deploy → Destroy Old Key."
+    }
+  ]
+}

@@ -7,6 +7,7 @@ const LoginPage = lazy(() => import("./pages/LoginPage.jsx"));
 const DashboardPage = lazy(() => import("./pages/DashboardPage.jsx"));
 const TopicWisePage = lazy(() => import("./pages/TopicWisePage.jsx"));
 const QuizPage = lazy(() => import("./pages/QuizPage.jsx"));
+const RevisionPage = lazy(() => import("./pages/RevisionPage.jsx"));
 const ResultPage = lazy(() => import("./pages/ResultPage.jsx"));
 const AnalyticsPage = lazy(() => import("./pages/AnalyticsPage.jsx"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage.jsx"));
@@ -33,6 +34,7 @@ export default function App() {
           }
         >
           <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/subjects/:subjectSlug/revision" element={<RevisionPage />} />
           <Route path="/subjects/:subjectSlug/topics" element={<TopicWisePage />} />
           <Route path="/subjects/:subjectSlug/topics/:setSlug" element={<QuizPage quizType="topic" />} />
           <Route path="/subjects/:subjectSlug/:stageSlug" element={<QuizPage quizType="stage" />} />

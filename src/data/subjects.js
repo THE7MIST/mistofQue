@@ -31,7 +31,9 @@ export const subjects = [
     description: "Certificates, trust chains, revocation, and secure handshakes.",
     stages: buildStages("pki"),
     topicsPath: "/subjects/pki/topics",
-    topicIndexFile: "/data/pki/topics/index.json"
+    topicIndexFile: "/data/pki/topics/index.json",
+    revisionPath: "/subjects/pki/revision",
+    revisionIndexFile: "/data/pki/revision/index.json"
   },
   {
     slug: "ndc",

@@ -229,7 +229,11 @@ export default function QuizPage({ quizType }) {
           setQuiz({
             ...data,
             subjectSlug,
-            subject: data.subject || subject.name
+            subject: data.subject || subject.name,
+            quizType,
+            stageSlug,
+            setSlug,
+            quizKey: quizType === "topic" ? `${subjectSlug}:topic:${setSlug}` : `${subjectSlug}:stage:${stageSlug}`
           });
           setStatus("ready");
         }

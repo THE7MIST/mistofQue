@@ -8,10 +8,45 @@ function hasConfiguredApi() {
 
 function readResults() {
   try {
-    return JSON.parse(localStorage.getItem(RESULTS_KEY)) || [];
+    const results = JSON.parse(localStorage.getItem(RESULTS_KEY)) || [];
+    return Array.isArray(results) ? results.map(normalizeStoredResult).filter(Boolean) : [];
   } catch {
     return [];
   }
+}
+
+function normalizeWeakAreas(value) {
+  if (Array.isArray(value)) return value;
+  if (typeof value === "string") {
+    return value.split(",").filter(Boolean).map((name) => ({ name: name.trim(), count: 1 }));
+  }
+  return [];
+}
+
+function normalizeStoredResult(result, index) {
+  if (!result || typeof result !== "object") return null;
+
+  return {
+    ...result,
+    id: result.id || `legacy-${result.completedAt || result.date || index}-${index}`,
+    user: result.user || result.email || "",
+    subject: result.subject || "Practice",
+    subjectSlug: result.subjectSlug || "",
+    title: result.title || "",
+    quizType: result.quizType || "",
+    stageSlug: result.stageSlug || "",
+    setSlug: result.setSlug || "",
+    quizKey: result.quizKey || "",
+    stage: result.stage || result.title || "Practice",
+    score: Number(result.score || 0),
+    correct: Number(result.correct || 0),
+    wrong: Number(result.wrong || 0),
+    unattempted: Number(result.unattempted || 0),
+    totalQuestions: Number(result.totalQuestions || result.correct + result.wrong || 0),
+    elapsedSeconds: Number(result.elapsedSeconds || 0),
+    completedAt: result.completedAt || result.date || new Date().toISOString(),
+    weakAreas: normalizeWeakAreas(result.weakAreas)
+  };
 }
 
 function writeResults(results) {
@@ -77,6 +112,11 @@ export function saveLocalResult(result, user) {
     user: user.email,
     subject: result.subject,
     subjectSlug: result.subjectSlug,
+    title: result.title,
+    quizType: result.quizType,
+    stageSlug: result.stageSlug,
+    setSlug: result.setSlug,
+    quizKey: result.quizKey,
     stage: result.stage,
     score: result.score,
     correct: result.correct,
