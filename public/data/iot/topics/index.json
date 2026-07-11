@@ -1,6 +1,14 @@
 {
   "sets": [
-    { "setNumber": "Set 01", "topic": "IoT Security", "slug": "set01-iot-security" },
-    { "setNumber": "Set 02", "topic": "MQTT", "slug": "set02-mqtt" }
+    {
+      "setNumber": "Set 01",
+      "topic": "Device Hardening, Telemetry Encryption, Inventory & Firmware",
+      "slug": "set01-iot-security"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "MQTT Broker, Publish-Subscribe, Delivery & TLS",
+      "slug": "set02-mqtt"
+    }
   ]
 }

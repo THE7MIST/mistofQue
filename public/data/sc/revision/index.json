@@ -1,0 +1,35 @@
+{
+  "subject": "Security Concepts",
+  "subjectSlug": "sc",
+  "title": "Security Concepts Revision",
+  "phases": [
+    {
+      "id": "web-application-security",
+      "title": "Web Application Security",
+      "file": "/data/sc/revision/web-application-security.json",
+      "topicCount": 121,
+      "audio": "/audio/sc/web-application-security.mp3"
+    },
+    {
+      "id": "ethical-hacking",
+      "title": "Ethical Hacking",
+      "file": "/data/sc/revision/ethical-hacking.json",
+      "topicCount": 221,
+      "audio": "/audio/sc/ethical-hacking.mp3"
+    },
+    {
+      "id": "malware-reverse-engineering",
+      "title": "Malware Reverse Engineering",
+      "file": "/data/sc/revision/malware-reverse-engineering.json",
+      "topicCount": 174,
+      "audio": "/audio/sc/malware-reverse-engineering.mp3"
+    },
+    {
+      "id": "mobile-security-notes",
+      "title": "Mobile Security Notes",
+      "file": "/data/sc/revision/mobile-security-notes.json",
+      "topicCount": 195,
+      "audio": "/audio/sc/mobile-security-notes.mp3"
+    }
+  ]
+}

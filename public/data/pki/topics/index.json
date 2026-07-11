@@ -2,37 +2,37 @@
   "sets": [
     {
       "setNumber": "Set 1.1",
-      "topic": "PKI Set 1.1 (83 MCQ)",
+      "topic": "PKI Basics, InfoSec, Encryption, Ciphers & Key Generation",
       "slug": "set01-1-pki"
     },
     {
       "setNumber": "Set 1.2",
-      "topic": "PKI Set 1.2 (83 MCQ)",
+      "topic": "Key Distribution, Diffie-Hellman, SHA/HMAC & Trust Models",
       "slug": "set01-2-pki"
     },
     {
       "setNumber": "Set 1.3",
-      "topic": "PKI Set 1.3 (83 MCQ)",
+      "topic": "CA Hierarchy, CRL/OCSP, Certificates, OAuth/FIDO & TLS Email",
       "slug": "set01-3-pki"
     },
     {
       "setNumber": "Set 02",
-      "topic": "Revocation",
+      "topic": "OCSP, Stapling, Revocation & Key Compromise",
       "slug": "set02-revocation"
     },
     {
       "setNumber": "Set 03",
-      "topic": "CDAC PKI & Biometric Q11-Q20",
+      "topic": "CRL, OCSP, Diffie-Hellman, IPsec & Secure Email",
       "slug": "set03-cdac-pki-biometric"
     },
     {
       "setNumber": "Set 04",
-      "topic": "CDAC PKI & Biometric Q21-Q30",
+      "topic": "Hybrid Encryption, Steganography, IDS, RSA & Firewalls",
       "slug": "set04-cdac-pki-biometric"
     },
     {
       "setNumber": "Set 05",
-      "topic": "CDAC PKI & Biometric Q31-Q40",
+      "topic": "Digital Signatures, Web of Trust, CERT, Firewalls & PKCS",
       "slug": "set05-cdac-pki-biometric"
     }
   ]

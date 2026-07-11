@@ -1,37 +1,59 @@
 {
   "version": "1",
-  "title": "Set 01 - Routing",
+  "title": "Set 01 - Routing Tables, Default Routes & OSPF",
   "subject": "Networking",
   "stage": "Topic Wise MCQ",
-  "topic": "Routing",
+  "topic": "Routing Tables, Default Routes & OSPF",
   "durationMinutes": 8,
   "questions": [
     {
       "id": 1,
       "question": "What does a routing table contain?",
-      "options": ["Network destinations and next hops", "User passwords", "Monitor refresh rates", "Browser cookies only"],
+      "options": [
+        "Network destinations and next hops",
+        "User passwords",
+        "Monitor refresh rates",
+        "Browser cookies only"
+      ],
       "correct": 0,
       "description": "Routing tables map destinations to next hops or outgoing interfaces.",
       "difficulty": "Easy",
-      "tags": ["Routing"]
+      "tags": [
+        "Routing"
+      ]
     },
     {
       "id": 2,
       "question": "Which route is used when no more specific route matches?",
-      "options": ["Default route", "Host route only", "Loopback route only", "Broadcast route"],
+      "options": [
+        "Default route",
+        "Host route only",
+        "Loopback route only",
+        "Broadcast route"
+      ],
       "correct": 0,
       "description": "A default route catches traffic for destinations without a more specific route.",
       "difficulty": "Medium",
-      "tags": ["Routing"]
+      "tags": [
+        "Routing"
+      ]
     },
     {
       "id": 3,
       "question": "Which routing protocol is link-state?",
-      "options": ["OSPF", "BGP", "FTP", "HTTP"],
+      "options": [
+        "OSPF",
+        "BGP",
+        "FTP",
+        "HTTP"
+      ],
       "correct": 0,
       "description": "OSPF uses link-state advertisements to build a topology database.",
       "difficulty": "Medium",
-      "tags": ["OSPF", "Routing"]
+      "tags": [
+        "OSPF",
+        "Routing"
+      ]
     }
   ]
 }

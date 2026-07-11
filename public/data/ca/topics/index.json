@@ -2,22 +2,22 @@
   "sets": [
     {
       "setNumber": "Set 01",
-      "topic": "Compliance Audits Questions 1-77",
+      "topic": "Audit Types, Privacy, DR, Code & Physical Security",
       "slug": "set01"
     },
     {
       "setNumber": "Set 02",
-      "topic": "Compliance Audits Questions 78-154",
+      "topic": "SOX, SOC Reports, COBIT, HIPAA & CIS",
       "slug": "set02"
     },
     {
       "setNumber": "Set 03",
-      "topic": "Compliance Audits Questions 155-230",
+      "topic": "CIS Controls, Benchmarks, Compliance & SSE-CMM",
       "slug": "set03"
     },
     {
       "setNumber": "Set 04",
-      "topic": "IT/IS Auditing - Set 2",
+      "topic": "Audit Planning, Internal Controls, Risk & ISO 27001",
       "slug": "set04"
     }
   ]

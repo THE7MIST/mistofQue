@@ -1,9 +1,9 @@
 {
   "version": "1",
-  "title": "Cyber Forensic Set 2",
+  "title": "Set 02 - Hex Analysis, File Signatures, Encoding, Encryption & Tools",
   "subject": "Cyber Forensic",
   "stage": "Topic Wise MCQ",
-  "topic": "Cyber Forensics Questions 51-100",
+  "topic": "Hex Analysis, File Signatures, Encoding, Encryption & Tools",
   "durationMinutes": 50,
   "questions": [
     {

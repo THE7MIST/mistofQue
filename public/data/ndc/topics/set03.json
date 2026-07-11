@@ -1,9 +1,9 @@
 {
   "version": "1",
-  "title": "NDC Set 3",
+  "title": "Set 03 - OpenVPN, iptables, NAT, Firewalls & Security Threats",
   "subject": "NDC",
   "stage": "Topic Wise MCQ",
-  "topic": "Network Defense Core Questions",
+  "topic": "OpenVPN, iptables, NAT, Firewalls & Security Threats",
   "durationMinutes": 40,
   "questions": [
     {

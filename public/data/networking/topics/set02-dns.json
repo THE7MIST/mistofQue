@@ -1,37 +1,60 @@
 {
   "version": "1",
-  "title": "Set 02 - DNS",
+  "title": "Set 02 - DNS Records, Mail Routing, TTL & Caching",
   "subject": "Networking",
   "stage": "Topic Wise MCQ",
-  "topic": "DNS",
+  "topic": "DNS Records, Mail Routing, TTL & Caching",
   "durationMinutes": 8,
   "questions": [
     {
       "id": 1,
       "question": "Which DNS record maps a domain to an IPv4 address?",
-      "options": ["A", "MX", "TXT", "CNAME only"],
+      "options": [
+        "A",
+        "MX",
+        "TXT",
+        "CNAME only"
+      ],
       "correct": 0,
       "description": "A records map names to IPv4 addresses.",
       "difficulty": "Easy",
-      "tags": ["DNS"]
+      "tags": [
+        "DNS"
+      ]
     },
     {
       "id": 2,
       "question": "Which DNS record identifies mail servers?",
-      "options": ["MX", "AAAA", "PTR", "SRV only"],
+      "options": [
+        "MX",
+        "AAAA",
+        "PTR",
+        "SRV only"
+      ],
       "correct": 0,
       "description": "MX records indicate mail exchange servers for a domain.",
       "difficulty": "Easy",
-      "tags": ["DNS", "Email"]
+      "tags": [
+        "DNS",
+        "Email"
+      ]
     },
     {
       "id": 3,
       "question": "What does DNS TTL control?",
-      "options": ["How long records may be cached", "How large a packet must be", "How many users can log in", "How certificates are signed"],
+      "options": [
+        "How long records may be cached",
+        "How large a packet must be",
+        "How many users can log in",
+        "How certificates are signed"
+      ],
       "correct": 0,
       "description": "TTL defines how long resolvers can cache DNS records.",
       "difficulty": "Medium",
-      "tags": ["DNS", "Caching"]
+      "tags": [
+        "DNS",
+        "Caching"
+      ]
     }
   ]
 }

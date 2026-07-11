@@ -1,6 +1,14 @@
 {
   "sets": [
-    { "setNumber": "Set 01", "topic": "Routing", "slug": "set01-routing" },
-    { "setNumber": "Set 02", "topic": "DNS", "slug": "set02-dns" }
+    {
+      "setNumber": "Set 01",
+      "topic": "Routing Tables, Default Routes & OSPF",
+      "slug": "set01-routing"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "DNS Records, Mail Routing, TTL & Caching",
+      "slug": "set02-dns"
+    }
   ]
 }

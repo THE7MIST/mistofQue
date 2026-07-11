@@ -1,8 +1,24 @@
 {
   "sets": [
-    { "setNumber": "Set 01", "topic": "XDR", "slug": "set01-xdr" },
-    { "setNumber": "Set 02", "topic": "TLS", "slug": "set02-tls" },
-    { "setNumber": "Set 03", "topic": "SSL", "slug": "set03-ssl" },
-    { "setNumber": "Set 04", "topic": "PKI", "slug": "set04-pki" }
+    {
+      "setNumber": "Set 01",
+      "topic": "XDR Telemetry, Correlation, SOC & Investigation",
+      "slug": "set01-xdr"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "TLS Basics, Certificates, Versions & Forward Secrecy",
+      "slug": "set02-tls"
+    },
+    {
+      "setNumber": "Set 03",
+      "topic": "SSL Deprecation, TLS Migration, Certificates & Hardening",
+      "slug": "set03-ssl"
+    },
+    {
+      "setNumber": "Set 04",
+      "topic": "Certificate Authorities, Fields, Revocation & Key Protection",
+      "slug": "set04-pki"
+    }
   ]
 }

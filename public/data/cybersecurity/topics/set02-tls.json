@@ -1,46 +1,77 @@
 {
   "version": "1",
-  "title": "Set 02 - TLS",
+  "title": "Set 02 - TLS Basics, Certificates, Versions & Forward Secrecy",
   "subject": "Cyber Security",
   "stage": "Topic Wise MCQ",
-  "topic": "TLS",
+  "topic": "TLS Basics, Certificates, Versions & Forward Secrecy",
   "durationMinutes": 8,
   "questions": [
     {
       "id": 1,
       "question": "What is TLS?",
-      "options": ["Transport Layer Security", "Token Link Security", "Tunnel Layer Service", "Trusted Layer Session"],
+      "options": [
+        "Transport Layer Security",
+        "Token Link Security",
+        "Tunnel Layer Service",
+        "Trusted Layer Session"
+      ],
       "correct": 0,
       "description": "TLS is the successor of SSL and protects data in transit.",
       "difficulty": "Easy",
-      "tags": ["TLS"]
+      "tags": [
+        "TLS"
+      ]
     },
     {
       "id": 2,
       "question": "Which TLS feature helps verify the server identity?",
-      "options": ["Digital certificate", "Subnet mask", "NAT table", "DHCP scope"],
+      "options": [
+        "Digital certificate",
+        "Subnet mask",
+        "NAT table",
+        "DHCP scope"
+      ],
       "correct": 0,
       "description": "The server presents a certificate that chains to a trusted certificate authority.",
       "difficulty": "Easy",
-      "tags": ["TLS", "PKI"]
+      "tags": [
+        "TLS",
+        "PKI"
+      ]
     },
     {
       "id": 3,
       "question": "Which TLS version should generally be avoided in modern systems?",
-      "options": ["TLS 1.0", "TLS 1.3", "TLS 1.2", "TLS 1.2 with strong ciphers"],
+      "options": [
+        "TLS 1.0",
+        "TLS 1.3",
+        "TLS 1.2",
+        "TLS 1.2 with strong ciphers"
+      ],
       "correct": 0,
       "description": "TLS 1.0 is deprecated and should not be used for modern secure communication.",
       "difficulty": "Medium",
-      "tags": ["TLS", "Protocol Versions"]
+      "tags": [
+        "TLS",
+        "Protocol Versions"
+      ]
     },
     {
       "id": 4,
       "question": "What does perfect forward secrecy protect against?",
-      "options": ["Past sessions being decrypted after long-term key compromise", "Expired DNS records", "Local disk corruption", "User typo errors"],
+      "options": [
+        "Past sessions being decrypted after long-term key compromise",
+        "Expired DNS records",
+        "Local disk corruption",
+        "User typo errors"
+      ],
       "correct": 0,
       "description": "Forward secrecy keeps prior session keys safe even if a long-term private key is later exposed.",
       "difficulty": "Hard",
-      "tags": ["TLS", "Key Exchange"]
+      "tags": [
+        "TLS",
+        "Key Exchange"
+      ]
     }
   ]
 }

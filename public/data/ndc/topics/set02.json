@@ -1,9 +1,9 @@
 {
   "version": "1",
-  "title": "NDC Set 2",
+  "title": "Set 02 - CIA, Risk, Firewalls, DMZ & Packet Filtering",
   "subject": "NDC",
   "stage": "Topic Wise MCQ",
-  "topic": "Network Defense Sessions 1-6",
+  "topic": "CIA, Risk, Firewalls, DMZ & Packet Filtering",
   "durationMinutes": 55,
   "questions": [
     {

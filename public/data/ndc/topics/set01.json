@@ -1,9 +1,9 @@
 {
   "version": "1",
-  "title": "NDC Set 1",
+  "title": "Set 01 - VPN Models, Tunneling, IPsec, TLS VPN & Remote Access",
   "subject": "NDC",
   "stage": "Topic Wise MCQ",
-  "topic": "Network Defense Sessions 7-16",
+  "topic": "VPN Models, Tunneling, IPsec, TLS VPN & Remote Access",
   "durationMinutes": 70,
   "questions": [
     {

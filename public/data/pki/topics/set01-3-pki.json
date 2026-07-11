@@ -1,9 +1,9 @@
 {
   "version": "3",
-  "title": "PKI Set 1.3",
+  "title": "Set 1.3 - CA Hierarchy, CRL/OCSP, Certificates, OAuth/FIDO & TLS Email",
   "subject": "PKI",
   "stage": "Topic Wise MCQ",
-  "topic": "PKI Set 1.3",
+  "topic": "CA Hierarchy, CRL/OCSP, Certificates, OAuth/FIDO & TLS Email",
   "durationMinutes": 83,
   "questions": [
     {

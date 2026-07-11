@@ -1,0 +1,3380 @@
+{
+  "id": "mobile-security-notes",
+  "subject": "Security Concepts",
+  "title": "Mobile Security Notes",
+  "topics": [
+    {
+      "id": "03-what-is-mobile-security",
+      "title": "What is Mobile Security?",
+      "definition": "Mobile Security is the practice of protecting smartphones, tablets, and other mobile devices from unauthorized access, malware, data theft, network attacks, and application vulnerabilities.",
+      "examPoints": [
+        "It protects:",
+        "Device",
+        "Operating System",
+        "Applications",
+        "Network Communications",
+        "Stored Data",
+        "User Identity",
+        "Security Goals",
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Authentication",
+        "Authorization",
+        "Privacy",
+        "# Session 21"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "04-1-android-architecture",
+      "title": "1. Android Architecture",
+      "definition": "Android is an open-source mobile operating system developed by Google based on the Linux Kernel.",
+      "examPoints": [
+        "Android Architecture consists of five layers."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Applications",
+        "↓",
+        "Application Framework",
+        "Android Runtime (ART) + Native Libraries",
+        "Hardware Abstraction Layer (HAL)",
+        "Linux Kernel"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "05-layer-1-applications",
+      "title": "Layer 1 — Applications",
+      "definition": "Contains all Android applications.",
+      "examPoints": [
+        "Examples",
+        "Phone",
+        "Camera",
+        "Chrome",
+        "WhatsApp",
+        "Gmail",
+        "Maps",
+        "Third-party applications are also installed here."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "06-layer-2-application-framework",
+      "title": "Layer 2 — Application Framework",
+      "definition": "Provides APIs for application development.",
+      "examPoints": [
+        "Major Components",
+        "Activity Manager",
+        "Window Manager",
+        "Package Manager",
+        "Notification Manager",
+        "Resource Manager",
+        "Content Provider",
+        "Location Manager",
+        "Telephony Manager",
+        "Applications communicate with hardware through this layer."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "07-layer-3-android-runtime-art",
+      "title": "Layer 3 — Android Runtime (ART)",
+      "definition": "ART executes Android applications.",
+      "examPoints": [
+        "Responsibilities",
+        "Executes DEX bytecode",
+        "Garbage Collection",
+        "Memory Management",
+        "Just-In-Time Compilation",
+        "Ahead-of-Time Compilation",
+        "Older Android versions used Dalvik VM.",
+        "Modern Android uses ART."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "08-native-libraries",
+      "title": "Native Libraries",
+      "definition": "Written mostly in C/C++.",
+      "examPoints": [
+        "Examples",
+        "SQLite",
+        "OpenSSL/BoringSSL",
+        "WebKit",
+        "Media Framework",
+        "libc",
+        "OpenGL ES",
+        "Applications access these libraries through the framework."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "09-layer-4-hardware-abstraction-layer-hal",
+      "title": "Layer 4 — Hardware Abstraction Layer (HAL)",
+      "definition": "Provides a standard interface between Android Framework and hardware.",
+      "examPoints": [
+        "Examples",
+        "Camera",
+        "GPS",
+        "Bluetooth",
+        "Wi-Fi",
+        "NFC",
+        "Sensors",
+        "Applications never communicate directly with hardware."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "10-layer-5-linux-kernel",
+      "title": "Layer 5 — Linux Kernel",
+      "definition": "Most important security layer.",
+      "examPoints": [
+        "Provides",
+        "Process Management",
+        "Memory Management",
+        "Device Drivers",
+        "Networking",
+        "File System",
+        "User IDs",
+        "Process Isolation",
+        "Sandboxing",
+        "SELinux Enforcement",
+        "Exam Point",
+        "Android sandboxing is enforced by the Linux Kernel."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "11-android-architecture-memory-trick",
+      "title": "Android Architecture (Memory Trick)",
+      "definition": "Remember:",
+      "examPoints": [
+        "A Friendly Robot Helps Linux"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Apps",
+        "↓",
+        "Framework",
+        "ART + Libraries",
+        "HAL",
+        "Linux Kernel"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "12-2-android-file-structure",
+      "title": "2. Android File Structure",
+      "definition": "Android stores different files in different directories.",
+      "examPoints": [
+        "Important directories"
+      ],
+      "comparisons": [
+        "Directory: Purpose",
+        "/system: Operating system files",
+        "/data: User data and installed applications",
+        "/data/app: Installed APK files",
+        "/data/data: Private application data",
+        "/sdcard: User storage",
+        "/cache: Temporary files",
+        "/vendor: Vendor-specific components",
+        "/proc: Process information",
+        "/dev: Device files",
+        "/boot: Boot image"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "13-important-paths",
+      "title": "Important Paths",
+      "definition": "Contains Android OS.",
+      "examPoints": [
+        "/system",
+        "/data",
+        "/data/app",
+        "/data/data",
+        "/sdcard",
+        "/proc",
+        "/dev"
+      ],
+      "comparisons": [],
+      "commands": [
+        "/proc/cpuinfo"
+      ],
+      "workflows": [],
+      "oneLiners": [
+        "Mostly read-only.",
+        "Contains",
+        "Framework",
+        "System Apps",
+        "Libraries",
+        "Installed applications",
+        "Databases",
+        "SharedPreferences",
+        "Application files",
+        "Most valuable directory for attackers.",
+        "Installed APK packages.",
+        "Private application data.",
+        "SQLite Databases",
+        "Preferences",
+        "Cache",
+        "Files",
+        "User-accessible storage.",
+        "Photos",
+        "Downloads",
+        "Videos",
+        "Documents",
+        "Applications should not store sensitive data here.",
+        "Virtual filesystem.",
+        "Contains process information.",
+        "Example",
+        "Device nodes.",
+        "Examples",
+        "Camera",
+        "Audio",
+        "USB"
+      ]
+    },
+    {
+      "id": "14-android-file-structure-memory-trick",
+      "title": "Android File Structure Memory Trick",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "System",
+        "↓",
+        "Apps",
+        "Private Data",
+        "Storage",
+        "Process",
+        "Devices"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "15-3-android-build-process",
+      "title": "3. Android Build Process",
+      "definition": "Application development flow",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Java / Kotlin Source",
+        "↓",
+        "Compilation",
+        "DEX Conversion",
+        "Resources",
+        "APK Packaging",
+        "Signing",
+        "Installation"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "16-steps",
+      "title": "Steps",
+      "definition": "Java or Kotlin",
+      "examPoints": [
+        "Write Source Code",
+        "↓",
+        "Compile",
+        "Generate .class files",
+        "Convert to DEX",
+        "Package APK",
+        "Digitally Sign APK",
+        "Install",
+        "APK",
+        "APK = Android Package",
+        "Contains",
+        "AndroidManifest.xml",
+        "classes.dex",
+        "Resources",
+        "Assets",
+        "Libraries",
+        "Signature"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "17-apk-signing",
+      "title": "APK Signing",
+      "definition": "Every Android APK must be digitally signed.",
+      "examPoints": [
+        "Provides",
+        "Integrity",
+        "Authenticity",
+        "Safe Updates"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "18-4-android-application-fundamentals",
+      "title": "4. Android Application Fundamentals",
+      "definition": "Every Android application consists of components.",
+      "examPoints": [
+        "Main Components",
+        "Activity",
+        "Service",
+        "Broadcast Receiver",
+        "Content Provider"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "19-activity",
+      "title": "Activity",
+      "definition": "Represents a user interface.",
+      "examPoints": [
+        "Example",
+        "Login Screen"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "20-service",
+      "title": "Service",
+      "definition": "Runs in background.",
+      "examPoints": [
+        "Example",
+        "Music Player"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "21-broadcast-receiver",
+      "title": "Broadcast Receiver",
+      "definition": "Receives system broadcasts.",
+      "examPoints": [
+        "Example",
+        "Battery Low"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "22-content-provider",
+      "title": "Content Provider",
+      "definition": "Shares data between applications.",
+      "examPoints": [
+        "Example",
+        "Contacts Provider"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "23-intent",
+      "title": "Intent",
+      "definition": "Used for communication between Android components.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "24-androidmanifest-xml",
+      "title": "AndroidManifest.xml",
+      "definition": "Most important configuration file.",
+      "examPoints": [
+        "Contains",
+        "Permissions",
+        "Activities",
+        "Services",
+        "Receivers",
+        "SDK Version",
+        "Package Name"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "25-android-security-model",
+      "title": "Android Security Model",
+      "definition": "Android security follows a layered approach.",
+      "examPoints": [
+        "Main security mechanisms",
+        "Application Sandboxing",
+        "Permission Model",
+        "Application Signing",
+        "SELinux",
+        "Verified Boot",
+        "File Permissions",
+        "Secure IPC",
+        "Play Protect"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "26-application-sandboxing",
+      "title": "Application Sandboxing",
+      "definition": "Each application gets",
+      "examPoints": [
+        "Unique Linux User ID",
+        "Separate Memory",
+        "Separate Process",
+        "Separate Files",
+        "Applications cannot access another application's data directly."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "27-permission-model",
+      "title": "Permission Model",
+      "definition": "Applications request permissions.",
+      "examPoints": [
+        "Examples",
+        "Camera",
+        "Contacts",
+        "SMS",
+        "Location",
+        "Storage",
+        "User grants or denies permission."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "28-application-signing",
+      "title": "Application Signing",
+      "definition": "Every APK must be digitally signed.",
+      "examPoints": [
+        "Purpose",
+        "Verify publisher",
+        "Verify integrity",
+        "Enable secure updates"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "29-verified-boot",
+      "title": "Verified Boot",
+      "definition": "Checks operating system integrity during startup.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "30-selinux",
+      "title": "SELinux",
+      "definition": "Mandatory Access Control.",
+      "examPoints": [
+        "Restricts application capabilities even after compromise."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "31-security-layers",
+      "title": "Security Layers",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Application",
+        "↓",
+        "Permissions",
+        "Sandbox",
+        "SELinux",
+        "Linux Kernel"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "32-device-rooting",
+      "title": "Device Rooting",
+      "definition": "Rooting provides administrator (root) privileges.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "33-advantages",
+      "title": "Advantages",
+      "definition": "",
+      "examPoints": [
+        "Remove pre-installed apps",
+        "Install custom ROMs",
+        "Full file access",
+        "Modify kernel",
+        "Install root applications"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "34-disadvantages",
+      "title": "Disadvantages",
+      "definition": "",
+      "examPoints": [
+        "Security model weakened",
+        "Malware gains root privileges",
+        "Warranty may become void",
+        "Banking apps may stop working",
+        "OTA updates may fail"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "35-security-risks",
+      "title": "Security Risks",
+      "definition": "",
+      "examPoints": [
+        "Bypass sandbox",
+        "Disable security restrictions",
+        "Full filesystem access",
+        "Easier malware persistence"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "36-rooting-vs-jailbreaking",
+      "title": "Rooting vs Jailbreaking",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Android: iPhone",
+        "Rooting: Jailbreaking"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "38-android-emulator",
+      "title": "Android Emulator",
+      "definition": "An Android Emulator is a virtual Android device running on a PC.",
+      "examPoints": [
+        "Advantages",
+        "Safe testing",
+        "Snapshot support",
+        "No risk to personal phone",
+        "Easy debugging",
+        "Common Emulator",
+        "Android Studio Emulator",
+        "# Session 22"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "39-android-debug-bridge-adb",
+      "title": "Android Debug Bridge (ADB)",
+      "definition": "ADB is a command-line tool used to communicate with Android devices.",
+      "examPoints": [
+        "Functions",
+        "Install APK",
+        "Uninstall APK",
+        "Copy Files",
+        "Shell Access",
+        "Debug Applications",
+        "Read Logs"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "40-architecture",
+      "title": "Architecture",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "PC",
+        "↓",
+        "ADB Client",
+        "ADB Server",
+        "ADB Daemon (adbd)",
+        "Android Device"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "41-common-commands",
+      "title": "Common Commands",
+      "definition": "Check device",
+      "examPoints": [
+        "Shell",
+        "Install APK",
+        "Remove APK",
+        "Copy file",
+        "Retrieve file",
+        "Logs",
+        "Reboot"
+      ],
+      "comparisons": [],
+      "commands": [
+        "adb devices",
+        "adb shell",
+        "adb install app.apk",
+        "adb uninstall package",
+        "adb push file.txt /sdcard/",
+        "adb pull /sdcard/file.txt",
+        "adb logcat",
+        "adb reboot"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "42-mobile-penetration-testing-tools",
+      "title": "Mobile Penetration Testing Tools",
+      "definition": "Common tools",
+      "examPoints": [
+        "ADB",
+        "MobSF",
+        "APKTool",
+        "JADX",
+        "Frida",
+        "Burp Suite",
+        "Wireshark",
+        "Drozer",
+        "Objection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "43-tool-comparison",
+      "title": "Tool Comparison",
+      "definition": "# Session 23",
+      "examPoints": [],
+      "comparisons": [
+        "Tool: Purpose",
+        "ADB: Device communication",
+        "APKTool: Decode APK resources",
+        "JADX: Decompile DEX to Java",
+        "Frida: Runtime instrumentation",
+        "MobSF: Static & Dynamic Analysis",
+        "Burp Suite: Proxy & MITM",
+        "Wireshark: Packet Analysis"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "44-owasp-mobile-top-10",
+      "title": "OWASP Mobile Top 10",
+      "definition": "Common Mobile Risks",
+      "examPoints": [
+        "Improper Credential Usage",
+        "Inadequate Supply Chain Security",
+        "Insecure Authentication",
+        "Insufficient Cryptography",
+        "Insecure Authorization",
+        "Insecure Network Communication",
+        "Privacy Leakage",
+        "Security Misconfiguration",
+        "Insecure Data Storage",
+        "Insufficient Binary Protection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "45-android-app-attacks",
+      "title": "Android App Attacks",
+      "definition": "Common attacks",
+      "examPoints": [
+        "Reverse Engineering",
+        "Repackaging",
+        "Code Injection",
+        "Dynamic Hooking",
+        "MITM",
+        "Phishing",
+        "Smishing",
+        "Overlay Attacks",
+        "Credential Theft"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "46-reverse-engineering",
+      "title": "Reverse Engineering",
+      "definition": "Goal",
+      "examPoints": [
+        "Understand application logic.",
+        "Common Tools",
+        "APKTool",
+        "JADX",
+        "Frida"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "47-smishing",
+      "title": "Smishing",
+      "definition": "SMS-based phishing.",
+      "examPoints": [
+        "Example",
+        "\"Your bank account is blocked. Click here.\""
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "49-web-based-attacks",
+      "title": "Web-Based Attacks",
+      "definition": "Examples",
+      "examPoints": [
+        "Phishing",
+        "Malicious Websites",
+        "Drive-by Downloads",
+        "Browser Exploits"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "50-network-based-attacks",
+      "title": "Network-Based Attacks",
+      "definition": "Examples",
+      "examPoints": [
+        "MITM",
+        "Packet Sniffing",
+        "Rogue Wi-Fi",
+        "ARP Spoofing",
+        "Evil Twin"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "51-social-engineering",
+      "title": "Social Engineering",
+      "definition": "Manipulating users instead of exploiting software.",
+      "examPoints": [
+        "Examples",
+        "Phishing",
+        "Smishing",
+        "Vishing",
+        "Pretexting",
+        "Baiting"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "52-mitm-attack",
+      "title": "MITM Attack",
+      "definition": "Attacker places themselves between victim and server.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Victim",
+        "↓",
+        "Attacker",
+        "Server"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "53-wireshark",
+      "title": "Wireshark",
+      "definition": "Packet capture tool.",
+      "examPoints": [
+        "Can analyze",
+        "HTTP",
+        "DNS",
+        "TCP",
+        "UDP",
+        "ICMP",
+        "Cannot decrypt HTTPS unless keys are available.",
+        "# Session 25"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "54-mobile-malware",
+      "title": "Mobile Malware",
+      "definition": "Malware targeting Android devices.",
+      "examPoints": [
+        "Types",
+        "Trojan",
+        "Worm",
+        "Virus",
+        "Spyware",
+        "Ransomware",
+        "Adware",
+        "Banking Malware",
+        "Rootkits"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "55-android-app-analysis",
+      "title": "Android App Analysis",
+      "definition": "Purpose",
+      "examPoints": [
+        "Understand application behavior.",
+        "Two approaches",
+        "Static Analysis",
+        "Dynamic Analysis"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "56-static-analysis",
+      "title": "Static Analysis",
+      "definition": "Without execution.",
+      "examPoints": [
+        "Checks",
+        "Manifest",
+        "Permissions",
+        "API Keys",
+        "Source Code",
+        "Resources",
+        "Tools",
+        "MobSF",
+        "APKTool",
+        "JADX"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "57-dynamic-analysis",
+      "title": "Dynamic Analysis",
+      "definition": "Application executes.",
+      "examPoints": [
+        "Observe",
+        "API Calls",
+        "Network Traffic",
+        "File Access",
+        "Memory",
+        "Runtime Behavior",
+        "Tools",
+        "MobSF",
+        "Frida",
+        "ADB"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "58-mobsf",
+      "title": "MobSF",
+      "definition": "Mobile Security Framework.",
+      "examPoints": [
+        "Provides",
+        "Static Analysis",
+        "Dynamic Analysis",
+        "Malware Detection",
+        "Permission Analysis",
+        "Certificate Analysis",
+        "API Security",
+        "Hardcoded Secrets"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "59-apktool",
+      "title": "APKTool",
+      "definition": "Purpose",
+      "examPoints": [
+        "Decode Android resources.",
+        "Can",
+        "Decode Manifest",
+        "Modify Resources",
+        "Rebuild APK"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "60-jadx",
+      "title": "JADX",
+      "definition": "Purpose",
+      "examPoints": [
+        "Convert DEX bytecode into readable Java code.",
+        "Useful for reverse engineering."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "61-frida",
+      "title": "Frida",
+      "definition": "Dynamic instrumentation framework.",
+      "examPoints": [
+        "Can",
+        "Hook functions",
+        "Modify runtime behavior",
+        "Bypass SSL Pinning",
+        "Monitor API calls"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "62-static-vs-dynamic-analysis",
+      "title": "Static vs Dynamic Analysis",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Static: Dynamic",
+        "No execution: Execution required",
+        "Safer: More realistic",
+        "Finds hardcoded secrets: Finds runtime behavior",
+        "APKTool, JADX, MobSF: MobSF, Frida, ADB"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "63-important-differences",
+      "title": "Important Differences",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Tool: Purpose",
+        "APKTool: Decode APK resources",
+        "JADX: Java source code",
+        "Frida: Runtime Hooking",
+        "MobSF: Complete App Analysis",
+        "ADB: Device Communication",
+        "Wireshark: Packet Capture"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "64-exam-points",
+      "title": "Exam Points",
+      "definition": "",
+      "examPoints": [
+        "Android security is enforced mainly by the Linux Kernel.",
+        "Every Android app runs inside its own sandbox.",
+        "APK stands for Android Package.",
+        "AndroidManifest.xml stores permissions and component information.",
+        "Rooting weakens Android security.",
+        "ADB is used for debugging and device management.",
+        "MobSF performs Static and Dynamic analysis.",
+        "APKTool decodes APK resources.",
+        "JADX decompiles DEX to Java.",
+        "Frida performs runtime instrumentation.",
+        "Smishing is SMS-based phishing.",
+        "MITM intercepts communication between two parties.",
+        "Wireshark captures network packets.",
+        "Static analysis examines code without execution.",
+        "Dynamic analysis observes runtime behavior."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "65-last-minute-revision",
+      "title": "Last-Minute Revision",
+      "definition": "# Mobile Security Notes",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Android Layers:",
+        "Apps",
+        "↓",
+        "Framework",
+        "ART + Libraries",
+        "HAL",
+        "Linux Kernel",
+        "APK = Android Package",
+        "Manifest = Configuration",
+        "Sandbox = Isolation",
+        "Permissions = Controlled Access",
+        "Rooting = Administrator Access",
+        "ADB = Android Debug Bridge",
+        "APKTool = Decode APK",
+        "JADX = Java Decompiler",
+        "Frida = Runtime Hooking",
+        "MobSF = Mobile Security Framework",
+        "Static = No Execution",
+        "Dynamic = Runtime Execution",
+        "MITM = Intercept Communication",
+        "Smishing = SMS Phishing",
+        "Phishing = Email Attack",
+        "Wireshark = Packet Capture",
+        "OWASP Mobile Top 10 = Common Mobile Vulnerabilities"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "67-1-introduction-to-mobile-security",
+      "title": "1. Introduction to Mobile Security",
+      "definition": "Mobile security is the protection of smartphones, tablets, mobile applications, operating systems, stored data, and wireless communications from unauthorized access, malware, data leakage, and network attacks.",
+      "examPoints": [
+        "Mobile devices are high-value targets because they commonly contain:",
+        "Personal data",
+        "Banking applications",
+        "Passwords",
+        "Authentication tokens",
+        "Emails",
+        "Photos",
+        "Location information",
+        "Corporate data",
+        "Payment details"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "68-main-security-goals",
+      "title": "Main security goals",
+      "definition": "",
+      "examPoints": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Authentication",
+        "Authorization",
+        "Privacy",
+        "Accountability"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "69-2-android-architecture",
+      "title": "2. Android Architecture",
+      "definition": "Android uses a layered architecture.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Applications",
+        "↓",
+        "Application Framework",
+        "Android Runtime and Native Libraries",
+        "Hardware Abstraction Layer",
+        "Linux Kernel"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "70-2-1-applications-layer",
+      "title": "2.1 Applications Layer",
+      "definition": "This layer contains:",
+      "examPoints": [
+        "System applications",
+        "User-installed applications",
+        "Third-party applications",
+        "Examples:",
+        "Phone",
+        "Camera",
+        "Browser",
+        "Banking apps",
+        "Messaging apps"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "71-2-2-application-framework",
+      "title": "2.2 Application Framework",
+      "definition": "The Application Framework provides high-level APIs and system services to applications.",
+      "examPoints": [
+        "Important components include:",
+        "Activity Manager",
+        "Package Manager",
+        "Window Manager",
+        "Notification Manager",
+        "Resource Manager",
+        "Location Manager",
+        "Telephony Manager",
+        "Content Providers",
+        "Applications use these services instead of directly interacting with the hardware."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "72-2-3-android-runtime",
+      "title": "2.3 Android Runtime",
+      "definition": "Modern Android uses ART, or Android Runtime.",
+      "examPoints": [
+        "ART is responsible for:",
+        "Executing Android application code",
+        "Memory management",
+        "Garbage collection",
+        "Ahead-of-Time compilation",
+        "Just-in-Time compilation",
+        "Older Android versions used the Dalvik Virtual Machine."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "73-2-4-native-libraries",
+      "title": "2.4 Native Libraries",
+      "definition": "Android includes native libraries written mainly in C and C++.",
+      "examPoints": [
+        "Examples:",
+        "SQLite",
+        "OpenGL ES",
+        "Media framework",
+        "Web rendering libraries",
+        "Cryptographic libraries",
+        "Standard C library"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "74-2-5-hardware-abstraction-layer",
+      "title": "2.5 Hardware Abstraction Layer",
+      "definition": "The HAL provides a standard interface between Android software and device hardware.",
+      "examPoints": [
+        "Examples:",
+        "Camera",
+        "Bluetooth",
+        "Wi-Fi",
+        "GPS",
+        "Sensors",
+        "NFC",
+        "Audio"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "75-2-6-linux-kernel",
+      "title": "2.6 Linux Kernel",
+      "definition": "The Linux Kernel is the foundation of Android.",
+      "examPoints": [
+        "It provides:",
+        "Process isolation",
+        "User IDs",
+        "File permissions",
+        "Memory management",
+        "Device drivers",
+        "Networking",
+        "SELinux enforcement",
+        "Application sandboxing",
+        "Important exam point",
+        "Android application isolation is mainly enforced through the Linux Kernel using separate Linux user IDs."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "76-3-android-file-structure",
+      "title": "3. Android File Structure",
+      "definition": "Important Android directories include:",
+      "examPoints": [],
+      "comparisons": [
+        "Directory: Purpose",
+        "/system: Android operating system files",
+        "/data: User data and application data",
+        "/data/app: Installed APK files",
+        "/data/data: Private application data",
+        "/sdcard: User-accessible shared storage",
+        "/cache: Temporary files",
+        "/vendor: Device-vendor components",
+        "/proc: Runtime process information",
+        "/dev: Device files",
+        "/boot: Boot image and startup components"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "77-data-app",
+      "title": "/data/app",
+      "definition": "Contains installed application packages.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "78-data-data",
+      "title": "/data/data",
+      "definition": "Contains private application data such as:",
+      "examPoints": [
+        "SharedPreferences",
+        "SQLite databases",
+        "Internal files",
+        "Cache data",
+        "Each application normally accesses only its own private directory."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "79-sdcard",
+      "title": "/sdcard",
+      "definition": "Contains shared user files.",
+      "examPoints": [
+        "Sensitive information should not be stored here without protection because multiple applications may access shared storage depending on permissions and Android version."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "80-4-android-build-process",
+      "title": "4. Android Build Process",
+      "definition": "The Android build process converts source code and resources into an installable APK.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Java/Kotlin source",
+        "↓",
+        "Compilation",
+        "Bytecode",
+        "DEX conversion",
+        "Resource processing",
+        "APK packaging",
+        "APK signing",
+        "Installation"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "81-main-steps",
+      "title": "Main steps",
+      "definition": "",
+      "examPoints": [
+        "Developer writes Java or Kotlin code.",
+        "Source code is compiled.",
+        "Bytecode is converted into DEX format.",
+        "Resources are processed.",
+        "Files are packaged into an APK.",
+        "The APK is digitally signed.",
+        "Android verifies and installs the application."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "82-5-apk-structure",
+      "title": "5. APK Structure",
+      "definition": "APK stands for Android Package.",
+      "examPoints": [
+        "An APK is essentially an archive containing application code, resources, configuration, and signatures.",
+        "Important APK components:"
+      ],
+      "comparisons": [
+        "Component: Purpose",
+        "AndroidManifest.xml: Application configuration",
+        "classes.dex: Compiled application bytecode",
+        "res/: Application resources",
+        "assets/: Raw asset files",
+        "lib/: Native libraries",
+        "META-INF/: Signing information",
+        "resources.arsc: Compiled resources"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "83-6-android-app-fundamentals",
+      "title": "6. Android App Fundamentals",
+      "definition": "Android applications are built using four major components.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "84-6-1-activity",
+      "title": "6.1 Activity",
+      "definition": "An Activity represents a user-interface screen.",
+      "examPoints": [
+        "Examples:",
+        "Login screen",
+        "Registration screen",
+        "Settings screen"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "85-6-2-service",
+      "title": "6.2 Service",
+      "definition": "A Service performs background operations.",
+      "examPoints": [
+        "Examples:",
+        "Music playback",
+        "File synchronization",
+        "Location updates"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "86-6-3-broadcast-receiver",
+      "title": "6.3 Broadcast Receiver",
+      "definition": "A Broadcast Receiver reacts to system or application events.",
+      "examPoints": [
+        "Examples:",
+        "Battery low",
+        "Device boot",
+        "Network change",
+        "Incoming SMS"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "87-6-4-content-provider",
+      "title": "6.4 Content Provider",
+      "definition": "A Content Provider manages and shares structured data between applications.",
+      "examPoints": [
+        "Example:",
+        "Contacts database"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "88-7-intent",
+      "title": "7. Intent",
+      "definition": "An Intent is a messaging object used for communication between Android components.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "89-explicit-intent",
+      "title": "Explicit Intent",
+      "definition": "Specifies the exact target component.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "90-implicit-intent",
+      "title": "Implicit Intent",
+      "definition": "Describes an action and allows Android to find a suitable component.",
+      "examPoints": [
+        "Security risk",
+        "Improperly protected Intents may allow:",
+        "Intent spoofing",
+        "Unauthorized component access",
+        "Data leakage",
+        "Privilege abuse"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "91-8-androidmanifest-xml",
+      "title": "8. AndroidManifest.xml",
+      "definition": "The Android Manifest is the main configuration file of an Android application.",
+      "examPoints": [
+        "It defines:",
+        "Package name",
+        "Activities",
+        "Services",
+        "Broadcast Receivers",
+        "Content Providers",
+        "Permissions",
+        "Minimum SDK version",
+        "Target SDK version",
+        "Exported components",
+        "Security importance",
+        "Analysts inspect the Manifest to identify:",
+        "Dangerous permissions",
+        "Debuggable applications",
+        "Backup settings",
+        "Cleartext traffic permission",
+        "Deep links",
+        "Custom permissions"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "92-9-android-security-model",
+      "title": "9. Android Security Model",
+      "definition": "Android uses multiple security layers.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Application permissions",
+        "↓",
+        "Application sandbox",
+        "Application signing",
+        "SELinux",
+        "Verified Boot",
+        "Linux Kernel"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "93-9-1-application-sandbox",
+      "title": "9.1 Application Sandbox",
+      "definition": "Each application normally receives:",
+      "examPoints": [
+        "Unique Linux UID",
+        "Separate process",
+        "Separate memory space",
+        "Private storage directory",
+        "This prevents one application from directly accessing another application's private data."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "94-9-2-permission-model",
+      "title": "9.2 Permission Model",
+      "definition": "Applications request permissions for sensitive operations.",
+      "examPoints": [
+        "Examples:",
+        "Camera",
+        "Contacts",
+        "Microphone",
+        "Location",
+        "SMS",
+        "Storage",
+        "Modern Android versions require runtime approval for many dangerous permissions.",
+        "Principle",
+        "Applications should request only the permissions required for their functionality."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "95-9-3-application-signing",
+      "title": "9.3 Application Signing",
+      "definition": "Every Android application must be signed.",
+      "examPoints": [
+        "Application signing provides:",
+        "Integrity",
+        "Publisher identity association",
+        "Secure application updates",
+        "An update must normally be signed using the same signing key as the installed application."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "96-9-4-selinux",
+      "title": "9.4 SELinux",
+      "definition": "SELinux provides Mandatory Access Control.",
+      "examPoints": [
+        "It restricts:",
+        "Processes",
+        "Services",
+        "File access",
+        "Inter-process communication",
+        "Privileged operations",
+        "SELinux adds protection even if a process is compromised."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "97-9-5-verified-boot",
+      "title": "9.5 Verified Boot",
+      "definition": "Verified Boot checks the integrity of system components during startup.",
+      "examPoints": [
+        "It helps detect unauthorized modification of the operating system."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "98-10-device-rooting",
+      "title": "10. Device Rooting",
+      "definition": "Rooting gives the user or an application root-level privileges on Android.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "99-benefits",
+      "title": "Benefits",
+      "definition": "",
+      "examPoints": [
+        "Full filesystem access",
+        "Custom ROM installation",
+        "Removal of system applications",
+        "Advanced customization",
+        "Security research"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "100-security-risks",
+      "title": "Security risks",
+      "definition": "Rooting does not automatically infect a device, but it significantly increases the impact of a successful compromise.",
+      "examPoints": [
+        "Sandbox bypass",
+        "SELinux weakening",
+        "Unauthorized access to application data",
+        "Greater malware impact",
+        "Persistent backdoors",
+        "Banking applications refusing to run",
+        "Reduced trust in device integrity",
+        "Important point"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "101-11-android-emulator",
+      "title": "11. Android Emulator",
+      "definition": "An Android Emulator is a virtual Android device running on a computer.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "102-advantages",
+      "title": "Advantages",
+      "definition": "",
+      "examPoints": [
+        "Safe testing environment",
+        "Snapshot and rollback",
+        "Controlled configuration",
+        "Easy debugging",
+        "No risk to a personal device",
+        "Multiple Android versions can be tested"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "103-limitations",
+      "title": "Limitations",
+      "definition": "",
+      "examPoints": [
+        "Some malware detects emulators",
+        "Hardware behaviour may differ",
+        "Performance may be slower",
+        "Certain sensors may not behave realistically"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "104-12-android-debug-bridge",
+      "title": "12. Android Debug Bridge",
+      "definition": "ADB stands for Android Debug Bridge.",
+      "examPoints": [
+        "It allows communication between a computer and an Android device or emulator."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "105-adb-architecture",
+      "title": "ADB architecture",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "ADB Client",
+        "↓",
+        "ADB Server",
+        "ADB Daemon",
+        "Android Device"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "106-common-commands",
+      "title": "Common commands",
+      "definition": "",
+      "examPoints": [
+        "List connected devices",
+        "Open device shell",
+        "Install APK",
+        "Uninstall application",
+        "Push file to device",
+        "Pull file from device",
+        "View logs",
+        "List packages",
+        "Find application path"
+      ],
+      "comparisons": [],
+      "commands": [
+        "adb devices",
+        "adb shell",
+        "adb install application.apk",
+        "adb uninstall com.example.app",
+        "adb push file.txt /sdcard/",
+        "adb pull /sdcard/file.txt",
+        "adb logcat",
+        "adb shell pm list packages",
+        "adb shell pm path com.example.app"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "107-security-risks-of-adb",
+      "title": "Security risks of ADB",
+      "definition": "ADB should not be exposed unnecessarily over a network.",
+      "examPoints": [
+        "Unauthorized shell access",
+        "APK installation",
+        "File extraction",
+        "Debugging abuse",
+        "Sensitive log exposure",
+        "Remote ADB exposure"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "108-13-mobile-penetration-testing",
+      "title": "13. Mobile Penetration Testing",
+      "definition": "Mobile penetration testing evaluates the security of:",
+      "examPoints": [
+        "APK files",
+        "Application code",
+        "Local storage",
+        "Network communication",
+        "Authentication",
+        "Authorization",
+        "Backend APIs",
+        "Application components",
+        "Platform interaction"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "109-typical-workflow",
+      "title": "Typical workflow",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Define scope",
+        "↓",
+        "Prepare emulator or test device",
+        "Collect APK",
+        "Perform static analysis",
+        "Perform dynamic analysis",
+        "Test communication",
+        "Test components",
+        "Verify vulnerabilities",
+        "Report findings"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "110-14-static-analysis",
+      "title": "14. Static Analysis",
+      "definition": "Static analysis examines the application without running it.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "111-what-is-inspected",
+      "title": "What is inspected",
+      "definition": "",
+      "examPoints": [
+        "AndroidManifest.xml",
+        "Application permissions",
+        "Decompiled code",
+        "Hardcoded credentials",
+        "API keys",
+        "URLs",
+        "Certificates",
+        "Native libraries",
+        "Exported components",
+        "Insecure storage",
+        "Obfuscation",
+        "Cryptographic usage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "112-advantages",
+      "title": "Advantages",
+      "definition": "",
+      "examPoints": [
+        "Safer",
+        "Fast",
+        "Useful before execution",
+        "Identifies hardcoded secrets",
+        "Reveals application structure"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "113-limitations",
+      "title": "Limitations",
+      "definition": "",
+      "examPoints": [
+        "Runtime behaviour is not visible",
+        "Obfuscation may hide logic",
+        "Dynamic code loading may be missed",
+        "Some findings may be false positives"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "114-15-dynamic-analysis",
+      "title": "15. Dynamic Analysis",
+      "definition": "Dynamic analysis examines an application while it is running.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "115-what-is-observed",
+      "title": "What is observed",
+      "definition": "",
+      "examPoints": [
+        "File creation",
+        "API calls",
+        "Network connections",
+        "Database access",
+        "Runtime permissions",
+        "Authentication flow",
+        "Memory contents",
+        "Logging",
+        "WebView behaviour",
+        "Inter-process communication"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "116-advantages",
+      "title": "Advantages",
+      "definition": "",
+      "examPoints": [
+        "Shows actual behaviour",
+        "Reveals runtime vulnerabilities",
+        "Detects network issues",
+        "Validates static findings"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "117-limitations",
+      "title": "Limitations",
+      "definition": "",
+      "examPoints": [
+        "Application may detect testing",
+        "Requires safe environment",
+        "Some functionality may require real accounts",
+        "Malware may delay execution"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "118-16-static-vs-dynamic-analysis",
+      "title": "16. Static vs Dynamic Analysis",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Static Analysis: Dynamic Analysis",
+        "Application is not executed: Application is executed",
+        "Examines APK and code: Examines runtime behaviour",
+        "Finds hardcoded secrets: Finds live network and API activity",
+        "Safer: Requires isolation",
+        "Uses JADX, APKTool, MobSF: Uses Frida, ADB, MobSF"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "119-17-apktool",
+      "title": "17. APKTool",
+      "definition": "APKTool is used to decode and rebuild Android APK files.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "120-capabilities",
+      "title": "Capabilities",
+      "definition": "",
+      "examPoints": [
+        "Decode AndroidManifest.xml",
+        "Extract resources",
+        "View smali code",
+        "Modify resources",
+        "Rebuild APK"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "121-common-commands",
+      "title": "Common commands",
+      "definition": "",
+      "examPoints": [
+        "Decode APK",
+        "Rebuild APK"
+      ],
+      "comparisons": [],
+      "commands": [
+        "apktool d application.apk"
+      ],
+      "workflows": [
+        "apktool b application-folder"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "122-apktool-output",
+      "title": "APKTool output",
+      "definition": "APKTool is more suitable for APK structure and resource analysis than Java source recovery.",
+      "examPoints": [
+        "Manifest",
+        "Resources",
+        "Smali code",
+        "Configuration files"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "123-18-jadx",
+      "title": "18. JADX",
+      "definition": "JADX decompiles DEX bytecode into readable Java-like source code.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "124-uses",
+      "title": "Uses",
+      "definition": "",
+      "examPoints": [
+        "Review application logic",
+        "Find hardcoded secrets",
+        "Identify URLs and API endpoints",
+        "Study authentication logic",
+        "Search for insecure cryptography",
+        "Review WebView configuration"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "125-limitation",
+      "title": "Limitation",
+      "definition": "The recovered Java source may not exactly match the original source code.",
+      "examPoints": [
+        "Obfuscation can make the output difficult to read."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "126-19-apktool-vs-jadx",
+      "title": "19. APKTool vs JADX",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "APKTool: JADX",
+        "Decodes APK resources: Decompiles DEX code",
+        "Produces smali code: Produces Java-like code",
+        "Useful for rebuilding: Useful for code review",
+        "Examines Manifest and resources: Examines application logic"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "127-20-frida",
+      "title": "20. Frida",
+      "definition": "Frida is a dynamic instrumentation framework.",
+      "examPoints": [
+        "It allows an analyst to hook functions while the application is running."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "128-uses",
+      "title": "Uses",
+      "definition": "",
+      "examPoints": [
+        "Inspect method calls",
+        "Modify arguments",
+        "Modify return values",
+        "Observe runtime behaviour",
+        "Bypass test-environment restrictions",
+        "Inspect cryptographic functions",
+        "Analyze authentication logic"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "129-frida-architecture",
+      "title": "Frida architecture",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Frida client",
+        "↓",
+        "Frida server or embedded gadget",
+        "Target application"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "130-security-significance",
+      "title": "Security significance",
+      "definition": "Frida demonstrates that sensitive security checks should not depend entirely on client-side logic.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "131-21-reverse-engineering",
+      "title": "21. Reverse Engineering",
+      "definition": "Reverse engineering is the process of understanding an application without access to its original source code.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "132-objectives",
+      "title": "Objectives",
+      "definition": "",
+      "examPoints": [
+        "Understand application logic",
+        "Identify vulnerabilities",
+        "Find hardcoded secrets",
+        "Analyze malware",
+        "Locate API endpoints",
+        "Review encryption implementation",
+        "Detect anti-analysis controls"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "133-common-workflow",
+      "title": "Common workflow",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Extract APK",
+        "↓",
+        "Inspect Manifest",
+        "Decode with APKTool",
+        "Decompile with JADX",
+        "Search strings and secrets",
+        "Run application",
+        "Hook with Frida",
+        "Observe traffic"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "134-22-mobsf",
+      "title": "22. MobSF",
+      "definition": "MobSF stands for Mobile Security Framework.",
+      "examPoints": [
+        "It supports automated mobile application analysis."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "135-static-analysis-capabilities",
+      "title": "Static analysis capabilities",
+      "definition": "",
+      "examPoints": [
+        "Permission review",
+        "Manifest analysis",
+        "Certificate inspection",
+        "Code analysis",
+        "Hardcoded-secret detection",
+        "API endpoint discovery",
+        "Malware indicators",
+        "Insecure configuration detection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "136-dynamic-analysis-capabilities",
+      "title": "Dynamic analysis capabilities",
+      "definition": "",
+      "examPoints": [
+        "Runtime monitoring",
+        "Network analysis",
+        "Behaviour observation",
+        "API tracing",
+        "File-system monitoring",
+        "Application interaction"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "137-mobsf-advantages",
+      "title": "MobSF advantages",
+      "definition": "",
+      "examPoints": [
+        "Automated reporting",
+        "Easy APK upload",
+        "Static and dynamic analysis",
+        "Good for initial assessment",
+        "Useful for Android and other mobile platforms"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "138-limitation",
+      "title": "Limitation",
+      "definition": "MobSF results must be manually verified.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "139-23-owasp-mobile-top-10",
+      "title": "23. OWASP Mobile Top 10",
+      "definition": "The OWASP Mobile Top 10 describes major mobile-application security risks.",
+      "examPoints": [
+        "Terminology varies between editions, but the core security areas include the following."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "140-23-1-improper-platform-usage",
+      "title": "23.1 Improper Platform Usage",
+      "definition": "The application incorrectly uses platform security features.",
+      "examPoints": [
+        "Examples:",
+        "Misconfigured permissions",
+        "Insecure Intents",
+        "Exposed components",
+        "Insecure key storage",
+        "Incorrect WebView use"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "141-23-2-insecure-data-storage",
+      "title": "23.2 Insecure Data Storage",
+      "definition": "Sensitive data is stored without sufficient protection.",
+      "examPoints": [
+        "Examples:",
+        "Plaintext passwords",
+        "Unencrypted databases",
+        "Tokens in SharedPreferences",
+        "Sensitive logs",
+        "Data stored on shared storage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "142-23-3-insecure-communication",
+      "title": "23.3 Insecure Communication",
+      "definition": "Sensitive information is transmitted insecurely.",
+      "examPoints": [
+        "Examples:",
+        "HTTP instead of HTTPS",
+        "Weak TLS configuration",
+        "Invalid certificate acceptance",
+        "Sensitive data in URLs",
+        "Missing certificate validation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "143-23-4-insecure-authentication",
+      "title": "23.4 Insecure Authentication",
+      "definition": "The application incorrectly verifies user identity.",
+      "examPoints": [
+        "Examples:",
+        "Weak passwords",
+        "No MFA",
+        "Client-side-only login checks",
+        "Predictable authentication tokens",
+        "Insecure password reset"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "144-23-5-insecure-authorization",
+      "title": "23.5 Insecure Authorization",
+      "definition": "The application fails to verify permissions for each action.",
+      "examPoints": [
+        "Examples:",
+        "One user accesses another user's data",
+        "Normal user invokes administrator API",
+        "Direct object-reference manipulation",
+        "Missing server-side authorization"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "145-23-6-insufficient-cryptography",
+      "title": "23.6 Insufficient Cryptography",
+      "definition": "The application uses weak or incorrectly implemented cryptography.",
+      "examPoints": [
+        "Examples:",
+        "MD5 or SHA-1 for security-sensitive purposes",
+        "Hardcoded encryption keys",
+        "Reused IVs",
+        "Custom encryption",
+        "Incorrect key storage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "146-23-7-client-code-quality",
+      "title": "23.7 Client Code Quality",
+      "definition": "Poor coding practices create vulnerabilities.",
+      "examPoints": [
+        "Examples:",
+        "Buffer overflow in native code",
+        "Unsafe WebView interfaces",
+        "Improper input validation",
+        "Memory corruption",
+        "Exception leakage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "147-23-8-code-tampering",
+      "title": "23.8 Code Tampering",
+      "definition": "Attackers modify and repackage an APK.",
+      "examPoints": [
+        "Possible goals:",
+        "Remove advertisements",
+        "Bypass licensing",
+        "Add malware",
+        "Disable security checks",
+        "Steal credentials"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "148-23-9-reverse-engineering",
+      "title": "23.9 Reverse Engineering",
+      "definition": "Attackers analyze the application to understand:",
+      "examPoints": [
+        "Business logic",
+        "API endpoints",
+        "Cryptographic keys",
+        "Security checks",
+        "Proprietary algorithms",
+        "Countermeasures include:",
+        "Code obfuscation",
+        "Integrity validation",
+        "Server-side enforcement",
+        "Native-code protection",
+        "No client-side code can be made completely impossible to reverse engineer."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "149-23-10-extraneous-functionality",
+      "title": "23.10 Extraneous Functionality",
+      "definition": "Production applications may contain unintended functionality.",
+      "examPoints": [
+        "Examples:",
+        "Debug endpoints",
+        "Test accounts",
+        "Administrative interfaces",
+        "Hidden developer menus",
+        "Logging code",
+        "Backup services"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "150-24-attacks-on-android-applications",
+      "title": "24. Attacks on Android Applications",
+      "definition": "Common Android attacks include:",
+      "examPoints": [
+        "APK repackaging",
+        "Reverse engineering",
+        "Runtime hooking",
+        "Insecure storage extraction",
+        "Intent spoofing",
+        "Component hijacking",
+        "WebView attacks",
+        "Overlay attacks",
+        "MITM",
+        "Phishing",
+        "Smishing",
+        "Malware installation",
+        "Permission abuse",
+        "Clipboard theft",
+        "Screen capture",
+        "Tapjacking"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "151-25-exported-component-attacks",
+      "title": "25. Exported Component Attacks",
+      "definition": "An exported component may be accessible by other applications.",
+      "examPoints": [
+        "Affected components include:",
+        "Activities",
+        "Services",
+        "Broadcast Receivers",
+        "Content Providers"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "152-risks",
+      "title": "Risks",
+      "definition": "",
+      "examPoints": [
+        "Unauthorized activity launch",
+        "Data extraction",
+        "Privileged action execution",
+        "Intent injection",
+        "Component hijacking"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "153-mitigation",
+      "title": "Mitigation",
+      "definition": "",
+      "examPoints": [
+        "Export only required components",
+        "Require permissions",
+        "Validate incoming Intents",
+        "Enforce authorization",
+        "Avoid trusting external data"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "154-26-webview-security",
+      "title": "26. WebView Security",
+      "definition": "WebView displays web content inside an Android application.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "155-risks",
+      "title": "Risks",
+      "definition": "",
+      "examPoints": [
+        "JavaScript injection",
+        "XSS",
+        "Unsafe JavaScript interfaces",
+        "File access",
+        "Cleartext communication",
+        "Untrusted content loading"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "156-mitigation",
+      "title": "Mitigation",
+      "definition": "",
+      "examPoints": [
+        "Disable JavaScript unless needed",
+        "Avoid loading untrusted URLs",
+        "Validate navigation",
+        "Disable unnecessary file access",
+        "Use secure communication",
+        "Avoid unsafe JavaScript bridges"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "157-27-smishing",
+      "title": "27. Smishing",
+      "definition": "Smishing is phishing performed through SMS.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "158-example",
+      "title": "Example",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "Your bank account is suspended.",
+        "Verify immediately using this link."
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "159-objectives",
+      "title": "Objectives",
+      "definition": "",
+      "examPoints": [
+        "Credential theft",
+        "Malware installation",
+        "Payment fraud",
+        "OTP theft",
+        "Personal information collection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "160-warning-signs",
+      "title": "Warning signs",
+      "definition": "",
+      "examPoints": [
+        "Urgency",
+        "Unknown links",
+        "Spelling mistakes",
+        "Requests for passwords or OTPs",
+        "Threats of account suspension",
+        "Unusual sender identity"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "161-countermeasures",
+      "title": "Countermeasures",
+      "definition": "",
+      "examPoints": [
+        "Do not click unknown links",
+        "Verify through official channels",
+        "Never share OTPs",
+        "Use spam filtering",
+        "Educate users",
+        "Report malicious messages"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "162-28-phishing",
+      "title": "28. Phishing",
+      "definition": "Phishing tricks users into revealing sensitive information through fake websites, emails, or applications.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "163-mobile-phishing-risks",
+      "title": "Mobile phishing risks",
+      "definition": "",
+      "examPoints": [
+        "Small screens hide full URLs",
+        "Users act quickly",
+        "Fake applications imitate trusted brands",
+        "Notifications create urgency",
+        "Mobile browsers show limited certificate information"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "164-29-mitm-attack",
+      "title": "29. MITM Attack",
+      "definition": "A Man-in-the-Middle attack occurs when an attacker secretly intercepts communication between two parties.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Victim",
+        "↕",
+        "Attacker",
+        "Server"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "165-mobile-mitm-techniques",
+      "title": "Mobile MITM techniques",
+      "definition": "",
+      "examPoints": [
+        "Rogue Wi-Fi",
+        "ARP poisoning",
+        "Evil Twin access point",
+        "DNS spoofing",
+        "Malicious proxy",
+        "Invalid certificate installation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "166-risks",
+      "title": "Risks",
+      "definition": "",
+      "examPoints": [
+        "Credential theft",
+        "Session theft",
+        "Data modification",
+        "API request manipulation",
+        "Privacy loss"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "167-mitigation",
+      "title": "Mitigation",
+      "definition": "",
+      "examPoints": [
+        "HTTPS",
+        "Strong certificate validation",
+        "Avoid insecure public Wi-Fi",
+        "VPN",
+        "Secure DNS",
+        "Proper TLS configuration",
+        "Certificate pinning where appropriate"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "168-30-packet-sniffing-with-wireshark",
+      "title": "30. Packet Sniffing with Wireshark",
+      "definition": "Wireshark captures and analyzes network traffic.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "169-common-display-filters",
+      "title": "Common display filters",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [
+        "http",
+        "dns",
+        "tcp",
+        "ip.addr == 192.168.1.10",
+        "tcp.port == 80"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "170-information-visible-in-unencrypted-traffic",
+      "title": "Information visible in unencrypted traffic",
+      "definition": "HTTPS payloads are encrypted, although metadata such as IP addresses and connection details may still be visible.",
+      "examPoints": [
+        "URLs",
+        "Form data",
+        "Cookies",
+        "Credentials",
+        "API parameters",
+        "DNS requests"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "171-31-mobile-malware",
+      "title": "31. Mobile Malware",
+      "definition": "Mobile malware is malicious software designed to target mobile devices.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "172-types",
+      "title": "Types",
+      "definition": "",
+      "examPoints": [
+        "Banking Trojan",
+        "Spyware",
+        "Ransomware",
+        "Adware",
+        "SMS Trojan",
+        "Rootkit",
+        "Credential stealer",
+        "Remote Access Trojan",
+        "Downloader",
+        "Dropper"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "173-32-android-malware-behaviour",
+      "title": "32. Android Malware Behaviour",
+      "definition": "Android malware may:",
+      "examPoints": [
+        "Steal SMS messages",
+        "Read contacts",
+        "Record calls",
+        "Capture OTPs",
+        "Abuse Accessibility Services",
+        "Display overlays",
+        "Hide its icon",
+        "Install additional payloads",
+        "Contact command-and-control servers",
+        "Track location",
+        "Steal banking credentials",
+        "Request device-administrator privileges"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "174-33-banking-trojan",
+      "title": "33. Banking Trojan",
+      "definition": "A banking Trojan targets financial applications.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "175-common-techniques",
+      "title": "Common techniques",
+      "definition": "",
+      "examPoints": [
+        "Fake login overlays",
+        "Accessibility abuse",
+        "SMS interception",
+        "Screen capture",
+        "Keylogging",
+        "Notification theft",
+        "Credential exfiltration"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "176-34-android-ransomware",
+      "title": "34. Android Ransomware",
+      "definition": "Android ransomware may:",
+      "examPoints": [
+        "Lock the screen",
+        "Encrypt user files",
+        "Abuse device-administrator privileges",
+        "Display false legal warnings",
+        "Demand payment"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "177-35-android-malware-persistence",
+      "title": "35. Android Malware Persistence",
+      "definition": "Persistence mechanisms may include:",
+      "examPoints": [
+        "Boot-completed receiver",
+        "Device-administrator privileges",
+        "Accessibility-service abuse",
+        "Background services",
+        "Scheduled jobs",
+        "Hidden application icon",
+        "Reinstallation through another malicious application"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "178-36-rooted-devices-and-malware",
+      "title": "36. Rooted Devices and Malware",
+      "definition": "On a rooted device, malware may gain:",
+      "examPoints": [
+        "Access to other applications' data",
+        "System-file modification",
+        "Hidden persistence",
+        "Security-control bypass",
+        "Credential extraction",
+        "Complete device control",
+        "Rooting significantly weakens the trust boundary between applications."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "179-37-android-app-analysis-workflow",
+      "title": "37. Android App Analysis Workflow",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Obtain APK",
+        "↓",
+        "Calculate hash",
+        "Inspect Manifest",
+        "Run MobSF static scan",
+        "Decode with APKTool",
+        "Decompile with JADX",
+        "Search code and resources",
+        "Install on emulator",
+        "Monitor with ADB",
+        "Use Frida for runtime testing",
+        "Capture traffic",
+        "Document findings"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "180-38-mobile-application-penetration-testing-areas",
+      "title": "38. Mobile Application Penetration Testing Areas",
+      "definition": "A complete test should examine:",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "181-application-package",
+      "title": "Application package",
+      "definition": "",
+      "examPoints": [
+        "Signature",
+        "Manifest",
+        "Components",
+        "Obfuscation",
+        "Native libraries"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "182-local-storage",
+      "title": "Local storage",
+      "definition": "",
+      "examPoints": [
+        "SharedPreferences",
+        "SQLite databases",
+        "Cache",
+        "Logs",
+        "Shared storage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "183-authentication",
+      "title": "Authentication",
+      "definition": "",
+      "examPoints": [
+        "Login flow",
+        "Password reset",
+        "Session tokens",
+        "Biometric fallback",
+        "MFA"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "184-authorization",
+      "title": "Authorization",
+      "definition": "",
+      "examPoints": [
+        "Role enforcement",
+        "User-object access",
+        "API permissions",
+        "Administrative actions"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "185-network-communication",
+      "title": "Network communication",
+      "definition": "",
+      "examPoints": [
+        "HTTPS",
+        "Certificate validation",
+        "API requests",
+        "Sensitive parameters",
+        "Cleartext traffic"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "186-platform-interaction",
+      "title": "Platform interaction",
+      "definition": "",
+      "examPoints": [
+        "Intents",
+        "Exported components",
+        "Clipboard",
+        "Notifications",
+        "WebView",
+        "Screenshots",
+        "Backups"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "187-39-basic-mobsf-lab-workflow",
+      "title": "39. Basic MobSF Lab Workflow",
+      "definition": "",
+      "examPoints": [
+        "Start MobSF in an isolated laboratory.",
+        "Upload the APK.",
+        "Record application information.",
+        "Review permissions.",
+        "Review exported components.",
+        "Inspect the signing certificate.",
+        "Search for hardcoded secrets.",
+        "Review insecure storage findings.",
+        "Review network-security configuration.",
+        "Examine code warnings.",
+        "Start dynamic analysis where supported.",
+        "Interact with the application.",
+        "Observe runtime traffic and behaviour.",
+        "Verify findings manually.",
+        "Prepare a report."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "189-secure-coding",
+      "title": "Secure coding",
+      "definition": "",
+      "examPoints": [
+        "Validate input",
+        "Avoid hardcoded secrets",
+        "Use secure APIs",
+        "Protect sensitive data",
+        "Avoid unnecessary permissions",
+        "Secure exported components"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "190-secure-storage",
+      "title": "Secure storage",
+      "definition": "",
+      "examPoints": [
+        "Use platform-provided secure storage",
+        "Encrypt sensitive databases",
+        "Avoid plaintext credentials",
+        "Do not log secrets",
+        "Avoid shared storage for sensitive information"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "191-secure-communication",
+      "title": "Secure communication",
+      "definition": "",
+      "examPoints": [
+        "Use HTTPS",
+        "Validate certificates",
+        "Disable cleartext traffic",
+        "Protect authentication tokens",
+        "Avoid sensitive information in URLs"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "192-application-hardening",
+      "title": "Application hardening",
+      "definition": "",
+      "examPoints": [
+        "Obfuscate code",
+        "Detect tampering",
+        "Remove debug code",
+        "Disable backups where inappropriate",
+        "Use release builds",
+        "Sign APK securely"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "193-server-side-security",
+      "title": "Server-side security",
+      "definition": "",
+      "examPoints": [
+        "Enforce authentication",
+        "Enforce authorization",
+        "Validate all requests",
+        "Rate-limit sensitive operations",
+        "Monitor suspicious activity"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "194-41-important-tool-comparison",
+      "title": "41. Important Tool Comparison",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Tool: Primary purpose",
+        "ADB: Device communication and debugging",
+        "APKTool: Decode and rebuild APK resources",
+        "JADX: Decompile DEX into Java-like code",
+        "Frida: Runtime instrumentation and hooking",
+        "MobSF: Automated static and dynamic analysis",
+        "Wireshark: Packet capture",
+        "Burp Suite: Intercept and modify application traffic",
+        "Android Emulator: Safe testing environment"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "196-apktool-vs-jadx",
+      "title": "APKTool vs JADX",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "APKTool → resources and smali",
+        "JADX → Java-like source code"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "197-static-vs-dynamic",
+      "title": "Static vs Dynamic",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Static → no execution",
+        "Dynamic → runtime execution"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "198-phishing-vs-smishing-vs-vishing",
+      "title": "Phishing vs Smishing vs Vishing",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Phishing → electronic deception, commonly email/web",
+        "Smishing → SMS phishing",
+        "Vishing → voice phishing"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "199-rooting-vs-malware",
+      "title": "Rooting vs Malware",
+      "definition": "Rooting is not malware, but it can make malware more powerful.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Rooting → privilege modification",
+        "Malware → malicious software"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "200-adb-vs-frida",
+      "title": "ADB vs Frida",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "ADB → device administration and shell",
+        "Frida → runtime function hooking"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "201-43-important-exam-points",
+      "title": "43. Important Exam Points",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Android uses a layered architecture.",
+        "The Linux Kernel provides process isolation and sandboxing.",
+        "Each application normally has a separate Linux UID.",
+        "/data/app commonly stores installed APKs.",
+        "/data/data stores private application data.",
+        "APK means Android Package.",
+        "AndroidManifest.xml defines components and permissions.",
+        "classes.dex contains compiled application code.",
+        "Every APK must be signed.",
+        "Activity represents a screen.",
+        "Service performs background work.",
+        "Broadcast Receiver handles events.",
+        "Content Provider shares structured data.",
+        "Rooting provides elevated privileges.",
+        "Rooting weakens application isolation.",
+        "ADB allows shell, install, push, pull, and logging operations.",
+        "APKTool decodes resources and smali.",
+        "JADX produces readable Java-like code.",
+        "Frida performs runtime instrumentation.",
+        "MobSF performs automated mobile application analysis.",
+        "Static analysis does not execute the app.",
+        "Dynamic analysis observes runtime behaviour.",
+        "Smishing is phishing through SMS.",
+        "MITM intercepts communication.",
+        "Wireshark analyzes packets.",
+        "Insecure Data Storage exposes local sensitive information.",
+        "Insecure Communication exposes transmitted data.",
+        "Exported components may be abused by other applications.",
+        "Mobile malware may abuse Accessibility Services.",
+        "Automated findings must be manually verified."
+      ]
+    },
+    {
+      "id": "202-44-last-minute-revision-sheet",
+      "title": "44. Last-Minute Revision Sheet",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Android Architecture:",
+        "Applications",
+        "→ Framework",
+        "→ ART + Libraries",
+        "→ HAL",
+        "→ Linux Kernel",
+        "Linux Kernel:",
+        "UID",
+        "Sandbox",
+        "Processes",
+        "Memory",
+        "SELinux",
+        "Important Files:",
+        "AndroidManifest.xml → configuration",
+        "classes.dex → application bytecode",
+        "META-INF → signing information",
+        "/data/app → installed APKs",
+        "/data/data → private app data",
+        "App Components:",
+        "Activity → UI",
+        "Service → background task",
+        "Receiver → event handling",
+        "Provider → data sharing",
+        "ADB:",
+        "adb devices",
+        "adb shell",
+        "adb install",
+        "adb push",
+        "adb pull",
+        "adb logcat",
+        "Tools:",
+        "APKTool → decode/rebuild APK",
+        "JADX → DEX to Java",
+        "Frida → runtime hooking",
+        "MobSF → static + dynamic analysis",
+        "Wireshark → packet analysis",
+        "Burp Suite → traffic interception",
+        "Static Analysis:",
+        "Manifest",
+        "Permissions",
+        "Code",
+        "Secrets",
+        "Certificates",
+        "Resources",
+        "Dynamic Analysis:",
+        "Files",
+        "Network",
+        "API calls",
+        "Runtime behaviour",
+        "Attacks:",
+        "Smishing → SMS phishing",
+        "MITM → intercepted communication",
+        "Overlay → fake screen over genuine app",
+        "Repackaging → modified APK",
+        "Intent spoofing → malicious component message",
+        "Security:",
+        "Signing",
+        "Verified Boot",
+        "HTTPS",
+        "Secure storage",
+        "Server-side authorization"
+      ],
+      "oneLiners": []
+    }
+  ],
+  "audio": "/audio/sc/mobile-security-notes.mp3"
+}

@@ -1,100 +1,180 @@
 {
   "version": "1",
-  "title": "PKI Set 3",
+  "title": "Set 03 - CRL, OCSP, Diffie-Hellman, IPsec & Secure Email",
   "subject": "PKI",
   "stage": "Topic Wise MCQ",
-  "topic": "CDAC PKI & Biometric Q11-Q20",
+  "topic": "CRL, OCSP, Diffie-Hellman, IPsec & Secure Email",
   "durationMinutes": 10,
   "questions": [
     {
       "id": 11,
       "question": "Why would a digital certificate be added to a Certificate Revocation List (CRL)?",
-      "options": ["If the public key had become compromised", "If the private key had become compromised", "The certificate had become public", "None of the above"],
+      "options": [
+        "If the public key had become compromised",
+        "If the private key had become compromised",
+        "The certificate had become public",
+        "None of the above"
+      ],
       "correct": 1,
       "description": "A certificate is revoked when its associated private key is compromised, lost, or stolen.",
       "difficulty": "Easy",
-      "tags": ["CRL", "Certificate Revocation"]
+      "tags": [
+        "CRL",
+        "Certificate Revocation"
+      ]
     },
     {
       "id": 12,
       "question": "What does OCSP stand for?",
-      "options": ["Online Certificate Status Protocol", "Online Certificate Service Provider", "Open Certificate Systems Project", "Open Certificates for Security and Privacy"],
+      "options": [
+        "Online Certificate Status Protocol",
+        "Online Certificate Service Provider",
+        "Open Certificate Systems Project",
+        "Open Certificates for Security and Privacy"
+      ],
       "correct": 0,
       "description": "OCSP allows clients to check certificate revocation status in real time without downloading an entire CRL.",
       "difficulty": "Easy",
-      "tags": ["OCSP", "Certificate Revocation"]
+      "tags": [
+        "OCSP",
+        "Certificate Revocation"
+      ]
     },
     {
       "id": 13,
       "question": "Which of these is not an encryption algorithm?",
-      "options": ["Diffie-Hellman", "AES", "DES", "RSA"],
+      "options": [
+        "Diffie-Hellman",
+        "AES",
+        "DES",
+        "RSA"
+      ],
       "correct": 0,
       "description": "Diffie-Hellman is a key exchange algorithm, not an encryption algorithm.",
       "difficulty": "Easy",
-      "tags": ["Diffie-Hellman", "Encryption"]
+      "tags": [
+        "Diffie-Hellman",
+        "Encryption"
+      ]
     },
     {
       "id": 14,
       "question": "In which IPSec mode is data protected from the Transport Layer to the Network Layer?",
-      "options": ["Transport Mode", "Tunnel Mode", "Both A & B", "None"],
+      "options": [
+        "Transport Mode",
+        "Tunnel Mode",
+        "Both A & B",
+        "None"
+      ],
       "correct": 0,
       "description": "Transport Mode encrypts only the payload while leaving the original IP header intact.",
       "difficulty": "Easy",
-      "tags": ["IPSec", "Transport Mode"]
+      "tags": [
+        "IPSec",
+        "Transport Mode"
+      ]
     },
     {
       "id": 15,
       "question": "Which protocol provides authentication at the IP layer of the OSI model?",
-      "options": ["AH", "ESP", "AH and ESP both", "SSL"],
+      "options": [
+        "AH",
+        "ESP",
+        "AH and ESP both",
+        "SSL"
+      ],
       "correct": 0,
       "description": "AH provides data integrity, authentication, and anti-replay protection, but not encryption.",
       "difficulty": "Easy",
-      "tags": ["IPSec", "AH"]
+      "tags": [
+        "IPSec",
+        "AH"
+      ]
     },
     {
       "id": 16,
       "question": "SSL protocol provides:",
-      "options": ["Message Integrity", "Compression", "Confidentiality", "All of the above"],
+      "options": [
+        "Message Integrity",
+        "Compression",
+        "Confidentiality",
+        "All of the above"
+      ],
       "correct": 3,
       "description": "Traditional SSL/TLS provides confidentiality, integrity, and historically supported compression.",
       "difficulty": "Easy",
-      "tags": ["SSL", "TLS"]
+      "tags": [
+        "SSL",
+        "TLS"
+      ]
     },
     {
       "id": 17,
       "question": "Which security protocol is commonly used for sending and receiving secure email?",
-      "options": ["SSL", "IPSec", "PGP", "SSL and PGP both"],
+      "options": [
+        "SSL",
+        "IPSec",
+        "PGP",
+        "SSL and PGP both"
+      ],
       "correct": 2,
       "description": "PGP is designed for secure email encryption, digital signatures, authentication, and compression.",
       "difficulty": "Easy",
-      "tags": ["PGP", "Email Security"]
+      "tags": [
+        "PGP",
+        "Email Security"
+      ]
     },
     {
       "id": 18,
       "question": "Which protocol provides authentication or encryption, or both, for packets at the IP level?",
-      "options": ["SSL", "ESP", "AH", "PGP"],
+      "options": [
+        "SSL",
+        "ESP",
+        "AH",
+        "PGP"
+      ],
       "correct": 1,
       "description": "ESP provides encryption and can optionally provide authentication, integrity, and anti-replay protection.",
       "difficulty": "Easy",
-      "tags": ["IPSec", "ESP"]
+      "tags": [
+        "IPSec",
+        "ESP"
+      ]
     },
     {
       "id": 19,
       "question": "The combination of key exchange, hash, and encryption algorithms defines a ______ for each SSL session.",
-      "options": ["Suite of Protocol", "List of Protocol", "Cipher Suite", "Combination of Keys"],
+      "options": [
+        "Suite of Protocol",
+        "List of Protocol",
+        "Cipher Suite",
+        "Combination of Keys"
+      ],
       "correct": 2,
       "description": "A cipher suite specifies the key exchange, authentication, encryption, and hash or MAC algorithms used in a TLS session.",
       "difficulty": "Easy",
-      "tags": ["SSL", "Cipher Suite"]
+      "tags": [
+        "SSL",
+        "Cipher Suite"
+      ]
     },
     {
       "id": 20,
       "question": "Kerberos is a ______ protocol.",
-      "options": ["Session Initiation", "Authentication", "Key Generation", "None of the above"],
+      "options": [
+        "Session Initiation",
+        "Authentication",
+        "Key Generation",
+        "None of the above"
+      ],
       "correct": 1,
       "description": "Kerberos is a network authentication protocol that uses tickets and symmetric cryptography.",
       "difficulty": "Easy",
-      "tags": ["Kerberos", "Authentication"]
+      "tags": [
+        "Kerberos",
+        "Authentication"
+      ]
     }
   ]
 }

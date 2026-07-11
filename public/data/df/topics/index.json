@@ -2,12 +2,12 @@
   "sets": [
     {
       "setNumber": "Set 01",
-      "topic": "Cyber Forensics Questions 1-50",
+      "topic": "Forensic Process, Chain of Custody, Cyber Law & Evidence",
       "slug": "set01"
     },
     {
       "setNumber": "Set 02",
-      "topic": "Cyber Forensics Questions 51-100",
+      "topic": "Hex Analysis, File Signatures, Encoding, Encryption & Tools",
       "slug": "set02"
     }
   ]

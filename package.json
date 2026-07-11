@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --configLoader runner",
+    "generate:revision-audio": "node scripts/generate-revision-audio.mjs",
     "generate:pki-audio": "node scripts/generate-pki-revision-audio.mjs",
+    "generate:sc-audio": "node scripts/generate-revision-audio.mjs sc",
     "preview": "vite preview",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
   },

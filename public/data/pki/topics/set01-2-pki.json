@@ -1,9 +1,9 @@
 {
   "version": "3",
-  "title": "PKI Set 1.2",
+  "title": "Set 1.2 - Key Distribution, Diffie-Hellman, SHA/HMAC & Trust Models",
   "subject": "PKI",
   "stage": "Topic Wise MCQ",
-  "topic": "PKI Set 1.2",
+  "topic": "Key Distribution, Diffie-Hellman, SHA/HMAC & Trust Models",
   "durationMinutes": 83,
   "questions": [
     {

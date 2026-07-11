@@ -1,6 +1,14 @@
 {
   "sets": [
-    { "setNumber": "Set 01", "topic": "Symmetric Crypto", "slug": "set01-symmetric-crypto" },
-    { "setNumber": "Set 02", "topic": "Hashing", "slug": "set02-hashing" }
+    {
+      "setNumber": "Set 01",
+      "topic": "AES, AEAD, Nonces & Stream Ciphers",
+      "slug": "set01-symmetric-crypto"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "Hash Digests, Legacy Hashes & Password Security",
+      "slug": "set02-hashing"
+    }
   ]
 }

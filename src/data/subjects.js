@@ -55,7 +55,9 @@ export const subjects = [
     description: "Security concepts, web testing, malware, wireless, and mobile security.",
     stages: buildStages("sc"),
     topicsPath: "/subjects/sc/topics",
-    topicIndexFile: "/data/sc/topics/index.json"
+    topicIndexFile: "/data/sc/topics/index.json",
+    revisionPath: "/subjects/sc/revision",
+    revisionIndexFile: "/data/sc/revision/index.json"
   },
   {
     slug: "ca",

@@ -2,17 +2,17 @@
   "sets": [
     {
       "setNumber": "Set 01",
-      "topic": "Network Defense Sessions 7-16",
+      "topic": "VPN Models, Tunneling, IPsec, TLS VPN & Remote Access",
       "slug": "set01"
     },
     {
       "setNumber": "Set 02",
-      "topic": "Network Defense Sessions 1-6",
+      "topic": "CIA, Risk, Firewalls, DMZ & Packet Filtering",
       "slug": "set02"
     },
     {
       "setNumber": "Set 03",
-      "topic": "Network Defense Core Questions",
+      "topic": "OpenVPN, iptables, NAT, Firewalls & Security Threats",
       "slug": "set03"
     }
   ]

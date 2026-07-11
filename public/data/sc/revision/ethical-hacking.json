@@ -1,0 +1,3537 @@
+{
+  "id": "ethical-hacking",
+  "subject": "Security Concepts",
+  "title": "Ethical Hacking",
+  "topics": [
+    {
+      "id": "03-1-introduction-to-ethical-hacking",
+      "title": "1. Introduction to Ethical Hacking",
+      "definition": "Ethical hacking is the authorized process of identifying, testing, and reporting vulnerabilities in systems, networks, applications, and infrastructure.",
+      "examPoints": [
+        "Ethical hackers use many of the same techniques as malicious attackers, but they work:",
+        "With written permission",
+        "Within a defined scope",
+        "Under agreed rules of engagement",
+        "For the purpose of improving security",
+        "Without causing unnecessary damage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "04-ethical-hacker-vs-malicious-hacker",
+      "title": "Ethical hacker vs malicious hacker",
+      "definition": "# Session 6",
+      "examPoints": [],
+      "comparisons": [
+        "Ethical Hacker: Malicious Hacker",
+        "Works with permission: Works without permission",
+        "Improves security: Exploits security",
+        "Reports findings: Hides activities",
+        "Follows scope: Ignores boundaries",
+        "Protects data: Steals, modifies, or destroys data"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "05-2-security-management-concepts-and-principles",
+      "title": "2. Security Management Concepts and Principles",
+      "definition": "Security management is the process of planning, implementing, monitoring, and improving controls that protect information assets.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "06-main-objectives",
+      "title": "Main objectives",
+      "definition": "",
+      "examPoints": [
+        "Protect confidentiality",
+        "Maintain integrity",
+        "Ensure availability",
+        "Reduce risk",
+        "Meet legal and regulatory requirements",
+        "Prepare for security incidents",
+        "Establish accountability"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "07-core-security-management-activities",
+      "title": "Core security management activities",
+      "definition": "Risk management identifies threats, vulnerabilities, likelihood, and impact.",
+      "examPoints": [
+        "Risk management",
+        "A more detailed expression is:",
+        "Security policies",
+        "Policies define what users, administrators, and systems are allowed or required to do.",
+        "Examples:",
+        "Password policy",
+        "Acceptable-use policy",
+        "Access-control policy",
+        "Incident-response policy",
+        "Backup policy",
+        "Remote-access policy",
+        "Security controls",
+        "Security controls reduce risk.",
+        "Incident management",
+        "Incident management includes:",
+        "Preparation",
+        "Detection",
+        "Analysis",
+        "Containment",
+        "Eradication",
+        "Recovery",
+        "Lessons learned",
+        "Security auditing",
+        "Auditing verifies whether controls are functioning and whether policies are being followed."
+      ],
+      "comparisons": [
+        "Control type: Purpose: Example",
+        "Preventive: Stops an incident: Firewall, MFA",
+        "Detective: Identifies an incident: IDS, log monitoring",
+        "Corrective: Repairs damage: Patch, restore backup",
+        "Deterrent: Discourages attacks: Warning banner, CCTV",
+        "Compensating: Alternative control: Extra monitoring",
+        "Recovery: Restores operations: Disaster recovery"
+      ],
+      "commands": [
+        "Risk = Likelihood × Impact",
+        "Risk = Threat × Vulnerability × Impact"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "08-3-human-side-of-information-security",
+      "title": "3. Human Side of Information Security",
+      "definition": "People are often the weakest point in a security system.",
+      "examPoints": [
+        "Even strong technology can be defeated by:",
+        "Weak passwords",
+        "Phishing",
+        "Social engineering",
+        "Negligence",
+        "Poor awareness",
+        "Insider threats",
+        "Misconfiguration",
+        "Accidental data disclosure"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "09-social-engineering",
+      "title": "Social engineering",
+      "definition": "Social engineering manipulates people into revealing information or performing unsafe actions.",
+      "examPoints": [
+        "Common techniques",
+        "Phishing",
+        "Vishing",
+        "Smishing",
+        "Pretexting",
+        "Baiting",
+        "Tailgating",
+        "Impersonation",
+        "Quid pro quo",
+        "Shoulder surfing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "10-insider-threats",
+      "title": "Insider threats",
+      "definition": "An employee intentionally steals or damages information.",
+      "examPoints": [
+        "Malicious insider",
+        "Negligent insider",
+        "An employee causes damage accidentally.",
+        "Compromised insider",
+        "An attacker gains control of an employee account."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "11-human-focused-countermeasures",
+      "title": "Human-focused countermeasures",
+      "definition": "",
+      "examPoints": [
+        "Security-awareness training",
+        "Phishing simulations",
+        "Strong password policy",
+        "MFA",
+        "Least privilege",
+        "Separation of duties",
+        "Background checks",
+        "Monitoring and auditing",
+        "Clear incident-reporting procedures"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "12-4-threats-to-information-systems",
+      "title": "4. Threats to Information Systems",
+      "definition": "A threat is anything capable of causing harm to a system or asset.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "13-threat-categories",
+      "title": "Threat categories",
+      "definition": "",
+      "examPoints": [
+        "Natural threats",
+        "Flood",
+        "Fire",
+        "Earthquake",
+        "Lightning",
+        "Extreme temperature",
+        "Human threats",
+        "Hacker",
+        "Insider",
+        "Social engineer",
+        "Fraudster",
+        "Accidental user error",
+        "Technical threats",
+        "Software bugs",
+        "Hardware failure",
+        "Misconfiguration",
+        "Network outage",
+        "Power failure"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "14-5-threat-vulnerability-attack-and-risk",
+      "title": "5. Threat, Vulnerability, Attack, and Risk",
+      "definition": "Example:",
+      "examPoints": [],
+      "comparisons": [
+        "Term: Meaning",
+        "Asset: Something valuable",
+        "Threat: Possible cause of harm",
+        "Vulnerability: Weakness",
+        "Exploit: Method used to abuse a weakness",
+        "Attack: Actual attempt to cause harm",
+        "Risk: Likelihood and impact of harm",
+        "Control: Safeguard that reduces risk"
+      ],
+      "commands": [],
+      "workflows": [
+        "Asset → Customer database",
+        "Threat → Attacker",
+        "Vulnerability → Weak password",
+        "Attack → Brute-force login",
+        "Impact → Data breach",
+        "Control → MFA and account lockout"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "16-active-vs-passive-attacks",
+      "title": "Active vs passive attacks",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Active attack: Passive attack",
+        "Alters data or system operation: Observes without alteration",
+        "Easier to detect: Harder to detect",
+        "Example: DoS: Example: Sniffing",
+        "Example: Session hijacking: Example: Traffic analysis"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "17-internal-vs-external-threats",
+      "title": "Internal vs external threats",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Internal: External",
+        "Originates inside organization: Originates outside organization",
+        "Employee or contractor: Hacker or criminal group",
+        "May already have access: Must first gain access"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "18-intentional-vs-unintentional",
+      "title": "Intentional vs unintentional",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Intentional: Unintentional",
+        "Deliberate: Accidental",
+        "Malware infection: Wrong configuration",
+        "Data theft: Accidental deletion"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "19-targeted-vs-opportunistic",
+      "title": "Targeted vs opportunistic",
+      "definition": "# Session 7",
+      "examPoints": [],
+      "comparisons": [
+        "Targeted: Opportunistic",
+        "Specific victim selected: Any vulnerable system",
+        "Spear phishing: Mass phishing",
+        "Advanced planning: Automated scanning"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "20-7-protecting-information-systems",
+      "title": "7. Protecting Information Systems",
+      "definition": "Protection requires administrative, technical, and physical controls.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "21-cia-triad",
+      "title": "CIA Triad",
+      "definition": "Ensures information is accessible only to authorized users.",
+      "examPoints": [
+        "Confidentiality",
+        "Controls:",
+        "Encryption",
+        "Access control",
+        "Data classification",
+        "MFA",
+        "Integrity",
+        "Ensures data remains accurate and unmodified.",
+        "Hashing",
+        "Digital signatures",
+        "Checksums",
+        "File-integrity monitoring",
+        "Availability",
+        "Ensures systems remain accessible.",
+        "Backups",
+        "Redundancy",
+        "Load balancing",
+        "Failover",
+        "DDoS protection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "23-authentication",
+      "title": "Authentication",
+      "definition": "Verifies identity.",
+      "examPoints": [
+        "Examples:",
+        "Password",
+        "Token",
+        "Biometric",
+        "Smart card"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "24-authorization",
+      "title": "Authorization",
+      "definition": "Determines permissions.",
+      "examPoints": [
+        "Examples:",
+        "Read",
+        "Write",
+        "Delete",
+        "Execute"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "25-accountability",
+      "title": "Accountability",
+      "definition": "Tracks user actions through:",
+      "examPoints": [
+        "Logs",
+        "Audit trails",
+        "Monitoring",
+        "Digital signatures"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "26-9-mobile-and-wireless-security",
+      "title": "9. Mobile and Wireless Security",
+      "definition": "Mobile devices face unique risks because they are portable, always connected, and often contain sensitive data.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "27-common-risks",
+      "title": "Common risks",
+      "definition": "",
+      "examPoints": [
+        "Device theft",
+        "Insecure Wi-Fi",
+        "Malicious apps",
+        "Weak screen locks",
+        "Unencrypted storage",
+        "Location tracking",
+        "Bluetooth attacks",
+        "Public charging attacks",
+        "Insecure mobile payments"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "28-security-measures",
+      "title": "Security measures",
+      "definition": "",
+      "examPoints": [
+        "Full-device encryption",
+        "Strong screen lock",
+        "Remote wipe",
+        "MDM",
+        "VPN",
+        "WPA2/WPA3",
+        "MFA",
+        "Regular updates",
+        "Install apps only from trusted sources"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "30-common-attack-methods",
+      "title": "Common attack methods",
+      "definition": "Fake banking pages collect card details.",
+      "examPoints": [
+        "Phishing",
+        "MITM",
+        "Attacker intercepts payment traffic.",
+        "Malware",
+        "Malicious apps steal card or OTP data.",
+        "SIM swapping",
+        "Attacker gains control of the victim's mobile number.",
+        "Skimming",
+        "Card details are captured through malicious readers.",
+        "Fake payment apps",
+        "Apps imitate legitimate wallets or gateways."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "31-countermeasures",
+      "title": "Countermeasures",
+      "definition": "",
+      "examPoints": [
+        "Tokenization",
+        "End-to-end encryption",
+        "MFA",
+        "Transaction alerts",
+        "Secure wallets",
+        "Device binding",
+        "Fraud detection",
+        "Biometric verification"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "32-11-information-security-management",
+      "title": "11. Information Security Management",
+      "definition": "Information security management provides governance and strategic control over security.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "33-main-components",
+      "title": "Main components",
+      "definition": "",
+      "examPoints": [
+        "Risk management",
+        "Policy management",
+        "Compliance",
+        "Incident response",
+        "Business continuity",
+        "Auditing",
+        "Awareness training",
+        "Asset management",
+        "Vendor risk management"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "34-isms",
+      "title": "ISMS",
+      "definition": "An Information Security Management System is a structured framework for managing security.",
+      "examPoints": [
+        "A common standard is:",
+        "# Session 8"
+      ],
+      "comparisons": [],
+      "commands": [
+        "ISO/IEC 27001"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "35-12-cyber-crime",
+      "title": "12. Cyber Crime",
+      "definition": "Cyber crime is unlawful activity involving computers, networks, applications, or the internet.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "36-major-forms",
+      "title": "Major forms",
+      "definition": "",
+      "examPoints": [
+        "Hacking",
+        "Identity theft",
+        "Phishing",
+        "Online fraud",
+        "Cyberstalking",
+        "Cyberbullying",
+        "Malware distribution",
+        "Intellectual-property theft",
+        "DDoS",
+        "Ransomware",
+        "Financial fraud",
+        "Data theft"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "37-13-cyber-crime-in-the-internet-context",
+      "title": "13. Cyber Crime in the Internet Context",
+      "definition": "The internet creates special challenges:",
+      "examPoints": [
+        "Global reach",
+        "Anonymity",
+        "High speed",
+        "Large scale",
+        "Cross-border jurisdiction",
+        "Rapid evidence destruction",
+        "Use of encryption",
+        "Use of botnets",
+        "Difficulty identifying attackers"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "38-14-legal-aspects-of-open-communications",
+      "title": "14. Legal Aspects of Open Communications",
+      "definition": "Online communication must consider:",
+      "examPoints": [
+        "Privacy",
+        "Data protection",
+        "Intellectual property",
+        "Defamation",
+        "Content moderation",
+        "Freedom of speech",
+        "Harassment",
+        "Data-breach notification",
+        "Platform liability",
+        "Cross-border enforcement"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "39-important-legal-concepts",
+      "title": "Important legal concepts",
+      "definition": "Protects original works.",
+      "examPoints": [
+        "Copyright",
+        "Trademark",
+        "Defamation",
+        "Privacy"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Protects names, brands, and logos.",
+        "False statement that harms reputation.",
+        "Libel: written",
+        "Slander: spoken",
+        "Protects personal information from misuse."
+      ]
+    },
+    {
+      "id": "40-15-indian-cyber-law-overview",
+      "title": "15. Indian Cyber Law Overview",
+      "definition": "Cyber offences in India are mainly addressed through:",
+      "examPoints": [
+        "Information Technology Act, 2000",
+        "Relevant criminal-law provisions",
+        "Data-protection and privacy requirements",
+        "Electronic evidence rules"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "41-common-cyber-offences",
+      "title": "Common cyber offences",
+      "definition": "",
+      "examPoints": [
+        "Unauthorized access",
+        "Identity theft",
+        "Cheating by impersonation",
+        "Data theft",
+        "Hacking",
+        "Obscene electronic content",
+        "Child sexual abuse material",
+        "Cyber terrorism",
+        "Privacy violations"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "42-important-caution",
+      "title": "Important caution",
+      "definition": "Legal section numbers and punishments may change through amendments or judicial interpretation. For examinations, follow the exact material taught by the institute.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "43-16-international-cyber-law",
+      "title": "16. International Cyber Law",
+      "definition": "Cyber crime often crosses national borders.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "44-challenges",
+      "title": "Challenges",
+      "definition": "",
+      "examPoints": [
+        "Different national laws",
+        "Jurisdiction conflicts",
+        "Evidence sharing",
+        "Extradition",
+        "Data stored in other countries",
+        "Different definitions of cyber crime"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "45-international-cooperation",
+      "title": "International cooperation",
+      "definition": "",
+      "examPoints": [
+        "Budapest Convention",
+        "Interpol cooperation",
+        "Mutual Legal Assistance Treaties",
+        "Extradition treaties",
+        "UN cybercrime initiatives"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "46-17-obscenity-and-pornography-on-the-internet",
+      "title": "17. Obscenity and Pornography on the Internet",
+      "definition": "Illegal online content may include:",
+      "examPoints": [
+        "Obscene material",
+        "Non-consensual explicit content",
+        "Child sexual abuse material",
+        "Unlawful publication or transmission",
+        "Harmful content involving minors",
+        "Security professionals must not access or retain illegal material except through authorized legal procedures."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "48-vulnerability-assessment",
+      "title": "Vulnerability assessment",
+      "definition": "Finds and prioritizes vulnerabilities.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "49-penetration-testing",
+      "title": "Penetration testing",
+      "definition": "Attempts to exploit vulnerabilities to determine actual impact.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "50-exploit",
+      "title": "Exploit",
+      "definition": "Code or technique that abuses a vulnerability.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "51-payload",
+      "title": "Payload",
+      "definition": "Action performed after exploitation.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "52-zero-day-vulnerability",
+      "title": "Zero-day vulnerability",
+      "definition": "Unknown or unpatched vulnerability.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "53-backdoor",
+      "title": "Backdoor",
+      "definition": "Hidden method of bypassing normal access controls.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "54-proof-of-concept",
+      "title": "Proof of concept",
+      "definition": "Demonstration that a vulnerability can be exploited.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "55-scope",
+      "title": "Scope",
+      "definition": "Systems, techniques, and limits approved for testing.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "56-rules-of-engagement",
+      "title": "Rules of engagement",
+      "definition": "Conditions under which the test is performed.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "57-19-ethical-hacking-phases",
+      "title": "19. Ethical Hacking Phases",
+      "definition": "A common lifecycle is:",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Authorization",
+        "→ Reconnaissance",
+        "→ Scanning",
+        "→ Enumeration",
+        "→ Vulnerability Analysis",
+        "→ Exploitation",
+        "→ Post-Exploitation",
+        "→ Cleanup",
+        "→ Reporting"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "58-reconnaissance",
+      "title": "Reconnaissance",
+      "definition": "Collects information about the target.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "59-scanning",
+      "title": "Scanning",
+      "definition": "Identifies hosts, ports, services, and vulnerabilities.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "60-enumeration",
+      "title": "Enumeration",
+      "definition": "Extracts detailed information from services.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "61-exploitation",
+      "title": "Exploitation",
+      "definition": "Uses a vulnerability to gain access.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "62-post-exploitation",
+      "title": "Post-exploitation",
+      "definition": "Determines business impact.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "63-reporting",
+      "title": "Reporting",
+      "definition": "Documents findings and recommendations.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "64-cleanup",
+      "title": "Cleanup",
+      "definition": "Removes test accounts, payloads, files, and backdoors.",
+      "examPoints": [
+        "# Session 9"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "66-white-hat",
+      "title": "White hat",
+      "definition": "Authorized security professional.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "67-black-hat",
+      "title": "Black hat",
+      "definition": "Malicious attacker.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "68-grey-hat",
+      "title": "Grey hat",
+      "definition": "May test without authorization, even if claiming good intentions.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "69-script-kiddie",
+      "title": "Script kiddie",
+      "definition": "Uses tools without deep technical understanding.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "70-hacktivist",
+      "title": "Hacktivist",
+      "definition": "Attacks for ideological or political reasons.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "71-insider",
+      "title": "Insider",
+      "definition": "Uses legitimate access for unauthorized purposes.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "72-state-sponsored-attacker",
+      "title": "State-sponsored attacker",
+      "definition": "Operates in support of national objectives.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "73-cybercriminal",
+      "title": "Cybercriminal",
+      "definition": "Attacks primarily for financial gain.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "75-red-team",
+      "title": "Red Team",
+      "definition": "Focuses on offensive security.",
+      "examPoints": [
+        "Activities:",
+        "Reconnaissance",
+        "Exploitation",
+        "Social engineering",
+        "Persistence testing",
+        "Evasion testing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "76-blue-team",
+      "title": "Blue Team",
+      "definition": "Focuses on defence.",
+      "examPoints": [
+        "Activities:",
+        "Monitoring",
+        "Detection",
+        "Incident response",
+        "Threat hunting",
+        "Hardening"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "77-purple-team",
+      "title": "Purple Team",
+      "definition": "Facilitates collaboration between Red and Blue Teams.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "78-grey-team",
+      "title": "Grey Team",
+      "definition": "In some course material, Grey Team may refer to a mixed or hybrid role. In industry, “Purple Team” is the more common term for coordinated red-blue collaboration.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "79-22-goals-of-attackers",
+      "title": "22. Goals of Attackers",
+      "definition": "Common attacker goals include:",
+      "examPoints": [
+        "Financial gain",
+        "Espionage",
+        "Data theft",
+        "Disruption",
+        "Revenge",
+        "Extortion",
+        "Publicity",
+        "Ideology",
+        "Competitive advantage",
+        "Unauthorized access"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "80-23-security-functionality-and-ease-of-use-triangle",
+      "title": "23. Security, Functionality, and Ease-of-Use Triangle",
+      "definition": "Security controls often affect usability and functionality.",
+      "examPoints": [
+        "The goal is balance, not maximum security at any cost."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "More security → possibly less convenience",
+        "More convenience → possibly weaker security",
+        "More functionality → larger attack surface"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "81-24-skills-of-an-ethical-hacker",
+      "title": "24. Skills of an Ethical Hacker",
+      "definition": "# Session 10",
+      "examPoints": [
+        "Networking",
+        "Linux",
+        "Windows",
+        "Programming",
+        "Web technologies",
+        "Databases",
+        "Cryptography",
+        "Cloud security",
+        "Scripting",
+        "Report writing",
+        "Legal and ethical awareness",
+        "Communication",
+        "Problem solving"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "82-25-security-evaluation-plan",
+      "title": "25. Security Evaluation Plan",
+      "definition": "A security evaluation plan defines:",
+      "examPoints": [
+        "Scope",
+        "Objectives",
+        "Assets",
+        "Testing schedule",
+        "Approved tools",
+        "Excluded systems",
+        "Contacts",
+        "Data-handling rules",
+        "Reporting requirements",
+        "Emergency stop conditions"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "83-26-footprinting",
+      "title": "26. Footprinting",
+      "definition": "Footprinting gathers information about a target.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "84-passive-footprinting",
+      "title": "Passive footprinting",
+      "definition": "No direct interaction with the target.",
+      "examPoints": [
+        "Examples:",
+        "Search engines",
+        "WHOIS",
+        "Public records",
+        "Social media",
+        "Job postings",
+        "Shodan",
+        "Netcraft"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "85-active-footprinting",
+      "title": "Active footprinting",
+      "definition": "Direct interaction with the target.",
+      "examPoints": [
+        "Examples:",
+        "Ping",
+        "Traceroute",
+        "DNS queries",
+        "Port scanning",
+        "Banner grabbing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "86-27-social-engineering",
+      "title": "27. Social Engineering",
+      "definition": "Social engineering attacks people rather than technology.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "87-common-methods",
+      "title": "Common methods",
+      "definition": "",
+      "examPoints": [
+        "Phishing",
+        "Spear phishing",
+        "Whaling",
+        "Vishing",
+        "Smishing",
+        "Baiting",
+        "Pretexting",
+        "Tailgating",
+        "Impersonation"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "88-defence",
+      "title": "Defence",
+      "definition": "",
+      "examPoints": [
+        "Training",
+        "Verification procedures",
+        "MFA",
+        "Call-back policy",
+        "Restricted information sharing",
+        "Visitor controls",
+        "Incident reporting"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "89-28-traceroute-in-footprinting",
+      "title": "28. Traceroute in Footprinting",
+      "definition": "Traceroute identifies the network path between source and destination.",
+      "examPoints": [
+        "It helps reveal:",
+        "Routers",
+        "Network distance",
+        "Possible filtering points",
+        "Routing path",
+        "Latency",
+        "Traceroute commonly uses TTL expiration and ICMP Time Exceeded messages."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "91-port-scanning",
+      "title": "Port scanning",
+      "definition": "Identifies open ports.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "92-network-scanning",
+      "title": "Network scanning",
+      "definition": "Discovers active hosts.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "93-vulnerability-scanning",
+      "title": "Vulnerability scanning",
+      "definition": "Identifies known vulnerabilities and misconfigurations.",
+      "examPoints": [],
+      "comparisons": [
+        "Type: Primary goal",
+        "Host discovery: Find live systems",
+        "Port scanning: Find open ports",
+        "Service detection: Identify applications",
+        "OS fingerprinting: Identify operating system",
+        "Vulnerability scanning: Find weaknesses"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "95-tcp-connect-scan",
+      "title": "TCP Connect Scan",
+      "definition": "Completes the full handshake.",
+      "examPoints": [
+        "Advantages:",
+        "Reliable",
+        "No raw-packet privilege required",
+        "Disadvantages:",
+        "Easily logged",
+        "Less stealthy"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "SYN → SYN-ACK → ACK"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "96-syn-scan",
+      "title": "SYN Scan",
+      "definition": "Half-open scan.",
+      "examPoints": [
+        "Open port: SYN-ACK",
+        "Closed port: RST"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "SYN → SYN-ACK → RST"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "97-fin-scan",
+      "title": "FIN Scan",
+      "definition": "Sends FIN.",
+      "examPoints": [
+        "Closed port often returns RST.",
+        "Open port may not respond."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "98-null-scan",
+      "title": "NULL Scan",
+      "definition": "Sends no TCP flags.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "99-xmas-scan",
+      "title": "XMAS Scan",
+      "definition": "Sets:",
+      "examPoints": [
+        "FIN",
+        "PSH",
+        "URG"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "100-idle-scan",
+      "title": "IDLE Scan",
+      "definition": "Uses a third-party zombie host.",
+      "examPoints": [
+        "Benefits:",
+        "Hides scanner's IP",
+        "Can reveal filtering relationships",
+        "Requirements:",
+        "Suitable idle host",
+        "Predictable IP ID behaviour"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "101-stealth-scan",
+      "title": "Stealth scan",
+      "definition": "A general term for scan techniques intended to reduce detection, often referring to SYN scanning.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "103-nmap",
+      "title": "Nmap",
+      "definition": "Used for:",
+      "examPoints": [
+        "Host discovery",
+        "Port scanning",
+        "Service detection",
+        "OS detection",
+        "Scripted scanning"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "104-whois",
+      "title": "WHOIS",
+      "definition": "Provides domain-registration information.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "105-netcraft",
+      "title": "Netcraft",
+      "definition": "Provides information about websites, hosting, and technologies.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "106-shodan",
+      "title": "Shodan",
+      "definition": "Search engine for internet-connected systems.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "107-google-dorks",
+      "title": "Google Dorks",
+      "definition": "Uses advanced search operators.",
+      "examPoints": [
+        "Examples:"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "site:",
+        "filetype:",
+        "intitle:",
+        "inurl:"
+      ],
+      "oneLiners": []
+    },
+    {
+      "id": "108-recon-ng",
+      "title": "Recon-ng",
+      "definition": "Framework for automated reconnaissance.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "109-foca",
+      "title": "FOCA",
+      "definition": "Extracts metadata from documents.",
+      "examPoints": [
+        "Possible metadata:",
+        "Usernames",
+        "Software versions",
+        "File paths",
+        "Internal hostnames"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "110-burp-suite-reconnaissance",
+      "title": "Burp Suite reconnaissance",
+      "definition": "Used for:",
+      "examPoints": [
+        "Crawling",
+        "Mapping endpoints",
+        "Discovering parameters",
+        "Identifying application structure",
+        "# Session 11"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "111-32-tcp-flags",
+      "title": "32. TCP Flags",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Flag: Purpose",
+        "SYN: Initiates connection",
+        "ACK: Acknowledges data",
+        "FIN: Gracefully closes connection",
+        "RST: Resets connection",
+        "PSH: Pushes data immediately",
+        "URG: Marks urgent data"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "112-33-banner-grabbing",
+      "title": "33. Banner Grabbing",
+      "definition": "Banner grabbing identifies software and versions running on a service.",
+      "examPoints": [
+        "Examples:",
+        "Web-server banner",
+        "SSH version",
+        "FTP banner",
+        "SMTP banner"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "113-active-banner-grabbing",
+      "title": "Active banner grabbing",
+      "definition": "Directly connects to the service.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "114-passive-banner-grabbing",
+      "title": "Passive banner grabbing",
+      "definition": "Observes traffic without direct probing.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "115-34-os-fingerprinting",
+      "title": "34. OS Fingerprinting",
+      "definition": "OS fingerprinting identifies a target operating system.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "116-active-fingerprinting",
+      "title": "Active fingerprinting",
+      "definition": "Sends crafted packets and analyzes responses.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "117-passive-fingerprinting",
+      "title": "Passive fingerprinting",
+      "definition": "Observes normal traffic.",
+      "examPoints": [
+        "Indicators include:",
+        "TTL",
+        "TCP window size",
+        "TCP options",
+        "IP ID behaviour"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "118-35-proxy-servers-in-attacks",
+      "title": "35. Proxy Servers in Attacks",
+      "definition": "A proxy acts as an intermediary.",
+      "examPoints": [
+        "Attackers may use proxies to:",
+        "Hide origin",
+        "Bypass restrictions",
+        "Route traffic",
+        "Intercept requests",
+        "Modify traffic",
+        "Legitimate uses include:",
+        "Privacy",
+        "Filtering",
+        "Caching",
+        "Security testing",
+        "Access control"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "119-36-http-tunneling",
+      "title": "36. HTTP Tunneling",
+      "definition": "HTTP tunneling carries non-HTTP communication inside HTTP or HTTPS traffic.",
+      "examPoints": [
+        "Attackers may use it to:",
+        "Bypass firewall rules",
+        "Create covert command channels",
+        "Exfiltrate data",
+        "Defence:",
+        "Proxy inspection",
+        "Behaviour monitoring",
+        "TLS inspection where authorized",
+        "Egress filtering",
+        "Application allowlisting"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "120-37-ip-spoofing",
+      "title": "37. IP Spoofing",
+      "definition": "IP spoofing forges the source IP address.",
+      "examPoints": [
+        "Used in:",
+        "Reflection attacks",
+        "Smurf attacks",
+        "Some trust-based attacks",
+        "Traffic concealment",
+        "Limitations:",
+        "Replies may go to the spoofed system.",
+        "It does not automatically provide two-way communication.",
+        "Countermeasures:",
+        "Ingress filtering",
+        "Egress filtering",
+        "Reverse-path filtering",
+        "Strong authentication"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "121-38-enumeration",
+      "title": "38. Enumeration",
+      "definition": "Enumeration actively extracts detailed information from services.",
+      "examPoints": [
+        "Examples:",
+        "Usernames",
+        "Groups",
+        "Shares",
+        "Hostnames",
+        "DNS records",
+        "SNMP data",
+        "Service details"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "122-common-enumeration-targets",
+      "title": "Common enumeration targets",
+      "definition": "",
+      "examPoints": [
+        "DNS",
+        "SMB",
+        "NetBIOS",
+        "SNMP",
+        "LDAP",
+        "SMTP",
+        "NFS"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "124-brute-force",
+      "title": "Brute force",
+      "definition": "Attempts every possible combination.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "125-dictionary-attack",
+      "title": "Dictionary attack",
+      "definition": "Uses a wordlist.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "126-hybrid-attack",
+      "title": "Hybrid attack",
+      "definition": "Combines dictionary words with modifications.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "127-password-spraying",
+      "title": "Password spraying",
+      "definition": "Tries a small number of common passwords against many accounts.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "128-credential-stuffing",
+      "title": "Credential stuffing",
+      "definition": "Uses previously leaked credentials.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "129-rainbow-table",
+      "title": "Rainbow table",
+      "definition": "Uses precomputed hash values.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "130-offline-cracking",
+      "title": "Offline cracking",
+      "definition": "Attempts to recover passwords from captured hashes.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "131-40-windows-password-cracking",
+      "title": "40. Windows Password Cracking",
+      "definition": "Windows commonly stores password-derived values in forms such as NTLM hashes.",
+      "examPoints": [
+        "Defences include:",
+        "Strong passwords",
+        "MFA",
+        "Credential Guard",
+        "Disable legacy authentication",
+        "Account lockout",
+        "Salted modern hashes where applicable",
+        "Limit local administrator reuse"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "133-smb-redirection",
+      "title": "SMB redirection",
+      "definition": "Victim authentication is redirected to an attacker-controlled SMB service.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "134-smb-relay",
+      "title": "SMB relay",
+      "definition": "The attacker forwards captured authentication to another service.",
+      "examPoints": [
+        "The attacker may gain access without knowing the password."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "135-countermeasures",
+      "title": "Countermeasures",
+      "definition": "",
+      "examPoints": [
+        "SMB signing",
+        "Disable NTLM where possible",
+        "Use Kerberos",
+        "Disable LLMNR and NBT-NS",
+        "Network segmentation",
+        "Extended protection for authentication",
+        "Strong channel binding"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "136-42-netbios-dos",
+      "title": "42. NetBIOS DoS",
+      "definition": "NetBIOS services can be abused through malformed or excessive requests.",
+      "examPoints": [
+        "Defences:",
+        "Disable NetBIOS if not needed",
+        "Filter ports",
+        "Segment networks",
+        "Patch systems",
+        "Monitor unusual traffic",
+        "# Session 12"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "138-active-online-attack",
+      "title": "Active online attack",
+      "definition": "Directly attempts authentication.",
+      "examPoints": [
+        "Examples:",
+        "Brute force",
+        "Password spraying",
+        "Credential stuffing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "139-passive-online-attack",
+      "title": "Passive online attack",
+      "definition": "Captures credentials without directly attempting login.",
+      "examPoints": [
+        "Examples:",
+        "Sniffing",
+        "MITM",
+        "Keylogging"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "140-offline-attack",
+      "title": "Offline attack",
+      "definition": "Attempts to crack stolen password hashes.",
+      "examPoints": [
+        "Advantages to attacker:",
+        "No lockout",
+        "No server logs",
+        "High-speed cracking"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "141-44-password-cracking-countermeasures",
+      "title": "44. Password Cracking Countermeasures",
+      "definition": "",
+      "examPoints": [
+        "Long unique passwords",
+        "MFA",
+        "Account lockout",
+        "Login throttling",
+        "Password managers",
+        "Strong password hashing",
+        "Salt",
+        "Disable default passwords",
+        "Monitor failed logins",
+        "Block breached passwords"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "143-keylogger",
+      "title": "Keylogger",
+      "definition": "Records keyboard input.",
+      "examPoints": [
+        "Types:",
+        "Software",
+        "Hardware",
+        "Kernel-level",
+        "Browser-based"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "144-spyware",
+      "title": "Spyware",
+      "definition": "Secretly monitors user activity.",
+      "examPoints": [
+        "Capabilities:",
+        "Screen capture",
+        "Browser-history collection",
+        "Credential theft",
+        "Microphone activation",
+        "Location tracking",
+        "Defence:",
+        "Endpoint protection",
+        "Patching",
+        "Application control",
+        "Least privilege",
+        "User awareness",
+        "Integrity monitoring"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "146-trojan",
+      "title": "Trojan",
+      "definition": "Malware disguised as legitimate software.",
+      "examPoints": [
+        "A Trojan generally does not self-replicate."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "147-backdoor",
+      "title": "Backdoor",
+      "definition": "Hidden mechanism for bypassing authentication.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "148-reverse-connecting-trojan",
+      "title": "Reverse-connecting Trojan",
+      "definition": "The infected host initiates a connection to the attacker.",
+      "examPoints": [
+        "Advantages to attacker:",
+        "May bypass inbound firewall restrictions",
+        "Works through NAT more easily",
+        "Blends with outbound traffic"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "150-overt-channel",
+      "title": "Overt channel",
+      "definition": "Legitimate communication channel used normally.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "151-covert-channel",
+      "title": "Covert channel",
+      "definition": "Hidden communication path used to bypass security policy.",
+      "examPoints": [
+        "Examples:",
+        "DNS tunneling",
+        "ICMP tunneling",
+        "Data hidden in headers",
+        "Timing channels"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "152-48-netcat-trojan",
+      "title": "48. Netcat Trojan",
+      "definition": "Netcat can create network connections and shells.",
+      "examPoints": [
+        "It is a legitimate administrative tool but can be abused for:",
+        "Bind shells",
+        "Reverse shells",
+        "File transfer",
+        "Port listening",
+        "Defence:",
+        "Application allowlisting",
+        "Egress filtering",
+        "EDR monitoring",
+        "Network segmentation",
+        "Process monitoring"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "153-49-indicators-of-trojan-activity",
+      "title": "49. Indicators of Trojan Activity",
+      "definition": "# Session 13",
+      "examPoints": [
+        "Unknown processes",
+        "Unexpected ports",
+        "Unusual outbound traffic",
+        "Disabled security tools",
+        "New startup entries",
+        "Modified system files",
+        "Suspicious scheduled tasks",
+        "High network usage",
+        "Unknown services"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "154-50-wrapping",
+      "title": "50. Wrapping",
+      "definition": "Wrapping combines a malicious program with a legitimate program.",
+      "examPoints": [
+        "The victim sees the expected application, but malicious code also executes.",
+        "Countermeasures:",
+        "Digital-signature verification",
+        "Hash verification",
+        "Application allowlisting",
+        "Trusted software sources",
+        "Endpoint protection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "155-51-trojan-construction-kits",
+      "title": "51. Trojan Construction Kits",
+      "definition": "Trojan kits automate malware creation.",
+      "examPoints": [
+        "They may provide:",
+        "Payload selection",
+        "Persistence options",
+        "Obfuscation",
+        "Packing",
+        "Command-and-control settings",
+        "Possession or use against unauthorized systems may be illegal."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "156-52-trojan-evasion-techniques",
+      "title": "52. Trojan Evasion Techniques",
+      "definition": "Common techniques include:",
+      "examPoints": [
+        "Packing",
+        "Obfuscation",
+        "Encryption",
+        "Process injection",
+        "Fileless execution",
+        "Polymorphism",
+        "Disabling security tools",
+        "Environment detection",
+        "Sandbox evasion",
+        "Defence:",
+        "Behaviour analysis",
+        "Memory scanning",
+        "EDR",
+        "Sandboxing",
+        "Threat intelligence",
+        "Application control"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "157-53-system-file-verification",
+      "title": "53. System File Verification",
+      "definition": "System-file verification detects unauthorized changes.",
+      "examPoints": [
+        "Methods:",
+        "Hash comparison",
+        "Digital signatures",
+        "File Integrity Monitoring",
+        "Trusted baseline comparison",
+        "Examples of tools or mechanisms:",
+        "Tripwire",
+        "AIDE",
+        "Windows System File Checker",
+        "Package-manager verification",
+        "# Session 14"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "158-54-virus-vs-worm",
+      "title": "54. Virus vs Worm",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Virus: Worm",
+        "Attaches to a host file: Standalone malware",
+        "Often needs user action: Self-replicates automatically",
+        "Spreads through infected files: Spreads through networks",
+        "Modifies files: Consumes network resources"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "160-file-infector-virus",
+      "title": "File-infector virus",
+      "definition": "Infects executable files.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "161-boot-sector-virus",
+      "title": "Boot-sector virus",
+      "definition": "Infects boot records.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "162-macro-virus",
+      "title": "Macro virus",
+      "definition": "Infects documents through macros.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "163-multipartite-virus",
+      "title": "Multipartite virus",
+      "definition": "Infects multiple system areas.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "164-polymorphic-virus",
+      "title": "Polymorphic virus",
+      "definition": "Changes its code appearance.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "165-metamorphic-virus",
+      "title": "Metamorphic virus",
+      "definition": "Rewrites its own code.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "166-resident-virus",
+      "title": "Resident virus",
+      "definition": "Remains active in memory.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "167-non-resident-virus",
+      "title": "Non-resident virus",
+      "definition": "Executes, infects, and exits.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "168-56-antivirus-evasion",
+      "title": "56. Antivirus Evasion",
+      "definition": "Malware may evade antivirus using:",
+      "examPoints": [
+        "Packing",
+        "Obfuscation",
+        "Encryption",
+        "Polymorphism",
+        "Fileless techniques",
+        "Process injection",
+        "Signature modification",
+        "Sandbox detection",
+        "Defensive focus should be on behaviour, not only signatures."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "170-signature-based-detection",
+      "title": "Signature-based detection",
+      "definition": "Matches known patterns.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "171-heuristic-detection",
+      "title": "Heuristic detection",
+      "definition": "Identifies suspicious characteristics.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "172-behaviour-based-detection",
+      "title": "Behaviour-based detection",
+      "definition": "Observes runtime actions.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "173-integrity-checking",
+      "title": "Integrity checking",
+      "definition": "Detects file changes.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "174-sandbox-analysis",
+      "title": "Sandbox analysis",
+      "definition": "Runs suspicious files in isolation.",
+      "examPoints": [
+        "# Session 15"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "175-58-protocols-susceptible-to-sniffing",
+      "title": "58. Protocols Susceptible to Sniffing",
+      "definition": "Unencrypted protocols expose data.",
+      "examPoints": [
+        "Examples:",
+        "HTTP",
+        "FTP",
+        "Telnet",
+        "POP3",
+        "IMAP",
+        "SMTP without TLS",
+        "SNMPv1/v2c",
+        "Secure alternatives:"
+      ],
+      "comparisons": [
+        "Insecure: Secure",
+        "HTTP: HTTPS",
+        "FTP: SFTP/FTPS",
+        "Telnet: SSH",
+        "POP3: POP3S",
+        "IMAP: IMAPS",
+        "SNMPv2c: SNMPv3"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "177-passive-sniffing",
+      "title": "Passive sniffing",
+      "definition": "Observes traffic without modifying the network.",
+      "examPoints": [
+        "Common on shared-medium networks."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "178-active-sniffing",
+      "title": "Active sniffing",
+      "definition": "Manipulates network behaviour to capture traffic.",
+      "examPoints": [
+        "Examples:",
+        "ARP poisoning",
+        "MAC flooding",
+        "DHCP spoofing",
+        "DNS spoofing"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "179-60-arp-poisoning",
+      "title": "60. ARP Poisoning",
+      "definition": "ARP poisoning sends forged ARP replies.",
+      "examPoints": [
+        "The attacker may associate their MAC address with:",
+        "Gateway IP",
+        "Victim IP",
+        "This can enable:",
+        "MITM",
+        "Traffic capture",
+        "Session hijacking",
+        "Traffic modification",
+        "Countermeasures:",
+        "Dynamic ARP Inspection",
+        "Static ARP entries where practical",
+        "Switch security",
+        "VLAN segmentation",
+        "Encryption",
+        "ARP monitoring"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "181-capture-filter",
+      "title": "Capture filter",
+      "definition": "Decides what traffic is captured.",
+      "examPoints": [
+        "Examples:"
+      ],
+      "comparisons": [],
+      "commands": [
+        "host 192.168.1.10",
+        "tcp port 80"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "182-display-filter",
+      "title": "Display filter",
+      "definition": "Decides what captured traffic is displayed.",
+      "examPoints": [
+        "Examples:"
+      ],
+      "comparisons": [],
+      "commands": [
+        "ip.addr == 192.168.1.10",
+        "tcp.port == 80",
+        "http",
+        "dns"
+      ],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "183-62-mac-flooding",
+      "title": "62. MAC Flooding",
+      "definition": "MAC flooding fills a switch's CAM table with fake MAC addresses.",
+      "examPoints": [
+        "The switch may start flooding frames out multiple ports.",
+        "Countermeasures:",
+        "Port security",
+        "Limit MAC addresses per port",
+        "Sticky MAC",
+        "802.1X",
+        "VLAN segmentation",
+        "Disable unused ports"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "184-63-dns-spoofing",
+      "title": "63. DNS Spoofing",
+      "definition": "DNS spoofing causes victims to receive false DNS responses.",
+      "examPoints": [
+        "Impact:",
+        "Redirect users",
+        "Steal credentials",
+        "Deliver malware",
+        "Perform MITM",
+        "Countermeasures:",
+        "DNSSEC",
+        "Secure resolvers",
+        "HTTPS",
+        "Certificate validation",
+        "Cache protection",
+        "Network monitoring"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "185-64-sniffing-countermeasures",
+      "title": "64. Sniffing Countermeasures",
+      "definition": "# Session 16",
+      "examPoints": [
+        "Use encryption",
+        "Use switched networks",
+        "Enable port security",
+        "Use VPN",
+        "Use secure protocols",
+        "Monitor ARP changes",
+        "Use DAI",
+        "Disable unused services",
+        "Segment networks"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "187-dos",
+      "title": "DoS",
+      "definition": "Single-source service disruption.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "188-ddos",
+      "title": "DDoS",
+      "definition": "Multiple distributed systems attack one target.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "189-main-objectives",
+      "title": "Main objectives",
+      "definition": "",
+      "examPoints": [
+        "Exhaust bandwidth",
+        "Exhaust CPU",
+        "Exhaust memory",
+        "Exhaust connections",
+        "Crash services"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "191-bot",
+      "title": "Bot",
+      "definition": "Compromised device controlled remotely.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "192-botnet",
+      "title": "Botnet",
+      "definition": "Collection of compromised devices.",
+      "examPoints": [
+        "Common uses:",
+        "DDoS",
+        "Spam",
+        "Credential attacks",
+        "Cryptomining",
+        "Malware distribution"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "193-67-smurf-attack",
+      "title": "67. Smurf Attack",
+      "definition": "A Smurf attack uses:",
+      "examPoints": [
+        "Spoofed victim IP",
+        "ICMP Echo Request",
+        "Broadcast address",
+        "Multiple ICMP replies to victim",
+        "Countermeasures:",
+        "Disable directed broadcasts",
+        "Filter spoofed traffic",
+        "Rate-limit ICMP",
+        "Ingress and egress filtering"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "194-68-syn-flood",
+      "title": "68. SYN Flood",
+      "definition": "A SYN flood sends many SYN packets without completing the handshake.",
+      "examPoints": [
+        "The server keeps half-open connections.",
+        "Countermeasures:",
+        "SYN cookies",
+        "Rate limiting",
+        "Connection limits",
+        "Load balancers",
+        "Firewall and IPS",
+        "Reduce SYN timeout"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "195-69-spoofing-vs-hijacking",
+      "title": "69. Spoofing vs Hijacking",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Spoofing: Hijacking",
+        "Impersonates identity: Takes control of existing communication",
+        "May forge IP or MAC: Uses active session",
+        "May not require valid session: Requires session access"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "196-70-session-hijacking",
+      "title": "70. Session Hijacking",
+      "definition": "Session hijacking steals or predicts a valid session identifier.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "197-types",
+      "title": "Types",
+      "definition": "",
+      "examPoints": [
+        "Active hijacking",
+        "Passive hijacking",
+        "Cookie theft",
+        "Session fixation",
+        "TCP session hijacking"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "198-common-causes",
+      "title": "Common causes",
+      "definition": "",
+      "examPoints": [
+        "Unencrypted traffic",
+        "Weak session IDs",
+        "XSS",
+        "Session IDs in URLs",
+        "No session expiration",
+        "Missing cookie protections"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "199-countermeasures",
+      "title": "Countermeasures",
+      "definition": "# Session 17",
+      "examPoints": [
+        "HTTPS",
+        "Secure, HttpOnly, SameSite cookies",
+        "Session regeneration after login",
+        "Short session timeout",
+        "Logout invalidation",
+        "XSS prevention",
+        "Re-authentication for sensitive actions"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "200-71-hacking-web-servers",
+      "title": "71. Hacking Web Servers",
+      "definition": "Attackers target:",
+      "examPoints": [
+        "Unpatched software",
+        "Default credentials",
+        "Directory traversal",
+        "Misconfiguration",
+        "Weak permissions",
+        "Unnecessary services",
+        "Vulnerable plugins",
+        "Exposed management interfaces",
+        "Defence:",
+        "Patch management",
+        "Hardening",
+        "Least privilege",
+        "Secure configuration",
+        "WAF",
+        "Logging",
+        "File-integrity monitoring"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "201-72-web-application-vulnerabilities",
+      "title": "72. Web Application Vulnerabilities",
+      "definition": "Important categories:",
+      "examPoints": [
+        "SQL Injection",
+        "XSS",
+        "Broken access control",
+        "File inclusion",
+        "CSRF",
+        "Insecure upload",
+        "SSRF",
+        "Authentication failures",
+        "Session flaws",
+        "Security misconfiguration"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "202-73-web-based-password-cracking",
+      "title": "73. Web-Based Password Cracking",
+      "definition": "Methods:",
+      "examPoints": [
+        "Brute force",
+        "Dictionary attack",
+        "Password spraying",
+        "Credential stuffing",
+        "Default credentials",
+        "Countermeasures:",
+        "MFA",
+        "Rate limiting",
+        "Lockout",
+        "CAPTCHA where appropriate",
+        "Monitoring",
+        "Strong password policy",
+        "Breached-password detection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "203-74-wireless-hacking",
+      "title": "74. Wireless Hacking",
+      "definition": "Wireless attacks include:",
+      "examPoints": [
+        "Evil twin",
+        "Rogue access point",
+        "Deauthentication",
+        "Packet sniffing",
+        "WEP cracking",
+        "WPA handshake capture",
+        "MAC spoofing",
+        "WPS attacks",
+        "Testing must be restricted to authorized wireless networks."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "205-wep",
+      "title": "WEP",
+      "definition": "Weak due to:",
+      "examPoints": [
+        "RC4 weaknesses",
+        "Short IV",
+        "Key reuse",
+        "Weak integrity protection",
+        "WEP is obsolete."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "206-wpa",
+      "title": "WPA",
+      "definition": "Improved WEP using TKIP.",
+      "examPoints": [
+        "WPA is also obsolete."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "207-wpa2",
+      "title": "WPA2",
+      "definition": "Uses AES-CCMP.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "208-wpa3",
+      "title": "WPA3",
+      "definition": "Introduces stronger authentication and protection against offline guessing.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "209-76-ssid-discovery",
+      "title": "76. SSID Discovery",
+      "definition": "An SSID is the wireless network name.",
+      "examPoints": [
+        "It can be discovered through:",
+        "Beacon frames",
+        "Probe requests",
+        "Probe responses",
+        "Wireless scanning tools",
+        "Hidden SSID does not provide strong security."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "210-77-mac-spoofing",
+      "title": "77. MAC Spoofing",
+      "definition": "MAC spoofing changes the apparent MAC address.",
+      "examPoints": [
+        "Uses:",
+        "Bypass weak MAC filtering",
+        "Impersonate a device",
+        "Hide identity",
+        "MAC filtering alone is not secure."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "211-78-wireless-security-measures",
+      "title": "78. Wireless Security Measures",
+      "definition": "# Session 18",
+      "examPoints": [
+        "WPA2-AES or WPA3",
+        "Strong passphrase",
+        "Disable WPS",
+        "Change default admin credentials",
+        "Update firmware",
+        "Guest network",
+        "Network segmentation",
+        "Enterprise authentication",
+        "Rogue AP detection"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "212-79-backdoor-devices",
+      "title": "79. Backdoor Devices",
+      "definition": "A backdoor device provides unauthorized hidden access.",
+      "examPoints": [
+        "Examples:",
+        "Rogue USB",
+        "Hardware implant",
+        "Unauthorized wireless adapter",
+        "Malicious network device",
+        "Modified peripheral",
+        "Countermeasures:",
+        "Physical inspection",
+        "Asset inventory",
+        "Port control",
+        "USB restrictions",
+        "Network-access control"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "213-80-biometric-spoofing",
+      "title": "80. Biometric Spoofing",
+      "definition": "Biometric spoofing attempts to deceive:",
+      "examPoints": [
+        "Fingerprint scanners",
+        "Facial recognition",
+        "Voice recognition",
+        "Iris scanners",
+        "Countermeasures:",
+        "Liveness detection",
+        "Multi-factor authentication",
+        "Anti-spoofing algorithms",
+        "Secure template storage",
+        "Retry limits"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "214-81-linux-hacking-and-linux-backdoors",
+      "title": "81. Linux Hacking and Linux Backdoors",
+      "definition": "Common Linux attack paths:",
+      "examPoints": [
+        "Weak SSH passwords",
+        "Misconfigured sudo",
+        "SUID binaries",
+        "Cron jobs",
+        "Writable scripts",
+        "Kernel vulnerabilities",
+        "Exposed services",
+        "Weak file permissions",
+        "Backdoor mechanisms:",
+        "SSH keys",
+        "Modified binaries",
+        "Hidden services",
+        "Startup scripts",
+        "Web shells",
+        "Defence:",
+        "Patching",
+        "Least privilege",
+        "SSH hardening",
+        "File-integrity monitoring",
+        "Audit logs",
+        "Disable unused services"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "216-ids",
+      "title": "IDS",
+      "definition": "Detects suspicious activity and alerts.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "217-ips",
+      "title": "IPS",
+      "definition": "Detects and blocks suspicious activity.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "218-honeypot",
+      "title": "Honeypot",
+      "definition": "Decoy system designed to attract attackers.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "219-firewall",
+      "title": "Firewall",
+      "definition": "Controls network traffic according to rules.",
+      "examPoints": [],
+      "comparisons": [
+        "Technology: Main role",
+        "Firewall: Permit or block traffic",
+        "IDS: Detect and alert",
+        "IPS: Detect and prevent",
+        "Honeypot: Deceive and observe"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "220-83-nagios",
+      "title": "83. Nagios",
+      "definition": "Nagios monitors:",
+      "examPoints": [
+        "Hosts",
+        "Services",
+        "Availability",
+        "Resource use",
+        "Alerts",
+        "Nagios is primarily a monitoring tool, not a full IDS."
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "221-84-snort",
+      "title": "84. Snort",
+      "definition": "Snort can operate as:",
+      "examPoints": [
+        "Packet sniffer",
+        "Packet logger",
+        "Network IDS",
+        "IPS",
+        "Detection methods:",
+        "Signature-based rules",
+        "Protocol analysis",
+        "Content matching"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "222-85-dmz",
+      "title": "85. DMZ",
+      "definition": "A DMZ is a separate network zone for public-facing systems.",
+      "examPoints": [
+        "Examples:",
+        "Web server",
+        "Mail server",
+        "DNS server",
+        "Reverse proxy",
+        "Purpose:",
+        "Isolate public services",
+        "Reduce direct access to the internal network",
+        "Limit breach impact",
+        "# Session 19"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "223-86-physical-security",
+      "title": "86. Physical Security",
+      "definition": "Physical security protects people, buildings, hardware, and infrastructure.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "224-threats",
+      "title": "Threats",
+      "definition": "",
+      "examPoints": [
+        "Theft",
+        "Fire",
+        "Flood",
+        "Unauthorized entry",
+        "Sabotage",
+        "Power failure",
+        "Environmental damage"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "225-controls",
+      "title": "Controls",
+      "definition": "",
+      "examPoints": [
+        "Guards",
+        "Locks",
+        "CCTV",
+        "Access cards",
+        "Biometrics",
+        "Fences",
+        "Mantraps",
+        "Fire suppression",
+        "UPS",
+        "Environmental monitoring"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "226-87-factors-affecting-physical-security",
+      "title": "87. Factors Affecting Physical Security",
+      "definition": "",
+      "examPoints": [
+        "Building location",
+        "Crime rate",
+        "Natural disaster risk",
+        "Power reliability",
+        "Access points",
+        "Visitor management",
+        "Asset value",
+        "Environmental conditions",
+        "Emergency response capability"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "227-88-penetration-testing-methodologies",
+      "title": "88. Penetration Testing Methodologies",
+      "definition": "Common methodologies include:",
+      "examPoints": [
+        "PTES",
+        "OSSTMM",
+        "OWASP WSTG",
+        "NIST guidance",
+        "ISSAF"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "228-ptes-phases",
+      "title": "PTES phases",
+      "definition": "",
+      "examPoints": [
+        "Pre-engagement",
+        "Intelligence gathering",
+        "Threat modelling",
+        "Vulnerability analysis",
+        "Exploitation",
+        "Post-exploitation",
+        "Reporting"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "229-89-metasploit-framework",
+      "title": "89. Metasploit Framework",
+      "definition": "Metasploit is used for authorized penetration testing.",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "230-important-terms",
+      "title": "Important terms",
+      "definition": "Code that abuses a vulnerability.",
+      "examPoints": [
+        "Exploit",
+        "Payload",
+        "Auxiliary module",
+        "Handler",
+        "Session",
+        "Meterpreter"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Code executed after successful exploitation.",
+        "Performs scanning, enumeration, or other actions.",
+        "Receives connections from payloads.",
+        "Active connection to a target.",
+        "Advanced in-memory payload.",
+        "Metasploit should only be used in authorized labs and engagements.",
+        "# Session 20"
+      ]
+    },
+    {
+      "id": "231-90-malware-types",
+      "title": "90. Malware Types",
+      "definition": "",
+      "examPoints": [
+        "Virus",
+        "Worm",
+        "Trojan",
+        "Ransomware",
+        "Spyware",
+        "Adware",
+        "Rootkit",
+        "Keylogger",
+        "Bot",
+        "Backdoor",
+        "Downloader",
+        "Dropper",
+        "Logic bomb",
+        "Fileless malware"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "232-91-malware-families",
+      "title": "91. Malware Families",
+      "definition": "A malware family is a group of related malware samples sharing:",
+      "examPoints": [
+        "Code",
+        "Behaviour",
+        "Infrastructure",
+        "Payload",
+        "Configuration",
+        "Development origin"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "233-92-latest-malware-trends",
+      "title": "92. Latest Malware Trends",
+      "definition": "Modern trends include:",
+      "examPoints": [
+        "Ransomware-as-a-Service",
+        "Fileless malware",
+        "Living-off-the-land",
+        "Supply-chain attacks",
+        "Cloud-targeted malware",
+        "Mobile malware",
+        "Credential theft",
+        "Double extortion",
+        "EDR evasion",
+        "Cryptojacking"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "235-static-analysis",
+      "title": "Static analysis",
+      "definition": "Examines malware without running it.",
+      "examPoints": [
+        "Checks:",
+        "File type",
+        "Hash",
+        "Strings",
+        "Imports",
+        "Headers",
+        "Embedded URLs",
+        "Digital signature",
+        "Packing",
+        "Advantages:",
+        "Safer",
+        "Faster",
+        "Good initial understanding",
+        "Limitations:",
+        "Obfuscation may hide behaviour",
+        "Runtime actions may not be visible"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "236-dynamic-analysis",
+      "title": "Dynamic analysis",
+      "definition": "Runs malware in a controlled environment.",
+      "examPoints": [
+        "Observes:",
+        "Processes",
+        "Files",
+        "Registry",
+        "Network traffic",
+        "Services",
+        "Persistence",
+        "API calls",
+        "Advantages:",
+        "Reveals actual behaviour",
+        "Limitations:",
+        "Malware may detect sandbox",
+        "Risk if environment is not isolated"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "237-94-safe-malware-analysis-environment",
+      "title": "94. Safe Malware Analysis Environment",
+      "definition": "A secure malware lab should include:",
+      "examPoints": [
+        "Isolated VM",
+        "Snapshots",
+        "No production credentials",
+        "Controlled networking",
+        "Monitoring tools",
+        "No shared clipboard if possible",
+        "No shared folders",
+        "Host firewall",
+        "Revert after analysis"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "239-usb-pratirodh",
+      "title": "USB Pratirodh",
+      "definition": "Used to control and monitor USB-storage access.",
+      "examPoints": [
+        "Possible functions:",
+        "Device control",
+        "USB authorization",
+        "Logging",
+        "Restriction of removable media"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "240-appsamvid",
+      "title": "AppSamvid",
+      "definition": "Application-whitelisting solution.",
+      "examPoints": [
+        "Purpose:",
+        "Allow trusted applications",
+        "Block unauthorized executables",
+        "Reduce malware execution"
+      ],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "241-96-important-tool-summary",
+      "title": "96. Important Tool Summary",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Tool: Main use",
+        "Nmap: Host and port discovery",
+        "WHOIS: Domain information",
+        "Shodan: Internet-connected device search",
+        "Netcraft: Website and hosting information",
+        "Recon-ng: Reconnaissance framework",
+        "FOCA: Metadata extraction",
+        "Burp Suite: Web testing",
+        "Nessus: Vulnerability scanning",
+        "John the Ripper: Password cracking",
+        "Hydra: Online login testing",
+        "Hashcat: Offline hash cracking",
+        "Wireshark: Packet analysis",
+        "Snort: IDS/IPS",
+        "Nagios: Infrastructure monitoring",
+        "Metasploit: Exploitation framework"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "243-vulnerability-assessment-vs-penetration-testing",
+      "title": "Vulnerability assessment vs penetration testing",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Vulnerability Assessment: Penetration Testing",
+        "Finds weaknesses: Exploits weaknesses",
+        "Broad coverage: Deeper validation",
+        "Mostly automated: Manual and automated",
+        "Lower operational risk: Higher operational risk",
+        "Produces vulnerability list: Demonstrates impact"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "244-active-vs-passive-reconnaissance",
+      "title": "Active vs passive reconnaissance",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Active: Passive",
+        "Interacts with target: Uses public information",
+        "More detectable: Less detectable",
+        "Nmap: WHOIS",
+        "Traceroute: Search engines"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "245-virus-vs-worm-vs-trojan",
+      "title": "Virus vs worm vs Trojan",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Virus: Worm: Trojan",
+        "Attaches to host: Standalone: Disguised software",
+        "Often needs user action: Self-replicates: Requires execution",
+        "Infects files: Spreads through networks: Delivers malicious payload"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "246-ids-vs-ips",
+      "title": "IDS vs IPS",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "IDS: IPS",
+        "Detects: Detects and blocks",
+        "Usually passive: Usually inline",
+        "Alerts: Prevents"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "247-static-vs-dynamic-malware-analysis",
+      "title": "Static vs dynamic malware analysis",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [
+        "Static: Dynamic",
+        "Does not execute malware: Executes malware",
+        "Examines file structure: Observes behaviour",
+        "Safer: Higher risk",
+        "Good for strings/imports: Good for runtime actions"
+      ],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": []
+    },
+    {
+      "id": "248-98-important-exam-points",
+      "title": "98. Important Exam Points",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [],
+      "oneLiners": [
+        "Ethical hacking requires authorization.",
+        "Threat exploits vulnerability to create risk.",
+        "Active attacks modify; passive attacks observe.",
+        "Red Team attacks; Blue Team defends.",
+        "WHOIS is used for domain information.",
+        "Nmap identifies hosts, ports, services, and operating systems.",
+        "SYN scan does not complete the TCP handshake.",
+        "XMAS scan uses FIN, PSH, and URG.",
+        "NULL scan sends no TCP flags.",
+        "Enumeration extracts detailed service information.",
+        "Banner grabbing identifies service versions.",
+        "Password spraying uses one common password against many users.",
+        "Offline cracking requires password hashes.",
+        "A Trojan does not normally self-replicate.",
+        "A worm self-replicates.",
+        "Reverse Trojan connects from victim to attacker.",
+        "ARP poisoning enables MITM.",
+        "MAC flooding attacks a switch CAM table.",
+        "DNS spoofing redirects users through false DNS replies.",
+        "DoS attacks availability.",
+        "DDoS uses distributed systems.",
+        "Smurf uses ICMP amplification.",
+        "SYN flood exhausts half-open connections.",
+        "WEP is insecure and obsolete.",
+        "Hidden SSID is not a strong security control.",
+        "IDS detects; IPS can block.",
+        "Honeypot attracts attackers.",
+        "DMZ separates public services from internal networks.",
+        "Static malware analysis does not execute the file.",
+        "Dynamic malware analysis observes runtime behaviour.",
+        "Metasploit exploit abuses vulnerability; payload performs action.",
+        "PTES includes pre-engagement, reconnaissance, exploitation, and reporting.",
+        "File-integrity monitoring detects unauthorized changes.",
+        "Physical security is part of information security.",
+        "Cleanup is mandatory after an ethical hacking engagement."
+      ]
+    },
+    {
+      "id": "249-99-last-minute-revision-sheet",
+      "title": "99. Last-Minute Revision Sheet",
+      "definition": "",
+      "examPoints": [],
+      "comparisons": [],
+      "commands": [],
+      "workflows": [
+        "Threat → potential harm",
+        "Vulnerability → weakness",
+        "Exploit → technique/code",
+        "Risk → likelihood × impact",
+        "Red Team → offense",
+        "Blue Team → defense",
+        "Purple Team → collaboration",
+        "Passive Recon → WHOIS, Google, Shodan",
+        "Active Recon → Nmap, traceroute, banner grabbing",
+        "SYN Scan → half-open",
+        "XMAS → FIN + PSH + URG",
+        "NULL → no flags",
+        "FIN → FIN flag",
+        "IDLE → zombie host",
+        "Banner Grabbing → service information",
+        "OS Fingerprinting → operating-system identification",
+        "Enumeration → usernames, shares, records",
+        "Online Attack → interacts with login service",
+        "Offline Attack → cracks captured hash",
+        "Password Spraying → one password, many accounts",
+        "Credential Stuffing → reused leaked credentials",
+        "Trojan → disguised malware",
+        "Worm → self-replicating",
+        "Virus → infects host file",
+        "Backdoor → bypasses normal access",
+        "ARP Poisoning → false MAC/IP mapping",
+        "MAC Flooding → fills CAM table",
+        "DNS Spoofing → false DNS response",
+        "MITM → attacker between two parties",
+        "DoS → one source",
+        "DDoS → multiple sources",
+        "Smurf → ICMP amplification",
+        "SYN Flood → half-open connection exhaustion",
+        "WEP → broken",
+        "WPA → outdated",
+        "WPA2 → AES-CCMP",
+        "WPA3 → strongest among these",
+        "Firewall → filters",
+        "IDS → detects",
+        "IPS → detects and blocks",
+        "Honeypot → decoy",
+        "DMZ → isolated public zone",
+        "Static Analysis → no execution",
+        "Dynamic Analysis → runtime observation",
+        "Metasploit → exploitation framework",
+        "Snort → IDS/IPS",
+        "Nagios → monitoring"
+      ],
+      "oneLiners": []
+    }
+  ],
+  "audio": "/audio/sc/ethical-hacking.mp3"
+}

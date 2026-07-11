@@ -1,9 +1,9 @@
 {
   "version": "1",
-  "title": "SC Set 1",
+  "title": "Set 01 - MySQL, Web Attacks, Wireless, Python & Ethical Hacking",
   "subject": "SC",
   "stage": "Topic Wise MCQ",
-  "topic": "Security Concepts",
+  "topic": "MySQL, Web Attacks, Wireless, Python & Ethical Hacking",
   "durationMinutes": 60,
   "questions": [
     {

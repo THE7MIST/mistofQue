@@ -95,7 +95,7 @@ export default function RevisionAudioPlayer({ phase, progress, onProgress, onPre
 
       {!hasAudio ? (
         <div className="mb-3 rounded-lg border border-amber-300/70 bg-amber-100/80 px-3 py-2 text-sm font-semibold text-amber-950 dark:border-amber-400/30 dark:bg-amber-400/10 dark:text-amber-100">
-          <p>Text-only revision mode. Add the MP3 file to enable audio for this phase.</p>
+          <p>{phase?.audio ? "Text-only revision mode. Add the MP3 file to enable audio for this phase." : "Text-only revision mode. Audio is not configured for this phase."}</p>
           {phase?.audio ? <p className="mt-1 text-xs font-bold opacity-80">Expected file: {phase.audio}</p> : null}
         </div>
       ) : null}

@@ -1,37 +1,61 @@
 {
   "version": "1",
-  "title": "Set 02 - Revocation",
+  "title": "Set 02 - OCSP, Stapling, Revocation & Key Compromise",
   "subject": "PKI",
   "stage": "Topic Wise MCQ",
-  "topic": "Revocation",
+  "topic": "OCSP, Stapling, Revocation & Key Compromise",
   "durationMinutes": 8,
   "questions": [
     {
       "id": 1,
       "question": "Which protocol checks certificate revocation status online?",
-      "options": ["OCSP", "SMTP", "RDP", "TFTP"],
+      "options": [
+        "OCSP",
+        "SMTP",
+        "RDP",
+        "TFTP"
+      ],
       "correct": 0,
       "description": "OCSP lets clients query the status of a certificate.",
       "difficulty": "Medium",
-      "tags": ["OCSP", "Revocation"]
+      "tags": [
+        "OCSP",
+        "Revocation"
+      ]
     },
     {
       "id": 2,
       "question": "What does OCSP stapling allow a server to provide?",
-      "options": ["A recent signed revocation response", "A DHCP address", "A compressed CSS file", "A Kerberos ticket"],
+      "options": [
+        "A recent signed revocation response",
+        "A DHCP address",
+        "A compressed CSS file",
+        "A Kerberos ticket"
+      ],
       "correct": 0,
       "description": "OCSP stapling lets the server include a fresh CA-signed status response during the TLS handshake.",
       "difficulty": "Hard",
-      "tags": ["OCSP", "TLS"]
+      "tags": [
+        "OCSP",
+        "TLS"
+      ]
     },
     {
       "id": 3,
       "question": "Which event is a valid reason to revoke a certificate?",
-      "options": ["Private key compromise", "User changes wallpaper", "Router gets a new hostname", "Log file rotates"],
+      "options": [
+        "Private key compromise",
+        "User changes wallpaper",
+        "Router gets a new hostname",
+        "Log file rotates"
+      ],
       "correct": 0,
       "description": "A compromised private key means the certificate can no longer be trusted.",
       "difficulty": "Easy",
-      "tags": ["Revocation", "Key Management"]
+      "tags": [
+        "Revocation",
+        "Key Management"
+      ]
     }
   ]
 }

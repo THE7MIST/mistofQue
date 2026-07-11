@@ -1,100 +1,177 @@
 {
   "version": "1",
-  "title": "PKI Set 4",
+  "title": "Set 04 - Hybrid Encryption, Steganography, IDS, RSA & Firewalls",
   "subject": "PKI",
   "stage": "Topic Wise MCQ",
-  "topic": "CDAC PKI & Biometric Q21-Q30",
+  "topic": "Hybrid Encryption, Steganography, IDS, RSA & Firewalls",
   "durationMinutes": 10,
   "questions": [
     {
       "id": 21,
       "question": "In which way does Combined (Hybrid) Encryption combine symmetric and asymmetric encryption?",
-      "options": ["First, the message is encrypted with symmetric encryption and then both the message and key are encrypted asymmetrically.", "The secret key is transmitted symmetrically, while the message is transmitted asymmetrically.", "First, the message is encrypted asymmetrically and then encrypted symmetrically together with the key.", "The secret key is transmitted asymmetrically, while the message itself is encrypted symmetrically."],
+      "options": [
+        "First, the message is encrypted with symmetric encryption and then both the message and key are encrypted asymmetrically.",
+        "The secret key is transmitted symmetrically, while the message is transmitted asymmetrically.",
+        "First, the message is encrypted asymmetrically and then encrypted symmetrically together with the key.",
+        "The secret key is transmitted asymmetrically, while the message itself is encrypted symmetrically."
+      ],
       "correct": 3,
       "description": "Hybrid encryption encrypts the message with a fast symmetric key and encrypts that symmetric key with the recipient's public key.",
       "difficulty": "Easy",
-      "tags": ["Hybrid Encryption"]
+      "tags": [
+        "Hybrid Encryption"
+      ]
     },
     {
       "id": 22,
       "question": "Which is the largest disadvantage of symmetric encryption?",
-      "options": ["More complex and time-consuming calculations", "Problem of securely transmitting the secret key", "Less secure encryption function", "Isn't used anymore"],
+      "options": [
+        "More complex and time-consuming calculations",
+        "Problem of securely transmitting the secret key",
+        "Less secure encryption function",
+        "Isn't used anymore"
+      ],
       "correct": 1,
       "description": "The main challenge in symmetric encryption is securely distributing the shared secret key.",
       "difficulty": "Easy",
-      "tags": ["Symmetric Encryption", "Key Distribution"]
+      "tags": [
+        "Symmetric Encryption",
+        "Key Distribution"
+      ]
     },
     {
       "id": 23,
       "question": "A CDAC employee hides confidential text inside image files before emailing them. Which technique is being used?",
-      "options": ["Cryptography", "Logical watermarking", "Steganography", "Picture fuzzing"],
+      "options": [
+        "Cryptography",
+        "Logical watermarking",
+        "Steganography",
+        "Picture fuzzing"
+      ],
       "correct": 2,
       "description": "Steganography hides information inside another file so the existence of the secret message is concealed.",
       "difficulty": "Easy",
-      "tags": ["Steganography"]
+      "tags": [
+        "Steganography"
+      ]
     },
     {
       "id": 24,
       "question": "A Sales Manager wants to secretly transfer Sales.xls outside the company without attracting attention. Which is the best method?",
-      "options": ["Encrypt it with PGP and email it", "Hide it inside a JPG image using Steganography", "Use a Trojan wrapper", "Rename it to .txt"],
+      "options": [
+        "Encrypt it with PGP and email it",
+        "Hide it inside a JPG image using Steganography",
+        "Use a Trojan wrapper",
+        "Rename it to .txt"
+      ],
       "correct": 1,
       "description": "Steganography conceals the file within another innocent-looking file.",
       "difficulty": "Easy",
-      "tags": ["Steganography"]
+      "tags": [
+        "Steganography"
+      ]
     },
     {
       "id": 25,
       "question": "Why can SSL be a problem when an Intrusion Detection System (IDS) monitors traffic?",
-      "options": ["SSL is redundant with IDS.", "SSL continuously triggers IDS rules.", "IDS must decrypt every SSL packet.", "SSL encrypts the packet contents, preventing the IDS from inspecting them."],
+      "options": [
+        "SSL is redundant with IDS.",
+        "SSL continuously triggers IDS rules.",
+        "IDS must decrypt every SSL packet.",
+        "SSL encrypts the packet contents, preventing the IDS from inspecting them."
+      ],
       "correct": 3,
       "description": "SSL/TLS encrypts application data, preventing an IDS from inspecting payloads unless traffic is decrypted for inspection.",
       "difficulty": "Easy",
-      "tags": ["SSL", "IDS"]
+      "tags": [
+        "SSL",
+        "IDS"
+      ]
     },
     {
       "id": 26,
       "question": "__________ is a symmetric-key encryption algorithm that encrypts fixed-size blocks of plaintext into blocks of ciphertext of the same size.",
-      "options": ["Stream Cipher", "Hash Cipher", "Block Cipher", "Bit Cipher"],
+      "options": [
+        "Stream Cipher",
+        "Hash Cipher",
+        "Block Cipher",
+        "Bit Cipher"
+      ],
       "correct": 2,
       "description": "A block cipher encrypts data in fixed-size blocks.",
       "difficulty": "Easy",
-      "tags": ["Block Cipher", "Symmetric Encryption"]
+      "tags": [
+        "Block Cipher",
+        "Symmetric Encryption"
+      ]
     },
     {
       "id": 27,
       "question": "One of the most common methods of attacking RSA is discovering the prime numbers p and q using which process?",
-      "options": ["Factorization", "Brute Force", "Prime Detection", "Hashing"],
+      "options": [
+        "Factorization",
+        "Brute Force",
+        "Prime Detection",
+        "Hashing"
+      ],
       "correct": 0,
       "description": "RSA security is based on the difficulty of factoring a large modulus into its prime factors.",
       "difficulty": "Easy",
-      "tags": ["RSA", "Factorization"]
+      "tags": [
+        "RSA",
+        "Factorization"
+      ]
     },
     {
       "id": 28,
       "question": "In SSL, authentication occurs through the exchange of certificates between:",
-      "options": ["Server only", "Client only", "Both Server and Client", "Neither"],
+      "options": [
+        "Server only",
+        "Client only",
+        "Both Server and Client",
+        "Neither"
+      ],
       "correct": 0,
       "description": "In a standard TLS handshake, the server presents its certificate; client certificates are optional in mutual TLS.",
       "difficulty": "Easy",
-      "tags": ["SSL", "Certificates"]
+      "tags": [
+        "SSL",
+        "Certificates"
+      ]
     },
     {
       "id": 29,
       "question": "Which firewall component filters packets based on IP addresses and transport-layer information?",
-      "options": ["Packet Filtering", "Application Proxy", "Circuit-Level Gateway", "VPN"],
+      "options": [
+        "Packet Filtering",
+        "Application Proxy",
+        "Circuit-Level Gateway",
+        "VPN"
+      ],
       "correct": 0,
       "description": "Packet-filtering firewalls inspect source and destination IP, protocol, and port numbers.",
       "difficulty": "Easy",
-      "tags": ["Firewall", "Packet Filtering"]
+      "tags": [
+        "Firewall",
+        "Packet Filtering"
+      ]
     },
     {
       "id": 30,
       "question": "Which attack can compromise Diffie-Hellman if the communicating parties are not authenticated?",
-      "options": ["Man-in-the-Middle (MITM)", "Ciphertext Attack", "Plaintext Attack", "Ping Flood"],
+      "options": [
+        "Man-in-the-Middle (MITM)",
+        "Ciphertext Attack",
+        "Plaintext Attack",
+        "Ping Flood"
+      ],
       "correct": 0,
       "description": "Without authentication, Diffie-Hellman can be vulnerable to man-in-the-middle attacks.",
       "difficulty": "Easy",
-      "tags": ["Diffie-Hellman", "MITM"]
+      "tags": [
+        "Diffie-Hellman",
+        "MITM"
+      ]
     }
   ]
 }

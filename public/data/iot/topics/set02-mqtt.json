@@ -1,37 +1,59 @@
 {
   "version": "1",
-  "title": "Set 02 - MQTT",
+  "title": "Set 02 - MQTT Broker, Publish-Subscribe, Delivery & TLS",
   "subject": "IoT",
   "stage": "Topic Wise MCQ",
-  "topic": "MQTT",
+  "topic": "MQTT Broker, Publish-Subscribe, Delivery & TLS",
   "durationMinutes": 8,
   "questions": [
     {
       "id": 1,
       "question": "Which MQTT component receives published messages and sends them to subscribers?",
-      "options": ["Broker", "Compiler", "Hypervisor", "Certificate store only"],
+      "options": [
+        "Broker",
+        "Compiler",
+        "Hypervisor",
+        "Certificate store only"
+      ],
       "correct": 0,
       "description": "The MQTT broker routes messages between publishers and subscribers.",
       "difficulty": "Easy",
-      "tags": ["MQTT"]
+      "tags": [
+        "MQTT"
+      ]
     },
     {
       "id": 2,
       "question": "Which MQTT model is used for message delivery?",
-      "options": ["Publish-subscribe", "Peer-only printing", "Batch spreadsheet import", "Static file hosting"],
+      "options": [
+        "Publish-subscribe",
+        "Peer-only printing",
+        "Batch spreadsheet import",
+        "Static file hosting"
+      ],
       "correct": 0,
       "description": "MQTT uses topics where clients publish messages and subscribe to receive messages.",
       "difficulty": "Easy",
-      "tags": ["MQTT"]
+      "tags": [
+        "MQTT"
+      ]
     },
     {
       "id": 3,
       "question": "Which transport protection is commonly paired with MQTT?",
-      "options": ["TLS", "Telnet", "Plain FTP", "Unencrypted POP3"],
+      "options": [
+        "TLS",
+        "Telnet",
+        "Plain FTP",
+        "Unencrypted POP3"
+      ],
       "correct": 0,
       "description": "MQTT over TLS protects telemetry and credentials in transit.",
       "difficulty": "Medium",
-      "tags": ["MQTT", "TLS"]
+      "tags": [
+        "MQTT",
+        "TLS"
+      ]
     }
   ]
 }
