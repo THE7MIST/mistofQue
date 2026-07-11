@@ -1,0 +1,1319 @@
+{
+  "version": "1",
+  "title": "Compliance Audits Set 2",
+  "subject": "Compliance Audits",
+  "stage": "Topic Wise MCQ",
+  "topic": "Compliance Audits Questions 78-154",
+  "durationMinutes": 77,
+  "questions": [
+    {
+      "question": "Which type of companies are required to comply with SOX regulations?",
+      "options": [
+        "Private companies only",
+        "Non-profit organizations only",
+        "Public companies listed on U.S. stock exchanges",
+        "Government agencies"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Public companies listed on U.S. stock exchanges",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 1
+    },
+    {
+      "question": "What is the primary goal of SOX Section 802 regarding document destruction?",
+      "options": [
+        "To encourage paperless offices",
+        "To promote environmental conservation",
+        "To prevent unauthorized access to documents",
+        "To deter the destruction of financial records"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. To deter the destruction of financial records",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 2
+    },
+    {
+      "question": "How often must public companies perform an assessment of their internal controls under SOX Section 404?",
+      "options": [
+        "Annually",
+        "Biennially",
+        "Quarterly",
+        "Every five years"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Annually",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 3
+    },
+    {
+      "question": "What does SOC stand for in the context of compliance auditing?",
+      "options": [
+        "System Oversight and Certification",
+        "Security Operations Center",
+        "Service Organization Control",
+        "Software Optimization and Compliance"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Service Organization Control",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 4
+    },
+    {
+      "question": "Which type of SOC report provides an overview of the system and its suitability of design?",
+      "options": [
+        "SOC 1",
+        "SOC 2",
+        "SOC 3",
+        "SOC 4"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. SOC 1",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 5
+    },
+    {
+      "question": "In a SOC 2 report, what are the criteria related to security, availability, processing integrity, confidentiality, and privacy collectively known as?",
+      "options": [
+        "Trust Service Criteria",
+        "Audit Standards",
+        "Compliance Measures",
+        "Risk Factors"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Trust Service Criteria",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 6
+    },
+    {
+      "question": "What is the primary purpose of a SOC 3 report?",
+      "options": [
+        "To provide detailed system information to the public",
+        "To be used for regulatory compliance only",
+        "To be shared only with internal stakeholders",
+        "To provide a summary suitable for public distribution"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. To provide a summary suitable for public distribution",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 7
+    },
+    {
+      "question": "Which party typically requests a SOC report from a service organization?",
+      "options": [
+        "External Auditors",
+        "Internal IT Teams",
+        "Customers and stakeholders",
+        "Regulatory Agencies"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Customers and stakeholders",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 8
+    },
+    {
+      "question": "What is the purpose of a SOC 2 Type II report?",
+      "options": [
+        "To assess the system's suitability at a specific point in time",
+        "To evaluate the operational effectiveness of controls over a period",
+        "To focus on confidentiality and privacy only",
+        "To provide general information about the service organization"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. To evaluate the operational effectiveness of controls over a period",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 9
+    },
+    {
+      "question": "Which SOC report is specifically designed for cloud service providers?",
+      "options": [
+        "SOC 1",
+        "SOC 2",
+        "SOC 3",
+        "SOC 4"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. SOC 2",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 10
+    },
+    {
+      "question": "In a SOC report, what is the role of the auditor in providing assurance?",
+      "options": [
+        "Ensuring financial accuracy",
+        "Confirming regulatory compliance",
+        "Confirming the design and operating effectiveness of controls",
+        "Verifying employee credentials"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Confirming the design and operating effectiveness of controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 11
+    },
+    {
+      "question": "Which SOC report is suitable for organizations that process sensitive financial transactions on behalf of clients?",
+      "options": [
+        "SOC 1",
+        "SOC 2",
+        "SOC 3",
+        "SOC 4"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. SOC 1",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 12
+    },
+    {
+      "question": "What is the primary focus of SOC 3 compared to SOC 2?",
+      "options": [
+        "Technical details of controls",
+        "Operational effectiveness of controls",
+        "Summary suitable for public distribution",
+        "Internal reporting for stakeholders"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Summary suitable for public distribution",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOC Reports - Auditor Process Overview"
+      ],
+      "id": 13
+    },
+    {
+      "question": "What is the main objective of the Sarbanes-Oxley Act (SOX)?",
+      "options": [
+        "Enhancing cybersecurity",
+        "Ensuring financial transparency and accountability",
+        "Regulating international trade",
+        "Promoting environmental sustainability"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Ensuring financial transparency and accountability",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 14
+    },
+    {
+      "question": "Which section of SOX requires CEOs and CFOs to personally certify the accuracy of their company's financial statements?",
+      "options": [
+        "Section 302",
+        "Section 404",
+        "Section 409",
+        "Section 801"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Section 302",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 15
+    },
+    {
+      "question": "What is the primary focus of SOX Section 404?",
+      "options": [
+        "Certification of financial statements",
+        "Internal control assessment and reporting",
+        "Protection of whistleblowers",
+        "Regulation of executive compensation"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Internal control assessment and reporting",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 16
+    },
+    {
+      "question": "Which type of companies are required to comply with SOX regulations?",
+      "options": [
+        "Private companies only",
+        "Non-profit organizations only",
+        "Public companies listed on U.S. stock exchanges",
+        "Government agencies"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Public companies listed on U.S. stock exchanges",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 17
+    },
+    {
+      "question": "What is the purpose of the SOX whistleblower protection provision?",
+      "options": [
+        "To encourage reporting of financial misconduct",
+        "To discourage external audits",
+        "To promote tax evasion",
+        "To penalize ethical behavior"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. To encourage reporting of financial misconduct",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 18
+    },
+    {
+      "question": "Which government agency is responsible for overseeing and enforcing SOX compliance?",
+      "options": [
+        "Securities and Exchange Commission (SEC)",
+        "Internal Revenue Service (IRS)",
+        "Federal Reserve",
+        "Department of Justice (DOJ)"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Securities and Exchange Commission (SEC)",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 19
+    },
+    {
+      "question": "What is the consequence of non-compliance with SOX regulations?",
+      "options": [
+        "Tax penalties",
+        "Criminal prosecution",
+        "Loss of market share",
+        "Employee layoffs"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Criminal prosecution",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 20
+    },
+    {
+      "question": "How often must companies perform an assessment of their internal controls under SOX Section 404?",
+      "options": [
+        "Biennially",
+        "Quarterly",
+        "Annually",
+        "Every five years"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Annually",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 21
+    },
+    {
+      "question": "What document do companies typically produce to demonstrate compliance with SOX Section 404?",
+      "options": [
+        "Internal audit reports",
+        "External audit reports",
+        "Management assessment reports",
+        "Financial statements"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Management assessment reports",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 22
+    },
+    {
+      "question": "Which of the following is NOT a key component of SOX compliance?",
+      "options": [
+        "Internal control assessment",
+        "Whistleblower protection",
+        "Executive compensation disclosure",
+        "IT security measures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Executive compensation disclosure",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Compliance"
+      ],
+      "id": 23
+    },
+    {
+      "question": "What is the primary goal of implementing security controls in an organization?",
+      "options": [
+        "Enhancing financial transparency",
+        "Ensuring employee satisfaction",
+        "Protecting against security threats and risks",
+        "Promoting environmental sustainability"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Protecting against security threats and risks",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 24
+    },
+    {
+      "question": "Which category of security controls focuses on preventing unauthorized access to systems and data?",
+      "options": [
+        "Physical controls",
+        "Administrative controls",
+        "Technical controls",
+        "Detective controls"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Technical controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 25
+    },
+    {
+      "question": "What is the purpose of encryption as a security control?",
+      "options": [
+        "Monitoring employee activities",
+        "Protecting data confidentiality",
+        "Physical access restriction",
+        "Employee training and awareness"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Protecting data confidentiality",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 26
+    },
+    {
+      "question": "Which security control is designed to identify security incidents as they occur?",
+      "options": [
+        "Preventive controls",
+        "Detective controls",
+        "Corrective controls",
+        "Deterrent controls"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Detective controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 27
+    },
+    {
+      "question": "What is the role of access controls in information security?",
+      "options": [
+        "Ensuring physical security",
+        "Monitoring employee performance",
+        "Regulating user access to systems and data",
+        "Conducting risk assessments"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Regulating user access to systems and data",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 28
+    },
+    {
+      "question": "Which security control involves creating backups and implementing disaster recovery plans?",
+      "options": [
+        "Preventive controls",
+        "Detective controls",
+        "Corrective controls",
+        "Deterrent controls"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Corrective controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 29
+    },
+    {
+      "question": "What is the purpose of security awareness training for employees?",
+      "options": [
+        "Enhancing physical security",
+        "Ensuring compliance with regulations",
+        "Reducing the need for technical controls",
+        "Promoting environmental sustainability"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Ensuring compliance with regulations",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 30
+    },
+    {
+      "question": "Which security control is related to the physical protection of hardware, facilities, and resources?",
+      "options": [
+        "Preventive controls",
+        "Detective controls",
+        "Physical controls",
+        "Deterrent controls"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Physical controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 31
+    },
+    {
+      "question": "What is the purpose of penetration testing as a security control?",
+      "options": [
+        "Identifying vulnerabilities in systems",
+        "Monitoring employee behavior",
+        "Implementing access controls",
+        "Ensuring physical security"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Identifying vulnerabilities in systems",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 32
+    },
+    {
+      "question": "Which security control involves the creation and enforcement of policies and procedures?",
+      "options": [
+        "Administrative controls",
+        "Detective controls",
+        "Physical controls",
+        "Deterrent controls"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Administrative controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Controls"
+      ],
+      "id": 33
+    },
+    {
+      "question": "What does COBIT stand for?",
+      "options": [
+        "Control Objectives for Business and Information Technology",
+        "Committee on Business and Information Technology",
+        "Corporate Objectives for Business and Information Technology",
+        "Computer Operations and Business Integration Technique"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Control Objectives for Business and Information Technology",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 34
+    },
+    {
+      "question": "Which of the following domains in COBIT 5 focuses on ensuring that information is used effectively and efficiently to support business objectives?",
+      "options": [
+        "Align, Plan, and Organize",
+        "Build, Acquire, and Implement",
+        "Deliver, Service, and Support",
+        "Monitor, Evaluate, and Assess"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Align, Plan, and Organize",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 35
+    },
+    {
+      "question": "In COBIT, what does the P in the APO domain stand for?",
+      "options": [
+        "Plan",
+        "Perform",
+        "Protect",
+        "Preserve"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Plan",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 36
+    },
+    {
+      "question": "Which COBIT principle emphasizes the need to separate the governance of information and related technology from the day-to-day management?",
+      "options": [
+        "Meeting Stakeholder Needs",
+        "Covering the Enterprise End-to-End",
+        "Applying a Single, Integrated Framework",
+        "Enabling a Holistic Approach"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Covering the Enterprise End-to-End",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 37
+    },
+    {
+      "question": "According to COBIT, what is the purpose of the EDM (Evaluate, Direct, and Monitor) domain?",
+      "options": [
+        "Ensure the alignment of IT with business goals",
+        "Provide leadership and support for the development of IT solutions",
+        "Evaluate the performance of IT processes",
+        "Monitor and manage risks associated with IT"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Evaluate the performance of IT processes",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 38
+    },
+    {
+      "question": "What is the role of the \"APO\" (Align, Plan, and Organize) domain in COBIT?",
+      "options": [
+        "Executing the IT strategy",
+        "Ensuring compliance with regulatory requirements",
+        "Planning and organizing IT resources",
+        "Assessing the performance of IT processes"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Planning and organizing IT resources",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 39
+    },
+    {
+      "question": "Which COBIT process focuses on ensuring that information is accurate, current, and valid?",
+      "options": [
+        "DSS01 - Manage Operations",
+        "APO12 - Manage Risk",
+        "BAI03 - Manage Change",
+        "DSS05 - Manage Security Services"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. DSS05 - Manage Security Services",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 40
+    },
+    {
+      "question": "In the COBIT framework, what does the \"Maturity Level\" refer to?",
+      "options": [
+        "The level of IT budget allocated",
+        "The capability and performance of IT processes",
+        "The number of IT staff members",
+        "The frequency of IT audits"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. The capability and performance of IT processes",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 41
+    },
+    {
+      "question": "What is the primary purpose of the COBIT framework?",
+      "options": [
+        "Ensuring data confidentiality",
+        "Facilitating effective IT governance",
+        "Improving network performance",
+        "Implementing cybersecurity measures"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Facilitating effective IT governance",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 42
+    },
+    {
+      "question": "Which COBIT domain focuses on optimizing costs and ensuring the efficient use of resources?",
+      "options": [
+        "Align, Plan, and Organize (APO)",
+        "Build, Acquire, and Implement (BAI)",
+        "Deliver, Service, and Support (DSS)",
+        "Monitor, Evaluate, and Assess (MEA)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Build, Acquire, and Implement (BAI)",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Framework"
+      ],
+      "id": 43
+    },
+    {
+      "question": "What are the four domains of the COBIT 5 framework?",
+      "options": [
+        "Align, Build, Deliver, Monitor",
+        "Align, Plan, Organize, Evaluate",
+        "Acquire, Implement, Support, Optimize",
+        "Align, Plan, Organize, Monitor"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Align, Plan, Organize, Monitor",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 44
+    },
+    {
+      "question": "Which COBIT component provides a set of processes to help organizations achieve their goals and create value?",
+      "options": [
+        "Principles, Policies, and Frameworks",
+        "Processes",
+        "Organizational Structures",
+        "Culture, Ethics, and Behavior"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Processes",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 45
+    },
+    {
+      "question": "In COBIT, what is the purpose of the \"Enablers\" component?",
+      "options": [
+        "To provide a set of IT-related goals",
+        "To identify and describe resources that need to be in place for IT processes to function",
+        "To define the organization's IT strategy",
+        "To assess the maturity level of IT processes"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. To identify and describe resources that need to be in place for IT processes to function",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 46
+    },
+    {
+      "question": "Which COBIT enabler includes the organization's people, skills, and competencies?",
+      "options": [
+        "Information",
+        "Culture, Ethics, and Behavior",
+        "Services, Infrastructure, and Applications",
+        "People, Skills, and Competencies"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. People, Skills, and Competencies",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 47
+    },
+    {
+      "question": "What role does the \"Culture, Ethics, and Behavior\" enabler play in the COBIT framework?",
+      "options": [
+        "It defines the organization's core values.",
+        "It focuses on the organization's physical infrastructure.",
+        "It ensures the availability of information.",
+        "It assesses the effectiveness of IT processes."
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. It defines the organization's core values.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 48
+    },
+    {
+      "question": "Which COBIT enabler is associated with the organization's information and technology infrastructure?",
+      "options": [
+        "Services, Infrastructure, and Applications",
+        "Information",
+        "People, Skills, and Competencies",
+        "Culture, Ethics, and Behavior"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Services, Infrastructure, and Applications",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 49
+    },
+    {
+      "question": "What does the \"Principles, Policies, and Frameworks\" enabler in COBIT focus on?",
+      "options": [
+        "Defining the organization's strategic goals",
+        "Establishing a set of guiding principles for IT governance",
+        "Implementing technical controls for information security",
+        "Assessing the organization's compliance with regulations"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Establishing a set of guiding principles for IT governance",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 50
+    },
+    {
+      "question": "In COBIT, which enabler includes the organization's information architecture and data management practices?",
+      "options": [
+        "Information",
+        "Culture, Ethics, and Behavior",
+        "Services, Infrastructure, and Applications",
+        "Principles, Policies, and Frameworks"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Information",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 51
+    },
+    {
+      "question": "What is the purpose of the \"Processes\" component in COBIT?",
+      "options": [
+        "To define the organization's IT strategy",
+        "To provide a set of practices for IT governance",
+        "To assess the maturity level of IT processes",
+        "To determine the organization's information architecture"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. To provide a set of practices for IT governance",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 52
+    },
+    {
+      "question": "Which COBIT enabler focuses on the organization's delivery and support of IT services?",
+      "options": [
+        "People, Skills, and Competencies",
+        "Services, Infrastructure, and Applications",
+        "Information",
+        "Principles, Policies, and Frameworks"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Services, Infrastructure, and Applications",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "COBIT Components"
+      ],
+      "id": 53
+    },
+    {
+      "question": "What is the primary focus of COBIT?",
+      "options": [
+        "Managing IT services",
+        "Ensuring regulatory compliance",
+        "Improving IT processes and governance",
+        "Enhancing customer experience"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Improving IT processes and governance",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 54
+    },
+    {
+      "question": "Which framework is primarily concerned with the delivery and management of IT services?",
+      "options": [
+        "COBIT",
+        "ITIL",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. ITIL",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 55
+    },
+    {
+      "question": "In terms of scope, how does COBIT differ from ITIL?",
+      "options": [
+        "COBIT focuses on governance, while ITIL focuses on service management.",
+        "ITIL focuses on governance, while COBIT focuses on service management.",
+        "Both COBIT and ITIL focus on governance and service management.",
+        "Neither COBIT nor ITIL addresses governance or service management."
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. COBIT focuses on governance, while ITIL focuses on service management.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 56
+    },
+    {
+      "question": "Which framework is more aligned with business goals and objectives?",
+      "options": [
+        "COBIT",
+        "ITIL",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. COBIT",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 57
+    },
+    {
+      "question": "What is the primary emphasis of ITIL?",
+      "options": [
+        "Improving IT governance",
+        "Enhancing cybersecurity measures",
+        "Ensuring effective and efficient IT service management",
+        "Aligning IT with business strategy"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Ensuring effective and efficient IT service management",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 58
+    },
+    {
+      "question": "Which of the following is a key area of focus for ITIL?",
+      "options": [
+        "Risk management",
+        "Change management",
+        "Strategic planning",
+        "Regulatory compliance"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Change management",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 59
+    },
+    {
+      "question": "In which framework is the \"Service Lifecycle\" a central concept?",
+      "options": [
+        "COBIT",
+        "ITIL",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. ITIL",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 60
+    },
+    {
+      "question": "Which framework provides a broader perspective, including a focus on governance and management practices?",
+      "options": [
+        "COBIT",
+        "ITIL",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. COBIT",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 61
+    },
+    {
+      "question": "Which framework is more process-oriented and prescriptive in nature?",
+      "options": [
+        "COBIT",
+        "ITIL",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. ITIL",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 62
+    },
+    {
+      "question": "What is the relationship between COBIT and ITIL?",
+      "options": [
+        "COBIT is a subset of ITIL.",
+        "ITIL is a subset of COBIT.",
+        "COBIT and ITIL are independent frameworks with some overlapping principles.",
+        "COBIT and ITIL are competing frameworks with no commonalities."
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. COBIT and ITIL are independent frameworks with some overlapping principles.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Difference between COBIT and ITIL"
+      ],
+      "id": 63
+    },
+    {
+      "question": "What does Title I of HIPAA primarily address?",
+      "options": [
+        "Privacy Rule",
+        "Security Rule",
+        "Transactions and Code Sets",
+        "Health Insurance Portability"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Health Insurance Portability",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Titles"
+      ],
+      "id": 64
+    },
+    {
+      "question": "Which HIPAA Title focuses on preventing health care fraud and abuse?",
+      "options": [
+        "Title I",
+        "Title II",
+        "Title III",
+        "Title IV"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Title II",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Titles"
+      ],
+      "id": 65
+    },
+    {
+      "question": "Which Title of HIPAA is concerned with tax-related provisions and group health plans?",
+      "options": [
+        "Title I",
+        "Title II",
+        "Title III",
+        "Title IV"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Title IV",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Titles"
+      ],
+      "id": 66
+    },
+    {
+      "question": "What is the main purpose of HIPAA Title III?",
+      "options": [
+        "Security standards for electronic transactions",
+        "Tax-related provisions and group health plans",
+        "Preventing health care fraud and abuse",
+        "Pre-existing condition exclusions"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Security standards for electronic transactions",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Titles"
+      ],
+      "id": 67
+    },
+    {
+      "question": "Which HIPAA Title addresses the requirements for electronic health care transactions?",
+      "options": [
+        "Title I",
+        "Title II",
+        "Title III",
+        "Title IV"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Title III",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Titles"
+      ],
+      "id": 68
+    },
+    {
+      "question": "What does the HIPAA Privacy Rule primarily focus on?",
+      "options": [
+        "Protecting the security of health information",
+        "Providing national standards for electronic health care transactions",
+        "Protecting the privacy of individually identifiable health information",
+        "Preventing health care fraud and abuse"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Protecting the privacy of individually identifiable health information",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Rules"
+      ],
+      "id": 69
+    },
+    {
+      "question": "Which rule under HIPAA sets the standards for the security of electronic protected health information (ePHI)?",
+      "options": [
+        "Privacy Rule",
+        "Security Rule",
+        "Transactions and Code Sets Rule",
+        "Enforcement Rule"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Security Rule",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Rules"
+      ],
+      "id": 70
+    },
+    {
+      "question": "Which HIPAA rule addresses the unique identifiers for health care providers and health plans?",
+      "options": [
+        "Privacy Rule",
+        "Security Rule",
+        "Transactions and Code Sets Rule",
+        "National Provider Identifier (NPI) Rule"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Transactions and Code Sets Rule",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Rules"
+      ],
+      "id": 71
+    },
+    {
+      "question": "What is the primary purpose of the HIPAA Enforcement Rule?",
+      "options": [
+        "Establishing penalties for non-compliance",
+        "Protecting the security of health information",
+        "Providing national standards for electronic health care transactions",
+        "Addressing unique identifiers for health care providers"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Establishing penalties for non-compliance",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Rules"
+      ],
+      "id": 72
+    },
+    {
+      "question": "Which rule sets the standards for the use and disclosure of protected health information (PHI)?",
+      "options": [
+        "Privacy Rule",
+        "Security Rule",
+        "Transactions and Code Sets Rule",
+        "Enforcement Rule"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Privacy Rule",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "HIPAA Rules"
+      ],
+      "id": 73
+    },
+    {
+      "question": "What does CIS stand for in the context of cybersecurity?",
+      "options": [
+        "Computer Information Security",
+        "Center for Internet Security",
+        "Cybersecurity Integration System",
+        "Critical Infrastructure Solutions"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Center for Internet Security",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "CIS (Center for Internet Security)"
+      ],
+      "id": 74
+    },
+    {
+      "question": "Which of the following is a primary goal of CIS?",
+      "options": [
+        "Developing software applications",
+        "Enhancing internet speed",
+        "Safeguarding cyberspace",
+        "Promoting social media usage"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Safeguarding cyberspace",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "CIS (Center for Internet Security)"
+      ],
+      "id": 75
+    },
+    {
+      "question": "CIS provides best practices for which of the following?",
+      "options": [
+        "Social media marketing",
+        "Cloud computing",
+        "Physical security",
+        "All of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Cloud computing",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "CIS (Center for Internet Security)"
+      ],
+      "id": 76
+    },
+    {
+      "question": "CIS Controls focus on which aspect of cybersecurity?",
+      "options": [
+        "Network speed optimization",
+        "Data encryption",
+        "Risk management",
+        "Software development"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Risk management",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "CIS (Center for Internet Security)"
+      ],
+      "id": 77
+    }
+  ]
+}

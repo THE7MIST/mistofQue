@@ -1,0 +1,945 @@
+{
+  "version": "1",
+  "title": "NDC Set 2",
+  "subject": "NDC",
+  "stage": "Topic Wise MCQ",
+  "topic": "Network Defense Sessions 1-6",
+  "durationMinutes": 55,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following BEST describes the CIA triad in information security?",
+      "options": [
+        "Cybersecurity, Integrity, Authorization",
+        "Confidentiality, Integrity, Availability",
+        "Cryptography, Infrastructure, Authentication",
+        "Compliance, Isolation, Accountability"
+      ],
+      "correct": 1,
+      "description": "The CIA triad—Confidentiality, Integrity, and Availability—is the foundational model of information security. Confidentiality ensures data is only accessible to authorized parties; Integrity ensures data is accurate and unaltered; Availability ensures systems and data are accessible when needed.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "InfoSec Fundamentals"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "In information security cost-benefit analysis, which metric represents the expected monetary loss from a threat occurring ONCE in a year?",
+      "options": [
+        "ALE (Annual Loss Expectancy)",
+        "SLE (Single Loss Expectancy)",
+        "ARO (Annualized Rate of Occurrence)",
+        "EF (Exposure Factor)"
+      ],
+      "correct": 0,
+      "description": "ALE = SLE × ARO. ALE (Annual Loss Expectancy) represents the expected monetary loss per year for an asset due to a specific threat. SLE is the loss from a single event; ARO is the probability that the event occurs in any given year.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Security Economics"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "From a security perspective, which Internet statistic is MOST directly relevant to understanding the attack surface of an organization?",
+      "options": [
+        "Total global bandwidth available",
+        "Number of connected IoT devices and endpoints",
+        "Average web page load time",
+        "Social media daily active users"
+      ],
+      "correct": 1,
+      "description": "The number of connected IoT devices and endpoints directly expands an organization's attack surface. Each connected device is a potential entry point for attackers. From a security standpoint, understanding exposure requires quantifying all internet-connected endpoints.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Internet Statistics"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "A security team discovers that their web server software contains a flaw that allows remote code execution, but no exploit for it has been publicly released. Which term BEST describes this flaw?",
+      "options": [
+        "Threat",
+        "Risk",
+        "Vulnerability",
+        "Countermeasure"
+      ],
+      "correct": 2,
+      "description": "A vulnerability is a weakness in a system (software flaw, misconfiguration, etc.) that can be exploited. A threat is an actor or event that could exploit the vulnerability. Risk is the likelihood and impact of the threat exploiting the vulnerability. The flaw itself, before exploitation, is the vulnerability.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Threat & Risk"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Quality of Service (QoS) in network security is primarily concerned with which aspect of the CIA triad?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Authentication"
+      ],
+      "correct": 2,
+      "description": "QoS mechanisms prioritize network traffic to ensure critical services remain responsive and accessible. This directly supports Availability—one of the three pillars of the CIA triad. DoS attacks target availability; QoS is a countermeasure that ensures legitimate traffic is served even under load.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "QoS & Security"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is the relationship between a threat, a vulnerability, and a risk?",
+      "options": [
+        "Risk exploits vulnerability to create a threat",
+        "A threat exploits a vulnerability to produce risk",
+        "A vulnerability is the same concept as a risk",
+        "Risk and threat are synonymous terms in security"
+      ],
+      "correct": 1,
+      "description": "Risk = Threat × Vulnerability × Impact. A threat agent exploits a vulnerability in a system or asset, resulting in risk—the potential for harm. Without a vulnerability, a threat cannot be realized. Risk management attempts to reduce either the likelihood of the threat or the impact of exploitation.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Threat & Risk"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "An organization's annual security budget is ₹50 lakh. A control costing ₹10 lakh reduces ALE from ₹30 lakh to ₹8 lakh. What is the value of this control?",
+      "options": [
+        "₹22 lakh net benefit",
+        "₹12 lakh net benefit",
+        "₹30 lakh net benefit",
+        "₹8 lakh net benefit"
+      ],
+      "correct": 1,
+      "description": "Value = ALE(before) − ALE(after) − Cost of control = ₹30L − ₹8L − ₹10L = ₹12 lakh. This is the net benefit calculation for security controls. If value is positive, the control is financially justified.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Security Economics"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is an example of a passive attack on a network?",
+      "options": [
+        "TCP SYN flood",
+        "Replay attack",
+        "Traffic analysis / eavesdropping",
+        "Man-in-the-middle attack that alters packets"
+      ],
+      "correct": 2,
+      "description": "Passive attacks do not alter data; they observe or monitor transmissions. Traffic analysis and eavesdropping are passive attacks—the attacker listens to communications. Active attacks (SYN flood, replay, packet alteration) modify data or affect system operation.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "InfoSec Fundamentals"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which risk treatment strategy involves purchasing cyber insurance to offset financial losses from a security breach?",
+      "options": [
+        "Risk avoidance",
+        "Risk mitigation",
+        "Risk transfer",
+        "Risk acceptance"
+      ],
+      "correct": 2,
+      "description": "Risk transfer shifts the financial consequences of a risk to a third party—most commonly through insurance. The organization still faces the risk event, but the financial burden is shared or assumed by the insurer. Mitigation reduces likelihood/impact; avoidance eliminates the activity; acceptance acknowledges and tolerates the risk.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Risk Management"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "A DMZ (Demilitarized Zone) in network architecture is BEST described as:",
+      "options": [
+        "A zone with no firewall controls where all traffic is allowed",
+        "A network segment that sits between an internal trusted network and an untrusted external network",
+        "An encrypted tunnel between two private networks",
+        "A VLAN reserved exclusively for administrative traffic"
+      ],
+      "correct": 1,
+      "description": "A DMZ is a perimeter network segment that hosts publicly accessible services (web servers, mail servers, DNS) while being isolated from the internal network. It provides an extra layer: attackers compromising DMZ hosts cannot directly access the internal network. Two firewalls typically bound the DMZ.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Firewall & DMZ"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Which two main methods are used to implement a firewall in terms of processing approach?",
+      "options": [
+        "Hardware firewalls and software firewalls",
+        "Packet filtering and application proxy (application-layer gateway)",
+        "Stateful inspection and deep packet inspection",
+        "Whitelist-based and blacklist-based firewalls"
+      ],
+      "correct": 1,
+      "description": "The two fundamental methods of firewall implementation are: (1) Packet filtering—examines IP/TCP header fields at the network/transport layer, and (2) Application proxy (application-layer gateway)—acts as an intermediary for specific application protocols. Other types derive from these two approaches.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Firewall Implementation"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "During a risk assessment, an analyst assigns an Exposure Factor (EF) of 40% to a server worth ₹25 lakh. What is the Single Loss Expectancy (SLE)?",
+      "options": [
+        "₹10 lakh",
+        "₹25 lakh",
+        "₹15 lakh",
+        "₹40 lakh"
+      ],
+      "correct": 0,
+      "description": "SLE = Asset Value × Exposure Factor = ₹25 lakh × 0.40 = ₹10 lakh. The Exposure Factor represents the percentage of asset value lost if the threat materializes. SLE represents the expected loss from a single occurrence of the threat.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Risk Management"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "In a dual-homed host firewall configuration, the host:",
+      "options": [
+        "Has two network interfaces—one connected to the Internet and one to the internal network, with IP forwarding disabled",
+        "Forwards all packets between networks without inspection",
+        "Is placed exclusively in the DMZ with no internal network connection",
+        "Uses two separate firewalls running simultaneously"
+      ],
+      "correct": 0,
+      "description": "A dual-homed host has two NICs—one external, one internal—with IP forwarding DISABLED. This forces all traffic to pass through application proxy software on the host rather than being routed directly. This creates a strong barrier but requires proxy support for every protocol used.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Firewall & DMZ"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "What is the PRIMARY security advantage of placing public-facing servers in a DMZ rather than directly on the internal network?",
+      "options": [
+        "DMZ servers run faster due to reduced firewall overhead",
+        "A compromised DMZ server cannot directly pivot to attack internal systems",
+        "DMZ eliminates the need for server-level security controls",
+        "DMZ servers are invisible to external scanners"
+      ],
+      "correct": 1,
+      "description": "The primary advantage of DMZ architecture is containment. If an attacker compromises a public-facing server in the DMZ, they face another firewall before reaching the internal network. This limits lateral movement and breach impact—a fundamental principle of defense-in-depth.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Firewall & DMZ"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Which of the following countermeasures addresses vulnerabilities at the POLICY level rather than the technical level?",
+      "options": [
+        "Installing intrusion detection systems",
+        "Implementing mandatory security awareness training",
+        "Deploying next-generation firewalls",
+        "Enabling full-disk encryption on endpoints"
+      ],
+      "correct": 1,
+      "description": "Mandatory security awareness training is an administrative/policy-level countermeasure. It addresses human-factor vulnerabilities through procedural controls. Technical controls (IDS, firewalls, encryption) address technical vulnerabilities. Both categories are essential in a layered security program.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Risk Management"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "A packet filter firewall rule permits TCP traffic FROM any source TO 192.168.1.10 on destination port 443. Which traffic does this rule ALLOW?",
+      "options": [
+        "HTTP traffic to 192.168.1.10",
+        "HTTPS traffic to 192.168.1.10",
+        "Any TCP traffic from 192.168.1.10 to external hosts",
+        "UDP traffic to port 443 on 192.168.1.10"
+      ],
+      "correct": 1,
+      "description": "TCP port 443 is the standard port for HTTPS (HTTP Secure / TLS). The rule permits incoming TCP connections to destination port 443 on the specified host. UDP traffic and port 80 (HTTP) would be separate rules. This is a standard inbound HTTPS permission rule.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Packet Filtering"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "What is the KEY difference between stateful inspection and simple packet filtering?",
+      "options": [
+        "Stateful inspection operates at Layer 7; packet filtering at Layer 3",
+        "Stateful inspection tracks connection state and context; packet filtering evaluates each packet independently",
+        "Packet filtering is more secure because it examines more layers",
+        "Stateful inspection only works with UDP, not TCP"
+      ],
+      "correct": 1,
+      "description": "A stateful firewall maintains a state table tracking active connections (source IP, destination IP, ports, TCP state). When a response packet arrives, it's verified against the state table. Packet filtering evaluates each packet in isolation—a spoofed response packet matching filter rules could pass through. Stateful inspection prevents many spoofing attacks.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Stateful Inspection"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "In a screened host firewall architecture, the bastion host:",
+      "options": [
+        "Is the only host directly accessible from the Internet, and the inner firewall screens traffic to it",
+        "Is placed on the Internet side with no firewall protection",
+        "Replaces the need for a DMZ entirely",
+        "Operates as a VPN concentrator"
+      ],
+      "correct": 0,
+      "description": "In screened host architecture, a packet-filtering router (screen) sits between the Internet and the bastion host. The router permits external traffic only to the bastion host. The bastion host, hardened and carefully configured, provides proxy services. The inner network is further protected by the router's packet filter rules.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Screened Host"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Which feature distinguishes a Next-Generation Firewall (NGFW) from a traditional stateful firewall?",
+      "options": [
+        "NGFWs operate faster by skipping stateful inspection",
+        "NGFWs perform deep packet inspection with application awareness and user identity integration",
+        "NGFWs work exclusively at Layer 2 of the OSI model",
+        "NGFWs eliminate the need for IDS/IPS systems"
+      ],
+      "correct": 1,
+      "description": "NGFWs combine traditional stateful inspection with deep packet inspection (DPI), application identification regardless of port, user identity (integration with AD/LDAP), URL filtering, SSL inspection, and integrated IPS. They can block applications like BitTorrent even if running on port 80, which traditional firewalls cannot.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "NGFW"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "In Linux iptables, what is the default policy behavior when a packet matches NO rule in a chain with policy DROP?",
+      "options": [
+        "The packet is logged and then forwarded",
+        "The packet is silently discarded",
+        "The packet is sent back to the sender with RST",
+        "The packet is queued for manual review"
+      ],
+      "correct": 1,
+      "description": "When the default policy of a chain is DROP and no rule matches a packet, iptables silently discards (drops) the packet without notification. This is the 'implicit deny' or 'fail-closed' security principle. A REJECT policy would send back an ICMP error; DROP gives no feedback to the sender.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "iptables"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Which iptables command correctly allows incoming SSH traffic on the default port?",
+      "options": [
+        "iptables -A INPUT -p tcp --sport 22 -j ACCEPT",
+        "iptables -A INPUT -p tcp --dport 22 -j ACCEPT",
+        "iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT",
+        "iptables -A FORWARD -p udp --dport 22 -j ACCEPT"
+      ],
+      "correct": 1,
+      "description": "SSH uses TCP port 22. To allow incoming SSH connections, the rule must be in the INPUT chain (incoming traffic), using TCP protocol, and specifying the DESTINATION port (--dport 22) as 22. --sport refers to the source port (the client's ephemeral port), not the server's listening port.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "iptables"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "A packet filter rule set uses an implicit deny-all at the end. An administrator wants to allow outbound HTTP and HTTPS but block everything else outbound. The MINIMUM number of rules needed (excluding the implicit deny) is:",
+      "options": [
+        "1 rule",
+        "2 rules",
+        "3 rules",
+        "4 rules"
+      ],
+      "correct": 1,
+      "description": "Two rules are needed: one to allow outbound TCP port 80 (HTTP) and one to allow outbound TCP port 443 (HTTPS). All other outbound traffic is handled by the implicit deny-all rule. Minimizing rule count reduces complexity and potential for rule conflict.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Packet Filtering"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "The iptables module `conntrack` (connection tracking) is used to:",
+      "options": [
+        "Log all packets to syslog",
+        "Track the state of network connections and allow rules based on connection state",
+        "Perform geographic IP blocking",
+        "Load balance traffic across multiple servers"
+      ],
+      "correct": 1,
+      "description": "The conntrack module enables stateful packet inspection in iptables. It tracks connection states: NEW (first packet), ESTABLISHED (packets belonging to an existing connection), RELATED (new connection related to existing, e.g. FTP data), and INVALID. This allows rules like `-m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT` for stateful firewall behavior.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Advanced iptables"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Xtables-Addons GeoIP blocking in iptables works by:",
+      "options": [
+        "Querying a real-time DNS blacklist for each connection",
+        "Matching source/destination IP addresses against database entries mapped to countries/regions",
+        "Inspecting the HTTP Host header for country-specific domains",
+        "Using BGP routing tables to identify national IP ranges at route time"
+      ],
+      "correct": 1,
+      "description": "Xtables-Addons GeoIP extension maintains a database (typically from MaxMind or similar) mapping IP address ranges to country codes. The iptables module matches packet source or destination IPs against this database. Rules can then drop or accept traffic based on country code, e.g., `-m geoip --src-cc CN -j DROP` to block Chinese IPs.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "GeoIP Blocking"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "The `iptables -m multiport --dports 80,443,8080` option is used to:",
+      "options": [
+        "Match packets destined for any of the listed ports in a single rule",
+        "Create separate rules for each port automatically",
+        "Forward traffic to multiple ports simultaneously",
+        "Monitor traffic on multiple ports"
+      ],
+      "correct": 0,
+      "description": "The multiport module allows matching multiple ports in a single iptables rule, replacing the need for three separate rules. Without multiport, you'd need three separate rules. This improves rule set efficiency and readability. It supports both source ports (--sports) and destination ports (--dports).",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "iptables Modules"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "When implementing access control with iptables to allow only a specific subnet (192.168.10.0/24) to access a management service on port 8080, the correct rule is:",
+      "options": [
+        "iptables -A INPUT -s 192.168.10.0/24 -p tcp --dport 8080 -j ACCEPT",
+        "iptables -A OUTPUT -d 192.168.10.0/24 -p tcp --sport 8080 -j ACCEPT",
+        "iptables -A FORWARD -s 192.168.10.0/24 -p tcp --dport 8080 -j ACCEPT",
+        "iptables -A INPUT -d 192.168.10.0/24 -p tcp --dport 8080 -j ACCEPT"
+      ],
+      "correct": 0,
+      "description": "The INPUT chain handles traffic destined for the local machine. -s specifies the source subnet, -p tcp the protocol, and --dport 8080 the destination port. This rule allows TCP connections from 192.168.10.0/24 to local port 8080. The -d option specifies destination; for incoming traffic to a specific local service, -s (source restriction) is the correct filter.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Access Control"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "To share an internet connection using iptables on a Linux gateway (eth0=WAN, eth1=LAN), which command enables Network Address Translation (NAT) for outgoing traffic?",
+      "options": [
+        "iptables -A POSTROUTING -t nat -o eth0 -j MASQUERADE",
+        "iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE",
+        "iptables -t filter -A FORWARD -o eth0 -j MASQUERADE",
+        "iptables -A PREROUTING -t nat -i eth0 -j MASQUERADE"
+      ],
+      "correct": 1,
+      "description": "MASQUERADE is a NAT target in the nat table's POSTROUTING chain. The -t nat specifies the NAT table; -A POSTROUTING applies the rule after routing decisions; -o eth0 matches outgoing packets on the WAN interface. MASQUERADE automatically uses the outgoing interface's IP, making it ideal for dynamic IPs (unlike SNAT which requires a static IP).",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Internet Sharing"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "The iptables `--limit` module is useful in security contexts primarily to:",
+      "options": [
+        "Increase firewall processing speed",
+        "Rate-limit rules to prevent log flooding and mitigate brute-force or DoS attacks",
+        "Allow a limited number of concurrent connections",
+        "Limit the maximum packet size allowed through the firewall"
+      ],
+      "correct": 1,
+      "description": "The limit module throttles rule matches to a specified rate (e.g., `--limit 3/min`). It's commonly used to rate-limit logging (to prevent log flooding from port scans) and to implement basic protection against brute-force attacks and SYN floods. Combined with conntrack, it's a lightweight DoS mitigation technique.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Advanced iptables"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "In Wireshark, which display filter captures only HTTP GET requests?",
+      "options": [
+        "http.request == GET",
+        "http.request.method == \"GET\"",
+        "tcp.dport == 80 and method == GET",
+        "http.method.get == 1"
+      ],
+      "correct": 1,
+      "description": "The correct Wireshark display filter is `http.request.method == \"GET\"`. Wireshark's filter syntax uses field paths with dot notation. `http.request.method` accesses the HTTP method field. Note: display filters use `==` for comparison and string values in quotes. Capture filters use different syntax (BPF).",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Wireshark"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "What is the DIFFERENCE between a Wireshark capture filter and a display filter?",
+      "options": [
+        "There is no practical difference; both use the same syntax",
+        "Capture filters (BPF syntax) limit what is captured from the wire; display filters filter what is shown from captured data",
+        "Display filters use BPF syntax; capture filters use Wireshark's own syntax",
+        "Capture filters can only filter by IP; display filters can filter by protocol"
+      ],
+      "correct": 1,
+      "description": "Capture filters use Berkeley Packet Filter (BPF) syntax and are applied during capture—packets not matching are never stored, reducing capture file size. Display filters use Wireshark's own rich filter language and can be applied/changed on already-captured data. BPF is less expressive but more efficient; Wireshark display filters support hundreds of protocol fields.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Wireshark"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "A security analyst uses Wireshark and observes many TCP packets with the SYN flag set going to a single host on sequential destination ports (20, 21, 22, 23...) from a single source. This MOST LIKELY indicates:",
+      "options": [
+        "A normal web browsing session",
+        "A TCP SYN flood denial-of-service attack",
+        "A TCP port scan (e.g., nmap SYN scan)",
+        "A successful three-way handshake sequence"
+      ],
+      "correct": 2,
+      "description": "Sequential TCP SYN packets to incrementing destination ports from a single source is the signature of a TCP SYN port scan (half-open scan). Tools like nmap use this technique to identify open ports. A SYN flood targets a single port repeatedly. Normal browsing would show varied destinations and completed handshakes.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Wireshark"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "In a Wireshark packet capture, what information can typically be found in the TCP three-way handshake?",
+      "options": [
+        "Usernames and passwords for all services",
+        "Initial Sequence Numbers (ISN), port numbers, TCP flags (SYN, SYN-ACK, ACK), and window sizes",
+        "The actual application data payload in clear text",
+        "Encrypted session keys for TLS connections"
+      ],
+      "correct": 1,
+      "description": "The TCP three-way handshake (SYN → SYN-ACK → ACK) contains: Initial Sequence Numbers (ISNs) chosen by each side, source/destination port numbers (identifying services), TCP control flags (SYN, ACK bits), and TCP window sizes (for flow control). Payload data is not transmitted until after the handshake. TLS keys remain encrypted within the handshake.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Wireshark"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "An iptables port forwarding rule redirects incoming traffic on port 80 to an internal server at 10.0.0.5:8080. Which chain and table is this rule placed in?",
+      "options": [
+        "POSTROUTING chain of the nat table",
+        "PREROUTING chain of the nat table",
+        "INPUT chain of the filter table",
+        "FORWARD chain of the mangle table"
+      ],
+      "correct": 1,
+      "description": "Port forwarding (DNAT - Destination NAT) uses the nat table's PREROUTING chain. PREROUTING decisions happen before the kernel's routing decision, allowing the destination address/port to be rewritten before the packet is routed. The rule would be: `iptables -t nat -A PREROUTING -p tcp --dport 80 -j DNAT --to-destination 10.0.0.5:8080`",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Port Forwarding"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Fail2ban provides security by:",
+      "options": [
+        "Encrypting log files to prevent tampering",
+        "Monitoring log files for repeated failure patterns and dynamically adding iptables rules to block offending IPs",
+        "Scanning files for malware signatures",
+        "Providing two-factor authentication for SSH logins"
+      ],
+      "correct": 1,
+      "description": "Fail2ban is an intrusion prevention software that monitors log files (auth.log, Apache logs, etc.) for patterns like repeated failed login attempts. When a threshold is exceeded, it uses iptables (or firewalld) to temporarily block the offending IP. This automates response to brute-force attacks, SSH scanning, and similar threats.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Fail2ban"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "To capture only DNS traffic in Wireshark, the CORRECT BPF capture filter is:",
+      "options": [
+        "protocol == dns",
+        "udp port 53 or tcp port 53",
+        "ip.proto == DNS",
+        "dns.qry.name != null"
+      ],
+      "correct": 1,
+      "description": "BPF (Berkeley Packet Filter) syntax is used for Wireshark capture filters. DNS primarily uses UDP port 53 (for queries/responses) and TCP port 53 (for zone transfers and large responses). The BPF filter `udp port 53 or tcp port 53` captures all DNS traffic. Wireshark display filter syntax (like `dns`) is different from BPF capture filter syntax.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Wireshark"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "pfSense is BEST described as:",
+      "options": [
+        "A commercial hardware firewall appliance",
+        "An open-source firewall/router distribution based on FreeBSD with a web-based interface",
+        "A Linux kernel module for advanced packet filtering",
+        "A cloud-based SIEM platform"
+      ],
+      "correct": 1,
+      "description": "pfSense is an open-source network firewall/router software based on FreeBSD. It provides a feature-rich web-based interface supporting firewall rules, VPN (IPsec, OpenVPN), traffic shaping, load balancing, and intrusion detection. It can run on commodity hardware or in virtual environments, making it a cost-effective enterprise solution.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Software Firewall"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "What is the PRIMARY security benefit of deploying Nginx as a reverse proxy in front of web application servers?",
+      "options": [
+        "Nginx decrypts all SSL traffic, violating end-to-end encryption",
+        "Nginx hides backend server details, handles SSL termination, and can filter malicious requests before they reach application servers",
+        "Nginx replaces the need for a WAF completely",
+        "Nginx only improves performance, not security"
+      ],
+      "correct": 1,
+      "description": "A reverse proxy like Nginx sits between clients and backend servers. Security benefits: (1) hides backend server IPs and software versions from clients, (2) performs SSL/TLS termination, (3) can apply rate limiting and IP-based access control, (4) acts as a first line of defense filtering some malicious requests. It also enables load balancing and caching.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Reverse Proxy"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Squid configured as a forward proxy enforces which security control MOST directly?",
+      "options": [
+        "Inbound traffic filtering from Internet to DMZ servers",
+        "Outbound web access control, content filtering, and logging for internal users",
+        "Blocking of all incoming connections to the network",
+        "Encryption of all HTTP traffic to HTTPS automatically"
+      ],
+      "correct": 1,
+      "description": "Squid as a forward proxy intercepts outbound HTTP/HTTPS requests from internal users. It enforces URL filtering (blocking categories like social media, malware sites), logs all web activity for compliance/audit, caches content to improve performance, and can authenticate users before granting web access. This controls what internal users can access externally.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Squid Proxy"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "A Unified Threat Management (UTM) system combines which set of security functions into a SINGLE appliance?",
+      "options": [
+        "Firewall, VPN, IDS/IPS, antivirus, URL filtering, and spam filtering",
+        "Only firewall and VPN capabilities",
+        "Load balancing and content delivery only",
+        "SIEM, log management, and compliance reporting"
+      ],
+      "correct": 0,
+      "description": "UTM consolidates multiple security functions: firewall (packet/stateful filtering), VPN gateway, Intrusion Detection/Prevention System (IDS/IPS), antivirus/anti-malware, URL/content filtering, and spam filtering. The benefit is simplified management through a single platform. The risk is a single point of failure; performance can also be a concern as all functions add processing overhead.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "UTM"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "In server load balancing, the 'least connections' algorithm directs new requests to:",
+      "options": [
+        "The server with the fastest response time",
+        "The server with the fewest currently active connections",
+        "Servers in sequential round-robin order",
+        "The server with the lowest CPU utilization"
+      ],
+      "correct": 1,
+      "description": "The 'least connections' (least-conn) algorithm routes new incoming requests to the backend server with the fewest currently active connections. This is more adaptive than round-robin for workloads where requests have varying processing times. Servers that complete requests faster will naturally receive more traffic, preventing overloading a slow server.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Load Balancing"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "ClearOS differs from a standard Linux distribution in that it:",
+      "options": [
+        "Cannot run virtual machines",
+        "Is designed specifically as a gateway/server OS with a web-based admin interface for SMB networks",
+        "Is exclusively used for desktop computing",
+        "Does not support iptables or firewall rules"
+      ],
+      "correct": 1,
+      "description": "ClearOS (formerly ClarkConnect) is a Linux-based OS designed for small and medium businesses as an all-in-one gateway server. It provides a marketplace of apps including firewall, directory service, VPN, web filter, and email server, all managed through an intuitive web interface. It's positioned as a simplified alternative to enterprise solutions.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "ClearOS"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "The MAIN difference between a forward proxy (Squid) and a reverse proxy (Nginx) is:",
+      "options": [
+        "Forward proxies are faster than reverse proxies",
+        "A forward proxy serves clients accessing external resources; a reverse proxy serves clients accessing backend servers on behalf of those servers",
+        "Reverse proxies can only handle HTTP; forward proxies handle all protocols",
+        "There is no functional difference; both perform the same role"
+      ],
+      "correct": 1,
+      "description": "Forward proxy (e.g., Squid): sits between internal clients and the Internet. Clients explicitly configure it. Used for content filtering, caching, and anonymizing outbound access. Reverse proxy (e.g., Nginx): sits in front of backend servers. External clients don't know about backend servers—they only see the proxy's IP. Used for load balancing, SSL termination, and hiding backend infrastructure.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Reverse Proxy"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "SSL/TLS inspection in a UTM device works by:",
+      "options": [
+        "Blocking all SSL traffic for security",
+        "Acting as a man-in-the-middle—decrypting traffic, inspecting it, then re-encrypting to the destination using the UTM's own certificate",
+        "Forwarding SSL traffic unchanged to specialized inspection servers",
+        "Using quantum computing to decrypt SSL in real time"
+      ],
+      "correct": 1,
+      "description": "SSL/TLS inspection (SSL interception) requires the UTM to act as an intercepting MITM. The UTM terminates the client's SSL connection (using its own certificate, which must be trusted by clients), decrypts the traffic, inspects it for threats, then re-establishes an SSL connection to the actual server. This enables AV scanning and URL filtering of encrypted traffic.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "UTM"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Session persistence (sticky sessions) in load balancing is important because:",
+      "options": [
+        "It improves encryption key distribution",
+        "It ensures a client's requests are consistently routed to the same backend server, maintaining session state",
+        "It prevents DDoS attacks by tracking source IPs",
+        "It enables faster DNS resolution"
+      ],
+      "correct": 1,
+      "description": "Many web applications store session data (shopping carts, authentication state) locally on the server. Without session persistence, a client's subsequent requests might go to a different server that doesn't have their session, causing errors or requiring re-login. Sticky sessions (via cookie or IP hash) ensure continued routing to the same server for the session duration.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Load Balancing"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "What does the iptables command `iptables -P INPUT DROP` accomplish?",
+      "options": [
+        "Drops a specific INPUT rule from the rule set",
+        "Sets the default policy of the INPUT chain to DROP all packets that match no other rule",
+        "Deletes the INPUT chain entirely",
+        "Temporarily disables the INPUT chain"
+      ],
+      "correct": 1,
+      "description": "`-P` sets the default POLICY for a chain. `INPUT DROP` means any packet that reaches the end of the INPUT chain without matching any rule will be dropped. This implements 'deny all by default'—a foundational security principle. You must explicitly ACCEPT permitted traffic with prior rules; everything else is implicitly denied.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "iptables"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "An application-layer gateway (proxy firewall) provides security advantages over packet filtering by:",
+      "options": [
+        "Processing packets at higher speed due to hardware acceleration",
+        "Understanding application-level protocols, authenticating users, and hiding internal IP addresses from external hosts",
+        "Operating at OSI Layer 3 for better routing control",
+        "Providing encryption for all traffic passing through"
+      ],
+      "correct": 1,
+      "description": "Application-layer gateways operate at Layer 7, understanding specific protocols (HTTP, FTP, SMTP). This allows user authentication before connection, full content inspection, hiding internal topology (as traffic appears to originate from the proxy), and protocol anomaly detection. Packet filters only examine headers at Layers 3-4, missing application-level threats.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Firewall & DMZ"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "Non-repudiation in information security ensures that:",
+      "options": [
+        "Data cannot be accessed by unauthorized parties",
+        "A party cannot deny having sent or received a message or transaction",
+        "Data remains unaltered during transmission",
+        "Systems remain available during failures"
+      ],
+      "correct": 1,
+      "description": "Non-repudiation prevents a party from denying an action they took. It's typically achieved through digital signatures, audit logs, and timestamps. For example, if a user digitally signs a purchase order, they cannot later deny having signed it. Non-repudiation is critical in financial transactions, legal documents, and e-commerce systems.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "InfoSec Fundamentals"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "An application control feature in an NGFW identifies applications by:",
+      "options": [
+        "Port number alone, since all apps use unique ports",
+        "Deep packet inspection of traffic signatures and behavioral patterns, regardless of port or protocol used",
+        "Checking the IP address against a known application database",
+        "Reading the User-Agent HTTP header only"
+      ],
+      "correct": 1,
+      "description": "Modern applications often use non-standard ports or share ports with other applications. NGFWs use deep packet inspection (DPI) to analyze packet content, identify behavioral signatures, and classify applications accurately—even encrypted ones (where metadata and behavioral patterns are used). This allows policy enforcement based on actual application, not just port number.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "NGFW"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "A Wireshark filter `ip.src == 10.0.0.1 and tcp.flags.syn == 1 and tcp.flags.ack == 0` would display:",
+      "options": [
+        "All TCP traffic from 10.0.0.1",
+        "Only SYN-ACK packets from 10.0.0.1",
+        "Only outgoing TCP connection initiation packets (pure SYN) from 10.0.0.1",
+        "Only TCP RST packets from 10.0.0.1"
+      ],
+      "correct": 2,
+      "description": "This filter combines: source IP 10.0.0.1, TCP SYN flag set (connection initiation), and TCP ACK flag NOT set. The pure SYN packet (SYN=1, ACK=0) represents the first step of the TCP handshake—the client initiating a connection. SYN-ACK (SYN=1, ACK=1) is the server's response. This filter isolates connection initiation attempts from 10.0.0.1.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Wireshark"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "The pfSense package 'snort' or 'suricata' adds which capability to pfSense?",
+      "options": [
+        "Enhanced NAT performance",
+        "Intrusion Detection and Prevention System (IDS/IPS) functionality",
+        "GUI improvements",
+        "VPN client support"
+      ],
+      "correct": 1,
+      "description": "Snort and Suricata are IDS/IPS systems. When installed on pfSense, they add deep packet inspection, signature-based threat detection, and inline blocking (IPS mode) to the firewall's capabilities. This transforms pfSense into a UTM-like solution—combining firewall filtering with active intrusion detection, going beyond basic pfSense firewall functionality.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Software Firewall"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "The `recent` module in iptables is typically used to implement:",
+      "options": [
+        "Geographic IP blocking",
+        "Port knocking and rate-based protection against brute-force attacks",
+        "DNS-based blacklist lookups",
+        "Traffic accounting and bandwidth monitoring"
+      ],
+      "correct": 1,
+      "description": "The `recent` module tracks a list of IP addresses and timestamps of recent connections. This enables: (1) Port knocking—requiring a sequence of connection attempts before opening a port, (2) rate limiting specific sources—blocking IPs that connect too frequently (brute-force mitigation). Example: `--rcheck --seconds 60 --hitcount 4 -j DROP` blocks IPs making 4+ connection attempts in 60 seconds.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Advanced iptables"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "In a screened subnet (three-legged DMZ) firewall design, the architecture typically consists of:",
+      "options": [
+        "A single firewall with three interfaces: external, DMZ, and internal",
+        "Three separate firewalls in series",
+        "Two firewalls with a DMZ segment between them",
+        "A firewall cluster with hot standby"
+      ],
+      "correct": 0,
+      "description": "A screened subnet (three-legged firewall) uses a SINGLE firewall with three network interfaces: one connected to the Internet (external/untrusted), one to the DMZ (semi-trusted for public-facing servers), and one to the internal network (trusted). This is common in SMB deployments. The dual-firewall design uses two separate firewalls with the DMZ sandwiched between them—more secure but more expensive.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Firewall & DMZ"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "The Kerckhoffs's principle in cryptography and security states that:",
+      "options": [
+        "Security should rely on keeping the algorithm secret",
+        "A cryptosystem should be secure even if everything about the system, except the key, is public knowledge",
+        "Longer keys are always more secure than shorter ones",
+        "Security through obscurity is a valid primary defense strategy"
+      ],
+      "correct": 1,
+      "description": "Kerckhoffs's principle (1883) states that a cryptosystem's security should rest entirely on the secrecy of the key, NOT on the secrecy of the algorithm. Public algorithms can be peer-reviewed and strengthened. 'Security through obscurity'—hiding how a system works—is considered a weak, unreliable strategy because algorithms are eventually discovered.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "InfoSec Fundamentals"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "Which type of attack is BEST mitigated by stateful packet inspection but NOT by simple stateless packet filtering?",
+      "options": [
+        "SQL injection",
+        "IP address spoofing of unsolicited packets (e.g., crafted ACK packets bypassing stateless rules)",
+        "Buffer overflow attacks",
+        "Social engineering"
+      ],
+      "correct": 1,
+      "description": "Stateless packet filters can be bypassed with crafted packets that match inbound rules—for example, an attacker sending a TCP ACK packet with a source port of 80 (pretending to be a web server response) would pass a stateless rule allowing 'established' connections. Stateful inspection verifies that ACK packets correspond to actual connections in the state table, preventing such spoofing.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Stateful Inspection"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "Health checks in a load balancer are used to:",
+      "options": [
+        "Monitor server CPU temperature",
+        "Detect backend server failures and automatically remove unavailable servers from the pool",
+        "Encrypt traffic between load balancer and backend servers",
+        "Log all user sessions for compliance"
+      ],
+      "correct": 1,
+      "description": "Health checks periodically test backend servers (TCP connect, HTTP GET, custom script) to verify they're operational. When a server fails a health check, the load balancer removes it from rotation and redistributes traffic to healthy servers. This provides high availability and automatic failover without manual intervention—critical for production systems.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Load Balancing"
+      ]
+    }
+  ]
+}

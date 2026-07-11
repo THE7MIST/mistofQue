@@ -1,1 +1,6 @@
-{"sets":[{"setNumber":"Set 01","topic":"Set 1","slug":"set01"}]}
+{
+  "sets": [
+    { "setNumber": "Set 01", "topic": "Network Defense Sessions 7-16", "slug": "set01" },
+    { "setNumber": "Set 02", "topic": "Network Defense Sessions 1-6", "slug": "set02" }
+  ]
+}

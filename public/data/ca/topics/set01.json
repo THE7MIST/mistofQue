@@ -1,1 +1,1319 @@
-{"version":"1","title":"CA Set 1","subject":"CA","stage":"Topic Wise MCQ","topic":"Set 1","durationMinutes":10,"questions":[{"id":1,"question":"Placeholder question for CA Set 1.","options":["Option A","Option B","Option C","Option D"],"correct":0,"description":"Placeholder item. Replace this question with real MCQ content.","difficulty":"Easy","tags":["CA","Placeholder"]}]}
+{
+  "version": "1",
+  "title": "Compliance Audits Set 1",
+  "subject": "Compliance Audits",
+  "stage": "Topic Wise MCQ",
+  "topic": "Compliance Audits Questions 1-77",
+  "durationMinutes": 77,
+  "questions": [
+    {
+      "question": "Which type of security audit focuses on evaluating the organization's adherence to regulatory requirements and industry standards?",
+      "options": [
+        "Financial Audit",
+        "Operational Audit",
+        "Compliance Audit",
+        "Performance Audit"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Compliance Audit",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 1
+    },
+    {
+      "question": "What does a penetration test primarily assess in a security audit?",
+      "options": [
+        "Network Performance",
+        "Software Development Lifecycle",
+        "Vulnerability to Attacks",
+        "Employee Productivity"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Vulnerability to Attacks",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 2
+    },
+    {
+      "question": "Which security audit type involves reviewing the implementation of security controls to ensure they meet predefined criteria?",
+      "options": [
+        "Network Audit",
+        "Configuration Audit",
+        "Risk Assessment",
+        "Data Privacy Audit"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Configuration Audit",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 3
+    },
+    {
+      "question": "A social engineering audit is primarily concerned with assessing:",
+      "options": [
+        "Physical Security",
+        "Human Factor Vulnerabilities",
+        "Network Protocols",
+        "Encryption Algorithms"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Human Factor Vulnerabilities",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 4
+    },
+    {
+      "question": "Which security audit type is focused on assessing the effectiveness of an organization's disaster recovery plan?",
+      "options": [
+        "Business Continuity Audit",
+        "Compliance Audit",
+        "Physical Security Audit",
+        "Access Control Audit"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Business Continuity Audit",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 5
+    },
+    {
+      "question": "In a code review as part of a security audit, what is the primary goal?",
+      "options": [
+        "Evaluate Software Usability",
+        "Identify Security Vulnerabilities",
+        "Analyze User Interfaces",
+        "Assess Network Performance"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Identify Security Vulnerabilities",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 6
+    },
+    {
+      "question": "Which security audit type assesses an organization's adherence to privacy laws and regulations?",
+      "options": [
+        "Data Privacy Audit",
+        "Compliance Audit",
+        "Identity and Access Management Audit",
+        "Wireless Security Audit"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Data Privacy Audit",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 7
+    },
+    {
+      "question": "What is the main focus of a physical security audit?",
+      "options": [
+        "Application Security",
+        "Employee Training Programs",
+        "Access Control Systems",
+        "Facility and Premises Security"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Facility and Premises Security",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 8
+    },
+    {
+      "question": "Which security audit type evaluates the effectiveness of an organization's security policies and procedures?",
+      "options": [
+        "Configuration Audit",
+        "Policy and Procedure Audit",
+        "Compliance Audit",
+        "Risk Assessment"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Policy and Procedure Audit",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 9
+    },
+    {
+      "question": "A third-party audit conducted by an external entity is often referred to as:",
+      "options": [
+        "Internal Audit",
+        "External Audit",
+        "Vendor Audit",
+        "Compliance Audit"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. External Audit",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Types of Security Audit"
+      ],
+      "id": 10
+    },
+    {
+      "question": "What is a crucial factor in determining the scope of an audit?",
+      "options": [
+        "Auditor's Availability",
+        "Budget Constraints",
+        "Audit Objectives",
+        "Employee Morale"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Audit Objectives",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 11
+    },
+    {
+      "question": "In audit planning, what does the risk assessment help identify?",
+      "options": [
+        "Employee Productivity",
+        "Potential Audit Findings",
+        "Budget Allocation",
+        "Financial Statements"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Potential Audit Findings",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 12
+    },
+    {
+      "question": "The materiality concept in audit decision-making relates to:",
+      "options": [
+        "Importance of Audit Evidence",
+        "Audit Budgeting",
+        "Overall Audit Objectives",
+        "Employee Training"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Importance of Audit Evidence",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 13
+    },
+    {
+      "question": "Which factor influences the frequency of an audit?",
+      "options": [
+        "Regulatory Requirements",
+        "Employee Satisfaction",
+        "Internal Politics",
+        "Software Updates"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Regulatory Requirements",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 14
+    },
+    {
+      "question": "In audit decision-making, what does the concept of independence refer to?",
+      "options": [
+        "Auditor's Professional Ethics",
+        "Financial Independence of the Organization",
+        "Employee Empowerment",
+        "Technological Independence"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Auditor's Professional Ethics",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 15
+    },
+    {
+      "question": "What is the primary purpose of establishing audit criteria?",
+      "options": [
+        "Define Audit Scope",
+        "Set Audit Budget",
+        "Guide Audit Procedures",
+        "Evaluate Employee Performance"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Guide Audit Procedures",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 16
+    },
+    {
+      "question": "The concept of 'Audit Sampling' is used to:",
+      "options": [
+        "Select the Best Auditors",
+        "Examine the Entire Population",
+        "Gather Sufficient Audit Evidence",
+        "Implement Cost Reduction Measures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Gather Sufficient Audit Evidence",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 17
+    },
+    {
+      "question": "In audit decision-making, what does the term 'material weakness' indicate?",
+      "options": [
+        "A Significant Audit Finding",
+        "An Insignificant Irregularity",
+        "Employee Misconduct",
+        "Budget Overrun"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. A Significant Audit Finding",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 18
+    },
+    {
+      "question": "What is the primary focus of an audit risk assessment?",
+      "options": [
+        "Employee Productivity",
+        "Detecting Fraud",
+        "Budget Allocation",
+        "Potential Misstatements in Financial Statements"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Potential Misstatements in Financial Statements",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 19
+    },
+    {
+      "question": "Which factor is critical in determining the timing of an audit?",
+      "options": [
+        "Employee Availability",
+        "Regulatory Deadlines",
+        "Audit Software Compatibility",
+        "Internal Communication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Regulatory Deadlines",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Audit Decision Factors"
+      ],
+      "id": 20
+    },
+    {
+      "question": "In the planning phase of a security audit, what is the main objective?",
+      "options": [
+        "Identify Potential Risks",
+        "Gather Audit Evidence",
+        "Execute Security Tests",
+        "Define Audit Objectives"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Define Audit Objectives",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 21
+    },
+    {
+      "question": "Which phase of a security audit involves the collection and analysis of evidence?",
+      "options": [
+        "Planning Phase",
+        "Execution Phase",
+        "Reporting Phase",
+        "Follow-up Phase"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Execution Phase",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 22
+    },
+    {
+      "question": "During the reporting phase of a security audit, what is the primary responsibility?",
+      "options": [
+        "Implement Security Controls",
+        "Present Findings and Recommendations",
+        "Conduct Security Tests",
+        "Define Audit Criteria"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Present Findings and Recommendations",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 23
+    },
+    {
+      "question": "The follow-up phase of a security audit is essential for:",
+      "options": [
+        "Planning Future Audits",
+        "Implementing Corrective Actions",
+        "Collecting Audit Evidence",
+        "Evaluating Audit Budget"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Implementing Corrective Actions",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 24
+    },
+    {
+      "question": "What is the main purpose of the execution phase in a security audit?",
+      "options": [
+        "Define Audit Scope",
+        "Gather Audit Evidence",
+        "Present Findings",
+        "Establish Audit Criteria"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Gather Audit Evidence",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 25
+    },
+    {
+      "question": "Which phase of a security audit involves conducting interviews with key personnel?",
+      "options": [
+        "Planning Phase",
+        "Execution Phase",
+        "Reporting Phase",
+        "Follow-up Phase"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Execution Phase",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 26
+    },
+    {
+      "question": "The follow-up phase is crucial for ensuring:",
+      "options": [
+        "Adequate Audit Budgeting",
+        "Continuous Improvement",
+        "Employee Satisfaction",
+        "Minimal Disruption"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Continuous Improvement",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 27
+    },
+    {
+      "question": "In which phase does the auditor assess the effectiveness of existing security controls?",
+      "options": [
+        "Planning Phase",
+        "Execution Phase",
+        "Reporting Phase",
+        "Follow-up Phase"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Execution Phase",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 28
+    },
+    {
+      "question": "The reporting phase should include:",
+      "options": [
+        "Audit Planning Documents",
+        "Detailed Audit Procedures",
+        "Clear Findings and Recommendations",
+        "Employee Personal Data"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Clear Findings and Recommendations",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 29
+    },
+    {
+      "question": "Which phase involves developing an audit plan and determining the audit scope?",
+      "options": [
+        "Execution Phase",
+        "Reporting Phase",
+        "Planning Phase",
+        "Follow-up Phase"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Planning Phase",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Audit Phases"
+      ],
+      "id": 30
+    },
+    {
+      "question": "What is the fundamental principle that guides auditors to be impartial and unbiased?",
+      "options": [
+        "Integrity",
+        "Independence",
+        "Objectivity",
+        "Confidentiality"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Objectivity",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 31
+    },
+    {
+      "question": "Which principle emphasizes the need for auditors to adhere to professional standards and ethical guidelines?",
+      "options": [
+        "Competence",
+        "Professional Skepticism",
+        "Due Professional Care",
+        "Integrity"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Due Professional Care",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 32
+    },
+    {
+      "question": "The principle of confidentiality in auditing requires auditors to:",
+      "options": [
+        "Share Audit Findings with All Stakeholders",
+        "Keep Audit Findings Secure and Private",
+        "Disclose Confidential Information to the Public",
+        "Only Share Findings with Management"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Keep Audit Findings Secure and Private",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 33
+    },
+    {
+      "question": "What is the underlying principle that encourages auditors to use logical and systematic approaches during the audit process?",
+      "options": [
+        "Professional Skepticism",
+        "Due Professional Care",
+        "Integrity",
+        "Objectivity"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Due Professional Care",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 34
+    },
+    {
+      "question": "The principle of professional skepticism requires auditors to:",
+      "options": [
+        "Trust All Information Provided by Management",
+        "Assume the Worst in All Situations",
+        "Rely on Personal Opinions",
+        "Ignore Contradictory Evidence"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Assume the Worst in All Situations",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 35
+    },
+    {
+      "question": "The principle of competence in auditing highlights the importance of:",
+      "options": [
+        "Personal Preferences",
+        "Continuous Professional Development",
+        "Ignoring Industry Standards",
+        "Quick Completion of Audits"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Continuous Professional Development",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 36
+    },
+    {
+      "question": "What does the principle of due professional care require auditors to do?",
+      "options": [
+        "Complete Audits as Quickly as Possible",
+        "Exercise Professional Skepticism",
+        "Conduct Audits Without Proper Planning",
+        "Perform Audits with Precision and Diligence"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Perform Audits with Precision and Diligence",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 37
+    },
+    {
+      "question": "Independence in auditing refers to:",
+      "options": [
+        "Financial Independence of the Organization",
+        "Independence of Auditors from Management Influence",
+        "Independence from Regulatory Authorities",
+        "Independence from Industry Standards"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Independence of Auditors from Management Influence",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 38
+    },
+    {
+      "question": "The principle of integrity in auditing emphasizes the importance of:",
+      "options": [
+        "Manipulating Audit Findings for Positive Outcomes",
+        "Consistency in Reporting",
+        "Truthfulness and Honesty",
+        "Ignoring Conflicting Information"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Truthfulness and Honesty",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 39
+    },
+    {
+      "question": "What is the primary focus of the principle of professional skepticism?",
+      "options": [
+        "Blind Trust in Management Statements",
+        "Doubt and Critically Assessing Information",
+        "Ignoring Contradictory Evidence",
+        "Following Instructions Without Questioning"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Doubt and Critically Assessing Information",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Principles of Audits"
+      ],
+      "id": 40
+    },
+    {
+      "question": "What is the primary goal of security evaluation?",
+      "options": [
+        "Enhancing performance",
+        "Ensuring confidentiality, integrity, and availability",
+        "Reducing costs",
+        "Increasing user convenience"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Ensuring confidentiality, integrity, and availability",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 41
+    },
+    {
+      "question": "Which of the following is NOT a key element of security evaluation?",
+      "options": [
+        "Risk assessment",
+        "System uptime",
+        "Vulnerability analysis",
+        "Security policy compliance"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. System uptime",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 42
+    },
+    {
+      "question": "What does the term \"penetration testing\" refer to in security evaluation?",
+      "options": [
+        "Testing the durability of physical security measures",
+        "Assessing the strength of encryption algorithms",
+        "Simulating real-world cyber-attacks",
+        "Evaluating user authentication mechanisms"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Simulating real-world cyber-attacks",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 43
+    },
+    {
+      "question": "In the context of security evaluation, what is the purpose of a firewall?",
+      "options": [
+        "Protecting against physical intrusions",
+        "Monitoring network traffic",
+        "Preventing unauthorized access to a network",
+        "Encrypting communication channels"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Preventing unauthorized access to a network",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 44
+    },
+    {
+      "question": "What is the role of encryption in security evaluation?",
+      "options": [
+        "Enhancing network speed",
+        "Protecting data confidentiality",
+        "Improving user authentication",
+        "Monitoring system logs"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Protecting data confidentiality",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 45
+    },
+    {
+      "question": "Which security concept ensures that users have access only to the resources they are authorized to use?",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Encryption",
+        "Intrusion detection"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Authorization",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 46
+    },
+    {
+      "question": "What is the purpose of a security audit trail?",
+      "options": [
+        "Enhancing system performance",
+        "Monitoring user activity",
+        "Encrypting communication channels",
+        "Conducting vulnerability assessments"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Monitoring user activity",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 47
+    },
+    {
+      "question": "Which type of attack involves deceiving individuals into divulging sensitive information?",
+      "options": [
+        "Denial of Service (DoS)",
+        "Social Engineering",
+        "Malware",
+        "Phishing"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Phishing",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 48
+    },
+    {
+      "question": "What does the term \"zero-day vulnerability\" refer to in security evaluation?",
+      "options": [
+        "A vulnerability that has been exploited for zero days",
+        "A vulnerability known for zero days",
+        "A vulnerability that has not yet been discovered or patched",
+        "A vulnerability with zero impact on security"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. A vulnerability that has not yet been discovered or patched",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 49
+    },
+    {
+      "question": "In security evaluation, what is the purpose of a security policy?",
+      "options": [
+        "Enhancing user convenience",
+        "Defining guidelines for securing information and resources",
+        "Maximizing system speed",
+        "Managing hardware resources"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Defining guidelines for securing information and resources",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Security Evaluation"
+      ],
+      "id": 50
+    },
+    {
+      "question": "Which phase of evaluation involves defining the scope, objectives, and criteria for the assessment?",
+      "options": [
+        "Planning",
+        "Execution",
+        "Reporting",
+        "Follow-up"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Planning",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 51
+    },
+    {
+      "question": "During which phase are vulnerabilities identified and assessed?",
+      "options": [
+        "Planning",
+        "Execution",
+        "Reporting",
+        "Follow-up"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Execution",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 52
+    },
+    {
+      "question": "What is the purpose of the reporting phase in evaluation?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Communicating findings and recommendations",
+        "Planning the assessment",
+        "Executing the assessment"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Communicating findings and recommendations",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 53
+    },
+    {
+      "question": "In which phase is the assessment plan developed?",
+      "options": [
+        "Planning",
+        "Execution",
+        "Reporting",
+        "Follow-up"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Planning",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 54
+    },
+    {
+      "question": "What is the primary focus of the follow-up phase in evaluation?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Verifying the implementation of recommendations",
+        "Communicating findings",
+        "Developing the assessment plan"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Verifying the implementation of recommendations",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 55
+    },
+    {
+      "question": "During which phase are testing tools and techniques applied?",
+      "options": [
+        "Planning",
+        "Execution",
+        "Reporting",
+        "Follow-up"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Execution",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 56
+    },
+    {
+      "question": "What is the primary goal of the planning phase in evaluation?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Defining the scope, objectives, and criteria",
+        "Reporting findings",
+        "Verifying recommendations"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Defining the scope, objectives, and criteria",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 57
+    },
+    {
+      "question": "Which phase involves collecting data and evidence for the assessment?",
+      "options": [
+        "Planning",
+        "Execution",
+        "Reporting",
+        "Follow-up"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Execution",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 58
+    },
+    {
+      "question": "What is the role of stakeholders during the reporting phase?",
+      "options": [
+        "Planning the assessment",
+        "Identifying vulnerabilities",
+        "Providing input on findings and recommendations",
+        "Verifying the implementation of recommendations"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Providing input on findings and recommendations",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 59
+    },
+    {
+      "question": "In which phase is the final assessment report prepared?",
+      "options": [
+        "Planning",
+        "Execution",
+        "Reporting",
+        "Follow-up"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Reporting",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Phases"
+      ],
+      "id": 60
+    },
+    {
+      "question": "What is the purpose of a risk assessment in evaluation methodology?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Quantifying potential threats and impacts",
+        "Executing the assessment",
+        "Developing the assessment plan"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Quantifying potential threats and impacts",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 61
+    },
+    {
+      "question": "Which methodology involves assessing security controls through manual testing and analysis?",
+      "options": [
+        "Black-box testing",
+        "White-box testing",
+        "Gray-box testing",
+        "Penetration testing"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. White-box testing",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 62
+    },
+    {
+      "question": "What does the term \"vulnerability scanning\" refer to in evaluation methodology?",
+      "options": [
+        "Assessing the effectiveness of security controls",
+        "Identifying weaknesses and flaws in a system",
+        "Quantifying potential threats",
+        "Developing the assessment plan"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Identifying weaknesses and flaws in a system",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 63
+    },
+    {
+      "question": "In evaluation methodology, what is the role of a threat model?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Quantifying potential threats and impacts",
+        "Developing the assessment plan",
+        "Executing the assessment"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Developing the assessment plan",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 64
+    },
+    {
+      "question": "Which methodology simulates an attacker with complete knowledge of the system?",
+      "options": [
+        "Black-box testing",
+        "White-box testing",
+        "Gray-box testing",
+        "Penetration testing"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. White-box testing",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 65
+    },
+    {
+      "question": "What is the primary goal of penetration testing in evaluation methodology?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Quantifying potential threats and impacts",
+        "Exploiting weaknesses to assess security",
+        "Developing the assessment plan"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Exploiting weaknesses to assess security",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 66
+    },
+    {
+      "question": "What is the purpose of a security control assessment?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Verifying the effectiveness of security controls",
+        "Quantifying potential threats and impacts",
+        "Developing the assessment plan"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Verifying the effectiveness of security controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 67
+    },
+    {
+      "question": "What is the role of a threat intelligence feed in evaluation methodology?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Providing information on current threats",
+        "Developing the assessment plan",
+        "Quantifying potential threats and impacts"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Providing information on current threats",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 68
+    },
+    {
+      "question": "Which methodology involves assessing security controls with limited knowledge of the system?",
+      "options": [
+        "Black-box testing",
+        "White-box testing",
+        "Gray-box testing",
+        "Penetration testing"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Black-box testing",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 69
+    },
+    {
+      "question": "What is the primary goal of security control validation in evaluation methodology?",
+      "options": [
+        "Identifying vulnerabilities",
+        "Ensuring the proper implementation of security controls",
+        "Quantifying potential threats and impacts",
+        "Developing the assessment plan"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Ensuring the proper implementation of security controls",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Evaluation Methodology"
+      ],
+      "id": 70
+    },
+    {
+      "question": "What does SOX stand for in the context of compliance auditing?",
+      "options": [
+        "Security Operations Exchange",
+        "Sarbanes-Oxley",
+        "System Oversight and Examination",
+        "Securities Operational Excellence"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Sarbanes-Oxley",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 71
+    },
+    {
+      "question": "Which section of the Sarbanes-Oxley Act focuses on internal control assessments and reporting?",
+      "options": [
+        "Section 302",
+        "Section 404",
+        "Section 802",
+        "Section 201"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Section 404",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 72
+    },
+    {
+      "question": "What is the primary objective of SOX Section 404 compliance?",
+      "options": [
+        "Ensuring financial transparency",
+        "Establishing ethical business practices",
+        "Enhancing cybersecurity",
+        "Promoting environmental sustainability"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Ensuring financial transparency",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 73
+    },
+    {
+      "question": "Which financial reports are required to be certified by CEOs and CFOs under SOX Section 302?",
+      "options": [
+        "Quarterly Reports",
+        "Annual Reports",
+        "Both A and B",
+        "Monthly Reports"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Both A and B",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 74
+    },
+    {
+      "question": "What role does the external auditor play in the SOX compliance process?",
+      "options": [
+        "Developing internal controls",
+        "Certifying financial statements",
+        "Implementing IT security measures",
+        "Conducting employee training"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Certifying financial statements",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 75
+    },
+    {
+      "question": "Which entity is responsible for overseeing and enforcing SOX compliance?",
+      "options": [
+        "Securities and Exchange Commission (SEC)",
+        "Internal Revenue Service (IRS)",
+        "Federal Reserve",
+        "Department of Justice (DOJ)"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Securities and Exchange Commission (SEC)",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 76
+    },
+    {
+      "question": "What is the purpose of the SOX whistleblower protection provision?",
+      "options": [
+        "To encourage reporting of financial misconduct",
+        "To discourage external audits",
+        "To promote tax evasion",
+        "To penalize ethical behavior"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. To encourage reporting of financial misconduct",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "SOX Reports"
+      ],
+      "id": 77
+    }
+  ]
+}

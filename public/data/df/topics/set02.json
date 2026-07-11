@@ -1,0 +1,860 @@
+{
+  "version": "1",
+  "title": "Cyber Forensic Set 2",
+  "subject": "Cyber Forensic",
+  "stage": "Topic Wise MCQ",
+  "topic": "Cyber Forensics Questions 51-100",
+  "durationMinutes": 50,
+  "questions": [
+    {
+      "id": 51,
+      "question": "What is the decimal value of hex 0x1A?",
+      "options": [
+        "10",
+        "16",
+        "26",
+        "27"
+      ],
+      "correct": 2,
+      "description": "0x1A = (1 × 16) + 10 = 26 in decimal.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "What is the forensic significance of understanding hex beyond just converting numbers?",
+      "options": [
+        "Conversion is the only practical use",
+        "Investigators can read file headers, identify file types, detect modified data, and verify tool accuracy by examining raw hex output",
+        "Hex is only useful for password analysis",
+        "Understanding hex has no practical forensic application"
+      ],
+      "correct": 1,
+      "description": "Hex mastery allows investigators to spot file signature mismatches, detect tampering, and independently verify what forensic tools report.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "How does a Hex Editor function as a forensic investigation tool?",
+      "options": [
+        "It only opens text files",
+        "It displays raw binary file content byte-by-byte, enabling direct examination, modification detection, and artifact recovery",
+        "It is only used for recovering passwords",
+        "Hex editors are not used in modern forensics"
+      ],
+      "correct": 1,
+      "description": "Hex editors let investigators see exactly what exists at every byte position, including file headers, deleted data fragments, and hidden content.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "What factors should the Initial Assessment consider when determining investigation scope?",
+      "options": [
+        "Only immediate system damage",
+        "Type of incident, systems affected, data compromised, legal requirements, evidence types needed, and resource requirements",
+        "Only financial impact",
+        "Only which employees are involved"
+      ],
+      "correct": 1,
+      "description": "Comprehensive initial assessment prevents under-resourcing or scope-creep during the investigation.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "Why might an investigator find a discrepancy between a file's extension and its actual hex content?",
+      "options": [
+        "File extensions always match content",
+        "Deliberate renaming to hide file type, software errors, or intentional obfuscation can cause extension-content mismatches",
+        "Extensions are unreliable indicators by design",
+        "This cannot happen in modern filesystems"
+      ],
+      "correct": 1,
+      "description": "File extension spoofing is a common technique to hide contraband or malicious files; hex analysis reveals true file type.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "An investigator's forensic tool reports a file is 0x2000 bytes. A different tool reports 8192 bytes. Is this a discrepancy?",
+      "options": [
+        "Yes - the tools disagree and one must be wrong",
+        "No - 0x2000 hex equals 8192 decimal; the tools agree but express the value in different bases",
+        "Yes - hex and decimal values can never match",
+        "Cannot determine without more information"
+      ],
+      "correct": 1,
+      "description": "0x2000 = 2×16^3 + 0 = 8192 decimal. This is the same value expressed in different number bases - no discrepancy exists.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Why might a forensic investigator manually verify hex output even when using trusted forensic software?",
+      "options": [
+        "Manual verification is always unnecessary",
+        "Software can have bugs, be manipulated, or misinterpret data; manual hex verification provides independent confirmation",
+        "Forensic software is infallible",
+        "Manual verification is too slow to be practical"
+      ],
+      "correct": 1,
+      "description": "Professional forensics requires defensible evidence; manual verification adds an independent layer that can withstand legal challenge.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "What is the fundamental difference between Encoding and Encryption?",
+      "options": [
+        "They are identical processes",
+        "Encoding transforms data format without a key and is reversible; Encryption requires a key and is designed to hide meaning",
+        "Encryption is a form of encoding",
+        "Encoding is stronger than encryption"
+      ],
+      "correct": 1,
+      "description": "Encoding (Base64, UTF-8) is for data compatibility, not security. Encryption requires a key and provides confidentiality.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "What is a file signature (magic bytes)?",
+      "options": [
+        "The digital signature of the file's author",
+        "Fixed byte sequences at the beginning of a file that identify its true type regardless of extension",
+        "A cryptographic hash of the file",
+        "A file's creation date stamp"
+      ],
+      "correct": 1,
+      "description": "Magic bytes (e.g., FF D8 FF for JPEG) are standardized identifiers embedded in files to identify their format.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "What is cryptographic hashing used for in forensics?",
+      "options": [
+        "To encrypt evidence files",
+        "To create a unique fixed-length fingerprint of data that changes if any bit is modified",
+        "To compress evidence for storage",
+        "To generate encryption keys"
+      ],
+      "correct": 1,
+      "description": "Even a single bit change in data produces a completely different hash, making hashing ideal for integrity verification.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "What algorithm does MD5 use to produce its hash output?",
+      "options": [
+        "It produces a 256-bit output",
+        "It produces a 128-bit fixed-length output regardless of input size",
+        "It produces variable-length outputs",
+        "It produces a 512-bit output"
+      ],
+      "correct": 1,
+      "description": "MD5 always outputs a 128-bit (32 hex character) hash value regardless of input data size.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "What is a hash collision?",
+      "options": [
+        "Two identical files with different hashes",
+        "Two different input data sets that produce the same hash output value",
+        "A hash that takes too long to compute",
+        "A corrupted hash file"
+      ],
+      "correct": 1,
+      "description": "Hash collisions undermine integrity verification - if two different files have the same hash, the hash cannot prove uniqueness.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "What is Bit Rot?",
+      "options": [
+        "A type of malware infection",
+        "Gradual, spontaneous deterioration of stored data due to physical media degradation over time",
+        "A file system corruption type",
+        "A deliberate data wiping technique"
+      ],
+      "correct": 1,
+      "description": "Bit rot occurs when magnetic, optical, or solid-state media degrades, causing random bit flips that corrupt stored data.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "Why has MD5 become problematic for forensic evidence verification?",
+      "options": [
+        "MD5 is too slow for large files",
+        "Researchers have demonstrated practical collision attacks, meaning two different files can share the same MD5 hash",
+        "MD5 produces outputs that are too short to be useful",
+        "MD5 is not supported by modern tools"
+      ],
+      "correct": 1,
+      "description": "Practical MD5 collision attacks mean adversaries could theoretically substitute evidence and maintain the same hash value.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "What is the primary advantage of SHA-256 over MD5 for forensic hashing?",
+      "options": [
+        "SHA-256 is significantly faster",
+        "SHA-256 produces a 256-bit output with no known practical collision attacks, providing stronger integrity assurance",
+        "SHA-256 uses less storage",
+        "SHA-256 is backward compatible with MD5"
+      ],
+      "correct": 1,
+      "description": "SHA-256's larger output space makes collision attacks computationally infeasible with current technology.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "What protection against Bit Rot is most effective for long-term evidence archives?",
+      "options": [
+        "Bit rot cannot be prevented",
+        "Redundant storage across multiple media types with periodic integrity verification using hash values",
+        "Using only one high-quality storage device",
+        "Keeping all evidence on magnetic tape"
+      ],
+      "correct": 1,
+      "description": "Multiple storage copies with regular hash verification detects and corrects bit rot before data is permanently lost.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "What does a Hex Editor allow a forensic investigator to examine?",
+      "options": [
+        "Only text content of files",
+        "The raw byte-level content of any file, including headers, deleted data fragments, and metadata",
+        "Only image files",
+        "Only encrypted files"
+      ],
+      "correct": 1,
+      "description": "Hex editors reveal the true binary content of files, enabling investigators to bypass file extension deception.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "An investigator finds a file named 'report.docx' but its hex header begins with FF D8 FF. What does this indicate?",
+      "options": [
+        "A corrupt Word document",
+        "The file is actually a JPEG image deliberately renamed to hide it",
+        "A standard Word document format",
+        "A file created by malware"
+      ],
+      "correct": 1,
+      "description": "FF D8 FF is the JPEG file signature; a .docx file with this header has been renamed to conceal its true nature.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "How do MD5 Hash Collisions specifically threaten digital forensic investigations?",
+      "options": [
+        "Collisions are theoretically impossible",
+        "An attacker could craft a malicious file that produces the same MD5 hash as a legitimate file, making substitution undetectable",
+        "Collisions only affect old algorithms",
+        "Collisions have no real-world impact"
+      ],
+      "correct": 1,
+      "description": "Evidence substitution becomes possible - if two different files share a hash, hash verification alone cannot prove a specific file is the original.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "Why is Base64 encoding NOT a security measure despite making data unreadable to humans?",
+      "options": [
+        "It is actually a strong security measure",
+        "Base64 has no key - anyone who knows it is Base64 encoded can instantly decode it; it provides zero confidentiality",
+        "Base64 uses a public key",
+        "Base64 is weaker encryption"
+      ],
+      "correct": 1,
+      "description": "Encoding transforms data format for compatibility, not confidentiality. It is trivially reversible by anyone.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 71,
+      "question": "What combination of hashing algorithms is recommended for professional forensic evidence to provide both compatibility and security?",
+      "options": [
+        "Only MD5 for compatibility",
+        "Both MD5 and SHA-256: MD5 for legacy tool compatibility, SHA-256 for security assurance",
+        "Only SHA-1 for simplicity",
+        "Hashing is optional in modern forensics"
+      ],
+      "correct": 1,
+      "description": "Using both provides backward compatibility with older tools while maintaining strong integrity assurance through SHA-256.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 72,
+      "question": "How does Bit Rot threaten the long-term integrity of forensic evidence archives?",
+      "options": [
+        "Bit rot only affects copies, not originals",
+        "Silent data corruption can occur without any error indication, meaning evidence may be undetectable altered over years of storage",
+        "All modern media is immune to bit rot",
+        "Bit rot only affects data in active use"
+      ],
+      "correct": 1,
+      "description": "Bit rot is 'silent' - files appear intact but bits have flipped, making the evidence incorrect without any obvious indication.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 73,
+      "question": "An investigator computes MD5 and SHA-256 hashes of evidence immediately after collection. Six months later, the MD5 matches but SHA-256 does not. What are the possible explanations?",
+      "options": [
+        "Both hashes must match or neither - this scenario is impossible",
+        "A SHA-256 collision occurred; the MD5 matched by chance; or the evidence was deliberately modified using a known MD5 collision while the SHA-256 changed",
+        "Storage equipment failure only",
+        "The hashing tools are both broken"
+      ],
+      "correct": 1,
+      "description": "Mismatched hashes indicate potential evidence tampering or corruption; the stronger algorithm (SHA-256) discrepancy is the critical finding.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "How do encoding, file signatures, and hashing work together as a layered evidence integrity framework?",
+      "options": [
+        "They are completely independent and unrelated",
+        "Hashing detects any changes; file signatures verify true file type; encoding awareness prevents misclassification - together they form defense-in-depth for evidence integrity",
+        "Only hashing matters for integrity",
+        "File signatures replace hashing in modern practice"
+      ],
+      "correct": 1,
+      "description": "Each technique catches different types of tampering; combining them provides comprehensive evidence integrity assurance that courts can rely on.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "Why must forensic organizations establish hash algorithm policies that account for future cryptographic vulnerabilities?",
+      "options": [
+        "Algorithms never become vulnerable over time",
+        "Evidence archived today may need to be re-verified years from now; algorithms that seem secure today may be broken, requiring migration to stronger alternatives",
+        "Once hashed, evidence integrity is permanent",
+        "Future vulnerabilities don't affect past forensic work"
+      ],
+      "correct": 1,
+      "description": "SHA-1 was trusted then broken. SHA-256 could face similar evolution. Forward-thinking hash policies include migration paths.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "How do the six forensic process steps ensure that evidence collected during incident response remains legally admissible?",
+      "options": [
+        "The process has no impact on legal admissibility",
+        "The systematic chain from Identification through Presentation satisfies legal requirements for evidence by ensuring consistency, documentation, and integrity at every stage",
+        "Only the Preservation step affects admissibility",
+        "Legal admissibility is determined solely by courts, not forensic procedure"
+      ],
+      "correct": 1,
+      "description": "Courts evaluate the entire forensic process; adherence to each step demonstrates professional methodology and creates a defensible evidentiary record.",
+      "difficulty": "Medium",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "When would an investigation require BOTH Live and Dead Forensics techniques?",
+      "options": [
+        "You should always choose one technique only",
+        "When a compromised system is still running - Live forensics captures volatile evidence before shutdown, then Dead forensics examines persistent storage after imaging",
+        "When the investigation budget is large",
+        "Only in major criminal cases"
+      ],
+      "correct": 1,
+      "description": "A live running system needs live forensics first to capture RAM and active sessions, then dead forensics for thorough storage examination.",
+      "difficulty": "Medium",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 78,
+      "question": "How does discovering encoded or encrypted data during analysis change the investigation?",
+      "options": [
+        "Continue the analysis unchanged",
+        "Update the response strategy, document the discovery, assess whether decryption resources or legal authority are needed, and flag as potentially significant",
+        "Ignore encoded data unless it appears relevant",
+        "Encoding and encryption have no investigative significance"
+      ],
+      "correct": 1,
+      "description": "Deliberately encoded or encrypted data often indicates an attempt to conceal activity and may require specialized resources or court orders.",
+      "difficulty": "Medium",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "Why is hash verification required both at initial evidence collection AND during long-term archival?",
+      "options": [
+        "Hash verification is only needed once at collection",
+        "Hashing at collection proves original state; periodic re-hashing during archival detects bit rot, tampering, or storage degradation over time",
+        "Hashing is only for active investigations",
+        "Archives never change so re-hashing is unnecessary"
+      ],
+      "correct": 1,
+      "description": "Evidence integrity must be demonstrable at every point in its lifecycle - initial hash proves authenticity, periodic re-hashing proves long-term integrity.",
+      "difficulty": "Medium",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 80,
+      "question": "What is the relationship between file signature analysis and the broader evidence authentication process?",
+      "options": [
+        "File signatures are a minor detail",
+        "File signatures provide one verification layer; combined with hashing, metadata analysis, and documentation, they form a comprehensive authentication framework",
+        "File signatures replace all other authentication methods",
+        "Authentication relies entirely on hash values"
+      ],
+      "correct": 1,
+      "description": "Layered authentication - signatures, hashes, metadata, chain of custody - creates a robust evidential foundation that is difficult to challenge in court.",
+      "difficulty": "Medium",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 81,
+      "question": "A forensic investigator discovers that multiple well-documented forensic steps were followed, yet the evidence was ruled inadmissible. What is the most likely explanation?",
+      "options": [
+        "Properly documented evidence is always admissible",
+        "A single procedural break - such as an undocumented tool, unauthorized access to evidence, or improper chain of custody - can make otherwise valid evidence inadmissible",
+        "Courts routinely reject forensic evidence",
+        "Technical validity guarantees legal admissibility"
+      ],
+      "correct": 1,
+      "description": "Legal admissibility requires flawless procedural compliance; even one break in chain of custody or undocumented action can create reasonable doubt.",
+      "difficulty": "Hard",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 82,
+      "question": "How should investigators balance reliance on automated forensic tools with manual hex and file signature analysis?",
+      "options": [
+        "Rely entirely on automated tools for efficiency",
+        "Use tools for speed and coverage, but perform manual spot-checks on critical evidence to verify tool accuracy and catch errors or data corruption",
+        "Manual analysis is always superior",
+        "Automated tools are infallible and require no verification"
+      ],
+      "correct": 1,
+      "description": "Professional forensics combines automation with critical manual verification - courts can challenge 'black box' tool results; manual verification makes findings defensible.",
+      "difficulty": "Hard",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 83,
+      "question": "How can a minor deviation in evidence handling in Session 3 cascade into complete investigative failure by the Presentation phase?",
+      "options": [
+        "Minor deviations never affect outcomes",
+        "A single gap in chain of custody or undocumented handling creates a defense opening that can unravel all subsequent forensic work regardless of its quality",
+        "Only the presentation phase matters",
+        "Deviations can be corrected retrospectively"
+      ],
+      "correct": 1,
+      "description": "Forensic integrity is a chain - every link must hold. A break early in the process contaminates all downstream evidence and analysis.",
+      "difficulty": "Hard",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 84,
+      "question": "An organization's IR team contains excellent technical forensic capability but lacks legal counsel. What specific risks arise?",
+      "options": [
+        "No significant risks - technical skill is most important",
+        "Evidence may be collected in legally non-compliant ways, inadmissible due to procedural errors, or the organization may incur liability from actions taken during response",
+        "Legal counsel is only needed for prosecution",
+        "Risk is minimal if the team documents their work"
+      ],
+      "correct": 1,
+      "description": "Legal guidance during response ensures compliance with laws on evidence collection, privacy, and organizational liability.",
+      "difficulty": "Hard",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 85,
+      "question": "Why must forensic organizations consider algorithm migration plans for evidence archived using SHA-256 today?",
+      "options": [
+        "SHA-256 will never be compromised",
+        "Cryptographic history shows that trusted algorithms (MD5, SHA-1) were eventually broken; future computing advances may compromise SHA-256, requiring re-verification with stronger algorithms",
+        "Once archived, hashes never need updating",
+        "Algorithm strength has no long-term implications"
+      ],
+      "correct": 1,
+      "description": "MD5 and SHA-1 were both trusted then broken. Responsible forensic practice requires planning for algorithm deprecation in long-term archives.",
+      "difficulty": "Hard",
+      "tags": [
+        "All Sessions",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 86,
+      "question": "An attacker deliberately uses anti-forensic tools to wipe log files before investigators arrive. What should investigators do?",
+      "options": [
+        "Close the investigation as evidence is destroyed",
+        "Look for evidence of the wiping tool itself, check backup logs, examine network logs, and document what is missing as that too is evidence",
+        "Assume no crime occurred",
+        "Only examine physical hardware"
+      ],
+      "correct": 1,
+      "description": "Absence of expected evidence and presence of wiping artifacts are themselves forensic evidence. Gaps in logs after an incident are suspicious.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 87,
+      "question": "A suspect claims their files were encoded in Base64 purely for 'technical compatibility'. Why is this claim insufficient to rule out deliberate concealment?",
+      "options": [
+        "Base64 encoding always indicates technical use",
+        "Base64 encoding can hide content from casual inspection; context, timing, and content of the encoded data must be analyzed to determine intent",
+        "The claim is sufficient - encoding is never suspicious",
+        "Base64 encoding cannot be used to conceal data"
+      ],
+      "correct": 1,
+      "description": "Intent matters; investigators must analyze what was encoded, when, and in what context to assess whether encoding was used for concealment.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 88,
+      "question": "A forensic image passes MD5 hash verification but fails SHA-256 verification. What should the investigator conclude?",
+      "options": [
+        "The evidence is intact - MD5 is sufficient",
+        "The SHA-256 failure is the critical finding; the image has likely been tampered with using an MD5 collision attack or has been corrupted",
+        "Both algorithms must be wrong",
+        "SHA-256 failures are common and can be ignored"
+      ],
+      "correct": 1,
+      "description": "MD5's known collision vulnerabilities mean it can be fooled; SHA-256 discrepancy reveals the truth - evidence integrity is compromised.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 89,
+      "question": "During an investigation, the first responder powers off a running server 'to protect evidence'. What critical mistake was made?",
+      "options": [
+        "No mistake - powering off protects the hardware",
+        "All volatile evidence - RAM contents, active connections, encryption keys in memory, running processes - was instantly and permanently destroyed",
+        "Powering off is always the correct first step",
+        "Only file system evidence is affected by power-off"
+      ],
+      "correct": 1,
+      "description": "Power-off destroys all volatile evidence. First responders must capture live data before shutdown.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 90,
+      "question": "Two investigators produce different MD5 hashes for the same evidence drive. What are the possible explanations?",
+      "options": [
+        "Hash values for the same data always differ between investigators",
+        "One image was not bit-exact, the evidence was modified between imaging sessions, a tool error occurred, or one investigator imaged a different drive",
+        "Investigator identity changes hash values",
+        "This situation is impossible"
+      ],
+      "correct": 1,
+      "description": "Identical data always produces identical hashes with the same algorithm - a discrepancy means the data is different or a tool error occurred.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 91,
+      "question": "A file named 'holiday_photo.jpg' has no file extension in its hex signature. What is the most appropriate forensic response?",
+      "options": [
+        "Assume it is a JPEG as named",
+        "Run file signature analysis to identify the true file type; the name is unreliable and may indicate deliberate concealment",
+        "Ignore the file as it is probably personal",
+        "Delete the file as it may be corrupt"
+      ],
+      "correct": 1,
+      "description": "File names are user-controlled and unreliable; hex signatures reveal the true file type and potential concealment.",
+      "difficulty": "Medium",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 92,
+      "question": "An incident response team is called in but the crime scene has already been partially cleaned by building staff. What is the correct action?",
+      "options": [
+        "Abandon the investigation",
+        "Document everything that is known about the original scene state, interview witnesses, collect remaining evidence, and note what has been disturbed",
+        "Start the investigation as if nothing happened",
+        "Only examine what remains"
+      ],
+      "correct": 1,
+      "description": "Partial evidence is still evidence; documenting the disturbance itself helps the investigation and may explain absence of expected evidence.",
+      "difficulty": "Medium",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 93,
+      "question": "An investigator notices bit rot has affected a critical piece of archived evidence. What must they do?",
+      "options": [
+        "Discard the evidence as it is now useless",
+        "Document the bit rot discovery with hash verification evidence, restore from verified backup copies, and note the degradation in the investigation record",
+        "Try to guess the original data",
+        "Continue using the degraded evidence without disclosure"
+      ],
+      "correct": 1,
+      "description": "Transparency about evidence condition is legally required; restoring from backup and documenting the process preserves admissibility.",
+      "difficulty": "Medium",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 94,
+      "question": "Why should forensic investigators document 'negative findings' - things that were NOT found?",
+      "options": [
+        "Negative findings are irrelevant",
+        "Absence of expected evidence (logs, files, communications) can itself be significant and may indicate deletion, anti-forensics, or system manipulation",
+        "Only positive findings matter in court",
+        "Negative findings waste documentation time"
+      ],
+      "correct": 1,
+      "description": "Deliberate deletion or absence of expected artifacts is evidence of concealment and can be as important as what was found.",
+      "difficulty": "Medium",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 95,
+      "question": "A forensic investigator is pressured by management to 'expedite the investigation and skip some documentation steps'. What is the correct response?",
+      "options": [
+        "Comply - management authority supersedes forensic procedures",
+        "Refuse; explain that skipping documentation compromises evidence admissibility and potentially exposes the organization to legal liability",
+        "Skip only the less important steps",
+        "Comply but note the request informally"
+      ],
+      "correct": 1,
+      "description": "Forensic integrity cannot be compromised by organizational pressure; incomplete documentation destroys legal admissibility and creates liability.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 96,
+      "question": "What is the forensic significance of finding a file with a valid hash, correct file signature, but contents that do not match its stated type?",
+      "options": [
+        "No significance - the hash confirms integrity",
+        "This is a significant finding suggesting steganography, data injection, or file header manipulation - the file requires deep content analysis",
+        "Valid hash and signature are sufficient proof",
+        "File content consistency is irrelevant to forensics"
+      ],
+      "correct": 1,
+      "description": "Steganography embeds hidden data inside legitimate files; surface-level verification passes but content analysis reveals concealed information.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 97,
+      "question": "An organization has excellent incident response but has never tested or exercised its Incident Response Plan. What critical risk exists?",
+      "options": [
+        "Untested plans always work correctly",
+        "Untested plans may contain gaps, unclear roles, or unrealistic procedures that only become apparent during a real incident when stakes are highest",
+        "Testing is unnecessary if the plan is comprehensive",
+        "Plans only need testing after an actual incident"
+      ],
+      "correct": 1,
+      "description": "Tabletop exercises and simulations reveal plan weaknesses in a controlled environment, preventing discovering failures during real incidents.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 98,
+      "question": "What is the forensic implication when a suspect's device shows evidence of a factory reset immediately before investigators arrived?",
+      "options": [
+        "Nothing significant - factory resets are common",
+        "The timing of the reset is highly suspicious and may constitute evidence tampering; recovery of pre-reset data should be attempted and the reset documented",
+        "Factory resets cannot be forensically significant",
+        "No evidence can be recovered after a factory reset"
+      ],
+      "correct": 1,
+      "description": "Timing of data destruction is a key forensic indicator; forensic tools can often recover data even after factory resets.",
+      "difficulty": "Medium",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 99,
+      "question": "A forensic investigation reveals evidence on cloud storage not covered by the original search warrant. What is the legally and ethically correct response?",
+      "options": [
+        "Examine all the cloud data since it was discovered during investigation",
+        "Stop, document the discovery, and obtain appropriate legal authority before accessing the out-of-scope cloud evidence",
+        "Ignore cloud evidence as it is outside original scope",
+        "Access the cloud data immediately to prevent evidence destruction"
+      ],
+      "correct": 1,
+      "description": "Exceeding warrant scope makes evidence inadmissible and exposes investigators to legal liability; new authority must be obtained.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 100,
+      "question": "How does mastery of hexadecimal, hashing, file signatures, chain of custody, and incident response together define professional forensic competence?",
+      "options": [
+        "These are independent skills with no connection",
+        "Together they form the complete investigator: technical skills (hex, hashing, signatures) enable accurate analysis; procedural skills (chain of custody, IR) ensure legal admissibility - neither alone is sufficient",
+        "Technical skills are more important than procedural skills",
+        "Procedural compliance is sufficient without technical understanding"
+      ],
+      "correct": 1,
+      "description": "Professional forensic practice is the integration of technical rigor and procedural compliance; courts require both to accept evidence.",
+      "difficulty": "Hard",
+      "tags": [
+        "Edge Cases",
+        "Cyber Forensics"
+      ]
+    }
+  ]
+}

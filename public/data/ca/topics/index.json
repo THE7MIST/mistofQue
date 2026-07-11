@@ -1,1 +1,19 @@
-{"sets":[{"setNumber":"Set 01","topic":"Set 1","slug":"set01"}]}
+{
+  "sets": [
+    {
+      "setNumber": "Set 01",
+      "topic": "Compliance Audits Questions 1-77",
+      "slug": "set01"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "Compliance Audits Questions 78-154",
+      "slug": "set02"
+    },
+    {
+      "setNumber": "Set 03",
+      "topic": "Compliance Audits Questions 155-230",
+      "slug": "set03"
+    }
+  ]
+}

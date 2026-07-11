@@ -1,1 +1,14 @@
-{"sets":[{"setNumber":"Set 01","topic":"Set 1","slug":"set01"}]}
+{
+  "sets": [
+    {
+      "setNumber": "Set 01",
+      "topic": "Cyber Forensics Questions 1-50",
+      "slug": "set01"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "Cyber Forensics Questions 51-100",
+      "slug": "set02"
+    }
+  ]
+}

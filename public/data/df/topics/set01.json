@@ -1,1 +1,860 @@
-{"version":"1","title":"DF Set 1","subject":"DF","stage":"Topic Wise MCQ","topic":"Set 1","durationMinutes":10,"questions":[{"id":1,"question":"Placeholder question for DF Set 1.","options":["Option A","Option B","Option C","Option D"],"correct":0,"description":"Placeholder item. Replace this question with real MCQ content.","difficulty":"Easy","tags":["DF","Placeholder"]}]}
+{
+  "version": "1",
+  "title": "Cyber Forensic Set 1",
+  "subject": "Cyber Forensic",
+  "stage": "Topic Wise MCQ",
+  "topic": "Cyber Forensics Questions 1-50",
+  "durationMinutes": 50,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of computer forensics?",
+      "options": [
+        "To recover deleted files for personal use",
+        "To investigate crimes by collecting, analyzing and presenting digital evidence",
+        "To remove malware from infected systems",
+        "To encrypt sensitive organizational data"
+      ],
+      "correct": 1,
+      "description": "Computer forensics is the application of science and technology to investigate crimes and gather digital evidence for legal proceedings.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "How many steps are in the standard process of computer forensics?",
+      "options": [
+        "Three",
+        "Four",
+        "Five",
+        "Six"
+      ],
+      "correct": 3,
+      "description": "The six-step process is: Identification, Preservation, Extraction, Documentation, Interpretation, and Presentation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is NOT one of the six steps of computer forensics?",
+      "options": [
+        "Identification",
+        "Encryption",
+        "Preservation",
+        "Documentation"
+      ],
+      "correct": 1,
+      "description": "Encryption is not part of the forensic process. The six steps are Identification, Preservation, Extraction, Documentation, Interpretation, and Presentation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is chain of custody?",
+      "options": [
+        "A physical chain securing crime scene devices",
+        "A documented record of everyone who handled evidence and when",
+        "A type of digital encryption",
+        "Law enforcement command hierarchy"
+      ],
+      "correct": 1,
+      "description": "Chain of custody is the documented chronological record tracking all individuals who have handled or accessed evidence.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is the primary cyber law in India addressing digital crimes?",
+      "options": [
+        "IPC Section 420",
+        "Information Technology Act, 2000",
+        "GDPR",
+        "Payment Card Industry DSS"
+      ],
+      "correct": 1,
+      "description": "The IT Act 2000 is India's main legislation governing cyber crimes and digital offenses.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What happens if chain of custody is broken?",
+      "options": [
+        "Nothing significant",
+        "Evidence may become inadmissible in court",
+        "The investigator is arrested",
+        "The case is automatically dismissed"
+      ],
+      "correct": 1,
+      "description": "A broken chain raises integrity questions and courts may reject the evidence as inadmissible.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which phase of forensics focuses on preventing any changes to evidence?",
+      "options": [
+        "Identification",
+        "Documentation",
+        "Preservation",
+        "Interpretation"
+      ],
+      "correct": 2,
+      "description": "Preservation specifically maintains evidence integrity and prevents any modifications after collection.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What does the Extraction phase involve?",
+      "options": [
+        "Deleting unwanted files",
+        "Copying and recovering data from storage media",
+        "Identifying suspects",
+        "Writing the final report"
+      ],
+      "correct": 1,
+      "description": "Extraction involves copying and recovering actual data from storage devices for further analysis.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the key difference between a Computer Crime and an Unauthorized Activity?",
+      "options": [
+        "They are legally identical",
+        "Computer crimes carry legal penalties; unauthorized activities may only violate organizational policies",
+        "Unauthorized activities are more serious",
+        "Computer crimes only affect individuals"
+      ],
+      "correct": 1,
+      "description": "Computer crimes are prosecutable offenses under law, while unauthorized activities may only breach company policy with no criminal liability.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Why must Identification always precede Preservation in the forensic process?",
+      "options": [
+        "It doesn't matter - steps can be reordered",
+        "You must first locate and recognize evidence before you can protect it from modification",
+        "Preservation is optional",
+        "Identification is the least important step"
+      ],
+      "correct": 1,
+      "description": "Without identifying what constitutes evidence, investigators cannot know what needs to be preserved.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Why is Documentation critical throughout the entire investigation, not just at the end?",
+      "options": [
+        "It is only needed for the final report",
+        "Real-time documentation creates an unbroken audit trail supporting legal admissibility and peer review",
+        "Documentation is optional for experienced investigators",
+        "It only matters for digital evidence"
+      ],
+      "correct": 1,
+      "description": "Contemporaneous documentation ensures that every action is recorded, making findings legally defensible and independently verifiable.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "What makes digital evidence legally admissible in court?",
+      "options": [
+        "The seniority of the investigator",
+        "Integrity, authenticity, unbroken chain of custody, and proper forensic procedures",
+        "How quickly it was collected",
+        "The size of the evidence file"
+      ],
+      "correct": 1,
+      "description": "Courts require proof that evidence is genuine, unaltered, and properly handled throughout its lifecycle.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "An investigator re-images an already-collected drive without documenting the action. Which forensic principle is violated, and what is the likely legal consequence?",
+      "options": [
+        "Only speed is affected",
+        "Both the integrity principle and chain of custody are violated; the evidence may be deemed tampered with and inadmissible",
+        "Only the efficiency principle is affected",
+        "No principle is violated"
+      ],
+      "correct": 1,
+      "description": "Undocumented actions break chain of custody and raise tampering concerns - courts may exclude the evidence entirely.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "How can a technically valid forensic investigation still fail to secure a conviction?",
+      "options": [
+        "Technical validity is always sufficient",
+        "Poor documentation, broken chain of custody, or improper interpretation can make valid evidence legally unusable",
+        "Convictions are always guaranteed with good evidence",
+        "Technical validity has no effect on legal outcomes"
+      ],
+      "correct": 1,
+      "description": "Legal admissibility requires procedural compliance, not just technical accuracy - gaps in documentation or custody break the evidential chain.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Why does the Interpretation phase require both technical expertise AND objectivity?",
+      "options": [
+        "Interpretation is straightforward and unbiased by nature",
+        "Investigators must translate raw data into findings without introducing personal bias, since misinterpretation can lead to wrongful conclusions in court",
+        "Only technical expertise is needed",
+        "Objectivity is unnecessary in forensics"
+      ],
+      "correct": 1,
+      "description": "Forensic interpretation can be challenged in court; bias or error in analysis can misdirect investigations and harm innocent parties.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "What are the three core components of computer forensics involvement?",
+      "options": [
+        "Hardware, Software, Data",
+        "People, Processes, Technology",
+        "Networks, Servers, Clients",
+        "Encryption, Hashing, Encoding"
+      ],
+      "correct": 1,
+      "description": "Effective forensics requires people (skilled investigators), processes (documented methodology), and technology (appropriate tools).",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "What is the primary goal of forensic analysis?",
+      "options": [
+        "To recover every deleted file",
+        "To gather digital evidence in a manner that maintains integrity for legal proceedings",
+        "To punish perpetrators directly",
+        "To fix compromised systems immediately"
+      ],
+      "correct": 1,
+      "description": "Forensic analysis focuses on gathering legally admissible evidence that can support prosecution.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "What does Live Forensics examine?",
+      "options": [
+        "Powered-off systems only",
+        "Running systems to capture volatile data that exists only in RAM",
+        "Archived backup files",
+        "Network infrastructure diagrams"
+      ],
+      "correct": 1,
+      "description": "Live forensics captures volatile memory (RAM) contents, active connections, and running processes before shutdown destroys them.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "What is Dead Forensics focused on?",
+      "options": [
+        "Examining systems that have crashed permanently",
+        "Analyzing powered-down systems for persistent storage evidence",
+        "Live network traffic analysis",
+        "Social engineering analysis"
+      ],
+      "correct": 1,
+      "description": "Dead forensics examines storage devices (HDDs, SSDs, USBs) that retain data even when the power is off.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "What should an Incident Response Plan always include?",
+      "options": [
+        "Only emergency contact numbers",
+        "Roles, responsibilities, procedures, communication plans, and recovery strategies",
+        "Just a list of backup servers",
+        "Only the IT team's details"
+      ],
+      "correct": 1,
+      "description": "A comprehensive IR plan covers all aspects of response from roles to communication and full recovery.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Who typically forms an effective Incident Response Team?",
+      "options": [
+        "Only IT staff",
+        "Forensic experts, IT staff, management, legal counsel, and communications specialists",
+        "Only senior management",
+        "Only security personnel"
+      ],
+      "correct": 1,
+      "description": "Effective incident response requires diverse expertise; legal and communications roles are as important as technical ones.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "What is the primary concern when detecting incidents?",
+      "options": [
+        "Immediately identifying the perpetrator",
+        "Early recognition of unauthorized activities to enable timely containment",
+        "Shutting down all affected systems",
+        "Contacting the suspect first"
+      ],
+      "correct": 1,
+      "description": "Early detection minimizes damage, limits data loss, and preserves more evidence for investigation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "What does the Preparation phase of incident response involve?",
+      "options": [
+        "Waiting for an incident to occur before planning",
+        "Proactively establishing tools, training teams, and defining procedures before incidents happen",
+        "Only purchasing hardware",
+        "Only writing documentation after an incident"
+      ],
+      "correct": 1,
+      "description": "Preparation ensures that when incidents occur, teams have the tools, skills, and procedures to respond effectively.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Why is volatile data critical in Live Forensics?",
+      "options": [
+        "Volatile data is less important than stored data",
+        "RAM, running processes, and network connections are lost forever when power is cut - they can reveal active attacks",
+        "Volatile data is always corrupted",
+        "It is easier to collect than disk data"
+      ],
+      "correct": 1,
+      "description": "Volatile data provides a real-time snapshot of an active compromise and is permanently destroyed on shutdown.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "How does Network Forensics differ from traditional disk forensics?",
+      "options": [
+        "No meaningful difference",
+        "Network forensics analyzes traffic, logs, and flows across infrastructure; disk forensics examines stored data on individual devices",
+        "Network forensics is less reliable",
+        "Disk forensics is always preferred"
+      ],
+      "correct": 1,
+      "description": "Different evidence types require different tools and techniques; network evidence is transient while disk evidence is persistent.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "What must organizations do BEFORE an incident occurs to support effective forensic investigation?",
+      "options": [
+        "Nothing - preparation is reactive",
+        "Establish baselines, implement logging, create backups, train staff, and set up secure evidence storage",
+        "Only purchase security software",
+        "Only brief senior management"
+      ],
+      "correct": 1,
+      "description": "Pre-incident preparation dramatically improves detection speed, response effectiveness, and evidence quality.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Why should the Incident Response Team include legal counsel?",
+      "options": [
+        "Legal counsel is optional",
+        "Legal counsel ensures evidence is handled in compliance with laws and that investigation actions don't expose the organization to liability",
+        "Legal only matters after prosecution",
+        "Legal counsel handles only contracts"
+      ],
+      "correct": 1,
+      "description": "Legal guidance during response prevents procedural errors that could compromise prosecution or create new legal exposure.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "What is the critical difference between an Incident Response Plan and an Incident Response Procedure?",
+      "options": [
+        "They are identical",
+        "A plan defines strategy and roles; procedures define step-by-step actions for specific incident types",
+        "Procedures are optional",
+        "Plans are only for major incidents"
+      ],
+      "correct": 1,
+      "description": "Plans provide strategic framework; procedures provide tactical execution guides for specific scenarios.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "What tension exists between rapid incident containment and forensic evidence preservation, and how should it be resolved?",
+      "options": [
+        "Always prioritize speed over evidence",
+        "Design response procedures that enable containment while preserving evidence - document actions taken before containment changes the system state",
+        "Evidence collection always takes absolute priority",
+        "Containment and evidence are incompatible goals"
+      ],
+      "correct": 1,
+      "description": "IR must balance both goals: contain the threat to limit damage while documenting system state before any changes are made.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Why might an organization with excellent Live Forensics capabilities still miss critical evidence in an incident?",
+      "options": [
+        "Live forensics always captures everything",
+        "If volatile data was not captured at exactly the right moment, or if the attacker cleared logs, critical evidence may have already been destroyed",
+        "All evidence persists indefinitely",
+        "Live forensics is infallible"
+      ],
+      "correct": 1,
+      "description": "Volatile evidence is time-sensitive; delayed response or deliberate log clearing means evidence is irretrievably lost.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "What is the purpose of an Evidence Checkout Log?",
+      "options": [
+        "To record evidence purchase dates",
+        "To track who accesses evidence and when, maintaining complete accountability",
+        "To list all crime scene items",
+        "To calculate investigation costs"
+      ],
+      "correct": 1,
+      "description": "Checkout logs provide a detailed access history for each piece of evidence, supporting chain of custody.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "What is forensic duplication?",
+      "options": [
+        "Making multiple standard backup copies",
+        "Creating a bit-for-bit exact copy of storage media with cryptographic verification for analysis",
+        "Compressing evidence files",
+        "Transferring data to cloud storage"
+      ],
+      "correct": 1,
+      "description": "Forensic duplication creates an exact copy verified by hash values so that the original evidence remains unexamined.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "What is the FIRST action at a digital crime scene?",
+      "options": [
+        "Power on all computers to check them",
+        "Secure the scene, restrict access, and document the environment before touching anything",
+        "Call the suspect",
+        "Begin copying all files immediately"
+      ],
+      "correct": 1,
+      "description": "Securing the scene prevents contamination and unauthorized access before any evidence is collected.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "How is digital evidence authenticated after duplication?",
+      "options": [
+        "By visual inspection alone",
+        "By comparing cryptographic hash values of the original and copy",
+        "By counting the number of files",
+        "By checking file dates"
+      ],
+      "correct": 1,
+      "description": "Hash verification (MD5, SHA-256) proves a copy is bit-for-bit identical to the original.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "What is the most common evidence handling mistake that renders evidence inadmissible?",
+      "options": [
+        "Taking photographs",
+        "Failing to document evidence handling or breaking the chain of custody",
+        "Using proper storage containers",
+        "Labelling evidence correctly"
+      ],
+      "correct": 1,
+      "description": "Documentation failures and chain of custody breaks are the most common reasons evidence is rejected by courts.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "How should digital evidence be physically stored?",
+      "options": [
+        "In any convenient office space",
+        "In a secured, access-logged, climate-controlled facility protected from electromagnetic interference",
+        "In a standard filing cabinet",
+        "Storage environment doesn't affect digital evidence"
+      ],
+      "correct": 1,
+      "description": "Digital media is sensitive to temperature, humidity, and electromagnetic fields; improper storage can destroy evidence.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "What does forensic Detection identify?",
+      "options": [
+        "The identity of suspects",
+        "Indicators of unauthorized activity or anomalies hidden within evidence",
+        "System performance issues",
+        "Software license violations"
+      ],
+      "correct": 1,
+      "description": "Detection in forensic context means identifying the specific artifacts and indicators of compromise within collected evidence.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "What makes forensic duplication fundamentally different from a regular system backup?",
+      "options": [
+        "They are essentially the same",
+        "Forensic duplication is bit-exact, includes unallocated space, deleted data, and is cryptographically verified; backups only copy active files",
+        "Regular backups are more comprehensive",
+        "Forensic duplication is faster"
+      ],
+      "correct": 1,
+      "description": "Forensic duplication captures ALL data including deleted files, slack space, and unallocated areas that backups skip.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Why is formulating a Response Strategy BEFORE examining evidence important?",
+      "options": [
+        "It delays the investigation unnecessarily",
+        "It defines what to look for, prevents unfocused 'forensic fishing', and ensures analysis aligns with the investigation's legal objectives",
+        "It is only required by management",
+        "Strategy is less important than technical skill"
+      ],
+      "correct": 1,
+      "description": "Without clear objectives, investigators may waste time or miss key evidence; strategy focuses efforts and shows professional methodology to courts.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "How does an Evidence Checkout Log contribute to court admissibility?",
+      "options": [
+        "It has no impact on admissibility",
+        "It provides proof of controlled access, demonstrating that evidence integrity was maintained throughout its custody",
+        "Only hash values matter",
+        "Log books are outdated"
+      ],
+      "correct": 1,
+      "description": "Courts require documented evidence of who had access; without this, defense attorneys can argue tampering occurred.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "What must investigators do if they discover evidence has been encrypted during analysis?",
+      "options": [
+        "Ignore it and continue",
+        "Document the discovery, update the response strategy, seek legal authority if needed, and apply decryption resources",
+        "Delete the encrypted files",
+        "Consider the investigation complete"
+      ],
+      "correct": 1,
+      "description": "Encrypted evidence may indicate deliberate concealment and requires updated strategy, possibly including legal tools for decryption.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "How can consistent evidence handling protocols across all phases - Collection, Storage, Analysis, and Presentation - ensure courtroom admissibility?",
+      "options": [
+        "Only the collection phase matters",
+        "Every phase must maintain integrity standards with documentation; a single break in any phase creates a gap that defense attorneys can exploit",
+        "Post-collection handling doesn't affect admissibility",
+        "Presentation phase is the only legally critical phase"
+      ],
+      "correct": 1,
+      "description": "Courts evaluate the entire evidence lifecycle - any gap in handling or documentation across any phase can be used to challenge admissibility.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Why might forensically sound duplication still fail to capture all relevant evidence?",
+      "options": [
+        "Duplication always captures everything",
+        "Steganography, encryption, anti-forensic tools, or evidence stored outside the duplicated media may all remain undetected",
+        "Hardware duplication is infallible",
+        "All evidence is always on the primary drive"
+      ],
+      "correct": 1,
+      "description": "Sophisticated attackers use anti-forensic techniques; complete evidence capture requires analysis beyond bit-level duplication.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 3",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "What is hexadecimal notation?",
+      "options": [
+        "A base-10 numbering system",
+        "A base-16 numbering system using digits 0-9 and letters A-F",
+        "A base-8 numbering system",
+        "A base-2 numbering system"
+      ],
+      "correct": 1,
+      "description": "Hexadecimal (base-16) provides compact representation of binary data using 0-9 and A-F.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "What is the hexadecimal equivalent of decimal 255?",
+      "options": [
+        "AA",
+        "FF",
+        "100",
+        "FE"
+      ],
+      "correct": 1,
+      "description": "255 = (15 × 16) + 15 = FF in hexadecimal.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "What does the '0x' prefix indicate in forensic tool output?",
+      "options": [
+        "An error code",
+        "That the following value is in hexadecimal format",
+        "A variable declaration",
+        "A percentage value"
+      ],
+      "correct": 1,
+      "description": "'0x' is the standard programming and forensic convention indicating hexadecimal notation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "How many bits does a single hexadecimal digit represent?",
+      "options": [
+        "1 bit",
+        "2 bits",
+        "4 bits",
+        "8 bits"
+      ],
+      "correct": 2,
+      "description": "Each hex digit represents exactly 4 bits (2^4 = 16 possible values per hex digit).",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "What is the hex representation of binary 11010110?",
+      "options": [
+        "D6",
+        "D4",
+        "B6",
+        "C6"
+      ],
+      "correct": 0,
+      "description": "Split into nibbles: 1101 = D (13), 0110 = 6 → D6 in hexadecimal.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "Why is understanding hexadecimal important for a forensic investigator?",
+      "options": [
+        "It is not important in modern forensics",
+        "All forensic tools display raw data in hexadecimal; investigators must read it to interpret evidence directly",
+        "Only software developers need hex knowledge",
+        "Hexadecimal is only used in networking"
+      ],
+      "correct": 1,
+      "description": "Forensic tools represent all data in hex; investigators who cannot read hex cannot interpret raw evidence.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "What should an Initial Assessment evaluate first?",
+      "options": [
+        "Who the likely suspects are",
+        "The scope, nature, scale, and evidence types of the incident",
+        "Only the financial damage",
+        "Whether to involve law enforcement"
+      ],
+      "correct": 1,
+      "description": "Initial assessment informs all subsequent investigation decisions by understanding the full scope of the incident.",
+      "difficulty": "Easy",
+      "tags": [
+        "Session 4",
+        "Cyber Forensics"
+      ]
+    }
+  ]
+}

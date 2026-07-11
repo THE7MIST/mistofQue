@@ -1,1 +1,1200 @@
-{"version":"1","title":"NDC Set 1","subject":"NDC","stage":"Topic Wise MCQ","topic":"Set 1","durationMinutes":10,"questions":[{"id":1,"question":"Placeholder question for NDC Set 1.","options":["Option A","Option B","Option C","Option D"],"correct":0,"description":"Placeholder item. Replace this question with real MCQ content.","difficulty":"Easy","tags":["NDC","Placeholder"]}]}
+{
+  "version": "1",
+  "title": "NDC Set 1",
+  "subject": "NDC",
+  "stage": "Topic Wise MCQ",
+  "topic": "Network Defense Sessions 7-16",
+  "durationMinutes": 70,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which VPN model allows individual remote users to securely connect to a corporate intranet over the public internet?",
+      "options": [
+        "Site-to-Site VPN",
+        "Remote-Access (client-to-site) VPN",
+        "Extranet VPN",
+        "Intranet-to-intranet VPN"
+      ],
+      "correct": 1,
+      "description": "Remote-Access VPN (client-to-site) allows individual remote workers to connect to a corporate network via a VPN client. Site-to-site VPNs connect two fixed networks (branch offices), while extranet VPNs connect business partners.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "A 'Trusted VPN' fundamentally differs from a 'Secure VPN' because it:",
+      "options": [
+        "Encrypts all data with AES-256",
+        "Relies on a trusted service provider's network path rather than encryption for security",
+        "Uses IPsec exclusively",
+        "Requires hardware-based VPN appliances at both ends"
+      ],
+      "correct": 1,
+      "description": "A Trusted VPN (e.g., MPLS VPN) relies on the service provider guaranteeing a private, dedicated path through their network — no end-to-end encryption is assumed. A Secure VPN (e.g., IPsec, SSL) uses cryptographic protection over an untrusted network.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which VPN protocol operates at Layer 2 of the OSI model and is most commonly used for remote-access VPNs by tunneling PPP frames?",
+      "options": [
+        "IPsec",
+        "L2TP",
+        "GRE",
+        "PPTP"
+      ],
+      "correct": 1,
+      "description": "L2TP (Layer 2 Tunneling Protocol) operates at the Data Link layer and tunnels PPP frames. It is typically paired with IPsec (L2TP/IPsec) for encryption since L2TP itself provides no confidentiality. PPTP is older and considered insecure.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "The primary function of the VPN 'tunneling' mechanism is:",
+      "options": [
+        "Encrypting data at rest on the VPN server",
+        "Encapsulating one network protocol inside another to traverse an incompatible or untrusted network",
+        "Filtering malicious traffic before it enters the corporate network",
+        "Assigning private IP addresses to remote clients"
+      ],
+      "correct": 1,
+      "description": "Tunneling encapsulates packets of one protocol inside another — for example, private-addressed IP packets inside public-internet IP packets. The inner packet is 'hidden' from the transport network, creating a logical private path.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "SSL/TLS VPNs are preferred over IPsec VPNs for clientless remote access because:",
+      "options": [
+        "SSL/TLS VPNs are faster due to hardware acceleration",
+        "SSL/TLS operates via standard web browsers without requiring dedicated VPN client software installation",
+        "SSL/TLS provides stronger encryption than IPsec",
+        "SSL/TLS VPNs support site-to-site connections better than IPsec"
+      ],
+      "correct": 1,
+      "description": "SSL/TLS VPNs leverage the browser's built-in SSL/TLS stack, enabling clientless access to web applications through a portal. This avoids the complexity of deploying and managing IPsec client software on every user device.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "In a VPN, 'data integrity' is provided by which cryptographic mechanism?",
+      "options": [
+        "Symmetric encryption (AES)",
+        "HMAC (Hash-based Message Authentication Code)",
+        "Public key infrastructure (PKI)",
+        "Diffie-Hellman key exchange"
+      ],
+      "correct": 1,
+      "description": "HMAC uses a shared secret key combined with a hash function (SHA-256, SHA-1) to produce a Message Authentication Code. If any bit of the data changes in transit, the HMAC verification fails, detecting tampering. Encryption provides confidentiality, not integrity verification.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which VPN characteristic ensures that even if long-term secret keys are compromised, past session keys cannot be decrypted?",
+      "options": [
+        "Data confidentiality",
+        "Perfect Forward Secrecy (PFS)",
+        "Non-repudiation",
+        "Replay protection"
+      ],
+      "correct": 1,
+      "description": "Perfect Forward Secrecy (PFS) uses ephemeral Diffie-Hellman key exchange to generate unique session keys that are never stored. Compromising the server's long-term private key does not allow decryption of past sessions because each session's key was independently derived and discarded.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "An Extranet VPN differs from an Intranet VPN in that it:",
+      "options": [
+        "Uses stronger encryption",
+        "Connects an organization's internal sites to business partners, suppliers, or customers outside the organization",
+        "Operates exclusively over dedicated leased lines",
+        "Requires government-grade security clearance"
+      ],
+      "correct": 1,
+      "description": "An Extranet VPN extends connectivity to external parties (partners, customers, suppliers) with controlled access to specific resources. An Intranet VPN connects geographically dispersed offices of the same organization using site-to-site tunnels.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "GRE (Generic Routing Encapsulation) tunnels are often combined with IPsec because:",
+      "options": [
+        "GRE provides encryption; IPsec provides the tunnel",
+        "GRE provides the tunnel wrapper (supporting multicast/routing protocols); IPsec provides encryption and authentication for GRE packets",
+        "IPsec cannot support any tunneling without GRE",
+        "GRE compresses traffic before IPsec encrypts it"
+      ],
+      "correct": 1,
+      "description": "GRE encapsulates multicast, routing protocol updates, and non-IP traffic, but provides no security. IPsec adds confidentiality, integrity, and authentication to the GRE tunnel. The combined GRE-over-IPsec solution is widely used in enterprise WAN designs.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "The Diffie-Hellman key exchange in VPN protocols is used specifically to:",
+      "options": [
+        "Authenticate the VPN peer's identity",
+        "Establish a shared symmetric encryption key over an insecure channel without transmitting the key itself",
+        "Compress data before encryption",
+        "Generate digital certificates for VPN endpoints"
+      ],
+      "correct": 1,
+      "description": "Diffie-Hellman allows two parties to independently compute the same shared secret using public values exchanged over an insecure network, without ever transmitting the actual key. This shared secret then seeds symmetric session key generation.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is NOT a core VPN function as defined by Stallings?",
+      "options": [
+        "Confidentiality",
+        "Authentication",
+        "Integrity",
+        "Traffic shaping and QoS enforcement"
+      ],
+      "correct": 3,
+      "description": "Core VPN functions are Confidentiality (encryption), Authentication (peer identity verification), Integrity (HMAC), and Replay protection (sequence numbers). QoS/traffic shaping is a network service, not a fundamental VPN security function.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "MPLS (Multiprotocol Label Switching) VPNs are classified as 'Trusted VPNs' because they:",
+      "options": [
+        "Encrypt all customer traffic with AES-256",
+        "Create virtual private paths through the provider's network using label switching, with the provider guaranteeing isolation between customers",
+        "Require customers to install IPsec on all devices",
+        "Use dedicated physical circuits for each customer"
+      ],
+      "correct": 1,
+      "description": "MPLS VPNs use label switching to route traffic through provider networks in logically isolated paths (VRFs — Virtual Routing and Forwarding instances). The 'trust' is in the provider's network isolation guarantee, not cryptographic protection of the customer's data.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Replay attacks in VPNs are prevented by:",
+      "options": [
+        "Using longer encryption keys",
+        "Including a sequence number in each packet and maintaining a sliding window to reject duplicate or out-of-order packets",
+        "Encrypting packet headers along with the payload",
+        "Using certificate-based authentication instead of pre-shared keys"
+      ],
+      "correct": 1,
+      "description": "IPsec (and other VPN protocols) include a sequence number in each packet. The receiver maintains an anti-replay window — packets with sequence numbers already seen or outside the window are discarded, preventing attackers from recording and re-sending valid packets.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "In a SecureVPN, which authentication method provides the strongest mutual authentication for VPN peers?",
+      "options": [
+        "Pre-shared keys (PSK)",
+        "Username and password",
+        "Digital certificates using PKI (X.509)",
+        "RADIUS server authentication"
+      ],
+      "correct": 2,
+      "description": "X.509 digital certificates with PKI provide the strongest VPN peer authentication: each peer proves identity with a certificate signed by a trusted CA, providing mutual authentication without requiring shared secrets. PSK is simpler but requires secure out-of-band distribution of the same secret.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 1",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "In IPsec, what is the fundamental difference between Tunnel Mode and Transport Mode?",
+      "options": [
+        "Tunnel mode encrypts only the payload; Transport mode encrypts the entire packet including the original IP header",
+        "Tunnel mode encapsulates the entire original IP packet inside a new IP header; Transport mode protects only the payload, leaving the original IP header intact",
+        "Transport mode is used for site-to-site VPNs; Tunnel mode is for remote access only",
+        "They use different encryption algorithms — AES for Tunnel, 3DES for Transport"
+      ],
+      "correct": 1,
+      "description": "Tunnel Mode: the entire original IP packet (header + payload) is encapsulated inside a new IP packet — used for gateway-to-gateway VPNs. Transport Mode: only the payload is protected; the original IP header is retained — used for end-to-end host-to-host communication.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "IPsec's AH (Authentication Header) protocol provides which security services?",
+      "options": [
+        "Confidentiality and authentication",
+        "Authentication and integrity only (no encryption)",
+        "Confidentiality only",
+        "Key exchange and digital signatures"
+      ],
+      "correct": 1,
+      "description": "AH (Authentication Header) provides data origin authentication, connectionless integrity, and optional anti-replay protection — but NO confidentiality. For encryption, ESP (Encapsulating Security Payload) must be used. AH authenticates the entire IP packet including the immutable header fields.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "The IPsec ESP (Encapsulating Security Payload) protocol in Tunnel Mode protects against traffic analysis because:",
+      "options": [
+        "It encrypts only the data payload, revealing source/destination IPs",
+        "It encrypts the entire original IP packet including the original source and destination addresses, hiding the real endpoint identities",
+        "It uses random padding to disguise packet sizes",
+        "It fragments all packets to the same size"
+      ],
+      "correct": 1,
+      "description": "In ESP Tunnel Mode, the new outer IP header contains the VPN gateway addresses, while the original IP header (containing real endpoint addresses) is encrypted inside the ESP payload. An observer sees only gateway-to-gateway traffic, not the actual communicating hosts.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "IKE (Internet Key Exchange) Phase 1 in IPsec establishes:",
+      "options": [
+        "The actual IPsec SAs for data protection",
+        "A secure authenticated channel (ISAKMP SA) used to negotiate Phase 2 SAs",
+        "The encryption keys for ESP directly",
+        "The routing tables for VPN traffic"
+      ],
+      "correct": 1,
+      "description": "IKE Phase 1 establishes a secure, authenticated channel called the ISAKMP SA (or IKE SA) using Diffie-Hellman and authentication (certificates/PSK). This secure channel is then used in Phase 2 to negotiate the actual IPsec SAs (for ESP/AH) that protect user data.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "A 'Hybrid VPN' combines Secure VPN and Trusted VPN technologies. The primary motivation for this architecture is:",
+      "options": [
+        "Cost reduction by eliminating dedicated hardware",
+        "To gain both the guaranteed path quality of MPLS and the end-to-end cryptographic security of IPsec/SSL over the provider's network",
+        "To bypass government encryption restrictions",
+        "To support both IPv4 and IPv6 simultaneously"
+      ],
+      "correct": 1,
+      "description": "Hybrid VPN runs a Secure VPN (IPsec/SSL) over a Trusted VPN (MPLS). Organizations get MPLS QoS and path guarantees from the provider AND end-to-end encryption they control, so even if the provider's infrastructure is compromised, data remains protected.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "IPv6 has a unique relationship with IPsec because:",
+      "options": [
+        "IPv6 is incompatible with IPsec and requires a separate tunneling protocol",
+        "IPsec support was mandated as a built-in requirement of the IPv6 specification (RFC 2460), though it is now optional in practice",
+        "IPv6 automatically encrypts all traffic without needing IPsec",
+        "IPv6 replaces IPsec with its own native security headers"
+      ],
+      "correct": 1,
+      "description": "The original IPv6 specification (RFC 2460) mandated IPsec implementation. While later RFC 6434 changed this to a 'SHOULD' recommendation, IPv6 was designed with IPsec as a native security feature. IPv6 extension headers (AH, ESP) are part of the protocol design.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "In a Split-Tunnel VPN configuration, which traffic pattern applies?",
+      "options": [
+        "All traffic (internet and corporate) is routed through the VPN tunnel",
+        "Only traffic destined for the corporate network is routed through the VPN; internet-bound traffic bypasses the tunnel and goes directly to the internet",
+        "Traffic is split between two different VPN protocols simultaneously",
+        "All DNS traffic is tunneled while HTTP traffic is sent directly"
+      ],
+      "correct": 1,
+      "description": "Split tunneling routes only corporate-bound traffic through the VPN tunnel, while internet traffic exits directly through the local ISP. This reduces bandwidth on the corporate VPN but introduces risk: malware on the client can reach the internet without corporate security inspection.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Full-tunnel VPN is preferred in enterprise environments primarily for which security reason?",
+      "options": [
+        "It is faster than split tunneling",
+        "All internet traffic from remote workers passes through corporate security controls (firewall, proxy, DLP, content filtering)",
+        "It reduces the VPN server's processing load",
+        "It allows split DNS resolution"
+      ],
+      "correct": 1,
+      "description": "Full-tunnel VPN forces ALL traffic (corporate + internet) through the VPN and corporate security stack. This ensures web filtering, DLP, and malware scanning apply to remote workers just as they would on-campus, at the cost of higher VPN bandwidth consumption.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "An IPsec Security Association (SA) is best defined as:",
+      "options": [
+        "A mutual agreement between VPN peers to use the same encryption password",
+        "A one-way logical relationship between sender and receiver that defines the cryptographic parameters for a specific protected flow",
+        "A stateful firewall rule applied to VPN traffic",
+        "A PKI certificate binding a VPN gateway's identity to its public key"
+      ],
+      "correct": 1,
+      "description": "An IPsec Security Association (SA) is a one-directional relationship specifying: the security protocol (AH/ESP), algorithm (AES-256/SHA-256), keys, and lifetime. Two SAs are needed for bidirectional communication. SAs are indexed by the SPI (Security Parameter Index).",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Which IPsec component maintains the list of active Security Associations and their parameters?",
+      "options": [
+        "IKE daemon",
+        "Security Policy Database (SPD)",
+        "Security Association Database (SAD)",
+        "Certificate Revocation List (CRL)"
+      ],
+      "correct": 2,
+      "description": "The Security Association Database (SAD) stores all active SAs — their SPI, destination IP, protocol (AH/ESP), keys, algorithms, and lifetimes. The Security Policy Database (SPD) contains policies defining what traffic should be protected, bypassed, or discarded.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 2",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "The fundamental operational difference between an IDS and an IPS is:",
+      "options": [
+        "An IDS uses signatures; an IPS uses behavioral analysis",
+        "An IDS detects and alerts on suspicious activity; an IPS can actively block or prevent attacks in real time",
+        "An IDS is hardware-based; an IPS is software-based",
+        "An IDS monitors network traffic; an IPS monitors only host activities"
+      ],
+      "correct": 1,
+      "description": "IDS (Intrusion Detection System) passively monitors traffic, generates alerts, but does not block traffic — it sits out-of-band. An IPS (Intrusion Prevention System) is deployed inline in the traffic path and can actively drop malicious packets, reset connections, or block traffic in real time.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "A 'vulnerability' in IDS/IPS context differs from a 'design flaw' in that:",
+      "options": [
+        "Vulnerabilities are always exploitable; design flaws are theoretical",
+        "A vulnerability is a specific exploitable weakness in an implementation; a design flaw is an architectural/conceptual error in how a system was designed",
+        "Design flaws only exist in software; vulnerabilities exist in hardware",
+        "Vulnerabilities require physical access; design flaws can be exploited remotely"
+      ],
+      "correct": 1,
+      "description": "Implementation vulnerability: a specific bug (buffer overflow, SQL injection) in code that can be exploited. Design flaw: a fundamental conceptual error (e.g., WEP's flawed IV reuse design) that makes the system inherently insecure regardless of correct implementation — the design itself is broken.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which tcpdump command captures only TCP traffic on port 443 from host 10.0.0.1 and saves to a file?",
+      "options": [
+        "tcpdump tcp port 443 and host 10.0.0.1 -w capture.pcap",
+        "tcpdump -i eth0 'host 10.0.0.1 and tcp port 443' -w capture.pcap",
+        "tcpdump --filter 'tcp:443' --host 10.0.0.1 > capture.pcap",
+        "tcpdump capture -p 443 -h 10.0.0.1 -f capture.pcap"
+      ],
+      "correct": 1,
+      "description": "tcpdump -i eth0 'host 10.0.0.1 and tcp port 443' -w capture.pcap — -i eth0 specifies interface, the BPF filter string uses boolean operators, and -w writes to a .pcap file. Always quote complex BPF expressions to prevent shell interpretation.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "A 'security event' in IDS terminology is best defined as:",
+      "options": [
+        "Any network packet that traverses the monitored interface",
+        "Any observable occurrence in a network or system that may be relevant to security — may or may not indicate an actual attack",
+        "Only confirmed successful attacks",
+        "Firewall rule violations only"
+      ],
+      "correct": 1,
+      "description": "A security event is any observable occurrence that may have security relevance — a login attempt, a port scan, a file access. Not all events are incidents. An incident is an event (or series of events) that actually violates security policy or causes harm.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "In the context of attack classification, a 'passive attack' differs from an 'active attack' in that:",
+      "options": [
+        "Passive attacks require physical access; active attacks are remote",
+        "Passive attacks monitor or eavesdrop without modifying data; active attacks modify, fabricate, or disrupt data/services",
+        "Passive attacks use exploits; active attacks use social engineering",
+        "Passive attacks are always external; active attacks originate internally"
+      ],
+      "correct": 1,
+      "description": "Passive attacks (traffic analysis, eavesdropping, sniffing) observe communications without altering them — difficult to detect. Active attacks (replay, modification, masquerade, DoS) involve modification, fabrication, or disruption — more visible but harder to prevent.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which tcpdump flag increases verbosity to display full packet content in both hex and ASCII?",
+      "options": [
+        "-v",
+        "-vvv",
+        "-XX",
+        "-A"
+      ],
+      "correct": 2,
+      "description": "-XX prints packet data in both hexadecimal and ASCII. -A prints only in ASCII (useful for HTTP). -vvv increases verbosity for protocol-level details. -X prints hex+ASCII for payload only; -XX includes the Ethernet header.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "A 'masquerade' attack in security terminology refers to:",
+      "options": [
+        "Hiding malware inside legitimate files",
+        "An entity pretending to be a different, authorized entity to gain unauthorized access",
+        "Overloading a server with fake requests",
+        "Intercepting and modifying data in transit"
+      ],
+      "correct": 1,
+      "description": "A masquerade attack involves one entity impersonating another — using stolen credentials, spoofed certificates, or session tokens — to gain privileges or access that would otherwise be denied. Authentication controls (MFA, certificates) are the primary countermeasure.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "The tcpdump BPF filter expression 'not port 22 and not host 192.168.1.1' captures:",
+      "options": [
+        "All traffic on port 22 to/from 192.168.1.1",
+        "All traffic except SSH traffic and all traffic except traffic involving 192.168.1.1",
+        "All traffic to port 22 on any host except 192.168.1.1",
+        "Traffic on any port to 192.168.1.1, but not SSH"
+      ],
+      "correct": 1,
+      "description": "BPF filter: not port 22 and not host 192.168.1.1 captures all traffic that is neither on port 22 nor involving host 192.168.1.1. Both conditions must be true (AND logic) — excludes port 22 traffic AND excludes 192.168.1.1 traffic.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "An IPS deployed 'inline' faces which significant operational risk compared to a passive IDS?",
+      "options": [
+        "It generates more false negatives",
+        "If the IPS fails or malfunctions, it can become a single point of failure blocking all network traffic",
+        "It cannot detect encrypted traffic",
+        "It requires more storage for packet captures"
+      ],
+      "correct": 1,
+      "description": "An inline IPS is in the network data path. Hardware failure, software crash, or misconfiguration can disrupt all traffic passing through it — creating a single point of failure. This requires redundancy (fail-open vs fail-closed design) and high-availability configurations.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Which type of attack exploits a flaw in a vendor's software before the vendor has released a patch?",
+      "options": [
+        "Replay attack",
+        "Zero-day exploit",
+        "Brute-force attack",
+        "Man-in-the-middle attack"
+      ],
+      "correct": 1,
+      "description": "A zero-day exploit takes advantage of a previously unknown vulnerability — one that the software vendor has not yet had the opportunity to patch ('zero days' of warning). Zero-days are particularly dangerous because signature-based IDS/IPS cannot detect them until signatures are updated.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 3",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Stallings classifies intruders into three categories. Which combination is correct?",
+      "options": [
+        "Hackers, Crackers, Script Kiddies",
+        "Masqueraders, Misfeasors, Clandestine users",
+        "External attackers, Internal attackers, State-sponsored attackers",
+        "White-hat, Grey-hat, Black-hat"
+      ],
+      "correct": 1,
+      "description": "Stallings' three intruder classes: Masquerader — outsider impersonating a legitimate user; Misfeasor — legitimate user abusing privileges (insider threat); Clandestine user — gains supervisory/admin control and uses it to evade audit/detection.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "A Network-Based IDS (NIDS) is best positioned at which network location for maximum visibility?",
+      "options": [
+        "On each individual endpoint host",
+        "On the network segment between the firewall and internal network, monitoring traffic entering/leaving the protected zone",
+        "Inside the database server",
+        "On the VPN concentrator only"
+      ],
+      "correct": 1,
+      "description": "A NIDS sensor should be placed where it can observe the most relevant traffic — typically at the network perimeter (after the firewall), at key internal segments, or in the DMZ. It passively copies and inspects traffic without disrupting the network.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Anomaly-based IDS detection establishes a baseline of 'normal' behavior and alerts when deviations occur. The primary weakness of this approach is:",
+      "options": [
+        "It cannot detect known attack signatures",
+        "High false-positive rate because legitimate but unusual activity may trigger alerts; also requires time to build an accurate baseline",
+        "It does not scale to high-bandwidth networks",
+        "It requires root access to all hosts"
+      ],
+      "correct": 1,
+      "description": "Anomaly-based detection alerts on statistical deviations from baseline. The main challenges: (1) High false positives — legitimate new behaviors trigger alerts; (2) Baseline drift — if an attacker slowly changes normal behavior, the baseline adapts; (3) Requires weeks/months to establish accurate baselines.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Signature-based IDS detection is most effective against which category of threats?",
+      "options": [
+        "Zero-day exploits",
+        "Previously known and documented attacks for which signatures have been written",
+        "Slow, low-and-slow reconnaissance attacks",
+        "Encrypted command-and-control traffic"
+      ],
+      "correct": 1,
+      "description": "Signature-based (misuse) detection compares traffic against a database of known attack patterns. It excels at detecting known attacks with very low false-positive rates. It completely fails against zero-days and novel attacks for which no signature exists.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "'Defence in Depth' as a security architecture principle means:",
+      "options": [
+        "Using the deepest available encryption",
+        "Implementing multiple layered security controls so that if one control fails, others continue to protect the asset",
+        "Deploying the most expensive security appliances",
+        "Focusing all security resources on perimeter defense"
+      ],
+      "correct": 1,
+      "description": "Defence in Depth (also 'layered security') deploys multiple independent security controls across different layers — perimeter firewall, IPS, endpoint AV, application WAF, encryption, access controls. An attacker must defeat every layer; failure of any single control does not lead to total compromise.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "A distributed denial-of-service (DDoS) attack differs from a traditional DoS attack in that:",
+      "options": [
+        "DDoS targets only web servers; DoS targets any service",
+        "DDoS uses multiple coordinated compromised systems (botnet) to overwhelm the target simultaneously",
+        "DDoS uses application-layer attacks; DoS uses network-layer attacks only",
+        "DDoS requires physical access; DoS is entirely remote"
+      ],
+      "correct": 1,
+      "description": "A DDoS attack orchestrates traffic from thousands/millions of compromised hosts (a botnet) simultaneously targeting a single victim. This massively amplifies the attack volume beyond what any single attacker's bandwidth could generate and makes source-blocking ineffective.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "The IDS analysis scheme 'alert correlation' addresses which specific problem?",
+      "options": [
+        "Decrypting SSL traffic for inspection",
+        "Combining and analyzing multiple low-severity alerts to identify a coordinated attack that would be invisible when viewing events in isolation",
+        "Reducing network latency caused by IDS processing",
+        "Managing IDS signature updates automatically"
+      ],
+      "correct": 1,
+      "description": "Alert correlation addresses the problem of alert flooding: a sophisticated attack generates thousands of individual low-level alerts. Correlation engines apply rules or ML to group related alerts, reconstruct attack sequences, and surface high-confidence incidents that no single alert reveals.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "The 'Threat Hunting' model differs from traditional IDS-based detection in that:",
+      "options": [
+        "Threat hunting is fully automated; IDS requires human analysts",
+        "Threat hunting proactively searches for attacker presence in the environment using hypotheses, assuming the network may already be compromised; IDS reactively waits for rule/signature triggers",
+        "Threat hunting uses only open-source tools; IDS uses commercial products",
+        "Threat hunting only applies to cloud environments"
+      ],
+      "correct": 1,
+      "description": "Threat Hunting is a proactive, hypothesis-driven approach where analysts actively search for signs of compromise, assuming attackers may already be present but undetected. Traditional IDS/SIEM is reactive — it triggers on known signatures or thresholds. Hunting catches attackers living off the land.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Which IPS category is specifically designed to protect individual hosts and can monitor local application behavior and system calls?",
+      "options": [
+        "Network-based IPS (NIPS)",
+        "Host-based IPS (HIPS)",
+        "Wireless IPS (WIPS)",
+        "Cloud-based IPS"
+      ],
+      "correct": 1,
+      "description": "A Host-based IPS (HIPS) runs as an agent on individual endpoints, monitoring OS system calls, process behavior, registry changes, and local network connections. It can detect attacks that encrypt network traffic and prevent local privilege escalation even when the network IPS is blind.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "The 'principle of IDS' known as 'the intruder's behavior will be detectably different from that of a legitimate user' underpins which detection method?",
+      "options": [
+        "Signature-based detection",
+        "Anomaly-based detection",
+        "Specification-based detection",
+        "Hybrid detection"
+      ],
+      "correct": 1,
+      "description": "Anomaly-based detection is founded on the assumption that attacker behavior statistically deviates from established normal-user profiles. If this assumption holds, statistical outliers reveal intrusions. If attackers perfectly mimic normal behavior, anomaly detection fails — this is its fundamental limitation.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "An IDS generates a 'false negative'. This means:",
+      "options": [
+        "The IDS incorrectly alerts on legitimate traffic",
+        "The IDS fails to detect a real attack — an intrusion occurs without triggering any alert",
+        "The IDS generates too many alerts for the analyst to process",
+        "The IDS correctly identifies and blocks an attack"
+      ],
+      "correct": 1,
+      "description": "A false negative is the most dangerous IDS outcome — an actual attack occurs but the IDS does not detect it, giving a false sense of security. False positive: legitimate traffic triggers an alert. The balance between false positives and false negatives is the core IDS tuning challenge.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "In IDS context, a 'slow and low' attack is designed to evade detection by:",
+      "options": [
+        "Using the highest possible bandwidth to overwhelm IDS sensors",
+        "Spreading attack activity over long periods at rates that fall below anomaly detection thresholds, blending with normal traffic",
+        "Encrypting all attack traffic with AES-256",
+        "Only attacking during maintenance windows"
+      ],
+      "correct": 1,
+      "description": "Low-and-slow attacks deliberately limit their rate of activity (e.g., one port probe per hour, one login attempt per minute). This falls below thresholds that trigger rate-based anomaly detection and makes signature correlation across time windows extremely difficult.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "Specification-based IDS detection works by:",
+      "options": [
+        "Comparing traffic against known attack signatures",
+        "Defining formal specifications of correct/expected behavior and alerting when actual behavior deviates from the specification",
+        "Building statistical profiles of normal traffic",
+        "Correlating alerts from multiple sensors"
+      ],
+      "correct": 1,
+      "description": "Specification-based detection manually defines or automatically derives formal models of correct system/application behavior (state machines, protocol grammars). Any deviation from the spec triggers an alert. It has lower false-positive rates than pure anomaly detection and can catch zero-days if they violate specifications.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Which IPS deployment mode allows the IPS to monitor a copy of traffic without being in the data path, preserving network availability?",
+      "options": [
+        "Inline mode",
+        "Passive/tap mode (out-of-band)",
+        "Bridge mode",
+        "Transparent mode"
+      ],
+      "correct": 1,
+      "description": "In passive/tap mode, the IPS receives a copy of traffic (via SPAN/mirror port or network TAP) and can only alert — it cannot block in real time. This eliminates the single-point-of-failure risk of inline deployment but sacrifices real-time prevention capability.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "The diamond model of intrusion analysis relates adversaries to victims through which two intermediate elements?",
+      "options": [
+        "Vulnerability and exploit",
+        "Capability and infrastructure",
+        "Intent and opportunity",
+        "Signature and anomaly"
+      ],
+      "correct": 1,
+      "description": "The Diamond Model connects: Adversary → uses Capability (tools, exploits, techniques) → deployed via Infrastructure (C2 servers, domains, IPs) → against Victim. This framework helps analysts pivot from one indicator to related intelligence about the full attack campaign.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 4",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "Which symptom in network traffic MOST strongly suggests an active reconnaissance phase preceding an attack?",
+      "options": [
+        "Increased HTTP 200 responses from web servers",
+        "Sudden spike in ICMP echo requests, TCP SYN packets to multiple ports, or systematic DNS lookups across the IP range",
+        "High CPU usage on database servers",
+        "Large file transfers via SFTP"
+      ],
+      "correct": 1,
+      "description": "Reconnaissance indicators include: systematic port scanning (TCP SYN to sequential ports), ICMP sweeps across subnets, DNS zone transfer attempts, and service fingerprinting. These precede exploitation and are detectable by IDS sensors monitoring for such patterns.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "A 'tiered IDS architecture' deploys sensors at multiple network levels. What is the primary benefit of this approach?",
+      "options": [
+        "It reduces the total cost of IDS deployment",
+        "It provides correlated visibility across network perimeter, internal segments, and hosts — catching attacks that evade perimeter-only detection and enabling correlation across tiers",
+        "It simplifies management by centralizing all detection on one device",
+        "It eliminates false positives by cross-referencing all sensor feeds"
+      ],
+      "correct": 1,
+      "description": "Tiered architecture deploys sensors at: (1) internet-facing perimeter, (2) internal network segments/DMZ, (3) host-based agents on critical servers. Attacks that bypass the perimeter sensor (e.g., internal lateral movement) are caught by internal or host sensors. The IDS manager correlates events across all tiers.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "A SYN flood DoS attack exploits which fundamental characteristic of the TCP three-way handshake?",
+      "options": [
+        "TCP's use of sequence numbers for packet ordering",
+        "The server allocates resources (TCB — Transmission Control Block) for each half-open SYN received, which can be exhausted by flooding with SYN packets without completing the handshake",
+        "TCP's connection persistence after idle timeouts",
+        "The predictability of TCP initial sequence numbers"
+      ],
+      "correct": 1,
+      "description": "In a SYN flood, the attacker sends thousands of SYN packets with spoofed source IPs. The server allocates a Transmission Control Block (TCB) for each and enters SYN_RCVD state, waiting for the final ACK that never comes. The server's connection queue fills up, denying service to legitimate connections.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "SYN cookies are a DoS mitigation technique that works by:",
+      "options": [
+        "Blocking all SYN packets from unknown sources",
+        "Encoding connection state information into the ISN (initial sequence number) sent in the SYN-ACK, so the server doesn't allocate resources until the connection is completed with the ACK",
+        "Limiting the rate of SYN packets accepted per second",
+        "Requiring clients to solve a CAPTCHA before TCP connections are established"
+      ],
+      "correct": 1,
+      "description": "SYN cookies encode the connection's state (src/dst IP, ports, timestamp) as a cryptographic hash in the SYN-ACK's initial sequence number. The server allocates no memory until it receives the ACK containing this value — proving the connection is legitimate. Spoofed SYNs never complete and consume no resources.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "DNS amplification DDoS attacks exploit which two characteristics of DNS?",
+      "options": [
+        "DNS uses TCP and has large response times",
+        "DNS uses UDP (stateless, no handshake) and DNS responses can be much larger than queries — sending a small query to open resolvers that return large responses directed at the victim",
+        "DNS has no authentication mechanism",
+        "DNS relies on BGP for routing and can be hijacked"
+      ],
+      "correct": 1,
+      "description": "DNS amplification exploits: (1) UDP statelessness — source IP can be spoofed to the victim's address; (2) Amplification factor — a 60-byte DNS ANY query to an open resolver can return a 3000-byte response (50x amplification), flooding the victim with traffic the attacker didn't generate.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "The primary difference between a network-based IDS sensor and a host-based IDS agent is:",
+      "options": [
+        "Network sensors cost more than host agents",
+        "A network sensor inspects all traffic on a segment; a host agent monitors activity on a single host including system calls, file access, and local processes",
+        "Network sensors can only detect signature-based attacks; host agents use anomaly detection",
+        "Host agents require dedicated hardware; network sensors are software-only"
+      ],
+      "correct": 1,
+      "description": "NIDS sensor: sits on the network, sees all traffic on the segment, cannot see inside encrypted packets, has no knowledge of host-level events. HIDS agent: runs on the host, sees plaintext application data, system calls, file integrity, and process activity — blind to network-level context of other hosts.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "An IDS 'agent' in a distributed IDS architecture performs which function?",
+      "options": [
+        "Centrally stores and correlates all security events from all sensors",
+        "Collects local security events on a host or network segment, pre-processes them, and forwards relevant data to the IDS manager",
+        "Provides the user interface for analyst investigation",
+        "Automatically deploys countermeasures to block identified threats"
+      ],
+      "correct": 1,
+      "description": "An IDS agent (or sensor agent) performs: local data collection (logs, network traffic, system calls), local analysis and filtering, and forwards relevant events/alerts to the central IDS manager. Local processing reduces bandwidth consumption to the manager.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Which DDoS mitigation technique routes attack traffic to scrubbing centers where it is filtered before clean traffic is forwarded to the target?",
+      "options": [
+        "Blackhole routing (null routing)",
+        "BGP-based traffic diversion to scrubbing centers (cloud-based DDoS mitigation)",
+        "SYN proxy/SYN cookie",
+        "Rate limiting at the edge router"
+      ],
+      "correct": 1,
+      "description": "Cloud DDoS scrubbing services (e.g., Cloudflare, Akamai, AWS Shield) use BGP announcements to attract attack traffic to their globally distributed scrubbing infrastructure. Malicious traffic is filtered out; clean traffic is forwarded to the origin. This handles volumetric attacks exceeding any single organization's capacity.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "An IDS Manager in a distributed IDS architecture is responsible for:",
+      "options": [
+        "Capturing packets on network interfaces",
+        "Receiving events from distributed agents/sensors, correlating alerts, maintaining the overall security picture, and providing analyst interface and response coordination",
+        "Installing and patching the IDS agents remotely",
+        "Encrypting all network traffic between monitored hosts"
+      ],
+      "correct": 1,
+      "description": "The IDS Manager (or director) is the central component: receives alert data from all distributed agents/sensors, performs correlation across the enterprise, maintains the event database, generates consolidated reports, and provides the analyst console. It is the 'brain' of the distributed IDS.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "HTTP flood attacks are classified as which type of DoS, and why are they harder to mitigate than volumetric attacks?",
+      "options": [
+        "Network-layer (Layer 3) attacks — harder because they consume all bandwidth",
+        "Application-layer (Layer 7) attacks — harder because they send seemingly legitimate HTTP requests that are indistinguishable from real traffic without deep inspection",
+        "Transport-layer (Layer 4) attacks — harder because they exploit TCP state tables",
+        "Physical-layer attacks — harder because they require on-site access"
+      ],
+      "correct": 1,
+      "description": "HTTP flood is a Layer 7 application-layer attack sending valid HTTP GET/POST requests. Unlike volumetric attacks, each request is protocol-compliant and appears legitimate. Mitigation requires: JS challenges, CAPTCHA, behavioral analysis, rate limiting per session, and distinguishing bot from human traffic — far more complex than blocking spoofed IPs.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "A 'symptoms of attack' indicator called 'data exfiltration via DNS tunneling' is detected by IDS/sensors using which analysis method?",
+      "options": [
+        "Checking DNS response sizes only",
+        "Analyzing DNS query frequency, unusually long subdomain labels, high entropy in query names, and large response payloads from non-standard resolvers",
+        "Blocking all DNS traffic except to known resolvers",
+        "Inspecting DNS packets only on port 53 UDP"
+      ],
+      "correct": 1,
+      "description": "DNS tunneling encodes data in DNS subdomain names (e.g., base64-encoded data as subdomain labels). Detection signatures: abnormally long/random-looking subdomain names, high query rate to same domain, unusual record types (TXT, NULL), large responses. IDS rules analyze query entropy and statistical patterns.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 5",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "SIEM (Security Information and Event Management) combines two previously separate technologies. What are they?",
+      "options": [
+        "Firewall and IDS",
+        "SIM (Security Information Management — log management/historical analysis) and SEM (Security Event Management — real-time monitoring/correlation)",
+        "Antivirus and network monitoring",
+        "Vulnerability scanner and patch management"
+      ],
+      "correct": 1,
+      "description": "SIEM = SIM (Security Information Management): long-term log storage, compliance reporting, forensic analysis + SEM (Security Event Management): real-time event collection, correlation, alerting, and dashboards. Together they provide both real-time detection and historical forensic capability.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "SIEM 'log correlation' identifies security incidents by:",
+      "options": [
+        "Encrypting all log data before storage",
+        "Applying rules and statistical analysis to find patterns across multiple log sources (firewall, IDS, AD, endpoints) that indicate an attack when individual events appear harmless in isolation",
+        "Deleting duplicate log entries to reduce storage",
+        "Forwarding all logs directly to law enforcement"
+      ],
+      "correct": 1,
+      "description": "Log correlation connects seemingly unrelated events: e.g., a failed VPN login (firewall log) + successful login 10 minutes later from a different country (AD log) + access to sensitive files (DLP log) = credential compromise alert. No single event triggers an alert, but the pattern does.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "The common log forwarding protocol used to send logs from network devices to a SIEM is:",
+      "options": [
+        "SNMP traps",
+        "Syslog (UDP/514 or TCP/514 or TLS/6514)",
+        "NetFlow v9",
+        "ICMP-based reporting"
+      ],
+      "correct": 1,
+      "description": "Syslog (RFC 5424) is the standard protocol for forwarding log messages from routers, firewalls, servers, and applications to a central log server or SIEM. Port 514 UDP is traditional (unreliable), 514 TCP provides reliability, and 6514 TCP uses TLS for encrypted log transmission.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "A SIEM 'event trigger' (correlation rule) fires when 5 failed SSH login attempts from the same IP occur within 60 seconds, followed by a successful login. This rule is designed to detect:",
+      "options": [
+        "SSH port scanning",
+        "Brute-force attack followed by successful compromise — a high-fidelity composite indicator",
+        "Legitimate users with forgotten passwords",
+        "SSH key rotation events"
+      ],
+      "correct": 1,
+      "description": "This composite rule detects brute-force followed by successful compromise: N failures (pattern of guessing) + 1 success strongly indicates the attacker found valid credentials. Individual events are ambiguous; the correlation (failures → success) creates a high-confidence security incident.",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 6",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "In SIEM architecture, 'log normalization' is critical because:",
+      "options": [
+        "It compresses logs to save storage space",
+        "Different devices use different log formats (Windows Event Log, syslog, CEF, LEEF) — normalization converts all formats into a common schema so correlation rules can be applied uniformly across all sources",
+        "It encrypts logs to prevent unauthorized access",
+        "It deletes low-severity events to reduce noise"
+      ],
+      "correct": 1,
+      "description": "Log normalization maps diverse, vendor-specific log formats into a common event schema (e.g., all 'source IP' fields mapped to a single normalized field). Without normalization, correlation rules would need to account for every vendor's unique field naming, making cross-source correlation impossible.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 6",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "Which SIEM capability uses statistical baselines to detect anomalous user behavior such as data access patterns, login times, and file modifications?",
+      "options": [
+        "Rule-based correlation",
+        "UEBA (User and Entity Behavior Analytics)",
+        "Log normalization",
+        "Threat intelligence feed integration"
+      ],
+      "correct": 1,
+      "description": "UEBA (User and Entity Behavior Analytics) uses ML/statistical modeling to establish baselines of normal behavior for each user/entity. Deviations — e.g., a user downloading 10x more data than usual at 3 AM, or accessing systems they've never touched — trigger alerts for insider threats and compromised accounts.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 6",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "In Snort's rule syntax, what does the following rule option 'content:\"GET /admin\"; nocase;' specify?",
+      "options": [
+        "Match only exact uppercase 'GET /admin' in the packet payload",
+        "Match the string 'GET /admin' in the packet payload in a case-insensitive manner",
+        "Match the packet if it does NOT contain 'GET /admin'",
+        "Check only the HTTP header for 'GET /admin' regardless of case"
+      ],
+      "correct": 1,
+      "description": "The Snort content keyword searches the packet payload for the specified string. nocase makes the match case-insensitive — matching 'get /admin', 'GET /ADMIN', 'Get /Admin', etc. Without nocase, content matching is case-sensitive by default.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 7",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "An attacker bypasses a Snort IDS by fragmenting malicious payload across multiple TCP segments set to arrive in the wrong order. This IDS evasion technique is called:",
+      "options": [
+        "Protocol tunneling",
+        "TCP/IP session splicing and fragmentation evasion",
+        "Polymorphic shellcode",
+        "Time-to-live (TTL) manipulation"
+      ],
+      "correct": 1,
+      "description": "Session splicing splits the malicious payload across multiple small TCP segments. If the IDS doesn't perform full TCP stream reassembly before pattern matching, it sees only fragments — no single segment contains the complete signature. The target host reassembles and executes the payload. The fix is full reassembly in the IDS.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 7",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "Snort operates in three modes. Which mode actively drops packets matching rules in addition to generating alerts?",
+      "options": [
+        "Sniffer mode",
+        "Packet logger mode",
+        "Inline/IPS mode",
+        "Passive detection mode"
+      ],
+      "correct": 2,
+      "description": "Inline/IPS mode (using DAQ — Data Acquisition library with iptables/NFQ) allows Snort to DROP, REJECT, or PASS packets in real time based on rules. Sniffer mode displays packets on-screen; Packet logger mode saves packets to disk; both are passive (detection only, no blocking).",
+      "difficulty": "Medium",
+      "tags": [
+        "Session 7",
+        "Network Defense Sessions 7-16"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "A 'polymorphic' attack evades signature-based IDS by:",
+      "options": [
+        "Sending traffic faster than the IDS can process",
+        "Changing the attack's code or payload encoding with each iteration while preserving its functional behavior, making fixed byte-sequence signatures ineffective",
+        "Fragmenting packets below the IDS minimum reassembly size",
+        "Using encrypted channels to hide attack traffic"
+      ],
+      "correct": 1,
+      "description": "Polymorphic attacks use mutation engines to rewrite exploit shellcode (different XOR keys, different encodings, NOP sled variations) so each instance looks different in bytes. Signature-based IDS rules that match specific byte sequences fail — each sample is unique while the functional exploit remains. Heuristic/behavioral detection is needed.",
+      "difficulty": "Hard",
+      "tags": [
+        "Session 7",
+        "Network Defense Sessions 7-16"
+      ]
+    }
+  ]
+}

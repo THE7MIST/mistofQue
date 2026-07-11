@@ -1,1 +1,1030 @@
-{"version":"1","title":"SC Set 1","subject":"SC","stage":"Topic Wise MCQ","topic":"Set 1","durationMinutes":10,"questions":[{"id":1,"question":"Placeholder question for SC Set 1.","options":["Option A","Option B","Option C","Option D"],"correct":0,"description":"Placeholder item. Replace this question with real MCQ content.","difficulty":"Easy","tags":["SC","Placeholder"]}]}
+{
+  "version": "1",
+  "title": "SC Set 1",
+  "subject": "SC",
+  "stage": "Topic Wise MCQ",
+  "topic": "Security Concepts",
+  "durationMinutes": 60,
+  "questions": [
+    {
+      "id": 1,
+      "question": "MySQL, by default, runs on port # ___________",
+      "options": [
+        "3304",
+        "2802",
+        "3306",
+        "2801"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. 3306",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "USE keyword is used in mysql to select a ___________",
+      "options": [
+        "Table",
+        "Column",
+        "Database",
+        "All of above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Database",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Which of the following options tells mysql to ask for entering the password?",
+      "options": [
+        "-e",
+        "-p",
+        "-u",
+        "-h"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. -p",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "_______ is the Security limitation of the HTTP 1.1?",
+      "options": [
+        "Authentication Credentials",
+        "Location Headers and Spoofing",
+        "DNS Spoofing",
+        "All of the Above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. All of the Above",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "SELECT EXTRACT(WEEK FROM \"2021-01-15\"); This query will return _____ as output.",
+      "options": [
+        "You have an error in your SQL syntax;",
+        "3",
+        "15",
+        "2"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. 2",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "SELECT EXTRACT(MINUTE FROM \"2021-06-01 09:32:21\"); This query will return _____ as output.",
+      "options": [
+        "You have an error in your SQL syntax;",
+        "21",
+        "32",
+        "09:32:21"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. 32",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is not a sniffing tool?",
+      "options": [
+        "Wireshark",
+        "John the Ripper",
+        "Ettercap",
+        "tcpdump"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. John the Ripper",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is NOT an HTTP response code category?",
+      "options": [
+        "1xx - Informational",
+        "3xx - Redirection",
+        "5xx - Server Error",
+        "6xx - User Error"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. 6xx - User Error",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the attack technique used to exploit web sites by altering backend database queries through inputting manipulated queries?",
+      "options": [
+        "LDAP Injection",
+        "XML Injection",
+        "SQL Injection",
+        "OS Commanding"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. SQL Injection",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "With using XSS, attacker can __________",
+      "options": [
+        "Hijack user sessions",
+        "Redirect user to malicious website",
+        "Deface Websites",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. All of the above",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "______ vulnerability is dropped in OWASP-2017 from OWASP-2013.",
+      "options": [
+        "CSRF",
+        "Unvalidated Redirects and Forwards",
+        "XSS",
+        "Sensitive Data Exposure"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Unvalidated Redirects and Forwards",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "A Web site that allows users to enter text/script, such as a comment or a name, and then stores it and later displays it to other users, is potentially vulnerable to what kind of attack?",
+      "options": [
+        "Cross-site scoring scripting",
+        "Cross-site request forgery",
+        "Cross-site scripting",
+        "None of these"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Cross-site scripting",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is a DAST tool used to find security flaw and vulnerability hidden inside the code?",
+      "options": [
+        "Brakeman",
+        "CodeWarrior",
+        "AppSpider",
+        "AppScan"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. AppSpider",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Which Google hack would display all pages that have words Software and Version in their titles?",
+      "options": [
+        "intitle:softwareinurl:version",
+        "allintitle: software version",
+        "allinurl: software version",
+        "inurl:softwareinurl:version"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. allintitle: software version",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Which of the following tool is used to scan a web-server for the vulnerability that can be exploited and can compromise the server?",
+      "options": [
+        "ZAP",
+        "Nikto",
+        "Shodan",
+        "Burpsuite"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Nikto",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "What is the syntax for Wireshark wireless Beacon Filter?",
+      "options": [
+        "wlan.fc.type_subtype == 0x08",
+        "wlan.type_subtype == 0x08",
+        "wlan.fc.type_subtype == 0x04",
+        "wlan.type_subtype"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. wlan.fc.type_subtype == 0x08",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Rogue access point attack also known as:",
+      "options": [
+        "Spoofing",
+        "Birthday attack",
+        "DDOS",
+        "Evil twin"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Evil twin",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Without the use of an access point, which wireless mode connects machines directly to one-another?",
+      "options": [
+        "Ad hoc",
+        "Infrastructure",
+        "WAP",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Ad hoc",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Android is licensed under ___________",
+      "options": [
+        "GNU's GPL",
+        "OSS",
+        "Sourceforge",
+        "Apache/MIT"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Apache/MIT",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Adb Stands For ___________.",
+      "options": [
+        "Android Debug Bridge.",
+        "Android Drive Bridge.",
+        "Android Delete Bridge",
+        "Android Destroy Bridge."
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Android Debug Bridge.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Mobile security is also known as ____________",
+      "options": [
+        "OS Security",
+        "Wireless security",
+        "Cloud security",
+        "Database security"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Wireless security",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "______ is not included in OWASP Top 10 Mobile vulnerability.",
+      "options": [
+        "Improper Platform Usage",
+        "Insecure Communication",
+        "Code Tempering",
+        "SIM Swapping"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. SIM Swapping",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "On a device, the best way to avoid malware is?",
+      "options": [
+        "Jailbreak the phone",
+        "Root the phone",
+        "Install trusted apps only",
+        "There is no best way"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Install trusted apps only",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Which type of communication is the easiest way to deliver a wipe command to a mobile device?",
+      "options": [
+        "Wired Connections",
+        "OTA",
+        "Using a Wireless charger",
+        "Using Voice Command"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. OTA",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Python was Designed by",
+      "options": [
+        "Daniel Mark Lewin",
+        "Peter L Duetch",
+        "Guido van Rossum",
+        "Paul McArthur"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Guido van Rossum",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Which of the following commands can be used to verify a python installation on a Linux instance?",
+      "options": [
+        "ps python",
+        "ls python",
+        "which python",
+        "where python"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. which python",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "The value of b in the following example:\n>>> a = [1,2,3,4]\n>>> a\n[1, 2, 3, 4]\n>>> b = a.append(5)\n>>> print b",
+      "options": [
+        "[1,2,3]",
+        "[1,2,3,4]",
+        "[1,2,3,4,5]",
+        "Invalid syntax"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Invalid syntax",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Everything in Python is a(n) _____________.",
+      "options": [
+        "Instance",
+        "Object",
+        "Method",
+        "File"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Object",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Which of the following return a quick list of the defined symbols in python?",
+      "options": [
+        "snapshot",
+        "view",
+        "help",
+        "dir"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. dir",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which of the following functions returns a dictionary mapping group names to group numbers?",
+      "options": [
+        "re.compile.group",
+        "re.compile.groupindex",
+        "re.compile.index",
+        "re.compile.indexgroup"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. re.compile.groupindex",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "What will be the output of the following Python code?\ndef to_upper(k):\nreturn k.upper()\nx = ['ab', 'cd']\nprint(list(map(upper, x)))",
+      "options": [
+        "['AB', 'CD']",
+        "['ab', 'cd']",
+        "none of the mentioned",
+        "error"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. error",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "When does the TCP socket connection goes into the TIME_WAIT state?",
+      "options": [
+        "When client does not close the connection",
+        "Packets arriving in correct working order",
+        "When client closes the connection abnormally",
+        "Connection request goes into a queue"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. When client closes the connection abnormally",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is False?",
+      "options": [
+        "String is immutable.",
+        "lower() function in string is used to return a string by converting the whole given string into lowercase.",
+        "capitalize() function in string is used to return a string by converting the whole given string into uppercase.",
+        "None of these."
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. capitalize() function in string is used to return a string by converting the whole given string into uppercase.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Which of the following data type value returns by Built-in function all()?",
+      "options": [
+        "int",
+        "string",
+        "float",
+        "Boolean"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Boolean",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "What is the difference between the TCP and UDP protocols?",
+      "options": [
+        "TCP is compatible with Python, while UDP is not",
+        "TCP is connection-oriented, while UDP is not",
+        "There are no differences",
+        "TCP is not connection-oriented, while UDP is"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. TCP is connection-oriented, while UDP is not",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "Asterisk in regular expression is used to match _______.",
+      "options": [
+        "One or more occurrences",
+        "Zero or one occurrences",
+        "Zero or more occurrences",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Zero or more occurrences",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Which of the following is the use of function in python?",
+      "options": [
+        "Functions are reusable pieces of programs",
+        "Functions don't provide better modularity for your application",
+        "you can't also create your own functions",
+        "All of the mentioned"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Functions are reusable pieces of programs",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "What will be the output of the following code?\nclass ditiss:\n     def __init__(self,a=\"Hello CDAC\"):\n         self.a=a\n     def display(self):\n         print(self.a)\nobj=ditiss()\nobj.display()",
+      "options": [
+        "The program will throw an error as constructor can't have default arguments",
+        "Nothing is displayed",
+        "The program will throw an error as display function doesn't have parameters.",
+        "\"Hello CDAC\" is printed"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. \"Hello CDAC\" is printed",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "In python, what is method inside class?",
+      "options": [
+        "function",
+        "attribute",
+        "object",
+        "argument"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. function",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "A for loop on a dictionary iterates over its ___________ by default.",
+      "options": [
+        "keys",
+        "values",
+        "index",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. keys",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "What is the output of the following?\n>>> print dict\n{'a': 'alpha', 'c': 'z', 'b': 'bravo'}\n>>> type(dict.items())\n_______________",
+      "options": [
+        "<type 'list'>",
+        "Error",
+        "<type 'tuple'>",
+        "None"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. <type 'list'>",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "The sys module is an _________ which has (among other things) an ________ called path.",
+      "options": [
+        "attribute, object",
+        "object, attribute",
+        "attribute, method",
+        "method, attribute"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. object, attribute",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Which of the following statements best describes a white-hat hacker?",
+      "options": [
+        "Security professional",
+        "Former black hat",
+        "Former grey hat",
+        "Malicious hacker"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Security professional",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Which phase is performed next after gaining the access of computer by attacker?",
+      "options": [
+        "Scanning",
+        "Cover Tracks",
+        "Maintaining Access",
+        "Reconnaissance"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Maintaining Access",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is a set of changes done to any program or its associated data designed for updating, fixing, or improving it.",
+      "options": [
+        "scratch",
+        "patch",
+        "fixer",
+        "resolver"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. patch",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "__________ is the specific search engine for exploits where anyone can find all the exploits associated to vulnerability.",
+      "options": [
+        "Google",
+        "Bing",
+        "Exploit-db",
+        "Exploit-engine"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Exploit-db",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "What are the forms of password cracking techniques?",
+      "options": [
+        "Syllable attack",
+        "Brute force attack",
+        "Hybrid attack",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. All of the above",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Command to perform an Nmap XMAS scan every 15mins:",
+      "options": [
+        "nmap -sX -sneaky",
+        "nmap -sX -aggressive",
+        "nmap -sX -n 15",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. nmap -sX -sneaky",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "Which of the following replicate itself and do not require a computer program to attach itself.",
+      "options": [
+        "Rootkits",
+        "Trojan",
+        "Worms",
+        "Virus"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Worms",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "The purpose of a shadow honeypot is ______",
+      "options": [
+        "to combine filtering, anomaly detection systems and honeypots in a way that exploits the best features of these mechanisms",
+        "to enhance accuracy of conventional hotspot",
+        "to note attacks against known vulnerabilities",
+        "All of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. to combine filtering, anomaly detection systems and honeypots in a way that exploits the best features of these mechanisms",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "______ is the tool useful in sorting through large logs files while searching for intrusion-related events.",
+      "options": [
+        "Intrusion Detection System",
+        "Vulnerability Scanner",
+        "Text Editor",
+        "Browser"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Intrusion Detection System",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "A ______ is a \"Good\" guy who uses his skills for defensive purposes.",
+      "options": [
+        "Black Hat hacker",
+        "Grey Hat hacker",
+        "White Hat hacker",
+        "Red Hat hacker"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. White Hat hacker",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "Which one of the following is not a type of DOS attack?",
+      "options": [
+        "Protocol DOS attack",
+        "Application-layer DDOS attack",
+        "Volume-based DDOS attack",
+        "Network DOS attack"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Network DOS attack",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "_______ is the first computer worm distributed via the internet.",
+      "options": [
+        "Kak worm",
+        "Anna Kournikova",
+        "Black worm",
+        "Morris worm"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. Morris worm",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "_______ is not the protocol susceptible to sniffing.",
+      "options": [
+        "NNTP",
+        "FTP",
+        "POP",
+        "UDP"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. UDP",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "An ethical hacker is performing a penetration test on a web application. The hacker finds a user input field on a web form and enters a single quotation mark. The website responds with a server error. What does the error indicate?",
+      "options": [
+        "The web application is susceptible to SQL injection attacks.",
+        "The web application is not susceptible to SQL injection attacks.",
+        "The server is experiencing a denial of service.",
+        "The web application has crashed."
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. The web application is susceptible to SQL injection attacks.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Which of the following is possible when scanning UDP ports?",
+      "options": [
+        "A reset will be returned",
+        "An ICMP message will be returned",
+        "The four-way handshake will not be completed",
+        "An RFC 1294 message will be returned"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. An ICMP message will be returned",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "What is \"Botnet\"?",
+      "options": [
+        "Network of Zombies",
+        "Virus",
+        "A covert channel",
+        "Wrapper"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Network of Zombies",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "Which malware is used to gain administrative rights to one's computer?",
+      "options": [
+        "Virus",
+        "Rootkit",
+        "Worm",
+        "Trojan Horse"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Rootkit",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "What is the Ping of Death?",
+      "options": [
+        "Sending packets that, when reassembled, are too large for the system to understand",
+        "Sending very large packets that cause a buffer overflow",
+        "Sending packets very quickly to fill up the receiving buffer",
+        "Sending a TCP packet with the fragment offset out of bounds"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. Sending packets that, when reassembled, are too large for the system to understand",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts"
+      ]
+    }
+  ]
+}

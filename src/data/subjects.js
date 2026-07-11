@@ -1,6 +1,5 @@
 import {
   Binary,
-  Cpu,
   Globe2,
   KeyRound,
   Network,
@@ -24,17 +23,6 @@ function buildStages(subjectSlug) {
 
 export const subjects = [
   {
-    slug: "cybersecurity",
-    name: "Cyber Security",
-    shortName: "Cyber",
-    icon: ShieldCheck,
-    accent: "teal",
-    description: "Threat defense, identity, web security, and incident response.",
-    stages: buildStages("cybersecurity"),
-    topicsPath: "/subjects/cybersecurity/topics",
-    topicIndexFile: "/data/cybersecurity/topics/index.json"
-  },
-  {
     slug: "pki",
     name: "PKI",
     shortName: "PKI",
@@ -44,28 +32,6 @@ export const subjects = [
     stages: buildStages("pki"),
     topicsPath: "/subjects/pki/topics",
     topicIndexFile: "/data/pki/topics/index.json"
-  },
-  {
-    slug: "networking",
-    name: "Networking",
-    shortName: "Net",
-    icon: Network,
-    accent: "indigo",
-    description: "Protocols, routing, switching, ports, and network security.",
-    stages: buildStages("networking"),
-    topicsPath: "/subjects/networking/topics",
-    topicIndexFile: "/data/networking/topics/index.json"
-  },
-  {
-    slug: "iot",
-    name: "IoT",
-    shortName: "IoT",
-    icon: Cpu,
-    accent: "emerald",
-    description: "Embedded devices, telemetry, gateways, and edge security.",
-    stages: buildStages("iot"),
-    topicsPath: "/subjects/iot/topics",
-    topicIndexFile: "/data/iot/topics/index.json"
   },
   {
     slug: "cryptography",
@@ -102,22 +68,22 @@ export const subjects = [
   },
   {
     slug: "ca",
-    name: "CA",
+    name: "Compliance Audits",
     shortName: "CA",
     icon: KeyRound,
     accent: "amber",
-    description: "CA practice sets and exam stages.",
+    description: "Compliance audits, controls, frameworks, and security evaluation.",
     stages: buildStages("ca"),
     topicsPath: "/subjects/ca/topics",
     topicIndexFile: "/data/ca/topics/index.json"
   },
   {
     slug: "df",
-    name: "DF",
-    shortName: "DF",
+    name: "Cyber Forensic",
+    shortName: "CF",
     icon: Binary,
     accent: "rose",
-    description: "DF practice sets and exam stages.",
+    description: "Cyber forensic investigation, evidence handling, and incident response.",
     stages: buildStages("df"),
     topicsPath: "/subjects/df/topics",
     topicIndexFile: "/data/df/topics/index.json"

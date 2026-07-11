@@ -1,4 +1,4 @@
-import { ArrowRight, BarChart3, BookOpenCheck, Clock3, Target } from "lucide-react";
+import { AlertTriangle, ArrowRight, BarChart3, BookOpenCheck, Clock3, Target } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import PageHeader from "../components/ui/PageHeader.jsx";
@@ -76,6 +76,11 @@ export default function DashboardPage() {
         title={`Welcome, ${user.name || "Candidate"}`}
         description="Pick a subject, continue stage practice, or review your latest performance trends."
       />
+
+      <div className="mb-5 flex items-start gap-3 rounded-lg border border-amber-300/70 bg-amber-100/80 px-4 py-3 text-sm font-semibold text-amber-950 shadow-sm dark:border-amber-400/30 dark:bg-amber-400/10 dark:text-amber-100">
+        <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0" />
+        <p>Notice: Some answer keys may contain mistakes. If you find a wrong answer, report it so it can be corrected.</p>
+      </div>
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         <StatCard label="Attempts" value={results.length} icon={BookOpenCheck} detail="Saved on this device" tone="teal" />
