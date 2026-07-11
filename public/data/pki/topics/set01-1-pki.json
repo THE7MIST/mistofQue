@@ -1,0 +1,1338 @@
+{
+  "version": "3",
+  "title": "PKI Set 1.1",
+  "subject": "PKI",
+  "stage": "Topic Wise MCQ",
+  "topic": "PKI Set 1.1",
+  "durationMinutes": 83,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does PKI stand for?",
+      "options": [
+        "Personal Knowledge Identification",
+        "Public Key Infrastructure",
+        "Private Key Integration",
+        "Protected Key Interface"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Public Key Infrastructure.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which key is used for encryption in a PKI system?",
+      "options": [
+        "Public Key",
+        "Private Key",
+        "Session Key",
+        "Symmetric Key"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Public Key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "What is the purpose of a digital certificate in PKI?",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Encryption",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which standard is commonly used for the digital signature in PKI?",
+      "options": [
+        "SHA-1",
+        "MD5",
+        "RSA",
+        "AES"
+      ],
+      "correct": 2,
+      "description": "Correct answer: RSA.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What is the role of a Certificate Authority (CA) in PKI?",
+      "options": [
+        "Generates encryption keys",
+        "Issues and verifies digital certificates",
+        "Manages network firewalls",
+        "Monitors system performance"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Issues and verifies digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is a Certificate Revocation List (CRL) used for in PKI?",
+      "options": [
+        "Encrypting data",
+        "Verifying digital signatures",
+        "Revoking compromised certificates",
+        "Generating public keys"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Revoking compromised certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Which protocol is commonly used for secure key exchange in PKI?",
+      "options": [
+        "FTP",
+        "SSH",
+        "SSL/TLS",
+        "HTTP"
+      ],
+      "correct": 2,
+      "description": "Correct answer: SSL/TLS.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of a key escrow in PKI?",
+      "options": [
+        "Recovering lost passwords",
+        "Storing private keys securely",
+        "Providing backup copies of encryption keys",
+        "Authenticating users"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Providing backup copies of encryption keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "What is the main advantage of using a hardware security module (HSM) in PKI?",
+      "options": [
+        "Faster encryption speed",
+        "Enhanced key security",
+        "Improved network connectivity",
+        "Lower cost"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Enhanced key security.",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is NOT a component of PKI?",
+      "options": [
+        "Registration Authority (RA)",
+        "Certificate Revocation List (CRL)",
+        "Simple Mail Transfer Protocol (SMTP)",
+        "Public Key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Simple Mail Transfer Protocol (SMTP).",
+      "difficulty": "Easy",
+      "tags": [
+        "Public Key Infrastructure (PKI)"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What is the primary goal of information security?",
+      "options": [
+        "Confidentiality",
+        "Availability",
+        "Integrity",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is an example of a physical security control?",
+      "options": [
+        "Firewall",
+        "Antivirus software",
+        "Biometric access control",
+        "Intrusion Detection System (IDS)"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Biometric access control.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What is the role of a firewall in information security?",
+      "options": [
+        "Encrypts data",
+        "Monitors network traffic",
+        "Detects and removes viruses",
+        "Manages user authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Monitors network traffic.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Which authentication factor is something you know?",
+      "options": [
+        "Biometric data",
+        "Smart card",
+        "Password",
+        "Token"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Password.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of penetration testing in information security?",
+      "options": [
+        "Monitoring network traffic",
+        "Identifying vulnerabilities",
+        "Encrypting communication",
+        "Managing access control"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Identifying vulnerabilities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Which encryption algorithm is commonly used for securing wireless networks?",
+      "options": [
+        "RSA",
+        "DES",
+        "WEP",
+        "AES"
+      ],
+      "correct": 3,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "What does the acronym CIA stand for in information security?",
+      "options": [
+        "Central Intelligence Agency",
+        "Computer Incident Analysis",
+        "Confidentiality, Integrity, Availability",
+        "Cryptographic Information Assurance"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Confidentiality, Integrity, Availability.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is a common social engineering attack?",
+      "options": [
+        "DoS Attack",
+        "Man-in-the-Middle Attack",
+        "Phishing",
+        "SQL Injection"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Phishing.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of a Virtual Private Network (VPN) in information security?",
+      "options": [
+        "Preventing physical attacks",
+        "Securing wireless networks",
+        "Providing secure communication over the internet",
+        "Detecting malware"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Providing secure communication over the internet.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "What is the principle of least privilege in information security?",
+      "options": [
+        "Granting users the maximum level of access",
+        "Restricting users to the minimum level of access needed",
+        "Encrypting all communication",
+        "Regularly changing passwords"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Restricting users to the minimum level of access needed.",
+      "difficulty": "Easy",
+      "tags": [
+        "Information Security"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Which type of attack involves flooding a network with excessive traffic to make it unavailable?",
+      "options": [
+        "Phishing",
+        "DoS (Denial of Service) Attack",
+        "Man-in-the-Middle Attack",
+        "SQL Injection"
+      ],
+      "correct": 1,
+      "description": "Correct answer: DoS (Denial of Service) Attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "What is the primary goal of a social engineering attack?",
+      "options": [
+        "Gaining unauthorized access to systems",
+        "Encrypting data",
+        "Spreading malware",
+        "Manipulating individuals to divulge sensitive information"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Manipulating individuals to divulge sensitive information.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Which type of malware disguises itself as legitimate software?",
+      "options": [
+        "Trojan Horse",
+        "Worm",
+        "Virus",
+        "Spyware"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Trojan Horse.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "What does a firewall primarily protect against?",
+      "options": [
+        "Phishing attacks",
+        "Unauthorized access",
+        "Malware infection",
+        "Data encryption"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Unauthorized access.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Which security threat exploits software vulnerabilities to gain unauthorized access or control over a system?",
+      "options": [
+        "Malware",
+        "Zero-Day Exploit",
+        "DoS Attack",
+        "Phishing"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Zero-Day Exploit.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of an Intrusion Detection System (IDS)?",
+      "options": [
+        "Preventing malware infections",
+        "Identifying and responding to suspicious activities",
+        "Encrypting communication",
+        "Managing access control"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Identifying and responding to suspicious activities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Which attack involves intercepting and altering communication between two parties without their knowledge?",
+      "options": [
+        "Man-in-the-Middle Attack",
+        "DoS Attack",
+        "Cross-Site Scripting (XSS)",
+        "Brute Force Attack"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Man-in-the-Middle Attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "What is a common method for protecting against SQL injection attacks?",
+      "options": [
+        "Using firewalls",
+        "Regularly changing passwords",
+        "Input validation and parameterized queries",
+        "Implementing biometric authentication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Input validation and parameterized queries.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "What does the term \"Pharming\" refer to in the context of security threats?",
+      "options": [
+        "Spoofing website addresses to redirect users",
+        "Harvesting and manipulating data packets",
+        "Spreading malware through infected email attachments",
+        "Manipulating individuals to reveal sensitive information"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Spoofing website addresses to redirect users.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which security measure involves the use of unique identifiers to control access to systems or data?",
+      "options": [
+        "Encryption",
+        "Authentication",
+        "Authorization",
+        "Biometric Access Control"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Biometric Access Control.",
+      "difficulty": "Easy",
+      "tags": [
+        "Security Attacks and Threats"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "What is encryption?",
+      "options": [
+        "The process of converting data into a code",
+        "Making data visible to unauthorized parties",
+        "Storing data in plaintext form",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: The process of converting data into a code.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "What is a cryptographic key used for in encryption?",
+      "options": [
+        "To make data publicly accessible",
+        "To speed up the encryption process",
+        "To encrypt and decrypt data",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To encrypt and decrypt data.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Which type of encryption uses the same key for both encryption and decryption?",
+      "options": [
+        "Asymmetric encryption",
+        "Public-key encryption",
+        "Symmetric encryption",
+        "Two-factor authentication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Symmetric encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of a digital signature in encryption?",
+      "options": [
+        "Encrypting messages",
+        "Ensuring the authenticity and integrity of a message",
+        "Generating random keys",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Ensuring the authenticity and integrity of a message.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Which cryptographic protocol is commonly used for securing web communication?",
+      "options": [
+        "IPsec",
+        "HTTPS",
+        "SSH",
+        "FTPS"
+      ],
+      "correct": 1,
+      "description": "Correct answer: HTTPS.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "What is the role of a hash function in encryption?",
+      "options": [
+        "Encrypting data",
+        "Generating random keys",
+        "Transforming data into a fixed-size string",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Transforming data into a fixed-size string.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "In public-key cryptography, which key is used for encryption?",
+      "options": [
+        "Private key",
+        "Secret key",
+        "Public key",
+        "Symmetric key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Public key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "What does SSL stand for in the context of encryption?",
+      "options": [
+        "Secure Socket Layer",
+        "Symmetric Signature Language",
+        "Secret Sharing Link",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Secure Socket Layer.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "What is the main advantage of using end-to-end encryption?",
+      "options": [
+        "Faster communication",
+        "Increased network bandwidth",
+        "Enhanced security and privacy",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Enhanced security and privacy.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Which encryption method involves a pair of keys – public and private?",
+      "options": [
+        "Symmetric encryption",
+        "Asymmetric encryption",
+        "Hashing",
+        "SSL/TLS"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Asymmetric encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Basic Encryption Concepts"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "What is file encryption?",
+      "options": [
+        "Encrypting the entire computer",
+        "Encrypting individual files or folders",
+        "Deleting files permanently",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Encrypting individual files or folders.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Which benefit does file encryption provide?",
+      "options": [
+        "Increased file size",
+        "Protection against unauthorized access",
+        "Faster file access",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Protection against unauthorized access.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of encrypting sensitive files?",
+      "options": [
+        "To reduce file size",
+        "To make files more visually appealing",
+        "To protect confidential information from unauthorized access",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To protect confidential information from unauthorized access.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "How does file encryption affect performance?",
+      "options": [
+        "Speeds up file access",
+        "Slows down file access",
+        "No impact on file access speed",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Slows down file access.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "Which is a popular algorithm used in file encryption?",
+      "options": [
+        "RSA",
+        "AES",
+        "MD5",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "What is the key difference between file encryption and disk encryption?",
+      "options": [
+        "File encryption only encrypts filenames",
+        "Disk encryption encrypts the entire hard drive",
+        "File encryption is faster than disk encryption",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Disk encryption encrypts the entire hard drive.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "In file encryption, what is a passphrase used for?",
+      "options": [
+        "Generating cryptographic keys",
+        "Encrypting files",
+        "Authenticating users",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Generating cryptographic keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Can encrypted files be decrypted without the correct key or passphrase?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only in certain circumstances",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: No, never.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "What is the primary goal of file encryption?",
+      "options": [
+        "Increasing file transfer speed",
+        "Protecting file integrity",
+        "Hiding file extensions",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Protecting file integrity.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "Which is a potential drawback of file encryption?",
+      "options": [
+        "Enhanced file security",
+        "Increased risk of data loss if the key is lost",
+        "Improved file access speed",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Increased risk of data loss if the key is lost.",
+      "difficulty": "Easy",
+      "tags": [
+        "File Encryption"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "What is folder encryption?",
+      "options": [
+        "Encrypting individual files",
+        "Encrypting an entire computer",
+        "Encrypting a group of files within a folder",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Encrypting a group of files within a folder.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "How does graphical folder encryption differ from using ciphers?",
+      "options": [
+        "Graphical encryption uses visual patterns, while cipher-based encryption uses algorithms",
+        "Cipher-based encryption relies on images, while graphical encryption uses text",
+        "Both methods are identical",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Graphical encryption uses visual patterns, while cipher-based encryption uses algorithms.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "What is the advantage of using ciphers in folder encryption?",
+      "options": [
+        "Faster encryption process",
+        "More secure encryption",
+        "Improved visual appeal",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: More secure encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "In graphical folder encryption, what is often used as the basis for creating visual patterns?",
+      "options": [
+        "Random colors",
+        "File names",
+        "Icons",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: File names.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "How can someone access an encrypted folder using a cipher-based method?",
+      "options": [
+        "Decrypting the folder with the correct cipher key",
+        "Guessing the visual pattern",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Both A and B.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "What precaution should be taken when using graphical folder encryption?",
+      "options": [
+        "Avoiding complex visual patterns",
+        "Keeping a backup of the cipher key",
+        "Using easily recognizable icons",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Keeping a backup of the cipher key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Can graphical folder encryption be applied to external drives and cloud storage?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Depends on the encryption method",
+        "None of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Depends on the encryption method.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "How does graphical folder encryption contribute to user-friendly encryption methods?",
+      "options": [
+        "It requires advanced technical skills",
+        "It provides a visually intuitive approach to encryption",
+        "It slows down the encryption process",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It provides a visually intuitive approach to encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "What is a potential limitation of graphical folder encryption?",
+      "options": [
+        "Difficulty in creating visual patterns",
+        "Limited security compared to cipher-based methods",
+        "Incompatibility with certain file types",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Limited security compared to cipher-based methods.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "How does graphical folder encryption enhance user experience?",
+      "options": [
+        "It simplifies the encryption process",
+        "It introduces complexity and confusion",
+        "It slows down file access",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: It simplifies the encryption process.",
+      "difficulty": "Easy",
+      "tags": [
+        "Folder Encryption (Graphical/Using Cipher)"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "What is the primary goal of cryptography?",
+      "options": [
+        "Data integrity",
+        "Data confidentiality",
+        "Data availability",
+        "Data authenticity"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Data confidentiality.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "Which cryptographic concept ensures that a message has not been altered during transmission?",
+      "options": [
+        "Encryption",
+        "Hashing",
+        "Decryption",
+        "Salting"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Hashing.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "What is the purpose of a digital signature in cryptography?",
+      "options": [
+        "Data encryption",
+        "Data integrity verification",
+        "Key exchange",
+        "Random number generation"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Data integrity verification.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "Which cryptographic attack involves capturing and analyzing data to reveal sensitive information?",
+      "options": [
+        "Brute force attack",
+        "Man-in-the-middle attack",
+        "Cryptanalysis",
+        "Side-channel attack"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Cryptanalysis.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "What does the term \"plaintext\" refer to in cryptography?",
+      "options": [
+        "Encrypted data",
+        "Original, unencrypted data",
+        "Public key",
+        "Private key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Original, unencrypted data.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "In symmetric key cryptography, how many keys are used for the encryption and decryption processes?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correct": 0,
+      "description": "Correct answer: One.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "What role does the Initialization Vector (IV) play in cryptographic algorithms?",
+      "options": [
+        "Authenticating messages",
+        "Ensuring data integrity",
+        "Providing randomness in encryption",
+        "Verifying digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Providing randomness in encryption.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "Which cryptographic protocol is commonly used for secure communication over the internet?",
+      "options": [
+        "SSL/TLS",
+        "UDP",
+        "HTTP",
+        "SMTP"
+      ],
+      "correct": 0,
+      "description": "Correct answer: SSL/TLS.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "What is the purpose of a nonce in cryptographic systems?",
+      "options": [
+        "Ensuring key confidentiality",
+        "Preventing replay attacks",
+        "Verifying digital signatures",
+        "Generating random numbers"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Preventing replay attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "Which type of cryptographic algorithm is commonly used for securely storing passwords?",
+      "options": [
+        "Symmetric encryption",
+        "Asymmetric encryption",
+        "Hashing",
+        "Digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Hashing.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Fundamentals"
+      ]
+    },
+    {
+      "id": 71,
+      "question": "What type of key is used in symmetric key encryption?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Shared key",
+        "Asymmetric key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Shared key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 72,
+      "question": "Which symmetric encryption algorithm is widely used for securing data transmission over the internet?",
+      "options": [
+        "DES (Data Encryption Standard)",
+        "AES (Advanced Encryption Standard)",
+        "RSA (Rivest–Shamir–Adleman)",
+        "ECC (Elliptic Curve Cryptography)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: AES (Advanced Encryption Standard).",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 73,
+      "question": "What is a characteristic of a block cipher?",
+      "options": [
+        "Encrypts one bit at a time",
+        "Encrypts a fixed-size block of data",
+        "Uses a different key for each block",
+        "Only supports encryption, not decryption"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Encrypts a fixed-size block of data.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "Which of the following is an example of a stream cipher?",
+      "options": [
+        "AES",
+        "DES",
+        "RC4",
+        "RSA"
+      ],
+      "correct": 2,
+      "description": "Correct answer: RC4.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "In asymmetric key encryption, how many keys are used for the encryption and decryption processes?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Two.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "Which asymmetric encryption algorithm is commonly used for secure key exchange in internet protocols like TLS?",
+      "options": [
+        "RSA",
+        "ECC",
+        "Diffie-Hellman",
+        "ElGamal"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Diffie-Hellman.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "What is a key characteristic of the Diffie-Hellman key exchange algorithm?",
+      "options": [
+        "Symmetric key generation",
+        "Public key distribution",
+        "Secure digital signatures",
+        "One-way encryption"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Public key distribution.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 78,
+      "question": "Which cipher operates on blocks of data and rearranges the bits within the block?",
+      "options": [
+        "Substitution cipher",
+        "Transposition cipher",
+        "Feistel cipher",
+        "Vigenère cipher"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Feistel cipher.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "What is the primary advantage of using elliptic curve cryptography (ECC) over traditional asymmetric algorithms?",
+      "options": [
+        "Faster computation",
+        "Longer key lengths",
+        "Simplicity of implementation",
+        "Resistance to quantum attacks"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Faster computation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 80,
+      "question": "In public-key cryptography, which key is kept secret and known only to the owner?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Shared key",
+        "Session key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Cryptographic Ciphers"
+      ]
+    },
+    {
+      "id": 81,
+      "question": "What is the purpose of a key generator in cryptographic systems?",
+      "options": [
+        "To encrypt data",
+        "To decrypt data",
+        "To generate secure keys",
+        "To create digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To generate secure keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 82,
+      "question": "What is a key length in cryptography?",
+      "options": [
+        "The physical size of the key",
+        "The number of characters in the key",
+        "The number of bits in the key",
+        "The encryption strength of the key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: The number of bits in the key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 83,
+      "question": "Which key generation method involves randomly selecting a key from the entire key space?",
+      "options": [
+        "Deterministic key generation",
+        "Pseudo-random key generation",
+        "True random key generation",
+        "Symmetric key generation"
+      ],
+      "correct": 2,
+      "description": "Correct answer: True random key generation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    }
+  ]
+}

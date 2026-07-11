@@ -1,0 +1,1338 @@
+{
+  "version": "3",
+  "title": "PKI Set 1.3",
+  "subject": "PKI",
+  "stage": "Topic Wise MCQ",
+  "topic": "PKI Set 1.3",
+  "durationMinutes": 83,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the significance of a Cross-Certificate in a CA hierarchy?",
+      "options": [
+        "It links two different CAs in a trust relationship",
+        "It is used for encryption purposes",
+        "It is the top-level certificate in a hierarchy",
+        "It is a self-signed certificate"
+      ],
+      "correct": 0,
+      "description": "Correct answer: It links two different CAs in a trust relationship.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Can a CA's private key be disclosed to the public?",
+      "options": [
+        "Yes, to enhance transparency",
+        "No, it should be kept confidential",
+        "Only during the certificate renewal process",
+        "Only if the CA is audited regularly"
+      ],
+      "correct": 1,
+      "description": "Correct answer: No, it should be kept confidential.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "In a Hierarchical CA Model, what is the role of an Intermediate CA?",
+      "options": [
+        "To issue digital certificates directly to end entities",
+        "To bridge the gap between the Root CA and end entities",
+        "To manage the public key infrastructure",
+        "To perform biometric authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To bridge the gap between the Root CA and end entities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of a Certificate Revocation List (CRL)?",
+      "options": [
+        "To list all valid certificates",
+        "To list revoked certificates",
+        "To authenticate users",
+        "To encrypt communication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To list revoked certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What does OCSP stand for in the context of certificates?",
+      "options": [
+        "Online Cryptographic Security Protocol",
+        "Open Certificate Security Protocol",
+        "Online Certificate Status Protocol",
+        "Open Cryptographic Status Protocol"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Online Certificate Status Protocol.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a real-time method for checking the status of a digital certificate?",
+      "options": [
+        "CRL",
+        "OCSP",
+        "FIPS 140-2",
+        "RSA"
+      ],
+      "correct": 1,
+      "description": "Correct answer: OCSP.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "How does OCSP differ from CRL in terms of certificate status checking?",
+      "options": [
+        "OCSP is offline, while CRL is real-time",
+        "CRL is offline, while OCSP is real-time",
+        "Both are real-time",
+        "Both are offline"
+      ],
+      "correct": 1,
+      "description": "Correct answer: CRL is offline, while OCSP is real-time.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the primary purpose of certificate revocation?",
+      "options": [
+        "To improve certificate performance",
+        "To maintain the secrecy of certificates",
+        "To invalidate compromised or untrusted certificates",
+        "To issue new certificates"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To invalidate compromised or untrusted certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which protocol provides a more scalable and efficient solution for checking certificate revocation status?",
+      "options": [
+        "CRL",
+        "OCSP",
+        "HTTPS",
+        "LDAP"
+      ],
+      "correct": 1,
+      "description": "Correct answer: OCSP.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "In a PKI infrastructure, who typically issues Certificate Revocation Lists?",
+      "options": [
+        "Certificate authority (CA)",
+        "End-user",
+        "Registration authority (RA)",
+        "Subordinate CA"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Certificate authority (CA).",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What is the consequence of relying solely on CRL for certificate revocation checking?",
+      "options": [
+        "Real-time revocation checking",
+        "Increased security",
+        "Potential delays in identifying revoked certificates",
+        "Improved network performance"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Potential delays in identifying revoked certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Which extension is commonly found in X.509 certificates and contains information about CRL distribution points?",
+      "options": [
+        "Basic Constraints",
+        "Key Usage",
+        "Authority Information Access",
+        "Subject Alternative Name"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authority Information Access.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What role does OCSP Stapling play in certificate revocation checking?",
+      "options": [
+        "It allows multiple CAs to issue certificates",
+        "It reduces the load on the OCSP responder",
+        "It encrypts the CRL during transmission",
+        "It signs the CRL for authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It reduces the load on the OCSP responder.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certificate Revocation Lists (CRL) and Online Certificate Status Protocol (OCSP)"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Which type of certificate is used to secure communication between a user's browser and a website?",
+      "options": [
+        "Code Signing Certificate",
+        "Client Certificate",
+        "Server Certificate",
+        "Email Certificate"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Server Certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "What is the primary purpose of a Code Signing Certificate?",
+      "options": [
+        "Securing website communication",
+        "Encrypting emails",
+        "Authenticating software code",
+        "Authenticating users"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authenticating software code.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Which class of certificate requires more rigorous validation of the certificate holder's identity?",
+      "options": [
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Class 3.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "What is the primary use of a Client Certificate?",
+      "options": [
+        "Authenticating users to a website",
+        "Authenticating software code",
+        "Securing server communication",
+        "Encrypting emails"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authenticating users to a website.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Which type of certificate is commonly used for securing email communication?",
+      "options": [
+        "Server Certificate",
+        "Code Signing Certificate",
+        "Email Certificate",
+        "Root Certificate"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Email Certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "What is the difference between a Wildcard Certificate and a SAN Certificate?",
+      "options": [
+        "Wildcard Certificates are for code signing, while SAN Certificates are for email encryption",
+        "SAN Certificates support multiple domain names, while Wildcard Certificates cover only one domain and its subdomains",
+        "Wildcard Certificates require more rigorous validation",
+        "SAN Certificates are only used for server authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SAN Certificates support multiple domain names, while Wildcard Certificates cover only one domain and its subdomains.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Which type of certificate is commonly used for securing software applications and updates?",
+      "options": [
+        "Server Certificate",
+        "Code Signing Certificate",
+        "Email Certificate",
+        "Root Certificate"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Code Signing Certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "In a public key infrastructure (PKI), what is the role of a Root Certificate?",
+      "options": [
+        "Issuing end-user certificates",
+        "Encrypting communication",
+        "Authenticating software code",
+        "Establishing trust by signing other certificates"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Establishing trust by signing other certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Which class of certificate may be issued without verifying the identity of the certificate holder?",
+      "options": [
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Class 1.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "What is the primary purpose of an Intermediate Certificate?",
+      "options": [
+        "Establishing trust with end-users",
+        "Issuing end-user certificates",
+        "Authenticating software code",
+        "Verifying the identity of the Root CA"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Issuing end-user certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Types and Classes of Certificates"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "What does FIPS stand for in FIPS 140-2?",
+      "options": [
+        "Federal Information Processing Standard",
+        "Fast Internet Protocol Standard",
+        "Flexible Information Processing System",
+        "Focused Information Protection Standard"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Federal Information Processing Standard.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of FIPS 140-2 certification in the context of cryptographic modules?",
+      "options": [
+        "Ensuring fast data processing",
+        "Establishing trust with end-users",
+        "Verifying the security of cryptographic algorithms and modules",
+        "Allowing flexible encryption standards"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Verifying the security of cryptographic algorithms and modules.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Which organization is responsible for issuing FIPS 140-2 certifications?",
+      "options": [
+        "International Organization for Standardization (ISO)",
+        "National Institute of Standards and Technology (NIST)",
+        "Internet Engineering Task Force (IETF)",
+        "Institute of Electrical and Electronics Engineers (IEEE)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: National Institute of Standards and Technology (NIST).",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "What is the highest level of security assurance provided by FIPS 140-2?",
+      "options": [
+        "Level 1",
+        "Level 2",
+        "Level 3",
+        "Level 4"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Level 4.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Which of the following is a requirement for FIPS 140-2 Level 2 certification?",
+      "options": [
+        "Physical security mechanisms",
+        "Tamper-evident coatings",
+        "Role-based authentication",
+        "Continuous monitoring"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Tamper-evident coatings.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "In FIPS 140-2, what does the term \"module\" refer to?",
+      "options": [
+        "A unit of software",
+        "A unit of hardware",
+        "A cryptographic algorithm",
+        "A network protocol"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A unit of hardware.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is NOT a requirement for FIPS 140-2 Level 1 certification?",
+      "options": [
+        "Physical security",
+        "Cryptographic key management",
+        "Role-based authentication",
+        "Continuous monitoring"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Physical security.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "What role does the Cryptographic Module Validation Program (CMVP) play in FIPS 140-2 certification?",
+      "options": [
+        "Issuing FIPS 140-2 certificates",
+        "Conducting vulnerability assessments",
+        "Developing cryptographic algorithms",
+        "Establishing physical security measures"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Issuing FIPS 140-2 certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Which cryptographic algorithm is commonly used in FIPS 140-2 compliant modules for data encryption?",
+      "options": [
+        "MD5",
+        "SHA-1",
+        "AES",
+        "DES"
+      ],
+      "correct": 2,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Why is FIPS 140-2 certification important for organizations using cryptographic modules?",
+      "options": [
+        "It ensures fast data processing",
+        "It establishes trust with end-users",
+        "It verifies the security of cryptographic algorithms and modules",
+        "It allows flexible encryption standards"
+      ],
+      "correct": 2,
+      "description": "Correct answer: It verifies the security of cryptographic algorithms and modules.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIPS 140-2"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "What is the primary purpose of OpenID?",
+      "options": [
+        "Encrypting communication",
+        "Authenticating users across websites",
+        "Authorizing API access",
+        "Certifying software code"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Authenticating users across websites.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is a common use case for OAuth?",
+      "options": [
+        "Authenticating users with a single sign-on (SSO)",
+        "Encrypting emails",
+        "Securing server communication",
+        "Authenticating software code"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authenticating users with a single sign-on (SSO).",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "What role does the Authorization Server play in the OAuth 2.0 framework?",
+      "options": [
+        "Authenticating users",
+        "Issuing access tokens",
+        "Storing user credentials",
+        "Verifying software code"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Issuing access tokens.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "In OAuth, what is the purpose of an access token?",
+      "options": [
+        "Encrypting communication",
+        "Authenticating users",
+        "Authorizing API access",
+        "Verifying the identity of the client application"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authorizing API access.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Which OAuth 2.0 grant type is suitable for client applications running on a web server?",
+      "options": [
+        "Authorization Code Grant",
+        "Implicit Grant",
+        "Client Credentials Grant",
+        "Resource Owner Password Credentials Grant"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authorization Code Grant.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "What does OAuth 2.0's Implicit Grant flow primarily focus on?",
+      "options": [
+        "Authorization",
+        "Authentication",
+        "Encryption",
+        "Decryption"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Authorization.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Which role does the Resource Owner play in OAuth 2.0?",
+      "options": [
+        "The user seeking access to a protected resource",
+        "The server issuing access tokens",
+        "The client application requesting authorization",
+        "The authorization server issuing refresh tokens"
+      ],
+      "correct": 0,
+      "description": "Correct answer: The user seeking access to a protected resource.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "In the context of OpenID Connect, what does ID Token represent?",
+      "options": [
+        "An access token",
+        "An identity token",
+        "An authorization code",
+        "A refresh token"
+      ],
+      "correct": 1,
+      "description": "Correct answer: An identity token.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Which OAuth 2.0 grant type is designed for non-interactive clients?",
+      "options": [
+        "Authorization Code Grant",
+        "Implicit Grant",
+        "Client Credentials Grant",
+        "Resource Owner Password Credentials Grant"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Client Credentials Grant.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "What is the main advantage of using OAuth for API access control?",
+      "options": [
+        "It provides end-to-end encryption for data transmission",
+        "It simplifies user authentication across multiple applications",
+        "It allows secure storage of user credentials",
+        "It enables third-party applications to access resources without exposing user credentials"
+      ],
+      "correct": 3,
+      "description": "Correct answer: It enables third-party applications to access resources without exposing user credentials.",
+      "difficulty": "Easy",
+      "tags": [
+        "OpenID and OAuth"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of an authentication protocol?",
+      "options": [
+        "Encrypt data",
+        "Verify identity",
+        "Establish a secure connection",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Verify identity.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "Which authentication factor involves something you know?",
+      "options": [
+        "Password",
+        "Fingerprint",
+        "Smart card",
+        "Retina scan"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Password.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "Which authentication factor involves something you have?",
+      "options": [
+        "Password",
+        "Fingerprint",
+        "Smart card",
+        "Retina scan"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Smart card.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "What is two-factor authentication (2FA)?",
+      "options": [
+        "Using two different passwords",
+        "Combining two authentication factors",
+        "Encrypting data twice",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Combining two authentication factors.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "Which of the following is a common challenge in biometric authentication?",
+      "options": [
+        "Low accuracy",
+        "High cost",
+        "Limited scalability",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of a CAPTCHA in authentication?",
+      "options": [
+        "Verify credit card information",
+        "Prevent automated bots",
+        "Encrypt communication",
+        "Authenticate users"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Prevent automated bots.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "Which authentication method is susceptible to phishing attacks?",
+      "options": [
+        "Biometric authentication",
+        "Two-factor authentication",
+        "Single sign-on",
+        "Token-based authentication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Single sign-on.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "What is the role of a nonce in authentication?",
+      "options": [
+        "Encrypt data",
+        "Prevent replay attacks",
+        "Verify identity",
+        "Generate public key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Prevent replay attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "Which authentication protocol is commonly used for secure email communication?",
+      "options": [
+        "OAuth",
+        "SAML",
+        "PGP",
+        "Kerberos"
+      ],
+      "correct": 2,
+      "description": "Correct answer: PGP.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "What is the purpose of a time-based one-time password (TOTP) in authentication?",
+      "options": [
+        "Enhance encryption",
+        "Prevent password reuse",
+        "Add a time-sensitive element",
+        "Authenticate using a smart card"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Add a time-sensitive element.",
+      "difficulty": "Easy",
+      "tags": [
+        "Authentication Protocol"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "What does FIDO stand for in FIDO authentication?",
+      "options": [
+        "Fast Identity Online",
+        "Fully Integrated Digital Operations",
+        "Federal Identity and Documentation Organization",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Fast Identity Online.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "Which key elements are used in FIDO authentication?",
+      "options": [
+        "Public key cryptography",
+        "Passwords only",
+        "Biometric authentication",
+        "A and C"
+      ],
+      "correct": 3,
+      "description": "Correct answer: A and C.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "What is the purpose of FIDO U2F (Universal 2nd Factor)?",
+      "options": [
+        "Authenticate users using a single factor",
+        "Provide a second factor for authentication",
+        "Encrypt data during transmission",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Provide a second factor for authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "Which of the following is a benefit of FIDO authentication?",
+      "options": [
+        "Phishing resistance",
+        "No need for passwords",
+        "Strong user privacy",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "Which protocol is commonly associated with FIDO authentication?",
+      "options": [
+        "OAuth",
+        "SAML",
+        "WebAuthn",
+        "PGP"
+      ],
+      "correct": 2,
+      "description": "Correct answer: WebAuthn.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "How does FIDO authentication enhance security compared to traditional passwords?",
+      "options": [
+        "Uses biometric factors",
+        "Eliminates the need for passwords",
+        "Relies on hardware-based security keys",
+        "A and C"
+      ],
+      "correct": 3,
+      "description": "Correct answer: A and C.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "What is a FIDO Authenticator?",
+      "options": [
+        "Software-based authentication",
+        "Hardware device for authentication",
+        "A type of password",
+        "A and C"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Hardware device for authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "Which industry is FIDO authentication commonly used in?",
+      "options": [
+        "Healthcare",
+        "Finance",
+        "Education",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "What is the role of a relying party in FIDO authentication?",
+      "options": [
+        "Authenticate users",
+        "Verify user identity",
+        "Provide services to the user",
+        "Generate public keys"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Provide services to the user.",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "Which of the following is NOT a FIDO authentication protocol?",
+      "options": [
+        "UAF (Universal Authentication Framework)",
+        "U2F (Universal 2nd Factor)",
+        "TOTP (Time-based One-Time Password)",
+        "WebAuthn"
+      ],
+      "correct": 2,
+      "description": "Correct answer: TOTP (Time-based One-Time Password).",
+      "difficulty": "Easy",
+      "tags": [
+        "FIDO Authentication"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "What does SSL stand for in the context of secure communication?",
+      "options": [
+        "Secure Socket Layer",
+        "Super Speedy Link",
+        "Safe and Secure Line",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Secure Socket Layer.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "Which layer of the OSI model does SSL/TLS operate at?",
+      "options": [
+        "Application",
+        "Transport",
+        "Network",
+        "Data Link"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Transport.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "What is the primary purpose of SSL/TLS?",
+      "options": [
+        "Encrypt data in transit",
+        "Authenticate servers and clients",
+        "Establish a secure connection",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "Which protocol is the successor to SSL?",
+      "options": [
+        "TLS (Transport Layer Security)",
+        "SSH (Secure Shell)",
+        "HTTPS (Hypertext Transfer Protocol Secure)",
+        "PPTP (Point-to-Point Tunneling Protocol)"
+      ],
+      "correct": 0,
+      "description": "Correct answer: TLS (Transport Layer Security).",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "What is a certificate authority (CA) in the context of SSL/TLS?",
+      "options": [
+        "A server's private key",
+        "An entity that issues digital certificates",
+        "A type of encryption algorithm",
+        "A and C"
+      ],
+      "correct": 1,
+      "description": "Correct answer: An entity that issues digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "Which port is commonly used for secure HTTPS communication?",
+      "options": [
+        "80",
+        "443",
+        "22",
+        "25"
+      ],
+      "correct": 1,
+      "description": "Correct answer: 443.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "What is a self-signed certificate in SSL/TLS?",
+      "options": [
+        "A certificate without a private key",
+        "A certificate signed by the server itself",
+        "A certificate with weak encryption",
+        "A certificate used for client authentication only"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A certificate signed by the server itself.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 71,
+      "question": "Which key exchange method is commonly used in SSL/TLS protocols?",
+      "options": [
+        "RSA",
+        "AES",
+        "HMAC",
+        "SHA"
+      ],
+      "correct": 0,
+      "description": "Correct answer: RSA.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 72,
+      "question": "What is the purpose of the TLS handshake process?",
+      "options": [
+        "Establish a secure connection",
+        "Exchange encryption keys",
+        "Authenticate the server and client",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 73,
+      "question": "Which version of SSL/TLS is considered insecure and should be avoided?",
+      "options": [
+        "SSL 2.0",
+        "SSL 3.0",
+        "TLS 1.0",
+        "TLS 1.2"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SSL 3.0.",
+      "difficulty": "Easy",
+      "tags": [
+        "SSL/TLS"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "What is the main purpose of PGP (Pretty Good Privacy)?",
+      "options": [
+        "Secure email communication",
+        "Web browsing security",
+        "File system encryption",
+        "Database protection"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Secure email communication.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "Who developed PGP?",
+      "options": [
+        "Microsoft",
+        "Apple",
+        "Phil Zimmermann",
+        "IBM"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Phil Zimmermann.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "What type of encryption does PGP primarily use?",
+      "options": [
+        "Symmetric-key encryption",
+        "Asymmetric-key encryption",
+        "Hash-based encryption",
+        "Both A and B"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Both A and B.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "What is a public keyring in PGP used for?",
+      "options": [
+        "Encrypting messages",
+        "Decrypting messages",
+        "Authenticating users",
+        "None of the above"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Encrypting messages.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 78,
+      "question": "Which part of the PGP key pair is kept secret?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Passphrase",
+        "User ID"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "What is the purpose of a PGP key fingerprint?",
+      "options": [
+        "Authenticate the user",
+        "Verify the integrity of a key",
+        "Encrypt data",
+        "Generate a new key pair"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Verify the integrity of a key.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 80,
+      "question": "Which standard is commonly used for securing email communication with digital signatures and encryption?",
+      "options": [
+        "PGP",
+        "S/MIME (Secure/Multipurpose Internet Mail Extensions)",
+        "TLS",
+        "SSH"
+      ],
+      "correct": 1,
+      "description": "Correct answer: S/MIME (Secure/Multipurpose Internet Mail Extensions).",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 81,
+      "question": "What is the role of a certificate authority in S/MIME?",
+      "options": [
+        "Authenticate users",
+        "Verify public keys",
+        "Issue digital certificates",
+        "All of the above"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Issue digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 82,
+      "question": "Which encryption algorithm is commonly used in S/MIME for securing email content?",
+      "options": [
+        "AES",
+        "RSA",
+        "SHA",
+        "HMAC"
+      ],
+      "correct": 0,
+      "description": "Correct answer: AES.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    },
+    {
+      "id": 83,
+      "question": "What is the purpose of an S/MIME certificate in email communication?",
+      "options": [
+        "Encrypt email content",
+        "Authenticate the sender",
+        "Provide a digital signature",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "PGP (Pretty Good Privacy) and S/MIME"
+      ]
+    }
+  ]
+}

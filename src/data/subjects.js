@@ -34,17 +34,6 @@ export const subjects = [
     topicIndexFile: "/data/pki/topics/index.json"
   },
   {
-    slug: "cryptography",
-    name: "Cryptography",
-    shortName: "Crypto",
-    icon: Binary,
-    accent: "rose",
-    description: "Symmetric crypto, hashes, signatures, and key exchange.",
-    stages: buildStages("cryptography"),
-    topicsPath: "/subjects/cryptography/topics",
-    topicIndexFile: "/data/cryptography/topics/index.json"
-  },
-  {
     slug: "ndc",
     name: "NDC",
     shortName: "NDC",

@@ -1,9 +1,39 @@
 {
   "sets": [
-    { "setNumber": "Set 01", "topic": "PKI Set 1", "slug": "set01-pki" },
-    { "setNumber": "Set 02", "topic": "Revocation", "slug": "set02-revocation" },
-    { "setNumber": "Set 03", "topic": "CDAC PKI & Biometric Q11-Q20", "slug": "set03-cdac-pki-biometric" },
-    { "setNumber": "Set 04", "topic": "CDAC PKI & Biometric Q21-Q30", "slug": "set04-cdac-pki-biometric" },
-    { "setNumber": "Set 05", "topic": "CDAC PKI & Biometric Q31-Q40", "slug": "set05-cdac-pki-biometric" }
+    {
+      "setNumber": "Set 1.1",
+      "topic": "PKI Set 1.1 (83 MCQ)",
+      "slug": "set01-1-pki"
+    },
+    {
+      "setNumber": "Set 1.2",
+      "topic": "PKI Set 1.2 (83 MCQ)",
+      "slug": "set01-2-pki"
+    },
+    {
+      "setNumber": "Set 1.3",
+      "topic": "PKI Set 1.3 (83 MCQ)",
+      "slug": "set01-3-pki"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "Revocation",
+      "slug": "set02-revocation"
+    },
+    {
+      "setNumber": "Set 03",
+      "topic": "CDAC PKI & Biometric Q11-Q20",
+      "slug": "set03-cdac-pki-biometric"
+    },
+    {
+      "setNumber": "Set 04",
+      "topic": "CDAC PKI & Biometric Q21-Q30",
+      "slug": "set04-cdac-pki-biometric"
+    },
+    {
+      "setNumber": "Set 05",
+      "topic": "CDAC PKI & Biometric Q31-Q40",
+      "slug": "set05-cdac-pki-biometric"
+    }
   ]
 }

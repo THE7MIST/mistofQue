@@ -1,0 +1,1338 @@
+{
+  "version": "3",
+  "title": "PKI Set 1.2",
+  "subject": "PKI",
+  "stage": "Topic Wise MCQ",
+  "topic": "PKI Set 1.2",
+  "durationMinutes": 83,
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary challenge in key distribution for symmetric key cryptography?",
+      "options": [
+        "Ensuring key confidentiality",
+        "Preventing key loss",
+        "Securely sharing keys between parties",
+        "Generating random keys"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Securely sharing keys between parties.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Which key exchange protocol is commonly used to establish a secure communication channel over an insecure network?",
+      "options": [
+        "Diffie-Hellman",
+        "RSA",
+        "ECC",
+        "SHA-256"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Diffie-Hellman.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "In public-key cryptography, how is the public key shared with others?",
+      "options": [
+        "Through secure key exchange",
+        "By publishing it openly",
+        "Through a digital signature",
+        "Using a Diffie-Hellman exchange"
+      ],
+      "correct": 1,
+      "description": "Correct answer: By publishing it openly.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "What is a digital certificate used for in the context of key management?",
+      "options": [
+        "To encrypt messages",
+        "To prove identity",
+        "To generate random keys",
+        "To perform hash functions"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To prove identity.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "What does the term \"key escrow\" refer to in key management?",
+      "options": [
+        "Storing keys in a secure location",
+        "Distributing keys to multiple parties",
+        "Backup of keys with a trusted third party",
+        "Random key generation"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Backup of keys with a trusted third party.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of a nonce in key generation?",
+      "options": [
+        "Ensuring key confidentiality",
+        "Providing randomness in key generation",
+        "Verifying digital signatures",
+        "Preventing replay attacks"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Providing randomness in key generation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "What is the primary function of a cipher in the context of cryptography?",
+      "options": [
+        "To generate keys",
+        "To secure communication channels",
+        "To encrypt and decrypt messages",
+        "To create digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: To encrypt and decrypt messages.",
+      "difficulty": "Easy",
+      "tags": [
+        "Key Generation and Cipher Message"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "What is the primary purpose of the Diffie-Hellman key exchange?",
+      "options": [
+        "Data encryption",
+        "Key generation",
+        "Digital signatures",
+        "Authentication"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Key generation.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Which security aspect does Diffie-Hellman key exchange address?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "Key exchange"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Key exchange.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "In the Diffie-Hellman key exchange, what is exchanged between the parties?",
+      "options": [
+        "Private keys",
+        "Public keys",
+        "Symmetric keys",
+        "Digital signatures"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Public keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "What is the vulnerability of Diffie-Hellman key exchange to man-in-the-middle attacks?",
+      "options": [
+        "Lack of authentication",
+        "Weak encryption",
+        "Slow key generation",
+        "Limited key length"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Lack of authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Which mathematical problem forms the basis of the security of Diffie-Hellman?",
+      "options": [
+        "Prime factorization",
+        "Quadratic residues",
+        "Discrete logarithm",
+        "Elliptic curve cryptography"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Discrete logarithm.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "What is the key advantage of using Diffie-Hellman key exchange over traditional key exchange methods?",
+      "options": [
+        "Faster key generation",
+        "Simplicity",
+        "Perfect forward secrecy",
+        "Larger key length"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Perfect forward secrecy.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "In a Diffie-Hellman exchange, what is kept secret by each party?",
+      "options": [
+        "Public key",
+        "Symmetric key",
+        "Private key",
+        "Shared key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Which Diffie-Hellman variant provides resistance against quantum attacks?",
+      "options": [
+        "DHKE-512",
+        "Ephemeral DH",
+        "DH with elliptic curves",
+        "DH with large prime numbers"
+      ],
+      "correct": 2,
+      "description": "Correct answer: DH with elliptic curves.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "What is the main limitation of Diffie-Hellman key exchange?",
+      "options": [
+        "Susceptibility to brute-force attacks",
+        "Lack of key exchange",
+        "Vulnerability to quantum attacks",
+        "Dependency on prime numbers"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Vulnerability to quantum attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "In Diffie-Hellman, what role does the generator play?",
+      "options": [
+        "Encrypts data",
+        "Generates public keys",
+        "Facilitates key exchange",
+        "Authenticates parties"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Facilitates key exchange.",
+      "difficulty": "Easy",
+      "tags": [
+        "Diffie-Hellman Key Exchange"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "What is the primary purpose of the SHA algorithm?",
+      "options": [
+        "Data encryption",
+        "Key generation",
+        "Hashing",
+        "Digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Hashing.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Which version of SHA is commonly used for cryptographic applications?",
+      "options": [
+        "SHA-1",
+        "SHA-256",
+        "SHA-512",
+        "SHA-3"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SHA-256.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "What is the key characteristic of a secure hash function?",
+      "options": [
+        "Reversibility",
+        "Collision resistance",
+        "Symmetry",
+        "Variable output length"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Collision resistance.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Which of the following is a weakness of SHA-1?",
+      "options": [
+        "Fast computation",
+        "Resistance to collision attacks",
+        "Vulnerability to birthday attacks",
+        "Support for variable output length"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Vulnerability to birthday attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of the HMAC (Hash-based Message Authentication Code) function?",
+      "options": [
+        "Data encryption",
+        "Key exchange",
+        "Message authentication",
+        "Digital signatures"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Message authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "In HMAC, what role does the secret key play?",
+      "options": [
+        "Generates hash values",
+        "Verifies digital signatures",
+        "Authenticates the message",
+        "Encrypts the data"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Authenticates the message.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Which SHA variant is often used in digital signatures?",
+      "options": [
+        "SHA-1",
+        "SHA-256",
+        "SHA-512",
+        "SHA-3"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SHA-256.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "What is a rainbow table attack in the context of hash functions?",
+      "options": [
+        "Brute-force attack",
+        "Collision attack",
+        "Precomputed table attack",
+        "Man-in-the-middle attack"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Precomputed table attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Which property of SHA makes it suitable for checksum verification?",
+      "options": [
+        "Reversibility",
+        "Collision resistance",
+        "Speed",
+        "Deterministic output"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Deterministic output.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "In SHA, what is the purpose of the initialization vector (IV)?",
+      "options": [
+        "Adds entropy to the hash",
+        "Prevents birthday attacks",
+        "Strengthens collision resistance",
+        "Enhances output randomness"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Adds entropy to the hash.",
+      "difficulty": "Easy",
+      "tags": [
+        "SHA (Secure Hash Algorithm)"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "What is the primary purpose of HMAC?",
+      "options": [
+        "Data encryption",
+        "Key generation",
+        "Hashing",
+        "Message authentication"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Message authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "What distinguishes HMAC from traditional hash functions?",
+      "options": [
+        "Variable output length",
+        "Use of a secret key",
+        "Collision resistance",
+        "Reversibility"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Use of a secret key.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "In HMAC, what role does the hash function play?",
+      "options": [
+        "Generates the secret key",
+        "Verifies the message",
+        "Computes the hash",
+        "Encrypts the data"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Computes the hash.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Why is the use of a secret key important in HMAC?",
+      "options": [
+        "Ensures variable output length",
+        "Enhances collision resistance",
+        "Provides authentication",
+        "Supports reversible hashing"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Provides authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "What vulnerability does HMAC address in comparison to traditional hash functions?",
+      "options": [
+        "Birthday attacks",
+        "Man-in-the-middle attacks",
+        "Length extension attacks",
+        "Collision attacks"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Length extension attacks.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "In HMAC, how is the secret key shared between the communicating parties?",
+      "options": [
+        "It is transmitted in the clear",
+        "It is generated by the hash function",
+        "It is negotiated and agreed upon",
+        "It is embedded in the public key"
+      ],
+      "correct": 2,
+      "description": "Correct answer: It is negotiated and agreed upon.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of the inner and outer padding in HMAC?",
+      "options": [
+        "Adds randomness to the hash",
+        "Mitigates birthday attacks",
+        "Achieves variable output length",
+        "Ensures a consistent block size"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Ensures a consistent block size.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Which property of HMAC ensures that changing a single bit in the input will produce a substantially different output?",
+      "options": [
+        "Collision resistance",
+        "Avalanche effect",
+        "Deterministic output",
+        "Variable output length"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Avalanche effect.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "In HMAC, what is the consequence of using a weak hash function?",
+      "options": [
+        "Loss of confidentiality",
+        "Reduced collision resistance",
+        "Weakened authentication",
+        "Ineffective key generation"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Weakened authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "How does HMAC provide security against brute-force attacks?",
+      "options": [
+        "It uses a long initialization vector",
+        "It requires a strong secret key",
+        "It employs variable output length",
+        "It uses a reversible hashing algorithm"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It requires a strong secret key.",
+      "difficulty": "Easy",
+      "tags": [
+        "HMAC (Hash-based Message Authentication Code)"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "What is a brute-force attack against encryption?",
+      "options": [
+        "Exploiting implementation flaws",
+        "Attempting all possible keys",
+        "Intercepting communication",
+        "Modifying ciphertext"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Attempting all possible keys.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "In a man-in-the-middle attack, what does the attacker intercept?",
+      "options": [
+        "Plaintext",
+        "Ciphertext",
+        "Encryption key",
+        "Initialization vector"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Ciphertext.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "What is the primary objective of a chosen plaintext attack?",
+      "options": [
+        "Interception of ciphertext",
+        "Recovery of the encryption key",
+        "Modification of ciphertext",
+        "Interception of plaintext"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Recovery of the encryption key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "What is the difference between a passive and an active attack?",
+      "options": [
+        "Active attacks modify data, while passive attacks only observe",
+        "Passive attacks use brute force, while active attacks use social engineering",
+        "Active attacks are faster than passive attacks",
+        "Passive attacks are more dangerous than active attacks"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Active attacks modify data, while passive attacks only observe.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "What vulnerability does a chosen ciphertext attack exploit?",
+      "options": [
+        "Weakness in the encryption algorithm",
+        "Lack of authentication",
+        "Manipulation of the key exchange process",
+        "Inability to handle large amounts of data"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Lack of authentication.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "What is the primary purpose of a birthday attack against encryption?",
+      "options": [
+        "Recovering the encryption key",
+        "Finding collisions in hash functions",
+        "Intercepting plaintext",
+        "Modifying ciphertext"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Finding collisions in hash functions.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Which type of attack targets the random number generation in cryptographic protocols?",
+      "options": [
+        "Birthday attack",
+        "Replay attack",
+        "Side-channel attack",
+        "Padding oracle attack"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Side-channel attack.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "What is the objective of a chosen-plaintext attack?",
+      "options": [
+        "Intercepting ciphertext",
+        "Recovery of the encryption key",
+        "Modification of ciphertext",
+        "Interception of plaintext"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Interception of plaintext.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "How does a rainbow table attack work against encrypted passwords?",
+      "options": [
+        "Exploits weak key exchange",
+        "Targets the encryption algorithm",
+        "Precomputes hash values for possible passwords",
+        "Modifies the ciphertext directly"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Precomputes hash values for possible passwords.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "What is the primary defense against a brute-force attack on encryption?",
+      "options": [
+        "Use of strong encryption algorithms",
+        "Implementation of firewall rules",
+        "Implementation of intrusion detection systems",
+        "Use of long and complex passwords"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Use of strong encryption algorithms.",
+      "difficulty": "Easy",
+      "tags": [
+        "Attacks Against Encryption"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "What is a digital signature?",
+      "options": [
+        "A scanned image of a handwritten signature",
+        "A unique identifier for a digital document",
+        "A cryptographic technique to verify the authenticity of a digital message",
+        "A file attachment in an email"
+      ],
+      "correct": 2,
+      "description": "Correct answer: A cryptographic technique to verify the authenticity of a digital message.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "Which key is used to create a digital signature?",
+      "options": [
+        "Public key",
+        "Private key",
+        "Symmetric key",
+        "Session key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "What does a digital signature provide?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Authentication",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: All of the above.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "In a digital signature, what is being signed?",
+      "options": [
+        "The entire document",
+        "A hash of the document",
+        "The sender's public key",
+        "The recipient's public key"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A hash of the document.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "What role does hashing play in digital signatures?",
+      "options": [
+        "Ensures confidentiality",
+        "Generates the public key",
+        "Verifies the integrity of the message",
+        "Encrypts the message"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Verifies the integrity of the message.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "Which algorithm is commonly used for digital signatures?",
+      "options": [
+        "MD5",
+        "SHA-256",
+        "AES",
+        "DES"
+      ],
+      "correct": 1,
+      "description": "Correct answer: SHA-256.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "How does a digital signature differ from a handwritten signature?",
+      "options": [
+        "Digital signatures are more secure",
+        "Digital signatures can be easily copied",
+        "Handwritten signatures use encryption",
+        "Handwritten signatures require a pen and paper"
+      ],
+      "correct": 0,
+      "description": "Correct answer: Digital signatures are more secure.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "What is the purpose of timestamping in digital signatures?",
+      "options": [
+        "To indicate the time the document was created",
+        "To prevent unauthorized access",
+        "To verify the expiration date of the signature",
+        "To provide additional encryption"
+      ],
+      "correct": 0,
+      "description": "Correct answer: To indicate the time the document was created.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "Can a digital signature be revoked?",
+      "options": [
+        "Yes, through a key exchange",
+        "No, once created, it cannot be revoked",
+        "Yes, through a Certificate Revocation List (CRL)",
+        "No, digital signatures are permanent"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Yes, through a Certificate Revocation List (CRL).",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Signature"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "What is a digital certificate?",
+      "options": [
+        "A file format for storing digital images",
+        "A cryptographic key for encryption",
+        "A digital identity that includes a public key and information about the key owner",
+        "A type of electronic signature"
+      ],
+      "correct": 2,
+      "description": "Correct answer: A digital identity that includes a public key and information about the key owner.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "What is the purpose of a digital certificate?",
+      "options": [
+        "To encrypt data",
+        "To verify the authenticity of a message or user",
+        "To compress files",
+        "To create digital signatures"
+      ],
+      "correct": 1,
+      "description": "Correct answer: To verify the authenticity of a message or user.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "Which organization issues digital certificates?",
+      "options": [
+        "Internet Service Providers (ISPs)",
+        "Certification Authority (CA)",
+        "Internet Corporation for Assigned Names and Numbers (ICANN)",
+        "National Security Agency (NSA)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Certification Authority (CA).",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "What information does a digital certificate typically contain?",
+      "options": [
+        "Only the public key",
+        "Only the private key",
+        "Public key, owner's name, expiration date, and the digital signature of the CA",
+        "Only the owner's name"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Public key, owner's name, expiration date, and the digital signature of the CA.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "How is a digital certificate linked to a public key?",
+      "options": [
+        "By encrypting the public key",
+        "By hashing the public key",
+        "By digitally signing the public key with the CA's private key",
+        "By embedding the public key in the certificate"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By digitally signing the public key with the CA's private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 62,
+      "question": "What is the role of the Registration Authority (RA) in the issuance of digital certificates?",
+      "options": [
+        "Approving digital certificates",
+        "Verifying the identity of the certificate owner",
+        "Issuing digital certificates",
+        "Managing Certificate Revocation Lists (CRLs)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Verifying the identity of the certificate owner.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 63,
+      "question": "Can a digital certificate expire?",
+      "options": [
+        "No, it is valid indefinitely",
+        "Yes, but only if manually revoked",
+        "Yes, they have a validity period",
+        "No, it expires only when the private key is compromised"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Yes, they have a validity period.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 64,
+      "question": "How is the integrity of a digital certificate maintained?",
+      "options": [
+        "By encrypting the entire certificate",
+        "By hashing the certificate and signing it with the CA's private key",
+        "By including a timestamp in the certificate",
+        "By using a digital watermark"
+      ],
+      "correct": 1,
+      "description": "Correct answer: By hashing the certificate and signing it with the CA's private key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 65,
+      "question": "What is the Public Key Infrastructure (PKI)?",
+      "options": [
+        "A system for managing public keys and digital certificates",
+        "A type of encryption algorithm",
+        "A digital signature standard",
+        "A secure communication protocol"
+      ],
+      "correct": 0,
+      "description": "Correct answer: A system for managing public keys and digital certificates.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 66,
+      "question": "How can a user verify the authenticity of a digital certificate?",
+      "options": [
+        "By checking the owner's email address",
+        "By verifying the certificate's expiration date",
+        "By validating the digital signature with the CA's public key",
+        "By contacting the Internet Service Provider (ISP)"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By validating the digital signature with the CA's public key.",
+      "difficulty": "Easy",
+      "tags": [
+        "Digital Certificate"
+      ]
+    },
+    {
+      "id": 67,
+      "question": "What is a Trust Model?",
+      "options": [
+        "A model of trust in interpersonal relationships",
+        "A framework for establishing and managing trust in a digital environment",
+        "A mathematical algorithm for encryption",
+        "A type of digital certificate"
+      ],
+      "correct": 1,
+      "description": "Correct answer: A framework for establishing and managing trust in a digital environment.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 68,
+      "question": "In a Trust Model, what is the role of a Trust Anchor?",
+      "options": [
+        "A secure encryption key",
+        "The root of trust in the model",
+        "A type of digital signature",
+        "The person who manages the trust relationships"
+      ],
+      "correct": 1,
+      "description": "Correct answer: The root of trust in the model.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 69,
+      "question": "What are the common components of a Trust Model?",
+      "options": [
+        "Only Trust Anchors",
+        "Trust Anchors, Certificate Authorities (CAs), and Registration Authorities (RAs)",
+        "Only Certificate Authorities (CAs)",
+        "Trust Anchors and digital signatures"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Trust Anchors, Certificate Authorities (CAs), and Registration Authorities (RAs).",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 70,
+      "question": "How does a Trust Model establish trust in a digital environment?",
+      "options": [
+        "By using biometric authentication",
+        "By relying on physical tokens",
+        "By creating a hierarchical structure of trust relationships",
+        "By encrypting all communication"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By creating a hierarchical structure of trust relationships.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 71,
+      "question": "What is the significance of the Chain of Trust in a Trust Model?",
+      "options": [
+        "It represents a physical chain worn by trusted individuals",
+        "It is a sequence of trust relationships from a Trust Anchor to an end entity",
+        "It is a type of digital certificate",
+        "It ensures secure communication between devices"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It is a sequence of trust relationships from a Trust Anchor to an end entity.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 72,
+      "question": "In a Web of Trust model, who establishes trust relationships?",
+      "options": [
+        "Certificate Authorities (CAs)",
+        "Registration Authorities (RAs)",
+        "End users themselves",
+        "Trust Anchors"
+      ],
+      "correct": 2,
+      "description": "Correct answer: End users themselves.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 73,
+      "question": "How is trust propagated in a Hierarchical Trust Model?",
+      "options": [
+        "Through peer-to-peer validation",
+        "Through a centralized authority establishing trust at different levels",
+        "Through anonymous validation",
+        "Through automatic trust assignment"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Through a centralized authority establishing trust at different levels.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 74,
+      "question": "What is the advantage of a Distributed Trust Model?",
+      "options": [
+        "It requires fewer Trust Anchors",
+        "It is more resilient to single points of failure",
+        "It eliminates the need for digital certificates",
+        "It speeds up the trust establishment process"
+      ],
+      "correct": 1,
+      "description": "Correct answer: It is more resilient to single points of failure.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 75,
+      "question": "In a Circle of Trust model, what is the key principle?",
+      "options": [
+        "Trust is established in a linear fashion",
+        "Trust is established in a circular manner between entities",
+        "Trust is established through biometric authentication",
+        "Trust is established through physical tokens"
+      ],
+      "correct": 1,
+      "description": "Correct answer: Trust is established in a circular manner between entities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 76,
+      "question": "How does a Federated Trust Model work?",
+      "options": [
+        "By centralizing trust relationships",
+        "By delegating trust responsibilities to multiple independent organizations",
+        "By using only self-signed certificates",
+        "By relying on a single Certificate Authority (CA)"
+      ],
+      "correct": 1,
+      "description": "Correct answer: By delegating trust responsibilities to multiple independent organizations.",
+      "difficulty": "Easy",
+      "tags": [
+        "Trust Model"
+      ]
+    },
+    {
+      "id": 77,
+      "question": "What is the role of a Certification Authority (CA)?",
+      "options": [
+        "To issue digital certificates and verify the identity of the certificate owner",
+        "To encrypt communication between devices",
+        "To manage public key infrastructure",
+        "To authenticate users based on biometric data"
+      ],
+      "correct": 0,
+      "description": "Correct answer: To issue digital certificates and verify the identity of the certificate owner.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 78,
+      "question": "How does a CA verify the identity of a certificate applicant?",
+      "options": [
+        "By using a symmetric key",
+        "By consulting a Registration Authority (RA)",
+        "By checking government-issued identification",
+        "By encrypting the applicant's information"
+      ],
+      "correct": 2,
+      "description": "Correct answer: By checking government-issued identification.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 79,
+      "question": "Can there be multiple CAs in a public key infrastructure?",
+      "options": [
+        "No, there is only one CA in any infrastructure",
+        "Yes, but they must share a single private key",
+        "Yes, multiple CAs can exist independently",
+        "No, CAs are specific to individual users"
+      ],
+      "correct": 2,
+      "description": "Correct answer: Yes, multiple CAs can exist independently.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 80,
+      "question": "What is the purpose of a Certificate Signing Request (CSR)?",
+      "options": [
+        "To request a new digital certificate from the CA",
+        "To revoke an existing digital certificate",
+        "To request a private key from the CA",
+        "To update the digital certificate information"
+      ],
+      "correct": 0,
+      "description": "Correct answer: To request a new digital certificate from the CA.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 81,
+      "question": "How is the CA's public key distributed?",
+      "options": [
+        "By including it in every digital certificate",
+        "By broadcasting it on a public server",
+        "By sharing it with other CAs",
+        "By encrypting it with the CA's private key"
+      ],
+      "correct": 0,
+      "description": "Correct answer: By including it in every digital certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 82,
+      "question": "What is a Root Certificate?",
+      "options": [
+        "The certificate issued by the end entity",
+        "The top-level certificate in a CA hierarchy",
+        "The public key of a CA",
+        "A self-signed certificate"
+      ],
+      "correct": 3,
+      "description": "Correct answer: A self-signed certificate.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    },
+    {
+      "id": 83,
+      "question": "How often does a CA issue a Certificate Revocation List (CRL)?",
+      "options": [
+        "Only when a digital certificate expires",
+        "Daily",
+        "Whenever there is a change in the CA's public key",
+        "Only when a certificate is revoked before expiration"
+      ],
+      "correct": 3,
+      "description": "Correct answer: Only when a certificate is revoked before expiration.",
+      "difficulty": "Easy",
+      "tags": [
+        "Certification Authority (CA)"
+      ]
+    }
+  ]
+}
