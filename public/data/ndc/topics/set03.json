@@ -1,0 +1,690 @@
+{
+  "version": "1",
+  "title": "NDC Set 3",
+  "subject": "NDC",
+  "stage": "Topic Wise MCQ",
+  "topic": "Network Defense Core Questions",
+  "durationMinutes": 40,
+  "questions": [
+    {
+      "id": 1,
+      "question": "In OpenVPN, the option _______ is used to enable compression on the VPN Link.",
+      "options": [
+        "comp-rar",
+        "comp-zip",
+        "comp-lzo",
+        "comp-7z"
+      ],
+      "correct": 2,
+      "description": "`comp-lzo` enables LZO compression in older OpenVPN versions.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "The enterprise administrator has seen an increase in the number of ping flood attacks on the web server in the DMZ. How can the administrator mitigate the attacks and prevent the web server from crashing?",
+      "options": [
+        "Block ICMP Echo 8 packets on the external firewall",
+        "Block TCP 53 packets on the external firewall",
+        "Block Telnet 23 packets on the external firewall",
+        "Block ICMP Echo 15 packets on the external firewall"
+      ],
+      "correct": 0,
+      "description": "Ping flood attacks use ICMP Echo Request packets, which are ICMP Type 8.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Assault on system security that derives from an intelligent threat.",
+      "options": [
+        "Exploit",
+        "Attack",
+        "ToE",
+        "Vulnerability"
+      ],
+      "correct": 1,
+      "description": "An intelligent threat attempting to compromise system security is an attack.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Which of the following best describes an attack that altered the contents of two critical files?",
+      "options": [
+        "Integrity",
+        "Confidentiality",
+        "Availability",
+        "Authentication"
+      ],
+      "correct": 0,
+      "description": "Changing file contents violates integrity.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Port # 137 is related with:",
+      "options": [
+        "RPC Endpoint mapping",
+        "NETBIOS Name Service",
+        "NETBIOS datagram service",
+        "SMB"
+      ],
+      "correct": 1,
+      "description": "TCP/UDP port 137 is used by NetBIOS Name Service.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "In iptables, the RAW table consists of ________ built-in chains:",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correct": 0,
+      "description": "The RAW table has two built-in chains: PREROUTING and OUTPUT.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "On a linux machine, all of the connection tracking is done by special framework within the kernel called_____________.",
+      "options": [
+        "filtertrack",
+        "statetrack",
+        "ctrack",
+        "conntrack"
+      ],
+      "correct": 3,
+      "description": "Linux connection tracking is handled by conntrack.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "In iptables, the MANGLE table consists of ________ built-in chains:",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correct": 3,
+      "description": "The MANGLE table has five built-in chains.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "In iptables, the __________ table is responsible for the alteration of quality of service bits in the TCP header",
+      "options": [
+        "FILTER",
+        "NAT",
+        "MANGLE",
+        "RAW"
+      ],
+      "correct": 2,
+      "description": "The MANGLE table is used for specialized packet alteration such as QoS/TOS/TTL marking.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "In iptables, the POSTROUTING chain in the NAT table is used for __________",
+      "options": [
+        "DNAT",
+        "SNAT",
+        "Switching",
+        "Bridging"
+      ],
+      "correct": 1,
+      "description": "POSTROUTING in the NAT table is mainly used for source NAT.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "In iptables, the PREROUTING chain in the NAT table is used for __________",
+      "options": [
+        "DNAT",
+        "SNAT",
+        "Switching",
+        "Bridging"
+      ],
+      "correct": 0,
+      "description": "PREROUTING in the NAT table is mainly used for destination NAT.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "A _________ allows a host on the outside to connect to a host on the inside.",
+      "options": [
+        "DNAT",
+        "SNAT",
+        "Switching",
+        "Bridging"
+      ],
+      "correct": 0,
+      "description": "DNAT rewrites the destination address and allows outside hosts to reach internal hosts.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "_________ allows a host on the inside of the NAT, in an RFC 1918 IP address space, to initiate a connection to a host on the outside of the NAT",
+      "options": [
+        "DNAT",
+        "SNAT",
+        "Switching",
+        "Bridging"
+      ],
+      "correct": 1,
+      "description": "SNAT rewrites the source address so inside private hosts can communicate outside.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "In a _________, the destination IP address is maintained and the source IP address is changed.",
+      "options": [
+        "DNAT",
+        "SNAT",
+        "Switching",
+        "Bridging"
+      ],
+      "correct": 1,
+      "description": "SNAT keeps the destination address and changes the source address.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Netfilter is a ______________Module",
+      "options": [
+        "userspace",
+        "KernelSpace",
+        "applicationspace",
+        "linkstate"
+      ],
+      "correct": 1,
+      "description": "Netfilter is part of the Linux kernel packet processing framework.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "The Linux kernel's network packet processing subsystem is called ________________",
+      "options": [
+        "iptables",
+        "netfilter",
+        "chroot",
+        "nattable"
+      ],
+      "correct": 1,
+      "description": "Netfilter is the Linux kernel network packet processing subsystem.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "A stateful inspection firewall maintains a _________ table that is constantly updated based on the full inspection of communication flow through the firewall.",
+      "options": [
+        "NAT",
+        "state",
+        "routing",
+        "connection"
+      ],
+      "correct": 1,
+      "description": "Stateful inspection firewalls maintain a state table for active traffic flows.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "In an SPI firewall, the inspection engine operates at the __________ layer.",
+      "options": [
+        "application",
+        "session",
+        "network",
+        "datalink"
+      ],
+      "correct": 2,
+      "description": "Stateful packet inspection primarily evaluates Layer 3/4 packet and connection state; from these options, Network is the best answer.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "To see the TCP ephemeral port range in Windows:",
+      "options": [
+        "netshow eth0 ipv4 show dynamicport tcp",
+        "netshow int ipv4 show dynamicport tcp",
+        "netsh eth0 ipv4 show dynamicport tcp",
+        "netsh int ipv4 show dynamicport tcp"
+      ],
+      "correct": 3,
+      "description": "The Windows command is `netsh int ipv4 show dynamicport tcp`.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "To see the ephemeral port range in Linux:",
+      "options": [
+        "show eport",
+        "cat /etc/sys/net/ipv4/ip_local_port_range",
+        "show lport",
+        "cat /proc/sys/net/ipv4/ip_local_port_range"
+      ],
+      "correct": 3,
+      "description": "Linux exposes the ephemeral port range at `/proc/sys/net/ipv4/ip_local_port_range`.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "A ______________ is also known as sacrificed host.",
+      "options": [
+        "Gateway",
+        "Proxy",
+        "Bastion Host",
+        "Firewall"
+      ],
+      "correct": 2,
+      "description": "A bastion host is a hardened host exposed to attack and is also called a sacrificed host.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "A ______________ is a system that has been hardened to resist attack, and which is installed on a network in such a way that it is expected to potentially come under attack.",
+      "options": [
+        "Gateway",
+        "Proxy",
+        "Bastion Host",
+        "Firewall"
+      ],
+      "correct": 2,
+      "description": "A hardened exposed system designed to resist attack is a bastion host.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "A _____________combines a packet-filtering router with an application gateway located on the protected subnet side of the router.",
+      "options": [
+        "Screened host firewall",
+        "Intrusion Detection Systems",
+        "Intrusion Prevention Systems",
+        "Anti Malware System"
+      ],
+      "correct": 0,
+      "description": "A screened host firewall combines packet filtering with an application gateway.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Application proxy runs at layer _______",
+      "options": [
+        "7",
+        "1",
+        "4",
+        "3"
+      ],
+      "correct": 0,
+      "description": "An application proxy operates at Layer 7, the application layer.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Which of the following command is used to view and modify the ACL of a file in Windows?",
+      "options": [
+        "attrib",
+        "winacl",
+        "cacls",
+        "setacl"
+      ],
+      "correct": 2,
+      "description": "`cacls` is the legacy Windows command for viewing and modifying ACLs.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "An ____________ is a table/database that tells an operating system which access rights each user has to a particular system object, such as a file directory or individual file.",
+      "options": [
+        "DMZ",
+        "ACL",
+        "ACE",
+        "TLS"
+      ],
+      "correct": 1,
+      "description": "An ACL, or Access Control List, stores permissions for users and objects.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "___________ is a sub-net located neither inside the internal network nor outside as part of the internet, where access is controlled, but not prevented",
+      "options": [
+        "Zombie",
+        "Host",
+        "DMZ",
+        "Firewall"
+      ],
+      "correct": 2,
+      "description": "A DMZ is a controlled subnet between internal and external networks.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "A ____________ is a device or set of devices configured to permit, deny, encrypt, decrypt, or proxy all computer traffic between different security domains based upon a set of rules and other criteria.",
+      "options": [
+        "Zombie",
+        "Host",
+        "Stub",
+        "Firewall"
+      ],
+      "correct": 3,
+      "description": "A firewall controls traffic between security domains according to rules.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "A _________________ is a computer connected to the Internet that has been compromised by a hacker, computer virus or trojan horse and can be used to perform malicious tasks of one sort or another under remote direction.",
+      "options": [
+        "Zombie",
+        "Host",
+        "Stub",
+        "Fork"
+      ],
+      "correct": 0,
+      "description": "A compromised remotely controlled computer is a zombie.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Cold boot attack is an attack on ____________",
+      "options": [
+        "Cryptographic Systems",
+        "FTP Servers",
+        "HTTP Servers",
+        "Authentication Systems"
+      ],
+      "correct": 0,
+      "description": "Cold boot attacks recover sensitive cryptographic material from RAM.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "The act of locating and possibly exploiting connections to wireless LANs while driving around a city or elsewhere is known as:",
+      "options": [
+        "Phishing",
+        "War Driving",
+        "Vishing",
+        "Dumpster Diving"
+      ],
+      "correct": 1,
+      "description": "Searching for wireless networks while moving is wardriving.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Practice of sifting through commercial or residential trash to find items that have been discarded by their owners, but which may be useful to the attacker is known as:",
+      "options": [
+        "Phishing",
+        "Smishing",
+        "Vishing",
+        "Dumpster Diving"
+      ],
+      "correct": 3,
+      "description": "Searching discarded trash for useful information is dumpster diving.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "___________ is the criminal practice of using social engineering and Voice over IP (VoIP) to gain access to private personal and financial information from the public for the purpose of financial reward.",
+      "options": [
+        "Phishing",
+        "Smishing",
+        "Vishing",
+        "All of the above"
+      ],
+      "correct": 2,
+      "description": "Voice-based phishing over phone or VoIP is vishing.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "The additional element used in a DRDoS attack is known as ________",
+      "options": [
+        "Refractors",
+        "Reflectors",
+        "Sniffers",
+        "Analyzers"
+      ],
+      "correct": 1,
+      "description": "Distributed reflected DoS attacks use reflectors.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Flooding the bandwidth of the victim's network so that he cannot use the internet or other services is an example of ____________",
+      "options": [
+        "Buffer Overflow",
+        "Spoofing",
+        "Sniffing",
+        "DoS"
+      ],
+      "correct": 3,
+      "description": "Flooding bandwidth to deny service is a DoS attack.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "SSL is replaced by ________",
+      "options": [
+        "HTTPS",
+        "SSH",
+        "TLS",
+        "IPv6"
+      ],
+      "correct": 2,
+      "description": "TLS is the successor to SSL.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Any potential danger to information or systems is known as",
+      "options": [
+        "Vulnerability",
+        "Confidentiality",
+        "Threat",
+        "Availability"
+      ],
+      "correct": 2,
+      "description": "A threat is a potential danger to information or systems.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Weakness in a mechanism that can threaten the Confidentiality, Integrity, or Availability of an asset is known as _______",
+      "options": [
+        "Vulnerability",
+        "Confidentiality",
+        "Integrity",
+        "Availability"
+      ],
+      "correct": 0,
+      "description": "A vulnerability is a weakness that can be exploited.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "The concept of protecting data from modification or deletion by unauthorized parties, and ensuring that when authorized people make changes that should not have been made, the damage can be undone is known as ______",
+      "options": [
+        "Authentication",
+        "Confidentiality",
+        "Integrity",
+        "Availability"
+      ],
+      "correct": 2,
+      "description": "Integrity protects data from unauthorized or improper modification.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Which of the following is an IPSec Mode?",
+      "options": [
+        "Encryption Mode",
+        "Encapsulation Mode",
+        "Cyclic Chaining Mode",
+        "Transport Mode"
+      ],
+      "correct": 3,
+      "description": "IPsec supports Transport Mode and Tunnel Mode; Transport Mode is listed here.",
+      "difficulty": "Medium",
+      "tags": [
+        "NDC",
+        "Network Defense Core"
+      ]
+    }
+  ]
+}

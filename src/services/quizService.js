@@ -9,7 +9,7 @@ function resolvePublicPath(file) {
 
 export async function loadQuizFile(file) {
   const url = resolvePublicPath(file);
-  const response = await fetch(url, { cache: "force-cache" });
+  const response = await fetch(url, { cache: "no-cache" });
   if (!response.ok) {
     throw new Error(`Could not load quiz data from ${url}`);
   }
@@ -18,7 +18,7 @@ export async function loadQuizFile(file) {
 
 export async function loadTopicIndex(file) {
   const url = resolvePublicPath(file);
-  const response = await fetch(url, { cache: "force-cache" });
+  const response = await fetch(url, { cache: "no-cache" });
   if (!response.ok) {
     throw new Error(`Could not load topic index from ${url}`);
   }
