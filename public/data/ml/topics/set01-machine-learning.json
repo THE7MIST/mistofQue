@@ -1,0 +1,276 @@
+{
+  "version": "1",
+  "title": "Set 01 - ML Basics, Regression, Validation, Clustering, Trees & Neural Networks",
+  "subject": "ML",
+  "stage": "Topic Wise MCQ",
+  "topic": "ML Basics, Regression, Validation, Clustering, Trees & Neural Networks",
+  "durationMinutes": 25,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Point out the wrong statement:",
+      "options": [
+        "ML algorithms do not understand context.",
+        "Machine learning is programming computers to optimize a performance criterion using example data or past experience.",
+        "With unsupervised learning, it is easy to handle real-world scenarios.",
+        "None of the above."
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. With unsupervised learning, it is easy to handle real-world scenarios.",
+      "difficulty": "Medium",
+      "tags": ["ML", "Machine Learning", "Foundations"]
+    },
+    {
+      "id": 2,
+      "question": "Which regression regularization method works well in case of high dimensionality and multicollinearity among the variables in the data set?",
+      "options": ["Lasso regression", "Ridge regression", "Elastic Net regression", "All of the above"],
+      "correct": 3,
+      "description": "Correct answer: D. All of the above",
+      "difficulty": "Medium",
+      "tags": ["ML", "Regression", "Regularization"]
+    },
+    {
+      "id": 3,
+      "question": "How do you select the right regression model?",
+      "options": [
+        "Data exploration should be done before selecting the right model, such as identifying the appropriate model.",
+        "Cross-validation is the best way to evaluate models used for prediction.",
+        "Check whether the variables are discrete or continuous.",
+        "All of the above"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. All of the above",
+      "difficulty": "Medium",
+      "tags": ["ML", "Regression", "Model Selection"]
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is an example of reinforcement learning?",
+      "options": ["Q-Learning", "Deep Adversarial Network", "Temporal Difference (TD)", "All of the above"],
+      "correct": 3,
+      "description": "Correct answer: D. All of the above",
+      "difficulty": "Medium",
+      "tags": ["ML", "Reinforcement Learning"]
+    },
+    {
+      "id": 5,
+      "question": "If a dataset does not have a target variable available, which algorithm is best suited for such a scenario?",
+      "options": ["Semi-supervised learning", "Unsupervised learning", "Reinforcement learning", "Both B and C"],
+      "correct": 3,
+      "description": "Correct answer: D. Both B and C",
+      "difficulty": "Medium",
+      "tags": ["ML", "Unsupervised Learning", "Reinforcement Learning"]
+    },
+    {
+      "id": 6,
+      "question": "Which is not a function of supervised learning?",
+      "options": ["Classification", "Speech recognition", "Clustering of data", "Annotating strings"],
+      "correct": 2,
+      "description": "Correct answer: C. Clustering of data",
+      "difficulty": "Medium",
+      "tags": ["ML", "Supervised Learning", "Clustering"]
+    },
+    {
+      "id": 7,
+      "question": "Which is not a function of unsupervised learning?",
+      "options": [
+        "Finding hidden features in data",
+        "Finding a low-dimensional representation of data",
+        "Regression",
+        "Finding interesting directions in data"
+      ],
+      "correct": 2,
+      "description": "Correct answer: C. Regression",
+      "difficulty": "Medium",
+      "tags": ["ML", "Unsupervised Learning", "Regression"]
+    },
+    {
+      "id": 8,
+      "question": "How does cross-validation make sure your model is robust?",
+      "options": [
+        "You train the model on a different training set and the reports are then reported in aggregate.",
+        "You train the model on a different test set and the reports are then reported in aggregate.",
+        "You train the model on a different test set as well as on the training set and reports are then reported in aggregate.",
+        "Cross-validation is not used for model robustness."
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. You train the model on a different test set and the reports are then reported in aggregate.",
+      "difficulty": "Medium",
+      "tags": ["ML", "Cross Validation", "Model Evaluation"]
+    },
+    {
+      "id": 9,
+      "question": "What is bias in machine learning?",
+      "options": [
+        "Error due to the sampling of data",
+        "Error because of wrong assumptions",
+        "Error because of wrong validation",
+        "None of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Error because of wrong assumptions",
+      "difficulty": "Medium",
+      "tags": ["ML", "Bias", "Model Error"]
+    },
+    {
+      "id": 10,
+      "question": "Point out the correct statement:",
+      "options": [
+        "The bias-variance decomposition was originally formulated for least-squares regression.",
+        "OLS solution provides biased regression estimates in regression.",
+        "Larger bias tends to decrease variance.",
+        "None of the above."
+      ],
+      "correct": 0,
+      "description": "Correct answer: A. The bias-variance decomposition was originally formulated for least-squares regression.",
+      "difficulty": "Medium",
+      "tags": ["ML", "Bias Variance", "Regression"]
+    },
+    {
+      "id": 11,
+      "question": "What is boosting in machine learning?",
+      "options": [
+        "Aggregating equally the results of weak learners built independently on random samples to create a strong learner.",
+        "Combining differently the results of weak learners built sequentially on the whole dataset to create a strong learner.",
+        "Boosting is basically about combining many strong predictive models into a stronger model.",
+        "None of the above."
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Combining differently the results of weak learners built sequentially on the whole dataset to create a strong learner.",
+      "difficulty": "Medium",
+      "tags": ["ML", "Boosting", "Ensemble Learning"]
+    },
+    {
+      "id": 12,
+      "question": "Unsupervised learning can also be used to generate or create labels and classes, on top of which one can build supervised models.",
+      "options": ["True", "False"],
+      "correct": 0,
+      "description": "Correct answer: A. True",
+      "difficulty": "Medium",
+      "tags": ["ML", "Unsupervised Learning", "Supervised Learning"]
+    },
+    {
+      "id": 17,
+      "question": "Machine-learning applications are too complex to run in the cloud.",
+      "options": ["True", "False"],
+      "correct": 1,
+      "description": "Correct answer: B. False",
+      "difficulty": "Medium",
+      "tags": ["ML", "Cloud", "Machine Learning"]
+    },
+    {
+      "id": 18,
+      "question": "Although machine learning is useful, it can be difficult to implement. What is one common obstacle faced by businesses looking to use machine-learning tools?",
+      "options": [
+        "Not enough data to perform machine-learning processes",
+        "Lack of necessary skills, including data science and Hadoop",
+        "No need for the analytics processing power in machine-learning programs",
+        "All of the above"
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Lack of necessary skills, including data science and Hadoop",
+      "difficulty": "Medium",
+      "tags": ["ML", "Business", "Data Science"]
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is a technique frequently used in machine-learning and AI programs?",
+      "options": [
+        "Classification of data into categories based on attributes",
+        "Grouping similar objects into clusters of related events",
+        "Identifying relationships between events to predict when one will follow the other",
+        "All of the above are common machine-learning techniques"
+      ],
+      "correct": 3,
+      "description": "Correct answer: D. All of the above are common machine-learning techniques",
+      "difficulty": "Medium",
+      "tags": ["ML", "AI", "Classification", "Clustering"]
+    },
+    {
+      "id": 20,
+      "question": "Why is it common for machine learning to be done on a Hadoop-based big-data framework?",
+      "options": [
+        "Most machine-learning applications can only be run on Hadoop systems because of how they are programmed.",
+        "Machine learning requires large amounts of data and lots of processing power, so a big-data architecture is a good fit.",
+        "Because Hadoop is open source, it is a flexible platform that makes it easier for users to run machine-learning analyses.",
+        "All of the above."
+      ],
+      "correct": 1,
+      "description": "Correct answer: B. Machine learning requires large amounts of data and lots of processing power, so a big-data architecture is a good fit.",
+      "difficulty": "Medium",
+      "tags": ["ML", "Hadoop", "Big Data"]
+    },
+    {
+      "id": 21,
+      "question": "What is the minimum number of features or variables required to perform clustering?",
+      "options": ["Zero", "One", "Two", "Three"],
+      "correct": 1,
+      "description": "Correct answer: B. One",
+      "difficulty": "Medium",
+      "tags": ["ML", "Clustering", "Features"]
+    },
+    {
+      "id": 29,
+      "question": "In which neural-network architecture does weight sharing occur?",
+      "options": ["Fully Connected Neural Network", "Convolutional Neural Network", "Recurrent Neural Network", "Both B and C"],
+      "correct": 3,
+      "description": "Correct answer: D. Both B and C",
+      "difficulty": "Medium",
+      "tags": ["ML", "Neural Networks", "CNN", "RNN"]
+    },
+    {
+      "id": 30,
+      "question": "Suppose that you have to minimize the cost function by changing the parameters. Which of the following techniques could be used for this?",
+      "options": ["Random search", "Bayesian optimization", "Exhaustive search", "Any of these"],
+      "correct": 3,
+      "description": "Correct answer: D. Any of these",
+      "difficulty": "Medium",
+      "tags": ["ML", "Optimization", "Cost Function"]
+    },
+    {
+      "id": 31,
+      "question": "Decision trees could be used in which of the following types of problems?",
+      "options": ["Classification", "Regression", "Both of the above", "None of the above"],
+      "correct": 2,
+      "description": "Correct answer: C. Both of the above",
+      "difficulty": "Medium",
+      "tags": ["ML", "Decision Trees", "Classification", "Regression"]
+    },
+    {
+      "id": 32,
+      "question": "The decision boundary is perpendicular to the instance-space axes for which of the following?",
+      "options": ["Classification trees", "Linear classifier", "Classification boundaries", "None of the above"],
+      "correct": 0,
+      "description": "Correct answer: A. Classification trees",
+      "difficulty": "Medium",
+      "tags": ["ML", "Decision Trees", "Decision Boundary"]
+    },
+    {
+      "id": 33,
+      "question": "The test dataset used to evaluate the model is typically called a:",
+      "options": ["Trend-off dataset", "Holdoff dataset", "Holdout dataset", "Holder dataset"],
+      "correct": 2,
+      "description": "Correct answer: C. Holdout dataset",
+      "difficulty": "Medium",
+      "tags": ["ML", "Model Evaluation", "Holdout Dataset"]
+    },
+    {
+      "id": 34,
+      "question": "______ learning is a framework for investigating the complexity of machine-learning problems.",
+      "options": ["Random data", "Probably Approximately Correct", "Principal component analysis", "Probability approximate"],
+      "correct": 1,
+      "description": "Correct answer: B. Probably Approximately Correct",
+      "difficulty": "Medium",
+      "tags": ["ML", "PAC Learning", "Theory"]
+    },
+    {
+      "id": 35,
+      "question": "A tree-structure model could be used for:",
+      "options": ["Data modeling", "Clustering", "Classification", "None of the above"],
+      "correct": 2,
+      "description": "Correct answer: C. Classification",
+      "difficulty": "Medium",
+      "tags": ["ML", "Decision Trees", "Classification"]
+    }
+  ]
+}

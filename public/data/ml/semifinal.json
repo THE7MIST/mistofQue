@@ -1,0 +1,18 @@
+{
+  "version": "1",
+  "title": "ML Semi Final",
+  "subject": "ML",
+  "stage": "Semi Final",
+  "durationMinutes": 10,
+  "questions": [
+    {
+      "id": 1,
+      "question": "Placeholder question for ML Semi Final.",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "correct": 0,
+      "description": "Placeholder item. Replace this question with real MCQ content.",
+      "difficulty": "Easy",
+      "tags": ["ML", "Placeholder"]
+    }
+  ]
+}

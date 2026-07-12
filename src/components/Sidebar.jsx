@@ -19,6 +19,20 @@ export default function Sidebar({ isOpen, onClose }) {
     [location.pathname]
   );
   const [openSubjects, setOpenSubjects] = useState(() => new Set(["cybersecurity"]));
+  const subjectGroups = useMemo(() => {
+    const baseGroups = [{ label: "Subjects", subjects: sidebarSubjects.filter((subject) => !subject.group) }];
+    const grouped = sidebarSubjects
+      .filter((subject) => subject.group)
+      .reduce((groups, subject) => {
+        groups[subject.group] = [...(groups[subject.group] || []), subject];
+        return groups;
+      }, {});
+
+    return [
+      ...baseGroups,
+      ...Object.entries(grouped).map(([label, subjects]) => ({ label, subjects }))
+    ].filter((group) => group.subjects.length);
+  }, []);
 
   useEffect(() => {
     if (activeSubject) {
@@ -77,60 +91,62 @@ export default function Sidebar({ isOpen, onClose }) {
             </NavLink>
 
             <div className="pt-3">
-              <p className="px-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
-                Subjects
-              </p>
-              <div className="mt-2 space-y-1">
-                {sidebarSubjects.map((subject) => {
-                  const Icon = subject.icon;
-                  const isExpanded = openSubjects.has(subject.slug);
+              {subjectGroups.map((group) => (
+                <div key={group.label} className="mt-2 space-y-1">
+                  <p className="px-3 pt-2 text-xs font-bold uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
+                    {group.label}
+                  </p>
+                  {group.subjects.map((subject) => {
+                    const Icon = subject.icon;
+                    const isExpanded = openSubjects.has(subject.slug);
 
-                  return (
-                    <div key={subject.slug}>
-                      <button
-                        type="button"
-                        onClick={() => toggleSubject(subject.slug)}
-                        className="focus-ring flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-bold text-slate-700 transition hover:bg-slate-900/5 dark:text-slate-200 dark:hover:bg-white/10"
-                      >
-                        <span className="flex items-center gap-3">
-                          <Icon size={18} />
-                          {subject.name}
-                        </span>
-                        <ChevronDown size={17} className={`transition ${isExpanded ? "rotate-180" : ""}`} />
-                      </button>
+                    return (
+                      <div key={subject.slug}>
+                        <button
+                          type="button"
+                          onClick={() => toggleSubject(subject.slug)}
+                          className="focus-ring flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-bold text-slate-700 transition hover:bg-slate-900/5 dark:text-slate-200 dark:hover:bg-white/10"
+                        >
+                          <span className="flex items-center gap-3">
+                            <Icon size={18} />
+                            {subject.name}
+                          </span>
+                          <ChevronDown size={17} className={`transition ${isExpanded ? "rotate-180" : ""}`} />
+                        </button>
 
-                      <div
-                        className={`grid transition-all duration-200 ${
-                          isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                        }`}
-                      >
-                        <div className="overflow-hidden">
-                          <div className="ml-6 mt-1 space-y-1 border-l border-slate-200 pl-3 dark:border-white/10">
-                            {subject.stages.slice(0, 1).map((stage) => (
-                              <NavLink key={stage.slug} to={stage.path} className={navClass} onClick={onClose}>
-                                {stage.label}
+                        <div
+                          className={`grid transition-all duration-200 ${
+                            isExpanded ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                          }`}
+                        >
+                          <div className="overflow-hidden">
+                            <div className="ml-6 mt-1 space-y-1 border-l border-slate-200 pl-3 dark:border-white/10">
+                              {subject.stages.slice(0, 1).map((stage) => (
+                                <NavLink key={stage.slug} to={stage.path} className={navClass} onClick={onClose}>
+                                  {stage.label}
+                                </NavLink>
+                              ))}
+                              <NavLink to={subject.topicsPath} className={navClass} onClick={onClose}>
+                                Topic Wise MCQ
                               </NavLink>
-                            ))}
-                            <NavLink to={subject.topicsPath} className={navClass} onClick={onClose}>
-                              Topic Wise MCQ
-                            </NavLink>
-                            {subject.revisionPath ? (
-                              <NavLink to={subject.revisionPath} className={navClass} onClick={onClose}>
-                                Revision
-                              </NavLink>
-                            ) : null}
-                            {subject.stages.slice(1).map((stage) => (
-                              <NavLink key={stage.slug} to={stage.path} className={navClass} onClick={onClose}>
-                                {stage.label}
-                              </NavLink>
-                            ))}
+                              {subject.revisionPath ? (
+                                <NavLink to={subject.revisionPath} className={navClass} onClick={onClose}>
+                                  Revision
+                                </NavLink>
+                              ) : null}
+                              {subject.stages.slice(1).map((stage) => (
+                                <NavLink key={stage.slug} to={stage.path} className={navClass} onClick={onClose}>
+                                  {stage.label}
+                                </NavLink>
+                              ))}
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  );
-                })}
-              </div>
+                    );
+                  })}
+                </div>
+              ))}
             </div>
           </nav>
         </div>

@@ -1,0 +1,9 @@
+{
+  "sets": [
+    {
+      "setNumber": "Set 01",
+      "topic": "ML Basics, Regression, Validation, Clustering, Trees & Neural Networks",
+      "slug": "set01-machine-learning"
+    }
+  ]
+}

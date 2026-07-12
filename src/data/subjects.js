@@ -80,6 +80,18 @@ export const subjects = [
     stages: buildStages("df"),
     topicsPath: "/subjects/df/topics",
     topicIndexFile: "/data/df/topics/index.json"
+  },
+  {
+    slug: "ml",
+    name: "ML",
+    shortName: "ML",
+    group: "BDA",
+    icon: Binary,
+    accent: "indigo",
+    description: "Machine learning foundations, regression, validation, clustering, trees, and neural networks.",
+    stages: buildStages("ml"),
+    topicsPath: "/subjects/ml/topics",
+    topicIndexFile: "/data/ml/topics/index.json"
   }
 ];
 
