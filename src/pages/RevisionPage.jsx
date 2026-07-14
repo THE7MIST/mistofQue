@@ -30,7 +30,7 @@ function RevisionItem({ item }) {
       <h3 className="text-base font-black text-slate-950 dark:text-white">{item.title}</h3>
       {item.definition ? <p className="mt-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">{item.definition}</p> : null}
       <div className="mt-4 grid gap-4">
-        <ListBlock title="Exam Points" items={item.examPoints} />
+        <ListBlock title="Key Points" items={item.keyPoints || item.examPoints} />
         <ListBlock title="Comparisons" items={item.comparisons} />
         <ListBlock title="Commands" items={item.commands} />
         <ListBlock title="Workflows" items={item.workflows} />
@@ -53,7 +53,7 @@ function SectionBlock({ section }) {
           <div key={term.id} className="py-4 first:pt-4 last:pb-0">
             <h4 className="text-base font-black text-slate-950 dark:text-white">{term.title}</h4>
             {term.definition ? <p className="mt-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">{term.definition}</p> : null}
-            <ListBlock title="Exam Meaning" items={term.examPoints} />
+            <ListBlock title="Meaning" items={term.keyPoints || term.examPoints} />
           </div>
         ))}
       </div>

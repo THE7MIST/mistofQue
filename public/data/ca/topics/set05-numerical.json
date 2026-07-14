@@ -1,0 +1,298 @@
+{
+  "version": "1",
+  "title": "Numerical Set - Risk, Gap, Governance & Audit Models",
+  "subject": "Compliance Audits",
+  "stage": "Topic Wise MCQ",
+  "topic": "Numerical Risk, Gap, Governance & Audit Models",
+  "durationMinutes": 40,
+  "questions": [
+    {
+      "id": 1,
+      "question": "An organization uses the semi-quantitative model Risk = Threat * Vulnerability * Impact. If Threat = 5, Vulnerability = 4, and Impact = 3, what is the overall risk score?",
+      "options": ["12", "20", "60", "120"],
+      "correct": 2,
+      "description": "Risk = 5 * 4 * 3 = 60. The common trap is adding the values or ignoring the impact factor.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Numerical", "Risk"]
+    },
+    {
+      "id": 2,
+      "question": "A bank evaluates ransomware risk with Threat Level = 4, Vulnerability Score = 5, and Business Impact = 5. Any score above 80 requires immediate mitigation. Using Risk = Threat * Vulnerability * Impact, which statement is correct?",
+      "options": ["Risk = 20, so immediate mitigation is not required.", "Risk = 100, so immediate mitigation is required.", "Risk = 80, so no action is required.", "Risk = 25, because impact is already included in vulnerability."],
+      "correct": 1,
+      "description": "Risk = 4 * 5 * 5 = 100. Since 100 is greater than 80, immediate mitigation is required. Impact is an independent factor.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Numerical", "Risk Treatment"]
+    },
+    {
+      "id": 3,
+      "question": "An organization estimates Inherent Risk = 90 and Control Effectiveness = 55. Using the simplified teaching model Residual Risk = Inherent Risk - Control Effectiveness, what is the residual risk?",
+      "options": ["145", "35", "45", "90"],
+      "correct": 1,
+      "description": "Residual Risk = 90 - 55 = 35. This is a simplified quantitative exercise model; residual risk generally means the risk that remains after controls are implemented, not an official ISO/NIST formula.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Numerical", "Residual Risk"]
+    },
+    {
+      "id": 4,
+      "question": "Before implementing MFA and Privileged Access Management, an organization's inherent risk was 85. Security architects estimate these controls reduce risk by 40 points. Using the simplified model Residual Risk = Inherent Risk - Control Effectiveness, what is the remaining residual risk?",
+      "options": ["45", "125", "40", "55"],
+      "correct": 0,
+      "description": "Residual Risk = 85 - 40 = 45. In this simplified model, effective controls reduce inherent risk; they do not increase it.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Numerical", "Residual Risk"]
+    },
+    {
+      "id": 5,
+      "question": "The CIA Triad defines the three primary objectives of information security. Which option correctly represents the CIA Triad?",
+      "options": ["Confidentiality - Integrity - Availability", "Confidentiality - Identification - Authorization", "Compliance - Integrity - Availability", "Confidentiality - Inspection - Authentication"],
+      "correct": 0,
+      "description": "The CIA Triad consists of Confidentiality, Integrity, and Availability. Authentication and authorization are security services, but they are not CIA Triad components.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "CIA", "Security Concepts"]
+    },
+    {
+      "id": 6,
+      "question": "An attacker modifies salary records stored in an organization's payroll database. Employees can still access the system, and no unauthorized disclosure has occurred. Which CIA component has primarily been compromised?",
+      "options": ["Confidentiality", "Integrity", "Availability", "Accountability"],
+      "correct": 1,
+      "description": "Unauthorized modification of data affects Integrity. There is no information disclosure and no service outage in this scenario.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "CIA", "Integrity"]
+    },
+    {
+      "id": 7,
+      "question": "Which combination most accurately represents the fundamental elements required to achieve organizational compliance?",
+      "options": ["Law + Policy + Standard + Procedure + Control", "Threat + Vulnerability + Impact", "Authentication + Authorization + Accounting", "Confidentiality + Integrity + Availability"],
+      "correct": 0,
+      "description": "Compliance depends on legal obligations, policies, standards, procedures, and implemented controls working together. CIA protects information but does not define compliance.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Compliance Model"]
+    },
+    {
+      "id": 8,
+      "question": "A company has documented security policies and standards. However, employees are not following procedures, technical controls are missing, and auditors repeatedly report the same findings. Which statement best explains why the organization remains non-compliant?",
+      "options": ["Policies alone are sufficient for compliance.", "Compliance requires laws, policies, standards, procedures, and effective controls working together.", "Compliance depends only on management approval.", "Compliance is achieved once documentation exists."],
+      "correct": 1,
+      "description": "Documentation alone does not prove compliance. Procedures must be followed, controls must operate, and evidence must exist.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Compliance Model", "Controls"]
+    },
+    {
+      "id": 9,
+      "question": "Which option correctly represents the PDCA cycle used in ISO/IEC 27001?",
+      "options": ["Plan - Do - Check - Act", "Plan - Develop - Control - Audit", "Prepare - Detect - Correct - Approve", "Plan - Design - Configure - Assess"],
+      "correct": 0,
+      "description": "PDCA means Plan, Do, Check, Act. It is a continuous improvement cycle used by ISO management systems.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "ISO 27001", "PDCA"]
+    },
+    {
+      "id": 10,
+      "question": "An organization has implemented a new password policy. Auditors are now reviewing password compliance reports and comparing results with security objectives. According to PDCA, which phase is being performed?",
+      "options": ["Plan", "Do", "Check", "Act"],
+      "correct": 2,
+      "description": "Reviewing, auditing, measuring, and comparing results with objectives belongs to the Check phase. Implementation belongs to Do.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "ISO 27001", "PDCA"]
+    },
+    {
+      "id": 11,
+      "question": "Which option correctly represents a simplified logical sequence used during security risk management?",
+      "options": ["Asset - Threat - Vulnerability - Treatment", "Threat - Asset - Treatment - Vulnerability", "Vulnerability - Treatment - Asset - Threat", "Asset - Treatment - Threat - Vulnerability"],
+      "correct": 0,
+      "description": "This is a simplified study workflow: identify the asset, identify threats, identify vulnerabilities, then choose treatment. In a fuller risk process, risk assessment occurs before treatment.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Risk Workflow"]
+    },
+    {
+      "id": 12,
+      "question": "A hospital identifies its EHR server as a critical asset, identifies ransomware as a threat, finds that backups are not tested, and decides to implement immutable backups and recovery testing. Which sequence best matches this activity?",
+      "options": ["Threat - Asset - Vulnerability - Treatment", "Asset - Threat - Vulnerability - Treatment", "Asset - Vulnerability - Threat - Treatment", "Treatment - Asset - Threat - Vulnerability"],
+      "correct": 1,
+      "description": "EHR server is the asset, ransomware is the threat, untested backups are the vulnerability, and immutable backups plus testing are the treatment.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Risk Workflow", "Scenario"]
+    },
+    {
+      "id": 13,
+      "question": "Which option correctly represents the general security audit lifecycle?",
+      "options": ["Plan - Collect - Test - Report - Follow-up", "Plan - Detect - Recover - Report", "Prepare - Build - Deploy - Audit", "Identify - Protect - Detect - Respond"],
+      "correct": 0,
+      "description": "A typical audit lifecycle is planning, evidence collection, control testing, reporting, and follow-up on corrective actions.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "Audit Lifecycle"]
+    },
+    {
+      "id": 14,
+      "question": "After issuing the final audit report, the internal audit team revisits the organization three months later to verify whether agreed corrective actions have been implemented. Which audit phase is being performed?",
+      "options": ["Planning", "Evidence Collection", "Reporting", "Follow-up"],
+      "correct": 3,
+      "description": "The report has already been issued, and auditors are verifying corrective action completion. That is Follow-up.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "Audit Lifecycle", "Follow-up"]
+    },
+    {
+      "id": 15,
+      "question": "Which option correctly lists the six functions of the NIST Cybersecurity Framework 2.0?",
+      "options": ["Govern - Identify - Protect - Detect - Respond - Recover", "Identify - Protect - Detect - Recover - Respond", "Plan - Do - Check - Act", "Govern - Protect - Respond - Recover - Audit"],
+      "correct": 0,
+      "description": "NIST CSF 2.0 uses Govern, Identify, Protect, Detect, Respond, and Recover. Govern was added as a major function in CSF 2.0.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "NIST CSF"]
+    },
+    {
+      "id": 16,
+      "question": "A company has identified critical assets, implemented MFA and encryption, and detected a ransomware attack. The incident response team isolates infected systems, preserves evidence, and notifies management. According to NIST CSF 2.0, which function is currently being performed?",
+      "options": ["Protect", "Detect", "Respond", "Recover"],
+      "correct": 2,
+      "description": "Containing the attack, preserving evidence, communicating, and managing the incident are Respond activities. Recover begins when systems are restored and operations resume.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "NIST CSF", "Incident Response"]
+    },
+    {
+      "id": 17,
+      "question": "According to the NIST Cybersecurity Framework profile approach, which sequence best represents using organizational profiles for improvement planning?",
+      "options": ["Current Profile - Target Profile - Gap Analysis - Improvement Plan", "Current Profile - Gap Analysis - Target Profile", "Target Profile - Current Profile - Recovery", "Asset Inventory - Target Profile - Audit"],
+      "correct": 0,
+      "description": "Corrected sequence: understand the Current Profile, define the Target Profile, compare them through Gap Analysis, then build an Improvement Plan. Gap is produced by comparing current and target; it is not a step between them.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "NIST CSF", "Gap Analysis"]
+    },
+    {
+      "id": 18,
+      "question": "An assessment shows only 55% of servers have MFA coverage, while management wants 100% MFA coverage. The security team documents the difference and creates an implementation plan. According to the NIST CSF Profile model, which activity has just been completed?",
+      "options": ["Risk Treatment", "Gap Analysis", "Incident Response", "Recovery Planning"],
+      "correct": 1,
+      "description": "The team compared the Current Profile with the Target Profile and identified the shortfall. That comparison is Gap Analysis, which feeds the improvement plan.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "NIST CSF", "Gap Analysis"]
+    },
+    {
+      "id": 19,
+      "question": "An organization wants 100% endpoint encryption. Currently, 72% of endpoints are encrypted. What is the implementation gap?",
+      "options": ["28%", "72%", "172%", "18%"],
+      "correct": 0,
+      "description": "Gap = Desired - Current = 100% - 72% = 28%. For remaining work, subtract current state from the desired or target state.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Numerical", "Gap Analysis"]
+    },
+    {
+      "id": 20,
+      "question": "A bank's security objective requires 95% patch compliance. Current compliance is 83%. Using Gap Analysis, what percentage improvement is required to reach the target?",
+      "options": ["12%", "83%", "95%", "178%"],
+      "correct": 0,
+      "description": "Gap = Desired - Current = 95% - 83% = 12 percentage points. The current value is not the remaining work.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Numerical", "Gap Analysis"]
+    },
+    {
+      "id": 21,
+      "question": "Which statement best represents a common conceptual foundation of an ISO/IEC 27001 Information Security Management System (ISMS)?",
+      "options": ["People + Process + Technology", "Hardware + Firewall + Antivirus", "Policy + Backup + Cloud", "Threat + Vulnerability + Risk"],
+      "correct": 0,
+      "description": "An ISMS is commonly described as people, processes, and technology working together. This is a conceptual model, not an official ISO formula.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "ISO 27001", "ISMS"]
+    },
+    {
+      "id": 22,
+      "question": "A company purchases advanced security appliances, but employees receive no awareness training, incident response procedures are undocumented, and risk assessments are never performed. Which ISO/IEC 27001 principle is most clearly being violated?",
+      "options": ["ISMS requires only technology.", "ISMS requires People, Process, and Technology together.", "ISO 27001 focuses only on physical security.", "ISO 27001 applies only to government organizations."],
+      "correct": 1,
+      "description": "Technology alone does not create an ISMS. People and processes are also required for a functioning management system.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "ISO 27001", "ISMS"]
+    },
+    {
+      "id": 23,
+      "question": "Which option correctly lists the three primary functional categories of security controls?",
+      "options": ["Preventive, Detective, Corrective", "Administrative, Technical, Financial", "Confidentiality, Integrity, Availability", "Planning, Monitoring, Recovery"],
+      "correct": 0,
+      "description": "The three primary functional categories are Preventive, Detective, and Corrective. Other textbooks may also discuss deterrent, directive, compensating, or recovery controls.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "Controls"]
+    },
+    {
+      "id": 24,
+      "question": "An organization deploys MFA, a SIEM, and daily verified backups. Which option correctly classifies these controls?",
+      "options": ["MFA - Preventive, SIEM - Detective, Backups - Corrective", "MFA - Detective, SIEM - Preventive, Backups - Corrective", "MFA - Corrective, SIEM - Detective, Backups - Preventive", "All three are Preventive controls"],
+      "correct": 0,
+      "description": "MFA helps prevent unauthorized access, SIEM detects suspicious events, and verified backups support restoration after an incident.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Controls", "Classification"]
+    },
+    {
+      "id": 25,
+      "question": "Which sequence best represents a simplified governance relationship between business goals and audit activities?",
+      "options": ["Business - IT - Controls - Audit", "Controls - Audit - Business - IT", "Audit - Business - Controls - IT", "IT - Business - Audit - Controls"],
+      "correct": 0,
+      "description": "This is a simplified governance flow: business objectives drive IT objectives, IT objectives lead to controls, and audit verifies whether controls support business objectives.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Governance"]
+    },
+    {
+      "id": 26,
+      "question": "A bank sets a business objective to reduce online banking fraud. IT deploys MFA, transaction monitoring, and fraud detection systems. Six months later, auditors verify whether these controls are operating effectively. Which sequence has occurred?",
+      "options": ["Business - IT - Controls - Audit", "Controls - Business - Audit - IT", "Audit - Controls - Business - IT", "IT - Audit - Controls - Business"],
+      "correct": 0,
+      "description": "The business objective drives IT objectives, which lead to implemented controls. Audit then verifies control effectiveness.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Governance", "Audit"]
+    },
+    {
+      "id": 27,
+      "question": "Which combination represents common methods used by auditors to obtain audit evidence?",
+      "options": ["Observe + Inspect + Test + Interview", "Scan + Patch + Recover + Restore", "Plan + Develop + Deploy + Operate", "Prevent + Detect + Correct + Recover"],
+      "correct": 0,
+      "description": "Common audit evidence techniques include observation, inspection of documents or configurations, testing controls, and interviewing personnel.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "Audit Evidence"]
+    },
+    {
+      "id": 28,
+      "question": "During an ISO 27001 internal audit, the auditor watches account creation, reviews access approval records, tests whether unauthorized accounts can be created, and interviews the system administrator. Which statement is most accurate?",
+      "options": ["The auditor collected evidence using multiple evidence-gathering techniques.", "Only observation is valid audit evidence.", "Interviews are not considered audit evidence.", "Testing replaces the need for documentation."],
+      "correct": 0,
+      "description": "The auditor used observation, inspection, testing, and interview techniques. Multiple evidence sources provide stronger assurance.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Audit Evidence", "ISO 27001"]
+    },
+    {
+      "id": 29,
+      "question": "Which sequence best represents a simplified security evaluation and risk reduction workflow?",
+      "options": ["Identify - Assess - Mitigate - Prevent", "Detect - Respond - Recover - Audit", "Plan - Develop - Deploy - Monitor", "Protect - Recover - Govern - Assess"],
+      "correct": 0,
+      "description": "This is a simplified security evaluation workflow: identify the issue, assess its risk, mitigate it, then improve controls to prevent recurrence.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Security Evaluation"]
+    },
+    {
+      "id": 30,
+      "question": "An organization discovers an outdated web server, assesses the business risk, applies patches, and updates the patch management policy to reduce similar issues in the future. Which option best represents this sequence?",
+      "options": ["Identify - Assess - Mitigate - Prevent", "Assess - Identify - Prevent - Mitigate", "Protect - Detect - Recover - Govern", "Observe - Inspect - Test - Interview"],
+      "correct": 0,
+      "description": "Finding the outdated server is Identify, evaluating business risk is Assess, patching is Mitigate, and improving patch policy supports Prevention.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Security Evaluation", "Patch Management"]
+    },
+    {
+      "id": 31,
+      "question": "Which sequence correctly represents a continuous security metrics improvement cycle?",
+      "options": ["Measure - Monitor - Improve", "Plan - Build - Test", "Identify - Protect - Recover", "Observe - Audit - Report"],
+      "correct": 0,
+      "description": "Security metrics support improvement by measuring performance, monitoring trends, and improving controls based on data. This is a metrics improvement cycle, not a formal formula.",
+      "difficulty": "Easy",
+      "tags": ["Compliance Audits", "Security Metrics"]
+    },
+    {
+      "id": 32,
+      "question": "A SOC records MTTD, MTTR, and phishing incidents per month. Management reviews these values quarterly and adjusts controls to improve performance. Which workflow best describes this activity?",
+      "options": ["Measure - Monitor - Improve", "Plan - Do - Check - Act", "Govern - Identify - Protect", "Observe - Inspect - Interview"],
+      "correct": 0,
+      "description": "The SOC measures security performance, management monitors trends, and controls are improved based on the analysis.",
+      "difficulty": "Medium",
+      "tags": ["Compliance Audits", "Security Metrics", "SOC"]
+    }
+  ]
+}

@@ -19,6 +19,11 @@
       "setNumber": "Set 04",
       "topic": "Audit Planning, Internal Controls, Risk & ISO 27001",
       "slug": "set04"
+    },
+    {
+      "setNumber": "Numerical Set",
+      "topic": "Risk, Gap, Governance & Audit Models",
+      "slug": "set05-numerical"
     }
   ]
 }

@@ -68,7 +68,9 @@ export const subjects = [
     description: "Compliance audits, controls, frameworks, and security evaluation.",
     stages: buildStages("ca"),
     topicsPath: "/subjects/ca/topics",
-    topicIndexFile: "/data/ca/topics/index.json"
+    topicIndexFile: "/data/ca/topics/index.json",
+    revisionPath: "/subjects/ca/revision",
+    revisionIndexFile: "/data/ca/revision/index.json"
   },
   {
     slug: "df",

@@ -19,6 +19,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Verify audio assets
+        run: |
+          if head -c 80 public/audio/pki/phase01-foundations.mp3 | grep -q "git-lfs"; then
+            echo "Git LFS audio files were not downloaded."
+            exit 1
+          fi
 
       - uses: actions/configure-pages@v5
 

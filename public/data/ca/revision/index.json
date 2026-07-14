@@ -1,0 +1,42 @@
+{
+  "subject": "Compliance Audits",
+  "subjectSlug": "ca",
+  "title": "Compliance Audit Revision",
+  "phases": [
+    {
+      "id": "part05-sox-cobit-pci-hipaa-map",
+      "title": "Part 1 - SOX, COBIT, PCI DSS and HIPAA Map",
+      "file": "/data/ca/revision/part05-sox-cobit-pci-hipaa-map.json",
+      "audio": "/audio/ca/part05-sox-cobit-pci-hipaa-map.mp3",
+      "topicCount": 21
+    },
+    {
+      "id": "part01-compliance-audit-foundations",
+      "title": "Part 2 - Compliance Audit Foundations, Risk & Metrics",
+      "file": "/data/ca/revision/part01-compliance-audit-foundations.json",
+      "audio": "/audio/ca/part01-compliance-audit-foundations.mp3",
+      "topicCount": 53
+    },
+    {
+      "id": "part02-sox-cobit-governance",
+      "title": "Part 3 - SOX and COBIT Governance",
+      "file": "/data/ca/revision/part02-sox-cobit-governance.json",
+      "audio": "/audio/ca/part02-sox-cobit-governance.mp3",
+      "topicCount": 43
+    },
+    {
+      "id": "part03-global-compliance-map",
+      "title": "Part 4 - Global Compliance Knowledge Map",
+      "file": "/data/ca/revision/part03-global-compliance-map.json",
+      "audio": "/audio/ca/part03-global-compliance-map.mp3",
+      "topicCount": 40
+    },
+    {
+      "id": "part04-nist-csf-dpdpa",
+      "title": "Part 5 - NIST CSF and DPDPA",
+      "file": "/data/ca/revision/part04-nist-csf-dpdpa.json",
+      "audio": "/audio/ca/part04-nist-csf-dpdpa.mp3",
+      "topicCount": 51
+    }
+  ]
+}

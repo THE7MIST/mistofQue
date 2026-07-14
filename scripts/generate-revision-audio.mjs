@@ -141,8 +141,8 @@ function appendTopicNarration(lines, topic, index) {
       lines.push(`Definition. ${definition}`);
     }
 
-    const examPoints = uniqueList(topic.examPoints, seen);
-    if (examPoints.length) lines.push(`Important exam points. ${examPoints.join(". ")}.`);
+    const keyPoints = uniqueList(topic.keyPoints || topic.examPoints, seen);
+    if (keyPoints.length) lines.push(`Key points. ${keyPoints.join(". ")}.`);
 
     const comparisons = uniqueList(topic.comparisons, seen);
     if (comparisons.length) lines.push(`Comparison. ${comparisons.join(". ")}.`);
@@ -163,7 +163,7 @@ function buildNarration(phase) {
   const itemCount = sectionTermCount || topicCount;
   const lines = [
     cleanForSpeech(phase.title),
-    `This revision segment contains ${itemCount} exam topics.`
+    `This revision segment contains ${itemCount} revision topics.`
   ];
 
   if (phase.description) lines.push(cleanForSpeech(phase.description));

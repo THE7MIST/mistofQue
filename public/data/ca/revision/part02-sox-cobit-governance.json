@@ -1,0 +1,707 @@
+{
+  "id": "part02-sox-cobit-governance",
+  "subject": "Compliance Audits",
+  "title": "Part 3 - SOX and COBIT Governance",
+  "audio": "/audio/ca/part02-sox-cobit-governance.mp3",
+  "description": "Structured notes on SOX, COBIT, IT controls, financial-reporting assurance, governance responsibilities, control evidence, and the way COBIT supports SOX compliance.",
+  "topics": [
+    {
+      "id": "sox-cobit-relationship",
+      "title": "SOX and COBIT Relationship",
+      "definition": "SOX is a legal and financial-reporting compliance obligation. COBIT is an IT governance and control framework used to organize, implement, measure, and improve controls.",
+      "examPoints": [
+        "SOX tells an organization what legal outcomes must be achieved.",
+        "COBIT helps the organization govern IT and design controls to achieve those outcomes.",
+        "SOX and COBIT are not competitors.",
+        "SOX is a law; COBIT is a framework.",
+        "SOX creates an obligation; COBIT can help satisfy and demonstrate that obligation."
+      ],
+      "workflows": [
+        "Corporate scandals and accounting fraud -> SOX legal requirements -> Reliable financial reporting -> Internal Control over Financial Reporting -> IT systems affecting financial data -> IT controls -> COBIT governance framework -> Control objectives and responsibilities -> Control implementation and testing -> Evidence -> CEO/CFO certification, audit opinion, and compliance"
+      ],
+      "oneLiners": [
+        "SOX defines the obligation; COBIT organizes the IT controls that support it."
+      ]
+    },
+    {
+      "id": "what-is-sox",
+      "title": "What Is SOX",
+      "definition": "SOX stands for the Sarbanes-Oxley Act, a United States federal law enacted in 2002 after major corporate and accounting scandals.",
+      "examPoints": [
+        "SOX was intended to protect investors by improving reliability, accountability, and transparency in corporate financial reporting.",
+        "Alternative names include Public Company Accounting Reform and Investor Protection Act, and Corporate and Auditing Accountability, Responsibility and Transparency Act.",
+        "Its central objective is to prevent corporate financial fraud and ensure that reported financial information is accurate, controlled, reviewable, and accountable."
+      ],
+      "oneLiners": [
+        "SOX exists to protect investors through reliable financial reporting and accountability."
+      ]
+    },
+    {
+      "id": "why-sox-was-created",
+      "title": "Why SOX Was Created",
+      "definition": "SOX was created as a response to corporate behavior that damaged investor trust and exposed weak financial-reporting controls.",
+      "examPoints": [
+        "SOX reacted to manipulated financial statements, concealed debt or losses, misrepresented performance, misled investors, weak internal controls, auditor-client conflicts, destroyed records, concealed records, and lack of executive accountability.",
+        "SOX strengthens board responsibility, management accountability, auditor independence, financial disclosure, internal controls, record retention, criminal consequences, and whistleblower protection."
+      ],
+      "oneLiners": [
+        "SOX was built to reduce financial-reporting fraud and restore accountability."
+      ]
+    },
+    {
+      "id": "sox-applicability",
+      "title": "SOX Applicability",
+      "definition": "SOX primarily applies to public companies in the United States, foreign companies with securities registered with the SEC, and accounting firms auditing those companies.",
+      "examPoints": [
+        "Some provisions can affect private companies, especially those involving record destruction, obstruction of justice, whistleblower retaliation, and fraud-related conduct.",
+        "SOX does not apply only to American-owned companies.",
+        "A foreign company may fall under SOX when registered with the United States Securities and Exchange Commission."
+      ],
+      "oneLiners": [
+        "SEC registration can bring a company within SOX scope."
+      ]
+    },
+    {
+      "id": "sox-stakeholders",
+      "title": "Important SOX Stakeholders",
+      "definition": "SOX involves governance, management, audit, oversight, and regulatory stakeholders.",
+      "examPoints": [
+        "The board provides oversight and is ultimately responsible for corporate governance.",
+        "The audit committee supervises financial reporting, external audit relationships, auditor independence, internal-control concerns, and whistleblower complaints.",
+        "The CEO and CFO certify the accuracy of financial reports and adequacy of relevant controls.",
+        "Management establishes controls, maintains controls, assesses effectiveness, discloses material weaknesses, and supports audits.",
+        "The external auditor independently evaluates financial reporting and, where required, internal-control effectiveness.",
+        "PCAOB oversees auditors of public companies.",
+        "SEC develops and enforces regulations supporting SOX compliance."
+      ],
+      "oneLiners": [
+        "SOX accountability runs from control owners to executives, auditors, PCAOB, and SEC."
+      ]
+    },
+    {
+      "id": "major-sox-provisions",
+      "title": "Major SOX Provisions",
+      "definition": "SOX strengthens corporate responsibility, audit oversight, auditor independence, internal controls, whistleblower protection, executive certification, financial disclosure, and criminal penalties.",
+      "examPoints": [
+        "Senior management cannot simply blame accountants or lower-level employees for unreliable reporting.",
+        "Public companies require independent audit-process oversight through audit committees.",
+        "Auditors must remain independent from the organization being audited.",
+        "Organizations must establish and maintain controls that protect financial reporting from error, fraud, unauthorized modification, improper access, incomplete processing, and data loss.",
+        "Whistleblowers must be able to report suspected misconduct without unlawful retaliation.",
+        "CEO and CFO certification creates serious consequences for false certification.",
+        "SOX increases penalties for securities fraud, obstruction of justice, mail fraud, wire fraud, record destruction, and false certification."
+      ],
+      "oneLiners": [
+        "SOX makes financial reporting a governance and accountability responsibility."
+      ]
+    },
+    {
+      "id": "icfr",
+      "title": "Internal Control over Financial Reporting",
+      "definition": "ICFR means Internal Control over Financial Reporting: the system of policies, procedures, responsibilities, and technical controls intended to provide reasonable assurance that financial reporting is reliable.",
+      "examPoints": [
+        "ICFR covers whether transactions are properly authorized and accurately recorded.",
+        "It supports completeness of financial information.",
+        "It helps prevent or detect unauthorized transactions.",
+        "It protects records from alteration.",
+        "It helps generate reports correctly.",
+        "It supports detection of errors and fraud.",
+        "It creates evidence auditors can inspect."
+      ],
+      "oneLiners": [
+        "ICFR is the control system protecting financial-reporting reliability."
+      ]
+    },
+    {
+      "id": "management-and-auditor-responsibilities",
+      "title": "Management and Auditor Responsibilities",
+      "definition": "Management owns the controls. The external auditor evaluates the controls.",
+      "examPoints": [
+        "Management designs, implements, operates, evaluates, documents, and reports weaknesses in controls.",
+        "Management must annually declare responsibility for establishing and maintaining adequate internal-control structure and procedures for financial reporting.",
+        "The external auditor tests selected controls, evaluates evidence, assesses effectiveness, and provides an independent opinion.",
+        "The external auditor does not become responsible for operating company controls."
+      ],
+      "comparisons": [
+        "Management = control owner.",
+        "Auditor = independent evaluator."
+      ],
+      "oneLiners": [
+        "Auditors assess controls; they do not operate them."
+      ]
+    },
+    {
+      "id": "why-it-is-relevant-to-sox",
+      "title": "Why IT Is Relevant to SOX",
+      "definition": "SOX focuses on financial reporting, but modern financial reporting depends heavily on IT systems.",
+      "examPoints": [
+        "Relevant systems include ERP, accounting software, payroll systems, banking interfaces, databases, financial reporting applications, identity systems, backup systems, and change-management tools.",
+        "An IT weakness becomes a SOX issue when it can affect financial-reporting reliability."
+      ],
+      "workflows": [
+        "Weak access control -> Unauthorized database modification -> Financial figures altered -> Incorrect financial statement -> SOX control failure"
+      ],
+      "oneLiners": [
+        "IT controls matter to SOX when IT affects financial data."
+      ]
+    },
+    {
+      "id": "sox-it-control-areas",
+      "title": "SOX IT Control Areas",
+      "definition": "SOX-relevant IT controls protect financial systems, financial data, and the reliability of reporting processes.",
+      "examPoints": [
+        "Access control ensures only authorized persons can access financial systems and data.",
+        "IT security protects financial-reporting systems from malware, unauthorized access, exploitation, tampering, data leakage, and service disruption.",
+        "Change management controls changes to applications, databases, configurations, and financial reports.",
+        "Data backup ensures financial data and critical configurations are complete, protected, retained, tested, restorable, and restricted from unauthorized modification.",
+        "Data integrity controls prevent unauthorized record modification."
+      ],
+      "workflows": [
+        "Change request -> Approval -> Development -> Testing -> Segregation of duties -> Authorized deployment -> Post-implementation review"
+      ],
+      "oneLiners": [
+        "SOX IT controls protect access, changes, backup, integrity, and operational security."
+      ]
+    },
+    {
+      "id": "sox-checklist",
+      "title": "SOX Checklist",
+      "definition": "SOX compliance requires controls that exist, operate, produce evidence, and can be disclosed to auditors.",
+      "examPoints": [
+        "Prevent data tampering.",
+        "Record timelines for important activities.",
+        "Build verifiable controls for data access.",
+        "Ensure safeguards operate properly.",
+        "Test and verify controls.",
+        "Disclose safeguards and control effectiveness.",
+        "Detect security breaches.",
+        "Disclose security safeguards, breaches, and failed safeguards to auditors.",
+        "SOX does not accept a control only because it is written in a policy."
+      ],
+      "workflows": [
+        "Control exists + Control is properly designed + Control is operating + Control has evidence"
+      ],
+      "oneLiners": [
+        "Written controls must become operating controls with evidence."
+      ]
+    },
+    {
+      "id": "design-vs-operating-effectiveness",
+      "title": "Design Effectiveness vs Operating Effectiveness",
+      "definition": "Design effectiveness asks whether a control would prevent or detect the intended risk if performed as designed. Operating effectiveness asks whether the control was actually performed consistently during the period.",
+      "examPoints": [
+        "Design example: manager approval before privileged access is granted can reduce unauthorized privilege.",
+        "Operating evidence may include approval records, tickets, logs, review reports, sign-offs, screenshots, and system-generated records.",
+        "A control can be well designed but operationally ineffective.",
+        "Example: a policy requires quarterly access reviews, but no review was performed for nine months."
+      ],
+      "comparisons": [
+        "Design effectiveness = would the control work if performed.",
+        "Operating effectiveness = was the control actually performed."
+      ],
+      "oneLiners": [
+        "Good design is not enough; the control must operate."
+      ]
+    },
+    {
+      "id": "sox-evidence",
+      "title": "Evidence in SOX Compliance",
+      "definition": "SOX evidence must be complete, accurate, timely, repeatable, traceable, protected from modification, and connected to the relevant control.",
+      "examPoints": [
+        "Examples include access-review reports, change tickets, approval emails, authentication logs, backup reports, restore-test results, incident records, reconciliation reports, system configurations, and segregation-of-duties matrices.",
+        "No evidence makes it difficult to prove that a control operated."
+      ],
+      "oneLiners": [
+        "No evidence means weak assurance."
+      ]
+    },
+    {
+      "id": "sox-compliance-process",
+      "title": "SOX Compliance Process",
+      "definition": "The SOX compliance process turns financial-reporting risk into governed controls, evidence, testing, and audit readiness.",
+      "examPoints": [
+        "Choose a framework such as COBIT, COSO, or internal organizational standards.",
+        "Assess risk by identifying critical financial systems, reporting-impacting failures, user access, change risk, and materiality.",
+        "Establish data governance for ownership, classification, retention, access, accuracy, accountability, and processing rules.",
+        "Implement controls based on identified risk.",
+        "Apply least privilege.",
+        "Test controls regularly for design, operation, and evidence quality.",
+        "Prepare control descriptions, evidence, risk assessment, test results, remediation status, and management representations for external audit."
+      ],
+      "workflows": [
+        "Choose framework -> Assess risk -> Establish data governance -> Implement controls -> Create least-privilege policy -> Test controls -> Prepare for external audit"
+      ],
+      "oneLiners": [
+        "SOX readiness is built through risk, controls, testing, and evidence."
+      ]
+    },
+    {
+      "id": "typical-sox-control-failures",
+      "title": "Typical SOX Control Failures",
+      "definition": "Common SOX failures occur when access, changes, logs, backups, privileges, segregation of duties, or incident reporting are weak.",
+      "examPoints": [
+        "Examples include shared administrator accounts, terminated employees retaining access, developers deploying directly to production, unapproved financial-system changes, missing audit logs, logs users can alter, untested backups, financial spreadsheets without version control, excessive privileges, no periodic access review, inadequate segregation of duties, unreported security incidents, and unsupported software affecting financial systems."
+      ],
+      "oneLiners": [
+        "Control failure often appears as weak access, weak change control, or weak evidence."
+      ]
+    },
+    {
+      "id": "what-is-cobit",
+      "title": "What Is COBIT",
+      "definition": "COBIT stands for Control Objectives for Information and Related Technologies. It is an IT governance framework developed by ISACA.",
+      "examPoints": [
+        "COBIT helps implement, monitor, and improve IT management and governance practices.",
+        "It bridges business requirements, technical issues, IT risk, control requirements, governance responsibilities, and audit expectations."
+      ],
+      "oneLiners": [
+        "COBIT connects business goals, IT processes, controls, risk, and assurance."
+      ]
+    },
+    {
+      "id": "purpose-of-cobit",
+      "title": "Purpose of COBIT",
+      "definition": "COBIT helps organizations align IT with business, enable value, optimize resources, manage IT risk, define controls, assign responsibilities, measure performance, and connect governance with management.",
+      "examPoints": [
+        "COBIT can be used by boards, executives, business management, IT management, auditors, security professionals, risk professionals, compliance teams, control owners, and assurance professionals.",
+        "It is useful because it converts governance expectations into IT processes and measurable controls."
+      ],
+      "oneLiners": [
+        "COBIT makes IT governable, measurable, and accountable."
+      ]
+    },
+    {
+      "id": "cobit-evolution",
+      "title": "COBIT Evolution",
+      "definition": "COBIT evolved from an audit and control reference into an enterprise governance system for information and technology.",
+      "examPoints": [
+        "COBIT 1 focused on audit.",
+        "COBIT 2 focused on control.",
+        "COBIT 3 expanded toward management.",
+        "COBIT 4 and 4.1 emphasized IT governance.",
+        "COBIT 5 addressed governance of enterprise IT.",
+        "Later direction expanded toward enterprise governance of information and technology.",
+        "COBIT is not merely an audit checklist."
+      ],
+      "workflows": [
+        "Stakeholder needs -> Enterprise goals -> IT-related goals -> Processes -> Controls -> Metrics"
+      ],
+      "oneLiners": [
+        "COBIT expanded from audit control to enterprise governance."
+      ]
+    },
+    {
+      "id": "cobit-and-other-frameworks",
+      "title": "COBIT 5 and Other Frameworks",
+      "definition": "COBIT 5 was designed to be broadly applicable and to integrate related standards and practices, including ISO-related standards and ITIL.",
+      "examPoints": [
+        "COBIT can act as an umbrella governance framework.",
+        "COBIT explains governance outcomes.",
+        "ITIL may provide detailed service-management practices.",
+        "ISO standards may define management-system requirements.",
+        "Security standards may define technical controls.",
+        "COBIT integrates with other frameworks rather than necessarily replacing them."
+      ],
+      "oneLiners": [
+        "COBIT is often an integrating framework."
+      ]
+    },
+    {
+      "id": "governance-vs-management",
+      "title": "Governance vs Management",
+      "definition": "Governance evaluates, directs, and monitors. Management plans, builds, runs, and monitors within governance direction.",
+      "examPoints": [
+        "Governance is primarily performed by the board or governing body.",
+        "Evaluate means understanding stakeholder needs, options, risks, and priorities.",
+        "Direct means setting priorities, approving policy, and providing direction.",
+        "Monitor means reviewing performance, compliance, and achievement of objectives.",
+        "Management operates within the direction established by governance.",
+        "Management plans and implements, operates processes, and monitors daily performance."
+      ],
+      "comparisons": [
+        "Governance determines direction; management executes direction.",
+        "Governance evaluates stakeholder needs; management plans and implements.",
+        "Governance approves priorities; management operates processes."
+      ],
+      "oneLiners": [
+        "Governance decides what should happen; management makes it happen."
+      ]
+    },
+    {
+      "id": "cobit-framework-structure",
+      "title": "COBIT Framework Structure",
+      "definition": "COBIT consists of domains, governance and management objectives, enabling processes, and activities.",
+      "examPoints": [
+        "Each domain represents an area of enterprise IT governance or management.",
+        "Classical domains include Align, Plan and Organize; Acquire and Implement; Deliver and Support; and Monitor and Evaluate.",
+        "These are often abbreviated as APO, AI, DS, and ME, depending on version and terminology."
+      ],
+      "oneLiners": [
+        "COBIT organizes governance into domains, objectives, processes, and activities."
+      ]
+    },
+    {
+      "id": "align-plan-organize",
+      "title": "Align, Plan and Organize",
+      "definition": "Align, Plan and Organize ensures that IT strategy supports business strategy.",
+      "examPoints": [
+        "It asks what the business needs from IT, what the priorities are, which risks must be managed, what architecture is required, what resources are needed, and who is responsible.",
+        "Examples include IT strategy, enterprise architecture, budgeting, risk management, security planning, and human-resource planning."
+      ],
+      "oneLiners": [
+        "APO connects IT planning with business direction."
+      ]
+    },
+    {
+      "id": "acquire-and-implement",
+      "title": "Acquire and Implement",
+      "definition": "Acquire and Implement focuses on obtaining or developing technology and introducing it safely.",
+      "examPoints": [
+        "It includes requirements definition, software acquisition, application development, infrastructure procurement, change management, testing, deployment, configuration, and acceptance.",
+        "It connects strongly to SOX change-management controls."
+      ],
+      "oneLiners": [
+        "Acquire and Implement controls how technology enters production."
+      ]
+    },
+    {
+      "id": "deliver-and-support",
+      "title": "Deliver and Support",
+      "definition": "Deliver and Support focuses on operating IT services.",
+      "examPoints": [
+        "It includes service delivery, security operations, backup, user support, incident management, access control, availability, capacity, data management, and physical security.",
+        "It connects strongly to SOX controls over access, backup, and operational reliability."
+      ],
+      "oneLiners": [
+        "Deliver and Support keeps IT services reliable and controlled."
+      ]
+    },
+    {
+      "id": "monitor-and-evaluate",
+      "title": "Monitor and Evaluate",
+      "definition": "Monitor and Evaluate determines whether controls and processes achieve intended results.",
+      "examPoints": [
+        "It includes performance monitoring, internal-control monitoring, compliance review, audit support, governance review, and corrective-action tracking.",
+        "It connects directly to SOX control testing, audit evidence, management assessment, and external assurance."
+      ],
+      "oneLiners": [
+        "Monitor and Evaluate turns controls into measurable assurance."
+      ]
+    },
+    {
+      "id": "cobit-control",
+      "title": "COBIT Control",
+      "definition": "In COBIT, a control is a combination of procedures, practices, policies, and structures designed to provide acceptable assurance that business objectives will be achieved.",
+      "examPoints": [
+        "A control objective defines the acceptable result to be achieved by implementing control procedures for a particular IT operation.",
+        "Example control objective: only authorized users may access the financial-reporting database.",
+        "Possible procedures include unique IDs, MFA, role-based permissions, manager approval, quarterly access review, and privileged-session logging."
+      ],
+      "comparisons": [
+        "Control objective = desired result.",
+        "Control procedure = specific action used to achieve the result."
+      ],
+      "oneLiners": [
+        "Objective states the result; procedure performs the control."
+      ]
+    },
+    {
+      "id": "cobit-5-principles",
+      "title": "COBIT 5 Principles",
+      "definition": "COBIT 5 is built on five principles that connect stakeholder value, enterprise scope, integrated frameworks, holistic governance, and separation of governance from management.",
+      "examPoints": [
+        "Principle 1: meeting stakeholder needs.",
+        "Value balances benefits realization, risk optimization, and resource optimization.",
+        "Principle 2: covering the enterprise end-to-end.",
+        "Principle 3: applying a single integrated framework.",
+        "Principle 4: enabling a holistic approach.",
+        "A holistic approach requires policies, structures, culture, information, technology, people, and skills.",
+        "Principle 5: separating governance from management."
+      ],
+      "oneLiners": [
+        "COBIT governs the enterprise end-to-end and separates direction from execution."
+      ]
+    },
+    {
+      "id": "cobit-enablers",
+      "title": "Seven COBIT Enablers or Governance Aspects",
+      "definition": "COBIT governance depends on principles, processes, structures, culture, information, technology, and people.",
+      "examPoints": [
+        "Principles, policies, and frameworks convert desired behavior into formal guidance.",
+        "Processes transform inputs into outputs.",
+        "Organizational structures create decision-making and accountability bodies.",
+        "Culture, ethics, and behavior affect whether controls are followed.",
+        "Information is both a resource used by the organization and an output produced by processes.",
+        "Services, infrastructure, and applications support business operations.",
+        "People, skills, and competencies provide qualified and accountable governance."
+      ],
+      "workflows": [
+        "Effective governance = Process + People + Technology + Structure + Culture + Information"
+      ],
+      "oneLiners": [
+        "Mature governance cannot rely only on technical controls."
+      ]
+    },
+    {
+      "id": "cobit-three-level-structure",
+      "title": "COBIT Three-Level Structure",
+      "definition": "COBIT can be understood through business requirements, IT resources, and IT processes.",
+      "examPoints": [
+        "Business requirements or information criteria include effectiveness, efficiency, confidentiality, integrity, availability, compliance, and reliability.",
+        "IT resources include applications, information, infrastructure, and people.",
+        "IT processes are activities organized into governance and management domains."
+      ],
+      "workflows": [
+        "Business Requirements -> IT Resources -> IT Processes"
+      ],
+      "oneLiners": [
+        "COBIT links what the business needs to IT resources and processes."
+      ]
+    },
+    {
+      "id": "cobit-information-criteria",
+      "title": "COBIT Information Criteria",
+      "definition": "COBIT information criteria describe the qualities information must have to support business and control objectives.",
+      "examPoints": [
+        "Effectiveness means information is relevant, timely, accurate, and usable.",
+        "Efficiency means resources are used economically and productively.",
+        "Confidentiality protects sensitive information from unauthorized disclosure.",
+        "Integrity means information is accurate, complete, and protected from unauthorized modification.",
+        "Availability means information and systems are accessible when required.",
+        "Compliance means processes meet applicable laws, regulations, and contracts.",
+        "Reliability means information is dependable enough for management and reporting.",
+        "SOX especially depends on integrity, reliability, compliance, availability, and confidentiality."
+      ],
+      "oneLiners": [
+        "SOX needs financial information to be accurate, reliable, available, compliant, and protected."
+      ]
+    },
+    {
+      "id": "cobit-components",
+      "title": "COBIT Components",
+      "definition": "COBIT includes framework organization, process descriptions, control objectives, management guidelines, and maturity models.",
+      "examPoints": [
+        "The framework organizes governance objectives and good practices by domains and processes.",
+        "Process descriptions provide a common reference model and terminology.",
+        "Control objectives state required results for effective control.",
+        "Management guidelines help assign responsibility, define objectives, measure performance, and understand process relationships.",
+        "Maturity models help assess current process capability and improvement gaps."
+      ],
+      "oneLiners": [
+        "COBIT gives structure, objectives, responsibilities, metrics, and maturity."
+      ]
+    },
+    {
+      "id": "cobit-maturity-concept",
+      "title": "COBIT Maturity Concept",
+      "definition": "A maturity model evaluates how consistently and effectively a process operates.",
+      "examPoints": [
+        "A simplified maturity path is nonexistent, initial or ad hoc, repeatable, defined, managed and measurable, and optimized.",
+        "Access review at initial level may happen only after an incident.",
+        "Repeatable means some departments perform reviews but not consistently.",
+        "Defined means a formal quarterly procedure exists.",
+        "Managed means completion, exceptions, and overdue actions are measured.",
+        "Optimized means reviews are automated and continuously improved."
+      ],
+      "workflows": [
+        "Nonexistent -> Initial or Ad Hoc -> Repeatable -> Defined -> Managed and Measurable -> Optimized"
+      ],
+      "oneLiners": [
+        "Maturity shows whether controls are ad hoc, defined, measured, or optimized."
+      ]
+    },
+    {
+      "id": "cobit-implementation-lifecycle",
+      "title": "COBIT Implementation Lifecycle",
+      "definition": "COBIT implementation is a seven-phase continuous governance-improvement lifecycle.",
+      "examPoints": [
+        "Phase 1 asks what the drivers are, such as audit findings, incidents, regulatory requirements, business expansion, poor IT performance, or high operational risk.",
+        "Phase 2 asks where we are now by assessing current state, problems, weak controls, capability level, and stakeholder concerns.",
+        "Phase 3 asks where we want to be by defining desired future state and roadmap.",
+        "Phase 4 asks what needs to be done by creating a programme plan with activities, roles, resources, timeline, and priorities.",
+        "Phase 5 asks how we get there by executing the plan.",
+        "Phase 6 asks whether we got there by measuring benefits and outcomes.",
+        "Phase 7 asks how to keep momentum going by sustaining improvements and starting the next cycle."
+      ],
+      "workflows": [
+        "Drivers -> Current State -> Target State -> Programme Plan -> Execute -> Measure Outcomes -> Sustain Momentum"
+      ],
+      "oneLiners": [
+        "COBIT implementation is continuous improvement, not a one-time project."
+      ]
+    },
+    {
+      "id": "sox-vs-cobit",
+      "title": "SOX vs COBIT",
+      "definition": "SOX and COBIT differ by type, issuer, purpose, mandate, focus, penalty model, users, and scope.",
+      "examPoints": [
+        "SOX is a US federal law; COBIT is an ISACA governance framework.",
+        "SOX protects investors and financial reporting; COBIT governs and manages enterprise IT.",
+        "SOX is mandatory for applicable entities; COBIT is voluntary unless adopted contractually or internally.",
+        "SOX has legal and criminal consequences; COBIT has no direct statutory penalty.",
+        "SOX focuses on financial-reporting-related controls; COBIT covers enterprise information and technology.",
+        "SOX defines obligations; COBIT helps design and manage controls."
+      ],
+      "comparisons": [
+        "SOX = legal obligation.",
+        "COBIT = governance and control framework."
+      ],
+      "oneLiners": [
+        "SOX says what must be achieved; COBIT helps organize how IT achieves it."
+      ]
+    },
+    {
+      "id": "how-cobit-supports-sox",
+      "title": "How COBIT Supports SOX",
+      "definition": "COBIT helps translate SOX requirements into structured IT controls.",
+      "examPoints": [
+        "For access to financial systems, COBIT supports access-control objectives, ownership, least privilege, access review, exception monitoring, and control performance measurement.",
+        "For financial application changes, COBIT supports formal change process, approval, testing, segregation of duties, controlled deployment, and change evidence.",
+        "For financial data loss, COBIT supports backup procedures, retention, restore testing, disaster recovery, and availability monitoring."
+      ],
+      "oneLiners": [
+        "COBIT turns SOX concerns into IT governance practices."
+      ]
+    },
+    {
+      "id": "integrated-sox-cobit-control-chain",
+      "title": "Integrated SOX-COBIT Control Chain",
+      "definition": "The integrated chain starts with a SOX requirement and ends with management certification and external audit.",
+      "examPoints": [
+        "The organization identifies financial-reporting risk.",
+        "It selects a relevant COBIT objective.",
+        "It defines a control, assigns an owner, implements a procedure, and generates evidence.",
+        "It tests design effectiveness and operating effectiveness.",
+        "It remediates deficiencies.",
+        "It supports management certification and external audit."
+      ],
+      "workflows": [
+        "SOX requirement -> Financial-reporting risk -> COBIT objective -> Control -> Owner -> Procedure -> Evidence -> Design testing -> Operating testing -> Remediation -> Management certification -> External audit"
+      ],
+      "oneLiners": [
+        "The SOX-COBIT chain converts law into evidence."
+      ]
+    },
+    {
+      "id": "integrated-control-example",
+      "title": "Example Integrated Control",
+      "definition": "An integrated SOX-COBIT control links a financial-reporting risk to a COBIT control objective, procedures, evidence, and testing.",
+      "examPoints": [
+        "Risk: unauthorized modification of general-ledger data.",
+        "SOX relevance: it could cause materially incorrect financial statements.",
+        "COBIT control objective: ensure logical access is restricted according to business need.",
+        "Control procedures may include finance-manager approval, role assignment by job function, MFA, privileged activity logging, quarterly access review, and removal of terminated users within 24 hours.",
+        "Evidence may include approval ticket, user-access report, MFA configuration, audit logs, quarterly review sign-off, and termination report.",
+        "Testing involves selecting samples and verifying that access was approved, appropriate, and reviewed."
+      ],
+      "oneLiners": [
+        "A good control connects risk, objective, procedure, evidence, and test."
+      ]
+    },
+    {
+      "id": "segregation-of-duties",
+      "title": "Segregation of Duties",
+      "definition": "Segregation of duties separates incompatible responsibilities so one person cannot complete a risky transaction or change without independent checks.",
+      "examPoints": [
+        "A single person should not be able to create a vendor, approve the vendor, create a payment, and approve the payment.",
+        "In IT, a developer should not independently develop, approve, and deploy a production change.",
+        "Segregation of duties reduces fraud, unauthorized changes, concealment, accidental error, and management override."
+      ],
+      "oneLiners": [
+        "No single person should control an entire high-risk process."
+      ]
+    },
+    {
+      "id": "general-it-controls-vs-application-controls",
+      "title": "General IT Controls vs Application Controls",
+      "definition": "IT General Controls support the reliability of the IT environment, while Application Controls operate inside a specific application.",
+      "examPoints": [
+        "IT General Controls include access management, change management, backup, operations, security administration, and incident management.",
+        "Application Controls include input validation, duplicate-payment detection, automated approval limits, reconciliation, sequence checks, and calculation controls.",
+        "Application controls may be unreliable if the underlying general IT controls are weak.",
+        "Example: an automated approval control is meaningless if developers can modify the application directly without approval."
+      ],
+      "comparisons": [
+        "General IT controls = environment reliability.",
+        "Application controls = specific application behavior."
+      ],
+      "oneLiners": [
+        "Weak general IT controls can undermine strong application controls."
+      ]
+    },
+    {
+      "id": "control-deficiency-concepts",
+      "title": "Control Deficiency Concepts",
+      "definition": "Control deficiencies vary in severity from ordinary deficiency to significant deficiency to material weakness.",
+      "examPoints": [
+        "Control deficiency means a control is missing or does not operate as intended.",
+        "Significant deficiency is important enough to be communicated to those responsible for governance.",
+        "Material weakness is a serious deficiency creating a reasonable possibility that a material financial misstatement will not be prevented or detected timely."
+      ],
+      "workflows": [
+        "Control Deficiency -> Significant Deficiency -> Material Weakness"
+      ],
+      "oneLiners": [
+        "Material weakness is the most serious control-deficiency category."
+      ]
+    },
+    {
+      "id": "high-probability-traps",
+      "title": "High-Probability Traps",
+      "definition": "Common mistakes come from confusing SOX with COBIT, governance with management, control objectives with procedures, and written controls with operating controls.",
+      "examPoints": [
+        "SOX is a law; COBIT is a framework.",
+        "COBIT was created by ISACA, not the SEC or PCAOB.",
+        "PCAOB oversees public-company auditors.",
+        "SOX applies to foreign companies registered with the SEC, not only domestic US companies.",
+        "Management establishes and maintains controls; auditors independently assess them.",
+        "Control objective is the required result; control procedure is the implementation step.",
+        "Governance evaluates, directs, and monitors; management plans, builds, runs, and monitors.",
+        "COBIT covers the enterprise end-to-end and is not restricted to the IT department.",
+        "Auditor independence is compromised when an auditor performs conflicting non-audit work for the same client.",
+        "A written control is not sufficient; it must operate and produce evidence."
+      ],
+      "oneLiners": [
+        "The most common confusion is law versus framework and objective versus procedure."
+      ]
+    },
+    {
+      "id": "one-line-definitions",
+      "title": "One-Line Definitions",
+      "definition": "Short definitions help recall the main SOX and COBIT terms.",
+      "examPoints": [
+        "SOX: a 2002 US federal law designed to protect investors by improving corporate financial reporting, internal controls, accountability, and audit independence.",
+        "PCAOB: a body created to oversee accounting firms that audit public companies.",
+        "ICFR: policies and controls providing reasonable assurance over financial-reporting reliability.",
+        "Auditor Independence: the requirement that auditors remain objective and free from conflicting interests.",
+        "CEO/CFO Certification: formal executive confirmation that financial reports and related disclosures are accurate.",
+        "COBIT: an ISACA framework for enterprise governance and management of information and technology.",
+        "Control Objective: a statement defining the result that a control must achieve.",
+        "Governance: evaluation, direction, and monitoring performed to satisfy stakeholder needs.",
+        "Management: planning, building, running, and monitoring according to governance direction.",
+        "Maturity Model: a mechanism used to evaluate the capability and consistency of a process."
+      ],
+      "oneLiners": [
+        "SOX is accountability; COBIT is governance structure."
+      ]
+    },
+    {
+      "id": "final-memory-map",
+      "title": "Final Memory Map",
+      "definition": "SOX establishes legal accountability for reliable financial reporting, while COBIT provides a structured governance and control system that helps organizations manage the IT processes on which that financial reporting depends.",
+      "examPoints": [
+        "SOX emphasizes investor protection, financial-reporting reliability, management accountability, auditor independence, PCAOB oversight, internal controls, CEO/CFO certification, whistleblower protection, and criminal penalties.",
+        "IT systems affecting financial reports require access control, least privilege, change management, backup, data integrity, logging, incident disclosure, and control testing.",
+        "COBIT helps align IT with business, optimize resources, deliver value, manage risk, define controls, assign responsibilities, measure performance, and improve maturity.",
+        "COBIT governance uses principles, processes, structures, culture, information, technology, and people.",
+        "The combined result is audit evidence, assurance, and SOX compliance."
+      ],
+      "workflows": [
+        "SOX -> IT systems affecting financial reports -> IT controls -> COBIT governance -> Audit evidence and assurance -> SOX compliance"
+      ],
+      "oneLiners": [
+        "SOX sets legal accountability; COBIT structures the IT governance needed to support it."
+      ]
+    }
+  ]
+}

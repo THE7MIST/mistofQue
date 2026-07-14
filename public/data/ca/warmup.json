@@ -1,1 +1,1150 @@
-{"version":"1","title":"CA Warm Up MCQ","subject":"CA","stage":"Warm Up MCQ","durationMinutes":10,"questions":[{"id":1,"question":"Placeholder question for CA Warm Up MCQ.","options":["Option A","Option B","Option C","Option D"],"correct":0,"description":"Placeholder item. Replace this question with real MCQ content.","difficulty":"Easy","tags":["CA","Placeholder"]}]}
+{
+  "version": "1",
+  "title": "CA Warm Up MCQ",
+  "subject": "Compliance Audits",
+  "stage": "Warm Up MCQ",
+  "topic": "Mixed Compliance Audit Warm Up",
+  "durationMinutes": 60,
+  "questions": [
+    {
+      "id": 1,
+      "originalNumber": 1,
+      "question": "Which statement most accurately defines compliance?",
+      "options": [
+        "Eliminating every security vulnerability from an organization",
+        "Conforming to applicable laws, regulations, policies, standards and obligations",
+        "Installing technical security controls without considering business requirements",
+        "Conducting penetration testing after every security incident"
+      ],
+      "correct": 1,
+      "description": "Compliance means operating according to clearly defined requirements. Those requirements may arise from legislation, regulations, contracts, standards, organizational policies or procedures. Compliance does not guarantee complete security or require the elimination of every vulnerability.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q1"
+      ]
+    },
+    {
+      "id": 2,
+      "originalNumber": 21,
+      "question": "An organization has a high-level requirement stating, “All privileged access shall be restricted and monitored.” Which document should specify that privileged sessions must be logged for 180 days?",
+      "options": [
+        "Policy",
+        "Standard",
+        "Guideline",
+        "Audit opinion"
+      ],
+      "correct": 1,
+      "description": "The policy states the high-level security intention. A standard converts that intention into a specific mandatory requirement, such as a defined retention period or approved authentication method.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q21"
+      ]
+    },
+    {
+      "id": 3,
+      "originalNumber": 41,
+      "question": "A bank’s policy requires quarterly review of privileged accounts. The review procedure is appropriately designed, but evidence shows that no review was performed during the previous three quarters. What is the most accurate audit conclusion?",
+      "options": [
+        "The control is both well designed and operating effectively",
+        "The control is poorly designed but operating effectively",
+        "The control may be well designed but is not operating effectively",
+        "No deficiency exists because the policy is documented"
+      ],
+      "correct": 2,
+      "description": "The documented control could prevent or detect excessive access if followed, indicating potentially effective design. However, failure to perform the review demonstrates ineffective operation.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q41"
+      ]
+    },
+    {
+      "id": 4,
+      "originalNumber": 2,
+      "question": "Which governance document normally provides mandatory, step-by-step instructions for completing a task?",
+      "options": [
+        "Policy",
+        "Guideline",
+        "Procedure",
+        "Framework"
+      ],
+      "correct": 2,
+      "description": "A procedure specifies the mandatory sequence of actions required to perform a task or implement a policy. A policy states high-level intent, a standard specifies mandatory uniform requirements, and a guideline provides recommendations.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q2"
+      ]
+    },
+    {
+      "id": 5,
+      "originalNumber": 22,
+      "question": "Which audit evidence is generally most reliable?",
+      "options": [
+        "An unsupported verbal statement from the control owner",
+        "A system-generated, access-controlled log corroborated by independent testing",
+        "An unsigned document prepared after the audit began",
+        "A personal opinion from an employee unrelated to the control"
+      ],
+      "correct": 1,
+      "description": "Reliable evidence should be relevant, sufficient, authentic and independently verifiable. Corroborated system-generated evidence is generally stronger than unsupported testimony or retrospectively created documents.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q22"
+      ]
+    },
+    {
+      "id": 6,
+      "originalNumber": 42,
+      "question": "An auditor finds that developers can create, approve and deploy changes directly into the production financial system. Which control principle is most clearly violated?",
+      "options": [
+        "Data minimization",
+        "Segregation of duties",
+        "Risk transfer",
+        "Storage limitation"
+      ],
+      "correct": 1,
+      "description": "Development, approval and production deployment are incompatible responsibilities when held by one person. Separating these duties reduces unauthorized changes, errors and concealment, particularly in SOX-relevant systems.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q42"
+      ]
+    },
+    {
+      "id": 7,
+      "originalNumber": 3,
+      "question": "Which document is generally advisory rather than mandatory?",
+      "options": [
+        "Procedure",
+        "Standard",
+        "Guideline",
+        "Regulation"
+      ],
+      "correct": 2,
+      "description": "A guideline provides recommended practices and allows flexibility. Procedures and standards are normally mandatory within their applicable scope, while regulations impose legal or regulatory requirements.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q3"
+      ]
+    },
+    {
+      "id": 8,
+      "originalNumber": 23,
+      "question": "What is the primary purpose of an audit exit conference?",
+      "options": [
+        "To approve the audit scope before testing begins",
+        "To discuss preliminary findings and obtain factual clarification",
+        "To allow management to delete disputed findings without evidence",
+        "To transfer ownership of controls to the auditor"
+      ],
+      "correct": 1,
+      "description": "The exit conference allows the auditor and management to discuss preliminary findings, correct factual misunderstandings and obtain initial management responses. It does not permit unsupported suppression of findings.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q23"
+      ]
+    },
+    {
+      "id": 9,
+      "originalNumber": 43,
+      "question": "A service organization processes payroll transactions for several publicly listed companies. Its customers’ financial auditors need assurance about controls affecting financial reporting. Which report is most appropriate?",
+      "options": [
+        "SOC 1",
+        "SOC 3",
+        "PCI DSS Attestation of Compliance",
+        "GDPR data-protection impact assessment"
+      ],
+      "correct": 0,
+      "description": "Payroll processing can affect user entities’ financial statements. SOC 1 is designed for controls at service organizations relevant to user entities’ internal control over financial reporting.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q43"
+      ]
+    },
+    {
+      "id": 10,
+      "originalNumber": 4,
+      "question": "What is the primary objective of a compliance audit?",
+      "options": [
+        "To exploit vulnerabilities and demonstrate system compromise",
+        "To verify conformity with specified requirements",
+        "To guarantee that the organization will never experience a breach",
+        "To replace management’s responsibility for internal controls"
+      ],
+      "correct": 1,
+      "description": "A compliance audit compares evidence against defined criteria such as laws, standards, policies, regulations or contractual obligations. Penetration testing, not compliance auditing, attempts to exploit vulnerabilities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q4"
+      ]
+    },
+    {
+      "id": 11,
+      "originalNumber": 24,
+      "question": "Which statement correctly distinguishes design effectiveness from operating effectiveness?",
+      "options": [
+        "Design effectiveness concerns whether the control could address the risk; operating effectiveness concerns whether it actually operated consistently",
+        "Design effectiveness concerns financial cost; operating effectiveness concerns legal penalties",
+        "Design effectiveness is tested only after a breach; operating effectiveness is never tested",
+        "They are two names for the same audit conclusion"
+      ],
+      "correct": 0,
+      "description": "A well-designed control may still fail operationally. For example, a quarterly access-review procedure may be appropriate in design but ineffective in operation if no reviews were actually conducted.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q24"
+      ]
+    },
+    {
+      "id": 12,
+      "originalNumber": 44,
+      "question": "A cloud provider wants a publicly distributable assurance report covering security, availability, processing integrity, confidentiality and privacy, without the detailed control descriptions contained in a restricted report. Which report is most suitable?",
+      "options": [
+        "SOC 1 Type 1",
+        "SOC 2 Type 2",
+        "SOC 3",
+        "SOX management certification"
+      ],
+      "correct": 2,
+      "description": "SOC 3 addresses the same broad Trust Services Criteria areas as SOC 2 but contains less detail and is intended for general use and wider distribution.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q44"
+      ]
+    },
+    {
+      "id": 13,
+      "originalNumber": 5,
+      "question": "Which activity normally occurs during the fieldwork phase of a security audit?",
+      "options": [
+        "Establishing the engagement scope for the first time",
+        "Collecting and testing audit evidence",
+        "Formally closing all corrective actions",
+        "Issuing a certification before testing controls"
+      ],
+      "correct": 1,
+      "description": "Fieldwork involves interviews, observation, document inspection, sampling, reperformance and control testing. Scope and objectives are normally established during pre-audit and planning activities.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q5"
+      ]
+    },
+    {
+      "id": 14,
+      "originalNumber": 25,
+      "question": "An auditor discovers that an organization has not patched a critical internet-facing server. In risk terminology, the missing patch is best classified as a:",
+      "options": [
+        "Threat",
+        "Vulnerability",
+        "Impact",
+        "Risk appetite"
+      ],
+      "correct": 1,
+      "description": "The missing patch is a weakness. An attacker or malware represents a threat, exploitation is the event, and resulting loss represents impact.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q25"
+      ]
+    },
+    {
+      "id": 15,
+      "originalNumber": 45,
+      "question": "An organization has inventoried only company-owned laptops but has not recorded cloud workloads, virtual machines, mobile devices or externally hosted applications. Which NIST CSF function is most directly deficient?",
+      "options": [
+        "Identify",
+        "Detect",
+        "Respond",
+        "Recover"
+      ],
+      "correct": 0,
+      "description": "The Identify function includes asset management, business context and risk assessment. An incomplete inventory prevents the organization from understanding what must be protected.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q45"
+      ]
+    },
+    {
+      "id": 16,
+      "originalNumber": 6,
+      "question": "Which auditor characteristic is most directly threatened when an auditor evaluates a security system that the same auditor personally designed?",
+      "options": [
+        "Technical competence",
+        "Independence and objectivity",
+        "Confidentiality",
+        "Time management"
+      ],
+      "correct": 1,
+      "description": "An auditor should not evaluate their own work because self-review creates a conflict of interest. Independence enables the auditor to form an unbiased conclusion based on evidence.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q6"
+      ]
+    },
+    {
+      "id": 17,
+      "originalNumber": 26,
+      "question": "If likelihood is rated 4 and impact is rated 5 on a numerical risk scale, what is the resulting risk score using the formula `Risk = Likelihood × Impact`?",
+      "options": [
+        "1",
+        "9",
+        "20",
+        "45"
+      ],
+      "correct": 2,
+      "description": "The calculation is: ```text Risk = Likelihood × Impact Risk = 4 × 5 Risk = 20 ``` The classification of 20 as medium, high or critical depends on the organization’s defined risk matrix.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q26"
+      ]
+    },
+    {
+      "id": 18,
+      "originalNumber": 46,
+      "question": "A company’s Current NIST Profile shows that multifactor authentication protects administrators only. Its Target Profile requires MFA for all users accessing sensitive systems. What does the difference represent?",
+      "options": [
+        "A material financial misstatement",
+        "A profile gap requiring prioritized improvement",
+        "Automatic Tier 4 maturity",
+        "A completed recovery objective"
+      ],
+      "correct": 1,
+      "description": "The comparison identifies a difference between present and desired cybersecurity outcomes. The organization should assess risk, resources and priorities before developing its implementation plan.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q46"
+      ]
+    },
+    {
+      "id": 19,
+      "originalNumber": 7,
+      "question": "Which statement best describes security evaluation?",
+      "options": [
+        "It measures only the financial cost of cyber incidents",
+        "It examines a system against a security model, standard or specification",
+        "It is limited to reviewing organizational policies",
+        "It is identical to continuous security monitoring"
+      ],
+      "correct": 1,
+      "description": "Security evaluation determines the degree to which a system conforms to defined security requirements. It may involve design analysis, verification, validation, functional testing and controlled penetration.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q7"
+      ]
+    },
+    {
+      "id": 20,
+      "originalNumber": 27,
+      "question": "Which risk treatment is illustrated when an organization stops offering a service because its associated risk exceeds the organization’s appetite?",
+      "options": [
+        "Risk acceptance",
+        "Risk transfer",
+        "Risk avoidance",
+        "Risk monitoring"
+      ],
+      "correct": 2,
+      "description": "Avoidance removes the activity producing the risk. Acceptance retains it, reduction implements controls, and transfer shifts some financial or operational consequence to another party.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q27"
+      ]
+    },
+    {
+      "id": 21,
+      "originalNumber": 47,
+      "question": "An organization has formally documented cybersecurity policies, consistently performs risk assessments, assigns responsibilities and repeats its processes across business units. Which NIST Implementation Tier most closely fits this description?",
+      "options": [
+        "Tier 1 — Partial",
+        "Tier 2 — Risk Informed",
+        "Tier 3 — Repeatable",
+        "Tier 4 — Adaptive solely because policies exist"
+      ],
+      "correct": 2,
+      "description": "Tier 3 reflects formally approved, consistently implemented and repeatable risk-management practices. Tier 4 additionally requires adaptive improvement informed by lessons learned, predictive indicators and changing conditions.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q47"
+      ]
+    },
+    {
+      "id": 22,
+      "originalNumber": 8,
+      "question": "Which statement correctly distinguishes a security evaluation from a security metric?",
+      "options": [
+        "An evaluation is continuous, while a metric is always performed once",
+        "An evaluation assesses security posture, while a metric measures performance over time",
+        "An evaluation is quantitative only, while a metric is qualitative only",
+        "There is no meaningful difference between them"
+      ],
+      "correct": 1,
+      "description": "A security evaluation is commonly periodic or point-in-time, such as an audit or penetration test. Security metrics are repeatedly collected to measure trends such as response time, patch coverage or detection effectiveness.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q8"
+      ]
+    },
+    {
+      "id": 23,
+      "originalNumber": 28,
+      "question": "Which Common Criteria assurance level involves formally verified design and testing and represents the highest EAL?",
+      "options": [
+        "EAL1",
+        "EAL4",
+        "EAL6",
+        "EAL7"
+      ],
+      "correct": 3,
+      "description": "The seven Evaluation Assurance Levels progress from **EAL1: Functionally Tested** to **EAL7: Formally Verified Design and Tested**. Increasing EALs indicate increasing depth, rigor and assurance, not a guarantee of complete security.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q28"
+      ]
+    },
+    {
+      "id": 24,
+      "originalNumber": 48,
+      "question": "A company collects customer phone numbers to deliver purchased products. It later sells those numbers to unrelated advertisers without informing customers or establishing another valid legal basis. Which GDPR principle is most directly violated?",
+      "options": [
+        "Accuracy",
+        "Purpose limitation",
+        "Availability",
+        "Non-repudiation"
+      ],
+      "correct": 1,
+      "description": "The data was collected for delivery and then reused for an unrelated advertising purpose. This is incompatible further processing unless an appropriate legal basis and transparency requirements are satisfied.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q48"
+      ]
+    },
+    {
+      "id": 25,
+      "originalNumber": 9,
+      "question": "Which sequence represents the original five functions of NIST Cybersecurity Framework 1.1 taught in the supplied module?",
+      "options": [
+        "Govern, Plan, Implement, Audit, Improve",
+        "Identify, Protect, Detect, Respond, Recover",
+        "Assess, Authorize, Monitor, Report, Certify",
+        "Prevent, Discover, Investigate, Prosecute, Restore"
+      ],
+      "correct": 1,
+      "description": "NIST CSF 1.1 organized cybersecurity outcomes around Identify, Protect, Detect, Respond and Recover. NIST CSF 2.0 later added **Govern** as a sixth function.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q9"
+      ]
+    },
+    {
+      "id": 26,
+      "originalNumber": 29,
+      "question": "Which Common Criteria EAL is commonly described as “Methodically Designed, Tested and Reviewed”?",
+      "options": [
+        "EAL2",
+        "EAL3",
+        "EAL4",
+        "EAL5"
+      ],
+      "correct": 2,
+      "description": "The standard sequence is: ```text EAL1 — Functionally Tested EAL2 — Structurally Tested EAL3 — Methodically Tested and Checked EAL4 — Methodically Designed, Tested and Reviewed EAL5 — Semiformally Designed and Tested EAL6 — Semiformally Verified Design and Tested EAL7 — Formally Verified Design and Tested ```",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q29"
+      ]
+    },
+    {
+      "id": 27,
+      "originalNumber": 49,
+      "question": "An Indian company determines why and how customer data is collected, while a cloud vendor stores the data on its behalf. Under DPDPA terminology, the company and vendor are respectively:",
+      "options": [
+        "Data Principal and Data Fiduciary",
+        "Data Fiduciary and Data Processor",
+        "Data Processor and Data Principal",
+        "Supervisory Authority and Controller"
+      ],
+      "correct": 1,
+      "description": "The Data Fiduciary determines the purpose and means of processing. The Data Processor carries out processing on behalf of the Data Fiduciary.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q49"
+      ]
+    },
+    {
+      "id": 28,
+      "originalNumber": 10,
+      "question": "In NIST CSF, what is the primary purpose of comparing a Current Profile with a Target Profile?",
+      "options": [
+        "To identify and prioritize cybersecurity gaps",
+        "To calculate criminal penalties",
+        "To replace the organization’s risk assessment",
+        "To determine whether ISO issued a certificate"
+      ],
+      "correct": 0,
+      "description": "The Current Profile represents presently achieved outcomes, while the Target Profile represents desired outcomes. Their comparison reveals gaps and supports a prioritized improvement plan.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q10"
+      ]
+    },
+    {
+      "id": 29,
+      "originalNumber": 30,
+      "question": "Which NIST CSF component describes the rigor and institutionalization of an organization’s cybersecurity risk-management practices?",
+      "options": [
+        "Framework Core",
+        "Implementation Tier",
+        "Informative Reference",
+        "Target Profile only"
+      ],
+      "correct": 1,
+      "description": "Implementation Tiers range from Tier 1, Partial, to Tier 4, Adaptive. Profiles describe selected current or target outcomes, whereas Tiers characterize how cybersecurity risk management is practiced and integrated.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q30"
+      ]
+    },
+    {
+      "id": 30,
+      "originalNumber": 50,
+      "question": "An Indian online service collects personal data digitally but provides no meaningful notice, makes withdrawal substantially harder than giving consent and has no grievance mechanism. Which conclusion is most accurate?",
+      "options": [
+        "It is compliant because the data is stored inside India",
+        "It presents multiple DPDPA compliance deficiencies",
+        "It is outside DPDPA because the service is delivered online",
+        "Encryption alone would cure all deficiencies"
+      ],
+      "correct": 1,
+      "description": "The scenario raises issues involving notice, consent management and grievance redressal. Technical safeguards such as encryption do not replace lawful and accountable processing obligations.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q50"
+      ]
+    },
+    {
+      "id": 31,
+      "originalNumber": 11,
+      "question": "Under GDPR, which entity determines the purposes and means of processing personal data?",
+      "options": [
+        "Data subject",
+        "Controller",
+        "Processor",
+        "Supervisory auditor"
+      ],
+      "correct": 1,
+      "description": "The controller decides why and how personal data will be processed. A processor handles personal data on behalf of the controller.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q11"
+      ]
+    },
+    {
+      "id": 32,
+      "originalNumber": 31,
+      "question": "Which NIST CSF 2.0 function addresses organizational context, cybersecurity policy, roles, oversight and risk strategy?",
+      "options": [
+        "Identify",
+        "Protect",
+        "Govern",
+        "Respond"
+      ],
+      "correct": 2,
+      "description": "NIST CSF 2.0 added Govern to emphasize enterprise direction, accountability, policy, supply-chain risk and integration with organizational risk management. The supplied slides describe CSF 1.1, whose original Core contained five functions.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q31"
+      ]
+    },
+    {
+      "id": 33,
+      "originalNumber": 51,
+      "question": "A hospital allows all employees, including receptionists and maintenance personnel, unrestricted access to complete electronic medical records. Which HIPAA-related principle is most clearly undermined?",
+      "options": [
+        "Minimum necessary access",
+        "Cardholder-data segmentation",
+        "CEO/CFO certification",
+        "Financial materiality"
+      ],
+      "correct": 0,
+      "description": "Access to PHI should be limited according to job responsibilities and legitimate need. Unrestricted access violates least-privilege reasoning and creates confidentiality risk.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q51"
+      ]
+    },
+    {
+      "id": 34,
+      "originalNumber": 12,
+      "question": "Which GDPR principle requires an organization to collect only personal data that is adequate, relevant and necessary for the stated purpose?",
+      "options": [
+        "Storage limitation",
+        "Data minimization",
+        "Accuracy",
+        "Accountability"
+      ],
+      "correct": 1,
+      "description": "Data minimization restricts collection to the information genuinely required for the specified purpose. Purpose limitation concerns using the information only for compatible, declared purposes.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q12"
+      ]
+    },
+    {
+      "id": 35,
+      "originalNumber": 32,
+      "question": "Under GDPR, which situation most clearly demonstrates the principle of purpose limitation?",
+      "options": [
+        "Correcting an inaccurate customer address",
+        "Deleting personal data when its retention period expires",
+        "Using data collected for salary processing to target employees with unrelated advertisements without another valid basis",
+        "Encrypting personal data during transmission"
+      ],
+      "correct": 2,
+      "description": "Purpose limitation requires personal data to be collected for specified, explicit and legitimate purposes and not further processed incompatibly with those purposes.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q32"
+      ]
+    },
+    {
+      "id": 36,
+      "originalNumber": 52,
+      "question": "A merchant encrypts stored cardholder data but keeps vendor-supplied default passwords active on internet-facing payment systems. Which statement is most accurate?",
+      "options": [
+        "Encryption alone makes the merchant fully PCI DSS compliant",
+        "The merchant remains noncompliant because PCI DSS requires multiple complementary controls",
+        "Default passwords are acceptable when card data is encrypted",
+        "PCI DSS addresses only physical card theft"
+      ],
+      "correct": 1,
+      "description": "PCI DSS is a defense-in-depth standard. Protecting stored account data does not compensate automatically for insecure default credentials or failures in other applicable requirements.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q52"
+      ]
+    },
+    {
+      "id": 37,
+      "originalNumber": 13,
+      "question": "What is the central management system established by ISO/IEC 27001?",
+      "options": [
+        "Financial Reporting Management System",
+        "Information Security Management System",
+        "Payment Card Validation System",
+        "Security Operations Certification System"
+      ],
+      "correct": 1,
+      "description": "ISO/IEC 27001 establishes requirements for an **Information Security Management System**, or ISMS. It uses risk management and continual improvement to protect confidentiality, integrity and availability.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q13"
+      ]
+    },
+    {
+      "id": 38,
+      "originalNumber": 33,
+      "question": "A GDPR-covered organization becomes aware of a personal-data breach likely to require notification to the supervisory authority. What is the general notification deadline?",
+      "options": [
+        "Immediately, with no allowance for investigation",
+        "Within 24 hours in every case",
+        "Without undue delay and, where feasible, within 72 hours",
+        "Within one calendar year"
+      ],
+      "correct": 2,
+      "description": "GDPR generally requires qualifying breaches to be reported to the competent supervisory authority without undue delay and, where feasible, within 72 hours after awareness.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q33"
+      ]
+    },
+    {
+      "id": 39,
+      "originalNumber": 53,
+      "question": "A company wants prioritized, prescriptive cybersecurity practices and begins with basic cyber hygiene before adopting more advanced safeguards. Which CIS concept best supports this approach?",
+      "options": [
+        "Evaluation Assurance Levels",
+        "Implementation Groups",
+        "SOX materiality levels",
+        "SOC report types"
+      ],
+      "correct": 1,
+      "description": "CIS Implementation Groups—IG1, IG2 and IG3—help organizations prioritize safeguards according to risk, complexity and resources. IG1 represents foundational cyber hygiene, while IG2 and IG3 build on it.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q53"
+      ]
+    },
+    {
+      "id": 40,
+      "originalNumber": 14,
+      "question": "Which cycle is most closely associated with continuous improvement of an ISO 27001 ISMS?",
+      "options": [
+        "DMAIC",
+        "PDCA",
+        "RACI",
+        "RAID"
+      ],
+      "correct": 1,
+      "description": "PDCA means Plan, Do, Check and Act. It represents planning controls, implementing them, checking performance and taking corrective or improvement action.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q14"
+      ]
+    },
+    {
+      "id": 41,
+      "originalNumber": 34,
+      "question": "Which ISO/IEC standard specifies requirements against which an organization’s ISMS may be certified?",
+      "options": [
+        "ISO/IEC 27001",
+        "ISO/IEC 27002 only",
+        "ISO/IEC 21827 only",
+        "ISO 9000 only"
+      ],
+      "correct": 0,
+      "description": "ISO/IEC 27001 contains ISMS requirements. ISO/IEC 27002 provides information-security control guidance and is not itself the primary ISMS certification requirements standard.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q34"
+      ]
+    },
+    {
+      "id": 42,
+      "originalNumber": 54,
+      "question": "Which statement most accurately distinguishes CIS Controls from CIS Benchmarks?",
+      "options": [
+        "CIS Controls are prioritized security practices, while CIS Benchmarks are prescriptive configuration recommendations for specific technologies",
+        "CIS Controls are laws, while CIS Benchmarks are court decisions",
+        "CIS Controls apply only to physical security, while CIS Benchmarks apply only to privacy",
+        "CIS Controls certify an ISMS, while CIS Benchmarks certify financial reports"
+      ],
+      "correct": 0,
+      "description": "CIS Controls provide prioritized cybersecurity practices at the program level. CIS Benchmarks provide consensus-based hardening recommendations for operating systems, cloud platforms, applications and other technologies.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q54"
+      ]
+    },
+    {
+      "id": 43,
+      "originalNumber": 15,
+      "question": "What is the principal purpose of the Sarbanes-Oxley Act?",
+      "options": [
+        "Protecting cardholder data during payment processing",
+        "Protecting investors through reliable corporate financial reporting and accountability",
+        "Protecting medical records handled by hospitals",
+        "Establishing international information-security certification"
+      ],
+      "correct": 1,
+      "description": "SOX was enacted in the United States following major corporate accounting scandals. It strengthens financial reporting, executive accountability, internal controls and auditor independence.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q15"
+      ]
+    },
+    {
+      "id": 44,
+      "originalNumber": 35,
+      "question": "What is the main purpose of an ISO 27001 Statement of Applicability?",
+      "options": [
+        "To list only security incidents from the previous year",
+        "To record selected controls, their applicability and justification",
+        "To replace the organization’s risk assessment",
+        "To serve as the external auditor’s final opinion"
+      ],
+      "correct": 1,
+      "description": "The Statement of Applicability connects risk treatment decisions to selected controls. It identifies relevant controls, implementation status and reasons for inclusion or exclusion.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q35"
+      ]
+    },
+    {
+      "id": 45,
+      "originalNumber": 55,
+      "question": "What does SSE-CMM primarily evaluate?",
+      "options": [
+        "The number of security products purchased by an organization",
+        "The capability and maturity of systems-security engineering processes",
+        "Compliance with payment-card transaction volumes",
+        "The accuracy of corporate financial statements"
+      ],
+      "correct": 1,
+      "description": "SSE-CMM describes essential characteristics of security-engineering processes and supports assessment and improvement of process maturity across the system lifecycle. It does not prescribe a specific engineering sequence.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q55"
+      ]
+    },
+    {
+      "id": 46,
+      "originalNumber": 16,
+      "question": "Which organization created the COBIT framework?",
+      "options": [
+        "ISO",
+        "NIST",
+        "ISACA",
+        "PCI SSC"
+      ],
+      "correct": 2,
+      "description": "COBIT was developed by ISACA to bridge business requirements, IT risk, technical concerns and control objectives.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q16"
+      ]
+    },
+    {
+      "id": 47,
+      "originalNumber": 36,
+      "question": "Which SOC report is specifically concerned with controls at a service organization relevant to user entities’ internal control over financial reporting?",
+      "options": [
+        "SOC 1",
+        "SOC 2",
+        "SOC 3",
+        "PCI ROC"
+      ],
+      "correct": 0,
+      "description": "SOC 1 addresses service-organization controls relevant to user entities’ internal control over financial reporting. SOC 2 addresses controls using Trust Services Criteria, while SOC 3 is a less detailed general-use report.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q36"
+      ]
+    },
+    {
+      "id": 48,
+      "originalNumber": 56,
+      "question": "An organization performs security engineering differently on every project, with success depending mainly on individual expertise and no consistent organizational process. Which maturity condition is most strongly indicated?",
+      "options": [
+        "An initial or informally performed capability",
+        "A quantitatively controlled and optimized capability",
+        "A fully adaptive NIST Tier 4 capability",
+        "A formally verified Common Criteria EAL7 product"
+      ],
+      "correct": 0,
+      "description": "Dependence on individual effort and inconsistent practices indicates low process maturity. Greater maturity requires managed, defined, measured and continuously improving processes.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q56"
+      ]
+    },
+    {
+      "id": 49,
+      "originalNumber": 17,
+      "question": "Which COBIT activity set is primarily associated with governance?",
+      "options": [
+        "Plan, Build, Run and Monitor",
+        "Evaluate, Direct and Monitor",
+        "Identify, Protect and Detect",
+        "Plan, Do, Check and Act"
+      ],
+      "correct": 1,
+      "description": "In COBIT, governance evaluates stakeholder needs, directs priorities and monitors outcomes. Management performs planning, building, running and operational monitoring.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q17"
+      ]
+    },
+    {
+      "id": 50,
+      "originalNumber": 37,
+      "question": "Which statement correctly distinguishes a Type 1 SOC report from a Type 2 SOC report?",
+      "options": [
+        "Type 1 covers design at a specified date; Type 2 covers design and operating effectiveness over a period",
+        "Type 1 is public, while Type 2 is always a government document",
+        "Type 1 addresses only privacy, while Type 2 addresses only availability",
+        "Type 1 is a penetration test, while Type 2 is a vulnerability scan"
+      ],
+      "correct": 0,
+      "description": "A Type 1 examination focuses on the description and suitability of control design at a specified date. A Type 2 examination additionally evaluates operating effectiveness across a defined review period.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q37"
+      ]
+    },
+    {
+      "id": 51,
+      "originalNumber": 57,
+      "question": "Which action is most directly enabled by the Information Technology Act, 2000 as amended in 2008?",
+      "options": [
+        "Establishing legal recognition for electronic records and electronic authentication while addressing cyber offences",
+        "Certifying all Indian organizations under ISO 27001",
+        "Replacing every sector-specific data-protection obligation",
+        "Creating PCI DSS merchant levels"
+      ],
+      "correct": 0,
+      "description": "India’s IT Act provides the legal foundation for electronic records and electronic transactions and contains provisions addressing computer-related offences, intermediary responsibilities and government powers. DPDPA separately addresses digital personal-data protection.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q57"
+      ]
+    },
+    {
+      "id": 52,
+      "originalNumber": 18,
+      "question": "Which type of information is specifically protected by HIPAA?",
+      "options": [
+        "Cardholder data",
+        "Protected Health Information",
+        "Corporate financial forecasts only",
+        "All publicly available information"
+      ],
+      "correct": 1,
+      "description": "HIPAA protects individually identifiable health information, called PHI, when handled by applicable covered entities and business associates. Electronic PHI is particularly addressed by the HIPAA Security Rule.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q18"
+      ]
+    },
+    {
+      "id": 53,
+      "originalNumber": 38,
+      "question": "Which statement best distinguishes COBIT from ITIL?",
+      "options": [
+        "COBIT focuses on enterprise governance and control objectives, while ITIL focuses more specifically on IT service-management practices",
+        "COBIT is a healthcare law, while ITIL is a privacy law",
+        "COBIT applies only to auditors, while ITIL applies only to software developers",
+        "COBIT and ITIL are legally mandatory statutes"
+      ],
+      "correct": 0,
+      "description": "COBIT provides an enterprise governance and management framework for information and technology. ITIL concentrates on managing and improving IT-enabled services. They may be integrated rather than treated as mutually exclusive.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q38"
+      ]
+    },
+    {
+      "id": 54,
+      "originalNumber": 58,
+      "question": "During an internal audit of a global bank, the auditor finds that a critical finding from the previous audit was marked “closed,” but the corrective control was never implemented. What should the auditor do first?",
+      "options": [
+        "Accept the closure because management approved it",
+        "Validate the evidence, reopen or reclassify the finding and assess continuing risk",
+        "Delete the previous audit record",
+        "Transfer ownership of the control to the audit team"
+      ],
+      "correct": 1,
+      "description": "Closure must be evidence-based. The auditor should determine whether remediation was actually completed, reassess residual risk and communicate the unresolved condition to authorized stakeholders.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q58"
+      ]
+    },
+    {
+      "id": 55,
+      "originalNumber": 19,
+      "question": "PCI DSS primarily applies to organizations that:",
+      "options": [
+        "Prepare financial statements for public companies",
+        "Store, process or transmit payment-card account data",
+        "Process only anonymous medical statistics",
+        "Publish international standards"
+      ],
+      "correct": 1,
+      "description": "PCI DSS applies to merchants and service providers involved with payment-card account data. It is an industry standard administered through the payment-card ecosystem, not a statute enacted by a government.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q19"
+      ]
+    },
+    {
+      "id": 56,
+      "originalNumber": 39,
+      "question": "Under HIPAA, which rule primarily establishes administrative, physical and technical safeguards for electronic PHI?",
+      "options": [
+        "Privacy Rule",
+        "Security Rule",
+        "Breach Notification Rule",
+        "Transactions Rule only"
+      ],
+      "correct": 1,
+      "description": "The HIPAA Security Rule protects electronic PHI through administrative, physical and technical safeguards. The Privacy Rule governs permitted uses and disclosures of PHI more broadly.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q39"
+      ]
+    },
+    {
+      "id": 57,
+      "originalNumber": 59,
+      "question": "During an anti-corruption compliance audit, one employee can create a vendor, approve the vendor, enter an invoice and authorize payment. Which audit recommendation most directly addresses the underlying risk?",
+      "options": [
+        "Increase the employee’s transaction limit",
+        "Introduce segregation of duties and independent approval controls",
+        "Delete all transaction logs after payment",
+        "Replace mandatory procedures with voluntary guidelines"
+      ],
+      "correct": 1,
+      "description": "The employee controls the entire transaction chain, enabling fraudulent vendors and concealed payments. Separating vendor creation, invoice entry and payment authorization reduces fraud opportunity.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q59"
+      ]
+    },
+    {
+      "id": 58,
+      "originalNumber": 20,
+      "question": "Under India’s DPDPA, the individual to whom personal data relates is called the:",
+      "options": [
+        "Data Controller",
+        "Data Fiduciary",
+        "Data Principal",
+        "Data Custodian"
+      ],
+      "correct": 2,
+      "description": "The individual is the Data Principal. The entity determining the purpose and means of processing is the Data Fiduciary, while a Data Processor processes data on the fiduciary’s behalf.",
+      "difficulty": "Easy",
+      "tags": [
+        "Compliance Audits",
+        "Easy",
+        "Original Q20"
+      ]
+    },
+    {
+      "id": 59,
+      "originalNumber": 40,
+      "question": "Which statement about PCI DSS is most accurate?",
+      "options": [
+        "It is a federal criminal law enforced directly by PCI SSC",
+        "It is an industry security standard applied through contractual payment-card relationships",
+        "It applies only to banks and never to merchants",
+        "Compliance eliminates all liability after a breach"
+      ],
+      "correct": 1,
+      "description": "PCI DSS is maintained by PCI SSC, which does not itself function as a government regulator. Compliance obligations are generally enforced through payment brands, acquirers and contractual relationships.",
+      "difficulty": "Medium",
+      "tags": [
+        "Compliance Audits",
+        "Medium",
+        "Original Q40"
+      ]
+    },
+    {
+      "id": 60,
+      "originalNumber": 60,
+      "question": "A company is ISO 27001 certified, uses NIST CSF for cyber-risk management and follows CIS Benchmarks for system hardening. It nevertheless processes EU personal data without a valid legal basis and ignores data-subject requests. Which conclusion is most accurate?",
+      "options": [
+        "ISO certification automatically proves GDPR compliance",
+        "NIST and CIS adoption override GDPR requirements",
+        "The company may have strong security practices but still be noncompliant with GDPR",
+        "Technical security and legal compliance are identical"
+      ],
+      "correct": 2,
+      "description": "Security frameworks can support privacy compliance, but they do not replace legal requirements. An organization can maintain effective technical controls while violating obligations concerning lawful processing, transparency and individual rights.",
+      "difficulty": "Hard",
+      "tags": [
+        "Compliance Audits",
+        "Hard",
+        "Original Q60"
+      ]
+    }
+  ]
+}

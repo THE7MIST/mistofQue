@@ -1,0 +1,763 @@
+{
+  "id": "part03-global-compliance-map",
+  "subject": "Compliance Audits",
+  "title": "Part 4 - Global Compliance Knowledge Map",
+  "audio": "/audio/ca/part03-global-compliance-map.mp3",
+  "description": "A connected revision map for SOX, COBIT, PCI DSS, HIPAA, GDPR, and ISO/IEC 27001. It explains what each framework protects, who it applies to, how they relate, and how common controls support different compliance goals.",
+  "topics": [
+    {
+      "id": "global-compliance-purpose",
+      "title": "Global Compliance Purpose",
+      "definition": "Compliance frameworks define obligations, governance structures, security requirements, and evidence expectations for different kinds of protected information and business risk.",
+      "keyPoints": [
+        "The frameworks are not isolated topics.",
+        "Each framework protects a different business interest or data type.",
+        "SOX protects financial-reporting reliability.",
+        "COBIT organizes enterprise IT governance.",
+        "PCI DSS protects payment card data.",
+        "HIPAA protects health information.",
+        "GDPR protects personal data and individual privacy.",
+        "ISO/IEC 27001 provides an information security management system that can support many compliance obligations."
+      ],
+      "workflows": [
+        "Compliance -> Protected interest -> Required controls -> Evidence -> Monitoring -> Improvement"
+      ],
+      "oneLiners": [
+        "Compliance becomes easier when each framework is mapped to what it protects."
+      ]
+    },
+    {
+      "id": "current-compliance-memory-map",
+      "title": "Current Compliance Memory Map",
+      "definition": "The compliance knowledge map connects legal requirements, governance frameworks, industry standards, and security management systems.",
+      "keyPoints": [
+        "SOX belongs to financial reporting and internal controls.",
+        "COBIT belongs to IT governance, risk, controls, processes, and maturity.",
+        "PCI DSS belongs to payment security and cardholder data protection.",
+        "HIPAA belongs to healthcare privacy, security, and breach notification.",
+        "GDPR belongs to personal data protection and individual rights.",
+        "ISO 27001 belongs to security management and risk reduction."
+      ],
+      "workflows": [
+        "Compliance -> SOX: Financial Reporting",
+        "Compliance -> COBIT: IT Governance",
+        "Compliance -> PCI DSS: Cardholder Data",
+        "Compliance -> HIPAA: Protected Health Information",
+        "Compliance -> GDPR: Personal Data",
+        "Compliance -> ISO 27001: Information Security Management"
+      ],
+      "oneLiners": [
+        "Money, IT, cards, patients, personal data, and security management each have their own place."
+      ]
+    },
+    {
+      "id": "framework-type-comparison",
+      "title": "Framework Type Comparison",
+      "definition": "The frameworks differ by type, protected subject, and scope of application.",
+      "keyPoints": [
+        "SOX is a United States federal law protecting financial reporting for public companies and applicable SEC-registered entities.",
+        "COBIT is a governance framework protecting enterprise IT governance and applicable to any enterprise that adopts it.",
+        "PCI DSS is an industry security standard protecting payment card data for merchants and payment service providers.",
+        "HIPAA is a United States federal law protecting protected health information for healthcare organizations and business associates.",
+        "GDPR is a privacy law protecting personal data of EU residents.",
+        "ISO 27001 is an international management-system standard for information security."
+      ],
+      "comparisons": [
+        "SOX = law for financial reporting.",
+        "COBIT = governance framework for IT.",
+        "PCI DSS = security standard for payment cards.",
+        "HIPAA = law for health information.",
+        "GDPR = privacy law for personal data.",
+        "ISO 27001 = security management system standard."
+      ],
+      "oneLiners": [
+        "Type matters: law, framework, standard, and management system are not the same."
+      ]
+    },
+    {
+      "id": "sox-position",
+      "title": "SOX Position in Compliance",
+      "definition": "SOX focuses on reliable financial reporting, internal controls, audit integrity, executive accountability, PCAOB oversight, and auditor independence.",
+      "keyPoints": [
+        "SOX protects investors through reliable financial reporting.",
+        "It relies on internal controls and audit evidence.",
+        "CEO and CFO certification creates executive accountability.",
+        "PCAOB oversight strengthens audit quality.",
+        "IT becomes relevant when systems affect financial data or reporting."
+      ],
+      "workflows": [
+        "Financial Statements -> Financial Reporting Systems -> Internal Controls -> Audit Evidence -> SOX Compliance"
+      ],
+      "oneLiners": [
+        "SOX is about trust in financial reporting."
+      ]
+    },
+    {
+      "id": "cobit-position",
+      "title": "COBIT Position in Compliance",
+      "definition": "COBIT is an IT governance framework that helps organize controls, processes, responsibilities, risks, measurement, and maturity.",
+      "keyPoints": [
+        "COBIT aligns IT with business objectives.",
+        "It supports governance, risk management, control objectives, process measurement, and continuous improvement.",
+        "COBIT can help implement IT controls that support SOX, ISO 27001, PCI DSS, HIPAA, and GDPR.",
+        "COBIT is not a law; it is adopted as a framework."
+      ],
+      "workflows": [
+        "Business Goals -> IT Goals -> IT Processes -> Controls -> Metrics -> Maturity Improvement"
+      ],
+      "oneLiners": [
+        "COBIT makes IT governance measurable."
+      ]
+    },
+    {
+      "id": "pci-dss-position",
+      "title": "PCI DSS Position in Compliance",
+      "definition": "PCI DSS is an industry security standard focused on protecting cardholder data and payment systems.",
+      "keyPoints": [
+        "PCI DSS applies to merchants and payment service providers handling payment card data.",
+        "It is maintained by the PCI Security Standards Council.",
+        "It is commonly associated with 12 major requirement areas.",
+        "Its control themes include firewalls, encryption, access control, monitoring, and security testing."
+      ],
+      "workflows": [
+        "Sensitive Data -> Payment Card Data -> Cardholder Protection -> Firewalls + Encryption + Access Control + Monitoring + Security Testing"
+      ],
+      "oneLiners": [
+        "PCI DSS protects cards and payment environments."
+      ]
+    },
+    {
+      "id": "hipaa-position",
+      "title": "HIPAA Position in Compliance",
+      "definition": "HIPAA protects health information through privacy, security, and breach-notification requirements.",
+      "keyPoints": [
+        "HIPAA focuses on Protected Health Information, often abbreviated as PHI.",
+        "It applies to healthcare providers, health plans, healthcare clearinghouses, and business associates.",
+        "It uses administrative, technical, and physical safeguards.",
+        "Its main concern is patient privacy and controlled use of health information."
+      ],
+      "workflows": [
+        "Sensitive Data -> Health Information -> PHI -> Patient Privacy -> Administrative Safeguards + Technical Safeguards + Physical Safeguards"
+      ],
+      "oneLiners": [
+        "HIPAA protects patients through PHI safeguards."
+      ]
+    },
+    {
+      "id": "gdpr-position",
+      "title": "GDPR Position in Compliance",
+      "definition": "GDPR is a privacy law built on the idea that personal data belongs to the individual and organizations are custodians of that information.",
+      "keyPoints": [
+        "GDPR protects personal data, privacy, and individual rights.",
+        "GDPR may apply based on the location of the individual whose data is processed, not only the location of the company.",
+        "It applies when organizations process data of EU residents, even if the organization is outside the European Union.",
+        "GDPR treats processing broadly: collection, storage, use, sharing, alteration, deletion, and destruction can all count."
+      ],
+      "workflows": [
+        "Personal Data -> Individual Rights -> Lawful Processing -> Accountability -> Privacy Protection"
+      ],
+      "oneLiners": [
+        "GDPR shifts control of personal data back toward the individual."
+      ]
+    },
+    {
+      "id": "iso-27001-position",
+      "title": "ISO 27001 Position in Compliance",
+      "definition": "ISO/IEC 27001 defines how an organization manages information security through an Information Security Management System.",
+      "keyPoints": [
+        "ISO 27001 is not a privacy law.",
+        "It is a management-system standard for information security.",
+        "It treats security as an ongoing process involving people, processes, technology, risk, and continuous improvement.",
+        "ISO 27001 can support compliance with SOX, GDPR, HIPAA, PCI DSS, and other obligations, but certification alone does not automatically satisfy those laws or standards."
+      ],
+      "workflows": [
+        "Security -> Management -> Risk Reduction -> Continuous Improvement -> ISMS"
+      ],
+      "oneLiners": [
+        "ISO 27001 manages security; it does not replace every regulation."
+      ]
+    },
+    {
+      "id": "sox-cobit-connection",
+      "title": "SOX to COBIT Connection",
+      "definition": "SOX creates legal expectations for financial controls, while COBIT provides governance structure for designing and managing IT controls that support those expectations.",
+      "keyPoints": [
+        "SOX says effective financial controls are required.",
+        "COBIT says how IT governance and controls can be built and improved.",
+        "COBIT helps translate SOX obligations into control objectives, owners, activities, evidence, testing, and monitoring."
+      ],
+      "workflows": [
+        "SOX requirement -> Financial-control objective -> IT system dependency -> COBIT control objective -> IT control -> Evidence -> Assurance"
+      ],
+      "oneLiners": [
+        "SOX states the obligation; COBIT structures the control response."
+      ]
+    },
+    {
+      "id": "pci-dss-control-flow",
+      "title": "PCI DSS Control Flow",
+      "definition": "PCI DSS starts with sensitive payment card data and builds security around storage, transmission, access, monitoring, and testing.",
+      "keyPoints": [
+        "Cardholder data must be protected wherever it is stored, processed, or transmitted.",
+        "Firewalls reduce unauthorized network exposure.",
+        "Encryption protects cardholder data in storage or transmission.",
+        "Access control limits who can reach payment systems.",
+        "Monitoring detects suspicious activity.",
+        "Security testing validates whether controls continue to work."
+      ],
+      "workflows": [
+        "Payment Card Data -> Protect Cardholder Information -> Firewalls -> Encryption -> Access Control -> Monitoring -> Security Testing"
+      ],
+      "oneLiners": [
+        "PCI DSS follows the card data."
+      ]
+    },
+    {
+      "id": "hipaa-safeguard-flow",
+      "title": "HIPAA Safeguard Flow",
+      "definition": "HIPAA begins with health information and requires safeguards that protect patient privacy and security.",
+      "keyPoints": [
+        "HIPAA protects PHI and electronic PHI.",
+        "Administrative safeguards include policies, workforce controls, training, and risk management.",
+        "Technical safeguards include access control, audit controls, integrity controls, and transmission security.",
+        "Physical safeguards protect facilities, devices, and media."
+      ],
+      "workflows": [
+        "Health Information -> PHI -> Patient Privacy -> Administrative Safeguards -> Technical Safeguards -> Physical Safeguards"
+      ],
+      "oneLiners": [
+        "HIPAA safeguards health data through policy, technology, and physical protection."
+      ]
+    },
+    {
+      "id": "separation-by-data-type",
+      "title": "Separation by Data Type",
+      "definition": "A simple way to understand compliance is to map the protected data type to the relevant framework.",
+      "keyPoints": [
+        "Financial statements map to SOX.",
+        "Enterprise IT maps to COBIT.",
+        "Credit card data maps to PCI DSS.",
+        "Patient health data maps to HIPAA.",
+        "Personal data maps to GDPR.",
+        "Information security management maps to ISO 27001."
+      ],
+      "workflows": [
+        "Financial Statements -> SOX",
+        "Enterprise IT -> COBIT",
+        "Credit Card Data -> PCI DSS",
+        "Patient Health Data -> HIPAA",
+        "Personal Data -> GDPR",
+        "Security Management -> ISO 27001"
+      ],
+      "oneLiners": [
+        "Identify the data first, then identify the obligation."
+      ]
+    },
+    {
+      "id": "unified-compliance-stack",
+      "title": "Unified Compliance Stack",
+      "definition": "An enterprise can organize compliance into governance, financial compliance, payment compliance, healthcare compliance, privacy compliance, and security management.",
+      "keyPoints": [
+        "Governance is supported by COBIT.",
+        "Financial compliance is supported by SOX.",
+        "Payment compliance is supported by PCI DSS.",
+        "Healthcare compliance is supported by HIPAA.",
+        "Privacy compliance is supported by GDPR.",
+        "Security management is supported by ISO 27001."
+      ],
+      "workflows": [
+        "Enterprise -> Governance: COBIT",
+        "Enterprise -> Financial Compliance: SOX",
+        "Enterprise -> Payment Compliance: PCI DSS",
+        "Enterprise -> Healthcare Compliance: HIPAA",
+        "Enterprise -> Privacy Compliance: GDPR",
+        "Enterprise -> Security Management: ISO 27001"
+      ],
+      "oneLiners": [
+        "Compliance is easier when obligations are grouped by business domain."
+      ]
+    },
+    {
+      "id": "core-security-objectives",
+      "title": "Core Security Objectives",
+      "definition": "Each framework protects a different business objective, but all rely on security controls and governance evidence.",
+      "keyPoints": [
+        "SOX protects financial reporting, internal controls, and audit integrity.",
+        "COBIT manages IT governance, risk, business alignment, and control objectives.",
+        "PCI DSS protects cardholder data, payment systems, and transaction security.",
+        "HIPAA protects PHI, patient privacy, and electronic health records.",
+        "GDPR protects personal data, privacy, lawful processing, and individual rights.",
+        "ISO 27001 protects confidentiality, integrity, and availability through an ISMS."
+      ],
+      "oneLiners": [
+        "The control may look similar, but the compliance objective changes."
+      ]
+    },
+    {
+      "id": "common-controls",
+      "title": "Common Controls Across Frameworks",
+      "definition": "Different frameworks often rely on similar security controls, even when they protect different data types.",
+      "keyPoints": [
+        "Common controls include identity management, least privilege, authentication, logging, monitoring, encryption, risk assessment, policies, incident response, and regular audits.",
+        "The business objective changes, but the control family often remains similar.",
+        "Evidence must show that controls are designed, implemented, operating, and reviewed."
+      ],
+      "workflows": [
+        "Identity Management -> Least Privilege -> Authentication -> Logging -> Monitoring -> Encryption -> Risk Assessment -> Policies -> Incident Response -> Regular Audits"
+      ],
+      "oneLiners": [
+        "Many frameworks share controls but apply them to different risks."
+      ]
+    },
+    {
+      "id": "encryption-example",
+      "title": "Encryption as a Shared Control",
+      "definition": "Encryption is a common control that supports different compliance goals depending on the protected data type.",
+      "keyPoints": [
+        "Encryption protects financial reports under SOX when those reports or supporting data are sensitive.",
+        "Encryption protects cardholder data under PCI DSS.",
+        "Encryption protects electronic PHI under HIPAA.",
+        "Encryption supports confidentiality and protection of personal data under GDPR.",
+        "COBIT recommends governance around selecting, implementing, managing, monitoring, and improving encryption controls.",
+        "ISO 27001 can manage encryption through risk assessment, control selection, and operational procedures."
+      ],
+      "oneLiners": [
+        "One control can support many obligations when mapped correctly."
+      ]
+    },
+    {
+      "id": "data-classification-map",
+      "title": "Data Classification Map",
+      "definition": "Data classification links the type of information to the framework or management system most relevant to its protection.",
+      "keyPoints": [
+        "Financial data maps to SOX.",
+        "Cardholder data maps to PCI DSS.",
+        "Protected Health Information maps to HIPAA.",
+        "Personal data maps to GDPR.",
+        "Business information maps to COBIT governance and ISO 27001 security management."
+      ],
+      "workflows": [
+        "Financial Data -> SOX",
+        "Cardholder Data -> PCI DSS",
+        "Protected Health Information -> HIPAA",
+        "Personal Data -> GDPR",
+        "Business Information -> COBIT Governance + ISO 27001"
+      ],
+      "oneLiners": [
+        "Classify the data to know which rules matter."
+      ]
+    },
+    {
+      "id": "cia-triad-framework-map",
+      "title": "CIA Triad Framework Map",
+      "definition": "The CIA Triad supports all frameworks, but some frameworks emphasize one pillar more strongly.",
+      "keyPoints": [
+        "Confidentiality is strongly visible in HIPAA, GDPR, PCI DSS, and ISO 27001.",
+        "Integrity is strongly visible in SOX because financial information must be accurate and complete.",
+        "Availability is strongly visible in COBIT and ISO 27001 because business and IT services must remain usable.",
+        "PCI DSS uses all three: card data must remain confidential, accurate, and available for secure payment processing."
+      ],
+      "workflows": [
+        "CIA Triad -> Confidentiality -> HIPAA + GDPR + PCI DSS + ISO 27001",
+        "CIA Triad -> Integrity -> SOX + PCI DSS + ISO 27001",
+        "CIA Triad -> Availability -> COBIT + ISO 27001 + PCI DSS"
+      ],
+      "oneLiners": [
+        "CIA is the security language underneath most compliance frameworks."
+      ]
+    },
+    {
+      "id": "memory-hook",
+      "title": "Compliance Memory Hook",
+      "definition": "A short memory hook maps each compliance area to a keyword.",
+      "keyPoints": [
+        "Money maps to SOX.",
+        "IT maps to COBIT.",
+        "Cards map to PCI DSS.",
+        "Patients map to HIPAA.",
+        "People or personal data maps to GDPR.",
+        "Security management maps to ISO 27001."
+      ],
+      "workflows": [
+        "Money -> SOX",
+        "IT -> COBIT",
+        "Cards -> PCI DSS",
+        "Patients -> HIPAA",
+        "People -> GDPR",
+        "Security Management -> ISO 27001"
+      ],
+      "oneLiners": [
+        "Money, IT, cards, patients, people, and management."
+      ]
+    },
+    {
+      "id": "gdpr-philosophy",
+      "title": "GDPR Philosophy",
+      "definition": "GDPR treats personal data as belonging to the individual, with organizations acting as custodians rather than owners.",
+      "keyPoints": [
+        "The central protected interest is personal data and privacy.",
+        "Organizations may process data only when there is a legitimate and lawful basis.",
+        "GDPR gives individuals enforceable rights over their data.",
+        "Accountability requires the organization to demonstrate responsible processing."
+      ],
+      "workflows": [
+        "Personal Data -> Belongs to Individual -> Organization as Custodian -> Lawful Processing -> Accountability"
+      ],
+      "oneLiners": [
+        "Under GDPR, organizations hold personal data; they do not truly own it."
+      ]
+    },
+    {
+      "id": "gdpr-scope",
+      "title": "GDPR Scope",
+      "definition": "GDPR scope is driven by whose data is processed, not only where the company is located.",
+      "keyPoints": [
+        "An organization outside the European Union may still fall under GDPR if it processes EU residents' data.",
+        "The individual location and data-subject relationship are central.",
+        "This makes GDPR internationally relevant for digital businesses."
+      ],
+      "workflows": [
+        "EU Resident Data -> Processed by Organization Anywhere -> GDPR May Apply"
+      ],
+      "oneLiners": [
+        "For GDPR, the data subject matters more than the company address."
+      ]
+    },
+    {
+      "id": "gdpr-protected-information",
+      "title": "GDPR Protected Information",
+      "definition": "GDPR personal data is broad and includes direct identifiers, online identifiers, and sensitive categories.",
+      "keyPoints": [
+        "Identity data includes name, address, email, and phone.",
+        "Online identity includes IP address, cookies, login identifiers, and geolocation.",
+        "Special or sensitive categories may include health, biometrics, genetics, political views, religion, trade union membership, and sexual orientation.",
+        "The scope is much broader than name and email."
+      ],
+      "workflows": [
+        "Personal Data -> Identity + Online Identity + Health + Biometrics + Genetics + Beliefs + Membership + Sensitive Attributes"
+      ],
+      "oneLiners": [
+        "GDPR personal data includes any information that can identify or relate to a person."
+      ]
+    },
+    {
+      "id": "controller-vs-processor",
+      "title": "Controller vs Processor",
+      "definition": "A controller decides why and how personal data is processed. A processor processes data on behalf of the controller.",
+      "keyPoints": [
+        "The controller owns most compliance responsibility because it determines purpose and means.",
+        "The processor follows controller instructions and must protect the data it handles.",
+        "Example: an online business deciding data collection may be controller; a cloud provider storing the database may be processor."
+      ],
+      "workflows": [
+        "Controller -> Decides Why and How -> Processor -> Processes Data for Controller"
+      ],
+      "oneLiners": [
+        "Controller decides; processor performs."
+      ]
+    },
+    {
+      "id": "gdpr-processing",
+      "title": "Meaning of Processing",
+      "definition": "Processing under GDPR is broad and includes almost every interaction with personal data.",
+      "keyPoints": [
+        "Processing includes collecting, recording, storing, modifying, retrieving, sharing, erasing, destroying, combining, and using data.",
+        "Storage alone can count as processing.",
+        "Deletion and destruction are also processing activities because they affect personal data."
+      ],
+      "workflows": [
+        "Collect -> Record -> Store -> Modify -> Retrieve -> Share -> Use -> Erase -> Destroy"
+      ],
+      "oneLiners": [
+        "If personal data is handled, it is probably processing."
+      ]
+    },
+    {
+      "id": "gdpr-principles",
+      "title": "Seven GDPR Principles",
+      "definition": "GDPR is built around seven principles that guide lawful and responsible personal-data processing.",
+      "keyPoints": [
+        "Lawfulness, fairness, and transparency require proper legal basis and clear communication.",
+        "Purpose limitation means data should be collected for specific purposes.",
+        "Data minimization means only necessary data should be processed.",
+        "Accuracy requires personal data to be correct and updated.",
+        "Storage limitation limits how long data is kept.",
+        "Integrity and confidentiality require security protection.",
+        "Accountability requires the organization to demonstrate compliance."
+      ],
+      "workflows": [
+        "Lawfulness -> Purpose Limitation -> Data Minimization -> Accuracy -> Storage Limitation -> Integrity and Confidentiality -> Accountability"
+      ],
+      "oneLiners": [
+        "GDPR principles turn privacy into operational rules."
+      ]
+    },
+    {
+      "id": "individual-rights",
+      "title": "Individual Rights under GDPR",
+      "definition": "GDPR gives individuals control-oriented rights over their personal data.",
+      "keyPoints": [
+        "Individuals have the right to be informed.",
+        "They can access their data.",
+        "They can request rectification.",
+        "They can request erasure.",
+        "They can restrict processing.",
+        "They can receive data portability.",
+        "They can object to processing.",
+        "They receive protections around automated decision-making and human review."
+      ],
+      "workflows": [
+        "Know My Data -> See My Data -> Correct My Data -> Delete My Data -> Restrict Use -> Take My Data Elsewhere -> Object -> Human Review"
+      ],
+      "oneLiners": [
+        "GDPR gives people rights over how their data is handled."
+      ]
+    },
+    {
+      "id": "gdpr-compliance-workflow",
+      "title": "GDPR Compliance Workflow",
+      "definition": "GDPR compliance requires lawful processing, documentation, risk management, training, monitoring, audit, and breach response.",
+      "keyPoints": [
+        "Consent may be one legal basis, but it is not the only one.",
+        "Privacy notices or policies communicate processing clearly.",
+        "Records of processing activities support accountability.",
+        "Risk assessment helps identify privacy and security impact.",
+        "Employee training supports correct handling of personal data.",
+        "Monitoring and audit verify whether privacy controls work.",
+        "Certain breaches require notification within 72 hours."
+      ],
+      "workflows": [
+        "Consent or Legal Basis -> Privacy Notice -> Records -> Risk Assessment -> Training -> Monitor -> Audit -> 72-Hour Breach Notification"
+      ],
+      "oneLiners": [
+        "GDPR compliance is accountability plus rights plus breach readiness."
+      ]
+    },
+    {
+      "id": "iso-27001-philosophy",
+      "title": "ISO 27001 Philosophy",
+      "definition": "ISO 27001 treats information security as a managed, risk-driven, continuously improving system.",
+      "keyPoints": [
+        "It is not just a technical checklist.",
+        "It defines how the organization manages information security.",
+        "Its philosophy is security through management, continuous improvement, and risk reduction.",
+        "It uses the ISMS as the central organizing concept."
+      ],
+      "workflows": [
+        "Security -> Management -> Continuous Improvement -> Risk Reduction"
+      ],
+      "oneLiners": [
+        "ISO 27001 manages security as a system."
+      ]
+    },
+    {
+      "id": "isms",
+      "title": "Information Security Management System",
+      "definition": "An ISMS is the organized set of people, processes, technology, risk activities, policies, controls, monitoring, and improvement used to manage information security.",
+      "keyPoints": [
+        "The ISMS is the core concept of ISO 27001.",
+        "It combines people, processes, and technology.",
+        "It is driven by risk.",
+        "It should improve continuously.",
+        "Security becomes an ongoing management process rather than a one-time project."
+      ],
+      "workflows": [
+        "ISMS -> People -> Processes -> Technology -> Risk -> Continuous Improvement"
+      ],
+      "oneLiners": [
+        "ISMS is the management engine of ISO 27001."
+      ]
+    },
+    {
+      "id": "iso-cia",
+      "title": "CIA Triad in ISO 27001",
+      "definition": "ISO 27001 ultimately protects confidentiality, integrity, and availability.",
+      "keyPoints": [
+        "Confidentiality protects information from unauthorized disclosure.",
+        "Integrity protects information from unauthorized or improper modification.",
+        "Availability ensures information and systems are accessible when needed.",
+        "The CIA Triad helps define security objectives for risk assessment and control selection."
+      ],
+      "workflows": [
+        "ISO 27001 -> ISMS -> Controls -> Confidentiality + Integrity + Availability"
+      ],
+      "oneLiners": [
+        "CIA is the objective; ISMS is the management system."
+      ]
+    },
+    {
+      "id": "iso-family",
+      "title": "ISO 27000 Family",
+      "definition": "The ISO 27000 family contains information security management standards, with ISO 27001 and ISO 27002 serving different purposes.",
+      "keyPoints": [
+        "ISO 27000 refers to the broader ISMS family.",
+        "ISO 27001 defines requirements.",
+        "ISO 27002 provides control implementation guidance.",
+        "A useful memory line is: 27001 tells what must exist; 27002 helps explain how controls can be implemented."
+      ],
+      "workflows": [
+        "ISO 27000 Family -> ISO 27001 Requirements -> ISO 27002 Control Guidance"
+      ],
+      "oneLiners": [
+        "27001 is requirement; 27002 is guidance."
+      ]
+    },
+    {
+      "id": "iso-risk-centric-design",
+      "title": "ISO Risk-Centric Design",
+      "definition": "ISO 27001 is risk-centric: assets, threats, vulnerabilities, and business impact drive treatment and control selection.",
+      "keyPoints": [
+        "The organization identifies assets.",
+        "It analyzes threats and vulnerabilities.",
+        "It assesses risk.",
+        "It treats risk.",
+        "It selects and implements controls.",
+        "It monitors and improves the system."
+      ],
+      "workflows": [
+        "Assets -> Threats -> Vulnerabilities -> Risk -> Assessment -> Treatment -> Controls -> Monitoring"
+      ],
+      "oneLiners": [
+        "ISO controls should be justified by risk."
+      ]
+    },
+    {
+      "id": "annex-a",
+      "title": "Annex A Controls",
+      "definition": "Traditional ISO 27001 Annex A organized controls across multiple domains such as policies, people, assets, access, cryptography, operations, suppliers, incidents, continuity, and compliance.",
+      "keyPoints": [
+        "Traditional Annex A included 114 controls organized into 14 domains.",
+        "Domains included security policies, HR security, asset management, access control, cryptography, physical security, operations, communications, secure development, suppliers, incidents, business continuity, and compliance.",
+        "Annex A helps organizations select controls relevant to identified risk."
+      ],
+      "oneLiners": [
+        "Annex A is the control catalogue, not the whole ISMS."
+      ]
+    },
+    {
+      "id": "isms-lifecycle",
+      "title": "ISMS Lifecycle",
+      "definition": "The ISMS lifecycle moves from management support and scope definition through risk assessment, control implementation, monitoring, internal audit, management review, and certification.",
+      "keyPoints": [
+        "Management support is necessary for authority and resources.",
+        "Scope defines what the ISMS covers.",
+        "Risk assessment identifies what must be treated.",
+        "Risk treatment selects responses and controls.",
+        "Statement of Applicability records selected controls and justifications.",
+        "Training, monitoring, internal audit, management review, and certification sustain the system."
+      ],
+      "workflows": [
+        "Management Support -> Define Scope -> Risk Assessment -> Risk Treatment -> Statement of Applicability -> Implement Controls -> Training -> Monitoring -> Internal Audit -> Management Review -> Certification"
+      ],
+      "oneLiners": [
+        "The ISMS lifecycle turns risk treatment into managed security."
+      ]
+    },
+    {
+      "id": "pdca-cycle",
+      "title": "PDCA Cycle",
+      "definition": "PDCA is the continuous improvement cycle used to keep management systems effective.",
+      "keyPoints": [
+        "Plan defines objectives, risk treatment, controls, and processes.",
+        "Do implements planned controls and processes.",
+        "Check measures, monitors, audits, and reviews performance.",
+        "Act improves the system based on results.",
+        "The cycle repeats."
+      ],
+      "workflows": [
+        "Plan -> Do -> Check -> Act -> Repeat"
+      ],
+      "oneLiners": [
+        "PDCA keeps the ISMS alive."
+      ]
+    },
+    {
+      "id": "framework-relationships",
+      "title": "Relationships Between Frameworks",
+      "definition": "Different regulations protect specific domains, while ISO 27001 provides a security management system that can support many of them.",
+      "keyPoints": [
+        "SOX protects financial reporting.",
+        "HIPAA protects health information.",
+        "PCI DSS protects card data.",
+        "GDPR protects personal data.",
+        "ISO 27001 provides a security management system that helps protect information under many obligations.",
+        "COBIT provides enterprise IT governance that can organize controls and responsibilities."
+      ],
+      "workflows": [
+        "Specific Regulations: SOX + HIPAA + PCI DSS + GDPR",
+        "Governance Layer: COBIT",
+        "Security Management Layer: ISO 27001"
+      ],
+      "oneLiners": [
+        "Specific laws define obligations; governance and security management help deliver them."
+      ]
+    },
+    {
+      "id": "unified-compliance-hierarchy",
+      "title": "Unified Compliance Hierarchy",
+      "definition": "A useful hierarchy places COBIT at governance level, ISO 27001 at security management level, and specific regulations below as domain-specific obligations.",
+      "keyPoints": [
+        "Business objectives drive governance.",
+        "COBIT supports IT governance.",
+        "ISO 27001 supports security management.",
+        "Specific regulations and standards define obligations for financial reporting, privacy, healthcare, and payment data.",
+        "ISO certification alone does not automatically prove compliance with SOX, GDPR, HIPAA, or PCI DSS."
+      ],
+      "workflows": [
+        "Business -> Governance: COBIT -> Security Management: ISO 27001 -> Specific Obligations: SOX + GDPR + HIPAA + PCI DSS"
+      ],
+      "oneLiners": [
+        "COBIT governs IT, ISO manages security, and regulations define domain obligations."
+      ]
+    },
+    {
+      "id": "knowledge-graph",
+      "title": "Compliance Knowledge Graph",
+      "definition": "The long-term compliance map connects governance, financial reporting, payment security, healthcare privacy, personal-data privacy, and information-security management.",
+      "keyPoints": [
+        "Governance connects to COBIT.",
+        "Financial compliance connects to SOX.",
+        "Payment compliance connects to PCI DSS.",
+        "Healthcare compliance connects to HIPAA.",
+        "Privacy compliance connects to GDPR.",
+        "Security management connects to ISO 27001.",
+        "Shared controls create relationships among all frameworks."
+      ],
+      "workflows": [
+        "Compliance -> Governance -> COBIT",
+        "Compliance -> Financial -> SOX",
+        "Compliance -> Payment -> PCI DSS",
+        "Compliance -> Healthcare -> HIPAA",
+        "Compliance -> Privacy -> GDPR",
+        "Compliance -> Security Management -> ISO 27001"
+      ],
+      "oneLiners": [
+        "A compliance knowledge graph prevents isolated memorization."
+      ]
+    },
+    {
+      "id": "final-memory-map",
+      "title": "Final Memory Map",
+      "definition": "Money maps to SOX, IT maps to COBIT, cards map to PCI DSS, patients map to HIPAA, people map to GDPR, and security management maps to ISO 27001.",
+      "keyPoints": [
+        "SOX: financial reporting and internal controls.",
+        "COBIT: IT governance, risk, controls, and maturity.",
+        "PCI DSS: cardholder data and payment security.",
+        "HIPAA: PHI and patient privacy.",
+        "GDPR: personal data and individual rights.",
+        "ISO 27001: ISMS, risk treatment, controls, and continuous improvement."
+      ],
+      "workflows": [
+        "Money -> SOX",
+        "IT -> COBIT",
+        "Cards -> PCI DSS",
+        "Patients -> HIPAA",
+        "People -> GDPR",
+        "Security Management -> ISO 27001"
+      ],
+      "oneLiners": [
+        "Money, IT, cards, patients, people, and security management form the core compliance map."
+      ]
+    }
+  ]
+}

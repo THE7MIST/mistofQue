@@ -1,0 +1,403 @@
+{
+  "id": "part05-sox-cobit-pci-hipaa-map",
+  "subject": "Compliance Audits",
+  "title": "Part 1 - SOX, COBIT, PCI DSS and HIPAA Map",
+  "audio": "/audio/ca/part05-sox-cobit-pci-hipaa-map.mp3",
+  "description": "A focused compliance map connecting SOX, COBIT, PCI DSS and HIPAA by protected data type, business purpose, shared controls, and framework relationships.",
+  "topics": [
+    {
+      "id": "core-compliance-map",
+      "title": "Core Compliance Map",
+      "definition": "SOX, COBIT, PCI DSS and HIPAA occupy different places in the compliance ecosystem. SOX protects financial reporting, COBIT governs enterprise IT, PCI DSS protects cardholder data, and HIPAA protects health information.",
+      "keyPoints": [
+        "SOX connects to financial reporting, internal controls, audit integrity, CEO and CFO accountability, and PCAOB oversight.",
+        "COBIT connects to IT governance, risk, controls, processes, and maturity.",
+        "PCI DSS connects to cardholder data protection, payment security, merchants, service providers, the 12 requirements, and PCI SSC.",
+        "HIPAA connects to Protected Health Information, privacy, security, breach notification, healthcare providers, health plans, and business associates."
+      ],
+      "workflows": [
+        "Compliance -> SOX: Financial Reporting",
+        "Compliance -> COBIT: IT Governance",
+        "Compliance -> PCI DSS: Cardholder Data Protection",
+        "Compliance -> HIPAA: Protected Health Information"
+      ],
+      "oneLiners": [
+        "Each framework protects a different business interest."
+      ]
+    },
+    {
+      "id": "high-level-mental-model",
+      "title": "High-Level Mental Model",
+      "definition": "The four frameworks should be understood by type, protected subject, and applicability.",
+      "keyPoints": [
+        "SOX is a United States federal law protecting financial reporting for public companies and applicable entities.",
+        "COBIT is a governance framework for enterprise IT governance and can be used by any enterprise.",
+        "PCI DSS is an industry security standard for payment card data and applies to merchants and payment service providers.",
+        "HIPAA is a United States federal law protecting PHI and applies to healthcare organizations and related business associates."
+      ],
+      "comparisons": [
+        "SOX = law for financial reporting.",
+        "COBIT = framework for IT governance.",
+        "PCI DSS = standard for cardholder data.",
+        "HIPAA = law for health information."
+      ],
+      "oneLiners": [
+        "Type, protected data, and applicability separate the frameworks."
+      ]
+    },
+    {
+      "id": "sox-summary",
+      "title": "SOX Summary",
+      "definition": "SOX focuses on protecting investors through reliable financial reporting, internal controls, management accountability, and audit integrity.",
+      "keyPoints": [
+        "SOX is centered on financial statements and financial-reporting reliability.",
+        "Internal controls support accuracy, completeness, authorization, and auditability.",
+        "CEO and CFO accountability is a key governance feature.",
+        "PCAOB oversight supports external audit quality.",
+        "IT systems become SOX-relevant when they affect financial data or reporting."
+      ],
+      "workflows": [
+        "Financial Reporting -> Internal Controls -> Audit Evidence -> Management Certification -> SOX Compliance"
+      ],
+      "oneLiners": [
+        "SOX protects trust in financial reporting."
+      ]
+    },
+    {
+      "id": "cobit-summary",
+      "title": "COBIT Summary",
+      "definition": "COBIT is an IT governance framework that helps organize governance, risk, control objectives, processes, responsibilities, measurement, and maturity.",
+      "keyPoints": [
+        "COBIT connects IT activities with business goals.",
+        "It helps define and measure controls.",
+        "It supports governance and management responsibilities.",
+        "It provides maturity and improvement thinking.",
+        "COBIT can support implementation of controls required by other compliance obligations."
+      ],
+      "workflows": [
+        "Business Requirements -> IT Governance -> Control Objectives -> Processes -> Metrics -> Maturity Improvement"
+      ],
+      "oneLiners": [
+        "COBIT makes IT governance structured and measurable."
+      ]
+    },
+    {
+      "id": "pci-dss-summary",
+      "title": "PCI DSS Summary",
+      "definition": "PCI DSS protects cardholder data and payment systems through a structured set of payment-security requirements.",
+      "keyPoints": [
+        "PCI DSS focuses on payment card data.",
+        "It applies to merchants and service providers that store, process, or transmit payment-card account data.",
+        "The PCI Security Standards Council maintains the standard.",
+        "Common control themes include firewalls, encryption, access control, monitoring, and security testing.",
+        "PCI DSS uses defense in depth; one control does not replace all other requirements."
+      ],
+      "workflows": [
+        "Sensitive Data -> Payment Card Data -> Cardholder Protection -> Firewalls -> Encryption -> Access Control -> Monitoring -> Security Testing"
+      ],
+      "oneLiners": [
+        "PCI DSS follows the card data."
+      ]
+    },
+    {
+      "id": "hipaa-summary",
+      "title": "HIPAA Summary",
+      "definition": "HIPAA protects Protected Health Information through privacy, security, and breach-notification requirements.",
+      "keyPoints": [
+        "HIPAA focuses on PHI and electronic PHI.",
+        "It applies to healthcare providers, health plans, and business associates where applicable.",
+        "Privacy requirements govern appropriate use and disclosure of PHI.",
+        "Security requirements protect electronic PHI through administrative, technical, and physical safeguards.",
+        "Breach notification requirements support accountability after certain incidents."
+      ],
+      "workflows": [
+        "Sensitive Data -> Health Information -> PHI -> Patient Privacy -> Administrative Safeguards -> Technical Safeguards -> Physical Safeguards"
+      ],
+      "oneLiners": [
+        "HIPAA protects patient information and healthcare privacy."
+      ]
+    },
+    {
+      "id": "sox-cobit-connection",
+      "title": "SOX and COBIT Connection",
+      "definition": "SOX creates expectations for effective financial controls, while COBIT helps structure IT governance and controls that support those expectations.",
+      "keyPoints": [
+        "SOX says financial controls must be effective.",
+        "COBIT explains how IT governance and controls can be built, organized, measured, and improved.",
+        "COBIT can help translate SOX control needs into IT control objectives, processes, owners, evidence, and monitoring."
+      ],
+      "workflows": [
+        "SOX Financial-Control Requirement -> IT Dependency -> COBIT Control Objective -> IT Control -> Evidence -> Assurance"
+      ],
+      "oneLiners": [
+        "SOX defines accountability; COBIT helps govern IT controls."
+      ]
+    },
+    {
+      "id": "pci-dss-control-chain",
+      "title": "PCI DSS Control Chain",
+      "definition": "PCI DSS begins with sensitive payment card data and builds layered controls around the cardholder-data environment.",
+      "keyPoints": [
+        "Cardholder information must be protected during storage, processing, and transmission.",
+        "Firewalls reduce unnecessary exposure.",
+        "Encryption protects sensitive data from disclosure.",
+        "Access control limits who can reach payment systems.",
+        "Monitoring and logging help detect suspicious activity.",
+        "Security testing verifies whether controls remain effective."
+      ],
+      "workflows": [
+        "Payment Card Data -> Protect Cardholder Information -> Firewalls -> Encryption -> Access Control -> Monitoring -> Security Testing"
+      ],
+      "oneLiners": [
+        "PCI DSS protects payment data through layered controls."
+      ]
+    },
+    {
+      "id": "hipaa-safeguard-chain",
+      "title": "HIPAA Safeguard Chain",
+      "definition": "HIPAA connects health information to privacy and security safeguards that protect patients and healthcare data.",
+      "keyPoints": [
+        "PHI requires controlled access and appropriate use.",
+        "Administrative safeguards include policies, workforce training, risk management, and governance.",
+        "Technical safeguards include access controls, audit controls, integrity controls, and transmission security.",
+        "Physical safeguards protect facilities, workstations, devices, and media."
+      ],
+      "workflows": [
+        "Health Information -> PHI -> Patient Privacy -> Administrative Safeguards -> Technical Safeguards -> Physical Safeguards"
+      ],
+      "oneLiners": [
+        "HIPAA turns patient privacy into safeguards."
+      ]
+    },
+    {
+      "id": "separation-by-data-type",
+      "title": "Separation by Data Type",
+      "definition": "A practical way to identify the relevant compliance area is to start with the data or business process being protected.",
+      "keyPoints": [
+        "Financial statements map to SOX.",
+        "Enterprise IT governance maps to COBIT.",
+        "Credit card data maps to PCI DSS.",
+        "Patient health data maps to HIPAA."
+      ],
+      "workflows": [
+        "Financial Statements -> SOX",
+        "Enterprise IT -> COBIT",
+        "Credit Card Data -> PCI DSS",
+        "Patient Health Data -> HIPAA"
+      ],
+      "oneLiners": [
+        "Start with the data type to identify the framework."
+      ]
+    },
+    {
+      "id": "unified-compliance-stack",
+      "title": "Unified Compliance Stack",
+      "definition": "An enterprise can organize these frameworks into governance, financial compliance, payment compliance, and healthcare compliance layers.",
+      "keyPoints": [
+        "COBIT supports the governance layer.",
+        "SOX supports financial compliance.",
+        "PCI DSS supports payment compliance.",
+        "HIPAA supports healthcare compliance.",
+        "The same organization may need more than one framework if it processes multiple data types or performs multiple regulated activities."
+      ],
+      "workflows": [
+        "Enterprise -> Governance: COBIT",
+        "Enterprise -> Financial Compliance: SOX",
+        "Enterprise -> Payment Compliance: PCI DSS",
+        "Enterprise -> Healthcare Compliance: HIPAA"
+      ],
+      "oneLiners": [
+        "One enterprise can have multiple compliance layers."
+      ]
+    },
+    {
+      "id": "core-security-objectives",
+      "title": "Core Security Objectives",
+      "definition": "Each framework has a different primary objective, but all depend on controls and evidence.",
+      "keyPoints": [
+        "SOX protects financial reporting, internal controls, and audit integrity.",
+        "COBIT manages IT governance, risk, business alignment, and control objectives.",
+        "PCI DSS protects cardholder data, payment systems, and transaction security.",
+        "HIPAA protects PHI, patient privacy, and electronic health records."
+      ],
+      "oneLiners": [
+        "The framework objective changes; the need for control evidence remains."
+      ]
+    },
+    {
+      "id": "common-controls",
+      "title": "Common Controls Across Frameworks",
+      "definition": "SOX, COBIT, PCI DSS and HIPAA often rely on similar control families, even though their protected interests differ.",
+      "keyPoints": [
+        "Common controls include identity management.",
+        "Least privilege limits unnecessary access.",
+        "Authentication verifies users.",
+        "Logging and monitoring provide visibility.",
+        "Encryption protects sensitive data.",
+        "Risk assessment prioritizes controls.",
+        "Policies define expected behavior.",
+        "Incident response handles failures.",
+        "Regular audits provide assurance."
+      ],
+      "workflows": [
+        "Identity Management -> Least Privilege -> Authentication -> Logging -> Monitoring -> Encryption -> Risk Assessment -> Policies -> Incident Response -> Regular Audits"
+      ],
+      "oneLiners": [
+        "Shared controls support different compliance goals."
+      ]
+    },
+    {
+      "id": "encryption-example",
+      "title": "Encryption as a Shared Control",
+      "definition": "Encryption is a shared security control whose compliance meaning depends on the protected data type.",
+      "keyPoints": [
+        "Encryption protects financial reports or supporting data under SOX when confidentiality and integrity matter.",
+        "Encryption protects cardholder data under PCI DSS.",
+        "Encryption protects electronic PHI under HIPAA.",
+        "COBIT recommends governance around selecting, implementing, managing, and monitoring encryption controls."
+      ],
+      "oneLiners": [
+        "The same control can satisfy different compliance needs when mapped correctly."
+      ]
+    },
+    {
+      "id": "data-classification-map",
+      "title": "Data Classification Map",
+      "definition": "Data classification links information types to the most relevant compliance framework or governance model.",
+      "keyPoints": [
+        "Financial data maps to SOX.",
+        "Cardholder data maps to PCI DSS.",
+        "Protected Health Information maps to HIPAA.",
+        "Business information maps to COBIT governance."
+      ],
+      "workflows": [
+        "Financial Data -> SOX",
+        "Cardholder Data -> PCI DSS",
+        "Protected Health Information -> HIPAA",
+        "Business Information -> COBIT Governance"
+      ],
+      "oneLiners": [
+        "Classification tells the organization which obligations matter."
+      ]
+    },
+    {
+      "id": "cia-framework-relationships",
+      "title": "CIA Framework Relationships",
+      "definition": "The CIA Triad appears across all four frameworks, but different frameworks emphasize different pillars.",
+      "keyPoints": [
+        "HIPAA strongly emphasizes confidentiality because health information is sensitive.",
+        "SOX strongly emphasizes integrity because financial statements must be accurate and reliable.",
+        "COBIT strongly supports availability and governance because enterprise IT must support business objectives.",
+        "PCI DSS uses confidentiality, integrity, and availability together because payment systems must protect and process cardholder data securely."
+      ],
+      "workflows": [
+        "CIA Triad -> Confidentiality -> HIPAA",
+        "CIA Triad -> Integrity -> SOX",
+        "CIA Triad -> Availability and Governance -> COBIT",
+        "CIA Triad -> Confidentiality + Integrity + Availability -> PCI DSS"
+      ],
+      "oneLiners": [
+        "CIA is the security language under the compliance map."
+      ]
+    },
+    {
+      "id": "memory-hook",
+      "title": "Compliance Memory Hook",
+      "definition": "A short memory hook links each framework to its most recognizable domain.",
+      "keyPoints": [
+        "Money maps to SOX.",
+        "IT governance maps to COBIT.",
+        "Cards map to PCI DSS.",
+        "Patients map to HIPAA."
+      ],
+      "workflows": [
+        "Money -> SOX",
+        "IT -> COBIT",
+        "Cards -> PCI DSS",
+        "Patients -> HIPAA"
+      ],
+      "oneLiners": [
+        "Money, IT, cards, patients."
+      ]
+    },
+    {
+      "id": "knowledge-graph",
+      "title": "Knowledge Graph",
+      "definition": "The compliance knowledge graph organizes frameworks into governance, financial, payment and healthcare branches.",
+      "keyPoints": [
+        "Governance connects to COBIT.",
+        "Financial compliance connects to SOX.",
+        "Payment compliance connects to PCI DSS.",
+        "Healthcare compliance connects to HIPAA.",
+        "The graph helps build comparisons, scenario reasoning, and control mapping."
+      ],
+      "workflows": [
+        "Compliance -> Governance -> COBIT",
+        "Compliance -> Financial -> SOX",
+        "Compliance -> Payment -> PCI DSS",
+        "Compliance -> Healthcare -> HIPAA"
+      ],
+      "oneLiners": [
+        "A knowledge graph turns isolated frameworks into connected reasoning."
+      ]
+    },
+    {
+      "id": "control-mapping-method",
+      "title": "Control Mapping Method",
+      "definition": "Control mapping explains how one security control can support multiple frameworks when tied to the right data type and requirement.",
+      "keyPoints": [
+        "Identify the data or process.",
+        "Identify the applicable framework.",
+        "Identify the relevant control objective.",
+        "Select the security control.",
+        "Collect evidence that the control is designed and operating.",
+        "Review and improve the control over time."
+      ],
+      "workflows": [
+        "Data Type -> Framework -> Control Objective -> Security Control -> Evidence -> Review"
+      ],
+      "oneLiners": [
+        "Controls become compliance evidence only when mapped to requirements."
+      ]
+    },
+    {
+      "id": "scenario-reasoning",
+      "title": "Scenario Reasoning",
+      "definition": "Scenario-based compliance reasoning starts with the asset or data, then identifies the applicable framework and supporting controls.",
+      "keyPoints": [
+        "If the scenario involves public-company financial reporting, consider SOX.",
+        "If it involves enterprise IT governance and control maturity, consider COBIT.",
+        "If it involves cardholder data or payment systems, consider PCI DSS.",
+        "If it involves PHI, patient privacy, or healthcare safeguards, consider HIPAA.",
+        "If a scenario includes several data types, more than one framework may apply."
+      ],
+      "workflows": [
+        "Scenario -> Data Type -> Business Context -> Framework -> Controls -> Evidence"
+      ],
+      "oneLiners": [
+        "Scenario questions are solved by identifying the protected data and business context."
+      ]
+    },
+    {
+      "id": "final-memory-map",
+      "title": "Final Memory Map",
+      "definition": "SOX, COBIT, PCI DSS and HIPAA form a compact compliance map: money, IT, cards and patients.",
+      "keyPoints": [
+        "SOX means money and financial-reporting reliability.",
+        "COBIT means IT governance and control maturity.",
+        "PCI DSS means cards and payment security.",
+        "HIPAA means patients and protected health information.",
+        "Shared controls include identity, least privilege, authentication, logging, monitoring, encryption, risk assessment, policies, incident response and audits."
+      ],
+      "workflows": [
+        "Money -> SOX -> Financial Reporting Controls",
+        "IT -> COBIT -> Governance Controls",
+        "Cards -> PCI DSS -> Payment Security Controls",
+        "Patients -> HIPAA -> Healthcare Privacy and Security Safeguards"
+      ],
+      "oneLiners": [
+        "Money, IT, cards and patients summarize the four-framework map."
+      ]
+    }
+  ]
+}
