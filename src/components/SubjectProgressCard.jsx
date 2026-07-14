@@ -91,12 +91,14 @@ export default function SubjectProgressCard({ progress }) {
       </div>
 
       <div className="mt-4 flex flex-wrap gap-2">
-        <Link
-          to={primaryStage.path}
-          className="focus-ring inline-flex h-9 items-center gap-2 rounded-lg bg-slate-950 px-3 text-sm font-bold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
-        >
-          Warm up <ArrowRight size={16} />
-        </Link>
+        {primaryStage ? (
+          <Link
+            to={primaryStage.path}
+            className="focus-ring inline-flex h-9 items-center gap-2 rounded-lg bg-slate-950 px-3 text-sm font-bold text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-950 dark:hover:bg-slate-200"
+          >
+            Warm up <ArrowRight size={16} />
+          </Link>
+        ) : null}
         <Link
           to={subject.topicsPath}
           className="focus-ring inline-flex h-9 items-center rounded-lg border border-slate-200 px-3 text-sm font-bold text-slate-700 transition hover:bg-slate-50 dark:border-white/10 dark:text-slate-200 dark:hover:bg-white/10"

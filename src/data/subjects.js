@@ -13,8 +13,8 @@ const stageDefinitions = [
   { slug: "finalboss", label: "Final Boss", tone: "emerald" }
 ];
 
-function buildStages(subjectSlug) {
-  return stageDefinitions.map((stage) => ({
+function buildStages(subjectSlug, stageSlugs = stageDefinitions.map((stage) => stage.slug)) {
+  return stageDefinitions.filter((stage) => stageSlugs.includes(stage.slug)).map((stage) => ({
     ...stage,
     path: `/subjects/${subjectSlug}/${stage.slug}`,
     file: `/data/${subjectSlug}/${stage.slug}.json`
@@ -42,7 +42,7 @@ export const subjects = [
     icon: Network,
     accent: "indigo",
     description: "NDC practice sets and exam stages.",
-    stages: buildStages("ndc"),
+    stages: buildStages("ndc", ["warmup"]),
     topicsPath: "/subjects/ndc/topics",
     topicIndexFile: "/data/ndc/topics/index.json"
   },
@@ -53,7 +53,7 @@ export const subjects = [
     icon: ShieldCheck,
     accent: "teal",
     description: "Security concepts, web testing, malware, wireless, and mobile security.",
-    stages: buildStages("sc"),
+    stages: buildStages("sc", ["warmup"]),
     topicsPath: "/subjects/sc/topics",
     topicIndexFile: "/data/sc/topics/index.json",
     revisionPath: "/subjects/sc/revision",
@@ -66,7 +66,7 @@ export const subjects = [
     icon: KeyRound,
     accent: "amber",
     description: "Compliance audits, controls, frameworks, and security evaluation.",
-    stages: buildStages("ca"),
+    stages: buildStages("ca", ["warmup"]),
     topicsPath: "/subjects/ca/topics",
     topicIndexFile: "/data/ca/topics/index.json",
     revisionPath: "/subjects/ca/revision",
@@ -79,7 +79,7 @@ export const subjects = [
     icon: Binary,
     accent: "rose",
     description: "Cyber forensic investigation, evidence handling, and incident response.",
-    stages: buildStages("df"),
+    stages: buildStages("df", []),
     topicsPath: "/subjects/df/topics",
     topicIndexFile: "/data/df/topics/index.json"
   },
@@ -91,7 +91,7 @@ export const subjects = [
     icon: Binary,
     accent: "indigo",
     description: "Machine learning foundations, regression, validation, clustering, trees, and neural networks.",
-    stages: buildStages("ml"),
+    stages: buildStages("ml", []),
     topicsPath: "/subjects/ml/topics",
     topicIndexFile: "/data/ml/topics/index.json"
   }

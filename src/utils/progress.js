@@ -188,10 +188,12 @@ export async function buildProgressModel(subjects, results) {
       const averageScore = subjectResults.length
         ? Math.round(subjectResults.reduce((sum, result) => sum + Number(result.score || 0), 0) / subjectResults.length)
         : 0;
-      const categoryCounts = ["Warm Up MCQ", "Topic Wise MCQ", "Quarter Final", "Semi Final", "Final Boss"].map((label) => ({
-        label,
-        count: quizStates.filter((quiz) => quiz.group === label).reduce((sum, quiz) => sum + quiz.questionCount, 0)
-      }));
+      const categoryCounts = ["Warm Up MCQ", "Topic Wise MCQ", "Quarter Final", "Semi Final", "Final Boss"]
+        .map((label) => ({
+          label,
+          count: quizStates.filter((quiz) => quiz.group === label).reduce((sum, quiz) => sum + quiz.questionCount, 0)
+        }))
+        .filter((item) => item.count > 0);
 
       return {
         subject,
