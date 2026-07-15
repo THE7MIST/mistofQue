@@ -3,6 +3,11 @@ import { loginWithToken } from "../services/authApi.js";
 
 const AuthContext = createContext(null);
 const SESSION_KEY = "mcq_arena_session";
+export const DEMO_EMAIL = "demo@mcqarena.dev";
+
+export function isDemoUser(user) {
+  return user?.email?.trim().toLowerCase() === DEMO_EMAIL;
+}
 
 function safeUuid() {
   return typeof crypto !== "undefined" && crypto.randomUUID
@@ -33,6 +38,8 @@ export function AuthProvider({ children }) {
       const nextSession = {
         email: response.user.email,
         name: response.user.name || response.user.email.split("@")[0],
+        role: response.user.role || (response.user.email === DEMO_EMAIL ? "demo" : "student"),
+        isDemo: response.user.email === DEMO_EMAIL,
         token: response.sessionToken || safeUuid(),
         loginAt: new Date().toISOString()
       };

@@ -2,6 +2,11 @@ import { badgeDefinitions } from "../data/badges.js";
 import { loadQuizFile, loadTopicIndex } from "../services/quizService.js";
 
 const BADGE_KEY = "mcq_arena_earned_badges";
+const DEMO_EMAIL = "demo@mcqarena.dev";
+
+function isDemoEmail(email) {
+  return String(email || "").trim().toLowerCase() === DEMO_EMAIL;
+}
 
 function readEarnedBadgeIds(userEmail) {
   try {
@@ -217,6 +222,15 @@ export async function buildProgressModel(subjects, results) {
 }
 
 export function calculateBadges({ results, subjectProgress, userEmail }) {
+  if (isDemoEmail(userEmail)) {
+    return badgeDefinitions.map((badge) => ({
+      ...badge,
+      current: 0,
+      earned: false,
+      progress: 0
+    }));
+  }
+
   const earnedIds = readEarnedBadgeIds(userEmail);
   const completedResults = results.length;
   const winningResults = results.filter((result) => Number(result.score || 0) >= 60).length;

@@ -69,6 +69,14 @@ export function useQuizSession({ quiz, attemptKey }) {
     }));
   }, []);
 
+  const clearAnswer = useCallback((questionId) => {
+    setAttempt((current) => {
+      const nextAnswers = { ...current.answers };
+      delete nextAnswers[questionId];
+      return { ...current, answers: nextAnswers };
+    });
+  }, []);
+
   const goTo = useCallback((index) => {
     setAttempt((current) => ({
       ...current,
@@ -134,6 +142,7 @@ export function useQuizSession({ quiz, attemptKey }) {
     unansweredCount,
     progress,
     selectAnswer,
+    clearAnswer,
     goTo,
     goNext,
     goPrevious,
