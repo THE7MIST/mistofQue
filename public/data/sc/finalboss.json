@@ -1,1 +1,819 @@
-{"version":"1","title":"SC Final Boss","subject":"SC","stage":"Final Boss","durationMinutes":10,"questions":[{"id":1,"question":"Placeholder question for SC Final Boss.","options":["Option A","Option B","Option C","Option D"],"correct":0,"description":"Placeholder item. Replace this question with real MCQ content.","difficulty":"Easy","tags":["SC","Placeholder"]}]}
+{
+  "version": "2",
+  "title": "Security Concepts Final Boss",
+  "subject": "Security Concepts",
+  "stage": "Final Boss",
+  "durationMinutes": 45,
+  "questions": [
+    {
+      "id": 1,
+      "question": "A web application calls a stored procedure using the following logic: EXEC GetCustomerDetails ' + userInput The developer argues that stored procedures automatically prevent SQL injection. During testing, specially crafted input changes the procedure's intended query. What is the most accurate conclusion?",
+      "options": [
+        "Stored procedures prevent injection as long as the database account has limited privileges",
+        "Stored procedures remain vulnerable when untrusted input is concatenated into dynamic SQL",
+        "Stored procedures are vulnerable only when the application uses HTTP GET",
+        "The weakness is primarily broken access control because a database procedure was invoked"
+      ],
+      "correct": 1,
+      "description": "Stored procedures are not automatically secure. If untrusted input is concatenated into dynamically constructed SQL, the resulting statement can still be manipulated. Parameterized stored-procedure calls are safer because user input is treated as data rather than executable SQL syntax.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "A web application loads templates using this request: /view?template=invoice.html A tester changes the value to a path referencing a sensitive local operating-system file, and the server returns that file's contents. Which vulnerability is most directly demonstrated?",
+      "options": [
+        "Remote File Inclusion because an external resource was requested",
+        "Local File Inclusion because a server-local file was included through user-controlled input",
+        "Directory listing because the server revealed a folder structure",
+        "Path disclosure because the application exposed an absolute path in an error message"
+      ],
+      "correct": 1,
+      "description": "The application uses user-controlled input to load a file that exists locally on the server. That is Local File Inclusion. Remote File Inclusion requires the application to load code or content from a remote location.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "A PHP application accepts a URL in a `page` parameter and downloads the referenced content before executing it as part of the application. Which risk is most directly present?",
+      "options": [
+        "Remote File Inclusion",
+        "Local File Inclusion",
+        "Server-Side Request Forgery only",
+        "Stored Cross-Site Scripting"
+      ],
+      "correct": 0,
+      "description": "When an application accepts a remote URL and includes or executes the fetched content, an attacker may supply malicious remote code. Although remote fetching can also resemble SSRF, the decisive fact here is that the fetched content is included and executed by the application.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "A tester submits 50 MB of deeply nested JSON to an API endpoint. The server spends excessive CPU time parsing the request and becomes unavailable, even though no unusually large number of requests is sent. Which weakness most directly enabled the attack?",
+      "options": [
+        "Broken authentication because the request was accepted",
+        "Insufficient input validation and resource-consumption controls",
+        "SQL injection because structured input reached the server",
+        "Network-layer DDoS because the service became unavailable"
+      ],
+      "correct": 1,
+      "description": "The attack abuses one computationally expensive request rather than overwhelming the server with distributed traffic. The application should restrict input size, nesting depth, parsing complexity, execution time, and resource consumption.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "A C program copies a 200-byte username into a 64-byte stack buffer without checking its length. The program crashes, and an adjacent return address is overwritten. Which control would most directly prevent the underlying coding flaw?",
+      "options": [
+        "Server-side authorization checks",
+        "Bounds checking before copying input into the buffer",
+        "Encrypting the input before storing it",
+        "Disabling verbose database errors"
+      ],
+      "correct": 1,
+      "description": "The root cause is writing more data than the destination buffer can hold. Proper bounds checking and memory-safe functions directly prevent this. Other mitigations such as ASLR, stack canaries, and DEP reduce exploitability but do not remove the coding defect.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "A developer deploys stack canaries, ASLR, and Data Execution Prevention on a vulnerable application but leaves the unsafe copy operation unchanged. Which statement is most accurate?",
+      "options": [
+        "The buffer overflow has been eliminated because three mitigations are active",
+        "Exploitation may become harder, but the underlying vulnerability still exists",
+        "ASLR converts the overflow into an input-validation issue only",
+        "Data Execution Prevention guarantees that control flow cannot be hijacked"
+      ],
+      "correct": 1,
+      "description": "These protections are exploit mitigations. They make successful exploitation more difficult but do not correct the unsafe memory operation. The vulnerability remains until the application performs safe bounds checking or uses memory-safe handling.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "A threat-modelling team identifies a payment database, an Internet-facing API, an internal administrator account, and a connection from the API to the database. Which element represents a trust boundary?",
+      "options": [
+        "The payment database because it contains valuable data",
+        "The administrator account because it has elevated privileges",
+        "The point where requests move from the Internet-facing API into the internal database environment",
+        "The encryption key used to secure payment records"
+      ],
+      "correct": 2,
+      "description": "A trust boundary exists where data or control crosses between areas with different trust levels. The transition from an external-facing component to an internal database zone is therefore a critical trust boundary.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "During threat modelling, a team identifies an attacker who can modify transaction values while data moves between two components. Which security property is most directly threatened?",
+      "options": [
+        "Confidentiality",
+        "Integrity",
+        "Availability",
+        "Non-repudiation only"
+      ],
+      "correct": 1,
+      "description": "Unauthorized modification of data primarily threatens integrity. Confidentiality concerns unauthorized disclosure, while availability concerns disruption of access.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "A web server allows the HTTP `TRACE` method. A tester sends a request containing custom headers and receives those headers echoed in the response. What is the most accurate security concern?",
+      "options": [
+        "TRACE automatically grants administrative access",
+        "TRACE may expose request information and can support Cross-Site Tracing in certain environments",
+        "TRACE is equivalent to DELETE and can remove server files",
+        "TRACE proves that the server is vulnerable to SQL injection"
+      ],
+      "correct": 1,
+      "description": "TRACE echoes request data for diagnostic purposes. Historically, it could be abused with browser-side weaknesses to expose sensitive headers. It should be disabled when not required, but its presence alone does not prove a complete exploit.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "A REST API accepts a `PUT` request that replaces an existing user profile. Repeating the same request produces the same final state. Which HTTP property is demonstrated?",
+      "options": [
+        "Safety",
+        "Idempotence",
+        "Confidentiality",
+        "Non-persistence"
+      ],
+      "correct": 1,
+      "description": "An idempotent operation can be repeated without changing the final result beyond the initial application. PUT is generally intended to be idempotent, although it is not considered safe because it modifies server state.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "A server permits unauthenticated clients to use the HTTP `DELETE` method against uploaded files. What is the primary vulnerability?",
+      "options": [
+        "Insecure HTTP version negotiation",
+        "Broken access control combined with dangerous method exposure",
+        "Cross-Site Scripting because a URL deletes content",
+        "Buffer overflow because DELETE changes server-side data"
+      ],
+      "correct": 1,
+      "description": "The dangerous method is not inherently a vulnerability if correctly authorized. The critical failure is allowing unauthenticated or unauthorized users to invoke it.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "A Burp Suite scan identifies a possible SQL injection point, but the response behaviour is inconsistent because the application uses caching and rate limiting. What should the tester do next?",
+      "options": [
+        "Accept the scanner result as confirmed because automated scanners are deterministic",
+        "Manually reproduce the request using Repeater and compare controlled responses",
+        "Use Decoder because the issue involves server-side SQL",
+        "Use Spider because crawling confirms injection vulnerabilities"
+      ],
+      "correct": 1,
+      "description": "Automated findings require validation. Burp Repeater allows controlled modification and replay of requests so the tester can distinguish genuine injection behaviour from caching, rate limiting, or random response variation.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "A tester configures Burp Intruder with two payload positions: one for usernames and one for passwords. Every username is tested against every password. Which attack configuration is conceptually being used?",
+      "options": [
+        "A single-position sequential attack",
+        "A Cartesian-product attack across both payload sets",
+        "A passive scanner audit",
+        "A crawler-based attack-surface mapping operation"
+      ],
+      "correct": 1,
+      "description": "Testing every value from one payload set against every value from another creates all possible combinations. This is appropriate for controlled credential testing but can generate a very large number of requests.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "A security team runs a SAST tool on source code and a DAST tool against the deployed application. SAST reports an unsafe function that cannot be reached in the current build, while DAST reports an exposed endpoint whose source is generated at runtime. Which conclusion is most accurate?",
+      "options": [
+        "SAST is wrong because unreachable code can never matter",
+        "DAST is wrong because all vulnerabilities must be visible in source code",
+        "The tools provide complementary views and require contextual validation",
+        "Only DAST results should be reported because they affect a running system"
+      ],
+      "correct": 2,
+      "description": "SAST can identify weaknesses in code that may be unreachable or inactive, while DAST can find runtime behaviour that static analysis may not understand. Both require manual validation and context.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "A vulnerability is assigned a CVE identifier, and the NVD provides severity metrics and references. Which statement is most accurate?",
+      "options": [
+        "CVE proves that every product version listed is exploitable",
+        "NVD replaces the vendor's security advisory",
+        "CVE provides a standardized identifier, while NVD enriches it with analysis and metadata",
+        "CVE and NVD are two names for the same database"
+      ],
+      "correct": 2,
+      "description": "CVE provides standardized identifiers and descriptions. NVD builds upon CVE records with additional information such as CVSS data, references, and affected configurations. Vendor advisories remain important for precise remediation details.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "A tester observes a browser warning generated by a JavaScript-security add-on after a page loads an obfuscated external script from an unfamiliar domain. What is the add-on most likely helping identify?",
+      "options": [
+        "Suspicious or malicious client-side script behaviour",
+        "Kernel-level privilege escalation",
+        "SQL query execution inside the database",
+        "TCP SYN flooding against the browser"
+      ],
+      "correct": 0,
+      "description": "A browser JavaScript guard focuses on suspicious scripts, dangerous domains, obfuscation, or browser-side behaviour. It does not replace server-side testing or network intrusion detection.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "A company's incident occurred because an employee voluntarily disclosed a one-time password after receiving a convincing call from someone claiming to be technical support. Which classification is most accurate?",
+      "options": [
+        "Passive technical attack",
+        "Social-engineering attack exploiting human trust",
+        "Offline password attack",
+        "Network-based credential replay"
+      ],
+      "correct": 1,
+      "description": "The attacker manipulated the victim rather than breaking the authentication technology. This demonstrates that information security includes human behaviour, awareness, and verification procedures.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "A security professional discovers a serious vulnerability in a public service and tests it without permission because the goal is to help the organization. How should the action be classified?",
+      "options": [
+        "Ethical hacking because the intent was beneficial",
+        "Authorized penetration testing because no data was stolen",
+        "Unauthorized activity because ethical intent does not replace consent",
+        "Grey-team testing because both offensive and defensive goals were involved"
+      ],
+      "correct": 2,
+      "description": "Ethical hacking requires explicit authorization, a defined scope, and agreed rules. Good intentions do not make unauthorized testing legal or ethical.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "A professional security team performs attacks against an organization, while another team monitors, detects, and responds. Afterward, both groups jointly study missed detections and improve controls. Which activity best describes the final collaborative stage?",
+      "options": [
+        "Red teaming",
+        "Blue teaming",
+        "Purple teaming",
+        "Grey-hat hacking"
+      ],
+      "correct": 2,
+      "description": "Purple teaming combines offensive and defensive perspectives to improve detection and response. It is a collaborative function rather than simply a third independent attack team.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "An attacker uses a proxy chain primarily to hide the apparent source of requests. A tester then assumes the proxy guarantees complete anonymity. Why is that assumption unsafe?",
+      "options": [
+        "Proxies cannot forward HTTP traffic",
+        "Logs, browser fingerprints, DNS leakage, timing correlation, and upstream monitoring may still identify the source",
+        "Proxies automatically expose every password to the destination",
+        "Proxy chains work only for local network attacks"
+      ],
+      "correct": 1,
+      "description": "A proxy changes the network path, but it does not guarantee anonymity. Multiple technical and operational indicators can still reveal or correlate the user.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "A tester observes a user typing a password through an encrypted HTTPS connection. Network capture does not reveal the password, but malware installed on the endpoint records the keystrokes before encryption occurs. Which technique defeated the protection?",
+      "options": [
+        "Passive packet sniffing",
+        "Keylogging at the endpoint",
+        "Offline hash cracking",
+        "HTTP tunnelling"
+      ],
+      "correct": 1,
+      "description": "HTTPS protects data in transit, not data before it is entered into the encrypted channel. A keylogger captures input at the endpoint before encryption.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "A malicious application records browsing activity, captures screenshots, and sends the information to a remote operator without providing direct remote command access. Which classification is most accurate?",
+      "options": [
+        "Spyware",
+        "Reverse-connecting Trojan only",
+        "Worm",
+        "File-infector virus"
+      ],
+      "correct": 0,
+      "description": "Spyware primarily monitors and exfiltrates user or system information. A Trojan may deliver spyware, but the observed behaviour most directly matches spyware.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "A backdoor transmits stolen data inside the unused fields of legitimate protocol messages so that the communication resembles normal traffic. Which concept is demonstrated?",
+      "options": [
+        "Overt channel",
+        "Covert channel",
+        "Broadcast amplification",
+        "Passive reconnaissance"
+      ],
+      "correct": 1,
+      "description": "A covert channel uses an unintended or hidden communication mechanism to bypass security controls. An overt channel uses a legitimate communication path for its intended purpose.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "A reverse-connecting Trojan successfully reaches its operator even though the victim is behind NAT and rejects unsolicited inbound connections. Why is the reverse connection effective?",
+      "options": [
+        "NAT permits all inbound connections initiated by external systems",
+        "The infected host initiates an outbound connection that network controls may allow",
+        "The Trojan automatically disables every firewall",
+        "Reverse connections do not use TCP or UDP"
+      ],
+      "correct": 1,
+      "description": "Many networks permit outbound connections more readily than inbound ones. Once the victim initiates the session, NAT and stateful firewalls maintain the return path.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "A workstation begins making periodic connections to an unfamiliar external IP, a new process launches at startup, and a system utility has an altered hash. Which interpretation is strongest?",
+      "options": [
+        "These are independent events and should not be correlated",
+        "The combined indicators are consistent with Trojan persistence and command-and-control activity",
+        "The evidence proves a worm outbreak across the network",
+        "The altered hash confirms that antivirus software caused the change"
+      ],
+      "correct": 1,
+      "description": "No single indicator proves a Trojan, but persistence, suspicious outbound communication, and modified system files collectively support that conclusion and justify deeper investigation.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "A virus scanner detects malware by matching a known byte pattern. A modified sample changes its code appearance but preserves the same behaviour and avoids detection. Which limitation is demonstrated?",
+      "options": [
+        "Signature detection may fail when malware changes its observable representation",
+        "Behaviour-based detection can detect only known hashes",
+        "File integrity monitoring prevents all malware execution",
+        "Static analysis automatically executes the malware"
+      ],
+      "correct": 0,
+      "description": "Signature-based detection depends on known patterns. Polymorphism, packing, encryption, or obfuscation can change those patterns without changing malicious behaviour.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "An antivirus product allows an unknown program to execute in an isolated environment and flags it after observing file encryption, process injection, and persistence creation. Which detection method is primarily being used?",
+      "options": [
+        "Pure signature matching",
+        "Behavioural or heuristic analysis",
+        "Password cracking",
+        "Network enumeration"
+      ],
+      "correct": 1,
+      "description": "The program is classified based on suspicious actions rather than a fixed byte signature. Behavioural analysis can detect previously unknown or modified malware.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "A network uses an old hub instead of a switch. A tester can observe traffic from unrelated hosts without sending forged packets or altering network tables. Which technique best describes the observation?",
+      "options": [
+        "Active sniffing",
+        "Passive sniffing",
+        "MAC flooding",
+        "ARP poisoning"
+      ],
+      "correct": 1,
+      "description": "On shared media such as a hub, traffic is delivered to all connected systems. The tester can capture it without manipulating the network. Active sniffing is generally required on switched networks.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "An attacker uses ARP poisoning to position a machine between a victim and the default gateway. However, the attacker forgets to forward packets, and the victim loses connectivity. Which outcome occurred?",
+      "options": [
+        "Successful passive sniffing with no service impact",
+        "A man-in-the-middle attempt that also caused denial of service",
+        "DNS spoofing without traffic interception",
+        "Session fixation without packet modification"
+      ],
+      "correct": 1,
+      "description": "ARP poisoning redirected the victim's traffic to the attacker. Without forwarding, packets stopped at the attacker, interrupting connectivity and causing a denial-of-service effect.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "A network administrator configures static ARP entries for critical systems. Which attack is this control most directly intended to reduce?",
+      "options": [
+        "DNS cache poisoning",
+        "ARP spoofing on the local network",
+        "TCP SYN flooding",
+        "Wireless password guessing"
+      ],
+      "correct": 1,
+      "description": "Static ARP mappings reduce the ability of forged ARP replies to alter IP-to-MAC associations. The control can be operationally difficult at scale but directly addresses ARP poisoning.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "A web application assigns a session identifier before login and continues using the same identifier after successful authentication. An attacker first forces a victim to use a known identifier and later reuses it. Which attack is demonstrated?",
+      "options": [
+        "Session fixation",
+        "Session hijacking through packet sniffing",
+        "Credential stuffing",
+        "Cross-Site Request Forgery only"
+      ],
+      "correct": 0,
+      "description": "In session fixation, the attacker predetermines or supplies a session identifier that remains valid after the victim authenticates. Regenerating the session ID after login is a primary defence.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "A defender enables SYN cookies on a heavily targeted web server. Which attack is the control primarily designed to mitigate?",
+      "options": [
+        "Smurf amplification",
+        "SYN-flood exhaustion of the half-open connection queue",
+        "HTTP tunnelling",
+        "DNS zone-transfer abuse"
+      ],
+      "correct": 1,
+      "description": "SYN cookies allow the server to avoid storing state for every initial SYN request. This reduces resource exhaustion caused by large numbers of incomplete handshakes.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "An attacker sends a small request to an intermediary that generates a much larger response toward a victim using a spoofed source address. Which characteristic is central to the attack?",
+      "options": [
+        "Reflection combined with amplification",
+        "Session fixation combined with credential reuse",
+        "Passive sniffing combined with DNS tunnelling",
+        "Trojan wrapping combined with persistence"
+      ],
+      "correct": 0,
+      "description": "The intermediary reflects responses to the spoofed victim, and the response is larger than the original request. Smurf and some UDP-based DDoS attacks follow this pattern.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "A wireless access point uses WEP. An attacker captures a large number of packets and exploits repeated initialization vectors to recover the key. What is the primary cryptographic weakness?",
+      "options": [
+        "WEP uses no encryption at all",
+        "Reuse of short initialization vectors enables statistical key-recovery attacks",
+        "WEP keys are transmitted in plaintext during every association",
+        "WEP depends on public-key certificates that can be forged"
+      ],
+      "correct": 1,
+      "description": "WEP uses RC4 with a short initialization vector. IV reuse creates predictable relationships between encrypted packets, enabling practical statistical attacks.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "A wireless network hides its SSID and uses MAC filtering but no strong encryption. The administrator claims this prevents unauthorized access. Which assessment is most accurate?",
+      "options": [
+        "The network is secure because both identity values are concealed",
+        "SSIDs and MAC addresses can often be observed or spoofed, so strong authentication and encryption are still required",
+        "Hidden SSIDs automatically provide WPA-level confidentiality",
+        "MAC filtering prevents packet sniffing even when encryption is absent"
+      ],
+      "correct": 1,
+      "description": "SSID hiding and MAC filtering are weak administrative measures. They do not provide robust confidentiality or authentication and should not replace WPA2/WPA3 with strong credentials.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "A fingerprint scanner accepts a carefully constructed artificial fingerprint made from a lifted latent print. Which attack has occurred?",
+      "options": [
+        "Credential stuffing",
+        "Biometric spoofing",
+        "Session replay only",
+        "Physical tailgating"
+      ],
+      "correct": 1,
+      "description": "The attacker presents an artificial biometric characteristic that the sensor accepts as belonging to the legitimate user. Liveness detection and multi-factor authentication can reduce this risk.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "A monitoring server checks whether hosts, services, disk space, and response times remain within expected thresholds. It alerts administrators when a service becomes unavailable but does not inspect packet payloads for attack signatures. Which tool role is most accurately represented?",
+      "options": [
+        "Nagios-style infrastructure monitoring",
+        "Snort-style network intrusion detection",
+        "Metasploit exploitation",
+        "Nessus vulnerability assessment"
+      ],
+      "correct": 0,
+      "description": "Nagios focuses on availability, health, and performance of hosts and services. Snort analyzes network traffic for suspicious patterns, while Nessus assesses vulnerabilities.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Snort is configured in passive mode and generates an alert for a known attack signature. The malicious packet still reaches the server. Why?",
+      "options": [
+        "Snort cannot detect signatures",
+        "Passive IDS deployment observes and alerts but is not positioned to block traffic",
+        "The firewall automatically overrides every IDS decision",
+        "Signature detection works only after exploitation succeeds"
+      ],
+      "correct": 1,
+      "description": "To block traffic, the system must operate inline as an IPS or integrate with an enforcement mechanism. Passive monitoring alone does not stop packets.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "A system administrator deploys USB Pratirodh to control unauthorized use of removable storage devices. Which risk is the tool most directly intended to reduce?",
+      "options": [
+        "Web-based SQL injection",
+        "Data theft or malware introduction through USB devices",
+        "Wireless MAC spoofing",
+        "DNS reconnaissance"
+      ],
+      "correct": 1,
+      "description": "USB device control reduces risks from unauthorized removable media, including malware delivery, data exfiltration, and uncontrolled storage usage.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "An organization deploys AppSamvid to permit only approved applications to run on endpoints. Which security model does this most closely implement?",
+      "options": [
+        "Application allowlisting",
+        "Network intrusion detection",
+        "Dynamic malware sandboxing",
+        "Password spraying prevention"
+      ],
+      "correct": 0,
+      "description": "Application allowlisting permits trusted, approved software and blocks unapproved executables. This is stronger than relying only on signatures of known malicious programs.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "During Android application development, source code and resources are compiled, converted into DEX bytecode, packaged into an APK, aligned, and digitally signed. Why is signing essential before installation?",
+      "options": [
+        "It converts Java into DEX bytecode",
+        "It establishes application identity and protects update continuity",
+        "It grants all requested runtime permissions",
+        "It encrypts every resource inside the APK"
+      ],
+      "correct": 1,
+      "description": "Android requires applications to be signed. Updates normally must be signed with the same key, which helps establish continuity of application identity and detect unauthorized replacement.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "An Android application exposes a `BroadcastReceiver` to every application and performs a sensitive action whenever it receives a particular intent. Which risk is most direct?",
+      "options": [
+        "Another application may send a crafted intent and trigger the sensitive action",
+        "The APK signature will automatically become invalid",
+        "Android Runtime will stop executing DEX bytecode",
+        "SharedPreferences will become world-readable"
+      ],
+      "correct": 0,
+      "description": "Exported Android components can be invoked by other applications. Sensitive exported receivers should enforce permissions, validate input, and verify the caller where appropriate.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "An Android activity stores important state only in memory. The operating system destroys and recreates the activity after a configuration change, and the state is lost. Which Android application concept is most directly involved?",
+      "options": [
+        "Activity lifecycle management",
+        "APK signing",
+        "Root privilege escalation",
+        "Network-based MITM"
+      ],
+      "correct": 0,
+      "description": "Android may pause, stop, destroy, and recreate activities. Applications must preserve necessary state using appropriate lifecycle methods and storage mechanisms.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "A tester uses ADB to read application logs and discovers authentication tokens printed by the application during normal execution. Which security weakness is most direct?",
+      "options": [
+        "Sensitive information exposure through logging",
+        "Weak APK signing",
+        "Insecure wireless authentication",
+        "Excessive Android permissions only"
+      ],
+      "correct": 0,
+      "description": "Secrets, tokens, passwords, and personal information should not be written to logs. Logs may be accessible during debugging, through privileged applications, or on compromised devices.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "A tester decompiles an Android application and finds that root detection checks only for one known file path. Using Frida, the tester hooks the detection method and forces it to return \"not rooted.\" What does the scenario demonstrate?",
+      "options": [
+        "Static root-detection checks can be bypassed through runtime instrumentation",
+        "Frida permanently changes the APK signing certificate",
+        "Rooting is prevented when Java source is decompiled",
+        "APKTool automatically removes Android permissions"
+      ],
+      "correct": 0,
+      "description": "Client-side security checks can often be inspected and manipulated. Frida can hook methods while the application runs and alter their return values. Root detection should therefore be treated as a risk signal rather than an absolute security boundary.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Boss"
+      ]
+    }
+  ]
+}

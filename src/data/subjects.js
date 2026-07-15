@@ -53,7 +53,7 @@ export const subjects = [
     icon: ShieldCheck,
     accent: "teal",
     description: "Security concepts, web testing, malware, wireless, and mobile security.",
-    stages: buildStages("sc", ["warmup"]),
+    stages: buildStages("sc", ["warmup", "semifinal", "finalboss"]),
     topicsPath: "/subjects/sc/topics",
     topicIndexFile: "/data/sc/topics/index.json",
     revisionPath: "/subjects/sc/revision",

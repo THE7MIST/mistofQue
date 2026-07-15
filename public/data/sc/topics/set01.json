@@ -807,15 +807,15 @@
     },
     {
       "id": 48,
-      "question": "Command to perform an Nmap XMAS scan every 15mins:",
+      "question": "Which Nmap command performs a TCP XMAS scan using the Sneaky timing template?",
       "options": [
-        "nmap -sX -sneaky",
-        "nmap -sX -aggressive",
-        "nmap -sX -n 15",
-        "None of the above"
+        "nmap -sX -T1 <target>",
+        "nmap -sS -T1 <target>",
+        "nmap -sF -T1 <target>",
+        "nmap -sN -T1 <target>"
       ],
       "correct": 0,
-      "description": "Correct answer: A. nmap -sX -sneaky",
+      "description": "-sX performs a TCP XMAS scan by setting the FIN, PSH, and URG flags. -T1 is Nmap's Sneaky timing template. -sS is SYN scan, -sF is FIN scan, and -sN is NULL scan.",
       "difficulty": "Medium",
       "tags": [
         "SC",
@@ -926,15 +926,15 @@
     },
     {
       "id": 55,
-      "question": "_______ is not the protocol susceptible to sniffing.",
+      "question": "Which of the following protocols provides encrypted communication and is therefore not susceptible to plaintext credential sniffing under normal operation?",
       "options": [
-        "NNTP",
+        "Telnet",
         "FTP",
-        "POP",
-        "UDP"
+        "HTTP",
+        "SSH"
       ],
       "correct": 3,
-      "description": "Correct answer: D. UDP",
+      "description": "SSH encrypts communication, protecting credentials and session data from plaintext packet sniffing. Telnet, FTP, and HTTP transmit data in plaintext unless protected by an additional secure layer.",
       "difficulty": "Medium",
       "tags": [
         "SC",
