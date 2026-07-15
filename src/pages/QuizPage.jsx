@@ -1,4 +1,4 @@
-import { AlertTriangle, Bookmark, CheckCircle2, ChevronLeft, ChevronRight, Clock3, RotateCcw } from "lucide-react";
+import { AlertTriangle, Bookmark, CheckCircle2, ChevronLeft, ChevronRight, Clock3, Maximize2, RotateCcw } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import QuestionPalette from "../components/QuestionPalette.jsx";
@@ -117,7 +117,7 @@ function QuizStartScreen({ quiz, onStart, onStartFocus }) {
 function ActiveQuizSession({ quiz, attemptKey }) {
   const navigate = useNavigate();
   const { user } = useAuth();
-  const { isFocusMode, exitFocusMode } = useFocusMode();
+  const { isFocusMode, enterFocusMode, exitFocusMode } = useFocusMode();
   const submittedRef = useRef(false);
   const allowLeaveRef = useRef(false);
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
@@ -275,6 +275,10 @@ function ActiveQuizSession({ quiz, attemptKey }) {
           description={`${questions.length} randomized questions. Answers are saved during the active attempt.`}
           actions={
             <>
+              <Button variant="secondary" onClick={enterFocusMode} title="Hide navigation and focus on answering">
+                <Maximize2 size={17} />
+                Focus Mode
+              </Button>
               <Button variant="secondary" onClick={handleRestart} title="Restart clears only this active attempt">
                 <RotateCcw size={17} />
                 Restart
