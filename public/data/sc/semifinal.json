@@ -3,52 +3,891 @@
   "title": "Security Concepts Semi Final",
   "subject": "Security Concepts",
   "stage": "Semi Final",
-  "durationMinutes": 45,
+  "durationMinutes": 50,
   "questions": [
-    {"id":1,"question":"An organization deploys strong encryption and multi-factor authentication but continues to suffer account compromises because employees approve fraudulent login requests sent by attackers. Which improvement most directly addresses the root cause?","options":["Replace the encryption algorithm with a longer key","Strengthen security awareness and verification procedures","Deploy an additional vulnerability scanner","Increase firewall logging around authentication servers"],"correct":1,"description":"The technical controls are functioning, but attackers are exploiting the human side of information security. Security awareness, verification procedures, anti-social-engineering training, and reporting mechanisms address the actual weakness.","difficulty":"Medium","tags":["SC","Security Concepts","Human Factors"]},
-    {"id":2,"question":"A hospital classifies accidental deletion by an employee, deliberate ransomware deployment, and a flood affecting its data centre. Which classification is most accurate?","options":["All three are technical threats because they affect computer systems","They represent accidental human, intentional human, and environmental threats respectively","They represent vulnerabilities, attacks, and risks respectively","They are all active attacks because each may affect availability"],"correct":1,"description":"Accidental deletion is an unintentional human threat, ransomware deployment is an intentional human threat, and flooding is an environmental or natural threat.","difficulty":"Medium","tags":["SC","Threat Classification"]},
-    {"id":3,"question":"A company implements extremely restrictive controls that prevent employees from accessing necessary systems. Employees begin sharing accounts to complete their work. Which concept best explains this outcome?","options":["Confidentiality was prioritized without considering functionality and ease of use","Availability was improved at the cost of confidentiality","Non-repudiation failed because shared accounts are not encrypted","Integrity controls were too weak to stop password sharing"],"correct":0,"description":"Security, functionality, and ease of use must be balanced. Excessively restrictive security can cause unsafe workarounds such as account sharing.","difficulty":"Medium","tags":["SC","Security Management"]},
-    {"id":4,"question":"A penetration tester receives written authorization to test ten IP addresses but discovers a vulnerable server on an eleventh address belonging to the same company. What is the most appropriate action?","options":["Test it because ownership implies authorization","Perform only passive reconnaissance because it causes no harm","Stop and request written scope expansion before testing it","Scan it but avoid exploitation until permission is confirmed"],"correct":2,"description":"Authorization is defined by the agreed scope, not merely by asset ownership. Out-of-scope testing requires explicit written approval.","difficulty":"Hard","tags":["SC","Ethical Hacking","Scope"]},
-    {"id":5,"question":"A tester prepares an assessment document containing authorized targets, testing hours, prohibited attacks, reporting requirements, and emergency contacts. What is the document primarily establishing?","options":["Malware analysis methodology","Security evaluation plan and rules of engagement","Vulnerability severity classification","Digital evidence chain of custody"],"correct":1,"description":"A security evaluation plan defines scope, objectives, limitations, authorization, communication, schedule, and rules of engagement.","difficulty":"Medium","tags":["SC","Security Evaluation"]},
-    {"id":6,"question":"An analyst gathers domain registration details, employee names from public profiles, archived webpages, and public documents without directly communicating with the target infrastructure. Which description is most accurate?","options":["Active reconnaissance because information is being collected for an attack","Passive footprinting because no direct target interaction is required","Enumeration because named users and domains are being identified","Vulnerability scanning because exposed information may create risk"],"correct":1,"description":"Passive footprinting uses public and third-party sources without sending probes directly to the target infrastructure.","difficulty":"Easy","tags":["SC","Footprinting"]},
-    {"id":7,"question":"A tester sends packets with progressively increasing TTL values and observes ICMP Time Exceeded messages from intermediate routers. What is the tester primarily determining?","options":["Open TCP ports on the destination","The network path and intermediate hops","The destination operating system","DNS records associated with each router"],"correct":1,"description":"Traceroute increases TTL values and uses ICMP Time Exceeded responses to identify routers along the path.","difficulty":"Easy","tags":["SC","Reconnaissance","Traceroute"]},
-    {"id":8,"question":"A scan identifies which hosts are alive across an entire subnet but does not attempt to determine service versions. Which category best describes the activity?","options":["Port scanning","Network scanning","Vulnerability scanning","Banner grabbing"],"correct":1,"description":"Network scanning focuses on host discovery and topology. Port scanning identifies listening ports and vulnerability scanning checks known weaknesses.","difficulty":"Easy","tags":["SC","Scanning"]},
-    {"id":9,"question":"A scanner sends a TCP packet with no flags set. A standards-compliant closed port returns RST, while an open port gives no response. Which scan is being performed?","options":["FIN scan","NULL scan","ACK scan","IDLE scan"],"correct":1,"description":"A NULL scan sends a TCP packet without flags. Traditionally, closed ports respond with RST and open ports may silently drop the packet.","difficulty":"Medium","tags":["SC","Nmap","Scanning"]},
-    {"id":10,"question":"A tester wants the target to record a third-party system's IP address as the apparent scanner. The tester also wants to infer port states from changes in that third party's IP identification sequence. Which technique is most appropriate?","options":["SYN scan","IDLE scan","FIN scan","Proxy-based connect scan"],"correct":1,"description":"An IDLE scan uses a quiet intermediary host with predictable IP ID behavior so the target sees traffic apparently coming from that host.","difficulty":"Hard","tags":["SC","Nmap","IDLE Scan"]},
-    {"id":11,"question":"A SYN scan reports a port as filtered. Which observation most likely produced this result?","options":["The target returned SYN-ACK","The target returned RST","No response or an ICMP unreachable message was received","The target completed the full TCP handshake"],"correct":2,"description":"In a SYN scan, SYN-ACK normally indicates open, RST indicates closed, and no response or selected ICMP unreachable messages indicate filtered.","difficulty":"Medium","tags":["SC","Nmap","SYN Scan"]},
-    {"id":12,"question":"A tester connects to a web service and receives the response header Server: Apache/2.4.49. What is the most immediate security value of this information?","options":["It proves the server is vulnerable","It supports service fingerprinting and targeted vulnerability research","It confirms the server's operating system with certainty","It provides authenticated access to the service"],"correct":1,"description":"A service banner helps identify software and versions. It guides validation but does not by itself prove vulnerability.","difficulty":"Medium","tags":["SC","Banner Grabbing"]},
-    {"id":13,"question":"A tester compares differences in TCP window sizes, TTL values, TCP options, and responses to unusual packets. Which technique is being performed?","options":["Banner grabbing","Active OS fingerprinting","DNS enumeration","Application-layer vulnerability scanning"],"correct":1,"description":"Active OS fingerprinting sends probes and compares TCP/IP stack behavior such as TTL, window size, flags, and TCP options.","difficulty":"Medium","tags":["SC","OS Fingerprinting"]},
-    {"id":14,"question":"A company blocks direct outbound connections except HTTPS. Malware sends command traffic inside apparently valid HTTPS requests. Which technique is being used?","options":["IP spoofing","HTTP tunnelling","SMB redirection","DNS enumeration"],"correct":1,"description":"HTTP tunnelling encapsulates another communication channel inside HTTP or HTTPS traffic to bypass controls that permit web traffic.","difficulty":"Medium","tags":["SC","Tunnelling","Malware"]},
-    {"id":15,"question":"A tester sends packets with a forged source IP address. Responses are delivered to the forged address rather than to the tester. Which limitation does this demonstrate?","options":["IP spoofing cannot alter packet headers","IP spoofing alone usually prevents receiving replies unless the attacker controls the traffic path","IP spoofing automatically creates a bidirectional session","Source spoofing works only with UDP"],"correct":1,"description":"Spoofed packets contain a false source IP, so replies normally go to that false address unless the attacker can observe or manipulate the path.","difficulty":"Medium","tags":["SC","IP Spoofing"]},
-    {"id":16,"question":"A DNS server permits an unauthorized client to retrieve the complete contents of a zone, including hostnames and internal service records. Which operation was improperly allowed?","options":["Recursive DNS lookup","DNS zone transfer","Reverse DNS resolution","DNS cache poisoning"],"correct":1,"description":"A DNS zone transfer, commonly using AXFR, can reveal an entire DNS zone and should be restricted to authorized secondary servers.","difficulty":"Medium","tags":["SC","DNS","Enumeration"]},
-    {"id":17,"question":"A vulnerability scanner reports that a server may be vulnerable based only on its detected version. Manual testing shows that the vendor backported the security patch without changing the version string. What did the scanner produce?","options":["False negative","False positive","Confirmed exploit","Risk acceptance"],"correct":1,"description":"The scanner reported a vulnerability that was not actually present. This is a false positive and shows why automated findings require validation.","difficulty":"Medium","tags":["SC","Vulnerability Scanning"]},
-    {"id":18,"question":"A tester captures an NTLM authentication attempt and forwards it to another server, which grants access. The tester never recovers the user's plaintext password or reusable password hash. Which attack best describes the scenario?","options":["Pass-the-hash","SMB relay","Offline cracking","Credential stuffing"],"correct":1,"description":"SMB relay forwards a live authentication exchange to another service. Pass-the-hash uses a captured NTLM hash directly as a credential.","difficulty":"Hard","tags":["SC","SMB Relay","Authentication"]},
-    {"id":19,"question":"An attacker tries the password Winter2026! against hundreds of accounts, making only one attempt per account. Which technique is being used?","options":["Brute-force attack","Password spraying","Credential stuffing","Rainbow-table attack"],"correct":1,"description":"Password spraying tests a small number of common passwords against many accounts to avoid lockouts.","difficulty":"Easy","tags":["SC","Password Attacks"]},
-    {"id":20,"question":"An attacker tests usernames and passwords obtained from an unrelated website breach against a corporate VPN portal. Which attack is this?","options":["Dictionary attack","Credential stuffing","Password spraying","Offline brute force"],"correct":1,"description":"Credential stuffing uses previously compromised username-password pairs against other services where users may have reused passwords.","difficulty":"Easy","tags":["SC","Credential Stuffing"]},
-    {"id":21,"question":"A password database uses unique random salts with a slow password-hashing function. Which attack is most directly weakened by the unique salts?","options":["Online password spraying","Precomputed rainbow-table lookup","Keylogging","Credential stuffing"],"correct":1,"description":"Unique salts make identical passwords produce different hashes and prevent efficient reuse of precomputed rainbow tables.","difficulty":"Medium","tags":["SC","Password Storage"]},
-    {"id":22,"question":"A malicious program is bundled with a legitimate installer. When the installer runs, both the expected software and the hidden malware are installed. Which technique is demonstrated?","options":["Trojan wrapping","Worm propagation","Logic bombing","Fileless execution"],"correct":0,"description":"Trojan wrapping combines malicious code with a legitimate-looking application so the user unknowingly installs both.","difficulty":"Easy","tags":["SC","Trojan","Malware"]},
-    {"id":23,"question":"A system administrator stores approved cryptographic hashes of critical operating system files and later compares current hashes against the baseline. What is the administrator primarily trying to detect?","options":["Network-based session hijacking","Unauthorized modification of system files","Weak wireless encryption","Password reuse across systems"],"correct":1,"description":"System file verification uses trusted hash baselines to detect changes caused by malware, unauthorized updates, or tampering.","difficulty":"Medium","tags":["SC","Integrity","Malware"]},
-    {"id":24,"question":"Malware attaches its code to an executable file and spreads when infected programs are launched. It does not independently scan the network for new hosts. Which malware type best fits?","options":["Worm","File-infector virus","Backdoor","Spyware"],"correct":1,"description":"A file-infector virus attaches itself to executable files and typically requires the infected host file to execute. A worm self-propagates independently.","difficulty":"Medium","tags":["SC","Virus","Malware"]},
-    {"id":25,"question":"A malicious program changes its decryptor and appearance each time it infects a new file while preserving the same underlying payload. Which evasion technique is most likely?","options":["Polymorphism","Static linking","Sandboxing","File integrity monitoring"],"correct":0,"description":"Polymorphic malware changes its observable representation to avoid signature-based detection while preserving equivalent functionality.","difficulty":"Medium","tags":["SC","Malware Evasion"]},
-    {"id":26,"question":"A Wireshark user wants to collect only DNS packets during capture rather than capturing everything and filtering later. Which mechanism should be used?","options":["Display filter","Capture filter","Colouring rule","Protocol hierarchy"],"correct":1,"description":"A capture filter determines which packets are collected. A display filter only controls which captured packets are shown.","difficulty":"Easy","tags":["SC","Wireshark","Sniffing"]},
-    {"id":27,"question":"A switch begins behaving like a hub after an attacker sends thousands of frames with different forged source MAC addresses. What has most likely occurred?","options":["ARP cache poisoning","MAC table flooding","DNS spoofing","VLAN hopping"],"correct":1,"description":"MAC table flooding fills the switch CAM table with bogus entries. Some switches may then flood frames out multiple ports.","difficulty":"Medium","tags":["SC","Sniffing","Switching"]},
-    {"id":28,"question":"A victim requests the IP address of a banking website but receives a forged DNS response directing the browser to an attacker-controlled server. Which attack is demonstrated?","options":["ARP poisoning","DNS spoofing","HTTP tunnelling","IP fragmentation"],"correct":1,"description":"DNS spoofing provides fraudulent hostname-to-IP resolution. ARP poisoning manipulates local IP-to-MAC mappings.","difficulty":"Easy","tags":["SC","DNS Spoofing"]},
-    {"id":29,"question":"An attacker steals a valid session cookie after a user authenticates and uses it to access the application without knowing the password. Which attack has occurred?","options":["Credential stuffing","Session hijacking","Password spraying","Authentication downgrade"],"correct":1,"description":"Session hijacking occurs when an attacker takes control of an authenticated session using a valid session token.","difficulty":"Easy","tags":["SC","Session Hijacking"]},
-    {"id":30,"question":"Which control most directly reduces the impact of a stolen web session cookie?","options":["Increase the user's password length","Regenerate session identifiers after authentication and use secure cookie attributes","Disable DNS recursion","Hide the web server banner"],"correct":1,"description":"Session regeneration helps prevent fixation. Secure, HttpOnly, and appropriate SameSite cookie attributes reduce exposure and misuse.","difficulty":"Hard","tags":["SC","Session Security"]},
-    {"id":31,"question":"A large number of systems send SYN packets to a server, but the source addresses are widely distributed and many belong to compromised consumer devices. Which description is most accurate?","options":["Distributed SYN flood generated by a botnet","Smurf attack using ICMP amplification","FIN scan using zombie hosts","Passive session hijacking"],"correct":0,"description":"The scenario combines SYN-flood behavior with distributed botnet sources. A Smurf attack uses spoofed ICMP requests and broadcast amplification.","difficulty":"Medium","tags":["SC","DDoS","Botnet"]},
-    {"id":32,"question":"A company replaces WEP with WPA using TKIP but continues using a short dictionary word as its pre-shared key. Which statement is most accurate?","options":["The network is secure because WPA eliminates password-based attacks","WPA improves protocol security, but the weak pre-shared key remains vulnerable to guessing","TKIP provides the same protection as WPA3-SAE","The only remaining risk is MAC spoofing"],"correct":1,"description":"A stronger protocol does not compensate for a weak passphrase. Captured authentication exchanges may still allow offline guessing.","difficulty":"Medium","tags":["SC","Wireless Security"]},
-    {"id":33,"question":"An attacker changes the wireless adapter's hardware address to match an address permitted by an access point's MAC filter. What does this demonstrate?","options":["MAC filtering provides strong authentication","MAC addresses can be spoofed and should not be treated as sufficient authentication","WPA encryption has been cryptographically broken","SSID hiding prevents this attack"],"correct":1,"description":"MAC addresses are observable and modifiable. MAC filtering is not a strong security boundary.","difficulty":"Easy","tags":["SC","Wireless Security","MAC Spoofing"]},
-    {"id":34,"question":"An organization places its public web server in a network segment between the Internet and the internal LAN. Traffic from the web server to internal databases is tightly restricted. Which architecture is being used?","options":["Honeynet","DMZ","Covert channel","Flat network"],"correct":1,"description":"A DMZ isolates public-facing services from the internal network and limits the impact of compromise.","difficulty":"Easy","tags":["SC","DMZ","Firewall"]},
-    {"id":35,"question":"A security device observes suspicious traffic and sends alerts but does not automatically drop packets. Which deployment is most likely?","options":["Inline IPS","Passive IDS","Stateful firewall","Reverse proxy"],"correct":1,"description":"A passive IDS monitors and alerts. An inline IPS is positioned to inspect and block traffic.","difficulty":"Easy","tags":["SC","IDS","IPS"]},
-    {"id":36,"question":"A decoy server is deliberately configured with fake records and monitored services. Security staff use it to study attacker behaviour. Which statement best distinguishes this system from an IDS?","options":["A honeypot attracts interaction, while an IDS monitors traffic or events for suspicious activity","A honeypot automatically blocks every attack, while an IDS cannot generate alerts","An IDS must be Internet-facing, while a honeypot must remain internal","A honeypot replaces the need for production security controls"],"correct":0,"description":"A honeypot is a decoy designed to attract and observe attackers. An IDS watches network or host activity.","difficulty":"Medium","tags":["SC","Honeypot","IDS"]},
-    {"id":37,"question":"A data centre has fire suppression and CCTV but allows contractors to enter sensitive areas by following employees through secured doors. Which physical security control is most directly missing?","options":["Network segmentation","Anti-tailgating access control such as a mantrap","Malware sandboxing","Disk encryption"],"correct":1,"description":"Tailgating is unauthorized physical entry by following an authorized person. Mantraps, guards, badge checks, and awareness training directly address it.","difficulty":"Medium","tags":["SC","Physical Security"]},
-    {"id":38,"question":"During a penetration test, the tester successfully exploits a vulnerability and proves access to a non-sensitive test file. The scope prohibits persistence and data extraction. What should the tester do next?","options":["Install a backdoor to prove long-term impact","Extract production data to demonstrate business risk","Stop further exploitation, preserve evidence, and report the validated finding","Delete logs to reduce operational impact"],"correct":2,"description":"Penetration testing must follow the rules of engagement. Once sufficient evidence is collected, unnecessary actions increase risk and may violate authorization.","difficulty":"Hard","tags":["SC","Penetration Testing"]},
-    {"id":39,"question":"A malware analyst extracts strings, imports, section names, hashes, and embedded URLs without running the sample. Which analysis type is being performed?","options":["Dynamic analysis","Static analysis","Behavioural sandboxing","Network vulnerability scanning"],"correct":1,"description":"Static analysis examines a sample without executing it and can reveal structure, strings, imports, hashes, packer indicators, and embedded configuration.","difficulty":"Easy","tags":["SC","Malware Analysis"]},
-    {"id":40,"question":"A malware sample appears harmless during static inspection but creates registry persistence, launches a child process, and contacts a remote server when executed. Why was dynamic analysis necessary?","options":["Static analysis cannot inspect any file content","Runtime behaviour may be hidden, encrypted, packed, or generated only during execution","Dynamic analysis always recovers original source code","Static analysis can be used only on Android applications"],"correct":1,"description":"Packed or obfuscated malware may conceal meaningful code and configuration until runtime. Dynamic analysis reveals actual behavior.","difficulty":"Medium","tags":["SC","Malware Analysis"]},
-    {"id":41,"question":"An Android application contains an exported activity that performs sensitive account operations but does not verify the caller's authorization. Which weakness is most directly present?","options":["Insecure communication","Improper platform usage leading to exposed components","Insufficient cryptography","Mobile denial of service"],"correct":1,"description":"Android components exposed through manifest configuration must enforce proper permissions and authorization.","difficulty":"Medium","tags":["SC","Android Security","OWASP Mobile"]},
-    {"id":42,"question":"An Android application declares a dangerous permission in its manifest. A tester assumes the application automatically possesses that permission after installation. Why may this assumption be incorrect?","options":["Manifest permissions apply only to system applications","Modern Android may require the user to grant dangerous permissions at runtime","Declared permissions are ignored when an APK is signed","Permissions are enforced only by Android Runtime, not the operating system"],"correct":1,"description":"Declaring a dangerous permission in the manifest is not always sufficient. Runtime permission approval may also be required.","difficulty":"Medium","tags":["SC","Android Security","Permissions"]},
-    {"id":43,"question":"A tester uses ADB to install an APK successfully but cannot access the application's private data directory using a normal shell. Which explanation is most accurate?","options":["ADB can install applications but never provides shell access","Android sandboxing and Linux file permissions restrict access to another application's private data","The APK must be converted to Java source first","Private data directories are encrypted with the APK signing certificate"],"correct":1,"description":"Android applications normally run under distinct Linux UIDs. A standard ADB shell does not automatically access every application's private files.","difficulty":"Medium","tags":["SC","Android Security","ADB"]},
-    {"id":44,"question":"A tester observes that an Android application accepts any certificate presented by a server because its custom trust manager performs no validation. Which vulnerability is most directly created?","options":["Insecure data storage","Insecure communication enabling MITM attacks","Excessive permissions","Code tampering through APK repackaging"],"correct":1,"description":"Failing to validate certificates removes server authentication and can allow an attacker to decrypt or modify intercepted communications.","difficulty":"Hard","tags":["SC","Android Security","TLS"]},
-    {"id":45,"question":"MobSF reports hardcoded secrets, an exported component, weak TLS validation, and suspicious runtime network connections. Which action provides the strongest assessment conclusion?","options":["Treat every automated result as a confirmed exploitable vulnerability","Ignore static findings because only runtime behaviour matters","Correlate static and dynamic findings, manually validate exploitability, and report evidence-supported risk","Report only the issue with the highest automated severity score"],"correct":2,"description":"A strong assessment combines static analysis, dynamic analysis, manual verification, business impact, and remediation guidance because automated findings can be false positives or context-dependent.","difficulty":"Hard","tags":["SC","MobSF","Mobile Security"]}
+    {
+      "id": 1,
+      "question": "An organization deploys strong encryption and multi-factor authentication but continues to suffer account compromises because employees approve fraudulent login requests sent by attackers. Which improvement most directly addresses the root cause?",
+      "options": [
+        "Replace the encryption algorithm with a longer key",
+        "Strengthen security awareness and verification procedures",
+        "Deploy an additional vulnerability scanner",
+        "Increase firewall logging around authentication servers"
+      ],
+      "correct": 1,
+      "description": "The technical controls are functioning, but attackers are exploiting the human side of information security. Security awareness, verification procedures, anti-social-engineering training, and reporting mechanisms address the actual weakness.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Human Factors"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "A hospital classifies accidental deletion by an employee, deliberate ransomware deployment, and a flood affecting its data centre. Which classification is most accurate?",
+      "options": [
+        "All three are technical threats because they affect computer systems",
+        "They represent accidental human, intentional human, and environmental threats respectively",
+        "They represent vulnerabilities, attacks, and risks respectively",
+        "They are all active attacks because each may affect availability"
+      ],
+      "correct": 1,
+      "description": "Accidental deletion is an unintentional human threat, ransomware deployment is an intentional human threat, and flooding is an environmental or natural threat.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Threat Classification"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "A company implements extremely restrictive controls that prevent employees from accessing necessary systems. Employees begin sharing accounts to complete their work. Which concept best explains this outcome?",
+      "options": [
+        "Confidentiality was prioritized without considering functionality and ease of use",
+        "Availability was improved at the cost of confidentiality",
+        "Non-repudiation failed because shared accounts are not encrypted",
+        "Integrity controls were too weak to stop password sharing"
+      ],
+      "correct": 0,
+      "description": "Security, functionality, and ease of use must be balanced. Excessively restrictive security can cause unsafe workarounds such as account sharing.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Management"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "A penetration tester receives written authorization to test ten IP addresses but discovers a vulnerable server on an eleventh address belonging to the same company. What is the most appropriate action?",
+      "options": [
+        "Test it because ownership implies authorization",
+        "Perform only passive reconnaissance because it causes no harm",
+        "Stop and request written scope expansion before testing it",
+        "Scan it but avoid exploitation until permission is confirmed"
+      ],
+      "correct": 2,
+      "description": "Authorization is defined by the agreed scope, not merely by asset ownership. Out-of-scope testing requires explicit written approval.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Ethical Hacking",
+        "Scope"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "A tester prepares an assessment document containing authorized targets, testing hours, prohibited attacks, reporting requirements, and emergency contacts. What is the document primarily establishing?",
+      "options": [
+        "Malware analysis methodology",
+        "Security evaluation plan and rules of engagement",
+        "Vulnerability severity classification",
+        "Digital evidence chain of custody"
+      ],
+      "correct": 1,
+      "description": "A security evaluation plan defines scope, objectives, limitations, authorization, communication, schedule, and rules of engagement.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Evaluation"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "An analyst gathers domain registration details, employee names from public profiles, archived webpages, and public documents without directly communicating with the target infrastructure. Which description is most accurate?",
+      "options": [
+        "Active reconnaissance because information is being collected for an attack",
+        "Passive footprinting because no direct target interaction is required",
+        "Enumeration because named users and domains are being identified",
+        "Vulnerability scanning because exposed information may create risk"
+      ],
+      "correct": 1,
+      "description": "Passive footprinting uses public and third-party sources without sending probes directly to the target infrastructure.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Footprinting"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "A tester sends packets with progressively increasing TTL values and observes ICMP Time Exceeded messages from intermediate routers. What is the tester primarily determining?",
+      "options": [
+        "Open TCP ports on the destination",
+        "The network path and intermediate hops",
+        "The destination operating system",
+        "DNS records associated with each router"
+      ],
+      "correct": 1,
+      "description": "Traceroute increases TTL values and uses ICMP Time Exceeded responses to identify routers along the path.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Reconnaissance",
+        "Traceroute"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "A scan identifies which hosts are alive across an entire subnet but does not attempt to determine service versions. Which category best describes the activity?",
+      "options": [
+        "Port scanning",
+        "Network scanning",
+        "Vulnerability scanning",
+        "Banner grabbing"
+      ],
+      "correct": 1,
+      "description": "Network scanning focuses on host discovery and topology. Port scanning identifies listening ports and vulnerability scanning checks known weaknesses.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Scanning"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "A scanner sends a TCP packet with no flags set. A standards-compliant closed port returns RST, while an open port gives no response. Which scan is being performed?",
+      "options": [
+        "FIN scan",
+        "NULL scan",
+        "ACK scan",
+        "IDLE scan"
+      ],
+      "correct": 1,
+      "description": "A NULL scan sends a TCP packet without flags. Traditionally, closed ports respond with RST and open ports may silently drop the packet.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Nmap",
+        "Scanning"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "A tester wants the target to record a third-party system's IP address as the apparent scanner. The tester also wants to infer port states from changes in that third party's IP identification sequence. Which technique is most appropriate?",
+      "options": [
+        "SYN scan",
+        "IDLE scan",
+        "FIN scan",
+        "Proxy-based connect scan"
+      ],
+      "correct": 1,
+      "description": "An IDLE scan uses a quiet intermediary host with predictable IP ID behavior so the target sees traffic apparently coming from that host.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Nmap",
+        "IDLE Scan"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "A SYN scan reports a port as filtered. Which observation most likely produced this result?",
+      "options": [
+        "The target returned SYN-ACK",
+        "The target returned RST",
+        "No response or an ICMP unreachable message was received",
+        "The target completed the full TCP handshake"
+      ],
+      "correct": 2,
+      "description": "In a SYN scan, SYN-ACK normally indicates open, RST indicates closed, and no response or selected ICMP unreachable messages indicate filtered.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Nmap",
+        "SYN Scan"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "A tester connects to a web service and receives the response header Server: Apache/2.4.49. What is the most immediate security value of this information?",
+      "options": [
+        "It proves the server is vulnerable",
+        "It supports service fingerprinting and targeted vulnerability research",
+        "It confirms the server's operating system with certainty",
+        "It provides authenticated access to the service"
+      ],
+      "correct": 1,
+      "description": "A service banner helps identify software and versions. It guides validation but does not by itself prove vulnerability.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Banner Grabbing"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "A tester compares differences in TCP window sizes, TTL values, TCP options, and responses to unusual packets. Which technique is being performed?",
+      "options": [
+        "Banner grabbing",
+        "Active OS fingerprinting",
+        "DNS enumeration",
+        "Application-layer vulnerability scanning"
+      ],
+      "correct": 1,
+      "description": "Active OS fingerprinting sends probes and compares TCP/IP stack behavior such as TTL, window size, flags, and TCP options.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "OS Fingerprinting"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "A company blocks direct outbound connections except HTTPS. Malware sends command traffic inside apparently valid HTTPS requests. Which technique is being used?",
+      "options": [
+        "IP spoofing",
+        "HTTP tunnelling",
+        "SMB redirection",
+        "DNS enumeration"
+      ],
+      "correct": 1,
+      "description": "HTTP tunnelling encapsulates another communication channel inside HTTP or HTTPS traffic to bypass controls that permit web traffic.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Tunnelling",
+        "Malware"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "A tester sends packets with a forged source IP address. Responses are delivered to the forged address rather than to the tester. Which limitation does this demonstrate?",
+      "options": [
+        "IP spoofing cannot alter packet headers",
+        "IP spoofing alone usually prevents receiving replies unless the attacker controls the traffic path",
+        "IP spoofing automatically creates a bidirectional session",
+        "Source spoofing works only with UDP"
+      ],
+      "correct": 1,
+      "description": "Spoofed packets contain a false source IP, so replies normally go to that false address unless the attacker can observe or manipulate the path.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "IP Spoofing"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "A DNS server permits an unauthorized client to retrieve the complete contents of a zone, including hostnames and internal service records. Which operation was improperly allowed?",
+      "options": [
+        "Recursive DNS lookup",
+        "DNS zone transfer",
+        "Reverse DNS resolution",
+        "DNS cache poisoning"
+      ],
+      "correct": 1,
+      "description": "A DNS zone transfer, commonly using AXFR, can reveal an entire DNS zone and should be restricted to authorized secondary servers.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "DNS",
+        "Enumeration"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "A vulnerability scanner reports that a server may be vulnerable based only on its detected version. Manual testing shows that the vendor backported the security patch without changing the version string. What did the scanner produce?",
+      "options": [
+        "False negative",
+        "False positive",
+        "Confirmed exploit",
+        "Risk acceptance"
+      ],
+      "correct": 1,
+      "description": "The scanner reported a vulnerability that was not actually present. This is a false positive and shows why automated findings require validation.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Vulnerability Scanning"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "A tester captures an NTLM authentication attempt and forwards it to another server, which grants access. The tester never recovers the user's plaintext password or reusable password hash. Which attack best describes the scenario?",
+      "options": [
+        "Pass-the-hash",
+        "SMB relay",
+        "Offline cracking",
+        "Credential stuffing"
+      ],
+      "correct": 1,
+      "description": "SMB relay forwards a live authentication exchange to another service. Pass-the-hash uses a captured NTLM hash directly as a credential.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "SMB Relay",
+        "Authentication"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "An attacker tries the password Winter2026! against hundreds of accounts, making only one attempt per account. Which technique is being used?",
+      "options": [
+        "Brute-force attack",
+        "Password spraying",
+        "Credential stuffing",
+        "Rainbow-table attack"
+      ],
+      "correct": 1,
+      "description": "Password spraying tests a small number of common passwords against many accounts to avoid lockouts.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Password Attacks"
+      ]
+    },
+    {
+      "id": 20,
+      "question": "An attacker tests usernames and passwords obtained from an unrelated website breach against a corporate VPN portal. Which attack is this?",
+      "options": [
+        "Dictionary attack",
+        "Credential stuffing",
+        "Password spraying",
+        "Offline brute force"
+      ],
+      "correct": 1,
+      "description": "Credential stuffing uses previously compromised username-password pairs against other services where users may have reused passwords.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Credential Stuffing"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "A password database uses unique random salts with a slow password-hashing function. Which attack is most directly weakened by the unique salts?",
+      "options": [
+        "Online password spraying",
+        "Precomputed rainbow-table lookup",
+        "Keylogging",
+        "Credential stuffing"
+      ],
+      "correct": 1,
+      "description": "Unique salts make identical passwords produce different hashes and prevent efficient reuse of precomputed rainbow tables.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Password Storage"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "A malicious program is bundled with a legitimate installer. When the installer runs, both the expected software and the hidden malware are installed. Which technique is demonstrated?",
+      "options": [
+        "Trojan wrapping",
+        "Worm propagation",
+        "Logic bombing",
+        "Fileless execution"
+      ],
+      "correct": 0,
+      "description": "Trojan wrapping combines malicious code with a legitimate-looking application so the user unknowingly installs both.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Trojan",
+        "Malware"
+      ]
+    },
+    {
+      "id": 23,
+      "question": "A system administrator stores approved cryptographic hashes of critical operating system files and later compares current hashes against the baseline. What is the administrator primarily trying to detect?",
+      "options": [
+        "Network-based session hijacking",
+        "Unauthorized modification of system files",
+        "Weak wireless encryption",
+        "Password reuse across systems"
+      ],
+      "correct": 1,
+      "description": "System file verification uses trusted hash baselines to detect changes caused by malware, unauthorized updates, or tampering.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Integrity",
+        "Malware"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Malware attaches its code to an executable file and spreads when infected programs are launched. It does not independently scan the network for new hosts. Which malware type best fits?",
+      "options": [
+        "Worm",
+        "File-infector virus",
+        "Backdoor",
+        "Spyware"
+      ],
+      "correct": 1,
+      "description": "A file-infector virus attaches itself to executable files and typically requires the infected host file to execute. A worm self-propagates independently.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Virus",
+        "Malware"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "A malicious program changes its decryptor and appearance each time it infects a new file while preserving the same underlying payload. Which evasion technique is most likely?",
+      "options": [
+        "Polymorphism",
+        "Static linking",
+        "Sandboxing",
+        "File integrity monitoring"
+      ],
+      "correct": 0,
+      "description": "Polymorphic malware changes its observable representation to avoid signature-based detection while preserving equivalent functionality.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Malware Evasion"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "A Wireshark user wants to collect only DNS packets during capture rather than capturing everything and filtering later. Which mechanism should be used?",
+      "options": [
+        "Display filter",
+        "Capture filter",
+        "Colouring rule",
+        "Protocol hierarchy"
+      ],
+      "correct": 1,
+      "description": "A capture filter determines which packets are collected. A display filter only controls which captured packets are shown.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Wireshark",
+        "Sniffing"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "A switch begins behaving like a hub after an attacker sends thousands of frames with different forged source MAC addresses. What has most likely occurred?",
+      "options": [
+        "ARP cache poisoning",
+        "MAC table flooding",
+        "DNS spoofing",
+        "VLAN hopping"
+      ],
+      "correct": 1,
+      "description": "MAC table flooding fills the switch CAM table with bogus entries. Some switches may then flood frames out multiple ports.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Sniffing",
+        "Switching"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "A victim requests the IP address of a banking website but receives a forged DNS response directing the browser to an attacker-controlled server. Which attack is demonstrated?",
+      "options": [
+        "ARP poisoning",
+        "DNS spoofing",
+        "HTTP tunnelling",
+        "IP fragmentation"
+      ],
+      "correct": 1,
+      "description": "DNS spoofing provides fraudulent hostname-to-IP resolution. ARP poisoning manipulates local IP-to-MAC mappings.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "DNS Spoofing"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "An attacker steals a valid session cookie after a user authenticates and uses it to access the application without knowing the password. Which attack has occurred?",
+      "options": [
+        "Credential stuffing",
+        "Session hijacking",
+        "Password spraying",
+        "Authentication downgrade"
+      ],
+      "correct": 1,
+      "description": "Session hijacking occurs when an attacker takes control of an authenticated session using a valid session token.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Session Hijacking"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Which control most directly reduces the impact of a stolen web session cookie?",
+      "options": [
+        "Increase the user's password length",
+        "Regenerate session identifiers after authentication and use secure cookie attributes",
+        "Disable DNS recursion",
+        "Hide the web server banner"
+      ],
+      "correct": 1,
+      "description": "Session regeneration helps prevent fixation. Secure, HttpOnly, and appropriate SameSite cookie attributes reduce exposure and misuse.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Session Security"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "A large number of systems send SYN packets to a server, but the source addresses are widely distributed and many belong to compromised consumer devices. Which description is most accurate?",
+      "options": [
+        "Distributed SYN flood generated by a botnet",
+        "Smurf attack using ICMP amplification",
+        "FIN scan using zombie hosts",
+        "Passive session hijacking"
+      ],
+      "correct": 0,
+      "description": "The scenario combines SYN-flood behavior with distributed botnet sources. A Smurf attack uses spoofed ICMP requests and broadcast amplification.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "DDoS",
+        "Botnet"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "A company replaces WEP with WPA using TKIP but continues using a short dictionary word as its pre-shared key. Which statement is most accurate?",
+      "options": [
+        "The network is secure because WPA eliminates password-based attacks",
+        "WPA improves protocol security, but the weak pre-shared key remains vulnerable to guessing",
+        "TKIP provides the same protection as WPA3-SAE",
+        "The only remaining risk is MAC spoofing"
+      ],
+      "correct": 1,
+      "description": "A stronger protocol does not compensate for a weak passphrase. Captured authentication exchanges may still allow offline guessing.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Wireless Security"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "An attacker changes the wireless adapter's hardware address to match an address permitted by an access point's MAC filter. What does this demonstrate?",
+      "options": [
+        "MAC filtering provides strong authentication",
+        "MAC addresses can be spoofed and should not be treated as sufficient authentication",
+        "WPA encryption has been cryptographically broken",
+        "SSID hiding prevents this attack"
+      ],
+      "correct": 1,
+      "description": "MAC addresses are observable and modifiable. MAC filtering is not a strong security boundary.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Wireless Security",
+        "MAC Spoofing"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "An organization places its public web server in a network segment between the Internet and the internal LAN. Traffic from the web server to internal databases is tightly restricted. Which architecture is being used?",
+      "options": [
+        "Honeynet",
+        "DMZ",
+        "Covert channel",
+        "Flat network"
+      ],
+      "correct": 1,
+      "description": "A DMZ isolates public-facing services from the internal network and limits the impact of compromise.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "DMZ",
+        "Firewall"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "A security device observes suspicious traffic and sends alerts but does not automatically drop packets. Which deployment is most likely?",
+      "options": [
+        "Inline IPS",
+        "Passive IDS",
+        "Stateful firewall",
+        "Reverse proxy"
+      ],
+      "correct": 1,
+      "description": "A passive IDS monitors and alerts. An inline IPS is positioned to inspect and block traffic.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "IDS",
+        "IPS"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "A decoy server is deliberately configured with fake records and monitored services. Security staff use it to study attacker behaviour. Which statement best distinguishes this system from an IDS?",
+      "options": [
+        "A honeypot attracts interaction, while an IDS monitors traffic or events for suspicious activity",
+        "A honeypot automatically blocks every attack, while an IDS cannot generate alerts",
+        "An IDS must be Internet-facing, while a honeypot must remain internal",
+        "A honeypot replaces the need for production security controls"
+      ],
+      "correct": 0,
+      "description": "A honeypot is a decoy designed to attract and observe attackers. An IDS watches network or host activity.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Honeypot",
+        "IDS"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "A data centre has fire suppression and CCTV but allows contractors to enter sensitive areas by following employees through secured doors. Which physical security control is most directly missing?",
+      "options": [
+        "Network segmentation",
+        "Anti-tailgating access control such as a mantrap",
+        "Malware sandboxing",
+        "Disk encryption"
+      ],
+      "correct": 1,
+      "description": "Tailgating is unauthorized physical entry by following an authorized person. Mantraps, guards, badge checks, and awareness training directly address it.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Physical Security"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "During a penetration test, the tester successfully exploits a vulnerability and proves access to a non-sensitive test file. The scope prohibits persistence and data extraction. What should the tester do next?",
+      "options": [
+        "Install a backdoor to prove long-term impact",
+        "Extract production data to demonstrate business risk",
+        "Stop further exploitation, preserve evidence, and report the validated finding",
+        "Delete logs to reduce operational impact"
+      ],
+      "correct": 2,
+      "description": "Penetration testing must follow the rules of engagement. Once sufficient evidence is collected, unnecessary actions increase risk and may violate authorization.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Penetration Testing"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "A malware analyst extracts strings, imports, section names, hashes, and embedded URLs without running the sample. Which analysis type is being performed?",
+      "options": [
+        "Dynamic analysis",
+        "Static analysis",
+        "Behavioural sandboxing",
+        "Network vulnerability scanning"
+      ],
+      "correct": 1,
+      "description": "Static analysis examines a sample without executing it and can reveal structure, strings, imports, hashes, packer indicators, and embedded configuration.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Malware Analysis"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "A malware sample appears harmless during static inspection but creates registry persistence, launches a child process, and contacts a remote server when executed. Why was dynamic analysis necessary?",
+      "options": [
+        "Static analysis cannot inspect any file content",
+        "Runtime behaviour may be hidden, encrypted, packed, or generated only during execution",
+        "Dynamic analysis always recovers original source code",
+        "Static analysis can be used only on Android applications"
+      ],
+      "correct": 1,
+      "description": "Packed or obfuscated malware may conceal meaningful code and configuration until runtime. Dynamic analysis reveals actual behavior.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Malware Analysis"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "An Android application contains an exported activity that performs sensitive account operations but does not verify the caller's authorization. Which weakness is most directly present?",
+      "options": [
+        "Insecure communication",
+        "Improper platform usage leading to exposed components",
+        "Insufficient cryptography",
+        "Mobile denial of service"
+      ],
+      "correct": 1,
+      "description": "Android components exposed through manifest configuration must enforce proper permissions and authorization.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Android Security",
+        "OWASP Mobile"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "An Android application declares a dangerous permission in its manifest. A tester assumes the application automatically possesses that permission after installation. Why may this assumption be incorrect?",
+      "options": [
+        "Manifest permissions apply only to system applications",
+        "Modern Android may require the user to grant dangerous permissions at runtime",
+        "Declared permissions are ignored when an APK is signed",
+        "Permissions are enforced only by Android Runtime, not the operating system"
+      ],
+      "correct": 1,
+      "description": "Declaring a dangerous permission in the manifest is not always sufficient. Runtime permission approval may also be required.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Android Security",
+        "Permissions"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "A tester uses ADB to install an APK successfully but cannot access the application's private data directory using a normal shell. Which explanation is most accurate?",
+      "options": [
+        "ADB can install applications but never provides shell access",
+        "Android sandboxing and Linux file permissions restrict access to another application's private data",
+        "The APK must be converted to Java source first",
+        "Private data directories are encrypted with the APK signing certificate"
+      ],
+      "correct": 1,
+      "description": "Android applications normally run under distinct Linux UIDs. A standard ADB shell does not automatically access every application's private files.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Android Security",
+        "ADB"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "A tester observes that an Android application accepts any certificate presented by a server because its custom trust manager performs no validation. Which vulnerability is most directly created?",
+      "options": [
+        "Insecure data storage",
+        "Insecure communication enabling MITM attacks",
+        "Excessive permissions",
+        "Code tampering through APK repackaging"
+      ],
+      "correct": 1,
+      "description": "Failing to validate certificates removes server authentication and can allow an attacker to decrypt or modify intercepted communications.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Android Security",
+        "TLS"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "MobSF reports hardcoded secrets, an exported component, weak TLS validation, and suspicious runtime network connections. Which action provides the strongest assessment conclusion?",
+      "options": [
+        "Treat every automated result as a confirmed exploitable vulnerability",
+        "Ignore static findings because only runtime behaviour matters",
+        "Correlate static and dynamic findings, manually validate exploitability, and report evidence-supported risk",
+        "Report only the issue with the highest automated severity score"
+      ],
+      "correct": 2,
+      "description": "A strong assessment combines static analysis, dynamic analysis, manual verification, business impact, and remediation guidance because automated findings can be false positives or context-dependent.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "MobSF",
+        "Mobile Security"
+      ]
+    },
+    {
+      "question": "A tester must identify active systems in the authorized subnet 192.168.56.0/24 without performing a port scan. Which command most precisely meets the requirement?",
+      "options": [
+        "nmap -Pn 192.168.56.0/24",
+        "nmap -sn 192.168.56.0/24",
+        "nmap -sS 192.168.56.0/24",
+        "nmap -sV 192.168.56.0/24"
+      ],
+      "correct": 1,
+      "description": "-sn performs host discovery without a port scan. -Pn skips host discovery and treats every target as online, -sS performs a TCP SYN scan, and -sV performs service/version detection.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Semi-Final Round",
+        "Nmap"
+      ],
+      "id": 46
+    },
+    {
+      "question": "A laboratory host is online. The tester wants to perform a half-open TCP SYN scan, scan only ports 1-1000, and identify services and versions running on open ports. Which command is most appropriate?",
+      "options": [
+        "nmap -sT -O -p- 192.168.56.20",
+        "nmap -sS -sV -p 1-1000 192.168.56.20",
+        "nmap -sn -sV -p 1-1000 192.168.56.20",
+        "nmap -sU -O -p 1-1000 192.168.56.20"
+      ],
+      "correct": 1,
+      "description": "-sS performs a TCP SYN or half-open scan, -sV performs service and version detection, and -p 1-1000 restricts scanning to ports 1 through 1000.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Semi-Final Round",
+        "Nmap"
+      ],
+      "id": 47
+    },
+    {
+      "question": "A tester runs nmap -O 192.168.56.20. Nmap cannot reliably identify the operating system because almost every TCP port appears filtered. Which explanation is most accurate?",
+      "options": [
+        "-O detects service versions rather than operating systems",
+        "OS detection generally becomes more reliable when Nmap finds at least one open and one closed TCP port",
+        "OS detection works only when combined with a NULL scan",
+        "The tester must replace -O with -sn"
+      ],
+      "correct": 1,
+      "description": "Nmap OS detection analyzes TCP/IP stack responses. It is more reliable when Nmap can compare responses from at least one open and one closed TCP port. -O is the correct OS detection option.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Semi-Final Round",
+        "Nmap"
+      ],
+      "id": 48
+    },
+    {
+      "question": "An authorized host blocks discovery probes but is known to be online. The tester wants Nmap to skip host discovery and attempt a service scan against ports 22, 80, and 443. Which command is correct?",
+      "options": [
+        "nmap -sn -sV -p 22,80,443 192.168.56.30",
+        "nmap -Pn -sV -p 22,80,443 192.168.56.30",
+        "nmap -O --osscan-limit 192.168.56.30",
+        "nmap -sU -p 22,80,443 192.168.56.30"
+      ],
+      "correct": 1,
+      "description": "-Pn tells Nmap to skip host discovery and treat the target as online. -sV then performs version detection on the specified TCP ports.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Semi-Final Round",
+        "Nmap"
+      ],
+      "id": 49
+    },
+    {
+      "question": "Inside msfconsole, a tester selects an authorized exploit module. Before configuring target values, the tester wants to determine which parameters are mandatory. Which command should be issued?",
+      "options": [
+        "show options",
+        "show payloads",
+        "sessions -l",
+        "jobs -l"
+      ],
+      "correct": 0,
+      "description": "show options displays a module's configuration parameters, including required values such as target hosts, ports, and module-specific settings. show payloads lists compatible payloads, sessions -l lists active sessions, and jobs -l lists background jobs.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Semi-Final Round",
+        "Metasploit"
+      ],
+      "id": 50
+    }
   ]
 }

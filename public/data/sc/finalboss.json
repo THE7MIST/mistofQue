@@ -3,7 +3,7 @@
   "title": "Security Concepts Final Boss",
   "subject": "Security Concepts",
   "stage": "Final Boss",
-  "durationMinutes": 45,
+  "durationMinutes": 50,
   "questions": [
     {
       "id": 1,
@@ -814,6 +814,102 @@
         "Security Concepts",
         "Final Boss"
       ]
+    },
+    {
+      "question": "A tester is assessing an intentionally vulnerable machine. Inside msfconsole, the tester executes search type:exploit name:sample, use exploit/example/sample, show options, and set RHOSTS 192.168.56.40. What should normally be considered before issuing run or exploit?",
+      "options": [
+        "Whether all required options are configured and whether the target matches the module's supported conditions",
+        "Whether the module appears first in the search results",
+        "Whether the database contains at least one active Meterpreter session",
+        "Whether Nmap classified every unused port as filtered"
+      ],
+      "correct": 0,
+      "description": "Selecting a module and setting RHOSTS is not sufficient. The tester should verify required options, target software and version, platform and architecture, module documentation, scope, authorization, and whether a safe check capability is available.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Round",
+        "Metasploit"
+      ],
+      "id": 46
+    },
+    {
+      "question": "A tester connects an Android emulator but is unsure whether ADB recognizes it. Which command should be run first?",
+      "options": [
+        "adb shell",
+        "adb devices",
+        "adb install test.apk",
+        "adb logcat"
+      ],
+      "correct": 1,
+      "description": "adb devices lists Android devices and emulators visible to the ADB server and shows their connection state. adb shell opens a shell, adb install installs an APK, and adb logcat displays logs.",
+      "difficulty": "Easy",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Round",
+        "ADB"
+      ],
+      "id": 47
+    },
+    {
+      "question": "A tester needs to install lab.apk and then monitor runtime logs while launching it manually on the emulator. Which command sequence is most appropriate?",
+      "options": [
+        "adb push lab.apk; adb shell logs",
+        "adb install lab.apk; adb logcat",
+        "adb shell install lab.apk; adb dumpsys log",
+        "adb pull lab.apk; adb shell logcat --install"
+      ],
+      "correct": 1,
+      "description": "adb install lab.apk installs the APK on the connected device or emulator. adb logcat then displays Android system and application log messages.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Round",
+        "ADB"
+      ],
+      "id": 48
+    },
+    {
+      "question": "A tester wants to inspect Android package information, including permissions, activities, services, and the application UID, for the authorized package com.example.lab. Which command is most suitable?",
+      "options": [
+        "adb shell dumpsys package com.example.lab",
+        "adb shell pm uninstall com.example.lab",
+        "adb logcat package com.example.lab",
+        "adb pull com.example.lab /data/local/tmp"
+      ],
+      "correct": 0,
+      "description": "adb shell dumpsys package com.example.lab returns detailed package-manager information such as application UID, declared and granted permissions, activities, services, receivers, package paths, and version information.",
+      "difficulty": "Medium",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Round",
+        "ADB"
+      ],
+      "id": 49
+    },
+    {
+      "question": "A tester has lab.apk and needs a decoded project-like directory containing resources, manifest, and Smali suitable for rebuilding, plus a separate directory containing readable Java-like source for code review. Which command pair best meets those requirements?",
+      "options": [
+        "apktool d lab.apk -o decoded; jadx -d java-src lab.apk",
+        "jadx -b lab.apk decoded; apktool -d java-src lab.apk",
+        "adb decode lab.apk decoded; adb decompile lab.apk java-src",
+        "apktool install lab.apk; jadx --execute lab.apk"
+      ],
+      "correct": 0,
+      "description": "APKTool decodes Android resources, the manifest, and DEX content into a project-like structure with Smali that can be modified and rebuilt. JADX converts DEX bytecode into readable Java-like source code for analysis.",
+      "difficulty": "Hard",
+      "tags": [
+        "SC",
+        "Security Concepts",
+        "Final Round",
+        "APKTool",
+        "JADX"
+      ],
+      "id": 50
     }
   ]
 }

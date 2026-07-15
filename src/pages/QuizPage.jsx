@@ -67,6 +67,14 @@ function QuizSession({ quiz, attemptKey }) {
     }
   }, [timeLeft, questions.length, submitQuiz]);
 
+  const handleRestart = useCallback(() => {
+    const confirmed = window.confirm(
+      "Restart this quiz? Your current answers, bookmarks, review marks, timer, and shuffled question order for this active attempt will be erased. Previous submitted results and dashboard progress will stay saved."
+    );
+
+    if (confirmed) resetAttempt();
+  }, [resetAttempt]);
+
   const selectedAnswer = answers[currentQuestion.id];
   const isBookmarked = bookmarks.has(currentQuestion.id);
   const isReviewLater = reviewLater.has(currentQuestion.id);
@@ -79,7 +87,7 @@ function QuizSession({ quiz, attemptKey }) {
         description={`${questions.length} randomized questions. Answers are saved during the active attempt.`}
         actions={
           <>
-            <Button variant="secondary" onClick={resetAttempt}>
+            <Button variant="secondary" onClick={handleRestart} title="Restart clears only this active attempt">
               <RotateCcw size={17} />
               Restart
             </Button>
@@ -137,7 +145,7 @@ function QuizSession({ quiz, attemptKey }) {
 
                 return (
                   <button
-                    key={option}
+                    key={`${currentQuestion.id}-${optionIndex}`}
                     type="button"
                     onClick={() => selectAnswer(currentQuestion.id, optionIndex)}
                     className={`focus-ring flex min-h-14 w-full items-center gap-3 rounded-lg border p-3 text-left text-sm font-semibold transition sm:p-4 ${
