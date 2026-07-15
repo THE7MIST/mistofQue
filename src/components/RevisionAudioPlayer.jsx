@@ -60,7 +60,7 @@ export default function RevisionAudioPlayer({ phase, progress, onProgress, onPre
   }
 
   return (
-    <div className="rounded-lg border border-slate-200 bg-white/75 p-4 dark:border-white/10 dark:bg-white/[0.04]">
+    <div className="sticky top-20 z-20 rounded-lg border border-slate-200 bg-white p-4 shadow-lg dark:border-white/10 dark:bg-slate-950">
       {phase?.audio ? (
         <audio
           ref={audioRef}
@@ -94,7 +94,7 @@ export default function RevisionAudioPlayer({ phase, progress, onProgress, onPre
       ) : null}
 
       {!hasAudio ? (
-        <div className="mb-3 rounded-lg border border-amber-300/70 bg-amber-100/80 px-3 py-2 text-sm font-semibold text-amber-950 dark:border-amber-400/30 dark:bg-amber-400/10 dark:text-amber-100">
+        <div className="mb-3 rounded-lg border border-amber-300/70 bg-amber-50 px-3 py-2 text-sm font-semibold text-amber-950 dark:border-amber-400/30 dark:bg-amber-400/10 dark:text-amber-100">
           <p>{phase?.audio ? "Text-only revision mode. Add the MP3 file to enable audio for this phase." : "Text-only revision mode. Audio is not configured for this phase."}</p>
           {phase?.audio ? <p className="mt-1 text-xs font-bold opacity-80">Expected file: {phase.audio}</p> : null}
         </div>
@@ -125,9 +125,10 @@ export default function RevisionAudioPlayer({ phase, progress, onProgress, onPre
             max={Math.max(duration, currentTime, 1)}
             value={Math.min(currentTime, Math.max(duration, currentTime, 1))}
             onChange={(event) => seek(event.target.value)}
-            className="w-full accent-teal-500"
+            aria-label="Audio seek"
+            className="w-full accent-teal-600 dark:accent-teal-300"
           />
-          <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-bold text-slate-600 dark:text-slate-300">
+          <div className="flex flex-wrap items-center justify-between gap-2 text-sm font-bold tabular-nums text-slate-600 dark:text-slate-300">
             <span>{formatDuration(currentTime)}</span>
             <div className="flex gap-2">
               <Button variant="secondary" onClick={() => skip(-10)}>

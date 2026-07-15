@@ -20,10 +20,10 @@ export default function QuestionPalette({
             onClick={() => onJump(index)}
             className={`focus-ring relative h-10 rounded-lg border text-sm font-bold transition ${
               active
-                ? "border-teal-500 bg-teal-500 text-white"
+                ? "border-teal-700 bg-teal-700 text-white dark:border-teal-300 dark:bg-teal-300 dark:text-slate-950"
                 : answered
-                  ? "border-emerald-300 bg-emerald-50 text-emerald-700 dark:border-emerald-400/30 dark:bg-emerald-400/10 dark:text-emerald-200"
-                  : "border-slate-200 bg-white/70 text-slate-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"
+                  ? "border-emerald-300 bg-emerald-50 text-emerald-800 dark:border-emerald-400/30 dark:bg-emerald-400/10 dark:text-emerald-100"
+                  : "border-slate-200 bg-white text-slate-600 hover:border-teal-300 dark:border-white/10 dark:bg-white/5 dark:text-slate-300"
             }`}
             aria-label={`Question ${index + 1}`}
           >

@@ -44,19 +44,20 @@ export default function LoginPage() {
       <section className="grid w-full max-w-5xl gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="glass-panel flex min-h-[26rem] flex-col justify-between rounded-lg p-6 sm:p-8">
           <div>
-            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-teal-500 text-white shadow-sm shadow-teal-900/20">
+            <div className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-slate-950 text-white shadow-sm dark:bg-teal-300 dark:text-slate-950">
               <ShieldCheck size={25} />
             </div>
-            <h1 className="mt-6 text-4xl font-black tracking-normal text-slate-950 dark:text-white">MCQ Arena</h1>
-            <p className="mt-3 max-w-md text-sm leading-6 text-slate-600 dark:text-slate-300">
-              Focused practice workspace for competitive exam preparation across security, networking, IoT, and cryptography.
+            <p className="eyebrow mt-6">Exam preparation platform</p>
+            <h1 className="mt-2 text-4xl font-black tracking-tight text-slate-950 dark:text-white">MCQ Arena</h1>
+            <p className="mt-3 max-w-md text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">
+              Focused practice, revision, analytics, and performance review for technical exam preparation.
             </p>
           </div>
 
           <div className="mt-8 grid grid-cols-3 gap-3 text-center">
             {["Timed", "Tracked", "Review"].map((item) => (
-              <div key={item} className="rounded-lg border border-slate-200 bg-white/60 px-3 py-4 dark:border-white/10 dark:bg-white/5">
-                <p className="text-sm font-bold text-slate-900 dark:text-white">{item}</p>
+              <div key={item} className="rounded-lg border border-slate-200 bg-white px-3 py-4 dark:border-white/10 dark:bg-white/[0.04]">
+                <p className="text-sm font-black text-slate-900 dark:text-white">{item}</p>
               </div>
             ))}
           </div>
@@ -68,7 +69,7 @@ export default function LoginPage() {
               <LockKeyhole size={20} />
             </span>
             <div>
-              <h2 className="text-2xl font-bold tracking-normal text-slate-950 dark:text-white">Candidate login</h2>
+              <h2 className="text-2xl font-black tracking-tight text-slate-950 dark:text-white">Candidate login</h2>
               <p className="text-sm text-slate-500 dark:text-slate-400">Email and password token</p>
             </div>
           </div>
@@ -76,7 +77,7 @@ export default function LoginPage() {
           <label className="block">
             <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">Email</span>
             <input
-              className="focus-ring mt-2 h-12 w-full rounded-lg border border-slate-200 bg-white px-4 text-sm text-slate-950 transition placeholder:text-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
+              className="focus-ring mt-2 h-12 w-full rounded-lg border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition placeholder:text-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
               type="email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
@@ -89,7 +90,7 @@ export default function LoginPage() {
           <label className="mt-4 block">
             <span className="text-sm font-semibold text-slate-700 dark:text-slate-200">Password token</span>
             <input
-              className="focus-ring mt-2 h-12 w-full rounded-lg border border-slate-200 bg-white px-4 text-sm text-slate-950 transition placeholder:text-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
+              className="focus-ring mt-2 h-12 w-full rounded-lg border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-950 transition placeholder:text-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
               type="password"
               value={passwordToken}
               onChange={(event) => setPasswordToken(event.target.value)}

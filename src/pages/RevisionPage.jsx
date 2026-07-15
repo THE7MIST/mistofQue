@@ -3,7 +3,11 @@ import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import RevisionAudioPlayer from "../components/RevisionAudioPlayer.jsx";
 import Button from "../components/ui/Button.jsx";
+import EmptyState from "../components/ui/EmptyState.jsx";
 import PageHeader from "../components/ui/PageHeader.jsx";
+import ProgressBar from "../components/ui/ProgressBar.jsx";
+import SectionHeader from "../components/ui/SectionHeader.jsx";
+import StatusBadge from "../components/ui/StatusBadge.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
 import { getSubject } from "../data/subjects.js";
 import { getRevisionProgress, loadRevisionIndex, loadRevisionPhase, saveRevisionPhaseProgress } from "../services/revisionService.js";
@@ -12,10 +16,10 @@ function ListBlock({ title, items }) {
   if (!items?.length) return null;
   return (
     <div>
-      <h4 className="text-sm font-black uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">{title}</h4>
+      <h4 className="text-xs font-black uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">{title}</h4>
       <ul className="mt-2 space-y-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">
         {items.map((item, index) => (
-          <li key={`${title}-${index}`} className="rounded-lg bg-slate-50/80 px-3 py-2 dark:bg-white/[0.04]">
+          <li key={`${title}-${index}`} className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 dark:border-white/10 dark:bg-white/[0.04]">
             {item}
           </li>
         ))}
@@ -26,7 +30,7 @@ function ListBlock({ title, items }) {
 
 function RevisionItem({ item }) {
   return (
-    <article className="rounded-lg border border-slate-200 bg-white/70 p-4 dark:border-white/10 dark:bg-white/[0.04]">
+    <article className="rounded-lg border border-slate-200 bg-white p-4 dark:border-white/10 dark:bg-white/[0.04]">
       <h3 className="text-base font-black text-slate-950 dark:text-white">{item.title}</h3>
       {item.definition ? <p className="mt-2 text-sm font-medium leading-6 text-slate-600 dark:text-slate-300">{item.definition}</p> : null}
       <div className="mt-4 grid gap-4">
@@ -42,7 +46,7 @@ function RevisionItem({ item }) {
 
 function SectionBlock({ section }) {
   return (
-    <section className="rounded-lg border border-slate-200 bg-white/70 p-4 dark:border-white/10 dark:bg-white/[0.04]">
+    <section className="rounded-lg border border-slate-200 bg-white p-4 dark:border-white/10 dark:bg-white/[0.04]">
       <div className="border-b border-slate-200 pb-3 dark:border-white/10">
         <p className="text-xs font-black uppercase tracking-[0.18em] text-teal-600 dark:text-teal-300">{section.terms?.length || 0} terms</p>
         <h3 className="mt-1 text-lg font-black text-slate-950 dark:text-white">{section.title}</h3>
@@ -132,11 +136,27 @@ export default function RevisionPage() {
   }
 
   if (!subject || status === "error") {
-    return <PageHeader eyebrow="Revision" title="Revision unavailable" description="Revision content is not configured for this subject yet." />;
+    return (
+      <>
+        <PageHeader eyebrow="Revision" title="Revision unavailable" description="Revision content is not configured for this subject yet." />
+        <EmptyState
+          icon={FileText}
+          title="No revision content"
+          description="Choose another subject or add revision index files for this subject."
+          to="/dashboard"
+          actionLabel="Back to dashboard"
+        />
+      </>
+    );
   }
 
   if (status === "loading" || !index) {
-    return <PageHeader eyebrow="Revision" title="Loading revision" description="Preparing revision phases..." />;
+    return (
+      <>
+        <PageHeader eyebrow="Revision" title="Loading revision" description="Preparing revision phases..." />
+        <EmptyState icon={FileText} title="Preparing reader" description="Loading phase index and saved revision progress." />
+      </>
+    );
   }
 
   return (
@@ -152,7 +172,8 @@ export default function RevisionPage() {
           <div className="glass-panel rounded-lg p-4 sm:p-5">
             <div className="mb-4 flex items-center justify-between gap-3">
               <div>
-                <h2 className="text-lg font-bold text-slate-950 dark:text-white">{index.title}</h2>
+                <p className="eyebrow">Study reader</p>
+                <h2 className="mt-1 text-lg font-black text-slate-950 dark:text-white">{index.title}</h2>
                 <p className="text-sm font-semibold text-slate-500 dark:text-slate-400">{progressPercent}% complete</p>
               </div>
               <Button
@@ -163,9 +184,7 @@ export default function RevisionPage() {
                 Mark phase complete
               </Button>
             </div>
-            <div className="h-2 overflow-hidden rounded-full bg-slate-200 dark:bg-white/10">
-              <div className="h-full rounded-full bg-teal-500" style={{ width: `${progressPercent}%` }} />
-            </div>
+            <ProgressBar value={progressPercent} />
           </div>
 
           {phase ? (
@@ -186,9 +205,9 @@ export default function RevisionPage() {
                     <FileText size={20} />
                   </span>
                   <div>
-                    <h2 className="text-lg font-bold text-slate-950 dark:text-white">{phase.sections?.length ? "Terminology Packs" : "Topics"}</h2>
+                    <h2 className="text-lg font-black text-slate-950 dark:text-white">{phase.sections?.length ? "Terminology Packs" : "Topics"}</h2>
                     <p className="text-sm text-slate-500 dark:text-slate-400">
-                      {phase.sections?.length ? `${phase.sections.length} packs • ${getItemCount(phase)} terms` : `${getItemCount(phase)} revision items`}
+                      {phase.sections?.length ? `${phase.sections.length} packs - ${getItemCount(phase)} terms` : `${getItemCount(phase)} revision items`}
                     </p>
                   </div>
                 </div>
@@ -206,12 +225,12 @@ export default function RevisionPage() {
               </div>
             </>
           ) : (
-            <div className="glass-panel rounded-lg p-5 text-sm text-slate-500 dark:text-slate-400">Loading phase...</div>
+            <EmptyState icon={FileText} title="Loading phase" description="Preparing the selected revision section." />
           )}
         </div>
 
-        <aside className="glass-panel h-fit rounded-lg p-4">
-          <h2 className="font-bold text-slate-950 dark:text-white">Phases</h2>
+        <aside className="glass-panel h-fit rounded-lg p-4 xl:sticky xl:top-20">
+          <SectionHeader eyebrow="Navigation" title="Phases" />
           <div className="mt-4 space-y-2">
             {phases.map((item, indexValue) => {
               const done = progress[item.id]?.completed;
@@ -223,12 +242,13 @@ export default function RevisionPage() {
                   onClick={() => setPhaseIndex(indexValue)}
                   className={`focus-ring flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm font-bold transition ${
                     active
-                      ? "bg-teal-500 text-white"
-                      : "bg-white/60 text-slate-700 hover:bg-slate-50 dark:bg-white/[0.04] dark:text-slate-200 dark:hover:bg-white/10"
+                      ? "bg-teal-700 text-white dark:bg-teal-400 dark:text-slate-950"
+                      : "bg-white text-slate-700 hover:bg-slate-50 dark:bg-white/[0.04] dark:text-slate-200 dark:hover:bg-white/10"
                   }`}
                 >
                   {done ? <CheckCircle2 size={17} /> : <Circle size={17} />}
                   <span>{item.title}</span>
+                  {done ? <StatusBadge tone="success" className="ml-auto hidden sm:inline-flex">Done</StatusBadge> : null}
                 </button>
               );
             })}

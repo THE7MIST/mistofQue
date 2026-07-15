@@ -2,7 +2,9 @@ import { AlertTriangle, Bookmark, CheckCircle2, ChevronLeft, ChevronRight, Clock
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import QuestionPalette from "../components/QuestionPalette.jsx";
+import QuizOption from "../components/QuizOption.jsx";
 import Button from "../components/ui/Button.jsx";
+import EmptyState from "../components/ui/EmptyState.jsx";
 import PageHeader from "../components/ui/PageHeader.jsx";
 import ProgressBar from "../components/ui/ProgressBar.jsx";
 import { isDemoUser, useAuth } from "../context/AuthContext.jsx";
@@ -27,7 +29,7 @@ function SubmitConfirmModal({ answeredCount, unansweredCount, timeLeft, onCancel
         role="dialog"
         aria-modal="true"
         aria-labelledby="submit-quiz-title"
-        className="w-full max-w-md rounded-lg border border-slate-200 bg-white p-5 shadow-2xl dark:border-white/10 dark:bg-slate-950"
+        className="animate-slide-up w-full max-w-md rounded-lg border border-slate-200 bg-white p-5 shadow-2xl dark:border-white/10 dark:bg-slate-950"
       >
         <h2 id="submit-quiz-title" className="text-xl font-black text-slate-950 dark:text-white">
           Submit Quiz?
@@ -71,17 +73,13 @@ function DemoBlockedQuiz({ quiz }) {
         title={quiz.title}
         description="Demo account access is read-only for real quizzes."
       />
-      <section className="glass-panel rounded-lg p-6">
-        <div className="flex max-w-xl gap-3">
-          <AlertTriangle className="mt-1 text-amber-500" size={24} />
-          <div>
-            <h2 className="text-xl font-black text-slate-950 dark:text-white">Demo Account</h2>
-            <p className="mt-2 font-semibold text-slate-600 dark:text-slate-300">
-              This quiz is available only for registered users.
-            </p>
-          </div>
-        </div>
-      </section>
+      <EmptyState
+        icon={AlertTriangle}
+        title="Demo Account"
+        description="This quiz is available only for registered users."
+        to="/dashboard"
+        actionLabel="Back to dashboard"
+      />
     </>
   );
 }
@@ -341,27 +339,14 @@ function ActiveQuizSession({ quiz, attemptKey }) {
                 const isSelected = selectedAnswer === optionIndex;
 
                 return (
-                  <button
+                  <QuizOption
                     key={`${currentQuestion.id}-${optionIndex}`}
-                    type="button"
-                    onClick={() => selectAnswer(currentQuestion.id, optionIndex)}
-                    className={`focus-ring flex min-h-14 w-full items-center gap-3 rounded-lg border p-3 text-left text-sm font-semibold transition sm:p-4 ${
-                      isSelected
-                        ? "border-teal-600 bg-teal-50 text-teal-950 shadow-sm dark:border-teal-300 dark:bg-teal-400/25 dark:text-white dark:shadow-[0_0_0_1px_rgba(94,234,212,0.35)]"
-                        : "border-slate-200 bg-white/70 text-slate-700 hover:border-teal-300 hover:bg-teal-50/40 dark:border-white/10 dark:bg-white/[0.03] dark:text-slate-100 dark:hover:border-teal-300/60 dark:hover:bg-teal-400/10"
-                    }`}
+                    letter={String.fromCharCode(65 + optionIndex)}
+                    selected={isSelected}
+                    onSelect={() => selectAnswer(currentQuestion.id, optionIndex)}
                   >
-                    <span
-                      className={`grid h-8 w-8 shrink-0 place-items-center rounded-lg text-xs font-black ${
-                        isSelected
-                          ? "bg-teal-700 text-white dark:bg-teal-300 dark:text-slate-950"
-                          : "bg-slate-100 text-slate-600 dark:bg-white/10 dark:text-slate-200"
-                      }`}
-                    >
-                      {String.fromCharCode(65 + optionIndex)}
-                    </span>
-                    <span>{option}</span>
-                  </button>
+                    {option}
+                  </QuizOption>
                 );
               })}
             </div>
@@ -375,7 +360,7 @@ function ActiveQuizSession({ quiz, attemptKey }) {
             )}
           </div>
 
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="sticky bottom-3 z-20 mt-5 flex flex-col gap-3 rounded-lg border border-slate-200 bg-white/95 p-2 shadow-lg backdrop-blur dark:border-white/10 dark:bg-slate-950/95 sm:flex-row sm:items-center sm:justify-between">
             {!isFocusMode && (
               <Button variant={isReviewLater ? "danger" : "secondary"} onClick={() => toggleReviewLater(currentQuestion.id)}>
                 Review later
@@ -513,11 +498,21 @@ export default function QuizPage({ quizType }) {
   }, [file, quizType, setSlug, stageSlug, subject, subjectSlug]);
 
   if (status === "loading") {
-    return <PageHeader eyebrow="Practice" title="Loading MCQ set" description="Preparing randomized questions..." />;
+    return (
+      <>
+        <PageHeader eyebrow="Practice" title="Loading MCQ set" description="Preparing randomized questions..." />
+        <EmptyState icon={Clock3} title="Preparing quiz" description="Loading questions, timer settings, and answer options." />
+      </>
+    );
   }
 
   if (status === "error" || !quiz) {
-    return <PageHeader eyebrow="Practice" title="MCQ set unavailable" description="Choose another stage or topic from the sidebar." />;
+    return (
+      <>
+        <PageHeader eyebrow="Practice" title="MCQ set unavailable" description="Choose another stage or topic from the sidebar." />
+        <EmptyState icon={AlertTriangle} title="Set unavailable" description="This quiz file could not be loaded." to="/dashboard" actionLabel="Back to dashboard" />
+      </>
+    );
   }
 
   const attemptKey = quizType === "topic" ? `${subjectSlug}_topic_${setSlug}` : `${subjectSlug}_stage_${stageSlug}`;

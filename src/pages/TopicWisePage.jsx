@@ -1,6 +1,7 @@
 import { ArrowRight, Layers3 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import EmptyState from "../components/ui/EmptyState.jsx";
 import PageHeader from "../components/ui/PageHeader.jsx";
 import { getSubject } from "../data/subjects.js";
 import { loadTopicIndex } from "../services/quizService.js";
@@ -67,9 +68,13 @@ export default function TopicWisePage() {
         </div>
 
         {status === "loading" ? (
-          <div className="p-5 text-sm text-slate-500 dark:text-slate-400">Loading topic sets...</div>
+          <div className="p-5">
+            <EmptyState icon={Layers3} title="Loading topic sets" description="Reading the topic index for this subject." />
+          </div>
         ) : status === "error" ? (
-          <div className="p-5 text-sm text-rose-600 dark:text-rose-300">Topic data could not be loaded.</div>
+          <div className="p-5">
+            <EmptyState icon={Layers3} title="Topic data unavailable" description="Choose another subject or check the topic index file." to="/dashboard" actionLabel="Back to dashboard" />
+          </div>
         ) : (
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-slate-200 text-left dark:divide-white/10">
@@ -90,7 +95,7 @@ export default function TopicWisePage() {
                     <td className="px-4 py-4 text-right sm:px-5">
                       <Link
                         to={`/subjects/${subject.slug}/topics/${topic.slug}`}
-                        className="focus-ring inline-flex h-9 items-center gap-2 rounded-lg bg-teal-600 px-3 text-sm font-bold text-white transition hover:bg-teal-500 dark:bg-teal-500 dark:text-slate-950 dark:hover:bg-teal-400"
+                        className="focus-ring inline-flex h-9 items-center gap-2 rounded-lg bg-teal-700 px-3 text-sm font-bold text-white transition hover:bg-teal-600 dark:bg-teal-400 dark:text-slate-950 dark:hover:bg-teal-300"
                       >
                         Start <ArrowRight size={16} />
                       </Link>
