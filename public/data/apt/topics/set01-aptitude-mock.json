@@ -1,0 +1,370 @@
+{
+  "version": "1",
+  "title": "Set 01 - Aptitude Mock Examination I",
+  "subject": "APT",
+  "stage": "Topic Wise MCQ",
+  "topic": "Aptitude Mock Examination I",
+  "durationMinutes": 40,
+  "questions": [
+    {
+      "id": 1,
+      "question": "How many 5-digit numbers can be formed using the digits 1, 2, 3, 4, 5 and 6 exactly once, without repetition, if the number must be divisible by 4?",
+      "options": ["192", "144", "216", "168"],
+      "correct": 0,
+      "description": "A number is divisible by 4 when its last two digits form a number divisible by 4. Counting all valid endings from the six distinct digits and arranging the remaining three positions gives 192 numbers.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Permutation", "Divisibility"]
+    },
+    {
+      "id": 2,
+      "question": "K, N and X are children of Y and Z. K is the brother of N and X. Which of the following is not true?",
+      "options": ["K is the son of Z", "Y is the wife of Z", "N is the sibling of X", "K is the father of X"],
+      "correct": 3,
+      "description": "K is a child of Y and Z and the brother of X, so K cannot be the father of X.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Blood Relation"]
+    },
+    {
+      "id": 3,
+      "question": "Statements: Some huts are not buildings. No building is a hotel. Conclusions: (1) Some huts are not hotels. (2) No hotel is a hut. (3) Some hotels are not huts. Which conclusion follows?",
+      "options": ["Only conclusion 1 follows", "Only conclusion 2 follows", "Only conclusion 3 follows", "None of the conclusions follows"],
+      "correct": 3,
+      "description": "The huts that are not buildings may or may not be hotels. The statement also does not establish any definite relation between hotels and huts. Therefore, none follows.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Syllogism"]
+    },
+    {
+      "id": 4,
+      "question": "If A's height is 40% less than B's height, by what percent is B's height more than A's height?",
+      "options": ["66.66%", "76.66%", "96.66%", "86.66%"],
+      "correct": 0,
+      "description": "Let B = 100. Then A = 60. B is more than A by 40, so percentage increase over A is 40/60 x 100 = 66.66%.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Percentage"]
+    },
+    {
+      "id": 5,
+      "question": "What will be the total weight of 10 poles, each of the same weight? Statement I: One-fourth of the weight of each pole is 5 kg. Statement II: The total weight of three poles is 20 kg more than the total weight of two poles.",
+      "options": ["I alone is sufficient while II alone is not sufficient", "II alone is sufficient while I alone is not sufficient", "Either I or II is sufficient", "Neither I nor II is sufficient"],
+      "correct": 2,
+      "description": "Statement I gives one pole = 20 kg. Statement II gives 3w = 2w + 20, so w = 20 kg. Either statement is sufficient to find total weight = 200 kg.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Data Sufficiency"]
+    },
+    {
+      "id": 6,
+      "question": "Which of the following statements are true? I) 27840 is divisible by 12. II) 7329753 is divisible by 9.",
+      "options": ["Statement I is true, but II is not", "Statement I is not true, but II is true", "Both statements are true", "Both statements are not true"],
+      "correct": 2,
+      "description": "27840 is divisible by 3 and 4, so it is divisible by 12. The digit sum of 7329753 is 36, so it is divisible by 9.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Divisibility"]
+    },
+    {
+      "id": 7,
+      "question": "Worker W produces n units in 5 hours. Workers V and W together produce n units in 2 hours. How long would V alone take to produce n units?",
+      "options": ["3 Hrs 26 Min", "3 Hrs 20 Min", "3 Hrs 15 Min", "3 Hrs 40 Min"],
+      "correct": 1,
+      "description": "W's rate is 1/5 job per hour. Together rate is 1/2. V's rate = 1/2 - 1/5 = 3/10, so V takes 10/3 hours = 3 hours 20 minutes.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Time and Work"]
+    },
+    {
+      "id": 8,
+      "question": "If 3 men or 4 women can do a piece of work in 43 days, approximately how long will 7 men and 5 women take to finish the work?",
+      "options": ["10 days", "9 days", "11 days", "12 days"],
+      "correct": 0,
+      "description": "3 men = 4 women, so 1 man = 4/3 women. 7 men + 5 women = 28/3 + 5 = 43/3 women. Since 4 women finish in 43 days, required time is approximately 9.74 days, nearest option 10 days.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Time and Work"]
+    },
+    {
+      "id": 9,
+      "question": "How many pairs of letters are there in the word CASTRAPHONE which have as many letters between them in the word as in the alphabet, counting both forward and reverse alphabetic order?",
+      "options": ["3", "4", "6", "7"],
+      "correct": 2,
+      "description": "The qualifying pairs are ST, TO, TN, RP, HE and ON. Therefore, there are 6 such pairs.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Alphabet Pairs"]
+    },
+    {
+      "id": 10,
+      "question": "How many pairs of letters in the word CHAIRS have as many letters between them in the word as in the alphabet?",
+      "options": ["1", "2", "3", "4"],
+      "correct": 1,
+      "description": "The qualifying pairs are C-A and R-S. Therefore, there are 2 such pairs.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Alphabet Pairs"]
+    },
+    {
+      "id": 11,
+      "question": "Which set of letters, when sequentially placed in the gaps, completes the series: pqr__pqq_rssp_pqq_rrrs_s?",
+      "options": ["pqssqp", "sprpqs", "spprpq", "None of these"],
+      "correct": 1,
+      "description": "The sequence is completed by placing sprpqs in order, forming the intended grouped pattern.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Letter Series"]
+    },
+    {
+      "id": 12,
+      "question": "Which is the odd term in the following series: CMQ, FPT, JTX, OYC, UFI?",
+      "options": ["FPT", "OYC", "JTX", "UFI"],
+      "correct": 3,
+      "description": "The second letters should progress M, P, T, Y, E. Therefore UFI should be UEI, making UFI the odd term.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Letter Series"]
+    },
+    {
+      "id": 13,
+      "question": "Pointing to a girl in a photograph, Umesh said, \"Her mother's brother is the only son of my mother's father.\" Under the standard assumption that the only son is Umesh himself, how is the girl's mother related to Umesh?",
+      "options": ["Mother", "Sister", "Aunt", "None"],
+      "correct": 1,
+      "description": "The girl's mother's brother is Umesh. Therefore, the girl's mother is Umesh's sister.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Blood Relation"]
+    },
+    {
+      "id": 14,
+      "question": "A dishonest milkman mixes 1 litre of water for every 3 litres of milk and makes 36 litres of mixture. If he now adds 15 litres of milk to the mixture, what is the ratio of milk to water in the new mixture?",
+      "options": ["12:05", "14:03", "07:02", "09:04"],
+      "correct": 1,
+      "description": "Initial 36 litres contain 27 litres milk and 9 litres water. After adding 15 litres milk, milk = 42 and water = 9. Ratio = 42:9 = 14:3.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Ratio"]
+    },
+    {
+      "id": 15,
+      "question": "Statements: All cups are pens. Some pens are tables. Conclusions: (1) Some cups are tables. (2) Some tables are cups. (3) Some cups are not tables. Which conclusion follows?",
+      "options": ["Only conclusion 1 follows", "Only conclusion 2 follows", "Only conclusion 3 follows", "None of the conclusions follows"],
+      "correct": 3,
+      "description": "The pens that are tables may or may not include cups. No definite relation between cups and tables is established.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Syllogism"]
+    },
+    {
+      "id": 16,
+      "question": "In a survey of 200 students, 120 have tea, 80 have coffee, and 80 have both tea and coffee. How many students have none of the beverages?",
+      "options": ["40", "60", "80", "30"],
+      "correct": 2,
+      "description": "Students having at least one beverage = 120 + 80 - 80 = 120. Therefore, none = 200 - 120 = 80.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Set Theory"]
+    },
+    {
+      "id": 17,
+      "question": "Two pipes A and B can fill a tank in 20 and 30 minutes respectively. If both pipes are used together, how long will they take to fill the tank?",
+      "options": ["65 mins", "64 mins", "12 mins", "72 mins"],
+      "correct": 2,
+      "description": "Combined rate = 1/20 + 1/30 = 1/12 tank per minute. Therefore, the tank fills in 12 minutes.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Pipes and Cisterns"]
+    },
+    {
+      "id": 18,
+      "question": "In how many ways can the letters of the word AVAILABILITY be arranged such that the arrangement starts and ends with L?",
+      "options": ["10!/3!3!", "12!/3!3!2!", "2*10!/3!3!", "None of these"],
+      "correct": 0,
+      "description": "Fix L at both ends. The remaining 10 letters include A repeated 3 times and I repeated 3 times. Arrangements = 10!/(3!3!).",
+      "difficulty": "Hard",
+      "tags": ["APT", "Permutation"]
+    },
+    {
+      "id": 19,
+      "question": "If in a certain code language DISTURB is coded as SCEJTUV, what is the code for NUMBERS?",
+      "options": ["OVNCFST", "OSOTNVCF", "STOVNCF", "ONVCSFT"],
+      "correct": 2,
+      "description": "Move the last two letters to the front and then advance every letter by one. DISTURB becomes RBDISTU, then SCEJTUV. NUMBERS becomes RSNUMBE, then STOVNCF.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Coding-Decoding"]
+    },
+    {
+      "id": 20,
+      "question": "X is three years older than Y, and Y is thrice as old as Z. If the total age of X, Y and Z is 31, how old is Y?",
+      "options": ["10", "08", "12", "09"],
+      "correct": 2,
+      "description": "Let Z = z. Then Y = 3z and X = 3z + 3. So 7z + 3 = 31, z = 4 and Y = 12.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Ages"]
+    },
+    {
+      "id": 21,
+      "question": "Out of 300 students in a school, 95 play only cricket, 120 play only football, 80 play only volleyball and 5 play no games. If one student is chosen at random, what is the probability that the student plays volleyball?",
+      "options": ["11/15", "1/3", "4/15", "17/30"],
+      "correct": 2,
+      "description": "Volleyball-only students = 80. Probability = 80/300 = 4/15.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Probability"]
+    },
+    {
+      "id": 22,
+      "question": "P and Q are sisters of K. J is the mother of Q. W is the wife of K. R is J's husband and W's son is the grandson of R. How is R related to W?",
+      "options": ["Father-in-law", "Cousin", "Father", "Husband"],
+      "correct": 0,
+      "description": "R is the father of K, and W is K's wife. Therefore, R is W's father-in-law.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Blood Relation"]
+    },
+    {
+      "id": 23,
+      "question": "A batsman makes a score of 79 runs in the 17th inning and increases his average by 3. Find his average after the 17th inning.",
+      "options": ["31", "28", "34", "25"],
+      "correct": 0,
+      "description": "Let old average after 16 innings be a. (16a + 79)/17 = a + 3, so a = 28. New average = 31.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Average"]
+    },
+    {
+      "id": 24,
+      "question": "Two cities P and Q are 275 km apart. A rider starts from P towards Q at 11 a.m. at 20 km/hr. Another rider starts from Q towards P at 12 noon at 25 km/hr. At what time will they cross each other?",
+      "options": ["5:40 PM", "5:20 PM", "5:00 PM", "4:40 PM"],
+      "correct": 0,
+      "description": "By noon, the first rider covers 20 km, leaving 255 km. Relative speed = 45 km/hr. Time after noon = 255/45 = 5 hours 40 minutes.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Time Speed Distance"]
+    },
+    {
+      "id": 25,
+      "question": "Two inlet pipes can fill a tank in 40 minutes and 45 minutes respectively. An outlet pipe can empty the full tank in 30 minutes. If all three pipes are opened simultaneously, in how many minutes will the tank be full?",
+      "options": ["48 min", "1 hr 12 min", "1 hr 48 min", "The tank can never be filled"],
+      "correct": 1,
+      "description": "Net rate = 1/40 + 1/45 - 1/30 = 1/72 tank per minute. Therefore, the tank fills in 72 minutes.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Pipes and Cisterns"]
+    },
+    {
+      "id": 26,
+      "question": "A sum of money doubles itself at compound interest in 10 years. In how many years will it become eight times itself?",
+      "options": ["24 years", "27 years", "30 years", "40 years"],
+      "correct": 2,
+      "description": "Eight times equals 2 cubed. It takes three doubling periods, so time = 3 x 10 = 30 years.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Compound Interest"]
+    },
+    {
+      "id": 27,
+      "question": "The speed of a boat in still water is 9 km/hr, and the speed of the stream is 2.5 km/hr. How much time will the boat take to go 11.7 km against the stream?",
+      "options": ["1 hr 8 minutes", "1 hr 48 minutes", "1 hour 36 minutes", "1 hour"],
+      "correct": 1,
+      "description": "Upstream speed = 9 - 2.5 = 6.5 km/hr. Time = 11.7/6.5 = 1.8 hours = 1 hour 48 minutes.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Boats and Streams"]
+    },
+    {
+      "id": 28,
+      "question": "Nine persons A, B, C, D, E, F, G, H and I sit in a row facing East. B is at one end. H is adjacent to both F and G. C is immediately right of D and third to the right of E. A is immediately left of F. F is third to the left of B. Which statement is true?",
+      "options": ["H and I sit next to each other", "The number of people between I and A is the same as between E and C", "There are more people between D and A than between H and E", "C sits next to both I and A"],
+      "correct": 1,
+      "description": "The unique row is E I D C A F H G B. Between I and A there are D and C; between E and C there are I and D. Both counts are 2.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Seating Arrangement"]
+    },
+    {
+      "id": 29,
+      "question": "Using the same seating arrangement: E I D C A F H G B, who is at the other end of the row from B?",
+      "options": ["A", "G", "H", "E"],
+      "correct": 3,
+      "description": "B is at one end of the row and E is at the other end.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Seating Arrangement"]
+    },
+    {
+      "id": 30,
+      "question": "How many times in a day are the hands of a clock at a smaller angle of 30 degrees to each other?",
+      "options": ["22", "24", "44", "48"],
+      "correct": 2,
+      "description": "The hands form a 30 degree smaller angle 22 times in 12 hours, so in 24 hours they do so 44 times.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Clock"]
+    },
+    {
+      "id": 31,
+      "question": "The ratio between the present ages of Maya and Prem is 5:7. If the difference between Prem's present age and Maya's age after 6 years is 2, what is the total of their present ages?",
+      "options": ["60 years", "52 years", "56 years", "48 years"],
+      "correct": 3,
+      "description": "Let ages be 5x and 7x. 7x - (5x + 6) = 2, so x = 4. Total = 12x = 48 years.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Ages"]
+    },
+    {
+      "id": 32,
+      "question": "In how much time will a train of length 400 m running at 72 km/hr pass a platform of length 500 m?",
+      "options": ["48 sec", "30 sec", "45 sec", "54 sec"],
+      "correct": 2,
+      "description": "Total distance = 400 + 500 = 900 m. Speed 72 km/hr = 20 m/s. Time = 900/20 = 45 seconds.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Trains"]
+    },
+    {
+      "id": 33,
+      "question": "Calculate: 5 1/5% of 3000 + 6 1/3% of 3000.",
+      "options": ["34600", "35600", "346", "848"],
+      "correct": 2,
+      "description": "5 1/5% = 26/5% = 5.2%, so value = 156. 6 1/3% = 19/3% = 6.333%, so value = 190. Total = 346.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Percentage"]
+    },
+    {
+      "id": 34,
+      "question": "Find the HCF of 28/45, 7/81 and 14/27.",
+      "options": ["7/45", "7/405", "28/9", "28/81"],
+      "correct": 1,
+      "description": "HCF of fractions = HCF of numerators / LCM of denominators. HCF(28,7,14)=7 and LCM(45,81,27)=405, so HCF = 7/405.",
+      "difficulty": "Medium",
+      "tags": ["APT", "HCF"]
+    },
+    {
+      "id": 35,
+      "question": "Kunal receives a 10% discount on a laptop. He further gets 5% more discount on the discounted price. If he finally pays Rs 23940, what price should he have paid after the first discount?",
+      "options": ["Rs 28000", "Rs 24400", "Rs 25500", "Rs 25200"],
+      "correct": 3,
+      "description": "The final amount is 95% of the price after the first discount. Price after first discount = 23940/0.95 = Rs 25200.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Discount"]
+    },
+    {
+      "id": 36,
+      "question": "If 14 February 1996 was Wednesday, what was the day on 18 August 1997?",
+      "options": ["Sunday", "Thursday", "Monday", "Saturday"],
+      "correct": 2,
+      "description": "Counting the odd days from 14 February 1996 to 18 August 1997 gives Monday.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Calendar"]
+    },
+    {
+      "id": 37,
+      "question": "Kiran earned Rs 15360 as simple interest at 8% per annum for 4 years. Find the amount invested.",
+      "options": ["Rs 40000", "Rs 45000", "Rs 54000", "Rs 48000"],
+      "correct": 3,
+      "description": "Simple interest = PRT/100. P = 15360 x 100 / (8 x 4) = Rs 48000.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Simple Interest"]
+    },
+    {
+      "id": 38,
+      "question": "If A, B and C can do a work in 20 days, 15 days and 45 days respectively, in how many days will they finish twice the work together?",
+      "options": ["7.2 days", "14.4 days", "10.3 days", "15.8 days"],
+      "correct": 1,
+      "description": "Combined rate = 1/20 + 1/15 + 1/45 = 5/36 work per day. Twice the work takes 2/(5/36) = 14.4 days.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Time and Work"]
+    },
+    {
+      "id": 39,
+      "question": "A man can row 5 km/hr in still water and the speed of the stream is 1 km/hr. He takes 2 hours to travel upstream to a place and return. How far is the place from the starting point?",
+      "options": ["4.8 km", "2.4 km", "9.6 km", "6 km"],
+      "correct": 0,
+      "description": "Upstream speed = 4 km/hr and downstream speed = 6 km/hr. If distance is d, then d/4 + d/6 = 2, giving d = 4.8 km.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Boats and Streams"]
+    },
+    {
+      "id": 40,
+      "question": "If the price of petrol increases by 35% and Rajesh intends to spend only 25% more on petrol, approximately by what percent must he reduce the quantity purchased?",
+      "options": ["7.41%", "9%", "11%", "13%"],
+      "correct": 0,
+      "description": "New quantity/original quantity = 1.25/1.35 = 0.9259. Reduction = 1 - 0.9259 = 0.0741, or about 7.41%.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Percentage"]
+    }
+  ]
+}

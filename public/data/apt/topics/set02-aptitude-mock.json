@@ -1,0 +1,370 @@
+{
+  "version": "1",
+  "title": "Set 02 - Aptitude Mock Examination II",
+  "subject": "APT",
+  "stage": "Topic Wise MCQ",
+  "topic": "Aptitude Mock Examination II",
+  "durationMinutes": 40,
+  "questions": [
+    {
+      "id": 1,
+      "question": "There are two examination rooms A and B. If 10 candidates are sent from room A to room B, the number of candidates in each room is the same. If 20 candidates are sent from room B to room A, the number in room A becomes double the number in room B. Find the initial number of candidates in room A.",
+      "options": ["40", "60", "80", "100"],
+      "correct": 3,
+      "description": "Let initial candidates be A and B. A - 10 = B + 10, so A - B = 20. Also A + 20 = 2(B - 20). Solving gives B = 80 and A = 100.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Linear Equations"]
+    },
+    {
+      "id": 2,
+      "question": "There are 82 identical balls. All weigh the same except one defective ball, which is lighter. Using a two-pan balance, what is the minimum number of weighings required to guarantee finding the defective ball?",
+      "options": ["5", "6", "7", "8"],
+      "correct": 0,
+      "description": "A two-pan balance gives three possible outcomes per weighing. Since 3^4 = 81 is less than 82 and 3^5 = 243, 5 weighings are sufficient and necessary in the worst case.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Logical Reasoning", "Weighing"]
+    },
+    {
+      "id": 3,
+      "question": "In a group of 25 women, 17 have nose studs, 12 have earrings and 3 have neither. How many have both nose studs and earrings?",
+      "options": ["7", "8", "5", "2"],
+      "correct": 0,
+      "description": "At least one = 25 - 3 = 22. Both = 17 + 12 - 22 = 7.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Set Theory"]
+    },
+    {
+      "id": 4,
+      "question": "How many 5-digit numbers can be formed from 1, 2, 3, 4 and 5 without repetition when the digit in the units place must be greater than the digit in the tens place?",
+      "options": ["120", "60", "90", "100"],
+      "correct": 1,
+      "description": "There are 5! = 120 arrangements. For every arrangement where units digit is greater than tens digit, swapping the last two digits gives exactly one arrangement where it is smaller. Therefore half satisfy the condition: 60.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Permutation"]
+    },
+    {
+      "id": 5,
+      "question": "Two vessels of equal volume contain alcohol and water mixed in the ratios 2:3 and 4:5. When these mixtures are combined, what is the ratio of alcohol to water in the new mixture?",
+      "options": ["6:15", "10:9", "19:26", "21:39"],
+      "correct": 2,
+      "description": "For equal volumes, alcohol proportion = 2/5 + 4/9 = 38/45 and water proportion = 3/5 + 5/9 = 52/45. Ratio = 38:52 = 19:26.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Ratio", "Mixture"]
+    },
+    {
+      "id": 6,
+      "question": "In a company, there are 60 executives and possibly some managers. If the average salary of executives is Rs 15000, the average salary of managers is Rs 45000, and the overall average salary is Rs 15000, find the number of managers.",
+      "options": ["11", "0", "14", "12"],
+      "correct": 1,
+      "description": "If any manager earned Rs 45000, the overall average would exceed Rs 15000. Therefore the only possible number of managers is 0.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Average"]
+    },
+    {
+      "id": 7,
+      "question": "Ram goes downstream by boat to a destination and returns upstream to his original place in 6 hours. If the speed of the boat in still water is 12 km/hr and the speed of the stream is 5 km/hr, find the one-way distance.",
+      "options": ["30 km", "30.25km", "29.75km", "31 km"],
+      "correct": 2,
+      "description": "Downstream speed = 17 km/hr and upstream speed = 7 km/hr. If distance is d, then d/17 + d/7 = 6. Solving gives d = 29.75 km.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Boats and Streams"]
+    },
+    {
+      "id": 8,
+      "question": "A pipe can fill a tank in 6 hours and another pipe can empty the tank in 12 hours. If both pipes are opened at the same time, in how many hours can the tank be filled?",
+      "options": ["10 hours", "12 hours", "14 hours", "15 hours"],
+      "correct": 1,
+      "description": "Net filling rate = 1/6 - 1/12 = 1/12 tank per hour. Therefore the tank fills in 12 hours.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Pipes and Cisterns"]
+    },
+    {
+      "id": 9,
+      "question": "A group of 5 people undertakes a data-entry job and finishes half the job in 14 days. If 3 people drop out, in how many additional days will the remaining job be completed?",
+      "options": ["35 days", "30 days", "15 days", "10 days"],
+      "correct": 0,
+      "description": "Half the work requires 5 x 14 = 70 person-days. The remaining half also needs 70 person-days. With 2 people, time = 70/2 = 35 days.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Time and Work"]
+    },
+    {
+      "id": 10,
+      "question": "Worker A completes a task in 10 days and worker B completes the same task in 15 days. If both work together, in how many days will they complete the task?",
+      "options": ["12 days", "14 days", "6 days", "9 days"],
+      "correct": 2,
+      "description": "Combined rate = 1/10 + 1/15 = 1/6 task per day. They finish in 6 days.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Time and Work"]
+    },
+    {
+      "id": 11,
+      "question": "At what speed, in km/hr, will a train of length 284 m pass a bridge of length 148 m in 24 seconds?",
+      "options": ["68.4", "70.6", "66.2", "64.8"],
+      "correct": 3,
+      "description": "Total distance = 284 + 148 = 432 m. Speed = 432/24 = 18 m/s = 64.8 km/hr.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Trains"]
+    },
+    {
+      "id": 12,
+      "question": "A running man crosses a bridge of length 500 metres in 4 minutes. At what speed is he running?",
+      "options": ["7.5km/hr", "8.5km/hr", "9.5km/hr", "12.5km/hr"],
+      "correct": 0,
+      "description": "Speed = 500/240 m/s = 2.0833 m/s. Converting to km/hr gives 2.0833 x 3.6 = 7.5 km/hr.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Speed"]
+    },
+    {
+      "id": 13,
+      "question": "Arun has 800 shares of par value Rs 50 each and 600 debentures of par value Rs 100 each. The company pays an annual dividend of 6% on shares and interest of 12% on debentures. What is the rate of return on his investment?",
+      "options": ["8%", "10%", "7.60%", "9.6%"],
+      "correct": 3,
+      "description": "Share investment = 800 x 50 = Rs 40000 and dividend = Rs 2400. Debenture investment = 600 x 100 = Rs 60000 and interest = Rs 7200. Total return = Rs 9600 on Rs 100000 = 9.6%.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Investment"]
+    },
+    {
+      "id": 14,
+      "question": "Rahul borrows Rs 32000 from Lalli at 6% simple interest per annum. At the end of 5 years, how much interest must Rahul pay?",
+      "options": ["Rs.10800", "Rs.9600", "Rs.10200", "Rs.10950"],
+      "correct": 1,
+      "description": "Simple interest = PRT/100 = 32000 x 6 x 5 / 100 = Rs 9600.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Simple Interest"]
+    },
+    {
+      "id": 15,
+      "question": "The ratio between the present ages of Ruma and Vivek is 8:7. After 8 years, the ratio of their ages will be 28:25. By how many years is Ruma older than Vivek?",
+      "options": ["1 year", "6 years", "7 years", "8 years"],
+      "correct": 1,
+      "description": "Let present ages be 8x and 7x. (8x + 8)/(7x + 8) = 28/25, giving x = 6. Difference = x = 6 years.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Ages"]
+    },
+    {
+      "id": 16,
+      "question": "The total number of employees in CodeFast MNC was 350. After hiring, the number of male and female employees increased by 5% and 20% respectively, and total employees became 399. What was the number of male employees initially?",
+      "options": ["150", "180", "140", "210"],
+      "correct": 2,
+      "description": "Let initial males be M and females be 350 - M. Then 1.05M + 1.20(350 - M) = 399. Solving gives M = 140.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Percentage", "Equations"]
+    },
+    {
+      "id": 17,
+      "question": "If A's salary is 50% more than B's salary, then B's salary is how much percent less than A's salary?",
+      "options": ["33.33%", "25%", "20%", "75%"],
+      "correct": 0,
+      "description": "Let B = 100, so A = 150. B is less than A by 50, so percentage decrease relative to A = 50/150 x 100 = 33.33%.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Percentage"]
+    },
+    {
+      "id": 18,
+      "question": "If a/b = 3/4, b/c = 5/6, and c/d = 2/3, find a:b:c:d.",
+      "options": ["15:20:24:36", "20:15:48:104", "36:24:192:48", "48:64:24:46"],
+      "correct": 0,
+      "description": "From a:b = 3:4 and b:c = 5:6, match b to get a:b:c = 15:20:24. Since c:d = 2:3, c:d = 24:36. Therefore a:b:c:d = 15:20:24:36.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Ratio"]
+    },
+    {
+      "id": 19,
+      "question": "The sum of two numbers is 15 and their product is 39. What is the sum of the reciprocals of these numbers?",
+      "options": ["5/13", "1/39", "39/5", "7/32"],
+      "correct": 0,
+      "description": "If the numbers are x and y, then 1/x + 1/y = (x + y)/xy = 15/39 = 5/13.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Numbers"]
+    },
+    {
+      "id": 20,
+      "question": "Statements: Some animals are pink. All pinks are apples. Conclusions: (1) All apples are pink. (2) Some animals are apples. Which conclusion follows?",
+      "options": ["Only (1) conclusion follows", "Only (2) conclusion follows", "Neither (1) nor (2) follows", "Both (1) and (2) follow"],
+      "correct": 1,
+      "description": "Some animals are pink, and all pinks are apples. Therefore, some animals are apples. The converse all apples are pink does not follow.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Syllogism"]
+    },
+    {
+      "id": 21,
+      "question": "Statements: Some mangoes are yellow. Some Tixo are mangoes. Conclusions: (1) Some mangoes are green. (2) Some Tixo are yellow. Which conclusion follows?",
+      "options": ["Only conclusion 1 follows", "Only conclusion 2 follows", "Neither 1 nor 2 follows", "Both 1 and 2 follow"],
+      "correct": 2,
+      "description": "Nothing establishes green mangoes. Also, the mangoes that are Tixo need not be the same mangoes that are yellow. Neither conclusion follows.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Syllogism"]
+    },
+    {
+      "id": 22,
+      "question": "A cube is colored red on two opposite faces, blue on two adjacent faces, and yellow on the remaining faces. It is cut into two equal halves along a plane parallel to the red faces. One half is subdivided into a 2 x 2 x 1 block of 4 equal cubes and the other half into a 4 x 4 x 2 block of 32 equal cubes. How many small cubes have no colored face?",
+      "options": ["2", "4", "8", "0"],
+      "correct": 1,
+      "description": "The 2 x 2 x 1 half contributes no uncolored cubes. In the 4 x 4 x 2 half, only the four cubes in the internal layer and away from all four side faces have no originally colored face.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Cubes"]
+    },
+    {
+      "id": 23,
+      "question": "Siva, Satish, Amar and Praveen are playing cards around a square table facing the centre. Amar is to the right of Satish, who is to the right of Siva. Who is to the right of Amar?",
+      "options": ["Satish", "Amar", "Siva", "Praveen"],
+      "correct": 3,
+      "description": "Moving successively to the right gives Siva, Satish, Amar, Praveen. Therefore Praveen is to the right of Amar.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Seating Arrangement"]
+    },
+    {
+      "id": 24,
+      "question": "In an artificial language, plekāpaki means fruitcake, pakishillen means cakewalk, and treftalan means buttercup. Which word could mean cupcake?",
+      "options": ["shillenalan", "treftpleka", "pakitreft", "talanpaki"],
+      "correct": 3,
+      "description": "From fruitcake and cakewalk, paki means cake. From buttercup, talan means cup. Therefore talanpaki can mean cupcake.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Artificial Language"]
+    },
+    {
+      "id": 25,
+      "question": "In the series M K K I D N E T T Q O B F H A A G T U U X W L S R I, each letter gets a value based on its position in the arrangement. The value of the second A is exactly equal to the total value of which pair?",
+      "options": ["DO", "QE", "MH", "UX"],
+      "correct": 0,
+      "description": "The second A is at position 16. D is at position 5 and O is at position 11, so D + O = 16.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Position Value"]
+    },
+    {
+      "id": 26,
+      "question": "If January 1, 1996 was a Monday, what day of the week was January 1, 1997?",
+      "options": ["Tuesday", "Thursday", "Monday", "Wednesday"],
+      "correct": 3,
+      "description": "1996 was a leap year, so the weekday advances by two days. Monday plus two days is Wednesday.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Calendar"]
+    },
+    {
+      "id": 27,
+      "question": "A mother is thrice as old as her son's present age. Five years ago, her son's age was 1/6 of his father's age at that time. If the father's present age is 5 years more than the mother's present age, find the son's present age.",
+      "options": ["12 years", "13 years", "10 years", "14 years"],
+      "correct": 2,
+      "description": "Let son's present age be x. Mother = 3x and father = 3x + 5. Five years ago, father = 3x and son = x - 5. Given x - 5 = 3x/6, so x = 10.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Ages"]
+    },
+    {
+      "id": 28,
+      "question": "A positive number is mistakenly multiplied by 5 instead of being divided by 5. By what percent more than the correct answer is the result obtained?",
+      "options": ["2400%", "2500%", "2700%", "2000%"],
+      "correct": 0,
+      "description": "Correct result = x/5 and wrong result = 5x = 25(x/5). Excess = 24 times the correct result = 2400% more.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Percentage"]
+    },
+    {
+      "id": 29,
+      "question": "What will be the total weight of 10 poles, each of the same weight? Statement I: 1/4 of the weight of each pole is 5 kg. Statement II: The total weight of 3 poles is 20 kg more than the total weight of 2 poles.",
+      "options": ["I alone is sufficient while II alone is not sufficient", "II alone is sufficient while I alone is not sufficient", "Either I or II alone is sufficient", "Both I and II together are necessary"],
+      "correct": 2,
+      "description": "From I, one pole = 20 kg. From II, 3w = 2w + 20, so w = 20 kg. Each statement alone is sufficient.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Data Sufficiency"]
+    },
+    {
+      "id": 30,
+      "question": "Statements: All cups are pens. Some pens are tables. Which conclusion follows?",
+      "options": ["Some cups are tables", "Some tables are cups", "Some cups are not tables", "None of these"],
+      "correct": 3,
+      "description": "The cups may or may not overlap with the pens that are tables. Therefore none of the first three conclusions necessarily follows.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Syllogism"]
+    },
+    {
+      "id": 31,
+      "question": "Statements: Some horses are dogs. No rabbit is a dog. Which conclusion follows?",
+      "options": ["Some horses are not rabbits", "Some horses are rabbits", "Some computers are mice", "None of these"],
+      "correct": 0,
+      "description": "At least one horse is a dog, and no dog is a rabbit. Therefore, that horse is not a rabbit.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Syllogism"]
+    },
+    {
+      "id": 32,
+      "question": "Six friends sit in a circle facing the centre. Deepa is between Prakash and Pankaj. Priti is between Mukesh and Lalit. Prakash and Mukesh are opposite each other. Who is sitting opposite Priti?",
+      "options": ["Prakash", "Deepa", "Pankaj", "Lalit"],
+      "correct": 1,
+      "description": "One valid clockwise arrangement is Prakash, Deepa, Pankaj, Mukesh, Priti, Lalit. Its mirror image gives the same opposite pair. Priti is opposite Deepa.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Circular Seating"]
+    },
+    {
+      "id": 33,
+      "question": "Six friends sit in a circle facing the centre. Deepa is between Prakash and Pankaj. Priti is between Mukesh and Lalit. Prakash and Mukesh are opposite each other. Who are the neighbours of Mukesh?",
+      "options": ["Prakash and Deepa", "Deepa and Priti", "Priti and Pankaj", "Lalit and Priti"],
+      "correct": 2,
+      "description": "In the forced arrangement, Mukesh is adjacent to Pankaj and Priti.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Circular Seating"]
+    },
+    {
+      "id": 34,
+      "question": "If ABHIJIT is coded as CEJLLLV, then BROTHER is coded as which of the following?",
+      "options": ["DUQWJTH", "DUQWTSH", "DUQTWSH", "DUQWJHT"],
+      "correct": 3,
+      "description": "Letters are shifted alternately by +2 and +3. Applying this to BROTHER gives D U Q W J H T.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Coding-Decoding"]
+    },
+    {
+      "id": 35,
+      "question": "If in a certain code language SOLUTION is coded as AVRZXLQO, what is the code for PROBLEM?",
+      "options": ["WXTFPGN", "WXUFOGN", "WXTFOGN", "WYTFOGN"],
+      "correct": 2,
+      "description": "In SOLUTION, successive letters are shifted by +8, +7, +6, +5, +4, +3, +2 and +1. For PROBLEM, apply +7 through +1 to get WXTFOGN.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Coding-Decoding"]
+    },
+    {
+      "id": 36,
+      "question": "If A+B means A is the mother of B, A-B means A is the brother of B, A%B means A is the father of B, and A*B means A is the sister of B, which expression shows that P is the maternal uncle of Q?",
+      "options": ["Q-N+M*P", "P+S*N-Q", "P-M+N*Q", "Q-S%P"],
+      "correct": 2,
+      "description": "P-M means P is brother of M. M+N means M is mother of N. N*Q means N is sister of Q. Under standard family-puzzle convention, M is Q's mother, so P is Q's maternal uncle.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Blood Relation", "Symbols"]
+    },
+    {
+      "id": 37,
+      "question": "Pointing to a photograph of a boy, Suresh said, \"He is the son of the only son of my mother.\" How is Suresh related to the boy in the photograph?",
+      "options": ["Uncle", "Nephew", "Father", "Grand Father"],
+      "correct": 2,
+      "description": "Since Suresh is male, the only son of my mother refers to Suresh himself. The boy is Suresh's son.",
+      "difficulty": "Easy",
+      "tags": ["APT", "Blood Relation"]
+    },
+    {
+      "id": 38,
+      "question": "Complete the repetitive series: _op_mo_n__pnmop",
+      "options": ["nmpnom", "mnpmon", "mmopnm", "nnpomn"],
+      "correct": 1,
+      "description": "Filling the blanks sequentially with m, n, p, m, o, n produces mopnmopnmopnmop, a repetition of mopn.",
+      "difficulty": "Hard",
+      "tags": ["APT", "Letter Series"]
+    },
+    {
+      "id": 39,
+      "question": "Complete the series: 7, 91, 1001, 7007, 35035, ?",
+      "options": ["105105", "80098", "550558", "750755"],
+      "correct": 0,
+      "description": "The multipliers are 13, 11, 7, 5 and 3. Therefore 35035 x 3 = 105105.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Number Series"]
+    },
+    {
+      "id": 40,
+      "question": "How many factors of 5680 are even?",
+      "options": ["16", "8", "4", "5"],
+      "correct": 0,
+      "description": "5680 = 2^4 x 5 x 71. An even divisor must contain 2^1, 2^2, 2^3 or 2^4: 4 choices. Exponents of 5 and 71 each have 2 choices. Total = 4 x 2 x 2 = 16.",
+      "difficulty": "Medium",
+      "tags": ["APT", "Factors"]
+    }
+  ]
+}

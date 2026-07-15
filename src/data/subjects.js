@@ -1,5 +1,6 @@
 import {
   Binary,
+  Calculator,
   Globe2,
   KeyRound,
   Network,
@@ -94,6 +95,17 @@ export const subjects = [
     stages: buildStages("ml", []),
     topicsPath: "/subjects/ml/topics",
     topicIndexFile: "/data/ml/topics/index.json"
+  },
+  {
+    slug: "apt",
+    name: "APT",
+    shortName: "APT",
+    icon: Calculator,
+    accent: "teal",
+    description: "Aptitude practice covering quantitative ability, reasoning, syllogisms, arrangements, and data sufficiency.",
+    stages: buildStages("apt", []),
+    topicsPath: "/subjects/apt/topics",
+    topicIndexFile: "/data/apt/topics/index.json"
   }
 ];
 

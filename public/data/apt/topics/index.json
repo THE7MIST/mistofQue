@@ -1,0 +1,14 @@
+{
+  "sets": [
+    {
+      "setNumber": "Set 01",
+      "topic": "Aptitude Mock Examination I",
+      "slug": "set01-aptitude-mock"
+    },
+    {
+      "setNumber": "Set 02",
+      "topic": "Aptitude Mock Examination II",
+      "slug": "set02-aptitude-mock"
+    }
+  ]
+}
