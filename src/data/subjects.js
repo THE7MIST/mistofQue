@@ -30,7 +30,17 @@ export const subjects = [
     icon: KeyRound,
     accent: "amber",
     description: "Certificates, trust chains, revocation, and secure handshakes.",
-    stages: buildStages("pki"),
+    stages: [
+      ...buildStages("pki", ["warmup"]),
+      {
+        slug: "warmup-set02",
+        label: "Warm Up MCQ Set 2",
+        group: "Warm Up MCQ",
+        tone: "teal",
+        path: "/subjects/pki/warmup-set02",
+        file: "/data/pki/warmup-set02.json"
+      }
+    ],
     topicsPath: "/subjects/pki/topics",
     topicIndexFile: "/data/pki/topics/index.json",
     revisionPath: "/subjects/pki/revision",

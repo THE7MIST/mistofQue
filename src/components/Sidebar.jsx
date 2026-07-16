@@ -131,7 +131,7 @@ export default function Sidebar({ isOpen, onClose }) {
                               <p className="px-3 pt-2 text-[10px] font-black uppercase tracking-[0.16em] text-slate-400 dark:text-slate-500">
                                 Practice
                               </p>
-                              {subject.stages.slice(0, 1).map((stage) => (
+                              {subject.stages.map((stage) => (
                                 <NavLink key={stage.slug} to={stage.path} className={navClass} onClick={onClose}>
                                   {stage.label}
                                 </NavLink>
@@ -149,11 +149,6 @@ export default function Sidebar({ isOpen, onClose }) {
                                   </NavLink>
                                 </>
                               ) : null}
-                              {subject.stages.slice(1).map((stage) => (
-                                <NavLink key={stage.slug} to={stage.path} className={navClass} onClick={onClose}>
-                                  {stage.label}
-                                </NavLink>
-                              ))}
                             </div>
                           </div>
                         </div>
