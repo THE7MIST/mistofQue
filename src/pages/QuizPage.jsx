@@ -13,6 +13,7 @@ import { getStage, getSubject } from "../data/subjects.js";
 import { useQuizSession } from "../hooks/useQuizSession.js";
 import { loadQuizFile } from "../services/quizService.js";
 import { saveResult } from "../services/resultsService.js";
+import { getRestrictedAccount } from "../utils/restrictedAccounts.js";
 import { formatDuration } from "../utils/time.js";
 
 const LEAVE_WARNING = "You have an active quiz.\nLeaving now may lose your progress.";
@@ -65,18 +66,20 @@ function SubmitConfirmModal({ answeredCount, unansweredCount, timeLeft, onCancel
   );
 }
 
-function DemoBlockedQuiz({ quiz }) {
+function DemoBlockedQuiz({ quiz, user }) {
+  const restriction = getRestrictedAccount(user?.email);
+
   return (
     <>
       <PageHeader
         eyebrow={`${quiz.subject} / ${quiz.stage || quiz.topic}`}
         title={quiz.title}
-        description="Demo account access is read-only for real quizzes."
+        description="This account can browse study material but cannot start real quizzes."
       />
       <EmptyState
         icon={AlertTriangle}
-        title="Demo Account"
-        description="This quiz is available only for registered users."
+        title={user?.restrictionTitle || restriction?.title || "Restricted Account"}
+        description={user?.restrictionMessage || restriction?.quizBlockedMessage || "This quiz is available only for registered users."}
         to="/dashboard"
         actionLabel="Back to dashboard"
       />
@@ -439,7 +442,7 @@ function QuizSession({ quiz, attemptKey }) {
   useEffect(() => () => exitFocusMode(), [exitFocusMode]);
 
   if (isDemoUser(user) && !quiz.demo) {
-    return <DemoBlockedQuiz quiz={quiz} />;
+    return <DemoBlockedQuiz quiz={quiz} user={user} />;
   }
 
   if (!hasStarted) {

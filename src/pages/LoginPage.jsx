@@ -112,7 +112,7 @@ export default function LoginPage() {
           </Button>
 
           <p className="mt-4 text-center text-xs text-slate-500 dark:text-slate-400">
-            Local preview: demo@mcqarena.dev / demo123
+            Preview: demo@mcqarena.dev / demo123 or user@gmail.com / abc123
           </p>
         </form>
       </section>

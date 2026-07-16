@@ -1,11 +1,8 @@
+import { isRestrictedAccount } from "../utils/restrictedAccounts.js";
+
 const API_URL = "https://script.google.com/macros/s/AKfycbxBfWSX994-1Z20AAJpUWfoIJoLz7pjFku7ygNWQnkrMiiN8l1_v9DT5iLq7hQKgy_LaA/exec";
 const RESULTS_KEY = "mcq_arena_results";
 const LAST_RESULT_KEY = "mcq_arena_last_result";
-const DEMO_EMAIL = "demo@mcqarena.dev";
-
-function isDemoEmail(email) {
-  return String(email || "").trim().toLowerCase() === DEMO_EMAIL;
-}
 
 function hasConfiguredApi() {
   return API_URL && !API_URL.includes("YOUR_DEPLOYMENT_ID");
@@ -115,7 +112,7 @@ export function getLastResult() {
 }
 
 export function saveLocalResult(result, user) {
-  if (isDemoEmail(user?.email)) return;
+  if (isRestrictedAccount(user)) return;
 
   const results = readResults();
   const compactResult = {
@@ -143,7 +140,7 @@ export function saveLocalResult(result, user) {
 }
 
 export async function saveResult(result, user) {
-  if (isDemoEmail(user?.email)) return null;
+  if (isRestrictedAccount(user)) return null;
 
   saveLocalResult(result, user);
   persistLastResult(result);
@@ -166,12 +163,12 @@ export async function saveResult(result, user) {
 }
 
 export function getLocalResults(email) {
-  if (isDemoEmail(email)) return [];
+  if (isRestrictedAccount(email)) return [];
   return readResults().filter((result) => result.user === email);
 }
 
 export async function fetchRemoteAnalytics(email) {
-  if (isDemoEmail(email)) return [];
+  if (isRestrictedAccount(email)) return [];
 
   const response = await postToAppsScript({
     action: "getAnalytics",

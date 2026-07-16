@@ -1,12 +1,8 @@
 import { badgeDefinitions } from "../data/badges.js";
 import { loadQuizFile, loadTopicIndex } from "../services/quizService.js";
+import { isRestrictedAccount } from "./restrictedAccounts.js";
 
 const BADGE_KEY = "mcq_arena_earned_badges";
-const DEMO_EMAIL = "demo@mcqarena.dev";
-
-function isDemoEmail(email) {
-  return String(email || "").trim().toLowerCase() === DEMO_EMAIL;
-}
 
 function readEarnedBadgeIds(userEmail) {
   try {
@@ -222,7 +218,7 @@ export async function buildProgressModel(subjects, results) {
 }
 
 export function calculateBadges({ results, subjectProgress, userEmail }) {
-  if (isDemoEmail(userEmail)) {
+  if (isRestrictedAccount(userEmail)) {
     return badgeDefinitions.map((badge) => ({
       ...badge,
       current: 0,

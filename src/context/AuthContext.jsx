@@ -1,12 +1,13 @@
 import { createContext, useCallback, useContext, useMemo, useState } from "react";
 import { loginWithToken } from "../services/authApi.js";
+import { getRestrictedAccount, isRestrictedAccount } from "../utils/restrictedAccounts.js";
 
 const AuthContext = createContext(null);
 const SESSION_KEY = "mcq_arena_session";
 export const DEMO_EMAIL = "demo@mcqarena.dev";
 
 export function isDemoUser(user) {
-  return user?.email?.trim().toLowerCase() === DEMO_EMAIL;
+  return isRestrictedAccount(user);
 }
 
 function safeUuid() {
@@ -34,12 +35,15 @@ export function AuthProvider({ children }) {
       if (!response.ok) {
         return { ok: false, message: response.message || "Invalid email or password token." };
       }
+      const restrictedAccount = getRestrictedAccount(response.user.email);
 
       const nextSession = {
         email: response.user.email,
         name: response.user.name || response.user.email.split("@")[0],
-        role: response.user.role || (response.user.email === DEMO_EMAIL ? "demo" : "student"),
-        isDemo: response.user.email === DEMO_EMAIL,
+        role: response.user.role || restrictedAccount?.role || "student",
+        isDemo: Boolean(restrictedAccount),
+        restrictionTitle: restrictedAccount?.title || "",
+        restrictionMessage: restrictedAccount?.quizBlockedMessage || "",
         token: response.sessionToken || safeUuid(),
         loginAt: new Date().toISOString()
       };
