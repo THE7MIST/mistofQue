@@ -1,4 +1,4 @@
-import { AlertTriangle, Bookmark, CheckCircle2, ChevronLeft, ChevronRight, Clock3, Maximize2, RotateCcw } from "lucide-react";
+import { AlertTriangle, Bookmark, CheckCircle2, ChevronLeft, ChevronRight, Clock3, Maximize2, RotateCcw, XCircle } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import QuestionPalette from "../components/QuestionPalette.jsx";
@@ -351,10 +351,16 @@ function ActiveQuizSession({ quiz, attemptKey }) {
               })}
             </div>
 
-            {!isFocusMode && Number.isInteger(selectedAnswer) && (
-              <div className="mt-3">
-                <Button variant="ghost" size="sm" onClick={() => clearAnswer(currentQuestion.id)}>
-                  Clear Answer
+            {Number.isInteger(selectedAnswer) && (
+              <div className="mt-4 flex justify-end">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => clearAnswer(currentQuestion.id)}
+                  title="Remove the selected answer for this question"
+                >
+                  <XCircle size={16} />
+                  Clear selected answer
                 </Button>
               </div>
             )}

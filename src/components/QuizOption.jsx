@@ -8,7 +8,7 @@ export default function QuizOption({ letter, children, selected, onSelect }) {
       aria-pressed={selected}
       className={`focus-ring group flex min-h-14 w-full items-center gap-3 rounded-lg p-3 text-left text-sm font-semibold transition duration-150 sm:p-4 ${
         selected
-          ? "border border-teal-700 bg-teal-50 text-teal-950 shadow-sm dark:border-teal-300 dark:bg-teal-300/18 dark:text-white"
+          ? "border border-teal-700 bg-teal-50 text-teal-950 shadow-sm ring-1 ring-teal-500/20 dark:border-teal-300 dark:bg-teal-950/80 dark:text-teal-50 dark:ring-teal-300/45"
           : "border border-slate-200 bg-white text-slate-700 hover:border-teal-300 hover:bg-teal-50/50 dark:border-white/10 dark:bg-white/[0.03] dark:text-slate-100 dark:hover:border-teal-300/60 dark:hover:bg-teal-400/10"
       }`}
     >
@@ -22,7 +22,7 @@ export default function QuizOption({ letter, children, selected, onSelect }) {
         {letter}
       </span>
       <span className="min-w-0 flex-1 leading-6">{children}</span>
-      {selected ? <CheckCircle2 className="shrink-0 text-teal-700 dark:text-teal-200" size={19} /> : null}
+      {selected ? <CheckCircle2 className="shrink-0 text-teal-700 dark:text-teal-300" size={19} /> : null}
     </button>
   );
 }
