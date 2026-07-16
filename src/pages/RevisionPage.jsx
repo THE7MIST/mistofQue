@@ -1,4 +1,4 @@
-import { CheckCircle2, Circle, FileText } from "lucide-react";
+import { CheckCircle2, Circle, Download, FileText } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import RevisionAudioPlayer from "../components/RevisionAudioPlayer.jsx";
@@ -10,7 +10,7 @@ import SectionHeader from "../components/ui/SectionHeader.jsx";
 import StatusBadge from "../components/ui/StatusBadge.jsx";
 import { useAuth } from "../context/AuthContext.jsx";
 import { getSubject } from "../data/subjects.js";
-import { getRevisionProgress, loadRevisionIndex, loadRevisionPhase, saveRevisionPhaseProgress } from "../services/revisionService.js";
+import { getRevisionProgress, loadRevisionIndex, loadRevisionPhase, resolveRevisionAssetPath, saveRevisionPhaseProgress } from "../services/revisionService.js";
 
 function ListBlock({ title, items }) {
   if (!items?.length) return null;
@@ -68,6 +68,40 @@ function SectionBlock({ section }) {
 function getItemCount(phase) {
   if (phase?.sections?.length) return phase.sections.reduce((total, section) => total + (section.terms?.length || 0), 0);
   return phase?.topics?.length || 0;
+}
+
+function DownloadResources({ downloads }) {
+  if (!downloads?.length) return null;
+
+  return (
+    <div className="glass-panel rounded-lg p-4 sm:p-5">
+      <div className="mb-4 flex items-center gap-3">
+        <span className="grid h-10 w-10 place-items-center rounded-lg bg-teal-500/12 text-teal-700 dark:text-teal-200">
+          <Download size={20} />
+        </span>
+        <div>
+          <p className="eyebrow">Download</p>
+          <h2 className="text-lg font-black text-slate-950 dark:text-white">Revision Files</h2>
+        </div>
+      </div>
+      <div className="grid gap-3 sm:grid-cols-2">
+        {downloads.map((item) => (
+          <a
+            key={item.id || item.file}
+            href={resolveRevisionAssetPath(item.file)}
+            download
+            className="focus-ring rounded-lg border border-slate-200 bg-white px-4 py-3 transition hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-soft dark:border-white/10 dark:bg-white/[0.04] dark:hover:border-teal-300/50"
+          >
+            <span className="flex items-center gap-2 text-sm font-black text-slate-950 dark:text-white">
+              <Download size={16} />
+              {item.title}
+            </span>
+            {item.description ? <span className="mt-1 block text-xs font-semibold leading-5 text-slate-500 dark:text-slate-400">{item.description}</span> : null}
+          </a>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default function RevisionPage() {
@@ -186,6 +220,8 @@ export default function RevisionPage() {
             </div>
             <ProgressBar value={progressPercent} />
           </div>
+
+          <DownloadResources downloads={index.downloads} />
 
           {phase ? (
             <>

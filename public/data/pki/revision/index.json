@@ -2,6 +2,14 @@
   "subject": "PKI",
   "subjectSlug": "pki",
   "title": "PKI Revision",
+  "downloads": [
+    {
+      "id": "pki-acronyms-reference",
+      "title": "PKI Acronyms Reference PDF",
+      "description": "Full forms, definitions, MCQ traps, and memory lines for quick PKI revision.",
+      "file": "/data/pki/revision/pki-acronyms-reference.pdf"
+    }
+  ],
   "phases": [
     {
       "id": "phase01-foundations",

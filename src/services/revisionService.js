@@ -34,8 +34,12 @@ function writeRevisionProgress(progress) {
   localStorage.setItem(REVISION_PROGRESS_KEY, JSON.stringify(progress));
 }
 
-export function resolveAudioPath(file) {
+export function resolveRevisionAssetPath(file) {
   return resolvePublicPath(file);
+}
+
+export function resolveAudioPath(file) {
+  return resolveRevisionAssetPath(file);
 }
 
 export function loadRevisionIndex(subjectSlug) {
