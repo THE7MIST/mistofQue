@@ -80,7 +80,7 @@ export const subjects = [
     icon: Binary,
     accent: "rose",
     description: "Cyber forensic investigation, evidence handling, and incident response.",
-    stages: buildStages("df", []),
+    stages: buildStages("df", ["warmup"]),
     topicsPath: "/subjects/df/topics",
     topicIndexFile: "/data/df/topics/index.json"
   },
