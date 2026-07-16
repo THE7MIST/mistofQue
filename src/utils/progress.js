@@ -136,7 +136,7 @@ export async function discoverSubjectQuizzes(subject) {
       stageSlug: stage.slug,
       title: stage.label,
       label: stage.label,
-      group: stage.label,
+      group: stage.group || stage.label,
       file: stage.file,
       questionCount: await getQuestionCount(stage.file)
     }))

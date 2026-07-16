@@ -80,7 +80,17 @@ export const subjects = [
     icon: Binary,
     accent: "rose",
     description: "Cyber forensic investigation, evidence handling, and incident response.",
-    stages: buildStages("df", ["warmup"]),
+    stages: [
+      ...buildStages("df", ["warmup"]),
+      {
+        slug: "warmup-set02",
+        label: "Warm Up MCQ Set 2",
+        group: "Warm Up MCQ",
+        tone: "teal",
+        path: "/subjects/df/warmup-set02",
+        file: "/data/df/warmup-set02.json"
+      }
+    ],
     topicsPath: "/subjects/df/topics",
     topicIndexFile: "/data/df/topics/index.json"
   },
